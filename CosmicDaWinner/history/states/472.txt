@@ -1,0 +1,35 @@
+
+state={
+	id=472
+	name="STATE_472"
+	manpower = 2733899
+	
+	state_category = town
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		
+		
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			
+		}
+		
+	}
+
+	provinces={
+		7991 7992 7993 7994 7995 7996 7997 7998 7999 8000 
+	}
+	local_supplies=0.0 
+}

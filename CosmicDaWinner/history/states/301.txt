@@ -1,0 +1,35 @@
+
+state={
+	id=301
+	name="STATE_301"
+	manpower = 2914448
+	
+	state_category = rural
+	resources={
+		aluminium=0
+		chromium=0
+		oil=1
+		rubber=2
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		
+		
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			
+		}
+		
+	}
+
+	provinces={
+		4783 4784 4785 4786 4787 4788 4789 4790 4791 4792 4793 
+	}
+	local_supplies=0.0 
+}

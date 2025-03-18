@@ -1,0 +1,35 @@
+
+state={
+	id=408
+	name="STATE_408"
+	manpower = 12772024
+	
+	state_category = megalopolis
+	resources={
+		aluminium=0
+		chromium=0
+		oil=1
+		rubber=0
+		steel=5
+		tungsten=3
+	}
+
+	history={
+		
+		
+		buildings = {
+			infrastructure = 4
+			
+			arms_factory = 3
+			industrial_complex = 4
+			
+			
+		}
+		
+	}
+
+	provinces={
+		6698 6699 6700 6701 6702 6703 6704 6705 6706 6707 6708 6709 6710 6711 6712 6713 6714 6715 6716 6717 6718 6719 6720 6721 6722 6723 6724 6725 6726 6727 6728 6729 6730 6731 6732 6733 6734 6735 6736 6737 6738 6739 6740 6741 6742 6743 6744 6745 6746 
+	}
+	local_supplies=0.0 
+}

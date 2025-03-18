@@ -1,0 +1,9 @@
+GBT = {
+	color = rgb { 0 128 0 }
+	color_ui = rgb { 0 128 0 }
+}
+
+HRT = {
+	color = rgb { 81, 255, 28 }
+	color_ui = rgb { 81, 255, 28 }
+}

@@ -1,0 +1,2 @@
+GBT = "countries/Great Bostroe.txt"
+HRT = "countries/Hertogdom 

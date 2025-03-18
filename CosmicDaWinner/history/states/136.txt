@@ -1,0 +1,38 @@
+
+state={
+	id=136
+	name="STATE_136"
+	manpower = 2010443
+	
+	state_category = pastoral
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		
+		
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 1
+			industrial_complex = 0
+			
+			2086 = {
+				naval_base = 1
+			}
+			
+		}
+		
+	}
+
+	provinces={
+		2082 2083 2084 2085 2086 2087 
+	}
+	local_supplies=0.0 
+}

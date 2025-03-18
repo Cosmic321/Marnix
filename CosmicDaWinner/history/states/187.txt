@@ -1,0 +1,38 @@
+
+state={
+	id=187
+	name="STATE_187"
+	manpower = 11741530
+	
+	state_category = metropolis
+	resources={
+		aluminium=3
+		chromium=3
+		oil=0
+		rubber=0
+		steel=3
+		tungsten=3
+	}
+
+	history={
+		
+		
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 1
+			industrial_complex = 3
+			
+			2790 = {
+				naval_base = 1
+			}
+			
+		}
+		
+	}
+
+	provinces={
+		2770 2771 2772 2773 2774 2775 2776 2777 2778 2779 2780 2781 2782 2783 2784 2785 2786 2787 2788 2789 2790 2791 2792 2793 2794 2795 2796 2797 2798 2799 2800 2801 2802 2803 2804 2805 2806 2807 2808 2809 2810 2811 2812 2813 2814 
+	}
+	local_supplies=0.0 
+}

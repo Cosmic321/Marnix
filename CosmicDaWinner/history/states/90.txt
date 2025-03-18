@@ -1,0 +1,38 @@
+
+state={
+	id=90
+	name="STATE_90"
+	manpower = 3073196
+	
+	state_category = pastoral
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=1
+	}
+
+	history={
+		
+		
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 1
+			industrial_complex = 0
+			
+			1372 = {
+				naval_base = 1
+			}
+			
+		}
+		
+	}
+
+	provinces={
+		1366 1367 1368 1369 1370 1371 1372 1373 1374 1375 
+	}
+	local_supplies=0.0 
+}

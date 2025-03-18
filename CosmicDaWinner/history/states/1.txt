@@ -1,0 +1,36 @@
+
+state={
+	id=1
+	name="STATE_1"
+	manpower = 4282214
+	
+	state_category = rural
+	resources={
+		aluminium=1
+		chromium=0
+		oil=1
+		rubber=0
+		steel=2
+		tungsten=0
+	}
+
+	history={
+		owner = GBT
+		add_core_of = GBT
+		
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 1
+			industrial_complex = 0
+			
+			
+		}
+		
+	}
+
+	provinces={
+		1 2 3 4 5 6 7 8 9 10 11 12 13 14 
+	}
+	local_supplies=0.0 
+}

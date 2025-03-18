@@ -1,0 +1,38 @@
+
+state={
+	id=390
+	name="STATE_390"
+	manpower = 7225646
+	
+	state_category = megalopolis
+	resources={
+		aluminium=1
+		chromium=0
+		oil=2
+		rubber=0
+		steel=2
+		tungsten=0
+	}
+
+	history={
+		
+		
+		buildings = {
+			infrastructure = 3
+			
+			arms_factory = 1
+			industrial_complex = 3
+			
+			6297 = {
+				naval_base = 1
+			}
+			
+		}
+		
+	}
+
+	provinces={
+		6284 6285 6286 6287 6288 6289 6290 6291 6292 6293 6294 6295 6296 6297 6298 6299 6300 6301 6302 6303 6304 6305 6306 6307 6308 6309 6310 
+	}
+	local_supplies=0.0 
+}

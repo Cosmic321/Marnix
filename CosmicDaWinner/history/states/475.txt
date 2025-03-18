@@ -1,0 +1,38 @@
+
+state={
+	id=475
+	name="STATE_475"
+	manpower = 5335992
+	
+	state_category = metropolis
+	resources={
+		aluminium=0
+		chromium=7
+		oil=2
+		rubber=1
+		steel=3
+		tungsten=0
+	}
+
+	history={
+		
+		
+		buildings = {
+			infrastructure = 3
+			
+			arms_factory = 0
+			industrial_complex = 2
+			dockyard = 1
+			8058 = {
+				naval_base = 1
+			}
+			
+		}
+		
+	}
+
+	provinces={
+		8040 8041 8042 8043 8044 8045 8046 8047 8048 8049 8050 8051 8052 8053 8054 8055 8056 8057 8058 8059 
+	}
+	local_supplies=0.0 
+}

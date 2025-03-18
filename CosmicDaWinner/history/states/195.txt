@@ -1,0 +1,35 @@
+
+state={
+	id=195
+	name="STATE_195"
+	manpower = 2457502
+	
+	state_category = rural
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		
+		
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 0
+			
+			
+		}
+		
+	}
+
+	provinces={
+		2953 2954 2955 2956 2957 2958 2959 2960 2961 
+	}
+	local_supplies=0.0 
+}

@@ -1,0 +1,35 @@
+
+state={
+	id=534
+	name="STATE_534"
+	manpower = 6390856
+	
+	state_category = metropolis
+	resources={
+		aluminium=1
+		chromium=0
+		oil=2
+		rubber=1
+		steel=4
+		tungsten=0
+	}
+
+	history={
+		
+		
+		buildings = {
+			infrastructure = 3
+			
+			arms_factory = 1
+			industrial_complex = 2
+			
+			
+		}
+		
+	}
+
+	provinces={
+		8962 8963 8964 8965 8966 8967 8968 8969 8970 8971 8972 8973 8974 8975 8976 8977 8978 8979 8980 8981 8982 8983 8984 8985 
+	}
+	local_supplies=0.0 
+}

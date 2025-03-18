@@ -1,0 +1,38 @@
+
+state={
+	id=139
+	name="STATE_139"
+	manpower = 5309261
+	
+	state_category = rural
+	resources={
+		aluminium=1
+		chromium=0
+		oil=2
+		rubber=0
+		steel=2
+		tungsten=0
+	}
+
+	history={
+		
+		
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			2126 = {
+				naval_base = 1
+			}
+			
+		}
+		
+	}
+
+	provinces={
+		2114 2115 2116 2117 2118 2119 2120 2121 2122 2123 2124 2125 2126 2127 2128 2129 2130 
+	}
+	local_supplies=0.0 
+}

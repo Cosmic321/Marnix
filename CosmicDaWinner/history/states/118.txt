@@ -1,0 +1,35 @@
+
+state={
+	id=118
+	name="STATE_118"
+	manpower = 1592316
+	
+	state_category = pastoral
+	resources={
+		aluminium=1
+		chromium=1
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		
+		
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 1
+			industrial_complex = 0
+			
+			
+		}
+		
+	}
+
+	provinces={
+		1873 1874 1875 1876 1877 
+	}
+	local_supplies=0.0 
+}

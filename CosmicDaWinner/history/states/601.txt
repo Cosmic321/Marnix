@@ -1,0 +1,35 @@
+
+state={
+	id=601
+	name="STATE_601"
+	manpower = 10578209
+	
+	state_category = megalopolis
+	resources={
+		aluminium=2
+		chromium=0
+		oil=1
+		rubber=7
+		steel=3
+		tungsten=2
+	}
+
+	history={
+		
+		
+		buildings = {
+			infrastructure = 4
+			
+			arms_factory = 3
+			industrial_complex = 4
+			
+			
+		}
+		
+	}
+
+	provinces={
+		10116 10117 10118 10119 10120 10121 10122 10123 10124 10125 10126 10127 10128 10129 10130 10131 10132 10133 10134 10135 10136 10137 10138 10139 10140 10141 10142 10143 10144 10145 10146 10147 10148 10149 10150 10151 10152 10153 10154 10155 
+	}
+	local_supplies=0.0 
+}

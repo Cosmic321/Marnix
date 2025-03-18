@@ -1,0 +1,38 @@
+
+state={
+	id=19
+	name="STATE_19"
+	manpower = 13675645
+	
+	state_category = city
+	resources={
+		aluminium=4
+		chromium=5
+		oil=2
+		rubber=0
+		steel=6
+		tungsten=2
+	}
+
+	history={
+		
+		
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 1
+			industrial_complex = 0
+			dockyard = 1
+			335 = {
+				naval_base = 1
+			}
+			
+		}
+		
+	}
+
+	provinces={
+		300 301 302 303 304 305 306 307 308 309 310 311 312 313 314 315 316 317 318 319 320 321 322 323 324 325 326 327 328 329 330 331 332 333 334 335 336 337 338 339 340 341 342 343 344 
+	}
+	local_supplies=0.0 
+}

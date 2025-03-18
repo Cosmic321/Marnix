@@ -1,0 +1,38 @@
+
+state={
+	id=166
+	name="STATE_166"
+	manpower = 6110491
+	
+	state_category = metropolis
+	resources={
+		aluminium=1
+		chromium=0
+		oil=1
+		rubber=3
+		steel=2
+		tungsten=2
+	}
+
+	history={
+		
+		
+		buildings = {
+			infrastructure = 3
+			
+			arms_factory = 0
+			industrial_complex = 2
+			dockyard = 2
+			2452 = {
+				naval_base = 1
+			}
+			
+		}
+		
+	}
+
+	provinces={
+		2430 2431 2432 2433 2434 2435 2436 2437 2438 2439 2440 2441 2442 2443 2444 2445 2446 2447 2448 2449 2450 2451 2452 
+	}
+	local_supplies=0.0 
+}

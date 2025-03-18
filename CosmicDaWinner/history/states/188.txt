@@ -1,0 +1,38 @@
+
+state={
+	id=188
+	name="STATE_188"
+	manpower = 11224691
+	
+	state_category = metropolis
+	resources={
+		aluminium=1
+		chromium=0
+		oil=3
+		rubber=1
+		steel=5
+		tungsten=2
+	}
+
+	history={
+		
+		
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 2
+			industrial_complex = 2
+			
+			2818 = {
+				naval_base = 1
+			}
+			
+		}
+		
+	}
+
+	provinces={
+		2815 2816 2817 2818 2819 2820 2821 2822 2823 2824 2825 2826 2827 2828 2829 2830 2831 2832 2833 2834 2835 2836 2837 2838 2839 2840 2841 2842 2843 2844 2845 2846 2847 2848 2849 2850 2851 2852 2853 2854 2855 2856 2857 
+	}
+	local_supplies=0.0 
+}

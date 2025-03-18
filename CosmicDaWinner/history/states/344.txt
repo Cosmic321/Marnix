@@ -1,0 +1,38 @@
+
+state={
+	id=344
+	name="STATE_344"
+	manpower = 832964
+	
+	state_category = pastoral
+	resources={
+		aluminium=0
+		chromium=0
+		oil=1
+		rubber=0
+		steel=0
+		tungsten=0
+	}
+
+	history={
+		
+		
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 0
+			
+			5409 = {
+				naval_base = 1
+			}
+			
+		}
+		
+	}
+
+	provinces={
+		5408 5409 5410 
+	}
+	local_supplies=0.0 
+}

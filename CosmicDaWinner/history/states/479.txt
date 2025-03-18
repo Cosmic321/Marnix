@@ -1,0 +1,35 @@
+
+state={
+	id=479
+	name="STATE_479"
+	manpower = 4951950
+	
+	state_category = town
+	resources={
+		aluminium=2
+		chromium=1
+		oil=2
+		rubber=0
+		steel=4
+		tungsten=2
+	}
+
+	history={
+		
+		
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 1
+			industrial_complex = 0
+			
+			
+		}
+		
+	}
+
+	provinces={
+		8098 8099 8100 8101 8102 8103 8104 8105 8106 8107 8108 8109 8110 8111 8112 8113 8114 8115 8116 8117 
+	}
+	local_supplies=0.0 
+}

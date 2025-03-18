@@ -1,0 +1,38 @@
+
+state={
+	id=197
+	name="STATE_197"
+	manpower = 12838679
+	
+	state_category = city
+	resources={
+		aluminium=3
+		chromium=1
+		oil=2
+		rubber=28
+		steel=8
+		tungsten=3
+	}
+
+	history={
+		
+		
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 2
+			
+			2991 = {
+				naval_base = 1
+			}
+			
+		}
+		
+	}
+
+	provinces={
+		2990 2991 2992 2993 2994 2995 2996 2997 2998 2999 3000 3001 3002 3003 3004 3005 3006 3007 3008 3009 3010 3011 3012 3013 3014 3015 3016 3017 3018 3019 3020 3021 3022 3023 3024 3025 3026 3027 3028 3029 3030 3031 3032 3033 3034 3035 3036 3037 3038 3039 3040 
+	}
+	local_supplies=0.0 
+}

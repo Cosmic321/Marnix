@@ -1,0 +1,35 @@
+
+state={
+	id=491
+	name="STATE_491"
+	manpower = 3673719
+	
+	state_category = large_town
+	resources={
+		aluminium=2
+		chromium=15
+		oil=0
+		rubber=0
+		steel=2
+		tungsten=0
+	}
+
+	history={
+		
+		
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			
+		}
+		
+	}
+
+	provinces={
+		8308 8309 8310 8311 8312 8313 8314 8315 8316 8317 8318 8319 8320 8321 
+	}
+	local_supplies=0.0 
+}

@@ -1,0 +1,38 @@
+
+state={
+	id=348
+	name="STATE_348"
+	manpower = 7659505
+	
+	state_category = megalopolis
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=4
+		steel=3
+		tungsten=1
+	}
+
+	history={
+		
+		
+		buildings = {
+			infrastructure = 3
+			
+			arms_factory = 2
+			industrial_complex = 3
+			
+			5448 = {
+				naval_base = 1
+			}
+			
+		}
+		
+	}
+
+	provinces={
+		5423 5424 5425 5426 5427 5428 5429 5430 5431 5432 5433 5434 5435 5436 5437 5438 5439 5440 5441 5442 5443 5444 5445 5446 5447 5448 5449 5450 5451 
+	}
+	local_supplies=0.0 
+}

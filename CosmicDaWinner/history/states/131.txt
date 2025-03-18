@@ -1,0 +1,38 @@
+
+state={
+	id=131
+	name="STATE_131"
+	manpower = 5300798
+	
+	state_category = rural
+	resources={
+		aluminium=1
+		chromium=5
+		oil=1
+		rubber=1
+		steel=1
+		tungsten=1
+	}
+
+	history={
+		
+		
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 1
+			industrial_complex = 0
+			
+			2047 = {
+				naval_base = 1
+			}
+			
+		}
+		
+	}
+
+	provinces={
+		2045 2046 2047 2048 2049 2050 2051 2052 2053 2054 2055 2056 2057 2058 2059 2060 2061 
+	}
+	local_supplies=0.0 
+}

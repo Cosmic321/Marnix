@@ -1,0 +1,38 @@
+
+state={
+	id=651
+	name="STATE_651"
+	manpower = 6926666
+	
+	state_category = large_town
+	resources={
+		aluminium=2
+		chromium=1
+		oil=0
+		rubber=0
+		steel=3
+		tungsten=1
+	}
+
+	history={
+		
+		
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 1
+			dockyard = 1
+			10790 = {
+				naval_base = 1
+			}
+			
+		}
+		
+	}
+
+	provinces={
+		10776 10777 10778 10779 10780 10781 10782 10783 10784 10785 10786 10787 10788 10789 10790 10791 10792 10793 10794 10795 10796 10797 10798 10799 10800 10801 
+	}
+	local_supplies=0.0 
+}
