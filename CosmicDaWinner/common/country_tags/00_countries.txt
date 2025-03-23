@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 GER = "countries/Germany.txt"
 ENG = "countries/United Kingdom.txt"
 SOV = "countries/Soviet Union.txt"
@@ -260,6 +261,8 @@ SMI = "countries/Sami.txt"
 GRN = "countries/Greenland.txt"
 
 =======
+=======
+>>>>>>> Stashed changes
 VGBT = "countries/Great Bostroe.txt"
 HRT = "countries/Hertogdom.txt"
 PDV = "countries/Vyratia.txt"
@@ -295,5 +298,8 @@ KSC = "countries/Kingdom of Southwark Central.txt"
 BSC = "countries/Bostroe Colony.txt"
 TCC = "countries/Talon Colony.txt"
 NRC = "countries/Narli Colony.txt"
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 #NOTE: Useful to add a basic default loc entry for each tag in 00_countries.txt so that hovering over a tag will show the tag's name in loc (ie. PAP: "Papal States")
