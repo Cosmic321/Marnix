@@ -5330,4 +5330,12 @@
  GBT_neutrality: "Kingdom of Bostroe"
  GBT_communism: "Bostroean Commune"
  GBT: "Bostroe"
+ 
+ ALT_fascism: "Rukh Kabal"
+ ALT_democratic: "The Maratia"
+ ALT_neutrality: "Alligned House of Bergdad"
+ ALT_communism: "Traders Unions"
+ ALT: "Kingdom Of Alt"
+ 
+ 
 
