@@ -1,7 +1,10 @@
 name="CosmicDaWinner"
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 path="mod/Marnix/CosmicDaWinner"
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -13,8 +16,11 @@ tags={
 picture="blank_map_template_5632x2048.jpg"
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 supported_version="1.16.1"
 
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -26,6 +32,7 @@ replace_path="history/units"
 replace_path="common/generation"
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 replace_path="common/achievements"
 replace_path="common/abilities"
 replace_path="common/continuous_focus"
@@ -34,6 +41,8 @@ replace_path="common/intelligence_agency_ugrades"
 replace_path="common/occupation_laws"
 replace_path="common/raids"
 replace_path="common/scores"
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -63,12 +72,18 @@ replace_path="common/bop"
 replace_path="common/dynamic_modifiers"
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 replace_path="common/country_tags"
 replace_path="common/country_tag_aliases"
 replace_path="common/decisions"
 replace_path="common/decisions/categories"
 replace_path="common/units"
 replace_path="common/units_medals"
+=======
+replace_path="common/country_tag_aliases"
+replace_path="common/decisions"
+replace_path="common/decisions/categories"
+>>>>>>> Stashed changes
 =======
 replace_path="common/country_tag_aliases"
 replace_path="common/decisions"
@@ -91,8 +106,11 @@ replace_path="common/military_industrial_organization/ai_bonus_weights"
 replace_path="common/military_industrial_organization/organizations"
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 replace_path="common/military_industrial_organization/policies"
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 replace_path="common/military_industrial_organization/policies"
@@ -111,6 +129,10 @@ replace_path="integrated_dlc/dlc018_together_for_victory/gfx/loadingscreens/"
 replace_path="gfx/loadingscreens/"
 supported_version="1.16.1"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+path="C:/Users/harry/OneDrive/Documents/Paradox Interactive/Hearts of Iron IV/mod/CosmicDaWinner"
+>>>>>>> Stashed changes
+=======
 path="C:/Users/harry/OneDrive/Documents/Paradox Interactive/Hearts of Iron IV/mod/CosmicDaWinner"
 >>>>>>> Stashed changes
 =======

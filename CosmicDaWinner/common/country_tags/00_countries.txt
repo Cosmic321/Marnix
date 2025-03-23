@@ -1,5 +1,6 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 GER = "countries/Germany.txt"
 ENG = "countries/United Kingdom.txt"
 SOV = "countries/Soviet Union.txt"
@@ -263,6 +264,8 @@ GRN = "countries/Greenland.txt"
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 VGBT = "countries/Great Bostroe.txt"
 HRT = "countries/Hertogdom.txt"
 PDV = "countries/Vyratia.txt"
@@ -299,6 +302,9 @@ BSC = "countries/Bostroe Colony.txt"
 TCC = "countries/Talon Colony.txt"
 NRC = "countries/Narli Colony.txt"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
