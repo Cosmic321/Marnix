@@ -15,7 +15,8 @@ state={
 	}
 
 	history={
-		
+		owner = VRK
+		add_core_of = VRK		
 		
 		buildings = {
 			infrastructure = 3
