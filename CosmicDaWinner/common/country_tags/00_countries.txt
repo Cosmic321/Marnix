@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ALT = "countries/Alt.txt"
 ARE = "countries/Arganese.txt"
 AZE = "countries/Arzule.txt"
@@ -41,6 +42,10 @@ HRT = "countries/Hertogdom"
 <<<<<<< HEAD
 >>>>>>> 6733986 (Removing mentions of Vanilla tags)
 =======
+=======
+GBT = "countries/Great Bostroe.txt"
+HRT = "countries/Hertogdom"
+>>>>>>> c18a4625422197a0ac85e166e08155b3cd996000
 PDV = "countries/Vyratia.txt"
 MOR = "countries/Mortia.txt"
 SMH = "countries/Somarhem.txt"
@@ -77,5 +82,8 @@ BSC = "countries/Bostroe colony.txt"
 TCC = "countries/Talon colony.txt"
 NRC = "countries/Narli colony.txt"
 DOC = "countries/Leutia colony.txt"
+<<<<<<< HEAD
 >>>>>>> e35bcc5 (Updated country tags)
+=======
+>>>>>>> c18a4625422197a0ac85e166e08155b3cd996000
 #NOTE: Useful to add a basic default loc entry for each tag in 00_countries.txt so that hovering over a tag will show the tag's name in loc (ie. PAP: "Papal States")
