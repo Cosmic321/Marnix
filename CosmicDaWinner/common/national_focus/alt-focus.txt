@@ -1,0 +1,1092 @@
+focus_tree = {
+	id = alt-focus
+	continuous_focus_position = { x = -150 y = 1050 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ALT
+		}
+	}
+	#Naval doctrine
+	focus = {
+		id = ALT_naval_doctrine
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 18
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_a_light_ship_navy  focus = ALT_a_heavy_ship_navy  }
+	}
+
+	#Spoils of war
+	focus = {
+		id = ALT_spoils_of_war
+		icon = GFX_goal_generic_navy_carrier
+		x = 20
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_marine_training_centers  }
+	}
+
+	#The Marata influences politics
+	focus = {
+		id = ALT_the_marata_influences_politics
+		icon = GFX_focus_jap_manchurian_project
+		x = 12
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_the_marata_opens_their_doors  }
+	}
+
+	#A kingdom of farmers
+	focus = {
+		id = ALT_a_kingdom_of_farmers
+		icon = GFX_ALT_a_kingdom_of_farmers-262088
+		x = 15
+		y = 14
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_reopen_our_trade_lanes  } prerequisite = { focus = ALT_the_king_finally_negotiates  }
+		mutually_exclusive = { focus = ALT_a_democratic_kingdom  }
+	}
+
+	#Allocate budget
+	focus = {
+		id = ALT_allocate_budget
+		icon = GFX_focus_TUR_ratify_the_six_arrows
+		x = 23
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_gather_support  }
+	}
+
+	#Underfunded army
+	focus = {
+		id = ALT_underfunded_army
+		icon = GFX_ALT_underfunded_army-262024
+		x = 24
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+	}
+
+	#Pass budget reforms
+	focus = {
+		id = ALT_pass_budget_reforms
+		icon = GFX_goal_generic_national_unity
+		x = 24
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_allocate_budget  } prerequisite = { focus = ALT_make_guns_for_our_troops  }
+	}
+
+	#Crop failures
+	focus = {
+		id = ALT_crop_failures
+		icon = GFX_focus_hol_prepare_the_inundation_lines
+		x = 11
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_a_strange_famine  }
+	}
+
+	#A strange famine
+	focus = {
+		id = ALT_a_strange_famine
+		icon = GFX_focus_generic_military_academy
+		x = 11
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#The Hungry and the rich
+	focus = {
+		id = ALT_the_hungry_and_the_rich
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 13
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_breaking_point  }
+	}
+
+	#Feed the Poor
+	focus = {
+		id = ALT_feed_the_poor
+		icon = GFX_focus_mex_soldaderas
+		x = 7
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_buy_back_our_own_food_exports  }
+		mutually_exclusive = { focus = ALT_try_and_feed_all  }
+	}
+
+	#Feed the rich
+	focus = {
+		id = ALT_feed_the_rich
+		icon = GFX_focus_spa_save_the_alcazar
+		x = 14
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_the_hungry_and_the_rich  }
+		mutually_exclusive = { focus = ALT_try_and_feed_all  }
+	}
+
+	#Try and feed all
+	focus = {
+		id = ALT_try_and_feed_all
+		icon = GFX_focus_spr_class_war
+		x = 11
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_the_hungry_and_the_rich  } prerequisite = { focus = ALT_buy_back_our_own_food_exports  }
+	}
+
+	#Close off exports of food
+	focus = {
+		id = ALT_close_off_exports_of_food
+		icon = GFX_goal_generic_attack_allies
+		x = 10
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_breakdown_of_supply_chains  }
+	}
+
+	#Famine Investigation Initiative
+	focus = {
+		id = ALT_famine_investigation_initiative
+		icon = GFX_focus_focus_fra_liberte_egalite_solidarite
+		x = 10
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_crop_failures  }
+	}
+
+	#Invest in next years crops instead
+	focus = {
+		id = ALT_invest_in_next_years_crops_instead
+		icon = GFX_focus_jap_cast_the_die
+		x = 12
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_crop_failures  }
+		mutually_exclusive = { focus = ALT_famine_investigation_initiative  }
+	}
+
+	#Buy back our own food exports
+	focus = {
+		id = ALT_buy_back_our_own_food_exports
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 10
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_breaking_point  }
+	}
+
+	#The welfare act
+	focus = {
+		id = ALT_the_welfare_act
+		icon = GFX_focus_generic_self_management
+		x = 7
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_feed_the_poor  }
+	}
+
+	#In the name of the King
+	focus = {
+		id = ALT_in_the_name_of_the_king
+		icon = GFX_focus_generic_monarchy_1
+		x = 15
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_feed_the_rich  }
+	}
+
+	#Unionist step in
+	focus = {
+		id = ALT_unionist_step_in
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = 16
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_in_the_name_of_the_king  }
+	}
+
+	#The Farmers march
+	focus = {
+		id = ALT_the_farmers_march
+		icon = GFX_ALT_the_farmers_march-262072
+		x = 14
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_in_the_name_of_the_king  }
+	}
+
+	#Union organised marches
+	focus = {
+		id = ALT_union_organised_marches
+		icon = GFX_focus_generic_support_the_left_right
+		x = 15
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_the_farmers_march  } prerequisite = { focus = ALT_unionist_step_in  }
+	}
+
+	#Unions storm the capital
+	focus = {
+		id = ALT_unions_storm_the_capital
+		icon = GFX_ALT_unions_storm_the_capital-262118
+		x = 16
+		y = 10
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_union_organised_marches  }
+		mutually_exclusive = { focus = ALT_the_king_finally_negotiates  }
+	}
+
+	#The King finally negotiates.
+	focus = {
+		id = ALT_the_king_finally_negotiates
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 14
+		y = 10
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_union_organised_marches  }
+	}
+
+	#Imprison the king
+	focus = {
+		id = ALT_imprison_the_king
+		icon = GFX_focus_rom_handle_king
+		x = 15
+		y = 12
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_the_king_finally_negotiates  focus = ALT_unions_storm_the_capital  }
+	}
+
+	#No King for a Union
+	focus = {
+		id = ALT_no_king_for_a_union
+		icon = GFX_focus_rom_abdicate
+		x = 18
+		y = 12
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_unions_storm_the_capital  }
+	}
+
+	#Form a Union army
+	focus = {
+		id = ALT_form_a_union_army
+		icon = GFX_focus_generic_support_the_left_right
+		x = 18
+		y = 13
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_no_king_for_a_union  }
+	}
+
+	#Reopen our trade lanes
+	focus = {
+		id = ALT_reopen_our_trade_lanes
+		icon = GFX_focus_generic_treaty
+		x = 16
+		y = 13
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_imprison_the_king  }
+	}
+
+	#New farmlands on the horizon
+	focus = {
+		id = ALT_new_farmlands_on_the_horizon
+		icon = GFX_focus_mex_jefe_maximo
+		x = 17
+		y = 14
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_reopen_our_trade_lanes  focus = ALT_form_a_union_army  }
+	}
+
+	#Punish the privateers
+	focus = {
+		id = ALT_punish_the_privateers
+		icon = GFX_focus_hol_war_on_pacifism
+		x = 19
+		y = 14
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_form_a_union_army  }
+	}
+
+	#The Farmers Paradise
+	focus = {
+		id = ALT_the_farmers_paradise
+		icon = GFX_focus_por_workers_of_iberia
+		x = 18
+		y = 15
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_new_farmlands_on_the_horizon  } prerequisite = { focus = ALT_punish_the_privateers  }
+	}
+
+	#Breakdown of Supply chains
+	focus = {
+		id = ALT_breakdown_of_supply_chains
+		icon = GFX_focus_hol_abandon_the_gold_standard
+		x = 11
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_try_and_feed_all  }
+	}
+
+	#The King's Reserves
+	focus = {
+		id = ALT_thekingsreserves
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		x = 12
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_breakdown_of_supply_chains  }
+	}
+
+	#The Marata opens their doors
+	focus = {
+		id = ALT_the_marata_opens_their_doors
+		icon = GFX_focus_up_joan_of_arc
+		x = 11
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_thekingsreserves  } prerequisite = { focus = ALT_close_off_exports_of_food  }
+	}
+
+	#The King's Party
+	focus = {
+		id = ALT_thekingsparty
+		icon = GFX_goal_generic_improve_relations
+		x = 10
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_the_marata_opens_their_doors  }
+	}
+
+	#Cooperation with the crown
+	focus = {
+		id = ALT_cooperation_with_the_crown
+		icon = GFX_goal_generic_scientific_exchange
+		x = 11
+		y = 10
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_thekingsparty  } prerequisite = { focus = ALT_the_marata_influences_politics  }
+	}
+
+	#A democratic Kingdom
+	focus = {
+		id = ALT_a_democratic_kingdom
+		icon = GFX_focus_generic_monarchy_2
+		x = 11
+		y = 14
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_increase_tarrifs  } prerequisite = { focus = ALT_land_distributions  focus = ALT_ask_the_help_of_the_marata  }
+	}
+
+	#Increase tarrifs
+	focus = {
+		id = ALT_increase_tarrifs
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 12
+		y = 11
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_cooperation_with_the_crown  }
+	}
+
+	#Land distributions.
+	focus = {
+		id = ALT_land_distributions
+		icon = GFX_focus_usa_guarantee_the_american_dream
+		x = 10
+		y = 11
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_cooperation_with_the_crown  }
+	}
+
+	#Breaking Point
+	focus = {
+		id = ALT_breaking_point
+		icon = GFX_goal_generic_CAS
+		x = 11
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_famine_investigation_initiative  focus = ALT_invest_in_next_years_crops_instead  }
+	}
+
+	#Ask the help of the Marata
+	focus = {
+		id = ALT_ask_the_help_of_the_marata
+		icon = GFX_focus_por_concordat
+		x = 13
+		y = 13
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_imprison_the_king  }
+	}
+
+	#Backlash of the Nobility
+	focus = {
+		id = ALT_backlash_of_the_nobility
+		icon = GFX_focus_rom_parties_end
+		x = 8
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_the_welfare_act  }
+	}
+
+	#Arming of local militia groups.
+	focus = {
+		id = ALT_arming_of_local_militia_groups
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 6
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_the_welfare_act  }
+	}
+
+	#Storming the harbour warehouses.
+	focus = {
+		id = ALT_storming_the_harbour_warehouses
+		icon = GFX_focus_eng_expose_the_belly_of_the_bear
+		x = 7
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_arming_of_local_militia_groups  } prerequisite = { focus = ALT_backlash_of_the_nobility  }
+	}
+
+	#The hunger strike
+	focus = {
+		id = ALT_the_hunger_strike
+		icon = GFX_focus_focus_fra_maquis
+		x = 6
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_storming_the_harbour_warehouses  }
+	}
+
+	#The nobilities candidate
+	focus = {
+		id = ALT_the_nobilities_candidate
+		icon = GFX_focus_BUL_form_a_regency_council
+		x = 8
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_storming_the_harbour_warehouses  }
+	}
+
+	#The mysterious advisors appear
+	focus = {
+		id = ALT_the_mysterious_advisors_appear
+		icon = GFX_focus_ger_return_of_the_kaiser
+		x = 7
+		y = 10
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_the_hunger_strike  } prerequisite = { focus = ALT_the_nobilities_candidate  }
+	}
+
+	#The King Abdicates
+	focus = {
+		id = ALT_the_king_abdicates
+		icon = GFX_ALT_the_king_abdicates-59
+		x = 7
+		y = 11
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_the_mysterious_advisors_appear  }
+	}
+
+	#Long live the King
+	focus = {
+		id = ALT_long_live_the_king
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 7
+		y = 13
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_the_king_abdicates  }
+	}
+
+	#Maritime Industry
+	focus = {
+		id = ALT_maritime_industry
+		icon = GFX_ALT_maritime_industry-262058
+		x = 18
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Marine training centers
+	focus = {
+		id = ALT_marine_training_centers
+		icon = GFX_goal_generic_amphibious_assault
+		x = 20
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_naval_commander_school  }
+	}
+
+	#Expand the harbours
+	focus = {
+		id = ALT_expand_the_harbours
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 17
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_maritime_industry  }
+	}
+
+	#Cutting edge ships
+	focus = {
+		id = ALT_cutting_edge_ships
+		icon = GFX_focus_generic_navy_battleship2
+		x = 16
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_under_the_sea  }
+	}
+
+	#Improved spotting
+	focus = {
+		id = ALT_improved_spotting
+		icon = GFX_goal_generic_radar
+		x = 18
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_expand_the_harbours  } prerequisite = { focus = ALT_naval_commander_school  }
+	}
+
+	#Naval Commander School
+	focus = {
+		id = ALT_naval_commander_school
+		icon = GFX_ALT_naval_commander_school-262024
+		x = 19
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_maritime_industry  }
+	}
+
+	#Under the sea
+	focus = {
+		id = ALT_under_the_sea
+		icon = GFX_goal_generic_navy_submarine
+		x = 16
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_expand_the_harbours  }
+	}
+
+	#Speed and manouvre tactics.
+	focus = {
+		id = ALT_speed_and_manouvre_tactics
+		icon = GFX_goal_generic_navy_cruiser
+		x = 18
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_improved_spotting  }
+	}
+
+	#A heavy ship navy
+	focus = {
+		id = ALT_a_heavy_ship_navy
+		icon = GFX_ALT_a_heavy_ship_navy-404
+		x = 17
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_cutting_edge_ships  } prerequisite = { focus = ALT_speed_and_manouvre_tactics  }
+		mutually_exclusive = { focus = ALT_a_light_ship_navy  }
+	}
+
+	#A light ship navy
+	focus = {
+		id = ALT_a_light_ship_navy
+		icon = GFX_focus_generic_destroyer
+		x = 19
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_speed_and_manouvre_tactics  } prerequisite = { focus = ALT_spoils_of_war  }
+	}
+
+	#Battleship effort
+	focus = {
+		id = ALT_battleship_effort
+		icon = GFX_focus_generic_navy_battleship2
+		x = 16
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_a_heavy_ship_navy  }
+	}
+
+	#Cruiser development
+	focus = {
+		id = ALT_cruiser_development
+		icon = GFX_focus_generic_cruiser2
+		x = 20
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_a_light_ship_navy  }
+	}
+
+	#Terraform the plantations.
+	focus = {
+		id = ALT_terraform_the_plantations
+		icon = GFX_focus_generic_rubber
+		x = 2
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ALT_dig_into_old_fossils  }
+	}
+
+	#Agricultural Industry
+	focus = {
+		id = ALT_agricultural_industry
+		icon = GFX_focus_generic_industry_3
+		x = 4
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ALT_export_focus_industry  }
+	}
+
+	#Export focus Industry
+	focus = {
+		id = ALT_export_focus_industry
+		icon = GFX_goal_generic_trade
+		x = 4
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+
+	#Expand the fields
+	focus = {
+		id = ALT_expand_the_fields
+		icon = GFX_focus_hol_gateway_to_europe
+		x = 4
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ALT_agricultural_industry  }
+	}
+
+	#Diversify crops
+	focus = {
+		id = ALT_diversify_crops
+		icon = GFX_focus_BUL_destroy_the_zveno
+		x = 4
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ALT_expand_the_fields  }
+	}
+
+	#Delving for recources
+	focus = {
+		id = ALT_delving_for_recources
+		icon = GFX_focus_generic_steel
+		x = 2
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ALT_export_focus_industry  }
+	}
+
+	#Dig into old fossils
+	focus = {
+		id = ALT_dig_into_old_fossils
+		icon = GFX_goal_generic_oil_refinery
+		x = 2
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALT_delving_for_recources  }
+	}
+
+	#Inwards industries.
+	focus = {
+		id = ALT_inwards_industries
+		icon = GFX_focus_generic_industry_2
+		x = 6
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ALT_export_focus_industry  }
+	}
+
+	#Expand our farming tools
+	focus = {
+		id = ALT_expand_our_farming_tools
+		icon = GFX_goal_generic_air_production
+		x = 6
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ALT_inwards_industries  }
+	}
+
+	#Argrarian scociety
+	focus = {
+		id = ALT_argrarian_scociety
+		icon = GFX_ALT_argrarian_scociety-262088
+		x = 4
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ALT_terraform_the_plantations  } prerequisite = { focus = ALT_diversify_crops  } prerequisite = { focus = ALT_expand_our_workforce  }
+	}
+
+	#Expand our workforce.
+	focus = {
+		id = ALT_expand_our_workforce
+		icon = GFX_goal_generic_demand_territory
+		x = 6
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = ALT_expand_our_farming_tools  }
+	}
+
+	#Collect donations for militairy expansion
+	focus = {
+		id = ALT_collect_donations_for_militairy_expansion
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 23
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = ALT_underfunded_army  }
+	}
+
+	#Gather support.
+	focus = {
+		id = ALT_gather_support
+		icon = GFX_ALT_gather_support-270
+		x = 23
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = ALT_collect_donations_for_militairy_expansion  }
+	}
+
+	#Set up more training centers.
+	focus = {
+		id = ALT_set_up_more_training_centers
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 25
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ALT_open_volunteer_centers  }
+	}
+
+	#Open Volunteer centers.
+	focus = {
+		id = ALT_open_volunteer_centers
+		icon = GFX_focus_spa_the_phalanx_ascendant
+		x = 25
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = ALT_underfunded_army  }
+	}
+
+	#Make guns for our troops.
+	focus = {
+		id = ALT_make_guns_for_our_troops
+		icon = GFX_focus_generic_africa_factory
+		x = 25
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ALT_set_up_more_training_centers  }
+	}
+
+	#Forced conscription
+	focus = {
+		id = ALT_forced_conscription
+		icon = GFX_goal_tfv_can_forced_quebec_conscription
+		x = 25
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = ALT_pass_budget_reforms  }
+	}
+
+	#A specialised army
+	focus = {
+		id = ALT_a_specialised_army
+		icon = GFX_focus_eng_special_air_service
+		x = 23
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = ALT_pass_budget_reforms  }
+		mutually_exclusive = { focus = ALT_forced_conscription  }
+	}
+
+	#Kickstart our Airforce
+	focus = {
+		id = ALT_kickstart_our_airforce
+		icon = GFX_goal_generic_air_doctrine
+		x = 21
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+
+	#Invest in naval bombers
+	focus = {
+		id = ALT_invest_in_naval_bombers
+		icon = GFX_goal_generic_air_naval_bomber
+		x = 20
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = ALT_kickstart_our_airforce  }
+	}
+
+	#Escort Fighters
+	focus = {
+		id = ALT_escort_fighters
+		icon = GFX_goal_generic_air_fighter
+		x = 22
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = ALT_kickstart_our_airforce  }
+	}
+
+	#Carrier planes
+	focus = {
+		id = ALT_carrier_planes
+		icon = GFX_goal_generic_navy_carrier
+		x = 21
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = ALT_escort_fighters  } prerequisite = { focus = ALT_invest_in_naval_bombers  }
+	}
+
+}

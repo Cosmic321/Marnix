@@ -1,0 +1,82 @@
+focus_tree = {
+	id = Cornish_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = COD
+			}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1500 }
+
+	focus = {
+		id = COD_open_market
+		icon = GFX_focus_COD_cornwall_holidays.dds
+		x = 8
+		y = 0
+
+		cost 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { POLITICAL }
+
+		completion_reward = {
+			ideas = {
+				open_economy_ideas = {
+					econmoic_policy = COD_open_market
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = COD_Governmental_Reorganisation
+		icon = GFX_focus_attack_canada
+		prerequisite = { focus = COD_open_market }
+		x = 8
+		y = 1
+		relative_position_id = { focus = COD_open_market }
+
+		cost 10
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { POLITICAL }
+
+		completion_reward = {
+			ideas = {
+				open_economy_ideas = {
+					econmoic_policy = COD_open_market
+				}
+			}
+		}
+	}
+}

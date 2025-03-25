@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
 ALT = "countries/Alt.txt"
 ARE = "countries/Arganese.txt"
 AZE = "countries/Arzule.txt"
@@ -34,4 +36,54 @@ VRE = "countries/Vrettia.txt"
 VRK = "countries/Vrice.txt"
 ZVD = "countries/Zhong.txt"
 
+=======
+GBT = "countries/Great Bostroe.txt"
+HRT = "countries/Hertogdom"
+<<<<<<< HEAD
+>>>>>>> 6733986 (Removing mentions of Vanilla tags)
+=======
+=======
+GBT = "countries/Great Bostroe.txt"
+HRT = "countries/Hertogdom"
+>>>>>>> c18a4625422197a0ac85e166e08155b3cd996000
+PDV = "countries/Vyratia.txt"
+MOR = "countries/Mortia.txt"
+SMH = "countries/Somarhem.txt"
+MAH = "countries/Midarhogg.txt"
+VAK = "countries/Vakare.txt"
+VRK = "countries/Vrice.txt"
+ALT = "countries/Alt.txt"
+KER = "countries/Kerolis.txt"
+VRE = "countries/Vrettia.txt"
+ARE = "countries/Arganese.txt"
+VRE = "countries/Vrettia.txt"
+DPJ = "countries/Desprian Junta.txt"
+DES = "countries/Despria.txt"
+RIT = "countries/Itsany.txt"
+DOL = "countries/Duchy of Leutia"
+TCU = "countries/Talo.txt"
+FSO = "countries/Suottomas.txt"
+RBD = "countries/Renderbosh.txt"
+AZE = "countries/Arzule.txt"
+BER = "countries/Berka.txt"
+BAZ = "countries/Bala Zand.txt"
+NAS = "countries/Narli.txt"
+OZH = "countries/Hertog Occupation Zone.txt"
+OZS = "countries/Suottomas Occupation Zone.txt"
+OZB = "countries/Berka Occupation Zone.txt"
+OZR = "countries/Rendeboesh Occupation Zone.txt"
+COD = "countries/Cornish Duchy"
+GEB = "countries/Bolstroe.txt"
+BIP = "countries/Bibpop.txt"
+ZVD = "countries/Zhong.txt"
+SNJ = "countries/Snustxt"
+KSC = "countries/Kingdom of Southwark Central"
+BSC = "countries/Bostroe colony.txt"
+TCC = "countries/Talon colony.txt"
+NRC = "countries/Narli colony.txt"
+DOC = "countries/Leutia colony.txt"
+<<<<<<< HEAD
+>>>>>>> e35bcc5 (Updated country tags)
+=======
+>>>>>>> c18a4625422197a0ac85e166e08155b3cd996000
 #NOTE: Useful to add a basic default loc entry for each tag in 00_countries.txt so that hovering over a tag will show the tag's name in loc (ie. PAP: "Papal States")
