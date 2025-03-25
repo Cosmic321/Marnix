@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ALT = "countries/Alt.txt"
 ARE = "countries/Arganese.txt"
 AZE = "countries/Arzule.txt"
@@ -34,4 +35,8 @@ VRE = "countries/Vrettia.txt"
 VRK = "countries/Vrice.txt"
 ZVD = "countries/Zhong.txt"
 
+=======
+GBT = "countries/Great Bostroe.txt"
+HRT = "countries/Hertogdom"
+>>>>>>> 6733986 (Removing mentions of Vanilla tags)
 #NOTE: Useful to add a basic default loc entry for each tag in 00_countries.txt so that hovering over a tag will show the tag's name in loc (ie. PAP: "Papal States")
