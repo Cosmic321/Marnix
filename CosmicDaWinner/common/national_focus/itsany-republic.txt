@@ -1,0 +1,867 @@
+focus_tree = {
+	id = itsany-republic
+	continuous_focus_position = { x = -40 y = 1050 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = RIT
+		}
+	}
+	#Challenge inflation
+	focus = {
+		id = RIT_challenge_inflation
+		icon = GFX_focus_generic_self_management
+		x = 5
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RIT_remint_our_currency  }
+	}
+
+	#Get republican support
+	focus = {
+		id = RIT_get_republican_support
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		x = 7
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RIT_remint_our_currency  }
+	}
+
+	#Re-mint our currency
+	focus = {
+		id = RIT_remint_our_currency
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 6
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RIT_the_economists  } prerequisite = { focus = RIT_form_a_coalition  }
+	}
+
+	#Build our civilian industry
+	focus = {
+		id = RIT_build_our_civilian_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 3
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = RIT_improve_our_industrial_tools  }
+	}
+
+	#The second election
+	focus = {
+		id = RIT_the_second_election
+		icon = GFX_RIT_the_second_election-427
+		x = 9
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#The Economists
+	focus = {
+		id = RIT_the_economists
+		icon = GFX_RIT_the_economists-262123
+		x = 8
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RIT_the_second_election  }
+		mutually_exclusive = { focus = RIT_the_loyalists  }
+	}
+
+	#The Loyalists
+	focus = {
+		id = RIT_the_loyalists
+		icon = GFX_focus_generic_home_defense
+		x = 10
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RIT_the_second_election  }
+	}
+
+	#Form a coalition
+	focus = {
+		id = RIT_form_a_coalition
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 9
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RIT_the_economists  focus = RIT_the_loyalists  }
+	}
+
+	#Stabilize the economy
+	focus = {
+		id = RIT_stabilize_the_economy
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		x = 5
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RIT_challenge_inflation  }
+	}
+
+	#Root out corruption
+	focus = {
+		id = RIT_root_out_corruption
+		icon = GFX_focus_mex_triumph_over_the_cristeros
+		x = 7
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RIT_get_republican_support  }
+	}
+
+	#The new Itsany economy
+	focus = {
+		id = RIT_the_new_itsany_economy
+		icon = GFX_focus_mex_privatisation
+		x = 6
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RIT_stabilize_the_economy  } prerequisite = { focus = RIT_root_out_corruption  }
+	}
+
+	#Presidential visits
+	focus = {
+		id = RIT_presidential_visits
+		icon = GFX_focus_generic_military_academy
+		x = 9
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RIT_form_a_coalition  }
+	}
+
+	#Reafirm our sovereignty
+	focus = {
+		id = RIT_reafirm_our_sovereignty
+		icon = GFX_focus_generic_self_management
+		x = 9
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RIT_presidential_visits  }
+	}
+
+	#A nation of volunteers
+	focus = {
+		id = RIT_a_nation_of_volunteers
+		icon = GFX_RIT_a_nation_of_volunteers-88
+		x = 9
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RIT_reafirm_our_sovereignty  }
+	}
+
+	#Nation on standby
+	focus = {
+		id = RIT_nation_on_standby
+		icon = GFX_focus_generic_manpower
+		x = 9
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RIT_a_nation_of_volunteers  }
+	}
+
+	#For the Republic
+	focus = {
+		id = RIT_for_the_republic
+		icon = GFX_RIT_for_the_republic-262009
+		x = 9
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RIT_nation_on_standby  } prerequisite = { focus = RIT_the_new_itsany_economy  focus = RIT_nation_on_standby  } prerequisite = { focus = RIT_spread_the_glorious_revolution  }
+	}
+
+	#A parade for our people
+	focus = {
+		id = RIT_a_parade_for_our_people
+		icon = GFX_focus_generic_little_entente
+		x = 12
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RIT_the_loyalists  } prerequisite = { focus = RIT_form_a_coalition  }
+	}
+
+	#Honour our hero's
+	focus = {
+		id = RIT_honourourheros
+		icon = GFX_focus_spa_save_the_alcazar
+		x = 11
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RIT_a_parade_for_our_people  }
+	}
+
+	#Ask for militairy support
+	focus = {
+		id = RIT_ask_for_militairy_support
+		icon = GFX_focus_prc_infiltration
+		x = 13
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RIT_a_parade_for_our_people  }
+	}
+
+	#Increase Militairy spending
+	focus = {
+		id = RIT_increase_militairy_spending
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 13
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RIT_ask_for_militairy_support  }
+	}
+
+	#Death and Glory
+	focus = {
+		id = RIT_death_and_glory
+		icon = GFX_focus_eng_expose_the_belly_of_the_bear
+		x = 11
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RIT_honourourheros  }
+	}
+
+	#Spread the glorious revolution
+	focus = {
+		id = RIT_spread_the_glorious_revolution
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = 12
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = RIT_increase_militairy_spending  } prerequisite = { focus = RIT_death_and_glory  }
+	}
+
+	#From militia to militairy
+	focus = {
+		id = RIT_from_militia_to_militairy
+		icon = GFX_focus_generic_manpower
+		x = 16
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Infantry equipment
+	focus = {
+		id = RIT_infantry_equipment
+		icon = GFX_focus_por_portuguese_legion
+		x = 15
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = RIT_from_militia_to_militairy  }
+	}
+
+	#Invest into tanks
+	focus = {
+		id = RIT_invest_into_tanks
+		icon = GFX_focus_generic_tank_production
+		x = 15
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = RIT_infantry_equipment  }
+	}
+
+	#Our artilery
+	focus = {
+		id = RIT_our_artilery
+		icon = GFX_goal_generic_army_artillery2
+		x = 19
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = RIT_from_militia_to_militairy  }
+	}
+
+	#Increase our Militairy output
+	focus = {
+		id = RIT_increase_our_militairy_output
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 21
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = RIT_mechanization  } prerequisite = { focus = RIT_maximise_our_output  }
+	}
+
+	#Mechanization
+	focus = {
+		id = RIT_mechanization
+		icon = GFX_goal_generic_army_motorized
+		x = 19
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = RIT_our_artilery  }
+	}
+
+	#Kickstart our militairy Industry
+	focus = {
+		id = RIT_kickstart_our_militairy_industry
+		icon = GFX_focus_generic_industry_2
+		x = 22
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+
+	#Militairy spending
+	focus = {
+		id = RIT_militairy_spending
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 21
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = RIT_kickstart_our_militairy_industry  }
+	}
+
+	#Maximise our output
+	focus = {
+		id = RIT_maximise_our_output
+		icon = GFX_RIT_maximise_our_output-262103
+		x = 21
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = RIT_militairy_spending  }
+	}
+
+	#Mobilised warfare
+	focus = {
+		id = RIT_mobilised_warfare
+		icon = GFX_focus_NZL_bob_semple_tank
+		x = 17
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = RIT_invest_into_tanks  } prerequisite = { focus = RIT_invest_into_doctrine  } prerequisite = { focus = RIT_mechanization  }
+	}
+
+	#Kickstart the airforce
+	focus = {
+		id = RIT_kickstart_the_airforce
+		icon = GFX_goal_generic_air_fighter2
+		x = 13
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = RIT_from_militia_to_militairy  }
+	}
+
+	#Close air support
+	focus = {
+		id = RIT_close_air_support
+		icon = GFX_goal_generic_CAS
+		x = 13
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = RIT_kickstart_the_airforce  }
+	}
+
+	#License Production from our allies
+	focus = {
+		id = RIT_license_production_from_our_allies
+		icon = GFX_RIT_license_production_from_our_allies-262080
+		x = 14
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = RIT_close_air_support  } prerequisite = { focus = RIT_invest_into_tanks  }
+	}
+
+	#Lessons of our war
+	focus = {
+		id = RIT_lessons_of_our_war
+		icon = GFX_focus_chi_army_reform
+		x = 17
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = RIT_from_militia_to_militairy  }
+	}
+
+	#Invest into doctrine
+	focus = {
+		id = RIT_invest_into_doctrine
+		icon = GFX_goal_generic_army_doctrines
+		x = 17
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = RIT_lessons_of_our_war  }
+	}
+
+	#The SUPER tank
+	focus = {
+		id = RIT_the_super_tank
+		icon = GFX_goal_generic_army_tanks
+		x = 17
+		y = 4
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = RIT_mobilised_warfare  }
+	}
+
+	#Naval spending
+	focus = {
+		id = RIT_naval_spending
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 23
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = RIT_kickstart_our_militairy_industry  }
+	}
+
+	#Expand our naval yards
+	focus = {
+		id = RIT_expand_our_naval_yards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 23
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = RIT_naval_spending  }
+		mutually_exclusive = { focus = RIT_maximise_our_output  }
+	}
+
+	#Expand our refit yards
+	focus = {
+		id = RIT_expand_our_refit_yards
+		icon = GFX_goal_generic_navy_cruiser
+		x = 23
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = RIT_expand_our_naval_yards  }
+	}
+
+	#Industrial research
+	focus = {
+		id = RIT_industrial_research
+		icon = GFX_focus_generic_industry_1
+		x = 22
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = RIT_expand_our_refit_yards  focus = RIT_increase_our_militairy_output  }
+	}
+
+	#Research breaktrough
+	focus = {
+		id = RIT_research_breaktrough
+		icon = GFX_focus_research
+		x = 22
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = RIT_industrial_research  }
+	}
+
+	#Coast gaurd expansion
+	focus = {
+		id = RIT_coast_gaurd_expansion
+		icon = GFX_RIT_coast_gaurd_expansion-262024
+		x = 26
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+	}
+
+	#Research Destroyer ships
+	focus = {
+		id = RIT_research_destroyer_ships
+		icon = GFX_focus_generic_destroyer
+		x = 27
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = RIT_a_coastal_navy  }
+	}
+
+	#A coastal navy
+	focus = {
+		id = RIT_a_coastal_navy
+		icon = GFX_RIT_a_coastal_navy-404
+		x = 27
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = RIT_coast_gaurd_expansion  }
+		mutually_exclusive = { focus = RIT_expand_into_a_large_navy  }
+	}
+
+	#Expand into a large navy
+	focus = {
+		id = RIT_expand_into_a_large_navy
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 25
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = RIT_coast_gaurd_expansion  }
+	}
+
+	#The mighty battleship
+	focus = {
+		id = RIT_the_mighty_battleship
+		icon = GFX_focus_generic_navy_battleship2
+		x = 25
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = RIT_expand_into_a_large_navy  }
+	}
+
+	#Raid the shipping lanes
+	focus = {
+		id = RIT_raid_the_shipping_lanes
+		icon = GFX_goal_generic_navy_anti_submarine
+		x = 29
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = RIT_a_coastal_navy  }
+	}
+
+	#Expert submarines
+	focus = {
+		id = RIT_expert_submarines
+		icon = GFX_goal_generic_navy_submarine
+		x = 29
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = RIT_raid_the_shipping_lanes  }
+	}
+
+	#Increase our engine
+	focus = {
+		id = RIT_increase_our_engine
+		icon = GFX_focus_usa_tank_destroyer_doctrine
+		x = 27
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = RIT_research_destroyer_ships  }
+		mutually_exclusive = { focus = RIT_expert_submarines  }
+	}
+
+	#Create the naval Academy
+	focus = {
+		id = RIT_create_the_naval_academy
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 25
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = RIT_expand_our_naval_yards  } prerequisite = { focus = RIT_the_mighty_battleship  }
+	}
+
+	#Our naval prowess
+	focus = {
+		id = RIT_our_naval_prowess
+		icon = GFX_focus_eng_chiefs_of_staff_committee
+		x = 25
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = RIT_create_the_naval_academy  }
+	}
+
+	#Our civil concern
+	focus = {
+		id = RIT_our_civil_concern
+		icon = GFX_goal_generic_construct_civilian
+		x = 2
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+
+	#Improve our industrial tools.
+	focus = {
+		id = RIT_improve_our_industrial_tools
+		icon = GFX_focus_generic_concessions
+		x = 3
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = RIT_our_civil_concern  }
+	}
+
+	#Expand our infrastructure
+	focus = {
+		id = RIT_expand_our_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 3
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = RIT_build_our_civilian_industry  }
+	}
+
+	#Clear for space
+	focus = {
+		id = RIT_clear_for_space
+		icon = GFX_focus_spa_the_spanish_miracle
+		x = 3
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = RIT_expand_our_infrastructure  }
+	}
+
+	#Use our funds
+	focus = {
+		id = RIT_use_our_funds
+		icon = GFX_focus_generic_industry_3
+		x = 4
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = RIT_stabilize_the_economy  } prerequisite = { focus = RIT_meet_our_qouta  }
+	}
+
+	#Meet our qouta
+	focus = {
+		id = RIT_meet_our_qouta
+		icon = GFX_focus_generic_self_management
+		x = 3
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = RIT_clear_for_space  }
+	}
+
+	#Invest in our brigthest minds
+	focus = {
+		id = RIT_invest_in_our_brigthest_minds
+		icon = GFX_focus_research2
+		x = 1
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = RIT_our_civil_concern  }
+	}
+
+	#Our better nation
+	focus = {
+		id = RIT_our_better_nation
+		icon = GFX_focus_research
+		x = 2
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = RIT_meet_our_qouta  } prerequisite = { focus = RIT_radar_technology  }
+	}
+
+	#Electric investment act
+	focus = {
+		id = RIT_electric_investment_act
+		icon = GFX_focus_TUR_reform_the_balkan_pact
+		x = 1
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = RIT_invest_in_our_brigthest_minds  }
+	}
+
+	#Recource breaktrough
+	focus = {
+		id = RIT_recource_breaktrough
+		icon = GFX_focus_generic_rubber
+		x = 1
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = RIT_electric_investment_act  }
+	}
+
+	#Improve our excavation
+	focus = {
+		id = RIT_improve_our_excavation
+		icon = GFX_focus_generic_steel
+		x = 1
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = RIT_recource_breaktrough  }
+	}
+
+	#Improve our excavation
+	focus = {
+		id = RIT_improve_our_excavation
+		icon = GFX_focus_generic_steel
+		x = 0
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = RIT_recource_breaktrough  }
+	}
+
+	#Radar technology
+	focus = {
+		id = RIT_radar_technology
+		icon = GFX_goal_generic_radar
+		x = 1
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = RIT_improve_our_excavation  }
+	}
+
+}
