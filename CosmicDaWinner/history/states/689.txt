@@ -1,29 +1,28 @@
-
 state={
-	id=16
-	name="STATE_16"
-	manpower = 2271957
+	id=689
+	name="STATE_689"
+	manpower = 3952641
 	
-	state_category = pastoral
+	state_category = rural
 	resources={
-		aluminium=1
+		aluminium=0
 		chromium=0
 		oil=0
 		rubber=0
 		steel=1
-		tungsten=1
+		tungsten=0
 	}
 
 	history={
-		owner = MAN
-		add_core_of = MAN
+		owner = BAZ
+		add_core_of = BAZ
 		
 		
 		buildings = {
 			infrastructure = 1
 			
 			arms_factory = 0
-			industrial_complex = 0
+			industrial_complex = 1
 			
 			
 		}
@@ -31,7 +30,7 @@ state={
 	}
 
 	provinces={
-		258 259 260 261 262 263 264 
+		931 929 935 932 934 928 937 936 933 931 930
 	}
 	local_supplies=0.0 
 }

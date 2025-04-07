@@ -1,35 +1,35 @@
-
 state={
 	id=574
 	name="STATE_574"
-	manpower = 7939321
-	
-	state_category = megalopolis
 	resources={
-		aluminium=0
-		chromium=0
-		oil=1
-		rubber=3
-		steel=2
-		tungsten=2
+		aluminium=0.000
+		chromium=0.000
+		oil=1.000
+		rubber=3.000
+		steel=2.000
+		tungsten=2.000
 	}
 
 	history={
+		owner = ARE
+		add_core_of = ARE
 		
 		
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			
-			arms_factory = 4
-			industrial_complex = 1
+			arms_factory = 2
+			industrial_complex = 0
 			
 			
 		}
 		
 	}
-
 	provinces={
-		9600 9601 9602 9603 9604 9605 9606 9607 9608 9609 9610 9611 9612 9613 9614 9615 9616 9617 9618 9619 9620 9621 9622 9623 9624 9625 9626 9627 9628 9629 
+		9601 9602 9603 9604 9606 9607 9608 9609 9611 9612 9615 9616 9618 9620 9621 9622 9623 9624 9625 9627 9628 9629 
 	}
-	local_supplies=0.0 
+	manpower=7939321
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+	local_supplies=0.000
 }

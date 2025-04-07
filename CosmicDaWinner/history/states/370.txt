@@ -1,35 +1,35 @@
-
 state={
 	id=370
 	name="STATE_370"
-	manpower = 7170106
-	
-	state_category = megalopolis
 	resources={
-		aluminium=1
-		chromium=0
-		oil=1
-		rubber=5
-		steel=1
-		tungsten=0
+		aluminium=1.000
+		chromium=0.000
+		oil=1.000
+		rubber=5.000
+		steel=1.000
+		tungsten=0.000
 	}
 
 	history={
+		owner = DPJ
+		add_core_of = DPJ
 		
 		
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			
-			arms_factory = 1
-			industrial_complex = 3
+			arms_factory = 2
+			industrial_complex = 0
 			
 			
 		}
 		
 	}
-
 	provinces={
-		5889 5890 5891 5892 5893 5894 5895 5896 5897 5898 5899 5900 5901 5902 5903 5904 5905 5906 5907 5908 5909 5910 5911 5912 5913 5914 
+		5889 5890 5891 5892 5893 5894 5895 5896 5897 5898 5899 5900 5901 5902 5903 5904 5905 5906 5907 5908 5909 5910 5911 5912 5913 5914 7752 7759 7764 7769 7777 7781 9600 9605 9610 9613 9614 9617 9619 9626 
 	}
-	local_supplies=0.0 
+	manpower=7170106
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+	local_supplies=0.000
 }

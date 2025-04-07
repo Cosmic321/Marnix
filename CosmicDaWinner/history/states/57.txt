@@ -14,7 +14,8 @@ state={
 		tungsten=0
 	}
 
-	history={
+==
+
 		
 		
 		buildings = {

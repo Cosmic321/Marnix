@@ -13,8 +13,10 @@ state={
 		steel=1
 		tungsten=1
 	}
-
+	
 	history={
+		owner = BAZ
+		add_core_of = BAZ
 		
 		
 		buildings = {

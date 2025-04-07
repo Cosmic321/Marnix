@@ -1,3 +1,4 @@
+
 ALT = "countries/Alt.txt"
 ARE = "countries/Arganese.txt"
 AZE = "countries/Arzule.txt"
@@ -16,7 +17,7 @@ KER = "countries/Kerolis.txt"
 KSC = "countries/Kingdom of Southwark Central.txt"
 MAH = "countries/Midarhogg.txt"
 MOR = "countries/Mortia.txt"
-NAS = "countries/Narli.txt"
+MAN = "countries/Man.txt"
 NRC = "countries/Narli Colony.txt"
 OZB = "countries/Berka Occupation Zone.txt"
 OZH = "countries/Hertog Occupation Zone.txt"

@@ -1,35 +1,19 @@
-
 state={
 	id=465
 	name="STATE_465"
-	manpower = 3659311
-	
-	state_category = large_town
 	resources={
-		aluminium=2
-		chromium=0
-		oil=1
-		rubber=0
-		steel=3
-		tungsten=0
+		aluminium=2.000
+		chromium=0.000
+		oil=1.000
+		rubber=0.000
+		steel=3.000
+		tungsten=0.000
 	}
-
-	history={
-		
-		
-		buildings = {
-			infrastructure = 2
-			
-			arms_factory = 1
-			industrial_complex = 1
-			
-			
-		}
-		
-	}
-
 	provinces={
-		7877 7878 7879 7880 7881 7882 7883 7884 7885 7886 7887 7888 7889 7890 
+		7676 7677 7678 7679 7680 7681 7684 7685 7687 7688 7689 7691 7693 7877 7878 7879 7880 7881 7882 7883 7884 7885 7886 7887 7888 7889 7890 
 	}
-	local_supplies=0.0 
+	manpower=3659311
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
 }
