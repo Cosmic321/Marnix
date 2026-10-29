@@ -15,6 +15,9 @@ state={
 	}
 
 	history={
+		owner = MAH
+		controller = MAH
+		add_core_of = MAH
 		
 		
 		buildings = {

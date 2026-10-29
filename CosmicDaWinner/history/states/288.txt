@@ -15,6 +15,9 @@ state={
 	}
 
 	history={
+		owner = BSC
+		controller = BSC
+		add_core_of = BSC
 		
 		
 		buildings = {

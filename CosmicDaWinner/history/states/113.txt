@@ -15,6 +15,9 @@ state={
 	}
 
 	history={
+		owner = BER
+		controller = BER
+		add_core_of = BER
 		
 		
 		buildings = {

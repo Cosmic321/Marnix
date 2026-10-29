@@ -9,6 +9,11 @@ state={
 		steel=3.000
 		tungsten=0.000
 	}
+	history={
+		owner = PDV
+		controller = PDV
+		add_core_of = PDV
+	}
 	provinces={
 		7676 7677 7678 7679 7680 7681 7684 7685 7687 7688 7689 7691 7693 7877 7878 7879 7880 7881 7882 7883 7884 7885 7886 7887 7888 7889 7890 
 	}

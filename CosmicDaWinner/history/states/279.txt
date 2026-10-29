@@ -15,6 +15,9 @@ state={
 	}
 
 	history={
+		owner = SKZ
+		controller = SKZ
+		add_core_of = SKZ
 		
 		
 		buildings = {

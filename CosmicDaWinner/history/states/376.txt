@@ -9,6 +9,11 @@ state={
 		steel=2.000
 		tungsten=0.000
 	}
+	history={
+		owner = MAH
+		controller = MAH
+		add_core_of = MAH
+	}
 	provinces={
 		5996 5997 5998 5999 6000 6001 6002 6003 6005 6006 6008 
 	}

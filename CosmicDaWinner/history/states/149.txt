@@ -15,6 +15,9 @@ state={
 	}
 
 	history={
+		owner = FSO
+		controller = FSO
+		add_core_of = FSO
 		
 		
 		buildings = {

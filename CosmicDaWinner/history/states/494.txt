@@ -9,6 +9,11 @@ state={
 		steel=2.000
 		tungsten=2.000
 	}
+	history={
+		owner = MOR
+		controller = MOR
+		add_core_of = MOR
+	}
 	provinces={
 		8347 8349 8350 8351 8352 8358 8359 8361 8371 8374 8375 
 	}

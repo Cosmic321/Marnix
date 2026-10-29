@@ -15,6 +15,9 @@ state={
 	}
 
 	history={
+		owner = MOR
+		controller = MOR
+		add_core_of = MOR
 		
 		
 		buildings = {

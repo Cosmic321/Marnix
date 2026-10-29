@@ -12,6 +12,7 @@ state={
 
 	history={
 		owner = DPJ
+		controller = DPJ
 		add_core_of = DPJ
 		
 		

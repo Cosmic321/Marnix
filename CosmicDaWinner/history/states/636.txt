@@ -15,6 +15,9 @@ state={
 	}
 
 	history={
+		owner = VRK
+		controller = VRK
+		add_core_of = VRK
 		
 		
 		buildings = {

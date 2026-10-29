@@ -15,6 +15,9 @@ state={
 	}
 
 	history={
+		owner = HRT
+		controller = HRT
+		add_core_of = HRT
 		
 		
 		buildings = {

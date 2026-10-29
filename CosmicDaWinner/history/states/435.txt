@@ -15,8 +15,9 @@ state={
 	}
 
 	history={
-		owner = DPJ
-		add_core_of = DPJ
+		owner = DES
+		controller = DES
+		add_core_of = DES
 		
 		
 		buildings = {

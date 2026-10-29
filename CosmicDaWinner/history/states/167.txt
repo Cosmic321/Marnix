@@ -15,6 +15,9 @@ state={
 	}
 
 	history={
+		owner = GBT
+		controller = GBT
+		add_core_of = GBT
 		
 		
 		buildings = {

@@ -15,6 +15,9 @@ state={
 	}
 
 	history={
+		owner = NRC
+		controller = NRC
+		add_core_of = NRC
 		
 		
 		buildings = {

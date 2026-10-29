@@ -15,6 +15,9 @@ state={
 	}
 
 	history={
+		owner = RIT
+		controller = RIT
+		add_core_of = RIT
 		
 		
 		buildings = {

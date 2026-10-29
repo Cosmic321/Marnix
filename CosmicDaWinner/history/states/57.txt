@@ -14,19 +14,17 @@ state={
 		tungsten=0
 	}
 
-==
+	history={
+		owner = BER
+		controller = BER
+		add_core_of = BER
 
-		
-		
 		buildings = {
 			infrastructure = 1
-			
+
 			arms_factory = 0
 			industrial_complex = 1
-			
-			
 		}
-		
 	}
 
 	provinces={

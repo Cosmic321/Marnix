@@ -15,8 +15,9 @@ state={
 	}
 
 	history={
-		owner = BAZ
-		add_core_of = BAZ
+		owner = BER
+		controller = BER
+		add_core_of = BER
 		
 		
 		buildings = {

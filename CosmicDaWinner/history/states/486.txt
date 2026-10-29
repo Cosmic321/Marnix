@@ -15,8 +15,9 @@ state={
 	}
 
 	history={
-		owner = VRE
-		add_core_of = VRE
+		owner = DPJ
+		controller = DPJ
+		add_core_of = DPJ
 		
 		
 		buildings = {

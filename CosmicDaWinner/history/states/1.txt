@@ -15,8 +15,9 @@ state={
 	}
 
 	history={
-		owner = GBT
-		add_core_of = GBT
+		owner = OZB
+		controller = OZB
+		add_core_of = OZB
 		
 		buildings = {
 			infrastructure = 1

@@ -15,6 +15,9 @@ state={
 	}
 
 	history={
+		owner = DES
+		controller = DES
+		add_core_of = DES
 		
 		
 		buildings = {

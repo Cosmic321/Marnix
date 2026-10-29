@@ -15,8 +15,9 @@ state={
 	}
 
 	history={
-		owner = ALT
-		add_core_of = ALT		
+		owner = VRK
+		controller = VRK
+		add_core_of = VRK
 		
 		buildings = {
 			infrastructure = 2

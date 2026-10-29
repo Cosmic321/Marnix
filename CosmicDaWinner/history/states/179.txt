@@ -15,6 +15,9 @@ state={
 	}
 
 	history={
+		owner = DOL
+		controller = DOL
+		add_core_of = DOL
 		
 		
 		buildings = {

@@ -15,6 +15,9 @@ state={
 	}
 
 	history={
+		owner = AZE
+		controller = AZE
+		add_core_of = AZE
 		
 		
 		buildings = {

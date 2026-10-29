@@ -15,6 +15,9 @@ state={
 	}
 
 	history={
+		owner = ZVD
+		controller = ZVD
+		add_core_of = ZVD
 		
 		
 		buildings = {

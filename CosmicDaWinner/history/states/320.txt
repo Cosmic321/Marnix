@@ -15,6 +15,9 @@ state={
 	}
 
 	history={
+		owner = KSC
+		controller = KSC
+		add_core_of = KSC
 		
 		
 		buildings = {

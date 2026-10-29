@@ -15,6 +15,9 @@ state={
 	}
 
 	history={
+		owner = OZB
+		controller = OZB
+		add_core_of = OZB
 		
 		
 		buildings = {

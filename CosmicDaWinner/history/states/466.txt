@@ -17,6 +17,7 @@ state={
 
 	history={
 		owner = VRE
+		controller = VRE
 		add_core_of = VRE
 		
 		

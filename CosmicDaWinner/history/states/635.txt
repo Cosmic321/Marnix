@@ -15,6 +15,9 @@ state={
 	}
 
 	history={
+		owner = MAN
+		controller = MAN
+		add_core_of = MAN
 		
 		
 		buildings = {

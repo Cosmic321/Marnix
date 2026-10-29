@@ -1,0 +1,18 @@
+capital = 247
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1933.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 15
+	communism = 10
+	fascism = 10
+	neutrality = 65
+}
+
+set_stability = 0.6
+set_war_support = 0.4

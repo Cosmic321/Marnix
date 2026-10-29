@@ -15,6 +15,9 @@ state={
 	}
 
 	history={
+		owner = COD
+		controller = COD
+		add_core_of = COD
 		
 		
 		buildings = {
