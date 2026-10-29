@@ -1,0 +1,43 @@
+# Placeholder technologies.
+# This mod replaces common/technologies, so vanilla scripts that check "has_tech = X"
+# (raid categories, special forces grand doctrines) logged "Invalid tech" hundreds of
+# times per second. Defining the checked names here stops that. They can never be
+# researched (allow = never) and do nothing.
+technologies = {
+	paratroopers = {
+		research_cost = 1
+		start_year = 1936
+		allow = { always = no }
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 0 }
+		}
+	}
+	marines = {
+		research_cost = 1
+		start_year = 1936
+		allow = { always = no }
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = 0 }
+		}
+	}
+	tech_mountaineers = {
+		research_cost = 1
+		start_year = 1936
+		allow = { always = no }
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = 0 }
+		}
+	}
+	rangers_tech = {
+		research_cost = 1
+		start_year = 1936
+		allow = { always = no }
+		folder = {
+			name = infantry_folder
+			position = { x = 6 y = 0 }
+		}
+	}
+}
