@@ -1,0 +1,136 @@
+﻿add_namespace = cod
+
+country_event = {
+	id = cod.1
+	title = cod.1.t
+	desc = cod.1.d
+	is_triggered_only = yes
+
+	option = {
+		name = cod.1.a
+		add_political_power = 50
+			add_stability = 0.02
+	}
+	option = {
+		name = cod.1.b
+		add_war_support = 0.05
+			add_stability = -0.02
+	}
+}
+
+country_event = {
+	id = cod.2
+	title = cod.2.t
+	desc = cod.2.d
+	is_triggered_only = yes
+
+	option = {
+		name = cod.2.a
+		add_stability = 0.05
+			add_political_power = 25
+	}
+}
+
+country_event = {
+	id = cod.3
+	title = cod.3.t
+	desc = cod.3.d
+	is_triggered_only = yes
+
+	option = {
+		name = cod.3.a
+		add_stability = 0.02
+			add_political_power = 25
+	}
+	option = {
+		name = cod.3.b
+		add_stability = 0.03
+			add_political_power = -25
+	}
+}
+
+country_event = {
+	id = cod.4
+	title = cod.4.t
+	desc = cod.4.d
+	is_triggered_only = yes
+
+	option = {
+		name = cod.4.a
+		add_political_power = 50
+			add_stability = 0.02
+	}
+}
+
+country_event = {
+	id = cod.5
+	title = cod.5.t
+	desc = cod.5.d
+	is_triggered_only = yes
+
+	option = {
+		name = cod.5.a
+		add_stability = -0.02
+			add_political_power = 25
+	}
+	option = {
+		name = cod.5.b
+		add_political_power = -50
+			add_stability = 0.03
+	}
+	option = {
+		name = cod.5.c
+		add_war_support = 0.05
+			add_stability = -0.05
+	}
+}
+
+country_event = {
+	id = cod.6
+	title = cod.6.t
+	desc = cod.6.d
+	is_triggered_only = yes
+
+	option = {
+		name = cod.6.a
+		add_political_power = 50
+			add_stability = -0.03
+			add_ideas = COD_mad_cartographer
+	}
+	option = {
+		name = cod.6.b
+		add_stability = 0.02
+			add_political_power = -25
+	}
+}
+
+country_event = {
+	id = cod.7
+	title = cod.7.t
+	desc = cod.7.d
+	is_triggered_only = yes
+
+	option = {
+		name = cod.7.a
+		add_war_support = 0.05
+			add_stability = 0.02
+	}
+	option = {
+		name = cod.7.b
+		add_political_power = 25
+			add_stability = -0.01
+	}
+}
+
+country_event = {
+	id = cod.8
+	title = cod.8.t
+	desc = cod.8.d
+	is_triggered_only = yes
+
+	option = {
+		name = cod.8.a
+		add_political_power = 25
+			add_stability = 0.02
+	}
+}

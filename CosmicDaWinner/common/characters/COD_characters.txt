@@ -1,0 +1,16 @@
+characters = {
+	COD_harraldinho = {
+		name = COD_harraldinho
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/COD/Portrait_COD_Harraldinho.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			desc = COD_harraldinho_desc
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+}

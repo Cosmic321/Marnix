@@ -1,0 +1,154 @@
+ideas = {
+	country = {
+		COD_housing_shortage = {
+			picture = generic_build_infrastructure
+			modifier = {
+				stability_factor = -0.05
+				production_speed_buildings_factor = -0.10
+			}
+		}
+	}
+	country = {
+		COD_tourist_economy = {
+			picture = generic_foreign_capital
+			modifier = {
+				industrial_capacity_factory = -0.10
+				consumer_goods_factor = 0.05
+			}
+		}
+	}
+	country = {
+		COD_breakaway_fallout = {
+			picture = generic_the_london_naval_treaty
+			modifier = {
+				political_power_gain = -0.10
+				war_support_factor = -0.05
+			}
+		}
+	}
+	country = {
+		COD_young_nation = {
+			picture = generic_research_bonus
+			modifier = {
+				research_speed_factor = 0.10
+			}
+		}
+	}
+	country = {
+		COD_no_air_history = {
+			picture = generic_air_research
+			modifier = {
+				air_attack_factor = -0.15
+				air_defence_factor = -0.10
+			}
+		}
+	}
+	country = {
+		COD_diversified_economy = {
+			picture = generic_improved_industries
+			modifier = {
+				industrial_capacity_factory = -0.03
+				consumer_goods_factor = 0.02
+			}
+		}
+	}
+	country = {
+		COD_grockle_control = {
+			picture = generic_fascist_workers
+			modifier = {
+				industrial_capacity_factory = -0.05
+				stability_factor = 0.03
+				political_power_gain = 0.05
+			}
+		}
+	}
+	country = {
+		COD_civilian_boom = {
+			picture = generic_production_bonus
+			modifier = {
+				production_speed_industrial_complex_factor = 0.15
+				industrial_capacity_factory = 0.05
+			}
+		}
+	}
+	country = {
+		COD_pasty_exports = {
+			picture = generic_license_production
+			modifier = {
+				trade_opinion_factor = 0.15
+				consumer_goods_factor = -0.05
+			}
+		}
+	}
+	country = {
+		COD_jam_shortage = {
+			picture = generic_morale_bonus
+			modifier = {
+				stability_factor = -0.03
+				consumer_goods_factor = 0.03
+			}
+		}
+	}
+	country = {
+		COD_mad_cartographer = {
+			picture = generic_research_bonus
+			modifier = {
+				research_speed_factor = 0.05
+				stability_factor = -0.05
+			}
+		}
+	}
+	country = {
+		COD_cornish_pride = {
+			picture = generic_morale_bonus
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+	}
+	country = {
+		COD_armoured_tradition = {
+			picture = generic_army_war_college
+			modifier = {
+				army_armor_attack_factor = 0.10
+				army_armor_defence_factor = 0.05
+			}
+		}
+	}
+	country = {
+		COD_armour_doctrine = {
+			picture = generic_morale_bonus
+			modifier = {
+				army_armor_attack_factor = 0.10
+				army_armor_speed_factor = 0.05
+				training_time_factor = -0.05
+			}
+		}
+	}
+	country = {
+		COD_air_lessons = {
+			picture = generic_air_payment
+			modifier = {
+				air_attack_factor = 0.08
+				air_defence_factor = 0.05
+			}
+		}
+	}
+	country = {
+		COD_tech_cluster = {
+			picture = generic_research_bonus
+			modifier = {
+				research_speed_factor = 0.10
+			}
+		}
+	}
+	country = {
+		COD_reopened_mines = {
+			picture = generic_build_infrastructure
+			modifier = {
+				industrial_capacity_factory = 0.03
+			}
+		}
+	}
+}

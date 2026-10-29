@@ -1,0 +1,481 @@
+focus_tree = {
+	id = cornish_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = COD
+		}
+	}
+
+	focus = {
+		id = COD_the_new_duchy
+		icon = GFX_goal_generic_political_pressure
+		x = 6
+		y = 0
+		cost = 5
+		completion_reward = {
+		country_event = { id = cod.1 days = 1 }
+		add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = COD_housing_crisis
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = COD_the_new_duchy }
+		completion_reward = {
+		add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = COD_council_homes
+		icon = GFX_goal_generic_construct_civilian
+		x = 0
+		y = 2
+		cost = 7
+		prerequisite = { focus = COD_housing_crisis }
+		completion_reward = {
+		283 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = COD_new_towns
+		icon = GFX_goal_generic_construction2
+		x = 2
+		y = 2
+		cost = 7
+		prerequisite = { focus = COD_housing_crisis }
+		completion_reward = {
+		196 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = COD_end_housing_shortage
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 3
+		cost = 7
+		prerequisite = { focus = COD_council_homes }
+		prerequisite = { focus = COD_new_towns }
+		completion_reward = {
+		if = {
+			limit = { has_idea = COD_housing_shortage }
+			remove_ideas = COD_housing_shortage
+		}
+		country_event = { id = cod.2 days = 2 }
+		}
+	}
+
+	focus = {
+		id = COD_forge_a_nation
+		icon = GFX_goal_generic_propaganda
+		x = 6
+		y = 1
+		cost = 7
+		prerequisite = { focus = COD_the_new_duchy }
+		completion_reward = {
+		if = {
+			limit = { has_idea = COD_breakaway_fallout }
+			remove_ideas = COD_breakaway_fallout
+		}
+		add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = COD_cornish_pride
+		icon = GFX_focus_generic_military_academy
+		x = 6
+		y = 2
+		cost = 5
+		prerequisite = { focus = COD_forge_a_nation }
+		completion_reward = {
+		add_ideas = COD_cornish_pride
+		}
+	}
+
+	focus = {
+		id = COD_rethink_tourism
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 11
+		y = 1
+		cost = 5
+		prerequisite = { focus = COD_the_new_duchy }
+		completion_reward = {
+		add_political_power = 25
+		country_event = { id = cod.3 days = 2 }
+		}
+	}
+
+	focus = {
+		id = COD_diversify_economy
+		icon = GFX_goal_generic_scientific_exchange
+		x = 10
+		y = 2
+		cost = 7
+		prerequisite = { focus = COD_rethink_tourism }
+		mutually_exclusive = { focus = COD_grockle_control }
+		completion_reward = {
+		swap_ideas = {
+			remove_idea = COD_tourist_economy
+			add_idea = COD_diversified_economy
+		}
+		}
+	}
+
+	focus = {
+		id = COD_grockle_control
+		icon = GFX_goal_generic_fortify_city
+		x = 12
+		y = 2
+		cost = 7
+		prerequisite = { focus = COD_rethink_tourism }
+		mutually_exclusive = { focus = COD_diversify_economy }
+		completion_reward = {
+		swap_ideas = {
+			remove_idea = COD_tourist_economy
+			add_idea = COD_grockle_control
+		}
+		}
+	}
+
+	focus = {
+		id = COD_civilian_expansion
+		icon = GFX_goal_generic_construct_civilian
+		x = 6
+		y = 4
+		cost = 10
+		prerequisite = { focus = COD_end_housing_shortage }
+		prerequisite = { focus = COD_forge_a_nation }
+		prerequisite = { focus = COD_diversify_economy focus = COD_grockle_control }
+		completion_reward = {
+		add_ideas = COD_civilian_boom
+		}
+	}
+
+	focus = {
+		id = COD_pasty_exports
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 3
+		y = 5
+		cost = 7
+		prerequisite = { focus = COD_civilian_expansion }
+		completion_reward = {
+		add_ideas = COD_pasty_exports
+		country_event = { id = cod.4 days = 2 }
+		}
+	}
+
+	focus = {
+		id = COD_ran_out_of_jam
+		icon = GFX_goal_generic_consumer_goods
+		x = 3
+		y = 6
+		cost = 5
+		prerequisite = { focus = COD_pasty_exports }
+		completion_reward = {
+		add_ideas = COD_jam_shortage
+		country_event = { id = cod.5 days = 2 }
+		}
+	}
+
+	focus = {
+		id = COD_reopen_the_mines
+		icon = GFX_focus_generic_tungsten
+		x = 6
+		y = 5
+		cost = 10
+		prerequisite = { focus = COD_civilian_expansion }
+		completion_reward = {
+		add_resource = {
+			type = tungsten
+			amount = 10
+			state = 196
+		}
+		add_resource = {
+			type = steel
+			amount = 8
+			state = 193
+		}
+		add_resource = {
+			type = steel
+			amount = 8
+			state = 283
+		}
+		add_ideas = COD_reopened_mines
+		country_event = { id = cod.8 days = 2 }
+		}
+	}
+
+	focus = {
+		id = COD_china_clay_works
+		icon = GFX_goal_generic_oil_refinery
+		x = 9
+		y = 5
+		cost = 7
+		prerequisite = { focus = COD_civilian_expansion }
+		completion_reward = {
+		add_resource = {
+			type = aluminium
+			amount = 10
+			state = 283
+		}
+		add_resource = {
+			type = chromium
+			amount = 6
+			state = 260
+		}
+		}
+	}
+
+	focus = {
+		id = COD_industrial_revival
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 7
+		y = 6
+		cost = 10
+		prerequisite = { focus = COD_reopen_the_mines focus = COD_china_clay_works }
+		completion_reward = {
+		283 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		260 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = COD_stay_the_course
+		icon = GFX_goal_support_democracy
+		x = 2
+		y = 8
+		cost = 7
+		prerequisite = { focus = COD_industrial_revival }
+		mutually_exclusive = { focus = COD_non_aligned_cornwall focus = COD_cornish_empire focus = COD_peoples_cornwall }
+		completion_reward = {
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.10
+		}
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = COD_non_aligned_cornwall
+		icon = GFX_goal_generic_neutrality_focus
+		x = 5
+		y = 8
+		cost = 7
+		prerequisite = { focus = COD_industrial_revival }
+		mutually_exclusive = { focus = COD_stay_the_course focus = COD_cornish_empire focus = COD_peoples_cornwall }
+		completion_reward = {
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.15
+		}
+		add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = COD_cornish_empire
+		icon = GFX_goal_support_fascism
+		x = 8
+		y = 8
+		cost = 7
+		prerequisite = { focus = COD_industrial_revival }
+		mutually_exclusive = { focus = COD_stay_the_course focus = COD_non_aligned_cornwall focus = COD_peoples_cornwall }
+		completion_reward = {
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.15
+		}
+		add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = COD_peoples_cornwall
+		icon = GFX_goal_support_communism
+		x = 11
+		y = 8
+		cost = 7
+		prerequisite = { focus = COD_industrial_revival }
+		mutually_exclusive = { focus = COD_stay_the_course focus = COD_non_aligned_cornwall focus = COD_cornish_empire }
+		completion_reward = {
+		add_popularity = {
+			ideology = communism
+			popularity = 0.15
+		}
+		add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = COD_youngest_in_the_world
+		icon = GFX_focus_research
+		x = 16
+		y = 0
+		cost = 5
+		completion_reward = {
+		add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = COD_technical_college
+		icon = GFX_focus_research2
+		x = 15
+		y = 1
+		cost = 7
+		prerequisite = { focus = COD_youngest_in_the_world }
+		completion_reward = {
+		add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = COD_workshops_of_newquay
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 17
+		y = 1
+		cost = 7
+		prerequisite = { focus = COD_youngest_in_the_world }
+		completion_reward = {
+		226 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		}
+	}
+
+	focus = {
+		id = COD_new_tech_cluster
+		icon = GFX_goal_tfv_generic_tech_sharing
+		x = 16
+		y = 2
+		cost = 10
+		prerequisite = { focus = COD_technical_college }
+		prerequisite = { focus = COD_workshops_of_newquay }
+		completion_reward = {
+		add_ideas = COD_tech_cluster
+		}
+	}
+
+	focus = {
+		id = COD_harraldinhos_vision
+		icon = GFX_goal_generic_propaganda
+		x = 21
+		y = 0
+		cost = 5
+		completion_reward = {
+		country_event = { id = cod.6 days = 1 }
+		}
+	}
+
+	focus = {
+		id = COD_armoured_tradition
+		icon = GFX_goal_generic_army_tanks
+		x = 20
+		y = 1
+		cost = 7
+		prerequisite = { focus = COD_harraldinhos_vision }
+		completion_reward = {
+		add_ideas = COD_armoured_tradition
+		}
+	}
+
+	focus = {
+		id = COD_air_what_air
+		icon = GFX_goal_generic_air_fighter
+		x = 22
+		y = 1
+		cost = 7
+		prerequisite = { focus = COD_harraldinhos_vision }
+		completion_reward = {
+		swap_ideas = {
+			remove_idea = COD_no_air_history
+			add_idea = COD_air_lessons
+		}
+		}
+	}
+
+	focus = {
+		id = COD_tank_workshops
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 19
+		y = 2
+		cost = 7
+		prerequisite = { focus = COD_armoured_tradition }
+		completion_reward = {
+		283 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		army_experience = 15
+		}
+	}
+
+	focus = {
+		id = COD_christmas_tank_incident
+		icon = GFX_goal_generic_army_motorized
+		x = 21
+		y = 2
+		cost = 5
+		prerequisite = { focus = COD_armoured_tradition }
+		completion_reward = {
+		country_event = { id = cod.7 days = 1 }
+		}
+	}
+
+	focus = {
+		id = COD_advanced_armour
+		icon = GFX_goal_generic_army_artillery2
+		x = 20
+		y = 3
+		cost = 10
+		prerequisite = { focus = COD_tank_workshops focus = COD_christmas_tank_incident }
+		completion_reward = {
+		add_ideas = COD_armour_doctrine
+		}
+	}
+
+}
