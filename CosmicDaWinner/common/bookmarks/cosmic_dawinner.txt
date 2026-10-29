@@ -1,0 +1,234 @@
+bookmarks = {
+	bookmark = {
+		name = "CDW_BOOKMARK_NAME"
+		desc = "CDW_BOOKMARK_DESC"
+		date = 1936.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "PDV"
+		default = yes
+
+		"PDV" = {
+			history = "PDV_CDW_DESC"
+			ideology = communism
+		}
+
+		"ZVD" = {
+			history = "ZVD_CDW_DESC"
+			ideology = neutrality
+		}
+
+		"MAN" = {
+			history = "MAN_CDW_DESC"
+			ideology = neutrality
+		}
+
+		"BSC" = {
+			history = "BSC_CDW_DESC"
+			ideology = neutrality
+		}
+
+		"COD" = {
+			history = "COD_CDW_DESC"
+			ideology = neutrality
+		}
+
+		"TCU" = {
+			history = "TCU_CDW_DESC"
+			ideology = neutrality
+		}
+
+		"VRE" = {
+			history = "VRE_CDW_DESC"
+			ideology = neutrality
+		}
+
+		"FSO" = {
+			history = "FSO_CDW_DESC"
+			ideology = democratic
+		}
+
+		"VRK" = {
+			minor = yes
+			history = "VRK_CDW_DESC"
+			ideology = neutrality
+		}
+
+		"BEA" = {
+			minor = yes
+			history = "BEA_CDW_DESC"
+			ideology = communism
+		}
+
+		"ALT" = {
+			minor = yes
+			history = "ALT_CDW_DESC"
+			ideology = neutrality
+		}
+
+		"BER" = {
+			minor = yes
+			history = "BER_CDW_DESC"
+			ideology = neutrality
+		}
+
+		"GBT" = {
+			minor = yes
+			history = "GBT_CDW_DESC"
+			ideology = neutrality
+		}
+
+		"KSC" = {
+			minor = yes
+			history = "KSC_CDW_DESC"
+			ideology = neutrality
+		}
+
+		"RIT" = {
+			minor = yes
+			history = "RIT_CDW_DESC"
+			ideology = democratic
+		}
+
+		"SKZ" = {
+			minor = yes
+			history = "SKZ_CDW_DESC"
+			ideology = neutrality
+		}
+
+		"SMH" = {
+			minor = yes
+			history = "SMH_CDW_DESC"
+			ideology = neutrality
+		}
+
+		"BAZ" = {
+			minor = yes
+			history = "BAZ_CDW_DESC"
+			ideology = neutrality
+		}
+
+		"ECO" = {
+			minor = yes
+			history = "ECO_CDW_DESC"
+			ideology = neutrality
+		}
+
+		"MOR" = {
+			minor = yes
+			history = "MOR_CDW_DESC"
+			ideology = communism
+		}
+
+		"NRC" = {
+			minor = yes
+			history = "NRC_CDW_DESC"
+			ideology = neutrality
+		}
+
+		"TCC" = {
+			minor = yes
+			history = "TCC_CDW_DESC"
+			ideology = neutrality
+		}
+
+		"AZE" = {
+			minor = yes
+			history = "AZE_CDW_DESC"
+			ideology = neutrality
+		}
+
+		"DOL" = {
+			minor = yes
+			history = "DOL_CDW_DESC"
+			ideology = neutrality
+		}
+
+		"DPJ" = {
+			minor = yes
+			history = "DPJ_CDW_DESC"
+			ideology = fascism
+		}
+
+		"SNJ" = {
+			minor = yes
+			history = "SNJ_CDW_DESC"
+			ideology = fascism
+		}
+
+		"BIP" = {
+			minor = yes
+			history = "BIP_CDW_DESC"
+			ideology = neutrality
+		}
+
+		"KER" = {
+			minor = yes
+			history = "KER_CDW_DESC"
+			ideology = neutrality
+		}
+
+		"RBD" = {
+			minor = yes
+			history = "RBD_CDW_DESC"
+			ideology = neutrality
+		}
+
+		"HRT" = {
+			minor = yes
+			history = "HRT_CDW_DESC"
+			ideology = neutrality
+		}
+
+		"OZB" = {
+			minor = yes
+			history = "OZB_CDW_DESC"
+			ideology = neutrality
+		}
+
+		"VAK" = {
+			minor = yes
+			history = "VAK_CDW_DESC"
+			ideology = neutrality
+		}
+
+		"ARE" = {
+			minor = yes
+			history = "ARE_CDW_DESC"
+			ideology = neutrality
+		}
+
+		"OZH" = {
+			minor = yes
+			history = "OZH_CDW_DESC"
+			ideology = neutrality
+		}
+
+		"DES" = {
+			minor = yes
+			history = "DES_CDW_DESC"
+			ideology = fascism
+		}
+
+		"MAH" = {
+			minor = yes
+			history = "MAH_CDW_DESC"
+			ideology = neutrality
+		}
+
+		"OZS" = {
+			minor = yes
+			history = "OZS_CDW_DESC"
+			ideology = neutrality
+		}
+
+		"OZR" = {
+			minor = yes
+			history = "OZR_CDW_DESC"
+			ideology = neutrality
+		}
+
+		"---" = {
+			history = "OTHER_CDW_DESC"
+		}
+	}
+}

@@ -1,0 +1,46 @@
+ideas = {
+	country = {
+		liberty_ethos_focus = {
+			picture = generic_morale_bonus
+			modifier = {
+				democratic_drift = 0.05
+				stability_factor = 0.05
+			}
+		}
+		collectivist_ethos_focus = {
+			picture = generic_production_bonus
+			modifier = {
+				communism_drift = 0.05
+				stability_factor = 0.05
+			}
+		}
+		militarism_focus = {
+			picture = generic_army_war_college
+			modifier = {
+				fascism_drift = 0.05
+				army_org_factor = 0.03
+			}
+		}
+		neutrality_idea = {
+			picture = generic_the_london_naval_treaty
+			modifier = {
+				neutrality_drift = 0.05
+				stability_factor = 0.03
+			}
+		}
+		nationalism = {
+			picture = generic_fascist_workers
+			modifier = {
+				fascism_drift = 0.03
+				political_power_gain = 0.05
+			}
+		}
+		internationalism = {
+			picture = generic_foreign_capital
+			modifier = {
+				democratic_drift = 0.03
+				production_speed_buildings_factor = 0.05
+			}
+		}
+	}
+}

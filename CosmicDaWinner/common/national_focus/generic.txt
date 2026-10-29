@@ -1116,11 +1116,7 @@ focus = {
 	completion_reward = { 
 		random_owned_controlled_state = {
 			limit = {
-				free_building_slots = {
-					building = infrastructure
-					size > 2					
-					include_locked = yes
-				}
+				always = yes
 			}
 			
 			add_building_construction = {
@@ -1133,11 +1129,7 @@ focus = {
 		}
         random_owned_controlled_state = {
 			limit = {
-				free_building_slots = {
-					building = infrastructure
-					size > 2
-					include_locked = yes
-				}
+				always = yes
 			}
 			
 			add_building_construction = {
@@ -1171,11 +1163,7 @@ focus = {
 		}
 		random_owned_controlled_state = {
 			limit = {
-				free_building_slots = {
-					building = infrastructure
-					size > 1
-					include_locked = yes
-				}
+				always = yes
 			}
 			
 			add_building_construction = {
@@ -1188,11 +1176,7 @@ focus = {
 		}
 		random_owned_controlled_state = {
 			limit = {
-				free_building_slots = {
-					building = infrastructure
-					size > 1
-					include_locked = yes
-				}
+				always = yes
 			}
 			
 			add_building_construction = {
@@ -1718,7 +1702,6 @@ focus = {
 			bonus = 1.0
 			ahead_reduction = 2
 			uses = 1
-			category = cl_tech
 			category = ca_tech
 	}
 	add_tech_bonus = {
@@ -1841,7 +1824,7 @@ focus = {
 		focus = Army_academies
 	}
 	completion_reward = {
-		upgrade_economy_law = yes
+		# upgrade_economy_law removed (scripted effect not present in this mod)
 		add_political_power = -75
 		add_stability = -0.05 
 	  }
