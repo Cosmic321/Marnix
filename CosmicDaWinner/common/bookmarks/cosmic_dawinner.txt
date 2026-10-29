@@ -5,7 +5,7 @@ bookmarks = {
 		date = 1936.1.1.12
 		picture = "GFX_select_date_1936"
 		default_country = "PDV"
-		default = yes
+		# default = yes (vanilla default bookmark stays default)
 
 		"PDV" = {
 			history = "PDV_CDW_DESC"
