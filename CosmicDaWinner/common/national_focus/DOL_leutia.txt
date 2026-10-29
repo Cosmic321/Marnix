@@ -1,0 +1,569 @@
+focus_tree = {
+	id = leutia_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = DOL
+		}
+	}
+
+	focus = {
+		id = DOL_address_the_slump
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 0
+		cost = 5
+		completion_reward = {
+		add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = DOL_end_desprian_dependence
+		icon = GFX_goal_generic_forceful_treaty
+		x = 2
+		y = 1
+		cost = 5
+		prerequisite = { focus = DOL_address_the_slump }
+		completion_reward = {
+		add_political_power = 25
+		add_war_support = 0.03
+		}
+	}
+
+	focus = {
+		id = DOL_seek_foreign_markets
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 0
+		y = 2
+		cost = 7
+		prerequisite = { focus = DOL_end_desprian_dependence }
+		mutually_exclusive = { focus = DOL_state_funded_production }
+		completion_reward = {
+		swap_ideas = {
+			remove_idea = DOL_economic_slump
+			add_idea = DOL_slump_foreign_markets
+		}
+		}
+	}
+
+	focus = {
+		id = DOL_state_funded_production
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 4
+		y = 2
+		cost = 7
+		prerequisite = { focus = DOL_end_desprian_dependence }
+		mutually_exclusive = { focus = DOL_seek_foreign_markets }
+		completion_reward = {
+		swap_ideas = {
+			remove_idea = DOL_economic_slump
+			add_idea = DOL_slump_state_funding
+		}
+		604 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		}
+	}
+
+	focus = {
+		id = DOL_colonial_markets
+		icon = GFX_focus_generic_tungsten
+		x = -1
+		y = 3
+		cost = 5
+		prerequisite = { focus = DOL_seek_foreign_markets }
+		completion_reward = {
+		add_ideas = DOL_colonial_markets
+		}
+	}
+
+	focus = {
+		id = DOL_merchant_fleet
+		icon = GFX_goal_generic_construct_civilian
+		x = 1
+		y = 3
+		cost = 5
+		prerequisite = { focus = DOL_seek_foreign_markets }
+		completion_reward = {
+		425 = {
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		}
+	}
+
+	focus = {
+		id = DOL_wartime_subsidies
+		icon = GFX_goal_generic_small_arms
+		x = 3
+		y = 3
+		cost = 5
+		prerequisite = { focus = DOL_state_funded_production }
+		completion_reward = {
+		add_political_power = -25
+		army_experience = 15
+		179 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		}
+	}
+
+	focus = {
+		id = DOL_arsenal_of_the_duchy
+		icon = GFX_goal_generic_army_artillery2
+		x = 5
+		y = 3
+		cost = 5
+		prerequisite = { focus = DOL_state_funded_production }
+		completion_reward = {
+		425 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		}
+	}
+
+	focus = {
+		id = DOL_end_of_the_slump
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 2
+		y = 4
+		cost = 10
+		prerequisite = { focus = DOL_colonial_markets focus = DOL_merchant_fleet focus = DOL_wartime_subsidies focus = DOL_arsenal_of_the_duchy }
+		completion_reward = {
+		hidden_effect = {
+			if = {
+				limit = { has_idea = DOL_slump_foreign_markets }
+				remove_ideas = DOL_slump_foreign_markets
+			}
+			if = {
+				limit = { has_idea = DOL_slump_state_funding }
+				remove_ideas = DOL_slump_state_funding
+			}
+			if = {
+				limit = { has_idea = DOL_economic_slump }
+				remove_ideas = DOL_economic_slump
+			}
+		}
+		add_ideas = DOL_recovered_economy
+		}
+	}
+
+	focus = {
+		id = DOL_port_augustus_docks
+		icon = GFX_goal_generic_navy_battleship
+		x = 0
+		y = 5
+		cost = 7
+		prerequisite = { focus = DOL_end_of_the_slump }
+		completion_reward = {
+		425 = {
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = DOL_aalstadt_exchange
+		icon = GFX_goal_generic_construction2
+		x = 4
+		y = 5
+		cost = 7
+		prerequisite = { focus = DOL_end_of_the_slump }
+		completion_reward = {
+		604 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		}
+	}
+
+	focus = {
+		id = DOL_review_the_sentinel_act
+		icon = GFX_goal_generic_position_armies
+		x = 10
+		y = 0
+		cost = 5
+		completion_reward = {
+		add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = DOL_incorporate_sentinels
+		icon = GFX_focus_SOV_mobilization_plan
+		x = 7
+		y = 1
+		cost = 7
+		prerequisite = { focus = DOL_review_the_sentinel_act }
+		mutually_exclusive = { focus = DOL_sentinel_exemptions focus = DOL_token_militia }
+		completion_reward = {
+		swap_ideas = {
+			remove_idea = DOL_sentinel_militia
+			add_idea = DOL_sentinel_reserve
+		}
+		add_political_power = -50
+		add_manpower = 20000
+		}
+	}
+
+	focus = {
+		id = DOL_sentinel_exemptions
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 10
+		y = 1
+		cost = 7
+		prerequisite = { focus = DOL_review_the_sentinel_act }
+		mutually_exclusive = { focus = DOL_incorporate_sentinels focus = DOL_token_militia }
+		completion_reward = {
+		swap_ideas = {
+			remove_idea = DOL_sentinel_militia
+			add_idea = DOL_sentinel_exemptions
+		}
+		add_political_power = -25
+		}
+	}
+
+	focus = {
+		id = DOL_token_militia
+		icon = GFX_goal_generic_fortify_city
+		x = 13
+		y = 1
+		cost = 5
+		prerequisite = { focus = DOL_review_the_sentinel_act }
+		mutually_exclusive = { focus = DOL_incorporate_sentinels focus = DOL_sentinel_exemptions }
+		completion_reward = {
+		add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = DOL_sentinel_levies
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 7
+		y = 2
+		cost = 5
+		prerequisite = { focus = DOL_incorporate_sentinels }
+		completion_reward = {
+		add_manpower = 30000
+		army_experience = 10
+		}
+	}
+
+	focus = {
+		id = DOL_sentinel_drill
+		icon = GFX_focus_generic_military_academy
+		x = 10
+		y = 2
+		cost = 5
+		prerequisite = { focus = DOL_sentinel_exemptions }
+		completion_reward = {
+		army_experience = 25
+		}
+	}
+
+	focus = {
+		id = DOL_coastal_watch
+		icon = GFX_goal_generic_radar
+		x = 13
+		y = 2
+		cost = 5
+		prerequisite = { focus = DOL_token_militia }
+		completion_reward = {
+		add_ideas = DOL_coastal_watch
+		}
+	}
+
+	focus = {
+		id = DOL_small_but_sharp
+		icon = GFX_goal_generic_army_tanks
+		x = 10
+		y = 3
+		cost = 10
+		prerequisite = { focus = DOL_sentinel_levies focus = DOL_sentinel_drill focus = DOL_coastal_watch }
+		completion_reward = {
+		add_ideas = DOL_elite_spearhead
+		}
+	}
+
+	focus = {
+		id = DOL_spearhead_academy
+		icon = GFX_focus_generic_military_academy
+		x = 8
+		y = 4
+		cost = 7
+		prerequisite = { focus = DOL_small_but_sharp }
+		completion_reward = {
+		army_experience = 30
+		}
+	}
+
+	focus = {
+		id = DOL_breakthrough_doctrine
+		icon = GFX_goal_generic_army_motorized
+		x = 12
+		y = 4
+		cost = 7
+		prerequisite = { focus = DOL_small_but_sharp }
+		completion_reward = {
+		add_ideas = DOL_breakthrough_doctrine
+		}
+	}
+
+	focus = {
+		id = DOL_audience_with_the_duchess
+		icon = GFX_goal_generic_political_pressure
+		x = 20
+		y = 0
+		cost = 5
+		completion_reward = {
+		add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = DOL_convince_the_duchess
+		icon = GFX_goal_generic_propaganda
+		x = 17
+		y = 1
+		cost = 7
+		prerequisite = { focus = DOL_audience_with_the_duchess }
+		mutually_exclusive = { focus = DOL_imperial_ambitions }
+		completion_reward = {
+		swap_ideas = {
+			remove_idea = DOL_popular_duchess
+			add_idea = DOL_duchess_consents
+		}
+		add_stability = -0.05
+		}
+	}
+
+	focus = {
+		id = DOL_imperial_ambitions
+		icon = GFX_focus_hun_elect_a_king
+		x = 24
+		y = 1
+		cost = 7
+		prerequisite = { focus = DOL_audience_with_the_duchess }
+		mutually_exclusive = { focus = DOL_convince_the_duchess }
+		completion_reward = {
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+		add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = DOL_kickstart_military_spending
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 16
+		y = 2
+		cost = 7
+		prerequisite = { focus = DOL_convince_the_duchess }
+		completion_reward = {
+		add_ideas = DOL_military_spending
+		add_war_support = 0.05
+		604 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		}
+	}
+
+	focus = {
+		id = DOL_choose_a_patron
+		icon = GFX_goal_generic_alliance
+		x = 18
+		y = 2
+		cost = 7
+		prerequisite = { focus = DOL_convince_the_duchess }
+		completion_reward = {
+		add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = DOL_ally_with_itsany
+		icon = GFX_goal_support_democracy
+		x = 15
+		y = 3
+		cost = 7
+		prerequisite = { focus = DOL_choose_a_patron }
+		mutually_exclusive = { focus = DOL_mercantile_league focus = DOL_armed_neutrality }
+		completion_reward = {
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.10
+		}
+		add_ai_strategy = {
+			type = alliance
+			id = "RIT"
+			value = 200
+		}
+		add_ai_strategy = {
+			type = antagonize
+			id = "MOR"
+			value = 100
+		}
+		}
+	}
+
+	focus = {
+		id = DOL_mercantile_league
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 17
+		y = 3
+		cost = 7
+		prerequisite = { focus = DOL_choose_a_patron }
+		mutually_exclusive = { focus = DOL_ally_with_itsany focus = DOL_armed_neutrality }
+		completion_reward = {
+		add_ideas = DOL_trade_league
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.05
+		}
+		add_ai_strategy = {
+			type = friend
+			id = "SKZ"
+			value = 100
+		}
+		add_ai_strategy = {
+			type = friend
+			id = "BIP"
+			value = 100
+		}
+		}
+	}
+
+	focus = {
+		id = DOL_armed_neutrality
+		icon = GFX_goal_generic_neutrality_focus
+		x = 19
+		y = 3
+		cost = 7
+		prerequisite = { focus = DOL_choose_a_patron }
+		mutually_exclusive = { focus = DOL_ally_with_itsany focus = DOL_mercantile_league }
+		completion_reward = {
+		add_ideas = DOL_armed_neutrality
+		add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = DOL_guard_the_mortanian_border
+		icon = GFX_goal_fortify_the_westwall
+		x = 17
+		y = 4
+		cost = 7
+		prerequisite = { focus = DOL_ally_with_itsany focus = DOL_mercantile_league focus = DOL_armed_neutrality }
+		completion_reward = {
+		add_ideas = DOL_border_watch
+		add_war_support = 0.05
+		add_ai_strategy = {
+			type = antagonize
+			id = "MOR"
+			value = 100
+		}
+		}
+	}
+
+	focus = {
+		id = DOL_crown_the_empress
+		icon = GFX_focus_hun_elect_a_king
+		x = 24
+		y = 2
+		cost = 10
+		prerequisite = { focus = DOL_imperial_ambitions }
+		completion_reward = {
+		set_cosmetic_tag = DOL_empire
+		swap_ideas = {
+			remove_idea = DOL_popular_duchess
+			add_idea = DOL_empress_banner
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.10
+		}
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = DOL_colonial_charter
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 22
+		y = 3
+		cost = 7
+		prerequisite = { focus = DOL_crown_the_empress }
+		completion_reward = {
+		add_ideas = DOL_colonial_charter
+		add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = DOL_imperial_navy
+		icon = GFX_goal_generic_navy_carrier
+		x = 24
+		y = 3
+		cost = 7
+		prerequisite = { focus = DOL_crown_the_empress }
+		completion_reward = {
+		add_ideas = DOL_imperial_navy
+		604 = {
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		}
+	}
+
+	focus = {
+		id = DOL_banner_of_the_empire
+		icon = GFX_goal_support_fascism
+		x = 26
+		y = 3
+		cost = 7
+		prerequisite = { focus = DOL_crown_the_empress }
+		completion_reward = {
+		add_ideas = DOL_hardline_cabinet
+		add_war_support = 0.10
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+		}
+	}
+
+}

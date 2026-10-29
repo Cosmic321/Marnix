@@ -1,0 +1,201 @@
+ideas = {
+	country = {
+		DOL_economic_slump = {
+			picture = generic_foreign_capital
+			modifier = {
+				industrial_capacity_factory = -0.10
+				consumer_goods_factor = 0.05
+				stability_factor = -0.05
+			}
+		}
+	}
+	country = {
+		DOL_slump_foreign_markets = {
+			picture = generic_foreign_capital
+			modifier = {
+				industrial_capacity_factory = -0.05
+				consumer_goods_factor = 0.03
+			}
+		}
+	}
+	country = {
+		DOL_slump_state_funding = {
+			picture = generic_production_bonus
+			modifier = {
+				industrial_capacity_factory = -0.05
+				political_power_gain = -0.10
+			}
+		}
+	}
+	country = {
+		DOL_recovered_economy = {
+			picture = generic_improved_industries
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+	}
+	country = {
+		DOL_colonial_markets = {
+			picture = generic_license_production
+			modifier = {
+				consumer_goods_factor = -0.04
+				political_power_gain = 0.05
+			}
+		}
+	}
+	country = {
+		DOL_mercantile_nation = {
+			picture = generic_foreign_capital
+			modifier = {
+				industrial_capacity_dockyard = 0.10
+				trade_opinion_factor = 0.15
+			}
+		}
+	}
+	country = {
+		DOL_sentinel_militia = {
+			picture = generic_the_london_naval_treaty
+			modifier = {
+				conscription_factor = -0.25
+				consumer_goods_factor = -0.02
+			}
+		}
+	}
+	country = {
+		DOL_sentinel_reserve = {
+			picture = generic_army_war_college
+			modifier = {
+				conscription_factor = 0.05
+				political_power_gain = -0.10
+			}
+		}
+	}
+	country = {
+		DOL_sentinel_exemptions = {
+			picture = generic_mountain_warfare
+			modifier = {
+				conscription_factor = -0.15
+				army_defence_factor = 0.05
+				experience_gain_army_factor = 0.05
+			}
+		}
+	}
+	country = {
+		DOL_coastal_watch = {
+			picture = generic_mountain_warfare
+			modifier = {
+				army_defence_factor = 0.05
+			}
+		}
+	}
+	country = {
+		DOL_elite_spearhead = {
+			picture = generic_army_war_college
+			modifier = {
+				army_attack_factor = 0.10
+				army_speed_factor = 0.05
+				training_time_factor = -0.10
+				experience_gain_army_factor = 0.10
+			}
+		}
+	}
+	country = {
+		DOL_breakthrough_doctrine = {
+			picture = generic_morale_bonus
+			modifier = {
+				army_speed_factor = 0.05
+				army_org_factor = 0.05
+			}
+		}
+	}
+	country = {
+		DOL_popular_duchess = {
+			picture = generic_morale_bonus
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = -0.10
+			}
+		}
+	}
+	country = {
+		DOL_duchess_consents = {
+			picture = generic_morale_bonus
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+	}
+	country = {
+		DOL_empress_banner = {
+			picture = generic_fascist_workers
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.15
+			}
+		}
+	}
+	country = {
+		DOL_military_spending = {
+			picture = generic_production_bonus
+			modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = 0.03
+			}
+		}
+	}
+	country = {
+		DOL_trade_league = {
+			picture = generic_foreign_capital
+			modifier = {
+				trade_opinion_factor = 0.15
+				consumer_goods_factor = -0.03
+			}
+		}
+	}
+	country = {
+		DOL_armed_neutrality = {
+			picture = generic_the_london_naval_treaty
+			modifier = {
+				stability_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+	}
+	country = {
+		DOL_border_watch = {
+			picture = generic_build_infrastructure
+			modifier = {
+				army_defence_factor = 0.05
+			}
+		}
+	}
+	country = {
+		DOL_colonial_charter = {
+			picture = generic_license_production
+			modifier = {
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.03
+			}
+		}
+	}
+	country = {
+		DOL_imperial_navy = {
+			picture = generic_the_london_naval_treaty
+			modifier = {
+				industrial_capacity_dockyard = 0.15
+			}
+		}
+	}
+	country = {
+		DOL_hardline_cabinet = {
+			picture = generic_fascist_workers
+			modifier = {
+				conscription_factor = 0.10
+				stability_factor = -0.05
+			}
+		}
+	}
+}
