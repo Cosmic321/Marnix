@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=497
 	name="STATE_497"
-	manpower = 3694790
+	manpower = 542200
 	
 	state_category = city
 	resources={
@@ -19,20 +18,16 @@ state={
 		controller = ARE
 		add_core_of = ARE
 		
-		
 		buildings = {
 			infrastructure = 3
 			
-			arms_factory = 1
-			industrial_complex = 1
-			
-			
+			arms_factory = 0
+			industrial_complex = 0
 		}
-		
 	}
 
 	provinces={
-		8393 8394 8395 8396 8397 8398 8399 8400 8401 8402 8403 8404 8405 8406 
+		6219 8393 8394 8395 8396 8397 8398 8399 8400 8401 8402 8403 8404 8405 8406 
 	}
 	local_supplies=0.0 
 }

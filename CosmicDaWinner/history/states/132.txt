@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=132
 	name="STATE_132"
-	manpower = 867503
+	manpower = 263400
 	
 	state_category = pastoral
 	resources={
@@ -19,16 +18,12 @@ state={
 		controller = FSO
 		add_core_of = FSO
 		
-		
 		buildings = {
 			infrastructure = 1
 			
 			arms_factory = 0
 			industrial_complex = 0
-			
-			
 		}
-		
 	}
 
 	provinces={

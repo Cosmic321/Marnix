@@ -1,0 +1,34 @@
+ideas = {
+	country = {
+		overstretched_industry = {
+			picture = generic_improved_industries
+			modifier = {
+				industrial_capacity_factory = -0.35
+				production_speed_buildings_factor = -0.30
+				consumer_goods_factor = 0.20
+				research_speed_factor = -0.15
+				stability_factor = -0.05
+			}
+		}
+	}
+	country = {
+		overstretched_industry_reformed = {
+			picture = generic_improved_industries
+			modifier = {
+				industrial_capacity_factory = -0.15
+				production_speed_buildings_factor = -0.15
+				consumer_goods_factor = 0.08
+				research_speed_factor = -0.05
+			}
+		}
+	}
+	country = {
+		streamlined_industry = {
+			picture = generic_improved_industries
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+	}
+}

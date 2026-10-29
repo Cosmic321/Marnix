@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=250
 	name="STATE_250"
-	manpower = 1716303
+	manpower = 314400
 	
 	state_category = pastoral
 	resources={
@@ -19,16 +18,12 @@ state={
 		controller = SKZ
 		add_core_of = SKZ
 		
-		
 		buildings = {
 			infrastructure = 1
 			
 			arms_factory = 0
 			industrial_complex = 0
-			
-			
 		}
-		
 	}
 
 	provinces={

@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=520
 	name="STATE_520"
-	manpower = 2651892
+	manpower = 615100
 	
 	state_category = rural
 	resources={
@@ -19,20 +18,16 @@ state={
 		controller = DES
 		add_core_of = DES
 		
-		
 		buildings = {
 			infrastructure = 2
 			
 			arms_factory = 0
-			industrial_complex = 1
-			
-			
+			industrial_complex = 0
 		}
-		
 	}
 
 	provinces={
-		8754 8755 8756 8757 8758 8759 8760 8761 8762 8763 
+		6646 7824 8754 8755 8756 8757 8758 8761 8762 8763 
 	}
 	local_supplies=0.0 
 }

@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=685
 	name="STATE_685"
-	manpower = 166873
+	manpower = 30600
 	
 	state_category = pastoral
 	resources={
@@ -19,19 +18,15 @@ state={
 		controller = SMH
 		add_core_of = SMH
 		
-		
 		buildings = {
 			infrastructure = 2
 			
 			arms_factory = 0
 			industrial_complex = 0
-			
 			11008 = {
 				naval_base = 1
 			}
-			
 		}
-		
 	}
 
 	provinces={

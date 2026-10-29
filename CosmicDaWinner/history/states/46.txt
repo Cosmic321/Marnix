@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=46
 	name="STATE_46"
-	manpower = 6191862
+	manpower = 944800
 	
 	state_category = town
 	resources={
@@ -19,16 +18,12 @@ state={
 		controller = MAN
 		add_core_of = MAN
 		
-		
 		buildings = {
 			infrastructure = 1
 			
 			arms_factory = 1
-			industrial_complex = 0
-			
-			
+			industrial_complex = 2
 		}
-		
 	}
 
 	provinces={

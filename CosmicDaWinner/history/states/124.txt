@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=124
 	name="STATE_124"
-	manpower = 1581706
+	manpower = 203100
 	
 	state_category = pastoral
 	resources={
@@ -19,16 +18,12 @@ state={
 		controller = AZE
 		add_core_of = AZE
 		
-		
 		buildings = {
 			infrastructure = 1
 			
 			arms_factory = 0
 			industrial_complex = 0
-			
-			
 		}
-		
 	}
 
 	provinces={

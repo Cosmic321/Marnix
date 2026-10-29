@@ -1,4 +1,4 @@
-focus_tree = {
+﻿focus_tree = {
 
 default = yes
 id = generic_focus
@@ -2068,6 +2068,46 @@ focus = {
 			uses = 2
 			category = armor
 		}
+	}
+}
+
+
+# --- Industry reform branch: removes the overstretched industry debuff of the largest powers ---
+
+focus = {
+	id = generic_rationalise_industry
+	icon = GFX_goal_generic_construct_civilian
+	cost = 10
+	x = 60
+	y = 0
+	available = {
+		has_idea = overstretched_industry
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = overstretched_industry
+			add_idea = overstretched_industry_reformed
+		}
+		add_stability = 0.03
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = generic_modern_industrial_base
+	icon = GFX_goal_generic_construct_mil_factory
+	cost = 10
+	x = 60
+	y = 1
+	prerequisite = {
+		focus = generic_rationalise_industry
+	}
+	available = {
+		has_idea = overstretched_industry_reformed
+	}
+	completion_reward = {
+		remove_ideas = overstretched_industry_reformed
+		add_ideas = streamlined_industry
 	}
 }
 

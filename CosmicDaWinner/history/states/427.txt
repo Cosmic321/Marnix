@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=427
 	name="STATE_427"
-	manpower = 3810262
+	manpower = 613700
 	
 	state_category = city
 	resources={
@@ -19,20 +18,16 @@ state={
 		controller = MOR
 		add_core_of = MOR
 		
-		
 		buildings = {
 			infrastructure = 2
 			
 			arms_factory = 0
-			industrial_complex = 2
-			
-			
+			industrial_complex = 0
 		}
-		
 	}
 
 	provinces={
-		7085 7086 7087 7088 7089 7090 7091 7092 7093 7094 7095 7096 7097 7098 
+		7085 7086 7087 7088 7089 7090 7091 7092 7093 7094 7095 7096 7097 7098 9449 
 	}
 	local_supplies=0.0 
 }

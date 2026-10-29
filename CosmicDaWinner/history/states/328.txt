@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=328
 	name="STATE_328"
-	manpower = 2473462
+	manpower = 719600
 	
 	state_category = pastoral
 	resources={
@@ -19,20 +18,16 @@ state={
 		controller = BSC
 		add_core_of = BSC
 		
-		
 		buildings = {
 			infrastructure = 1
 			
 			arms_factory = 0
-			industrial_complex = 1
-			
-			
+			industrial_complex = 0
 		}
-		
 	}
 
 	provinces={
-		5221 5222 5223 5224 5225 5226 5227 5228 5229 5230 
+		4063 4066 5221 5222 5223 5224 5225 5226 5227 5228 5229 5230 
 	}
 	local_supplies=0.0 
 }

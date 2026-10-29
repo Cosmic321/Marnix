@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=597
 	name="STATE_597"
-	manpower = 4897281
+	manpower = 1114100
 	
 	state_category = large_town
 	resources={
@@ -19,16 +18,12 @@ state={
 		controller = PDV
 		add_core_of = PDV
 		
-		
 		buildings = {
 			infrastructure = 2
 			
 			arms_factory = 0
 			industrial_complex = 2
-			
-			
 		}
-		
 	}
 
 	provinces={

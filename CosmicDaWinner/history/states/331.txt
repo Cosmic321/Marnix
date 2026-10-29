@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=331
 	name="STATE_331"
-	manpower = 1373785
+	manpower = 596500
 	
 	state_category = pastoral
 	resources={
@@ -19,19 +18,15 @@ state={
 		controller = DOL
 		add_core_of = DOL
 		
-		
 		buildings = {
 			infrastructure = 1
 			
 			arms_factory = 0
 			industrial_complex = 0
-			
 			5267 = {
 				naval_base = 1
 			}
-			
 		}
-		
 	}
 
 	provinces={

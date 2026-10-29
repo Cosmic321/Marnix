@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=172
 	name="STATE_172"
-	manpower = 1036449
+	manpower = 161400
 	
 	state_category = pastoral
 	resources={
@@ -19,19 +18,15 @@ state={
 		controller = GBT
 		add_core_of = GBT
 		
-		
 		buildings = {
 			infrastructure = 1
 			
 			arms_factory = 0
 			industrial_complex = 0
-			
 			2515 = {
 				naval_base = 1
 			}
-			
 		}
-		
 	}
 
 	provinces={

@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=30
 	name="STATE_30"
-	manpower = 6174610
+	manpower = 823400
 	
 	state_category = town
 	resources={
@@ -19,20 +18,16 @@ state={
 		controller = BAZ
 		add_core_of = BAZ
 		
-		
 		buildings = {
 			infrastructure = 1
 			
 			arms_factory = 1
-			industrial_complex = 0
-			
-			
+			industrial_complex = 1
 		}
-		
 	}
 
 	provinces={
-		518 519 520 521 522 523 524 525 526 527 528 529 530 531 532 533 534 535 536 537 
+		518 519 520 521 523 524 526 527 528 529 530 531 532 533 534 535 536 537 1252 
 	}
 	local_supplies=0.0 
 }

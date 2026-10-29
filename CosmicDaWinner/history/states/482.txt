@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=482
 	name="STATE_482"
-	manpower = 1838327
+	manpower = 294200
 	
 	state_category = rural
 	resources={
@@ -28,9 +27,7 @@ state={
 			8155 = {
 				naval_base = 1
 			}
-			
 		}
-		
 	}
 
 	provinces={

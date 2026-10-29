@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=179
 	name="STATE_179"
-	manpower = 4985956
+	manpower = 1260600
 	
 	state_category = city
 	resources={
@@ -19,24 +18,21 @@ state={
 		controller = DOL
 		add_core_of = DOL
 		
-		
 		buildings = {
 			infrastructure = 2
 			
 			arms_factory = 1
-			industrial_complex = 3
+			industrial_complex = 2
 			dockyard = 1
-			
 			2633 = {
 				naval_base = 1
 			}
-			
 		}
-		
 	}
 
 	provinces={
-		2630 2631 2632 2633 2634 2635 2636 2637 2638 2639 2640 2641 2642 2643 2644 2645 2646 2647 2648 2649 2650 2651 2652 2653 2654 2655 2656 2657 2658 2659 2660 
+		2630 2631 2632 2633 2634 2635 2637 2638 2640 2641 2642 2643 2644 2645 2646 2647 2648 2649 2650 2651 
+		2652 2653 2654 2655 2656 2657 2658 2659 2660 3515 
 	}
 	local_supplies=0.0 
 }

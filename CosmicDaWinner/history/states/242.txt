@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=242
 	name="STATE_242"
-	manpower = 3986918
+	manpower = 568000
 	
 	state_category = town
 	resources={
@@ -19,7 +18,6 @@ state={
 		controller = SKZ
 		add_core_of = SKZ
 		
-		
 		buildings = {
 			infrastructure = 2
 			
@@ -29,13 +27,11 @@ state={
 			3863 = {
 				naval_base = 1
 			}
-			
 		}
-		
 	}
 
 	provinces={
-		3859 3860 3861 3862 3863 3864 3865 3866 3867 3868 3869 3870 3871 3872 3873 
+		3352 3859 3860 3861 3862 3863 3864 3865 3866 3867 3868 3869 3870 3871 3872 3873 
 	}
 	local_supplies=0.0 
 }

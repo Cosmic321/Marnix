@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=102
 	name="STATE_102"
-	manpower = 2675695
+	manpower = 419900
 	
 	state_category = pastoral
 	resources={
@@ -19,20 +18,16 @@ state={
 		controller = OZB
 		add_core_of = OZB
 		
-		
 		buildings = {
 			infrastructure = 1
 			
 			arms_factory = 0
 			industrial_complex = 0
-			
-			
 		}
-		
 	}
 
 	provinces={
-		1560 1561 1562 1563 1564 1565 1566 1567 1568 
+		475 1560 1561 1562 1563 1564 1565 1566 1568 
 	}
 	local_supplies=0.0 
 }

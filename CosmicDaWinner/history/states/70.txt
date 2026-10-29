@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=70
 	name="STATE_70"
-	manpower = 4024330
+	manpower = 539900
 	
 	state_category = rural
 	resources={
@@ -19,16 +18,12 @@ state={
 		controller = TCU
 		add_core_of = TCU
 		
-		
 		buildings = {
 			infrastructure = 1
 			
 			arms_factory = 0
-			industrial_complex = 1
-			
-			
+			industrial_complex = 0
 		}
-		
 	}
 
 	provinces={

@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=641
 	name="STATE_641"
-	manpower = 7347677
+	manpower = 1016600
 	
 	state_category = city
 	resources={
@@ -19,23 +18,21 @@ state={
 		controller = NRC
 		add_core_of = NRC
 		
-		
 		buildings = {
 			infrastructure = 2
 			
-			arms_factory = 0
-			industrial_complex = 1
+			arms_factory = 1
+			industrial_complex = 2
 			dockyard = 1
 			10601 = {
 				naval_base = 1
 			}
-			
 		}
-		
 	}
 
 	provinces={
-		10594 10595 10596 10597 10598 10599 10600 10601 10602 10603 10604 10605 10606 10607 10608 10609 10610 10611 10612 10613 10614 10615 10616 10617 10618 10619 10620 10621 
+		10594 10595 10596 10597 10598 10599 10600 10601 10602 10603 10604 10605 10606 10607 10608 10609 10610 10611 10612 10613 
+		10614 10615 10616 10617 10619 10620 10621 
 	}
 	local_supplies=0.0 
 }

@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=261
 	name="STATE_261"
-	manpower = 5767057
+	manpower = 1060800
 	
 	state_category = town
 	resources={
@@ -19,20 +18,17 @@ state={
 		controller = KSC
 		add_core_of = KSC
 		
-		
 		buildings = {
 			infrastructure = 2
 			
-			arms_factory = 1
-			industrial_complex = 0
-			
-			
+			arms_factory = 0
+			industrial_complex = 2
 		}
-		
 	}
 
 	provinces={
-		4178 4179 4180 4181 4182 4183 4184 4185 4186 4187 4188 4189 4190 4191 4192 4193 4194 4195 4196 4197 4198 4199 
+		4086 4178 4179 4180 4181 4182 4183 4184 4185 4186 4187 4188 4189 4190 4191 4192 4193 4194 4195 4196 
+		4197 4198 4199 
 	}
 	local_supplies=0.0 
 }

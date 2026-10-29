@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=525
 	name="STATE_525"
-	manpower = 2438582
+	manpower = 354600
 	
 	state_category = town
 	resources={
@@ -19,19 +18,15 @@ state={
 		controller = RIT
 		add_core_of = RIT
 		
-		
 		buildings = {
 			infrastructure = 2
 			
 			arms_factory = 0
-			industrial_complex = 1
-			
+			industrial_complex = 0
 			8837 = {
 				naval_base = 1
 			}
-			
 		}
-		
 	}
 
 	provinces={

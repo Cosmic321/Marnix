@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=272
 	name="STATE_272"
-	manpower = 2109948
+	manpower = 257400
 	
 	state_category = rural
 	resources={
@@ -19,20 +18,16 @@ state={
 		controller = ZVD
 		add_core_of = ZVD
 		
-		
 		buildings = {
 			infrastructure = 1
 			
-			arms_factory = 1
+			arms_factory = 0
 			industrial_complex = 0
-			
-			
 		}
-		
 	}
 
 	provinces={
-		4346 4347 4348 4349 4350 4351 4352 4353 
+		4346 4347 4349 4350 4351 4352 4353 
 	}
 	local_supplies=0.0 
 }

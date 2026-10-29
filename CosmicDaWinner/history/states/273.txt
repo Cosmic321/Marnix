@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=273
 	name="STATE_273"
-	manpower = 3703667
+	manpower = 558400
 	
 	state_category = town
 	resources={
@@ -19,19 +18,15 @@ state={
 		controller = TCC
 		add_core_of = TCC
 		
-		
 		buildings = {
 			infrastructure = 2
 			
-			arms_factory = 1
-			industrial_complex = 0
-			
+			arms_factory = 0
+			industrial_complex = 1
 			4358 = {
 				naval_base = 1
 			}
-			
 		}
-		
 	}
 
 	provinces={

@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=566
 	name="STATE_566"
-	manpower = 2239839
+	manpower = 433500
 	
 	state_category = town
 	resources={
@@ -23,15 +22,12 @@ state={
 			infrastructure = 2
 			
 			arms_factory = 0
-			industrial_complex = 1
-			
-			
+			industrial_complex = 0
 		}
-		
 	}
 
 	provinces={
-		9474 9475 9476 9477 9478 9479 9480 9481 
+		9171 9474 9475 9476 9477 9478 9479 9480 9481 
 	}
 	local_supplies=0.0 
 }

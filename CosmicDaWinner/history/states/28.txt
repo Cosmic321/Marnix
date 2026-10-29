@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=28
 	name="STATE_28"
-	manpower = 2863861
+	manpower = 373300
 	
 	state_category = rural
 	resources={
@@ -19,19 +18,15 @@ state={
 		controller = AZE
 		add_core_of = AZE
 		
-		
 		buildings = {
 			infrastructure = 1
 			
-			arms_factory = 1
+			arms_factory = 0
 			industrial_complex = 0
-			
 			509 = {
 				naval_base = 1
 			}
-			
 		}
-		
 	}
 
 	provinces={

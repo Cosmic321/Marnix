@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=181
 	name="STATE_181"
-	manpower = 6047980
+	manpower = 953600
 	
 	state_category = large_town
 	resources={
@@ -19,20 +18,17 @@ state={
 		controller = ECO
 		add_core_of = ECO
 		
-		
 		buildings = {
 			infrastructure = 2
 			
 			arms_factory = 0
 			industrial_complex = 2
-			
-			
 		}
-		
 	}
 
 	provinces={
-		2681 2682 2683 2684 2685 2686 2687 2688 2689 2690 2691 2692 2693 2694 2695 2696 2697 2698 2699 2700 2701 2702 2703 
+		2681 2682 2683 2684 2685 2686 2687 2688 2689 2690 2691 2692 2693 2694 2695 2696 2697 2698 2699 2700 
+		2701 2702 2703 2829 2845 3736 3745 
 	}
 	local_supplies=0.0 
 }

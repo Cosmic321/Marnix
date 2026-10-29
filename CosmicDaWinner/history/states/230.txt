@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=230
 	name="STATE_230"
-	manpower = 7203838
+	manpower = 1439100
 	
 	state_category = large_town
 	resources={
@@ -19,23 +18,20 @@ state={
 		controller = SNJ
 		add_core_of = SNJ
 		
-		
 		buildings = {
 			infrastructure = 2
 			
-			arms_factory = 0
-			industrial_complex = 1
-			
+			arms_factory = 1
+			industrial_complex = 3
 			3635 = {
 				naval_base = 1
 			}
-			
 		}
-		
 	}
 
 	provinces={
-		3621 3622 3623 3624 3625 3626 3627 3628 3629 3630 3631 3632 3633 3634 3635 3636 3637 3638 3639 3640 3641 3642 3643 3644 3645 3646 3647 3648 
+		3621 3622 3623 3624 3625 3626 3627 3628 3629 3630 3631 3632 3633 3634 3635 3636 3637 3638 3639 3640 
+		3641 3642 3643 3644 3645 3646 3647 3648 4272 
 	}
 	local_supplies=0.0 
 }

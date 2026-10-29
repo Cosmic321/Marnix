@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=396
 	name="STATE_396"
-	manpower = 6953504
+	manpower = 1156000
 	
 	state_category = megalopolis
 	resources={
@@ -22,16 +21,14 @@ state={
 		buildings = {
 			infrastructure = 3
 			
-			arms_factory = 2
+			arms_factory = 1
 			industrial_complex = 2
-			
-			
 		}
-		
 	}
 
 	provinces={
-		6446 6447 6448 6449 6450 6451 6452 6453 6454 6455 6456 6457 6458 6459 6460 6461 6462 6463 6464 6465 6466 6467 6468 6469 6470 6471 
+		6446 6447 6448 6449 6450 6451 6452 6453 6454 6455 6456 6457 6458 6459 6460 6461 6462 6463 6464 6465 
+		6466 6467 6468 6469 6470 6471 7497 7498 
 	}
 	local_supplies=0.0 
 }

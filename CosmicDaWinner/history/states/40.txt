@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=40
 	name="STATE_40"
-	manpower = 1764867
+	manpower = 340400
 	
 	state_category = pastoral
 	resources={
@@ -19,20 +18,16 @@ state={
 		controller = TCU
 		add_core_of = TCU
 		
-		
 		buildings = {
 			infrastructure = 1
 			
 			arms_factory = 0
 			industrial_complex = 0
-			
-			
 		}
-		
 	}
 
 	provinces={
-		687 688 689 690 691 
+		687 688 689 690 691 1446 1449 1454 
 	}
 	local_supplies=0.0 
 }

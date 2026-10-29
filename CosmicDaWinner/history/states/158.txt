@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=158
 	name="STATE_158"
-	manpower = 3298661
+	manpower = 509400
 	
 	state_category = large_town
 	resources={
@@ -19,19 +18,15 @@ state={
 		controller = GBT
 		add_core_of = GBT
 		
-		
 		buildings = {
 			infrastructure = 2
 			
-			arms_factory = 1
-			industrial_complex = 1
-			
+			arms_factory = 0
+			industrial_complex = 0
 			2272 = {
 				naval_base = 1
 			}
-			
 		}
-		
 	}
 
 	provinces={

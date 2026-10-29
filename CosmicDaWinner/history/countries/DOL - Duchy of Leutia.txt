@@ -1,4 +1,4 @@
-capital = 604
+﻿capital = 604
 
 set_politics = {
 	ruling_party = neutrality
@@ -15,11 +15,17 @@ set_popularities = {
 }
 
 set_stability = 0.6
+set_war_support = 0.4
+
+
+# Starting laws - the world has been disarmed after the last great war
 
 add_ideas = {
 	DOL_economic_slump
 	DOL_sentinel_militia
 	DOL_popular_duchess
 	DOL_mercantile_nation
+	disarmed_nation
+	civilian_economy
+	free_trade
 }
-set_war_support = 0.4

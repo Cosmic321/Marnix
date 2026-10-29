@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=643
 	name="STATE_643"
-	manpower = 1956321
+	manpower = 479700
 	
 	state_category = pastoral
 	resources={
@@ -19,19 +18,15 @@ state={
 		controller = NRC
 		add_core_of = NRC
 		
-		
 		buildings = {
 			infrastructure = 1
 			
 			arms_factory = 0
 			industrial_complex = 0
-			
 			10658 = {
 				naval_base = 1
 			}
-			
 		}
-		
 	}
 
 	provinces={

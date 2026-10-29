@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=551
 	name="STATE_551"
-	manpower = 6072123
+	manpower = 899500
 	
 	state_category = metropolis
 	resources={
@@ -19,23 +18,21 @@ state={
 		controller = TCU
 		add_core_of = TCU
 		
-		
 		buildings = {
 			infrastructure = 3
 			
-			arms_factory = 1
-			industrial_complex = 1
+			arms_factory = 0
+			industrial_complex = 2
 			dockyard = 1
 			9260 = {
 				naval_base = 1
 			}
-			
 		}
-		
 	}
 
 	provinces={
-		9242 9243 9244 9245 9246 9247 9248 9249 9250 9251 9252 9253 9254 9255 9256 9257 9258 9259 9260 9261 9262 9263 9264 
+		5759 9243 9244 9246 9247 9248 9249 9250 9251 9254 9255 9257 9258 9259 9260 9261 9262 9263 9264 9699 
+		9700 
 	}
 	local_supplies=0.0 
 }

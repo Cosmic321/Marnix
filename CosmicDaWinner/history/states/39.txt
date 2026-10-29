@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=39
 	name="STATE_39"
-	manpower = 8499618
+	manpower = 1295100
 	
 	state_category = town
 	resources={
@@ -19,23 +18,20 @@ state={
 		controller = HRT
 		add_core_of = HRT
 		
-		
 		buildings = {
 			infrastructure = 1
 			
-			arms_factory = 0
-			industrial_complex = 1
-			
+			arms_factory = 1
+			industrial_complex = 3
 			672 = {
 				naval_base = 1
 			}
-			
 		}
-		
 	}
 
 	provinces={
-		659 660 661 662 663 664 665 666 667 668 669 670 671 672 673 674 675 676 677 678 679 680 681 682 683 684 685 686 
+		659 660 661 662 663 664 665 666 667 668 669 670 671 672 673 674 675 676 677 678 
+		679 680 681 682 683 684 685 686 
 	}
 	local_supplies=0.0 
 }

@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=27
 	name="STATE_27"
-	manpower = 6636843
+	manpower = 835700
 	
 	state_category = town
 	resources={
@@ -19,20 +18,16 @@ state={
 		controller = OZS
 		add_core_of = OZS
 		
-		
 		buildings = {
 			infrastructure = 1
 			
-			arms_factory = 1
-			industrial_complex = 0
-			
-			
+			arms_factory = 0
+			industrial_complex = 2
 		}
-		
 	}
 
 	provinces={
-		481 482 483 484 485 486 487 488 489 490 491 492 493 494 495 496 497 498 499 500 501 
+		481 482 483 484 485 487 488 489 490 491 493 494 496 497 498 500 501 957 
 	}
 	local_supplies=0.0 
 }

@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=613
 	name="STATE_613"
-	manpower = 5261415
+	manpower = 1560800
 	
 	state_category = large_town
 	resources={
@@ -19,20 +18,17 @@ state={
 		controller = VRE
 		add_core_of = VRE
 		
-		
 		buildings = {
 			infrastructure = 2
 			
-			arms_factory = 0
-			industrial_complex = 1
-			
-			
+			arms_factory = 1
+			industrial_complex = 2
 		}
-		
 	}
 
 	provinces={
-		10325 10326 10327 10328 10329 10330 10331 10332 10333 10334 10335 10336 10337 10338 10339 10340 10341 10342 10343 10344 10345 
+		6635 9534 10325 10326 10327 10328 10329 10330 10331 10332 10333 10334 10335 10336 10337 10338 10339 10340 10341 10342 
+		10343 10344 10345 
 	}
 	local_supplies=0.0 
 }

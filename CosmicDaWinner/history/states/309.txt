@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=309
 	name="STATE_309"
-	manpower = 5835326
+	manpower = 827700
 	
 	state_category = large_town
 	resources={
@@ -19,7 +18,6 @@ state={
 		controller = COD
 		add_core_of = COD
 		
-		
 		buildings = {
 			infrastructure = 2
 			
@@ -29,13 +27,12 @@ state={
 			4889 = {
 				naval_base = 1
 			}
-			
 		}
-		
 	}
 
 	provinces={
-		4874 4875 4876 4877 4878 4879 4880 4881 4882 4883 4884 4885 4886 4887 4888 4889 4890 4891 4892 4893 4894 4895 
+		4874 4875 4876 4877 4878 4879 4880 4881 4882 4883 4884 4885 4886 4887 4888 4889 4890 4891 4892 4893 
+		4894 4895 
 	}
 	local_supplies=0.0 
 }

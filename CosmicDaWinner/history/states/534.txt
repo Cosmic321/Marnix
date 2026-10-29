@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=534
 	name="STATE_534"
-	manpower = 6390856
+	manpower = 1074200
 	
 	state_category = metropolis
 	resources={
@@ -19,20 +18,17 @@ state={
 		controller = KER
 		add_core_of = KER
 		
-		
 		buildings = {
 			infrastructure = 3
 			
-			arms_factory = 1
+			arms_factory = 0
 			industrial_complex = 2
-			
-			
 		}
-		
 	}
 
 	provinces={
-		8962 8963 8964 8965 8966 8967 8968 8969 8970 8971 8972 8973 8974 8975 8976 8977 8978 8979 8980 8981 8982 8983 8984 8985 
+		8962 8963 8964 8965 8966 8967 8968 8969 8970 8971 8972 8973 8974 8975 8976 8977 8978 8979 8980 8981 
+		8982 8983 8984 8985 
 	}
 	local_supplies=0.0 
 }

@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=34
 	name="STATE_34"
-	manpower = 4496544
+	manpower = 579100
 	
 	state_category = rural
 	resources={
@@ -19,7 +18,6 @@ state={
 		controller = BER
 		add_core_of = BER
 		
-		
 		buildings = {
 			infrastructure = 1
 			
@@ -29,9 +27,7 @@ state={
 			592 = {
 				naval_base = 1
 			}
-			
 		}
-		
 	}
 
 	provinces={

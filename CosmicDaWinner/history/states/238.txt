@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=238
 	name="STATE_238"
-	manpower = 5713333
+	manpower = 799500
 	
 	state_category = large_town
 	resources={
@@ -19,20 +18,17 @@ state={
 		controller = ZVD
 		add_core_of = ZVD
 		
-		
 		buildings = {
 			infrastructure = 2
 			
 			arms_factory = 1
-			industrial_complex = 1
-			
-			
+			industrial_complex = 3
 		}
-		
 	}
 
 	provinces={
-		3795 3796 3797 3798 3799 3800 3801 3802 3803 3804 3805 3806 3807 3808 3809 3810 3811 3812 3813 3814 3815 
+		3795 3796 3797 3798 3799 3800 3801 3802 3803 3804 3805 3806 3807 3809 3810 3811 3812 3813 3814 3815 
+		5140 
 	}
 	local_supplies=0.0 
 }

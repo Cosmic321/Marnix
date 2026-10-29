@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=25
 	name="STATE_25"
-	manpower = 3952641
+	manpower = 500100
 	
 	state_category = rural
 	resources={
@@ -19,16 +18,12 @@ state={
 		controller = BAZ
 		add_core_of = BAZ
 		
-		
 		buildings = {
 			infrastructure = 1
 			
 			arms_factory = 0
-			industrial_complex = 1
-			
-			
+			industrial_complex = 0
 		}
-		
 	}
 
 	provinces={

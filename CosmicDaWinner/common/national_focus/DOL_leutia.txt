@@ -1,4 +1,4 @@
-focus_tree = {
+﻿focus_tree = {
 	id = leutia_focus
 	country = {
 		factor = 0
@@ -566,4 +566,9 @@ focus_tree = {
 		}
 	}
 
+	# keep the continuous focus panel out of the way of the tree itself
+	continuous_focus_position = {
+		x = 50
+		y = 1500
+	}
 }

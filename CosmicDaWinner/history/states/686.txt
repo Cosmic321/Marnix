@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=686
 	name="STATE_686"
-	manpower = 83786
+	manpower = 15500
 	
 	state_category = pastoral
 	resources={
@@ -15,20 +14,15 @@ state={
 	}
 
 	history={
-		
-		
 		buildings = {
 			infrastructure = 2
 			
 			arms_factory = 0
 			industrial_complex = 0
-			
 			11009 = {
 				naval_base = 1
 			}
-			
 		}
-		
 	}
 
 	provinces={

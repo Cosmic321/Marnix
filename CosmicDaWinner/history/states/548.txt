@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=548
 	name="STATE_548"
-	manpower = 5108555
+	manpower = 1333100
 	
 	state_category = large_town
 	resources={
@@ -19,16 +18,12 @@ state={
 		controller = SMH
 		add_core_of = SMH
 		
-		
 		buildings = {
 			infrastructure = 2
 			
 			arms_factory = 0
-			industrial_complex = 2
-			
-			
+			industrial_complex = 1
 		}
-		
 	}
 
 	provinces={

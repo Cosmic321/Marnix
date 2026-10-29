@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=413
 	name="STATE_413"
-	manpower = 3293576
+	manpower = 1796700
 	
 	state_category = rural
 	resources={
@@ -19,16 +18,12 @@ state={
 		controller = SMH
 		add_core_of = SMH
 		
-		
 		buildings = {
 			infrastructure = 1
 			
 			arms_factory = 1
-			industrial_complex = 0
-			
-			
+			industrial_complex = 3
 		}
-		
 	}
 
 	provinces={

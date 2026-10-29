@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=303
 	name="STATE_303"
-	manpower = 3470365
+	manpower = 613600
 	
 	state_category = rural
 	resources={
@@ -19,7 +18,6 @@ state={
 		controller = SKZ
 		add_core_of = SKZ
 		
-		
 		buildings = {
 			infrastructure = 1
 			
@@ -29,9 +27,7 @@ state={
 			4810 = {
 				naval_base = 1
 			}
-			
 		}
-		
 	}
 
 	provinces={

@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=666
 	name="STATE_666"
-	manpower = 509012
+	manpower = 71900
 	
 	state_category = pastoral
 	resources={
@@ -19,19 +18,15 @@ state={
 		controller = BEA
 		add_core_of = BEA
 		
-		
 		buildings = {
 			infrastructure = 1
 			
 			arms_factory = 0
 			industrial_complex = 0
-			
 			10948 = {
 				naval_base = 1
 			}
-			
 		}
-		
 	}
 
 	provinces={

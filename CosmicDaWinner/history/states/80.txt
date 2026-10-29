@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=80
 	name="STATE_80"
-	manpower = 3532625
+	manpower = 622700
 	
 	state_category = rural
 	resources={
@@ -19,16 +18,12 @@ state={
 		controller = OZR
 		add_core_of = OZR
 		
-		
 		buildings = {
 			infrastructure = 1
 			
-			arms_factory = 1
-			industrial_complex = 0
-			
-			
+			arms_factory = 0
+			industrial_complex = 1
 		}
-		
 	}
 
 	provinces={

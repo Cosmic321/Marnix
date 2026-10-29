@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=135
 	name="STATE_135"
-	manpower = 2209384
+	manpower = 298200
 	
 	state_category = pastoral
 	resources={
@@ -19,16 +18,12 @@ state={
 		controller = BER
 		add_core_of = BER
 		
-		
 		buildings = {
 			infrastructure = 1
 			
 			arms_factory = 0
-			industrial_complex = 1
-			
-			
+			industrial_complex = 0
 		}
-		
 	}
 
 	provinces={

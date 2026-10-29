@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=202
 	name="STATE_202"
-	manpower = 1656016
+	manpower = 238800
 	
 	state_category = pastoral
 	resources={
@@ -19,16 +18,12 @@ state={
 		controller = KSC
 		add_core_of = KSC
 		
-		
 		buildings = {
 			infrastructure = 1
 			
 			arms_factory = 0
-			industrial_complex = 1
-			
-			
+			industrial_complex = 0
 		}
-		
 	}
 
 	provinces={

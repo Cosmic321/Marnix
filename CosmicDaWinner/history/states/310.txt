@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=310
 	name="STATE_310"
-	manpower = 2804675
+	manpower = 414300
 	
 	state_category = rural
 	resources={
@@ -19,16 +18,12 @@ state={
 		controller = BSC
 		add_core_of = BSC
 		
-		
 		buildings = {
 			infrastructure = 1
 			
 			arms_factory = 0
-			industrial_complex = 1
-			
-			
+			industrial_complex = 0
 		}
-		
 	}
 
 	provinces={

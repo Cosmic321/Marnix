@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=435
 	name="STATE_435"
-	manpower = 6926306
+	manpower = 1018800
 	
 	state_category = megalopolis
 	resources={
@@ -19,20 +18,17 @@ state={
 		controller = DES
 		add_core_of = DES
 		
-		
 		buildings = {
 			infrastructure = 3
 			
-			arms_factory = 2
-			industrial_complex = 2
-			
-			
+			arms_factory = 0
+			industrial_complex = 1
 		}
-		
 	}
 
 	provinces={
-		7293 7294 7295 7296 7297 7298 7299 7300 7301 7302 7303 7304 7305 7306 7307 7308 7309 7310 7311 7312 7313 7314 7315 7316 7317 7318 
+		7293 7294 7295 7296 7297 7298 7299 7300 7302 7303 7304 7305 7306 7308 7309 7310 7311 7312 7313 7314 
+		7315 7316 7317 7318 9595 
 	}
 	local_supplies=0.0 
 }

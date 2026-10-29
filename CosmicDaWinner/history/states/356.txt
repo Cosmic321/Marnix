@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=356
 	name="STATE_356"
-	manpower = 4997559
+	manpower = 717700
 	
 	state_category = large_city
 	resources={
@@ -19,19 +18,15 @@ state={
 		controller = ARE
 		add_core_of = ARE
 		
-		
 		buildings = {
 			infrastructure = 3
 			
 			arms_factory = 0
-			industrial_complex = 3
-			
+			industrial_complex = 0
 			5652 = {
 				naval_base = 1
 			}
-			
 		}
-		
 	}
 
 	provinces={

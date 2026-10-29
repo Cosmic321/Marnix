@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=605
 	name="STATE_605"
-	manpower = 3621814
+	manpower = 1661500
 	
 	state_category = rural
 	resources={
@@ -19,16 +18,12 @@ state={
 		controller = PDV
 		add_core_of = PDV
 		
-		
 		buildings = {
 			infrastructure = 1
 			
 			arms_factory = 1
-			industrial_complex = 0
-			
-			
+			industrial_complex = 2
 		}
-		
 	}
 
 	provinces={

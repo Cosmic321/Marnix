@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=419
 	name="STATE_419"
-	manpower = 6725461
+	manpower = 1089500
 	
 	state_category = metropolis
 	resources={
@@ -19,23 +18,20 @@ state={
 		controller = PDV
 		add_core_of = PDV
 		
-		
 		buildings = {
 			infrastructure = 3
 			
-			arms_factory = 3
-			industrial_complex = 1
-			
+			arms_factory = 0
+			industrial_complex = 2
 			6946 = {
 				naval_base = 1
 			}
-			
 		}
-		
 	}
 
 	provinces={
-		6928 6929 6930 6931 6932 6933 6934 6935 6936 6937 6938 6939 6940 6941 6942 6943 6944 6945 6946 6947 6948 6949 6950 6951 6952 6953 
+		6928 6929 6930 6931 6932 6933 6934 6935 6936 6937 6938 6939 6940 6941 6942 6943 6944 6945 6946 6947 
+		6948 6949 6950 6951 6952 6953 
 	}
 	local_supplies=0.0 
 }

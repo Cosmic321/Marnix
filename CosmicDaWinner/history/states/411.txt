@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=411
 	name="STATE_411"
-	manpower = 1426966
+	manpower = 199500
 	
 	state_category = rural
 	resources={
@@ -19,16 +18,12 @@ state={
 		controller = DPJ
 		add_core_of = DPJ
 		
-		
 		buildings = {
 			infrastructure = 2
 			
-			arms_factory = 1
+			arms_factory = 0
 			industrial_complex = 0
-			
-			
 		}
-		
 	}
 
 	provinces={

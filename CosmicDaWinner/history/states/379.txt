@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=379
 	name="STATE_379"
-	manpower = 3292370
+	manpower = 546200
 	
 	state_category = large_town
 	resources={
@@ -19,20 +18,16 @@ state={
 		controller = DPJ
 		add_core_of = DPJ
 		
-		
 		buildings = {
 			infrastructure = 2
 			
 			arms_factory = 0
-			industrial_complex = 2
-			
-			
+			industrial_complex = 0
 		}
-		
 	}
 
 	provinces={
-		6080 6081 6082 6083 6084 6085 6086 6087 6088 6089 6090 6091 
+		6080 6081 6082 6083 6084 6085 6086 6087 6088 6089 6090 6091 9933 9945 
 	}
 	local_supplies=0.0 
 }

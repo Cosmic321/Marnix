@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=51
 	name="STATE_51"
-	manpower = 3715684
+	manpower = 511000
 	
 	state_category = rural
 	resources={
@@ -19,16 +18,12 @@ state={
 		controller = OZB
 		add_core_of = OZB
 		
-		
 		buildings = {
 			infrastructure = 1
 			
 			arms_factory = 0
-			industrial_complex = 1
-			
-			
+			industrial_complex = 0
 		}
-		
 	}
 
 	provinces={

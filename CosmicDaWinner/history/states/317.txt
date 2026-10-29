@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=317
 	name="STATE_317"
-	manpower = 6045560
+	manpower = 875900
 	
 	state_category = large_town
 	resources={
@@ -19,23 +18,20 @@ state={
 		controller = BSC
 		add_core_of = BSC
 		
-		
 		buildings = {
 			infrastructure = 2
 			
 			arms_factory = 0
-			industrial_complex = 2
-			
+			industrial_complex = 1
 			5011 = {
 				naval_base = 1
 			}
-			
 		}
-		
 	}
 
 	provinces={
-		5007 5008 5009 5010 5011 5012 5013 5014 5015 5016 5017 5018 5019 5020 5021 5022 5023 5024 5025 5026 5027 5028 5029 
+		5007 5008 5009 5010 5011 5012 5013 5014 5015 5016 5017 5018 5019 5020 5021 5022 5023 5024 5025 5026 
+		5027 5028 5029 
 	}
 	local_supplies=0.0 
 }

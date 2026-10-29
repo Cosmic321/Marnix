@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=555
 	name="STATE_555"
-	manpower = 7352883
+	manpower = 1117100
 	
 	state_category = megalopolis
 	resources={
@@ -23,18 +22,17 @@ state={
 			infrastructure = 3
 			
 			arms_factory = 1
-			industrial_complex = 1
+			industrial_complex = 2
 			dockyard = 2
 			9310 = {
 				naval_base = 1
 			}
-			
 		}
-		
 	}
 
 	provinces={
-		9308 9309 9310 9311 9312 9313 9314 9315 9316 9317 9318 9319 9320 9321 9322 9323 9324 9325 9326 9327 9328 9329 9330 9331 9332 9333 9334 9335 
+		9308 9309 9310 9311 9312 9313 9314 9315 9316 9317 9318 9319 9320 9321 9322 9323 9324 9325 9326 9327 
+		9328 9329 9330 9331 9332 9333 9334 9335 
 	}
 	local_supplies=0.0 
 }

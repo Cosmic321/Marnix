@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=504
 	name="STATE_504"
-	manpower = 1216342
+	manpower = 207500
 	
 	state_category = rural
 	resources={
@@ -24,10 +23,7 @@ state={
 			
 			arms_factory = 0
 			industrial_complex = 0
-			
-			
 		}
-		
 	}
 
 	provinces={

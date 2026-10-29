@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=508
 	name="STATE_508"
-	manpower = 7006669
+	manpower = 1744200
 	
 	state_category = city
 	resources={
@@ -19,20 +18,17 @@ state={
 		controller = RIT
 		add_core_of = RIT
 		
-		
 		buildings = {
 			infrastructure = 2
 			
-			arms_factory = 2
-			industrial_complex = 0
-			
-			
+			arms_factory = 1
+			industrial_complex = 4
 		}
-		
 	}
 
 	provinces={
-		8540 8541 8542 8543 8544 8545 8546 8547 8548 8549 8550 8551 8552 8553 8554 8555 8556 8557 8558 8559 8560 8561 8562 8563 8564 8565 8566 8567 
+		7062 7073 8540 8542 8543 8544 8545 8546 8547 8548 8549 8550 8551 8552 8553 8554 8555 8556 8557 8558 
+		8559 8560 8561 8562 8563 8564 8565 8566 
 	}
 	local_supplies=0.0 
 }

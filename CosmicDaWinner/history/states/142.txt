@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=142
 	name="STATE_142"
-	manpower = 7488526
+	manpower = 1002800
 	
 	state_category = town
 	resources={
@@ -19,23 +18,20 @@ state={
 		controller = AZE
 		add_core_of = AZE
 		
-		
 		buildings = {
 			infrastructure = 1
 			
-			arms_factory = 0
-			industrial_complex = 1
-			
+			arms_factory = 1
+			industrial_complex = 2
 			2158 = {
 				naval_base = 1
 			}
-			
 		}
-		
 	}
 
 	provinces={
-		2151 2152 2153 2154 2155 2156 2157 2158 2159 2160 2161 2162 2163 2164 2165 2166 2167 2168 2169 2170 2171 2172 2173 2174 
+		2151 2153 2154 2155 2156 2157 2158 2159 2160 2161 2162 2163 2164 2165 2166 2167 2168 2169 2170 2171 
+		2172 2173 2174 
 	}
 	local_supplies=0.0 
 }

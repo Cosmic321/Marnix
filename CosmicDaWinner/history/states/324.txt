@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=324
 	name="STATE_324"
-	manpower = 2790263
+	manpower = 480300
 	
 	state_category = rural
 	resources={
@@ -19,20 +18,16 @@ state={
 		controller = KSC
 		add_core_of = KSC
 		
-		
 		buildings = {
 			infrastructure = 1
 			
-			arms_factory = 1
+			arms_factory = 0
 			industrial_complex = 0
-			
-			
 		}
-		
 	}
 
 	provinces={
-		5187 5188 5189 5190 5191 5192 5193 5194 5195 5196 
+		4073 5187 5188 5189 5190 5191 5192 5193 5194 5195 5196 
 	}
 	local_supplies=0.0 
 }

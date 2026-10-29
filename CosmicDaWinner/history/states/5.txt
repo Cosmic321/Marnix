@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=5
 	name="STATE_5"
-	manpower = 8276364
+	manpower = 1078800
 	
 	state_category = large_town
 	resources={
@@ -19,23 +18,21 @@ state={
 		controller = RBD
 		add_core_of = RBD
 		
-		
 		buildings = {
 			infrastructure = 1
 			
-			arms_factory = 0
-			industrial_complex = 0
+			arms_factory = 1
+			industrial_complex = 2
 			dockyard = 1
 			65 = {
 				naval_base = 1
 			}
-			
 		}
-		
 	}
 
 	provinces={
-		65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 
+		65 66 67 68 69 70 72 73 74 75 76 77 78 79 80 81 82 83 84 85 
+		86 87 88 89 90 91 1624 
 	}
 	local_supplies=0.0 
 }

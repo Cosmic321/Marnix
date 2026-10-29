@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=661
 	name="STATE_661"
-	manpower = 4387266
+	manpower = 687500
 	
 	state_category = town
 	resources={
@@ -19,19 +18,15 @@ state={
 		controller = BEA
 		add_core_of = BEA
 		
-		
 		buildings = {
 			infrastructure = 2
 			
-			arms_factory = 1
-			industrial_complex = 0
-			
+			arms_factory = 0
+			industrial_complex = 1
 			10901 = {
 				naval_base = 1
 			}
-			
 		}
-		
 	}
 
 	provinces={

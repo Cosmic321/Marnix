@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=559
 	name="STATE_559"
-	manpower = 5857123
+	manpower = 801500
 	
 	state_category = metropolis
 	resources={
@@ -22,19 +21,17 @@ state={
 		buildings = {
 			infrastructure = 3
 			
-			arms_factory = 1
-			industrial_complex = 3
-			
+			arms_factory = 0
+			industrial_complex = 1
 			9363 = {
 				naval_base = 1
 			}
-			
 		}
-		
 	}
 
 	provinces={
-		9356 9357 9358 9359 9360 9361 9362 9363 9364 9365 9366 9367 9368 9369 9370 9371 9372 9373 9374 9375 9376 9377 
+		9356 9357 9358 9359 9360 9361 9362 9363 9364 9365 9366 9367 9368 9369 9370 9371 9372 9373 9374 9375 
+		9376 9377 
 	}
 	local_supplies=0.0 
 }

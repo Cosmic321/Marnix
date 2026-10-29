@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=322
 	name="STATE_322"
-	manpower = 6853383
+	manpower = 937900
 	
 	state_category = city
 	resources={
@@ -19,20 +18,17 @@ state={
 		controller = ECO
 		add_core_of = ECO
 		
-		
 		buildings = {
 			infrastructure = 2
 			
-			arms_factory = 1
-			industrial_complex = 1
-			
-			
+			arms_factory = 0
+			industrial_complex = 2
 		}
-		
 	}
 
 	provinces={
-		5132 5133 5134 5135 5136 5137 5138 5139 5140 5141 5142 5143 5144 5145 5146 5147 5148 5149 5150 5151 5152 5153 5154 5155 5156 5157 
+		3808 5132 5133 5134 5135 5136 5137 5138 5139 5141 5142 5143 5144 5145 5146 5147 5148 5149 5150 5151 
+		5152 5153 5154 5155 5156 5157 
 	}
 	local_supplies=0.0 
 }

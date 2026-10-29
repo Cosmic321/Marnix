@@ -1,8 +1,7 @@
-
-state={
+﻿state={
 	id=8
 	name="STATE_8"
-	manpower = 3696952
+	manpower = 568400
 	
 	state_category = rural
 	resources={
@@ -19,19 +18,15 @@ state={
 		controller = FSO
 		add_core_of = FSO
 		
-		
 		buildings = {
 			infrastructure = 1
 			
 			arms_factory = 0
 			industrial_complex = 1
-			
 			143 = {
 				naval_base = 1
 			}
-			
 		}
-		
 	}
 
 	provinces={
