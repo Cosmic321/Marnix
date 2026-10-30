@@ -14,6 +14,9 @@ state={
 	}
 
 	history={
+		victory_points = {
+			3149 20
+		}
 		owner = ZVD
 		controller = ZVD
 		add_core_of = ZVD

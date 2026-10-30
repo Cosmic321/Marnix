@@ -14,6 +14,9 @@ state={
 	}
 
 	history={
+		victory_points = {
+			364 5
+		}
 		owner = TCU
 		controller = TCU
 		add_core_of = TCU

@@ -14,6 +14,9 @@ state={
 	}
 
 	history={
+		victory_points = {
+			1985 5
+		}
 		owner = FSO
 		controller = FSO
 		add_core_of = FSO

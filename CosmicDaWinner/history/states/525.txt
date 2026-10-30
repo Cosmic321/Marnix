@@ -14,6 +14,9 @@ state={
 	}
 
 	history={
+		victory_points = {
+			8830 5
+		}
 		owner = RIT
 		controller = RIT
 		add_core_of = RIT

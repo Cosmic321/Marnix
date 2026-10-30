@@ -14,6 +14,9 @@ state={
 	}
 
 	history={
+		victory_points = {
+			10835 1
+		}
 		owner = NRC
 		controller = NRC
 		add_core_of = NRC

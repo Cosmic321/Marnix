@@ -29,7 +29,7 @@ bookmarks = {
 
 		"COD" = {
 			history = "COD_CDW_DESC"
-			ideology = neutrality
+			ideology = democratic
 		}
 
 		"TCU" = {

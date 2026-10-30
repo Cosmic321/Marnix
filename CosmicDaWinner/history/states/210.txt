@@ -14,6 +14,9 @@ state={
 	}
 
 	history={
+		victory_points = {
+			3273 2
+		}
 		owner = BSC
 		controller = BSC
 		add_core_of = BSC

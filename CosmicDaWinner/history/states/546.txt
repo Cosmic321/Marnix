@@ -14,6 +14,9 @@ state={
 	}
 
 	history={
+		victory_points = {
+			9180 30
+		}
 		owner = KER
 		controller = KER
 		add_core_of = KER

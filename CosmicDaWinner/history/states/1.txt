@@ -14,6 +14,9 @@ state={
 	}
 
 	history={
+		victory_points = {
+			5 1
+		}
 		owner = OZB
 		controller = OZB
 		add_core_of = OZB

@@ -14,6 +14,9 @@ state={
 	}
 
 	history={
+		victory_points = {
+			9141 15
+		}
 		owner = PDV
 		controller = PDV
 		add_core_of = PDV

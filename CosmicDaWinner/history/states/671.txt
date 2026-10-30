@@ -14,6 +14,9 @@ state={
 	}
 
 	history={
+		victory_points = {
+			10986 2
+		}
 		owner = ALT
 		controller = ALT
 		add_core_of = ALT

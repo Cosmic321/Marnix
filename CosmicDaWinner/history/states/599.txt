@@ -14,6 +14,9 @@ state={
 	}
 
 	history={
+		victory_points = {
+			10101 1
+		}
 		owner = SMH
 		controller = SMH
 		add_core_of = SMH

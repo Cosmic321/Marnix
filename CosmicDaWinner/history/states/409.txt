@@ -14,6 +14,9 @@ state={
 	}
 
 	history={
+		victory_points = {
+			6759 20
+		}
 		owner = VRK
 		controller = VRK
 		add_core_of = VRK

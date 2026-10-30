@@ -14,6 +14,9 @@ state={
 	}
 
 	history={
+		victory_points = {
+			2201 2
+		}
 		owner = HRT
 		controller = HRT
 		add_core_of = HRT

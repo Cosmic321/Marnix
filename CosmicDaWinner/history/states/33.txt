@@ -14,6 +14,9 @@ state={
 	}
 
 	history={
+		victory_points = {
+			581 1
+		}
 		owner = RBD
 		controller = RBD
 		add_core_of = RBD

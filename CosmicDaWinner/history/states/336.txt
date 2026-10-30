@@ -14,6 +14,9 @@ state={
 	}
 
 	history={
+		victory_points = {
+			5313 1
+		}
 		owner = SKZ
 		controller = SKZ
 		add_core_of = SKZ

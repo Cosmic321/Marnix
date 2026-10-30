@@ -14,6 +14,9 @@ state={
 	}
 
 	history={
+		victory_points = {
+			10036 5
+		}
 		owner = MOR
 		controller = MOR
 		add_core_of = MOR

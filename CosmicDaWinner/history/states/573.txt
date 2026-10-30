@@ -14,6 +14,9 @@ state={
 	}
 
 	history={
+		victory_points = {
+			9583 20
+		}
 		owner = DPJ
 		controller = DPJ
 		add_core_of = DPJ

@@ -14,6 +14,9 @@ state={
 	}
 
 	history={
+		victory_points = {
+			7670 15
+		}
 		owner = ARE
 		controller = ARE
 		add_core_of = ARE

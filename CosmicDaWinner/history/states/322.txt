@@ -14,6 +14,9 @@ state={
 	}
 
 	history={
+		victory_points = {
+			5137 15
+		}
 		owner = ECO
 		controller = ECO
 		add_core_of = ECO

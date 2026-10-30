@@ -14,6 +14,9 @@ state={
 	}
 
 	history={
+		victory_points = {
+			4477 2
+		}
 		owner = SNJ
 		controller = SNJ
 		add_core_of = SNJ

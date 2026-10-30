@@ -1,4 +1,4 @@
-capital = 8732
+capital = 380
 
 set_politics = {
 	ruling_party = neutrality

@@ -14,6 +14,9 @@ state={
 	}
 
 	history={
+		victory_points = {
+			4355 5
+		}
 		owner = TCC
 		controller = TCC
 		add_core_of = TCC

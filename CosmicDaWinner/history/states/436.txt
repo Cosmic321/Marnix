@@ -14,6 +14,9 @@ state={
 	}
 
 	history={
+		victory_points = {
+			8200 20
+		}
 		owner = VRE
 		controller = VRE
 		add_core_of = VRE

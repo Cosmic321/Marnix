@@ -14,6 +14,9 @@ state={
 	}
 
 	history={
+		victory_points = {
+			10991 2
+		}
 		owner = BEA
 		controller = BEA
 		add_core_of = BEA

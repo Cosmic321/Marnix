@@ -14,6 +14,9 @@ state={
 	}
 
 	history={
+		victory_points = {
+			4883 10
+		}
 		owner = COD
 		controller = COD
 		add_core_of = COD

@@ -14,6 +14,9 @@ state={
 	}
 
 	history={
+		victory_points = {
+			800 1
+		}
 		owner = BER
 		controller = BER
 		add_core_of = BER
