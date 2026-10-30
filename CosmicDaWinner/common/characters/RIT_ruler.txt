@@ -2,6 +2,11 @@ characters = {
 	RIT_ruler = {
 		name = RIT_ruler
 		gender = male
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/RIT/Portrait_RIT_Fatolini.dds"
+			}
+		}
 		country_leader = {
 			ideology = conservatism
 			desc = RIT_ruler_desc

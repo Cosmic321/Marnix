@@ -3,7 +3,7 @@ characters = {
 		name = COD_harraldinho
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/COD/Portrait_COD_Harraldinho.dds"
+				large = "gfx/leaders/COD/Portrait_COD_Kernow_King.dds"
 			}
 		}
 		country_leader = {
