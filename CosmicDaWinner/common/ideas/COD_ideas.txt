@@ -151,4 +151,12 @@ ideas = {
 			}
 		}
 	}
+	country = {
+		COD_barry_quicky = {
+			picture = generic_morale_bonus
+			modifier = {
+				stability_weekly = 14
+			}
+		}
+	}
 }

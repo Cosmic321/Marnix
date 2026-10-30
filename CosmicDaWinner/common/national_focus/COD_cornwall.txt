@@ -1795,6 +1795,20 @@ focus_tree = {
 		}
 	}
 
+
+	focus = {
+		id = COD_barry_gives_you_a_quicky
+		icon = GFX_goal_generic_national_unity
+		x = 6
+		y = 16
+		cost = 5
+		prerequisite = { focus = COD_an_empire_across_the_water }
+		prerequisite = { focus = COD_an_industrial_nation }
+		completion_reward = {
+			add_ideas = COD_barry_quicky
+		}
+	}
+
 	continuous_focus_position = {
 		x = 60
 		y = 2340
