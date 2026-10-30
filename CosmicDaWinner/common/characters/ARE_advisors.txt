@@ -147,66 +147,159 @@ characters = {
 			cost = 150
 		}
 	}
-	CDW_ARE_army = {
-		name = CDW_ARE_army
+	CDW_ARE_army1 = {
+		name = CDW_ARE_army1
 		gender = male
 		advisor = {
 			slot = army_chief
-			idea_token = CDW_ARE_army
+			idea_token = CDW_ARE_army1
+			traits = { cdw_mil_01 }
+			cost = 150
+		}
+	}
+	CDW_ARE_army2 = {
+		name = CDW_ARE_army2
+		gender = male
+		advisor = {
+			slot = army_chief
+			idea_token = CDW_ARE_army2
 			traits = { cdw_mil_02 }
 			cost = 150
 		}
 	}
-	CDW_ARE_navy = {
-		name = CDW_ARE_navy
+	CDW_ARE_army3 = {
+		name = CDW_ARE_army3
+		gender = male
+		advisor = {
+			slot = army_chief
+			idea_token = CDW_ARE_army3
+			traits = { cdw_mil_03 }
+			cost = 150
+		}
+	}
+	CDW_ARE_navy1 = {
+		name = CDW_ARE_navy1
 		gender = male
 		advisor = {
 			slot = navy_chief
-			idea_token = CDW_ARE_navy
+			idea_token = CDW_ARE_navy1
+			traits = { cdw_mil_04 }
+			cost = 150
+		}
+	}
+	CDW_ARE_navy2 = {
+		name = CDW_ARE_navy2
+		gender = male
+		advisor = {
+			slot = navy_chief
+			idea_token = CDW_ARE_navy2
 			traits = { cdw_mil_05 }
 			cost = 150
 		}
 	}
-	CDW_ARE_air = {
-		name = CDW_ARE_air
+	CDW_ARE_navy3 = {
+		name = CDW_ARE_navy3
+		gender = male
+		advisor = {
+			slot = navy_chief
+			idea_token = CDW_ARE_navy3
+			traits = { cdw_mil_06 }
+			cost = 150
+		}
+	}
+	CDW_ARE_air1 = {
+		name = CDW_ARE_air1
 		gender = male
 		advisor = {
 			slot = air_chief
-			idea_token = CDW_ARE_air
+			idea_token = CDW_ARE_air1
+			traits = { cdw_mil_07 }
+			cost = 150
+		}
+	}
+	CDW_ARE_air2 = {
+		name = CDW_ARE_air2
+		gender = male
+		advisor = {
+			slot = air_chief
+			idea_token = CDW_ARE_air2
 			traits = { cdw_mil_08 }
 			cost = 150
 		}
 	}
-	CDW_ARE_hca = {
-		name = CDW_ARE_hca
+	CDW_ARE_air3 = {
+		name = CDW_ARE_air3
+		gender = male
+		advisor = {
+			slot = air_chief
+			idea_token = CDW_ARE_air3
+			traits = { cdw_mil_09 }
+			cost = 150
+		}
+	}
+	CDW_ARE_hc1 = {
+		name = CDW_ARE_hc1
 		gender = male
 		advisor = {
 			slot = high_command
 			ledger = army
-			idea_token = CDW_ARE_hca
+			idea_token = CDW_ARE_hc1
 			traits = { cdw_mil_10 }
 			cost = 100
 		}
 	}
-	CDW_ARE_hcn = {
-		name = CDW_ARE_hcn
+	CDW_ARE_hc2 = {
+		name = CDW_ARE_hc2
+		gender = male
+		advisor = {
+			slot = high_command
+			ledger = army
+			idea_token = CDW_ARE_hc2
+			traits = { cdw_mil_11 }
+			cost = 100
+		}
+	}
+	CDW_ARE_hc3 = {
+		name = CDW_ARE_hc3
 		gender = male
 		advisor = {
 			slot = high_command
 			ledger = navy
-			idea_token = CDW_ARE_hcn
+			idea_token = CDW_ARE_hc3
 			traits = { cdw_mil_12 }
 			cost = 100
 		}
 	}
-	CDW_ARE_hcx = {
-		name = CDW_ARE_hcx
+	CDW_ARE_hc4 = {
+		name = CDW_ARE_hc4
+		gender = male
+		advisor = {
+			slot = high_command
+			ledger = navy
+			idea_token = CDW_ARE_hc4
+			traits = { cdw_mil_13 }
+			cost = 100
+		}
+	}
+	CDW_ARE_hc5 = {
+		name = CDW_ARE_hc5
 		gender = male
 		advisor = {
 			slot = high_command
 			ledger = air
-			idea_token = CDW_ARE_hcx
+			idea_token = CDW_ARE_hc5
 			traits = { cdw_mil_14 }
+			cost = 100
+		}
+	}
+	CDW_ARE_hc6 = {
+		name = CDW_ARE_hc6
+		gender = male
+		advisor = {
+			slot = high_command
+			ledger = air
+			idea_token = CDW_ARE_hc6
+			traits = { cdw_mil_15 }
 			cost = 100
 		}
 	}
