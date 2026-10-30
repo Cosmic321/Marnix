@@ -1,0 +1,7 @@
+﻿l_english:
+ WAR_NAME:0 "Conquer"
+ WAR_TAKE_CLAIM_NAME:0 "Take Claimed States"
+ WAR_TAKE_CORE_NAME:0 "Take Core States"
+ CIVIL_WAR_NAME:0 "Civil War"
+ INDEPENDENCE_WAR_NAME:0 "War of Independence"
+ WAR_GOAL_JUSTIFY_BLOCKED:0 "No war may be justified before 1939. Until then, only the focus trees can start a war."

@@ -1762,13 +1762,13 @@ focus_tree = {
 				limit = { any_neighbor_country = { NOT = { is_in_faction_with = ROOT } NOT = { has_war_with = ROOT } } }
 				random_neighbor_country = {
 					limit = { NOT = { is_in_faction_with = ROOT } NOT = { has_war_with = ROOT } }
-					ROOT = { create_wargoal = { type = puppet target = PREV } }
+					ROOT = { create_wargoal = { type = puppet_wargoal_focus target = PREV } }
 				}
 			}
 			else = {
 				random_other_country = {
 					limit = { NOT = { is_in_faction_with = ROOT } NOT = { has_war_with = ROOT } }
-					ROOT = { create_wargoal = { type = puppet target = PREV } }
+					ROOT = { create_wargoal = { type = puppet_wargoal_focus target = PREV } }
 				}
 			}
 			add_war_support = 0.05

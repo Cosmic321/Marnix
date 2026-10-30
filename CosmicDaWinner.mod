@@ -8,6 +8,7 @@ picture="blank_map_template_5632x2048.jpg"
 supported_version="1.16.1"
 
 replace_path="common/bookmarks"
+replace_path="common/wargoals"
 replace_path="common/country_tags"
 replace_path="history/states"
 replace_path="history/countries"
