@@ -314,61 +314,33 @@ focus_tree = {
 	}
 
 	focus = {
-		id = DES_dm_constitutional_convention
+		id = DES_dm_hub
 		icon = GFX_goal_support_democracy
-		x = 2
+		x = 4
 		y = 9
 		cost = 10
 		prerequisite = { focus = DES_fortify_the_east }
+		mutually_exclusive = { focus = DES_cm_hub }
 		completion_reward = {
 			set_politics = {
-				ruling_party = democratic
-				elections_allowed = yes
-				last_election = "1939.1.1"
-				election_frequency = 48
-			}
+							ruling_party = democratic
+							elections_allowed = yes
+							last_election = "1939.1.1"
+							election_frequency = 48
+						}
 			add_political_power = 100
 			add_stability = 0.05
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.10
-			}
+			add_popularity = { ideology = democratic popularity = 0.10 }
 		}
 	}
 
 	focus = {
-		id = DES_dm_emperor_signs
-		icon = GFX_goal_generic_national_unity
-		x = 0
+		id = DES_dm_cost
+		icon = GFX_goal_generic_consumer_goods
+		x = 4
 		y = 10
 		cost = 10
-		prerequisite = { focus = DES_dm_constitutional_convention }
-		completion_reward = {
-			add_stability = 0.05
-			add_political_power = 50
-		}
-	}
-
-	focus = {
-		id = DES_dm_free_elections
-		icon = GFX_goal_support_democracy
-		x = 0
-		y = 11
-		cost = 10
-		prerequisite = { focus = DES_dm_emperor_signs }
-		completion_reward = {
-			add_political_power = 75
-			add_stability = 0.05
-		}
-	}
-
-	focus = {
-		id = DES_dm_free_press
-		icon = GFX_goal_generic_propaganda
-		x = 0
-		y = 12
-		cost = 10
-		prerequisite = { focus = DES_dm_free_elections }
+		prerequisite = { focus = DES_dm_hub }
 		completion_reward = {
 			add_stability = 0.03
 			add_political_power = 25
@@ -376,193 +348,132 @@ focus_tree = {
 	}
 
 	focus = {
-		id = DES_dm_franchise
-		icon = GFX_goal_generic_national_unity
-		x = 0
-		y = 13
+		id = DES_dm_rubble
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 4
+		y = 11
 		cost = 10
-		prerequisite = { focus = DES_dm_free_press }
+		prerequisite = { focus = DES_dm_cost }
 		completion_reward = {
-			add_stability = 0.05
-			add_political_power = 50
+			every_owned_state = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			add_stability = 0.03
 		}
 	}
 
 	focus = {
-		id = DES_dm_chamber
-		icon = GFX_goal_generic_political_pressure
-		x = 0
-		y = 14
-		cost = 10
-		prerequisite = { focus = DES_dm_franchise }
-		completion_reward = {
-			add_political_power = 75
-		}
-	}
-
-	focus = {
-		id = DES_dm_crowned_republic
-		icon = GFX_goal_generic_national_unity
-		x = 0
-		y = 15
-		cost = 10
-		prerequisite = { focus = DES_dm_chamber }
-		completion_reward = {
-			add_political_power = 100
-			add_stability = 0.05
-		}
-	}
-
-	focus = {
-		id = DES_dm_markets
-		icon = GFX_goal_generic_trade
-		x = 2
-		y = 10
-		cost = 10
-		prerequisite = { focus = DES_dm_constitutional_convention }
-		completion_reward = {
-			add_political_power = 50
-		}
-	}
-
-	focus = {
-		id = DES_dm_land_reform
+		id = DES_dm_civil
 		icon = GFX_goal_generic_consumer_goods
 		x = 2
-		y = 11
+		y = 12
 		cost = 10
-		prerequisite = { focus = DES_dm_markets }
+		prerequisite = { focus = DES_dm_rubble }
+		mutually_exclusive = { focus = DES_dm_milit }
 		completion_reward = {
 			add_stability = 0.05
-			add_manpower = 25000
+			add_political_power = 25
 		}
 	}
 
 	focus = {
-		id = DES_dm_vrettian_loan
-		icon = GFX_goal_generic_positive_trade_relations
-		x = 2
-		y = 12
-		cost = 10
-		prerequisite = { focus = DES_dm_land_reform }
-		completion_reward = {
-			add_political_power = 75
-		}
-	}
-
-	focus = {
-		id = DES_dm_trade_treaties
-		icon = GFX_goal_generic_trade
+		id = DES_dm_civil2
+		icon = GFX_goal_generic_construct_civ_factory
 		x = 2
 		y = 13
 		cost = 10
-		prerequisite = { focus = DES_dm_vrettian_loan }
+		prerequisite = { focus = DES_dm_civil }
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.03
+			every_owned_state = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			add_political_power = 25
 		}
 	}
 
 	focus = {
-		id = DES_dm_merchant_marine
-		icon = GFX_goal_generic_build_navy
-		x = 2
-		y = 14
-		cost = 10
-		prerequisite = { focus = DES_dm_trade_treaties }
-		completion_reward = {
-			add_equipment_to_stockpile = { type = convoy amount = 30 }
-		}
-	}
-
-	focus = {
-		id = DES_dm_boom
+		id = DES_dm_civil3
 		icon = GFX_goal_generic_production
 		x = 2
-		y = 15
-		cost = 10
-		prerequisite = { focus = DES_dm_merchant_marine }
-		completion_reward = {
-			every_owned_state = {
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = DES_dm_guard
-		icon = GFX_goal_generic_army_doctrines
-		x = 4
-		y = 10
-		cost = 10
-		prerequisite = { focus = DES_dm_constitutional_convention }
-		completion_reward = {
-			add_army_experience = 25
-			add_stability = 0.03
-		}
-	}
-
-	focus = {
-		id = DES_dm_civilian_control
-		icon = GFX_goal_generic_army_doctrines
-		x = 4
-		y = 11
-		cost = 10
-		prerequisite = { focus = DES_dm_guard }
-		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.03
-		}
-	}
-
-	focus = {
-		id = DES_dm_reserves
-		icon = GFX_goal_generic_defence
-		x = 4
-		y = 12
-		cost = 10
-		prerequisite = { focus = DES_dm_civilian_control }
-		completion_reward = {
-			add_manpower = 30000
-			add_army_experience = 25
-		}
-	}
-
-	focus = {
-		id = DES_dm_navy_first
-		icon = GFX_goal_generic_build_navy
-		x = 4
-		y = 13
-		cost = 10
-		prerequisite = { focus = DES_dm_reserves }
-		completion_reward = {
-			add_navy_experience = 50
-		}
-	}
-
-	focus = {
-		id = DES_dm_air_ministry
-		icon = GFX_goal_generic_air_fighter
-		x = 4
 		y = 14
 		cost = 10
-		prerequisite = { focus = DES_dm_navy_first }
+		prerequisite = { focus = DES_dm_civil2 }
 		completion_reward = {
-			add_air_experience = 50
+			add_stability = 0.05
+			add_manpower = 20000
 		}
 	}
 
 	focus = {
-		id = DES_dm_defensive_doctrine
-		icon = GFX_goal_generic_defence
+		id = DES_dm_milit
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 6
+		y = 12
+		cost = 10
+		prerequisite = { focus = DES_dm_rubble }
+		mutually_exclusive = { focus = DES_dm_civil }
+		completion_reward = {
+			add_war_support = 0.05
+			add_army_experience = 25
+		}
+	}
+
+	focus = {
+		id = DES_dm_milit2
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 6
+		y = 13
+		cost = 10
+		prerequisite = { focus = DES_dm_milit }
+		completion_reward = {
+			every_owned_state = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+			add_army_experience = 25
+		}
+	}
+
+	focus = {
+		id = DES_dm_milit3
+		icon = GFX_goal_generic_major_war
+		x = 6
+		y = 14
+		cost = 10
+		prerequisite = { focus = DES_dm_milit2 }
+		completion_reward = {
+			add_war_support = 0.05
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1500 }
+		}
+	}
+
+	focus = {
+		id = DES_dm_works
+		icon = GFX_goal_generic_national_unity
 		x = 4
 		y = 15
 		cost = 10
-		prerequisite = { focus = DES_dm_air_ministry }
+		prerequisite = { focus = DES_dm_civil3 focus = DES_dm_milit3 }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = DES_dm_armyq
+		icon = GFX_goal_generic_army_doctrines
+		x = 4
+		y = 16
+		cost = 10
+		prerequisite = { focus = DES_dm_works }
+		completion_reward = {
+			add_political_power = 25
+			add_army_experience = 10
+		}
+	}
+
+	focus = {
+		id = DES_dm_armour
+		icon = GFX_goal_generic_army_tanks
+		x = 2
+		y = 17
+		cost = 10
+		prerequisite = { focus = DES_dm_armyq }
+		mutually_exclusive = { focus = DES_dm_infantry }
 		completion_reward = {
 			add_army_experience = 50
 			add_war_support = 0.03
@@ -570,12 +481,155 @@ focus_tree = {
 	}
 
 	focus = {
-		id = DES_dm_neutrality
-		icon = GFX_goal_generic_neutrality_focus
-		x = 6
-		y = 10
+		id = DES_dm_armour2
+		icon = GFX_goal_generic_army_tanks
+		x = 2
+		y = 18
 		cost = 10
-		prerequisite = { focus = DES_dm_constitutional_convention }
+		prerequisite = { focus = DES_dm_armour }
+		completion_reward = {
+			add_army_experience = 25
+			every_owned_state = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = DES_dm_armour3
+		icon = GFX_goal_generic_major_war
+		x = 2
+		y = 19
+		cost = 10
+		prerequisite = { focus = DES_dm_armour2 }
+		completion_reward = {
+			add_army_experience = 50
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = DES_dm_infantry
+		icon = GFX_goal_generic_army_artillery
+		x = 6
+		y = 17
+		cost = 10
+		prerequisite = { focus = DES_dm_armyq }
+		mutually_exclusive = { focus = DES_dm_armour }
+		completion_reward = {
+			add_army_experience = 50
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 800 }
+		}
+	}
+
+	focus = {
+		id = DES_dm_infantry2
+		icon = GFX_goal_generic_army_artillery
+		x = 6
+		y = 18
+		cost = 10
+		prerequisite = { focus = DES_dm_infantry }
+		completion_reward = {
+			add_army_experience = 25
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 2500 }
+		}
+	}
+
+	focus = {
+		id = DES_dm_infantry3
+		icon = GFX_goal_generic_defence
+		x = 6
+		y = 19
+		cost = 10
+		prerequisite = { focus = DES_dm_infantry2 }
+		completion_reward = {
+			add_army_experience = 50
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = DES_dm_newmodel
+		icon = GFX_goal_generic_army_doctrines
+		x = 4
+		y = 20
+		cost = 10
+		prerequisite = { focus = DES_dm_armour3 focus = DES_dm_infantry3 }
+		completion_reward = {
+			add_army_experience = 75
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = DES_dm_pol1
+		icon = GFX_goal_generic_national_unity
+		x = 0
+		y = 12
+		cost = 10
+		prerequisite = { focus = DES_dm_cost }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = DES_dm_pol2
+		icon = GFX_goal_support_democracy
+		x = 0
+		y = 13
+		cost = 10
+		prerequisite = { focus = DES_dm_pol1 }
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = DES_dm_pol3
+		icon = GFX_goal_generic_propaganda
+		x = 0
+		y = 14
+		cost = 10
+		prerequisite = { focus = DES_dm_pol2 }
+		completion_reward = {
+			add_stability = 0.03
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = DES_dm_pol4
+		icon = GFX_goal_generic_national_unity
+		x = 0
+		y = 15
+		cost = 10
+		prerequisite = { focus = DES_dm_pol3 }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = DES_dm_pol5
+		icon = GFX_goal_generic_political_pressure
+		x = 0
+		y = 16
+		cost = 10
+		prerequisite = { focus = DES_dm_pol4 }
+		completion_reward = {
+			add_political_power = 75
+		}
+	}
+
+	focus = {
+		id = DES_dm_for1
+		icon = GFX_goal_generic_neutrality_focus
+		x = 8
+		y = 12
+		cost = 10
+		prerequisite = { focus = DES_dm_cost }
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.03
@@ -583,24 +637,24 @@ focus_tree = {
 	}
 
 	focus = {
-		id = DES_dm_borders
+		id = DES_dm_for2
 		icon = GFX_goal_generic_positive_trade_relations
-		x = 6
-		y = 11
+		x = 8
+		y = 13
 		cost = 10
-		prerequisite = { focus = DES_dm_neutrality }
+		prerequisite = { focus = DES_dm_for1 }
 		completion_reward = {
 			add_political_power = 50
 		}
 	}
 
 	focus = {
-		id = DES_dm_league
+		id = DES_dm_for3
 		icon = GFX_goal_generic_alliance
-		x = 6
-		y = 12
+		x = 8
+		y = 14
 		cost = 10
-		prerequisite = { focus = DES_dm_borders }
+		prerequisite = { focus = DES_dm_for2 }
 		completion_reward = {
 			add_political_power = 75
 			add_stability = 0.03
@@ -608,24 +662,24 @@ focus_tree = {
 	}
 
 	focus = {
-		id = DES_dm_itsany
+		id = DES_dm_for4
 		icon = GFX_goal_generic_trade
-		x = 6
-		y = 13
+		x = 8
+		y = 15
 		cost = 10
-		prerequisite = { focus = DES_dm_league }
+		prerequisite = { focus = DES_dm_for3 }
 		completion_reward = {
 			add_political_power = 50
 		}
 	}
 
 	focus = {
-		id = DES_dm_guarantees
+		id = DES_dm_for5
 		icon = GFX_goal_generic_alliance
-		x = 6
-		y = 14
+		x = 8
+		y = 16
 		cost = 10
-		prerequisite = { focus = DES_dm_itsany }
+		prerequisite = { focus = DES_dm_for4 }
 		completion_reward = {
 			add_political_power = 50
 			add_war_support = 0.03
@@ -633,12 +687,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = DES_dm_peace_bloc
-		icon = GFX_goal_generic_alliance
-		x = 6
-		y = 15
+		id = DES_dm_cap
+		icon = GFX_goal_support_democracy
+		x = 4
+		y = 21
 		cost = 10
-		prerequisite = { focus = DES_dm_guarantees }
+		prerequisite = { focus = DES_dm_newmodel }
+		prerequisite = { focus = DES_dm_for5 }
 		completion_reward = {
 			add_ideas = DES_constitutional_empire
 			add_stability = 0.05
@@ -646,86 +701,60 @@ focus_tree = {
 	}
 
 	focus = {
-		id = DES_cm_second_revolution
+		id = DES_cm_hub
 		icon = GFX_goal_support_communism
-		x = 12
+		x = 16
 		y = 9
 		cost = 10
 		prerequisite = { focus = DES_fortify_the_east }
+		mutually_exclusive = { focus = DES_dm_hub }
 		completion_reward = {
 			set_politics = {
-				ruling_party = communism
-				elections_allowed = no
-				last_election = "1939.1.1"
-				election_frequency = 48
-			}
+							ruling_party = communism
+							elections_allowed = no
+							last_election = "1939.1.1"
+							election_frequency = 48
+						}
 			add_political_power = 100
 			add_war_support = 0.05
-			add_popularity = {
-				ideology = communism
-				popularity = 0.10
-			}
+			add_popularity = { ideology = communism popularity = 0.10 }
 		}
 	}
 
 	focus = {
-		id = DES_cm_councils
-		icon = GFX_goal_support_communism
-		x = 10
+		id = DES_cm_cost
+		icon = GFX_goal_generic_consumer_goods
+		x = 16
 		y = 10
 		cost = 10
-		prerequisite = { focus = DES_cm_second_revolution }
+		prerequisite = { focus = DES_cm_hub }
 		completion_reward = {
-			add_political_power = 50
 			add_stability = 0.03
+			add_political_power = 25
 		}
 	}
 
 	focus = {
-		id = DES_cm_abdicate
-		icon = GFX_goal_generic_political_pressure
-		x = 10
+		id = DES_cm_rubble
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 16
 		y = 11
 		cost = 10
-		prerequisite = { focus = DES_cm_councils }
+		prerequisite = { focus = DES_cm_cost }
 		completion_reward = {
-			add_political_power = 75
-			add_stability = 0.05
-		}
-	}
-
-	focus = {
-		id = DES_cm_commissars
-		icon = GFX_goal_generic_political_pressure
-		x = 10
-		y = 12
-		cost = 10
-		prerequisite = { focus = DES_cm_abdicate }
-		completion_reward = {
-			add_political_power = 50
-		}
-	}
-
-	focus = {
-		id = DES_cm_congress
-		icon = GFX_goal_generic_national_unity
-		x = 10
-		y = 13
-		cost = 10
-		prerequisite = { focus = DES_cm_commissars }
-		completion_reward = {
-			add_political_power = 75
+			every_owned_state = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
 			add_stability = 0.03
 		}
 	}
 
 	focus = {
-		id = DES_cm_literacy
-		icon = GFX_goal_generic_propaganda
-		x = 10
-		y = 14
+		id = DES_cm_civil
+		icon = GFX_goal_generic_consumer_goods
+		x = 14
+		y = 12
 		cost = 10
-		prerequisite = { focus = DES_cm_congress }
+		prerequisite = { focus = DES_cm_rubble }
+		mutually_exclusive = { focus = DES_cm_milit }
 		completion_reward = {
 			add_stability = 0.05
 			add_political_power = 25
@@ -733,143 +762,94 @@ focus_tree = {
 	}
 
 	focus = {
-		id = DES_cm_republic
-		icon = GFX_goal_generic_national_unity
-		x = 10
-		y = 15
+		id = DES_cm_civil2
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 14
+		y = 13
 		cost = 10
-		prerequisite = { focus = DES_cm_literacy }
+		prerequisite = { focus = DES_cm_civil }
 		completion_reward = {
-			add_political_power = 100
-			add_stability = 0.05
+			every_owned_state = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			add_political_power = 25
 		}
 	}
 
 	focus = {
-		id = DES_cm_nationalise
-		icon = GFX_goal_generic_consumer_goods
-		x = 12
-		y = 10
+		id = DES_cm_civil3
+		icon = GFX_goal_generic_production
+		x = 14
+		y = 14
 		cost = 10
-		prerequisite = { focus = DES_cm_second_revolution }
+		prerequisite = { focus = DES_cm_civil2 }
 		completion_reward = {
+			add_stability = 0.05
+			add_manpower = 20000
+		}
+	}
+
+	focus = {
+		id = DES_cm_milit
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 18
+		y = 12
+		cost = 10
+		prerequisite = { focus = DES_cm_rubble }
+		mutually_exclusive = { focus = DES_cm_civil }
+		completion_reward = {
+			add_war_support = 0.05
+			add_army_experience = 25
+		}
+	}
+
+	focus = {
+		id = DES_cm_milit2
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 18
+		y = 13
+		cost = 10
+		prerequisite = { focus = DES_cm_milit }
+		completion_reward = {
+			every_owned_state = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+			add_army_experience = 25
+		}
+	}
+
+	focus = {
+		id = DES_cm_milit3
+		icon = GFX_goal_generic_major_war
+		x = 18
+		y = 14
+		cost = 10
+		prerequisite = { focus = DES_cm_milit2 }
+		completion_reward = {
+			add_war_support = 0.05
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1500 }
+		}
+	}
+
+	focus = {
+		id = DES_cm_works
+		icon = GFX_goal_generic_national_unity
+		x = 16
+		y = 15
+		cost = 10
+		prerequisite = { focus = DES_cm_civil3 focus = DES_cm_milit3 }
+		completion_reward = {
+			add_stability = 0.05
 			add_political_power = 50
 		}
 	}
 
 	focus = {
-		id = DES_cm_collectivise
-		icon = GFX_goal_generic_production
-		x = 12
-		y = 11
-		cost = 10
-		prerequisite = { focus = DES_cm_nationalise }
-		completion_reward = {
-			add_manpower = 30000
-		}
-	}
-
-	focus = {
-		id = DES_cm_electrify
-		icon = GFX_goal_generic_construct_infrastructure
-		x = 12
-		y = 12
-		cost = 10
-		prerequisite = { focus = DES_cm_collectivise }
-		completion_reward = {
-			every_owned_state = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = DES_cm_five_year
-		icon = GFX_goal_generic_construct_civ_factory
-		x = 12
-		y = 13
-		cost = 10
-		prerequisite = { focus = DES_cm_electrify }
-		completion_reward = {
-			every_owned_state = {
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = DES_cm_heavy_industry
-		icon = GFX_goal_generic_construct_mil_factory
-		x = 12
-		y = 14
-		cost = 10
-		prerequisite = { focus = DES_cm_five_year }
-		completion_reward = {
-			every_owned_state = {
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = DES_cm_workers_state
-		icon = GFX_goal_generic_production
-		x = 12
-		y = 15
-		cost = 10
-		prerequisite = { focus = DES_cm_heavy_industry }
-		completion_reward = {
-			add_political_power = 100
-			add_stability = 0.05
-		}
-	}
-
-	focus = {
-		id = DES_cm_red_guard
+		id = DES_cm_armyq
 		icon = GFX_goal_generic_army_doctrines
-		x = 14
-		y = 10
+		x = 16
+		y = 16
 		cost = 10
-		prerequisite = { focus = DES_cm_second_revolution }
+		prerequisite = { focus = DES_cm_works }
 		completion_reward = {
-			add_army_experience = 50
-		}
-	}
-
-	focus = {
-		id = DES_cm_political_officers
-		icon = GFX_goal_generic_political_pressure
-		x = 14
-		y = 11
-		cost = 10
-		prerequisite = { focus = DES_cm_red_guard }
-		completion_reward = {
-			add_army_experience = 25
-			add_stability = 0.03
-		}
-	}
-
-	focus = {
-		id = DES_cm_militia
-		icon = GFX_goal_generic_major_war
-		x = 14
-		y = 12
-		cost = 10
-		prerequisite = { focus = DES_cm_political_officers }
-		completion_reward = {
-			add_manpower = 40000
+			add_political_power = 25
+			add_army_experience = 10
 		}
 	}
 
@@ -877,34 +857,36 @@ focus_tree = {
 		id = DES_cm_armour
 		icon = GFX_goal_generic_army_tanks
 		x = 14
-		y = 13
+		y = 17
 		cost = 10
-		prerequisite = { focus = DES_cm_militia }
+		prerequisite = { focus = DES_cm_armyq }
+		mutually_exclusive = { focus = DES_cm_infantry }
 		completion_reward = {
 			add_army_experience = 50
-			add_equipment_to_stockpile = { type = infantry_equipment amount = 3000 }
+			add_war_support = 0.03
 		}
 	}
 
 	focus = {
-		id = DES_cm_air
-		icon = GFX_goal_generic_air_fighter
+		id = DES_cm_armour2
+		icon = GFX_goal_generic_army_tanks
 		x = 14
-		y = 14
+		y = 18
 		cost = 10
 		prerequisite = { focus = DES_cm_armour }
 		completion_reward = {
-			add_air_experience = 50
+			add_army_experience = 25
+			every_owned_state = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
 		}
 	}
 
 	focus = {
-		id = DES_cm_defence
-		icon = GFX_goal_generic_defence
+		id = DES_cm_armour3
+		icon = GFX_goal_generic_major_war
 		x = 14
-		y = 15
+		y = 19
 		cost = 10
-		prerequisite = { focus = DES_cm_air }
+		prerequisite = { focus = DES_cm_armour2 }
 		completion_reward = {
 			add_army_experience = 50
 			add_war_support = 0.05
@@ -912,76 +894,231 @@ focus_tree = {
 	}
 
 	focus = {
-		id = DES_cm_comintern
-		icon = GFX_goal_support_communism
-		x = 16
-		y = 10
+		id = DES_cm_infantry
+		icon = GFX_goal_generic_army_artillery
+		x = 18
+		y = 17
 		cost = 10
-		prerequisite = { focus = DES_cm_second_revolution }
+		prerequisite = { focus = DES_cm_armyq }
+		mutually_exclusive = { focus = DES_cm_armour }
 		completion_reward = {
-			add_political_power = 50
+			add_army_experience = 50
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 800 }
 		}
 	}
 
 	focus = {
-		id = DES_cm_envoys
-		icon = GFX_goal_generic_positive_trade_relations
-		x = 16
-		y = 11
+		id = DES_cm_infantry2
+		icon = GFX_goal_generic_army_artillery
+		x = 18
+		y = 18
 		cost = 10
-		prerequisite = { focus = DES_cm_comintern }
+		prerequisite = { focus = DES_cm_infantry }
 		completion_reward = {
-			add_political_power = 50
+			add_army_experience = 25
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 2500 }
 		}
 	}
 
 	focus = {
-		id = DES_cm_pdv
-		icon = GFX_goal_support_communism
+		id = DES_cm_infantry3
+		icon = GFX_goal_generic_defence
+		x = 18
+		y = 19
+		cost = 10
+		prerequisite = { focus = DES_cm_infantry2 }
+		completion_reward = {
+			add_army_experience = 50
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = DES_cm_newmodel
+		icon = GFX_goal_generic_army_doctrines
 		x = 16
+		y = 20
+		cost = 10
+		prerequisite = { focus = DES_cm_armour3 focus = DES_cm_infantry3 }
+		completion_reward = {
+			add_army_experience = 75
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = DES_cm_pol1
+		icon = GFX_goal_support_communism
+		x = 12
 		y = 12
 		cost = 10
-		prerequisite = { focus = DES_cm_envoys }
+		prerequisite = { focus = DES_cm_cost }
 		completion_reward = {
-			add_political_power = 75
+			add_political_power = 50
+			add_stability = 0.03
 		}
 	}
 
 	focus = {
-		id = DES_cm_export
-		icon = GFX_goal_generic_major_war
-		x = 16
+		id = DES_cm_pol2
+		icon = GFX_goal_generic_political_pressure
+		x = 12
 		y = 13
 		cost = 10
-		prerequisite = { focus = DES_cm_pdv }
+		prerequisite = { focus = DES_cm_pol1 }
 		completion_reward = {
-			add_war_support = 0.05
+			add_political_power = 75
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = DES_cm_pol3
+		icon = GFX_goal_generic_political_pressure
+		x = 12
+		y = 14
+		cost = 10
+		prerequisite = { focus = DES_cm_pol2 }
+		completion_reward = {
 			add_political_power = 50
 		}
 	}
 
 	focus = {
-		id = DES_cm_allies
-		icon = GFX_goal_generic_alliance
-		x = 16
+		id = DES_cm_pol4
+		icon = GFX_goal_generic_national_unity
+		x = 12
+		y = 15
+		cost = 10
+		prerequisite = { focus = DES_cm_pol3 }
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = DES_cm_pol5
+		icon = GFX_goal_generic_national_unity
+		x = 12
+		y = 16
+		cost = 10
+		prerequisite = { focus = DES_cm_pol4 }
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = DES_cm_for1
+		icon = GFX_goal_support_communism
+		x = 20
+		y = 12
+		cost = 10
+		prerequisite = { focus = DES_cm_cost }
+		completion_reward = {
+			add_political_power = 50
+			every_country = {
+							limit = {
+								NOT = { tag = ROOT }
+								OR = { tag = VRE tag = MOR tag = KER tag = ALT tag = RIT tag = COD }
+							}
+							add_popularity = {
+								ideology = communism
+								popularity = 0.05
+							}
+						}
+		}
+	}
+
+	focus = {
+		id = DES_cm_for2
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 20
+		y = 13
+		cost = 10
+		prerequisite = { focus = DES_cm_for1 }
+		completion_reward = {
+			add_political_power = 50
+			every_country = {
+							limit = {
+								NOT = { tag = ROOT }
+								OR = { tag = VRE tag = MOR tag = KER tag = ALT tag = RIT tag = COD }
+							}
+							add_popularity = {
+								ideology = communism
+								popularity = 0.05
+							}
+						}
+		}
+	}
+
+	focus = {
+		id = DES_cm_for3
+		icon = GFX_goal_generic_propaganda
+		x = 20
 		y = 14
 		cost = 10
-		prerequisite = { focus = DES_cm_export }
+		prerequisite = { focus = DES_cm_for2 }
+		completion_reward = {
+			add_political_power = 50
+			every_country = {
+							limit = {
+								NOT = { tag = ROOT }
+								OR = { tag = VRE tag = MOR tag = KER tag = ALT tag = RIT tag = COD }
+							}
+							add_popularity = {
+								ideology = communism
+								popularity = 0.05
+							}
+						}
+		}
+	}
+
+	focus = {
+		id = DES_cm_for4
+		icon = GFX_goal_generic_major_war
+		x = 20
+		y = 15
+		cost = 10
+		prerequisite = { focus = DES_cm_for3 }
+		completion_reward = {
+			if = {
+							limit = { VRE = { exists = yes } }
+							create_wargoal = {
+								type = puppet_wargoal_focus
+								target = VRE
+							}
+						}
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = DES_cm_for5
+		icon = GFX_goal_generic_alliance
+		x = 20
+		y = 16
+		cost = 10
+		prerequisite = { focus = DES_cm_for4 }
 		completion_reward = {
 			add_political_power = 75
 		}
 	}
 
 	focus = {
-		id = DES_cm_east
-		icon = GFX_goal_generic_alliance
+		id = DES_cm_cap
+		icon = GFX_goal_support_communism
 		x = 16
-		y = 15
+		y = 21
 		cost = 10
-		prerequisite = { focus = DES_cm_allies }
+		prerequisite = { focus = DES_cm_newmodel }
+		prerequisite = { focus = DES_cm_for5 }
 		completion_reward = {
 			add_ideas = DES_workers_republic
-			add_war_support = 0.05
+			add_political_power = 50
+			add_stability = 0.05
 		}
 	}
 

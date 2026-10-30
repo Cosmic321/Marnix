@@ -1809,6 +1809,52 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = COD_fascist_emergency_powers
+		icon = GFX_goal_support_fascism
+		x = 12
+		y = 12
+		cost = 10
+		prerequisite = { focus = COD_cornish_hegemony }
+		completion_reward = {
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+				last_election = "1939.1.1"
+				election_frequency = 48
+			}
+			add_political_power = 75
+			add_war_support = 0.05
+		}
+	}
+
+	# The Snus Junta only comes to the table if it has already gone the same way.
+	focus = {
+		id = COD_northern_compact
+		icon = GFX_goal_generic_alliance
+		x = 12
+		y = 13
+		cost = 10
+		prerequisite = { focus = COD_fascist_emergency_powers }
+		available = {
+			has_government = fascism
+			SNJ = {
+				exists = yes
+				has_government = fascism
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = { is_in_faction = yes }
+				leave_faction = yes
+			}
+			create_faction = "The Northern Compact"
+			SNJ = { add_to_faction = ROOT }
+			add_political_power = 50
+			add_war_support = 0.05
+		}
+	}
+
 	continuous_focus_position = {
 		x = 60
 		y = 2340
