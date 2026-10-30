@@ -867,6 +867,788 @@ focus_tree = {
 		}
 	}
 
+	########################################
+	# Tier three
+	########################################
+
+	focus = {
+		id = DOL_port_expansion
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 0
+		y = 8
+		cost = 10
+		prerequisite = { focus = DOL_the_leutian_miracle }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_political_power = 30
+		}
+	}
+
+	focus = {
+		id = DOL_merchant_marine
+		icon = GFX_goal_generic_build_navy
+		x = 2
+		y = 8
+		cost = 10
+		prerequisite = { focus = DOL_the_leutian_miracle }
+		completion_reward = {
+			navy_experience = 15
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = DOL_leutian_railway
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 4
+		y = 8
+		cost = 10
+		prerequisite = { focus = DOL_the_leutian_miracle }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = DOL_heavy_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 0
+		y = 9
+		cost = 10
+		prerequisite = { focus = DOL_port_expansion }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = DOL_textile_mills
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 2
+		y = 9
+		cost = 10
+		prerequisite = { focus = DOL_merchant_marine }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = DOL_agricultural_reform
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 4
+		y = 9
+		cost = 10
+		prerequisite = { focus = DOL_leutian_railway }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_manpower = 3000
+		}
+	}
+
+	focus = {
+		id = DOL_industrial_finance
+		icon = GFX_goal_generic_trade
+		x = 2
+		y = 10
+		cost = 10
+		prerequisite = {
+			focus = DOL_heavy_industry
+			focus = DOL_textile_mills
+		}
+		completion_reward = {
+			add_political_power = 40
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = DOL_duchys_treasury
+		icon = GFX_goal_generic_trade
+		x = 4
+		y = 10
+		cost = 10
+		prerequisite = { focus = DOL_agricultural_reform }
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = DOL_an_industrial_duchy
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 2
+		y = 11
+		cost = 15
+		prerequisite = {
+			focus = DOL_industrial_finance
+			focus = DOL_duchys_treasury
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_political_power = 60
+		}
+	}
+
+	focus = {
+		id = DOL_reserve_corps
+		icon = GFX_goal_generic_army_doctrines
+		x = 7
+		y = 6
+		cost = 10
+		prerequisite = { focus = DOL_an_army_to_be_reckoned_with }
+		completion_reward = {
+			add_manpower = 4000
+			army_experience = 20
+		}
+	}
+
+	focus = {
+		id = DOL_field_artillery
+		icon = GFX_goal_generic_army_artillery
+		x = 9
+		y = 6
+		cost = 10
+		prerequisite = { focus = DOL_an_army_to_be_reckoned_with }
+		completion_reward = {
+			army_experience = 30
+		}
+	}
+
+	focus = {
+		id = DOL_frontier_forts
+		icon = GFX_goal_generic_defence
+		x = 11
+		y = 6
+		cost = 10
+		prerequisite = { focus = DOL_an_army_to_be_reckoned_with }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = DOL_mobile_columns
+		icon = GFX_goal_generic_army_doctrines
+		x = 7
+		y = 7
+		cost = 10
+		prerequisite = { focus = DOL_reserve_corps }
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+
+	focus = {
+		id = DOL_mountain_troops
+		icon = GFX_goal_generic_army_doctrines
+		x = 9
+		y = 7
+		cost = 10
+		prerequisite = { focus = DOL_field_artillery }
+		completion_reward = {
+			army_experience = 25
+			add_manpower = 2000
+		}
+	}
+
+	focus = {
+		id = DOL_military_railways
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 11
+		y = 7
+		cost = 10
+		prerequisite = { focus = DOL_frontier_forts }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			army_experience = 15
+		}
+	}
+
+	focus = {
+		id = DOL_general_staff
+		icon = GFX_goal_generic_army_doctrines
+		x = 9
+		y = 8
+		cost = 10
+		prerequisite = {
+			focus = DOL_mobile_columns
+			focus = DOL_mountain_troops
+		}
+		completion_reward = {
+			army_experience = 40
+			add_political_power = 30
+		}
+	}
+
+	focus = {
+		id = DOL_sentinel_air_arm
+		icon = GFX_goal_generic_air_fighter
+		x = 11
+		y = 8
+		cost = 10
+		prerequisite = { focus = DOL_military_railways }
+		completion_reward = {
+			air_experience = 25
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = DOL_the_great_manoeuvre
+		icon = GFX_goal_generic_army_doctrines
+		x = 9
+		y = 9
+		cost = 15
+		prerequisite = {
+			focus = DOL_general_staff
+			focus = DOL_sentinel_air_arm
+		}
+		completion_reward = {
+			army_experience = 50
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = DOL_privy_council
+		icon = GFX_goal_generic_political_pressure
+		x = 15
+		y = 6
+		cost = 10
+		prerequisite = { focus = DOL_the_duchess_triumphant }
+		completion_reward = {
+			add_political_power = 40
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = DOL_noble_privileges
+		icon = GFX_goal_generic_political_pressure
+		x = 17
+		y = 6
+		cost = 10
+		prerequisite = { focus = DOL_the_duchess_triumphant }
+		completion_reward = {
+			add_stability = 0.04
+			add_political_power = 30
+		}
+	}
+
+	focus = {
+		id = DOL_bourgeois_ministers
+		icon = GFX_goal_generic_trade
+		x = 19
+		y = 6
+		cost = 10
+		prerequisite = { focus = DOL_the_duchess_triumphant }
+		completion_reward = {
+			add_political_power = 40
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = DOL_the_court
+		icon = GFX_goal_generic_propaganda
+		x = 15
+		y = 7
+		cost = 10
+		prerequisite = { focus = DOL_privy_council }
+		completion_reward = {
+			add_stability = 0.04
+		}
+	}
+
+	focus = {
+		id = DOL_loyal_nobility
+		icon = GFX_goal_generic_propaganda
+		x = 17
+		y = 7
+		cost = 10
+		prerequisite = { focus = DOL_noble_privileges }
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = DOL_the_new_men
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 19
+		y = 7
+		cost = 10
+		prerequisite = { focus = DOL_bourgeois_ministers }
+		completion_reward = {
+			add_political_power = 40
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = DOL_balance_of_the_court
+		icon = GFX_goal_generic_political_pressure
+		x = 17
+		y = 8
+		cost = 15
+		prerequisite = {
+			focus = DOL_loyal_nobility
+			focus = DOL_the_new_men
+		}
+		completion_reward = {
+			add_stability = 0.06
+			add_political_power = 60
+		}
+	}
+
+	focus = {
+		id = DOL_duchess_and_people
+		icon = GFX_goal_generic_national_unity
+		x = 17
+		y = 9
+		cost = 15
+		prerequisite = { focus = DOL_balance_of_the_court }
+		completion_reward = {
+			add_stability = 0.07
+			add_manpower = 5000
+		}
+	}
+
+	focus = {
+		id = DOL_coaling_stations
+		icon = GFX_goal_generic_build_navy
+		x = 22
+		y = 6
+		cost = 10
+		prerequisite = { focus = DOL_the_empress_crowned }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			navy_experience = 20
+		}
+	}
+
+	focus = {
+		id = DOL_colonial_administration
+		icon = GFX_goal_generic_political_pressure
+		x = 24
+		y = 6
+		cost = 10
+		prerequisite = { focus = DOL_the_empress_crowned }
+		completion_reward = {
+			add_political_power = 40
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = DOL_tropical_trade
+		icon = GFX_goal_generic_trade
+		x = 26
+		y = 6
+		cost = 10
+		prerequisite = { focus = DOL_the_empress_crowned }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_political_power = 30
+		}
+	}
+
+	focus = {
+		id = DOL_colonial_army
+		icon = GFX_goal_generic_army_doctrines
+		x = 22
+		y = 7
+		cost = 10
+		prerequisite = { focus = DOL_coaling_stations }
+		completion_reward = {
+			army_experience = 30
+			add_war_support = 0.03
+		}
+	}
+
+	focus = {
+		id = DOL_imperial_conference
+		icon = GFX_goal_generic_political_pressure
+		x = 24
+		y = 7
+		cost = 10
+		prerequisite = { focus = DOL_colonial_administration }
+		completion_reward = {
+			add_political_power = 40
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = DOL_trading_empire
+		icon = GFX_goal_generic_trade
+		x = 26
+		y = 7
+		cost = 10
+		prerequisite = { focus = DOL_tropical_trade }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_political_power = 40
+		}
+	}
+
+	focus = {
+		id = DOL_imperial_ideal
+		icon = GFX_goal_generic_propaganda
+		x = 24
+		y = 8
+		cost = 15
+		prerequisite = {
+			focus = DOL_colonial_army
+			focus = DOL_imperial_conference
+			focus = DOL_trading_empire
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_stability = 0.04
+		}
+	}
+
+	focus = {
+		id = DOL_empress_of_seas
+		icon = GFX_goal_generic_build_navy
+		x = 24
+		y = 9
+		cost = 20
+		prerequisite = { focus = DOL_imperial_ideal }
+		completion_reward = {
+			navy_experience = 60
+			add_war_support = 0.06
+		}
+	}
+
+	focus = {
+		id = DOL_public_schools
+		icon = GFX_goal_generic_scientific_exchange
+		x = -6
+		y = 4
+		cost = 7
+		prerequisite = { focus = DOL_compulsory_schooling }
+		completion_reward = {
+			add_stability = 0.03
+			add_manpower = 2000
+		}
+	}
+
+	focus = {
+		id = DOL_aalstadt_academy
+		icon = GFX_goal_generic_scientific_exchange
+		x = -4
+		y = 4
+		cost = 7
+		prerequisite = { focus = DOL_compulsory_schooling }
+		completion_reward = {
+			add_political_power = 40
+		}
+	}
+
+	focus = {
+		id = DOL_public_health
+		icon = GFX_goal_generic_construct_civ_factory
+		x = -6
+		y = 5
+		cost = 7
+		prerequisite = { focus = DOL_public_schools }
+		completion_reward = {
+			add_stability = 0.04
+			add_manpower = 3000
+		}
+	}
+
+	focus = {
+		id = DOL_the_press
+		icon = GFX_goal_generic_propaganda
+		x = -4
+		y = 5
+		cost = 7
+		prerequisite = { focus = DOL_aalstadt_academy }
+		completion_reward = {
+			add_political_power = 40
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = DOL_railways_for_all
+		icon = GFX_goal_generic_construct_infrastructure
+		x = -6
+		y = 6
+		cost = 7
+		prerequisite = { focus = DOL_public_health }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = DOL_labour_reform
+		icon = GFX_goal_generic_political_pressure
+		x = -4
+		y = 6
+		cost = 7
+		prerequisite = { focus = DOL_the_press }
+		completion_reward = {
+			add_stability = 0.04
+			add_political_power = 30
+		}
+	}
+
+	focus = {
+		id = DOL_a_literate_duchy
+		icon = GFX_goal_generic_national_unity
+		x = -5
+		y = 7
+		cost = 10
+		prerequisite = {
+			focus = DOL_railways_for_all
+			focus = DOL_labour_reform
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = DOL_one_nation
+		icon = GFX_goal_generic_national_unity
+		x = -5
+		y = 8
+		cost = 15
+		prerequisite = { focus = DOL_a_literate_duchy }
+		completion_reward = {
+			add_stability = 0.07
+			add_political_power = 60
+		}
+	}
+
+	focus = {
+		id = DOL_leutian_embassies
+		icon = GFX_goal_generic_political_pressure
+		x = 28
+		y = 6
+		cost = 10
+		prerequisite = { focus = DOL_the_leutian_miracle }
+		completion_reward = {
+			add_political_power = 40
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = DOL_trade_treaties
+		icon = GFX_goal_generic_trade
+		x = 30
+		y = 6
+		cost = 10
+		prerequisite = { focus = DOL_the_leutian_miracle }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_political_power = 30
+		}
+	}
+
+	focus = {
+		id = DOL_mediate_the_marches
+		icon = GFX_goal_generic_political_pressure
+		x = 28
+		y = 7
+		cost = 10
+		prerequisite = { focus = DOL_leutian_embassies }
+		completion_reward = {
+			add_political_power = 40
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = DOL_leutian_league
+		icon = GFX_goal_generic_trade
+		x = 30
+		y = 7
+		cost = 10
+		prerequisite = { focus = DOL_trade_treaties }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_political_power = 40
+		}
+	}
+
+	focus = {
+		id = DOL_guarantee_the_small
+		icon = GFX_goal_generic_defence
+		x = 28
+		y = 8
+		cost = 10
+		prerequisite = { focus = DOL_mediate_the_marches }
+		completion_reward = {
+			add_political_power = 30
+			add_war_support = 0.03
+		}
+	}
+
+	focus = {
+		id = DOL_grand_alliance
+		icon = GFX_goal_generic_political_pressure
+		x = 30
+		y = 8
+		cost = 10
+		prerequisite = { focus = DOL_leutian_league }
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = DOL_leutia_first
+		icon = GFX_goal_generic_national_unity
+		x = 29
+		y = 9
+		cost = 15
+		prerequisite = {
+			focus = DOL_guarantee_the_small
+			focus = DOL_grand_alliance
+		}
+		completion_reward = {
+			add_political_power = 60
+			add_war_support = 0.04
+		}
+	}
+
+	focus = {
+		id = DOL_duchys_peace
+		icon = GFX_goal_generic_neutrality_focus
+		x = 29
+		y = 10
+		cost = 20
+		prerequisite = { focus = DOL_leutia_first }
+		completion_reward = {
+			add_stability = 0.08
+			add_political_power = 80
+		}
+	}
+
 	# keep the continuous focus panel out of the way of the tree itself
 	continuous_focus_position = {
 		x = 50

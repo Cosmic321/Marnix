@@ -934,6 +934,793 @@ focus_tree = {
 		}
 	}
 
+	########################################
+	# Tier three
+	########################################
+
+	focus = {
+		id = COD_urban_planning_board
+		icon = GFX_goal_generic_construct_infrastructure
+		x = -5
+		y = 6
+		cost = 7
+		prerequisite = { focus = COD_a_home_for_every_family }
+		completion_reward = {
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = COD_coastal_town_renewal
+		icon = GFX_goal_generic_construct_civ_factory
+		x = -3
+		y = 6
+		cost = 7
+		prerequisite = { focus = COD_a_home_for_every_family }
+		completion_reward = {
+			add_stability = 0.03
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = COD_cornish_architecture
+		icon = GFX_goal_generic_national_unity
+		x = -5
+		y = 7
+		cost = 10
+		prerequisite = {
+			focus = COD_urban_planning_board
+			focus = COD_coastal_town_renewal
+		}
+		completion_reward = {
+			add_stability = 0.04
+		}
+	}
+
+	focus = {
+		id = COD_heritage_trust
+		icon = GFX_goal_generic_national_unity
+		x = -3
+		y = 7
+		cost = 10
+		prerequisite = { focus = COD_coastal_town_renewal }
+		completion_reward = {
+			add_stability = 0.04
+			add_political_power = 30
+		}
+	}
+
+	focus = {
+		id = COD_sewers_and_streets
+		icon = GFX_goal_generic_construct_infrastructure
+		x = -5
+		y = 8
+		cost = 7
+		prerequisite = { focus = COD_urban_planning_board }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = COD_national_park
+		icon = GFX_goal_generic_construct_civ_factory
+		x = -3
+		y = 8
+		cost = 7
+		prerequisite = { focus = COD_heritage_trust }
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = COD_civic_pride
+		icon = GFX_goal_generic_national_unity
+		x = -4
+		y = 9
+		cost = 10
+		prerequisite = {
+			focus = COD_cornish_architecture
+			focus = COD_national_park
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 40
+		}
+	}
+
+	focus = {
+		id = COD_cornish_language_act
+		icon = GFX_goal_generic_national_unity
+		x = -5
+		y = 10
+		cost = 7
+		prerequisite = { focus = COD_civic_pride }
+		completion_reward = {
+			add_stability = 0.04
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = COD_the_gorsedh
+		icon = GFX_goal_generic_propaganda
+		x = -3
+		y = 10
+		cost = 7
+		prerequisite = { focus = COD_civic_pride }
+		completion_reward = {
+			add_stability = 0.04
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = COD_rugby_and_pride
+		icon = GFX_goal_generic_national_unity
+		x = -5
+		y = 11
+		cost = 7
+		prerequisite = { focus = COD_cornish_language_act }
+		completion_reward = {
+			add_stability = 0.04
+			add_war_support = 0.02
+		}
+	}
+
+	focus = {
+		id = COD_homecoming
+		icon = GFX_goal_generic_trade
+		x = -3
+		y = 11
+		cost = 7
+		prerequisite = { focus = COD_the_gorsedh }
+		completion_reward = {
+			add_manpower = 4000
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = COD_a_people_apart
+		icon = GFX_goal_generic_national_unity
+		x = -4
+		y = 12
+		cost = 10
+		prerequisite = {
+			focus = COD_rugby_and_pride
+			focus = COD_homecoming
+		}
+		completion_reward = {
+			add_stability = 0.06
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = COD_the_returning_tide
+		icon = GFX_goal_generic_trade
+		x = -5
+		y = 13
+		cost = 10
+		prerequisite = { focus = COD_a_people_apart }
+		completion_reward = {
+			add_manpower = 6000
+		}
+	}
+
+	focus = {
+		id = COD_cornwall_in_the_world
+		icon = GFX_goal_generic_trade
+		x = -4
+		y = 14
+		cost = 10
+		prerequisite = { focus = COD_a_people_apart }
+		completion_reward = {
+			add_political_power = 60
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = COD_deep_mine_expansion
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 0
+		y = 12
+		cost = 10
+		prerequisite = { focus = COD_industrial_heartland }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = COD_clay_rail_link
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 2
+		y = 12
+		cost = 10
+		prerequisite = { focus = COD_industrial_heartland }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = COD_falmouth_shipyard
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 4
+		y = 12
+		cost = 10
+		prerequisite = { focus = COD_industrial_heartland }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			navy_experience = 15
+		}
+	}
+
+	focus = {
+		id = COD_steel_from_the_moor
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 0
+		y = 13
+		cost = 10
+		prerequisite = { focus = COD_deep_mine_expansion }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = COD_foundry_expansion
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 2
+		y = 13
+		cost = 10
+		prerequisite = { focus = COD_clay_rail_link }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = COD_industrial_science
+		icon = GFX_goal_generic_scientific_exchange
+		x = 4
+		y = 13
+		cost = 10
+		prerequisite = { focus = COD_falmouth_shipyard }
+		completion_reward = {
+			add_political_power = 40
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = COD_the_duchys_workshops
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 2
+		y = 14
+		cost = 10
+		prerequisite = {
+			focus = COD_steel_from_the_moor
+			focus = COD_foundry_expansion
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = COD_an_industrial_nation
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 2
+		y = 15
+		cost = 15
+		prerequisite = {
+			focus = COD_the_duchys_workshops
+			focus = COD_industrial_science
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_political_power = 60
+		}
+	}
+
+	focus = {
+		id = COD_written_constitution
+		icon = GFX_goal_support_democracy
+		x = 6
+		y = 11
+		cost = 10
+		prerequisite = { focus = COD_a_modest_duchy }
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_stability = 0.04
+		}
+	}
+
+	focus = {
+		id = COD_cornwall_and_the_world
+		icon = GFX_goal_support_democracy
+		x = 6
+		y = 12
+		cost = 10
+		prerequisite = { focus = COD_written_constitution }
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = COD_neutral_guarantees
+		icon = GFX_goal_generic_neutrality_focus
+		x = 8
+		y = 11
+		cost = 10
+		prerequisite = { focus = COD_armed_neutrality }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 40
+		}
+	}
+
+	focus = {
+		id = COD_the_duchys_covenant
+		icon = GFX_goal_generic_neutrality_focus
+		x = 8
+		y = 12
+		cost = 10
+		prerequisite = { focus = COD_neutral_guarantees }
+		completion_reward = {
+			add_war_support = 0.05
+			army_experience = 25
+		}
+	}
+
+	focus = {
+		id = COD_the_island_league
+		icon = GFX_goal_support_fascism
+		x = 10
+		y = 11
+		cost = 10
+		prerequisite = { focus = COD_the_cornish_century }
+		completion_reward = {
+			add_political_power = 50
+			add_war_support = 0.03
+		}
+	}
+
+	focus = {
+		id = COD_cornish_hegemony
+		icon = GFX_goal_support_fascism
+		x = 10
+		y = 12
+		cost = 10
+		prerequisite = { focus = COD_the_island_league }
+		completion_reward = {
+			add_war_support = 0.06
+			navy_experience = 25
+		}
+	}
+
+	focus = {
+		id = COD_peoples_assembly
+		icon = GFX_goal_support_communism
+		x = 12
+		y = 11
+		cost = 10
+		prerequisite = { focus = COD_red_cornwall }
+		completion_reward = {
+			add_stability = 0.05
+			add_manpower = 5000
+		}
+	}
+
+	focus = {
+		id = COD_tourist_board
+		icon = GFX_goal_generic_trade
+		x = 13
+		y = 5
+		cost = 7
+		prerequisite = { focus = COD_cornish_export_board }
+		completion_reward = {
+			add_political_power = 30
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = COD_cruise_liner_port
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 15
+		y = 5
+		cost = 7
+		prerequisite = { focus = COD_cornish_export_board }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = COD_winter_economy
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 17
+		y = 5
+		cost = 7
+		prerequisite = { focus = COD_cornish_export_board }
+		completion_reward = {
+			add_stability = 0.03
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = COD_second_homes_tax
+		icon = GFX_goal_generic_political_pressure
+		x = 13
+		y = 6
+		cost = 7
+		prerequisite = { focus = COD_tourist_board }
+		completion_reward = {
+			add_political_power = 40
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = COD_fishing_fleet
+		icon = GFX_goal_generic_trade
+		x = 15
+		y = 6
+		cost = 7
+		prerequisite = { focus = COD_cruise_liner_port }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_manpower = 2000
+		}
+	}
+
+	focus = {
+		id = COD_food_processing
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 17
+		y = 6
+		cost = 7
+		prerequisite = { focus = COD_winter_economy }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = COD_cooperative_farms
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 13
+		y = 7
+		cost = 10
+		prerequisite = { focus = COD_second_homes_tax }
+		completion_reward = {
+			add_stability = 0.04
+			add_manpower = 2000
+		}
+	}
+
+	focus = {
+		id = COD_an_economy_that_holds
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 15
+		y = 8
+		cost = 15
+		prerequisite = {
+			focus = COD_fishing_fleet
+			focus = COD_food_processing
+			focus = COD_cooperative_farms
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_political_power = 75
+			add_stability = 0.04
+		}
+	}
+
+	focus = {
+		id = COD_university_charter
+		icon = GFX_goal_generic_scientific_exchange
+		x = 19
+		y = 6
+		cost = 10
+		prerequisite = { focus = COD_nation_of_engineers }
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = COD_technical_schools
+		icon = GFX_goal_generic_scientific_exchange
+		x = 21
+		y = 6
+		cost = 10
+		prerequisite = { focus = COD_nation_of_engineers }
+		completion_reward = {
+			add_stability = 0.03
+			add_manpower = 2000
+		}
+	}
+
+	focus = {
+		id = COD_research_council
+		icon = GFX_goal_generic_scientific_exchange
+		x = 19
+		y = 7
+		cost = 10
+		prerequisite = { focus = COD_university_charter }
+		completion_reward = {
+			add_political_power = 40
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = COD_a_learned_nation
+		icon = GFX_goal_generic_scientific_exchange
+		x = 20
+		y = 8
+		cost = 15
+		prerequisite = {
+			focus = COD_university_charter
+			focus = COD_technical_schools
+			focus = COD_research_council
+		}
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.04
+		}
+	}
+
+	focus = {
+		id = COD_general_staff
+		icon = GFX_goal_generic_army_doctrines
+		x = 24
+		y = 3
+		cost = 10
+		prerequisite = { focus = COD_a_real_army }
+		completion_reward = {
+			army_experience = 30
+			add_war_support = 0.03
+		}
+	}
+
+	focus = {
+		id = COD_naval_expansion
+		icon = GFX_goal_generic_build_navy
+		x = 26
+		y = 3
+		cost = 10
+		prerequisite = { focus = COD_a_real_army }
+		completion_reward = {
+			navy_experience = 30
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = COD_air_expansion
+		icon = GFX_goal_generic_air_fighter
+		x = 28
+		y = 3
+		cost = 10
+		prerequisite = { focus = COD_a_real_army }
+		completion_reward = {
+			air_experience = 30
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = COD_army_camps
+		icon = GFX_goal_generic_army_doctrines
+		x = 24
+		y = 4
+		cost = 7
+		prerequisite = { focus = COD_general_staff }
+		completion_reward = {
+			army_experience = 20
+			add_manpower = 3000
+		}
+	}
+
+	focus = {
+		id = COD_destroyer_flotilla
+		icon = GFX_goal_generic_build_navy
+		x = 26
+		y = 4
+		cost = 7
+		prerequisite = { focus = COD_naval_expansion }
+		completion_reward = {
+			navy_experience = 20
+		}
+	}
+
+	focus = {
+		id = COD_fighter_squadrons
+		icon = GFX_goal_generic_air_fighter
+		x = 28
+		y = 4
+		cost = 7
+		prerequisite = { focus = COD_air_expansion }
+		completion_reward = {
+			air_experience = 20
+		}
+	}
+
+	focus = {
+		id = COD_military_academy
+		icon = GFX_goal_generic_army_doctrines
+		x = 25
+		y = 5
+		cost = 10
+		prerequisite = { focus = COD_army_camps }
+		completion_reward = {
+			army_experience = 40
+			add_political_power = 30
+		}
+	}
+
+	focus = {
+		id = COD_naval_doctrine
+		icon = GFX_goal_generic_build_navy
+		x = 27
+		y = 5
+		cost = 10
+		prerequisite = { focus = COD_destroyer_flotilla }
+		completion_reward = {
+			navy_experience = 40
+		}
+	}
+
+	focus = {
+		id = COD_air_doctrine
+		icon = GFX_goal_generic_air_fighter
+		x = 29
+		y = 5
+		cost = 10
+		prerequisite = { focus = COD_fighter_squadrons }
+		completion_reward = {
+			air_experience = 40
+		}
+	}
+
+	focus = {
+		id = COD_the_duchys_forces
+		icon = GFX_goal_generic_army_doctrines
+		x = 26
+		y = 6
+		cost = 15
+		prerequisite = {
+			focus = COD_military_academy
+			focus = COD_naval_doctrine
+			focus = COD_air_doctrine
+		}
+		completion_reward = {
+			army_experience = 50
+			navy_experience = 25
+			air_experience = 25
+			add_war_support = 0.05
+		}
+	}
+
 	# keep the continuous focus panel out of the way of the tree itself
 	continuous_focus_position = {
 		x = 50
