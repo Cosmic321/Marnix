@@ -24,18 +24,12 @@ units = {
 		name = "2. Hertogdom Gerle Infantry"
 		location = 679
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.30
 	}
 	division = {
 		name = "3. Hertogdom Gerle Infantry"
 		location = 679
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
-	}
-	division = {
-		name = "4. Hertogdom Gerle Infantry"
-		location = 679
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.20
 	}
 }

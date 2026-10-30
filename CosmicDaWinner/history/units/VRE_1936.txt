@@ -24,25 +24,25 @@ units = {
 		name = "2. Vrettian State Infantry"
 		location = 10120
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.30
 	}
 	division = {
 		name = "3. Vrettian State Infantry"
 		location = 10120
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.20
 	}
 	division = {
 		name = "4. Vrettian State Infantry"
 		location = 10120
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.15
 	}
 	division = {
 		name = "5. Vrettian State Infantry"
 		location = 10120
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.25
 	}
 	division = {
 		name = "6. Vrettian State Infantry"
@@ -54,24 +54,6 @@ units = {
 		name = "7. Vrettian State Infantry"
 		location = 10120
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
-	}
-	division = {
-		name = "8. Vrettian State Infantry"
-		location = 10120
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
-	}
-	division = {
-		name = "9. Vrettian State Infantry"
-		location = 10120
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
-	}
-	division = {
-		name = "10. Vrettian State Infantry"
-		location = 10120
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.30
 	}
 }

@@ -24,12 +24,6 @@ units = {
 		name = "2. Midarhogg Infantry"
 		location = 6682
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
-	}
-	division = {
-		name = "3. Midarhogg Infantry"
-		location = 6682
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.30
 	}
 }

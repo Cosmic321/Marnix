@@ -24,18 +24,12 @@ units = {
 		name = "2. Talo-Chirin Raj Infantry"
 		location = 3939
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.30
 	}
 	division = {
 		name = "3. Talo-Chirin Raj Infantry"
 		location = 3939
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
-	}
-	division = {
-		name = "4. Talo-Chirin Raj Infantry"
-		location = 3939
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.20
 	}
 }

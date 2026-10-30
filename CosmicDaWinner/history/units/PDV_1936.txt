@@ -24,25 +24,25 @@ units = {
 		name = "2. Peoples Directorate of Vyratia Infantry"
 		location = 6028
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.30
 	}
 	division = {
 		name = "3. Peoples Directorate of Vyratia Infantry"
 		location = 6028
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.20
 	}
 	division = {
 		name = "4. Peoples Directorate of Vyratia Infantry"
 		location = 6028
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.15
 	}
 	division = {
 		name = "5. Peoples Directorate of Vyratia Infantry"
 		location = 6028
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.25
 	}
 	division = {
 		name = "6. Peoples Directorate of Vyratia Infantry"
@@ -54,25 +54,25 @@ units = {
 		name = "7. Peoples Directorate of Vyratia Infantry"
 		location = 6028
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.30
 	}
 	division = {
 		name = "8. Peoples Directorate of Vyratia Infantry"
 		location = 6028
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.20
 	}
 	division = {
 		name = "9. Peoples Directorate of Vyratia Infantry"
 		location = 6028
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.15
 	}
 	division = {
 		name = "10. Peoples Directorate of Vyratia Infantry"
 		location = 6028
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.25
 	}
 	division = {
 		name = "11. Peoples Directorate of Vyratia Infantry"
@@ -84,25 +84,25 @@ units = {
 		name = "12. Peoples Directorate of Vyratia Infantry"
 		location = 6028
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.30
 	}
 	division = {
 		name = "13. Peoples Directorate of Vyratia Infantry"
 		location = 6028
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.20
 	}
 	division = {
 		name = "14. Peoples Directorate of Vyratia Infantry"
 		location = 6028
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.15
 	}
 	division = {
 		name = "15. Peoples Directorate of Vyratia Infantry"
 		location = 6028
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.25
 	}
 	division = {
 		name = "16. Peoples Directorate of Vyratia Infantry"
@@ -114,25 +114,25 @@ units = {
 		name = "17. Peoples Directorate of Vyratia Infantry"
 		location = 6028
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.30
 	}
 	division = {
 		name = "18. Peoples Directorate of Vyratia Infantry"
 		location = 6028
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.20
 	}
 	division = {
 		name = "19. Peoples Directorate of Vyratia Infantry"
 		location = 6028
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.15
 	}
 	division = {
 		name = "20. Peoples Directorate of Vyratia Infantry"
 		location = 6028
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.25
 	}
 	division = {
 		name = "21. Peoples Directorate of Vyratia Infantry"
@@ -144,25 +144,25 @@ units = {
 		name = "22. Peoples Directorate of Vyratia Infantry"
 		location = 6028
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.30
 	}
 	division = {
 		name = "23. Peoples Directorate of Vyratia Infantry"
 		location = 6028
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.20
 	}
 	division = {
 		name = "24. Peoples Directorate of Vyratia Infantry"
 		location = 6028
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.15
 	}
 	division = {
 		name = "25. Peoples Directorate of Vyratia Infantry"
 		location = 6028
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.25
 	}
 	division = {
 		name = "26. Peoples Directorate of Vyratia Infantry"
@@ -174,114 +174,24 @@ units = {
 		name = "27. Peoples Directorate of Vyratia Infantry"
 		location = 6028
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.30
 	}
 	division = {
 		name = "28. Peoples Directorate of Vyratia Infantry"
 		location = 6028
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.20
 	}
 	division = {
 		name = "29. Peoples Directorate of Vyratia Infantry"
 		location = 6028
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.15
 	}
 	division = {
 		name = "30. Peoples Directorate of Vyratia Infantry"
 		location = 6028
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
-	}
-	division = {
-		name = "31. Peoples Directorate of Vyratia Infantry"
-		location = 6028
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
-	}
-	division = {
-		name = "32. Peoples Directorate of Vyratia Infantry"
-		location = 6028
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
-	}
-	division = {
-		name = "33. Peoples Directorate of Vyratia Infantry"
-		location = 6028
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
-	}
-	division = {
-		name = "34. Peoples Directorate of Vyratia Infantry"
-		location = 6028
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
-	}
-	division = {
-		name = "35. Peoples Directorate of Vyratia Infantry"
-		location = 6028
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
-	}
-	division = {
-		name = "36. Peoples Directorate of Vyratia Infantry"
-		location = 6028
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
-	}
-	division = {
-		name = "37. Peoples Directorate of Vyratia Infantry"
-		location = 6028
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
-	}
-	division = {
-		name = "38. Peoples Directorate of Vyratia Infantry"
-		location = 6028
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
-	}
-	division = {
-		name = "39. Peoples Directorate of Vyratia Infantry"
-		location = 6028
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
-	}
-	division = {
-		name = "40. Peoples Directorate of Vyratia Infantry"
-		location = 6028
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
-	}
-	division = {
-		name = "41. Peoples Directorate of Vyratia Infantry"
-		location = 6028
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
-	}
-	division = {
-		name = "42. Peoples Directorate of Vyratia Infantry"
-		location = 6028
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
-	}
-	division = {
-		name = "43. Peoples Directorate of Vyratia Infantry"
-		location = 6028
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
-	}
-	division = {
-		name = "44. Peoples Directorate of Vyratia Infantry"
-		location = 6028
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
-	}
-	division = {
-		name = "45. Peoples Directorate of Vyratia Infantry"
-		location = 6028
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.25
 	}
 }

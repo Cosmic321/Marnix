@@ -24,46 +24,28 @@ units = {
 		name = "2. Somharhem Infantry"
 		location = 7359
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.30
 	}
 	division = {
 		name = "3. Somharhem Infantry"
 		location = 7359
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.20
 	}
 	division = {
 		name = "4. Somharhem Infantry"
 		location = 7359
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.15
 	}
 	division = {
 		name = "5. Somharhem Infantry"
 		location = 7359
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.25
 	}
 	division = {
 		name = "6. Somharhem Infantry"
-		location = 7359
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
-	}
-	division = {
-		name = "7. Somharhem Infantry"
-		location = 7359
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
-	}
-	division = {
-		name = "8. Somharhem Infantry"
-		location = 7359
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
-	}
-	division = {
-		name = "9. Somharhem Infantry"
 		location = 7359
 		start_experience_factor = 0.05
 		start_equipment_factor = 0.35

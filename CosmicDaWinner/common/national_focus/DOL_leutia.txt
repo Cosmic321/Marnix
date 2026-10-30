@@ -1650,6 +1650,79 @@ focus_tree = {
 	}
 
 	# keep the continuous focus panel out of the way of the tree itself
+	focus = {
+		id = DOL_the_mortanian_question
+		icon = GFX_goal_generic_political_pressure
+		x = 24
+		y = 10
+		cost = 10
+		prerequisite = { focus = DOL_empress_of_seas }
+		available = { NOT = { has_government = democratic } }
+		completion_reward = {
+			if = {
+				limit = { any_neighbor_country = { NOT = { is_in_faction_with = ROOT } NOT = { has_war_with = ROOT } } }
+				random_neighbor_country = {
+					limit = { NOT = { is_in_faction_with = ROOT } NOT = { has_war_with = ROOT } }
+					ROOT = { create_wargoal = { type = topple_government target = PREV } }
+				}
+			}
+			else = {
+				random_other_country = {
+					limit = { NOT = { is_in_faction_with = ROOT } NOT = { has_war_with = ROOT } }
+					ROOT = { create_wargoal = { type = topple_government target = PREV } }
+				}
+			}
+			add_war_support = 0.05
+		}
+	}
+
+
+	focus = {
+		id = DOL_the_empire_expands
+		icon = GFX_goal_generic_military_deal
+		x = 24
+		y = 11
+		cost = 15
+		prerequisite = { focus = DOL_the_mortanian_question }
+		available = { NOT = { has_government = democratic } }
+		completion_reward = {
+			if = {
+				limit = { any_neighbor_country = { NOT = { is_in_faction_with = ROOT } NOT = { has_war_with = ROOT } } }
+				random_neighbor_country = {
+					limit = { NOT = { is_in_faction_with = ROOT } NOT = { has_war_with = ROOT } }
+					ROOT = { create_wargoal = { type = puppet target = PREV } }
+				}
+			}
+			else = {
+				random_other_country = {
+					limit = { NOT = { is_in_faction_with = ROOT } NOT = { has_war_with = ROOT } }
+					ROOT = { create_wargoal = { type = puppet target = PREV } }
+				}
+			}
+			add_war_support = 0.05
+			army_experience = 15
+		}
+	}
+
+
+	focus = {
+		id = DOL_the_second_empire
+		icon = GFX_goal_generic_build_navy
+		x = 24
+		y = 12
+		cost = 20
+		prerequisite = { focus = DOL_the_empire_expands }
+		available = { NOT = { has_government = democratic } }
+		completion_reward = {
+			random_other_country = {
+				limit = { NOT = { is_in_faction_with = ROOT } NOT = { has_war_with = ROOT } }
+				ROOT = { create_wargoal = { type = annex_everything target = PREV } }
+			}
+			add_war_support = 0.05
+			navy_experience = 25
+		}
+	}
+
 	continuous_focus_position = {
 		x = 60
 		y = 1820

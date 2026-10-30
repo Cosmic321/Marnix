@@ -24,30 +24,18 @@ units = {
 		name = "2. Independent Peoples Republic of Mortania Infantry"
 		location = 7852
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.30
 	}
 	division = {
 		name = "3. Independent Peoples Republic of Mortania Infantry"
 		location = 7852
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.20
 	}
 	division = {
 		name = "4. Independent Peoples Republic of Mortania Infantry"
 		location = 7852
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
-	}
-	division = {
-		name = "5. Independent Peoples Republic of Mortania Infantry"
-		location = 7852
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
-	}
-	division = {
-		name = "6. Independent Peoples Republic of Mortania Infantry"
-		location = 7852
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.15
 	}
 }

@@ -24,24 +24,18 @@ units = {
 		name = "2. Duchy of Leutia Infantry"
 		location = 10179
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.30
 	}
 	division = {
 		name = "3. Duchy of Leutia Infantry"
 		location = 10179
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.20
 	}
 	division = {
 		name = "4. Duchy of Leutia Infantry"
 		location = 10179
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
-	}
-	division = {
-		name = "5. Duchy of Leutia Infantry"
-		location = 10179
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.15
 	}
 }

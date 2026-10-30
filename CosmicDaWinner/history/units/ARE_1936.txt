@@ -24,18 +24,12 @@ units = {
 		name = "2. Arganese Authority Infantry"
 		location = 7748
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.30
 	}
 	division = {
 		name = "3. Arganese Authority Infantry"
 		location = 7748
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
-	}
-	division = {
-		name = "4. Arganese Authority Infantry"
-		location = 7748
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.20
 	}
 }

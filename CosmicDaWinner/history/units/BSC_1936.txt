@@ -24,25 +24,25 @@ units = {
 		name = "2. Bostroe Raj Infantry"
 		location = 3405
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.30
 	}
 	division = {
 		name = "3. Bostroe Raj Infantry"
 		location = 3405
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.20
 	}
 	division = {
 		name = "4. Bostroe Raj Infantry"
 		location = 3405
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.15
 	}
 	division = {
 		name = "5. Bostroe Raj Infantry"
 		location = 3405
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.25
 	}
 	division = {
 		name = "6. Bostroe Raj Infantry"
@@ -54,24 +54,6 @@ units = {
 		name = "7. Bostroe Raj Infantry"
 		location = 3405
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
-	}
-	division = {
-		name = "8. Bostroe Raj Infantry"
-		location = 3405
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
-	}
-	division = {
-		name = "9. Bostroe Raj Infantry"
-		location = 3405
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
-	}
-	division = {
-		name = "10. Bostroe Raj Infantry"
-		location = 3405
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.30
 	}
 }

@@ -24,36 +24,24 @@ units = {
 		name = "2. Great Bostroe Infantry"
 		location = 2399
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.30
 	}
 	division = {
 		name = "3. Great Bostroe Infantry"
 		location = 2399
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.20
 	}
 	division = {
 		name = "4. Great Bostroe Infantry"
 		location = 2399
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.15
 	}
 	division = {
 		name = "5. Great Bostroe Infantry"
 		location = 2399
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
-	}
-	division = {
-		name = "6. Great Bostroe Infantry"
-		location = 2399
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
-	}
-	division = {
-		name = "7. Great Bostroe Infantry"
-		location = 2399
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.25
 	}
 }

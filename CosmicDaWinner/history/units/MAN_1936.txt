@@ -24,46 +24,28 @@ units = {
 		name = "2. Sultanate of Narli Infantry"
 		location = 1914
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.30
 	}
 	division = {
 		name = "3. Sultanate of Narli Infantry"
 		location = 1914
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.20
 	}
 	division = {
 		name = "4. Sultanate of Narli Infantry"
 		location = 1914
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.15
 	}
 	division = {
 		name = "5. Sultanate of Narli Infantry"
 		location = 1914
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.25
 	}
 	division = {
 		name = "6. Sultanate of Narli Infantry"
-		location = 1914
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
-	}
-	division = {
-		name = "7. Sultanate of Narli Infantry"
-		location = 1914
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
-	}
-	division = {
-		name = "8. Sultanate of Narli Infantry"
-		location = 1914
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
-	}
-	division = {
-		name = "9. Sultanate of Narli Infantry"
 		location = 1914
 		start_experience_factor = 0.05
 		start_equipment_factor = 0.35

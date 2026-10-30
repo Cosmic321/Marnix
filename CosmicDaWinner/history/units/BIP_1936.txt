@@ -24,12 +24,6 @@ units = {
 		name = "2. Binbop Province Infantry"
 		location = 3047
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
-	}
-	division = {
-		name = "3. Binbop Province Infantry"
-		location = 3047
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.30
 	}
 }

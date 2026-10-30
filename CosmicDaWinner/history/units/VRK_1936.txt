@@ -24,40 +24,28 @@ units = {
 		name = "2. Kingdom of Vrice Infantry"
 		location = 6099
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.30
 	}
 	division = {
 		name = "3. Kingdom of Vrice Infantry"
 		location = 6099
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.20
 	}
 	division = {
 		name = "4. Kingdom of Vrice Infantry"
 		location = 6099
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.15
 	}
 	division = {
 		name = "5. Kingdom of Vrice Infantry"
 		location = 6099
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.25
 	}
 	division = {
 		name = "6. Kingdom of Vrice Infantry"
-		location = 6099
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
-	}
-	division = {
-		name = "7. Kingdom of Vrice Infantry"
-		location = 6099
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
-	}
-	division = {
-		name = "8. Kingdom of Vrice Infantry"
 		location = 6099
 		start_experience_factor = 0.05
 		start_equipment_factor = 0.35
