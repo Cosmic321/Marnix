@@ -4,16 +4,6 @@ state={
 	manpower = 1260600
 	
 	state_category = city
-	resources={
-		aluminium=1
-		chromium=0
-		oil=0
-		rubber=8
-		steel=1
-		tungsten=2
-		coal=2
-	}
-
 	history={
 		victory_points = {
 			2648 15

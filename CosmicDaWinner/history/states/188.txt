@@ -4,16 +4,6 @@ state={
 	manpower = 1481300
 	
 	state_category = metropolis
-	resources={
-		aluminium=1
-		chromium=0
-		oil=3
-		rubber=1
-		steel=5
-		tungsten=2
-		coal=3
-	}
-
 	history={
 		victory_points = {
 			2825 30

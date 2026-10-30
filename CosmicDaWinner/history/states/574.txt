@@ -4,15 +4,6 @@ state={
 	manpower = 863800
 	
 	state_category = megalopolis
-	resources={
-		aluminium=0
-		chromium=0
-		oil=1
-		rubber=3
-		steel=2
-		tungsten=2
-	}
-
 	history={
 		victory_points = {
 			9620 25

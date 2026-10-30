@@ -4,15 +4,6 @@ state={
 	manpower = 949700
 	
 	state_category = rural
-	resources={
-		aluminium=2
-		chromium=0
-		oil=1
-		rubber=9
-		steel=2
-		tungsten=1
-	}
-
 	history={
 		victory_points = {
 			391 1

@@ -4,15 +4,6 @@ state={
 	manpower = 596500
 	
 	state_category = pastoral
-	resources={
-		aluminium=0
-		chromium=0
-		oil=1
-		rubber=5
-		steel=1
-		tungsten=1
-	}
-
 	history={
 		victory_points = {
 			5269 2

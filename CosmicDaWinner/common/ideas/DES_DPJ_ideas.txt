@@ -1,0 +1,250 @@
+# Despria - the Empire and the Junta, and the Vrettian stake in both.
+ideas = {
+
+	country = {
+		DES_dismembered_empire = {
+			picture = generic_foreign_capital
+			modifier = {
+				industrial_capacity_factory = -0.15
+				consumer_goods_factor = 0.10
+				stability_factor = -0.10
+			}
+		}
+	}
+
+	country = {
+		DES_rotting_staff = {
+			picture = generic_army_war_college
+			modifier = {
+				army_attack_factor = -0.10
+				army_defense_factor = -0.10
+				army_org_factor = -0.05
+			}
+		}
+	}
+
+	country = {
+		DES_federated_empire = {
+			picture = generic_research_bonus
+			modifier = {
+				stability_factor = 0.15
+				political_power_gain = 0.10
+				consumer_goods_factor = -0.05
+			}
+		}
+	}
+
+	country = {
+		DES_new_army = {
+			picture = generic_army_war_college
+			modifier = {
+				army_attack_factor = 0.10
+				army_defense_factor = 0.10
+				army_org_factor = 0.05
+			}
+		}
+	}
+
+	country = {
+		DES_vrettian_revanchism = {
+			picture = generic_production_bonus
+			modifier = {
+				war_support_factor = 0.10
+				army_attack_factor = 0.05
+			}
+		}
+	}
+
+	country = {
+		DES_requisitions = {
+			picture = generic_build_infrastructure
+			modifier = {
+				consumer_goods_factor = -0.10
+				stability_factor = -0.05
+			}
+		}
+	}
+
+	country = {
+		DES_northern_pits = {
+			picture = generic_build_infrastructure
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+	}
+
+	country = {
+		DES_railways = {
+			picture = generic_build_infrastructure
+			modifier = {
+				industrial_capacity_factory = 0.05
+				supply_consumption_factor = -0.05
+			}
+		}
+	}
+
+	country = {
+		DES_restored_order = {
+			picture = generic_the_london_naval_treaty
+			modifier = {
+				war_support_factor = 0.10
+				stability_factor = 0.05
+			}
+		}
+	}
+
+	country = {
+		DES_imperial_cause = {
+			picture = generic_production_bonus
+			modifier = {
+				war_support_factor = 0.05
+				army_defense_factor = 0.05
+			}
+		}
+	}
+
+	country = {
+		DES_empire_reborn = {
+			picture = generic_research_bonus
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.10
+				war_support_factor = 0.10
+			}
+		}
+	}
+
+	country = {
+		DES_eastern_wall = {
+			picture = generic_army_war_college
+			modifier = {
+				army_defense_factor = 0.10
+			}
+		}
+	}
+
+	country = {
+		DPJ_government_that_does_not_exist = {
+			picture = generic_foreign_capital
+			modifier = {
+				political_power_gain = -0.20
+				stability_factor = -0.10
+			}
+		}
+	}
+
+	country = {
+		DPJ_junta_army = {
+			picture = generic_army_war_college
+			modifier = {
+				army_attack_factor = 0.05
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+			}
+		}
+	}
+
+	country = {
+		DPJ_vrettian_sponsorship = {
+			picture = generic_license_production
+			modifier = {
+				industrial_capacity_factory = 0.10
+				war_support_factor = -0.05
+			}
+		}
+	}
+
+	country = {
+		DPJ_vrettian_satellite = {
+			picture = generic_foreign_capital
+			modifier = {
+				political_power_gain = -0.15
+				consumer_goods_factor = 0.10
+				stability_factor = -0.05
+			}
+		}
+	}
+
+	country = {
+		DPJ_self_reliance = {
+			picture = generic_production_bonus
+			modifier = {
+				war_support_factor = 0.10
+				army_attack_factor = 0.05
+			}
+		}
+	}
+
+	country = {
+		DPJ_self_made_empire = {
+			picture = generic_research_bonus
+			modifier = {
+				political_power_gain = 0.10
+				stability_factor = 0.05
+			}
+		}
+	}
+
+	country = {
+		DPJ_puppet_emperor = {
+			picture = generic_the_london_naval_treaty
+			modifier = {
+				political_power_gain = 0.10
+				stability_factor = 0.10
+			}
+		}
+	}
+
+	country = {
+		DPJ_generalissimo_emperor = {
+			picture = generic_fascist_workers
+			modifier = {
+				war_support_factor = 0.15
+				political_power_gain = 0.10
+				stability_factor = -0.05
+			}
+		}
+	}
+
+	country = {
+		DPJ_second_state = {
+			picture = generic_research_bonus
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.10
+				war_support_factor = 0.10
+			}
+		}
+	}
+
+	country = {
+		DPJ_junta_cause = {
+			picture = generic_production_bonus
+			modifier = {
+				war_support_factor = 0.05
+				army_defense_factor = 0.05
+			}
+		}
+	}
+
+	country = {
+		DPJ_eastern_watch = {
+			picture = generic_army_war_college
+			modifier = {
+				army_defense_factor = 0.10
+			}
+		}
+	}
+
+	country = {
+		VRE_desprian_client = {
+			picture = generic_foreign_capital
+			modifier = {
+				political_power_gain = 0.05
+				stability_factor = 0.05
+			}
+		}
+	}
+
+}

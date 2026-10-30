@@ -9,11 +9,13 @@ set_politics = {
 	elections_allowed = no
 }
 
+# The Junta is split down the middle: half of it wants a corporate state, half
+# of it wants the emperor back with a soldier's hand on the throne.
 set_popularities = {
-	democratic = 10
-	communism = 10
-	fascism = 65
-	neutrality = 15
+	democratic = 5
+	communism = 5
+	fascism = 45
+	neutrality = 45
 }
 
 set_stability = 0.6
@@ -25,6 +27,7 @@ add_ideas = {
 	disarmed_nation
 	civilian_economy
 	free_trade
+	DPJ_government_that_does_not_exist
 }
 
 # Basic starter research: enough to field the opening divisions.

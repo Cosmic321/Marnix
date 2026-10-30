@@ -2,18 +2,19 @@ capital = 351
 recruit_character = DES_ruler
 
 
+# The Empire: the young emperor rules, and the country is monarchist to the bone.
 set_politics = {
-	ruling_party = fascism
+	ruling_party = neutrality
 	last_election = "1933.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 10
-	communism = 10
-	fascism = 65
-	neutrality = 15
+	democratic = 4
+	communism = 2
+	fascism = 4
+	neutrality = 90
 }
 
 set_stability = 0.6
@@ -25,6 +26,8 @@ add_ideas = {
 	disarmed_nation
 	civilian_economy
 	free_trade
+	DES_dismembered_empire
+	DES_rotting_staff
 }
 
 # Basic starter research: enough to field the opening divisions.

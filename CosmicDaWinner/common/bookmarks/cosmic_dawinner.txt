@@ -208,7 +208,7 @@ bookmarks = {
 		"DES" = {
 			minor = yes
 			history = "DES_CDW_DESC"
-			ideology = fascism
+			ideology = neutrality
 		}
 
 		"MAH" = {

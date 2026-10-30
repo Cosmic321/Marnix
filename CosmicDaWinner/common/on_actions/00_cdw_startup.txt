@@ -15,6 +15,15 @@ on_actions = {
 				}
 			}
 
+			# Both Desprian states begin inside one caretaker government. Each side
+			# leaves it in their own good time when the succession is settled.
+			DES = {
+				create_faction = "Interim Government"
+			}
+			DPJ = {
+				add_to_faction = DES
+			}
+
 			# A merchant marine sized to the country's industry and how much of its coast is salt water.
 			ALT = {
 				add_equipment_to_stockpile = { type = convoy amount = 30 }
