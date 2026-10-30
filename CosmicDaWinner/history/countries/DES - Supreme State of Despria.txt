@@ -1,5 +1,7 @@
 capital = 351
 recruit_character = DES_ruler
+recruit_character = DES_ruler_democratic
+recruit_character = DES_ruler_communist
 
 
 # The Empire: the young emperor rules, and the country is monarchist to the bone.

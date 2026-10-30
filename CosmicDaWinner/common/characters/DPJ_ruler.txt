@@ -8,4 +8,16 @@ characters = {
 			expire = "1965.1.1.1"
 		}
 	}
+
+	# The face the Junta puts on the non-aligned directorate: a soldier who
+	# insists, at every opportunity, that he is not a politician.
+	DPJ_ruler_neutral = {
+		name = DPJ_ruler_neutral
+		gender = male
+		country_leader = {
+			ideology = despotism
+			desc = DPJ_ruler_neutral_desc
+			expire = "1965.1.1.1"
+		}
+	}
 }

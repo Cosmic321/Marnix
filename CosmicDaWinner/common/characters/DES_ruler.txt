@@ -8,4 +8,28 @@ characters = {
 			expire = "1965.1.1.1"
 		}
 	}
+
+	# The constitutional era: a lawyer who has to govern an empire that still
+	# keeps a crown in the building.
+	DES_ruler_democratic = {
+		name = DES_ruler_democratic
+		gender = male
+		country_leader = {
+			ideology = conservatism
+			desc = DES_ruler_democratic_desc
+			expire = "1965.1.1.1"
+		}
+	}
+
+	# The second revolution: a party organiser who has read every pamphlet she
+	# has ever had printed.
+	DES_ruler_communist = {
+		name = DES_ruler_communist
+		gender = female
+		country_leader = {
+			ideology = marxism
+			desc = DES_ruler_communist_desc
+			expire = "1965.1.1.1"
+		}
+	}
 }

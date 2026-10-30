@@ -1,5 +1,6 @@
 capital = 588
 recruit_character = DPJ_ruler
+recruit_character = DPJ_ruler_neutral
 
 
 set_politics = {

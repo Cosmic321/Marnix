@@ -247,4 +247,49 @@ ideas = {
 		}
 	}
 
+	# --- post-war Alteria capstones -----------------------------------------
+	country = {
+		DPJ_armed_neutrality = {
+			picture = generic_the_london_naval_treaty
+			modifier = {
+				army_defense_factor = 0.10
+				stability_factor = 0.05
+				war_support_factor = -0.05
+			}
+		}
+	}
+
+	country = {
+		DPJ_iron_concord = {
+			picture = generic_fascist_workers
+			modifier = {
+				army_attack_factor = 0.05
+				war_support_factor = 0.10
+				political_power_gain = 0.10
+			}
+		}
+	}
+
+	country = {
+		DES_constitutional_empire = {
+			picture = generic_foreign_capital
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.10
+				industrial_capacity_factory = 0.05
+			}
+		}
+	}
+
+	country = {
+		DES_workers_republic = {
+			picture = generic_production_bonus
+			modifier = {
+				industrial_capacity_factory = 0.10
+				army_org_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+	}
+
 }

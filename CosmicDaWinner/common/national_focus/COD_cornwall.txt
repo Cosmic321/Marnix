@@ -47,7 +47,7 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-		add_stability = 0.02
+		add_stability = 0.01
 		}
 	}
 
@@ -288,7 +288,7 @@ focus_tree = {
 			ideology = democratic
 			popularity = 0.10
 		}
-		add_stability = 0.05
+		add_stability = 0.03
 		}
 	}
 
@@ -339,7 +339,7 @@ focus_tree = {
 			ideology = communism
 			popularity = 0.15
 		}
-		add_stability = 0.02
+		add_stability = 0.01
 		}
 	}
 
@@ -492,7 +492,7 @@ focus_tree = {
 		prerequisite = { focus = COD_end_housing_shortage }
 		completion_reward = {
 			add_political_power = 40
-			add_stability = 0.02
+			add_stability = 0.01
 		}
 	}
 
@@ -504,7 +504,7 @@ focus_tree = {
 		cost = 7
 		prerequisite = { focus = COD_end_housing_shortage }
 		completion_reward = {
-			add_stability = 0.05
+			add_stability = 0.03
 			add_political_power = 20
 		}
 	}
@@ -521,7 +521,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			remove_ideas = COD_housing_shortage
-			add_stability = 0.06
+			add_stability = 0.03
 			add_manpower = 3000
 		}
 	}
@@ -535,7 +535,7 @@ focus_tree = {
 		cost = 7
 		prerequisite = { focus = COD_grockle_control }
 		completion_reward = {
-			add_stability = 0.03
+			add_stability = 0.01
 			random_owned_controlled_state = {
 				add_building_construction = {
 					type = industrial_complex
@@ -554,7 +554,7 @@ focus_tree = {
 		cost = 7
 		prerequisite = { focus = COD_grockle_control }
 		completion_reward = {
-			add_stability = 0.04
+			add_stability = 0.02
 			add_manpower = 4000
 		}
 	}
@@ -568,7 +568,7 @@ focus_tree = {
 		prerequisite = { focus = COD_diversify_economy }
 		completion_reward = {
 			add_political_power = 50
-			add_stability = 0.03
+			add_stability = 0.01
 		}
 	}
 
@@ -585,7 +585,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			remove_ideas = COD_tourist_economy
-			add_stability = 0.05
+			add_stability = 0.03
 		}
 	}
 
@@ -598,7 +598,7 @@ focus_tree = {
 		prerequisite = { focus = COD_a_balanced_economy }
 		completion_reward = {
 			add_political_power = 60
-			add_stability = 0.03
+			add_stability = 0.01
 		}
 	}
 
@@ -630,7 +630,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = COD_china_clay_works }
 		completion_reward = {
-			add_stability = 0.04
+			add_stability = 0.02
 			add_political_power = 50
 		}
 	}
@@ -643,7 +643,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = COD_bodmin_foundries }
 		completion_reward = {
-			add_stability = 0.03
+			add_stability = 0.01
 			random_owned_controlled_state = {
 				add_building_construction = {
 					type = infrastructure
@@ -666,7 +666,7 @@ focus_tree = {
 			focus = COD_kaolin_export_cartel
 		}
 		completion_reward = {
-			add_stability = 0.05
+			add_stability = 0.03
 			add_political_power = 75
 			random_owned_controlled_state = {
 				add_building_construction = {
@@ -688,7 +688,7 @@ focus_tree = {
 		prerequisite = { focus = COD_new_tech_cluster }
 		completion_reward = {
 			add_political_power = 40
-			add_stability = 0.03
+			add_stability = 0.01
 		}
 	}
 
@@ -700,7 +700,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = COD_new_tech_cluster }
 		completion_reward = {
-			add_stability = 0.04
+			add_stability = 0.02
 			add_manpower = 2000
 		}
 	}
@@ -716,7 +716,7 @@ focus_tree = {
 			focus = COD_cornish_scholarships
 		}
 		completion_reward = {
-			add_stability = 0.05
+			add_stability = 0.03
 			add_political_power = 60
 		}
 	}
@@ -826,7 +826,7 @@ focus_tree = {
 				ideology = democratic
 				popularity = 0.10
 			}
-			add_stability = 0.05
+			add_stability = 0.03
 		}
 	}
 
@@ -838,7 +838,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = COD_constitutional_convention }
 		completion_reward = {
-			add_stability = 0.06
+			add_stability = 0.03
 			add_political_power = 75
 			remove_ideas = COD_breakaway_fallout
 		}
@@ -856,7 +856,7 @@ focus_tree = {
 				ideology = neutrality
 				popularity = 0.10
 			}
-			add_stability = 0.04
+			add_stability = 0.02
 		}
 	}
 
@@ -869,7 +869,7 @@ focus_tree = {
 		prerequisite = { focus = COD_the_neutrality_act }
 		completion_reward = {
 			add_war_support = 0.05
-			add_stability = 0.04
+			add_stability = 0.02
 			army_experience = 25
 		}
 	}
@@ -916,7 +916,7 @@ focus_tree = {
 				ideology = communism
 				popularity = 0.10
 			}
-			add_stability = 0.03
+			add_stability = 0.01
 		}
 	}
 
@@ -928,7 +928,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = COD_the_workers_duchy }
 		completion_reward = {
-			add_stability = 0.05
+			add_stability = 0.03
 			add_manpower = 5000
 			remove_ideas = COD_breakaway_fallout
 		}
@@ -946,7 +946,7 @@ focus_tree = {
 		cost = 7
 		prerequisite = { focus = COD_a_home_for_every_family }
 		completion_reward = {
-			add_stability = 0.03
+			add_stability = 0.01
 		}
 	}
 
@@ -958,7 +958,7 @@ focus_tree = {
 		cost = 7
 		prerequisite = { focus = COD_a_home_for_every_family }
 		completion_reward = {
-			add_stability = 0.03
+			add_stability = 0.01
 			add_political_power = 25
 		}
 	}
@@ -974,7 +974,7 @@ focus_tree = {
 			focus = COD_coastal_town_renewal
 		}
 		completion_reward = {
-			add_stability = 0.04
+			add_stability = 0.02
 		}
 	}
 
@@ -986,7 +986,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = COD_coastal_town_renewal }
 		completion_reward = {
-			add_stability = 0.04
+			add_stability = 0.02
 			add_political_power = 30
 		}
 	}
@@ -1006,7 +1006,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			add_stability = 0.03
+			add_stability = 0.01
 		}
 	}
 
@@ -1018,7 +1018,7 @@ focus_tree = {
 		cost = 7
 		prerequisite = { focus = COD_heritage_trust }
 		completion_reward = {
-			add_stability = 0.05
+			add_stability = 0.03
 		}
 	}
 
@@ -1033,7 +1033,7 @@ focus_tree = {
 			focus = COD_national_park
 		}
 		completion_reward = {
-			add_stability = 0.05
+			add_stability = 0.03
 			add_political_power = 40
 		}
 	}
@@ -1046,7 +1046,7 @@ focus_tree = {
 		cost = 7
 		prerequisite = { focus = COD_civic_pride }
 		completion_reward = {
-			add_stability = 0.04
+			add_stability = 0.02
 			add_political_power = 25
 		}
 	}
@@ -1059,7 +1059,7 @@ focus_tree = {
 		cost = 7
 		prerequisite = { focus = COD_civic_pride }
 		completion_reward = {
-			add_stability = 0.04
+			add_stability = 0.02
 			add_political_power = 25
 		}
 	}
@@ -1072,7 +1072,7 @@ focus_tree = {
 		cost = 7
 		prerequisite = { focus = COD_cornish_language_act }
 		completion_reward = {
-			add_stability = 0.04
+			add_stability = 0.02
 			add_war_support = 0.02
 		}
 	}
@@ -1086,7 +1086,7 @@ focus_tree = {
 		prerequisite = { focus = COD_the_gorsedh }
 		completion_reward = {
 			add_manpower = 4000
-			add_stability = 0.03
+			add_stability = 0.01
 		}
 	}
 
@@ -1101,7 +1101,7 @@ focus_tree = {
 			focus = COD_homecoming
 		}
 		completion_reward = {
-			add_stability = 0.06
+			add_stability = 0.03
 			add_political_power = 50
 		}
 	}
@@ -1127,7 +1127,7 @@ focus_tree = {
 		prerequisite = { focus = COD_a_people_apart }
 		completion_reward = {
 			add_political_power = 60
-			add_stability = 0.03
+			add_stability = 0.01
 		}
 	}
 
@@ -1165,7 +1165,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			add_stability = 0.03
+			add_stability = 0.01
 		}
 	}
 
@@ -1233,7 +1233,7 @@ focus_tree = {
 		prerequisite = { focus = COD_falmouth_shipyard }
 		completion_reward = {
 			add_political_power = 40
-			add_stability = 0.03
+			add_stability = 0.01
 		}
 	}
 
@@ -1255,7 +1255,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			add_stability = 0.03
+			add_stability = 0.01
 		}
 	}
 
@@ -1300,7 +1300,7 @@ focus_tree = {
 				ideology = democratic
 				popularity = 0.05
 			}
-			add_stability = 0.04
+			add_stability = 0.02
 		}
 	}
 
@@ -1313,7 +1313,7 @@ focus_tree = {
 		prerequisite = { focus = COD_written_constitution }
 		completion_reward = {
 			add_political_power = 50
-			add_stability = 0.03
+			add_stability = 0.01
 		}
 	}
 
@@ -1325,7 +1325,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = COD_armed_neutrality }
 		completion_reward = {
-			add_stability = 0.05
+			add_stability = 0.03
 			add_political_power = 40
 		}
 	}
@@ -1377,7 +1377,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = COD_red_cornwall }
 		completion_reward = {
-			add_stability = 0.05
+			add_stability = 0.03
 			add_manpower = 5000
 		}
 	}
@@ -1391,7 +1391,7 @@ focus_tree = {
 		prerequisite = { focus = COD_cornish_export_board }
 		completion_reward = {
 			add_political_power = 30
-			add_stability = 0.02
+			add_stability = 0.01
 		}
 	}
 
@@ -1422,7 +1422,7 @@ focus_tree = {
 		cost = 7
 		prerequisite = { focus = COD_cornish_export_board }
 		completion_reward = {
-			add_stability = 0.03
+			add_stability = 0.01
 			random_owned_controlled_state = {
 				add_building_construction = {
 					type = industrial_complex
@@ -1442,7 +1442,7 @@ focus_tree = {
 		prerequisite = { focus = COD_tourist_board }
 		completion_reward = {
 			add_political_power = 40
-			add_stability = 0.03
+			add_stability = 0.01
 		}
 	}
 
@@ -1480,7 +1480,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			add_stability = 0.03
+			add_stability = 0.01
 		}
 	}
 
@@ -1492,7 +1492,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = COD_second_homes_tax }
 		completion_reward = {
-			add_stability = 0.04
+			add_stability = 0.02
 			add_manpower = 2000
 		}
 	}
@@ -1517,7 +1517,7 @@ focus_tree = {
 				}
 			}
 			add_political_power = 75
-			add_stability = 0.04
+			add_stability = 0.02
 		}
 	}
 
@@ -1530,7 +1530,7 @@ focus_tree = {
 		prerequisite = { focus = COD_nation_of_engineers }
 		completion_reward = {
 			add_political_power = 50
-			add_stability = 0.03
+			add_stability = 0.01
 		}
 	}
 
@@ -1542,7 +1542,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = COD_nation_of_engineers }
 		completion_reward = {
-			add_stability = 0.03
+			add_stability = 0.01
 			add_manpower = 2000
 		}
 	}
@@ -1556,7 +1556,7 @@ focus_tree = {
 		prerequisite = { focus = COD_university_charter }
 		completion_reward = {
 			add_political_power = 40
-			add_stability = 0.03
+			add_stability = 0.01
 		}
 	}
 
@@ -1573,7 +1573,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 75
-			add_stability = 0.04
+			add_stability = 0.02
 		}
 	}
 

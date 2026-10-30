@@ -17,7 +17,7 @@
 
  # The spirit everyone receives if Alt is annexed or puppeted.
  cdw_alt_grain_shock:0 "The Breadbasket Is Gone"
- cdw_alt_grain_shock_desc:0 "The granaries of Alt no longer answer to Alt. Grain that used to arrive as ordinary trade now arrives as somebody's condition, at somebody's price - so every household pays more for its bread, and every farm needs more hands kept back from the recruiting office to bring the harvest in."
+ cdw_alt_grain_shock_desc:0 "The granaries of Alt no longer answer to Alt. Grain that used to arrive as ordinary trade now arrives as somebody's condition, at somebody's price - so every household pays a little more for its bread, and the factories have to give up a little more of their output to pay for it."
 
  # Cities of Alt.
  VICTORY_POINTS_5574:0 "Allinon"

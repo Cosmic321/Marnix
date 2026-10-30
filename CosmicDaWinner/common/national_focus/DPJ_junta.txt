@@ -294,6 +294,699 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = DPJ_na_directorate
+		icon = GFX_goal_generic_neutrality_focus
+		x = 2
+		y = 9
+		cost = 10
+		prerequisite = { focus = DPJ_prepare_for_the_directorate }
+		completion_reward = {
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+				last_election = "1939.1.1"
+				election_frequency = 48
+			}
+			add_political_power = 100
+			add_stability = 0.05
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.10
+			}
+		}
+	}
+
+	focus = {
+		id = DPJ_na_end_emergency
+		icon = GFX_goal_generic_national_unity
+		x = 0
+		y = 10
+		cost = 10
+		prerequisite = { focus = DPJ_na_directorate }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = DPJ_na_constitution
+		icon = GFX_goal_generic_political_pressure
+		x = 0
+		y = 11
+		cost = 10
+		prerequisite = { focus = DPJ_na_end_emergency }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = DPJ_na_provincial_councils
+		icon = GFX_goal_generic_national_unity
+		x = 0
+		y = 12
+		cost = 10
+		prerequisite = { focus = DPJ_na_constitution }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = DPJ_na_licence_the_press
+		icon = GFX_goal_generic_propaganda
+		x = 0
+		y = 13
+		cost = 10
+		prerequisite = { focus = DPJ_na_provincial_councils }
+		completion_reward = {
+			add_stability = 0.03
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = DPJ_na_president_in_uniform
+		icon = GFX_goal_generic_political_pressure
+		x = 0
+		y = 14
+		cost = 10
+		prerequisite = { focus = DPJ_na_licence_the_press }
+		completion_reward = {
+			add_political_power = 75
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = DPJ_na_guarantor_state
+		icon = GFX_goal_generic_national_unity
+		x = 0
+		y = 15
+		cost = 10
+		prerequisite = { focus = DPJ_na_president_in_uniform }
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = DPJ_na_demobilise
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 10
+		cost = 10
+		prerequisite = { focus = DPJ_na_directorate }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = DPJ_na_grain_quota
+		icon = GFX_goal_generic_production
+		x = 2
+		y = 11
+		cost = 10
+		prerequisite = { focus = DPJ_na_demobilise }
+		completion_reward = {
+			add_manpower = 20000
+		}
+	}
+
+	focus = {
+		id = DPJ_na_vrettian_trade
+		icon = GFX_goal_generic_trade
+		x = 2
+		y = 12
+		cost = 10
+		prerequisite = { focus = DPJ_na_grain_quota }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = DPJ_na_national_bank
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 2
+		y = 13
+		cost = 10
+		prerequisite = { focus = DPJ_na_vrettian_trade }
+		completion_reward = {
+			every_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = DPJ_na_roads
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 2
+		y = 14
+		cost = 10
+		prerequisite = { focus = DPJ_na_national_bank }
+		completion_reward = {
+			every_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = DPJ_na_steady_hand
+		icon = GFX_goal_generic_production
+		x = 2
+		y = 15
+		cost = 10
+		prerequisite = { focus = DPJ_na_roads }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 75
+		}
+	}
+
+	focus = {
+		id = DPJ_na_officers_oath
+		icon = GFX_goal_generic_army_doctrines
+		x = 4
+		y = 10
+		cost = 10
+		prerequisite = { focus = DPJ_na_directorate }
+		completion_reward = {
+			add_army_experience = 25
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = DPJ_na_trim_the_staff
+		icon = GFX_goal_generic_army_doctrines
+		x = 4
+		y = 11
+		cost = 10
+		prerequisite = { focus = DPJ_na_officers_oath }
+		completion_reward = {
+			add_army_experience = 25
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = DPJ_na_border_regiments
+		icon = GFX_goal_generic_defence
+		x = 4
+		y = 12
+		cost = 10
+		prerequisite = { focus = DPJ_na_trim_the_staff }
+		completion_reward = {
+			add_war_support = 0.05
+			add_army_experience = 25
+		}
+	}
+
+	focus = {
+		id = DPJ_na_air_question
+		icon = GFX_goal_generic_air_fighter
+		x = 4
+		y = 13
+		cost = 10
+		prerequisite = { focus = DPJ_na_border_regiments }
+		completion_reward = {
+			add_air_experience = 25
+		}
+	}
+
+	focus = {
+		id = DPJ_na_coastal_command
+		icon = GFX_goal_generic_build_navy
+		x = 4
+		y = 14
+		cost = 10
+		prerequisite = { focus = DPJ_na_air_question }
+		completion_reward = {
+			add_navy_experience = 25
+		}
+	}
+
+	focus = {
+		id = DPJ_na_hedgehog
+		icon = GFX_goal_generic_defence
+		x = 4
+		y = 15
+		cost = 10
+		prerequisite = { focus = DPJ_na_coastal_command }
+		completion_reward = {
+			add_army_experience = 50
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = DPJ_na_envoys
+		icon = GFX_goal_generic_trade
+		x = 6
+		y = 10
+		cost = 10
+		prerequisite = { focus = DPJ_na_directorate }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = DPJ_na_neutrality_pact
+		icon = GFX_goal_generic_neutrality_focus
+		x = 6
+		y = 11
+		cost = 10
+		prerequisite = { focus = DPJ_na_envoys }
+		completion_reward = {
+			add_political_power = 25
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = DPJ_na_trade_both_sides
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 6
+		y = 12
+		cost = 10
+		prerequisite = { focus = DPJ_na_neutrality_pact }
+		completion_reward = {
+			add_political_power = 75
+		}
+	}
+
+	focus = {
+		id = DPJ_na_alterian_conference
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 6
+		y = 13
+		cost = 10
+		prerequisite = { focus = DPJ_na_trade_both_sides }
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = DPJ_na_friends_in_the_south
+		icon = GFX_goal_generic_alliance
+		x = 6
+		y = 14
+		cost = 10
+		prerequisite = { focus = DPJ_na_alterian_conference }
+		completion_reward = {
+			add_political_power = 50
+			add_war_support = 0.03
+		}
+	}
+
+	focus = {
+		id = DPJ_na_armed_neutrality
+		icon = GFX_goal_generic_defence
+		x = 6
+		y = 15
+		cost = 10
+		prerequisite = { focus = DPJ_na_friends_in_the_south }
+		completion_reward = {
+			add_ideas = DPJ_armed_neutrality
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = DPJ_fa_national_revolution
+		icon = GFX_goal_support_fascism
+		x = 12
+		y = 9
+		cost = 10
+		prerequisite = { focus = DPJ_prepare_for_the_directorate }
+		completion_reward = {
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+				last_election = "1939.1.1"
+				election_frequency = 48
+			}
+			add_political_power = 100
+			add_war_support = 0.05
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.10
+			}
+		}
+	}
+
+	focus = {
+		id = DPJ_fa_one_party
+		icon = GFX_goal_support_fascism
+		x = 10
+		y = 10
+		cost = 10
+		prerequisite = { focus = DPJ_fa_national_revolution }
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = DPJ_fa_militia
+		icon = GFX_goal_generic_major_war
+		x = 10
+		y = 11
+		cost = 10
+		prerequisite = { focus = DPJ_fa_one_party }
+		completion_reward = {
+			add_war_support = 0.05
+			add_army_experience = 25
+		}
+	}
+
+	focus = {
+		id = DPJ_fa_propaganda
+		icon = GFX_goal_generic_propaganda
+		x = 10
+		y = 12
+		cost = 10
+		prerequisite = { focus = DPJ_fa_militia }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = DPJ_fa_enabling_act
+		icon = GFX_goal_generic_political_pressure
+		x = 10
+		y = 13
+		cost = 10
+		prerequisite = { focus = DPJ_fa_propaganda }
+		completion_reward = {
+			add_political_power = 100
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = DPJ_fa_leader_cult
+		icon = GFX_goal_generic_propaganda
+		x = 10
+		y = 14
+		cost = 10
+		prerequisite = { focus = DPJ_fa_enabling_act }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 75
+		}
+	}
+
+	focus = {
+		id = DPJ_fa_corporate_state
+		icon = GFX_goal_generic_national_unity
+		x = 10
+		y = 15
+		cost = 10
+		prerequisite = { focus = DPJ_fa_leader_cult }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = DPJ_fa_autarky
+		icon = GFX_goal_generic_production
+		x = 12
+		y = 10
+		cost = 10
+		prerequisite = { focus = DPJ_fa_national_revolution }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = DPJ_fa_conglomerates
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 12
+		y = 11
+		cost = 10
+		prerequisite = { focus = DPJ_fa_autarky }
+		completion_reward = {
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 2000 }
+		}
+	}
+
+	focus = {
+		id = DPJ_fa_labour_battalions
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 12
+		y = 12
+		cost = 10
+		prerequisite = { focus = DPJ_fa_conglomerates }
+		completion_reward = {
+			every_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = DPJ_fa_synthetic
+		icon = GFX_goal_generic_scientific_exchange
+		x = 12
+		y = 13
+		cost = 10
+		prerequisite = { focus = DPJ_fa_labour_battalions }
+		completion_reward = {
+			add_political_power = 75
+		}
+	}
+
+	focus = {
+		id = DPJ_fa_four_year
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 12
+		y = 14
+		cost = 10
+		prerequisite = { focus = DPJ_fa_synthetic }
+		completion_reward = {
+			every_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = DPJ_fa_war_machine
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 12
+		y = 15
+		cost = 10
+		prerequisite = { focus = DPJ_fa_four_year }
+		completion_reward = {
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 1000 }
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = DPJ_fa_order_army
+		icon = GFX_goal_generic_army_doctrines
+		x = 14
+		y = 10
+		cost = 10
+		prerequisite = { focus = DPJ_fa_national_revolution }
+		completion_reward = {
+			add_army_experience = 50
+		}
+	}
+
+	focus = {
+		id = DPJ_fa_armoured_fist
+		icon = GFX_goal_generic_army_tanks
+		x = 14
+		y = 11
+		cost = 10
+		prerequisite = { focus = DPJ_fa_order_army }
+		completion_reward = {
+			add_army_experience = 50
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = DPJ_fa_stormtroopers
+		icon = GFX_goal_generic_major_war
+		x = 14
+		y = 12
+		cost = 10
+		prerequisite = { focus = DPJ_fa_armoured_fist }
+		completion_reward = {
+			add_army_experience = 25
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = DPJ_fa_black_air_force
+		icon = GFX_goal_generic_air_fighter
+		x = 14
+		y = 13
+		cost = 10
+		prerequisite = { focus = DPJ_fa_stormtroopers }
+		completion_reward = {
+			add_air_experience = 50
+		}
+	}
+
+	focus = {
+		id = DPJ_fa_total_mobilisation
+		icon = GFX_goal_generic_major_war
+		x = 14
+		y = 14
+		cost = 10
+		prerequisite = { focus = DPJ_fa_black_air_force }
+		completion_reward = {
+			add_war_support = 0.10
+			add_manpower = 50000
+		}
+	}
+
+	focus = {
+		id = DPJ_fa_war_plan
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 14
+		y = 15
+		cost = 10
+		prerequisite = { focus = DPJ_fa_total_mobilisation }
+		completion_reward = {
+			add_army_experience = 75
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = DPJ_fa_fascist_international
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 16
+		y = 10
+		cost = 10
+		prerequisite = { focus = DPJ_fa_national_revolution }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = DPJ_fa_snus_concord
+		icon = GFX_goal_generic_alliance
+		x = 16
+		y = 11
+		cost = 10
+		prerequisite = { focus = DPJ_fa_fascist_international }
+			available = {
+				SNJ = {
+					exists = yes
+					has_government = fascism
+				}
+			}
+		completion_reward = {
+			if = {
+				limit = { is_in_faction = yes }
+				leave_faction = yes
+			}
+			create_faction = "Iron Concord"
+			SNJ = { add_to_faction = ROOT }
+			add_political_power = 50
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = DPJ_fa_vrettian_settlement
+		icon = GFX_goal_generic_forceful_treaty
+		x = 16
+		y = 12
+		cost = 10
+		prerequisite = { focus = DPJ_fa_snus_concord }
+		completion_reward = {
+			add_political_power = 75
+		}
+	}
+
+	focus = {
+		id = DPJ_fa_mortanian_claim
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 16
+		y = 13
+		cost = 10
+		prerequisite = { focus = DPJ_fa_vrettian_settlement }
+			available = { MOR = { exists = yes } }
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = MOR
+			}
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = DPJ_fa_northern_pact
+		icon = GFX_goal_generic_alliance
+		x = 16
+		y = 14
+		cost = 10
+		prerequisite = { focus = DPJ_fa_mortanian_claim }
+		completion_reward = {
+			add_political_power = 50
+			add_war_support = 0.03
+		}
+	}
+
+	focus = {
+		id = DPJ_fa_iron_pact
+		icon = GFX_goal_generic_alliance
+		x = 16
+		y = 15
+		cost = 10
+		prerequisite = { focus = DPJ_fa_northern_pact }
+		completion_reward = {
+			add_ideas = DPJ_iron_concord
+			add_war_support = 0.10
+		}
+	}
+
 	continuous_focus_position = {
 		x = 60
 		y = 1600
