@@ -1,0 +1,246 @@
+# Cosmic DaWinner - world setup that cannot be expressed in history files.
+#
+# 1. Every country is given a core on every state it owns. The state files already
+#    carry add_core_of, but doing it here as well guarantees the whole world is cored
+#    however the history is loaded or re-owned.
+# 2. Every country starts with a modest amount of equipment, scaled to its industry.
+#    Enough to fill out the opening weeks, nowhere near enough to fight a war with.
+
+on_startup = {
+	effect = {
+		every_country = {
+			every_owned_state = {
+				add_core_of = PREV
+			}
+		}
+
+		if = {
+			limit = { tag = ALT }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1320 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 181 }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 112 }
+		}
+		if = {
+			limit = { tag = ARE }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 465 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 67 }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 36 }
+		}
+		if = {
+			limit = { tag = AZE }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 645 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 91 }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 52 }
+		}
+		if = {
+			limit = { tag = BAZ }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 780 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 109 }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 64 }
+		}
+		if = {
+			limit = { tag = BEA }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 960 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 133 }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 80 }
+		}
+		if = {
+			limit = { tag = BER }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1410 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 193 }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 120 }
+		}
+		if = {
+			limit = { tag = BIP }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 420 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 61 }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 32 }
+		}
+		if = {
+			limit = { tag = BSC }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1860 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 253 }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 160 }
+		}
+		if = {
+			limit = { tag = COD }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1275 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 175 }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 108 }
+		}
+		if = {
+			limit = { tag = DES }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 510 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 73 }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 40 }
+		}
+		if = {
+			limit = { tag = DOL }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 915 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 127 }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 76 }
+		}
+		if = {
+			limit = { tag = DPJ }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 780 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 109 }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 64 }
+		}
+		if = {
+			limit = { tag = ECO }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 825 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 115 }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 68 }
+		}
+		if = {
+			limit = { tag = FSO }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1095 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 151 }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 92 }
+		}
+		if = {
+			limit = { tag = GBT }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1410 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 193 }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 120 }
+		}
+		if = {
+			limit = { tag = HRT }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 510 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 73 }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 40 }
+		}
+		if = {
+			limit = { tag = KER }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 915 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 127 }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 76 }
+		}
+		if = {
+			limit = { tag = KSC }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1545 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 211 }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 132 }
+		}
+		if = {
+			limit = { tag = MAH }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 465 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 67 }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 36 }
+		}
+		if = {
+			limit = { tag = MAN }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1410 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 193 }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 120 }
+		}
+		if = {
+			limit = { tag = MOR }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 825 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 115 }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 68 }
+		}
+		if = {
+			limit = { tag = NRC }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 600 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 85 }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 48 }
+		}
+		if = {
+			limit = { tag = OZB }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 510 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 73 }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 40 }
+		}
+		if = {
+			limit = { tag = OZH }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 465 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 67 }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 36 }
+		}
+		if = {
+			limit = { tag = OZR }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 420 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 61 }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 32 }
+		}
+		if = {
+			limit = { tag = OZS }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 465 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 67 }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 36 }
+		}
+		if = {
+			limit = { tag = PDV }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 10230 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 1369 }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 904 }
+		}
+		if = {
+			limit = { tag = RBD }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 600 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 85 }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 48 }
+		}
+		if = {
+			limit = { tag = RIT }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1320 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 181 }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 112 }
+		}
+		if = {
+			limit = { tag = SKZ }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1050 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 145 }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 88 }
+		}
+		if = {
+			limit = { tag = SMH }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1680 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 229 }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 144 }
+		}
+		if = {
+			limit = { tag = SNJ }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 690 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 97 }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 56 }
+		}
+		if = {
+			limit = { tag = TCC }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 600 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 85 }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 48 }
+		}
+		if = {
+			limit = { tag = TCU }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1950 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 265 }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 168 }
+		}
+		if = {
+			limit = { tag = VAK }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1005 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 139 }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 84 }
+		}
+		if = {
+			limit = { tag = VRE }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1860 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 253 }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 160 }
+		}
+		if = {
+			limit = { tag = VRK }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1410 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 193 }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 120 }
+		}
+		if = {
+			limit = { tag = ZVD }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 4560 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 613 }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 400 }
+		}
+	}
+}

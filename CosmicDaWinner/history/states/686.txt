@@ -17,8 +17,9 @@ state={
 		victory_points = {
 			11009 2
 		}
-		owner = NONE
-		controller = NONE
+		owner = SMH
+		controller = SMH
+		add_core_of = SMH
 		
 		buildings = {
 			infrastructure = 2
