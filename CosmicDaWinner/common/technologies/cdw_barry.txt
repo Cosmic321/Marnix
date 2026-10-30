@@ -1,7 +1,9 @@
 technologies = {
 
 	# 1936 infantry research that unlocks Barry's kit and the battalion raised with it.
-	cdw_barrys_massive_dick = {
+	# Kept on its own row (x = 9, below the vanilla Special Forces lines) so it is a
+	# standalone node on the Infantry page rather than tucked under another tech.
+	cdw_barry_big_pp = {
 
 		enable_equipments = {
 			cdw_femboy_equipment_0
@@ -16,7 +18,7 @@ technologies = {
 
 		folder = {
 			name = infantry_folder
-			position = { x = 8 y = 2 }
+			position = { x = 9 y = 2 }
 		}
 
 		categories = {
