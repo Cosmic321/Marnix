@@ -1,0 +1,246 @@
+# Cosmic DaWinner - cabinet, service chiefs and theorists of VRK.
+characters = {
+	CDW_VRK_pol1 = {
+		name = CDW_VRK_pol1
+		gender = male
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_VRK_pol1
+			traits = { cdw_pol_08 }
+			cost = 150
+		}
+	}
+	CDW_VRK_pol2 = {
+		name = CDW_VRK_pol2
+		gender = male
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_VRK_pol2
+			traits = { cdw_pol_13 }
+			cost = 150
+		}
+	}
+	CDW_VRK_pol3 = {
+		name = CDW_VRK_pol3
+		gender = male
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_VRK_pol3
+			traits = { cdw_pol_18 }
+			cost = 150
+		}
+	}
+	CDW_VRK_pol4 = {
+		name = CDW_VRK_pol4
+		gender = male
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_VRK_pol4
+			traits = { cdw_pol_05 }
+			cost = 150
+		}
+	}
+	CDW_VRK_pol5 = {
+		name = CDW_VRK_pol5
+		gender = male
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_VRK_pol5
+			traits = { cdw_pol_10 }
+			cost = 150
+		}
+	}
+	CDW_VRK_pol6 = {
+		name = CDW_VRK_pol6
+		gender = male
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_VRK_pol6
+			traits = { cdw_pol_15 }
+			cost = 150
+		}
+	}
+	CDW_VRK_pol7 = {
+		name = CDW_VRK_pol7
+		gender = male
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_VRK_pol7
+			traits = { cdw_pol_02 }
+			cost = 150
+		}
+	}
+	CDW_VRK_pol8 = {
+		name = CDW_VRK_pol8
+		gender = male
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_VRK_pol8
+			traits = { cdw_pol_07 }
+			cost = 150
+		}
+	}
+	CDW_VRK_pol9 = {
+		name = CDW_VRK_pol9
+		gender = male
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_VRK_pol9
+			traits = { cdw_pol_12 }
+			cost = 150
+		}
+	}
+	CDW_VRK_pol10 = {
+		name = CDW_VRK_pol10
+		gender = male
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_VRK_pol10
+			traits = { cdw_pol_17 }
+			cost = 150
+		}
+	}
+	CDW_VRK_pol11 = {
+		name = CDW_VRK_pol11
+		gender = male
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_VRK_pol11
+			traits = { cdw_pol_04 }
+			cost = 150
+		}
+	}
+	CDW_VRK_pol12 = {
+		name = CDW_VRK_pol12
+		gender = male
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_VRK_pol12
+			traits = { cdw_pol_09 }
+			cost = 150
+		}
+	}
+	CDW_VRK_ind1 = {
+		name = CDW_VRK_ind1
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_VRK_ind1
+			traits = { cdw_ind_6 }
+			cost = 150
+		}
+	}
+	CDW_VRK_ind2 = {
+		name = CDW_VRK_ind2
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_VRK_ind2
+			traits = { cdw_ind_1 }
+			cost = 150
+		}
+	}
+	CDW_VRK_ind3 = {
+		name = CDW_VRK_ind3
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_VRK_ind3
+			traits = { cdw_ind_5 }
+			cost = 150
+		}
+	}
+	CDW_VRK_army = {
+		name = CDW_VRK_army
+		gender = male
+		advisor = {
+			slot = army_chief
+			idea_token = CDW_VRK_army
+			traits = { cdw_mil_02 }
+			cost = 150
+		}
+	}
+	CDW_VRK_navy = {
+		name = CDW_VRK_navy
+		gender = male
+		advisor = {
+			slot = navy_chief
+			idea_token = CDW_VRK_navy
+			traits = { cdw_mil_05 }
+			cost = 150
+		}
+	}
+	CDW_VRK_air = {
+		name = CDW_VRK_air
+		gender = male
+		advisor = {
+			slot = air_chief
+			idea_token = CDW_VRK_air
+			traits = { cdw_mil_08 }
+			cost = 150
+		}
+	}
+	CDW_VRK_hca = {
+		name = CDW_VRK_hca
+		gender = male
+		advisor = {
+			slot = high_command
+			ledger = army
+			idea_token = CDW_VRK_hca
+			traits = { cdw_mil_11 }
+			cost = 100
+		}
+	}
+	CDW_VRK_hcn = {
+		name = CDW_VRK_hcn
+		gender = male
+		advisor = {
+			slot = high_command
+			ledger = navy
+			idea_token = CDW_VRK_hcn
+			traits = { cdw_mil_13 }
+			cost = 100
+		}
+	}
+	CDW_VRK_hcx = {
+		name = CDW_VRK_hcx
+		gender = male
+		advisor = {
+			slot = high_command
+			ledger = air
+			idea_token = CDW_VRK_hcx
+			traits = { cdw_mil_15 }
+			cost = 100
+		}
+	}
+	CDW_VRK_theorist1 = {
+		name = CDW_VRK_theorist1
+		gender = male
+		advisor = {
+			slot = theorist
+			ledger = army
+			idea_token = CDW_VRK_theorist1
+			traits = { cdw_mil_16 }
+			cost = 100
+		}
+	}
+	CDW_VRK_theorist2 = {
+		name = CDW_VRK_theorist2
+		gender = male
+		advisor = {
+			slot = theorist
+			ledger = navy
+			idea_token = CDW_VRK_theorist2
+			traits = { cdw_mil_17 }
+			cost = 100
+		}
+	}
+	CDW_VRK_theorist3 = {
+		name = CDW_VRK_theorist3
+		gender = male
+		advisor = {
+			slot = theorist
+			ledger = air
+			idea_token = CDW_VRK_theorist3
+			traits = { cdw_mil_18 }
+			cost = 100
+		}
+	}
+}

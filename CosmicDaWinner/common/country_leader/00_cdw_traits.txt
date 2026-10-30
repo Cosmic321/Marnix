@@ -1,0 +1,243 @@
+# Cosmic DaWinner - advisor traits shared by every nation's cabinet and staff.
+# Each trait is a country modifier applied while the advisor is in post.
+
+leader_traits = {
+	cdw_pol_01 = {
+		random = no
+		political_power_gain = 0.12
+		ai_will_do = { base = 2 }
+	}
+	cdw_pol_02 = {
+		random = no
+		stability_factor = 0.08
+		ai_will_do = { base = 2 }
+	}
+	cdw_pol_03 = {
+		random = no
+		war_support_factor = 0.08
+		ai_will_do = { base = 2 }
+	}
+	cdw_pol_04 = {
+		random = no
+		consumer_goods_factor = -0.04
+		ai_will_do = { base = 2 }
+	}
+	cdw_pol_05 = {
+		random = no
+		industrial_capacity_factory = 0.06
+		ai_will_do = { base = 2 }
+	}
+	cdw_pol_06 = {
+		random = no
+		production_speed_buildings_factor = 0.08
+		ai_will_do = { base = 2 }
+	}
+	cdw_pol_07 = {
+		random = no
+		production_speed_arms_factory_factor = 0.08
+		ai_will_do = { base = 2 }
+	}
+	cdw_pol_08 = {
+		random = no
+		production_speed_industrial_complex_factor = 0.08
+		ai_will_do = { base = 2 }
+	}
+	cdw_pol_09 = {
+		random = no
+		research_speed_factor = 0.04
+		ai_will_do = { base = 2 }
+	}
+	cdw_pol_10 = {
+		random = no
+		army_attack_factor = 0.04
+		ai_will_do = { base = 2 }
+	}
+	cdw_pol_11 = {
+		random = no
+		army_defence_factor = 0.05
+		ai_will_do = { base = 2 }
+	}
+	cdw_pol_12 = {
+		random = no
+		army_morale_factor = 0.04
+		ai_will_do = { base = 2 }
+	}
+	cdw_pol_13 = {
+		random = no
+		air_attack_factor = 0.04
+		ai_will_do = { base = 2 }
+	}
+	cdw_pol_14 = {
+		random = no
+		air_defence_factor = 0.05
+		ai_will_do = { base = 2 }
+	}
+	cdw_pol_15 = {
+		random = no
+		navy_experience_gain = 0.05
+		ai_will_do = { base = 2 }
+	}
+	cdw_pol_16 = {
+		random = no
+		conscription_factor = 0.05
+		ai_will_do = { base = 2 }
+	}
+	cdw_pol_17 = {
+		random = no
+		political_power_factor = 0.08
+		ai_will_do = { base = 2 }
+	}
+	cdw_pol_18 = {
+		random = no
+		stability_factor = 0.04
+		war_support_factor = 0.04
+		ai_will_do = { base = 2 }
+	}
+	cdw_ind_1 = {
+		random = no
+		industrial_capacity_factory = 0.08
+		ai_will_do = { base = 2 }
+	}
+	cdw_ind_2 = {
+		random = no
+		industrial_capacity_dockyard = 0.08
+		ai_will_do = { base = 2 }
+	}
+	cdw_ind_3 = {
+		random = no
+		production_speed_buildings_factor = 0.10
+		ai_will_do = { base = 2 }
+	}
+	cdw_ind_4 = {
+		random = no
+		consumer_goods_factor = -0.06
+		ai_will_do = { base = 2 }
+	}
+	cdw_ind_5 = {
+		random = no
+		production_speed_arms_factory_factor = 0.10
+		ai_will_do = { base = 2 }
+	}
+	cdw_ind_6 = {
+		random = no
+		production_speed_industrial_complex_factor = 0.10
+		ai_will_do = { base = 2 }
+	}
+	cdw_ind_7 = {
+		random = no
+		research_speed_factor = 0.05
+		ai_will_do = { base = 2 }
+	}
+	cdw_ind_8 = {
+		random = no
+		industrial_capacity_factory = 0.04
+		production_speed_buildings_factor = 0.06
+		ai_will_do = { base = 2 }
+	}
+	cdw_ind_9 = {
+		random = no
+		industrial_capacity_factory = 0.04
+		production_speed_arms_factory_factor = 0.06
+		ai_will_do = { base = 2 }
+	}
+	cdw_mil_01 = {
+		random = no
+		army_attack_factor = 0.05
+		ai_will_do = { base = 2 }
+	}
+	cdw_mil_02 = {
+		random = no
+		army_defence_factor = 0.07
+		ai_will_do = { base = 2 }
+	}
+	cdw_mil_03 = {
+		random = no
+		army_morale_factor = 0.05
+		army_experience_gain = 0.03
+		ai_will_do = { base = 2 }
+	}
+	cdw_mil_04 = {
+		random = no
+		navy_experience_gain = 0.05
+		ai_will_do = { base = 2 }
+	}
+	cdw_mil_05 = {
+		random = no
+		industrial_capacity_dockyard = 0.07
+		ai_will_do = { base = 2 }
+	}
+	cdw_mil_06 = {
+		random = no
+		navy_experience_gain = 0.03
+		industrial_capacity_dockyard = 0.03
+		ai_will_do = { base = 2 }
+	}
+	cdw_mil_07 = {
+		random = no
+		air_attack_factor = 0.05
+		ai_will_do = { base = 2 }
+	}
+	cdw_mil_08 = {
+		random = no
+		air_defence_factor = 0.07
+		ai_will_do = { base = 2 }
+	}
+	cdw_mil_09 = {
+		random = no
+		air_experience_gain = 0.05
+		ai_will_do = { base = 2 }
+	}
+	cdw_mil_10 = {
+		random = no
+		army_attack_factor = 0.04
+		ai_will_do = { base = 2 }
+	}
+	cdw_mil_11 = {
+		random = no
+		army_defence_factor = 0.05
+		ai_will_do = { base = 2 }
+	}
+	cdw_mil_12 = {
+		random = no
+		navy_experience_gain = 0.04
+		ai_will_do = { base = 2 }
+	}
+	cdw_mil_13 = {
+		random = no
+		industrial_capacity_dockyard = 0.05
+		ai_will_do = { base = 2 }
+	}
+	cdw_mil_14 = {
+		random = no
+		air_attack_factor = 0.04
+		ai_will_do = { base = 2 }
+	}
+	cdw_mil_15 = {
+		random = no
+		air_defence_factor = 0.05
+		ai_will_do = { base = 2 }
+	}
+	cdw_mil_16 = {
+		random = no
+		army_experience_gain = 0.04
+		research_speed_factor = 0.02
+		ai_will_do = { base = 2 }
+	}
+	cdw_mil_17 = {
+		random = no
+		navy_experience_gain = 0.04
+		research_speed_factor = 0.02
+		ai_will_do = { base = 2 }
+	}
+	cdw_mil_18 = {
+		random = no
+		air_experience_gain = 0.04
+		research_speed_factor = 0.02
+		ai_will_do = { base = 2 }
+	}
+	cdw_mil_19 = {
+		random = no
+		research_speed_factor = 0.04
+		ai_will_do = { base = 2 }
+	}
+}

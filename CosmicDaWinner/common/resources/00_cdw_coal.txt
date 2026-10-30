@@ -1,0 +1,9 @@
+resources = {
+	# Coal - a new strategic resource for this world. Burned by industry and shipping,
+	# traded like any other raw material. The great coalfield of the world sits in Cornwall.
+	coal = {
+		icon_frame = 5
+		cic = 0.125
+		convoys = 0.1
+	}
+}

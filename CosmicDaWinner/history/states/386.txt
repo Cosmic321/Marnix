@@ -11,6 +11,7 @@ state={
 		rubber=5
 		steel=3
 		tungsten=1
+		coal=3
 	}
 
 	history={

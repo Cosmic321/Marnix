@@ -14,6 +14,151 @@ on_startup = {
 			}
 		}
 
+		# A merchant marine sized to the country's industry and how much of its coast is salt water.
+		if = {
+			limit = { tag = ALT }
+			add_equipment_to_stockpile = { type = convoy amount = 30 }
+		}
+		if = {
+			limit = { tag = ARE }
+			add_equipment_to_stockpile = { type = convoy amount = 11 }
+		}
+		if = {
+			limit = { tag = AZE }
+			add_equipment_to_stockpile = { type = convoy amount = 12 }
+		}
+		if = {
+			limit = { tag = BAZ }
+			add_equipment_to_stockpile = { type = convoy amount = 18 }
+		}
+		if = {
+			limit = { tag = BEA }
+			add_equipment_to_stockpile = { type = convoy amount = 23 }
+		}
+		if = {
+			limit = { tag = BER }
+			add_equipment_to_stockpile = { type = convoy amount = 21 }
+		}
+		if = {
+			limit = { tag = BIP }
+			add_equipment_to_stockpile = { type = convoy amount = 4 }
+		}
+		if = {
+			limit = { tag = BSC }
+			add_equipment_to_stockpile = { type = convoy amount = 36 }
+		}
+		if = {
+			limit = { tag = COD }
+			add_equipment_to_stockpile = { type = convoy amount = 30 }
+		}
+		if = {
+			limit = { tag = DOL }
+			add_equipment_to_stockpile = { type = convoy amount = 26 }
+		}
+		if = {
+			limit = { tag = ECO }
+			add_equipment_to_stockpile = { type = convoy amount = 9 }
+		}
+		if = {
+			limit = { tag = FSO }
+			add_equipment_to_stockpile = { type = convoy amount = 19 }
+		}
+		if = {
+			limit = { tag = GBT }
+			add_equipment_to_stockpile = { type = convoy amount = 42 }
+		}
+		if = {
+			limit = { tag = HRT }
+			add_equipment_to_stockpile = { type = convoy amount = 16 }
+		}
+		if = {
+			limit = { tag = KER }
+			add_equipment_to_stockpile = { type = convoy amount = 15 }
+		}
+		if = {
+			limit = { tag = KSC }
+			add_equipment_to_stockpile = { type = convoy amount = 23 }
+		}
+		if = {
+			limit = { tag = MAH }
+			add_equipment_to_stockpile = { type = convoy amount = 13 }
+		}
+		if = {
+			limit = { tag = MAN }
+			add_equipment_to_stockpile = { type = convoy amount = 23 }
+		}
+		if = {
+			limit = { tag = MOR }
+			add_equipment_to_stockpile = { type = convoy amount = 8 }
+		}
+		if = {
+			limit = { tag = NRC }
+			add_equipment_to_stockpile = { type = convoy amount = 17 }
+		}
+		if = {
+			limit = { tag = OZB }
+			add_equipment_to_stockpile = { type = convoy amount = 7 }
+		}
+		if = {
+			limit = { tag = OZH }
+			add_equipment_to_stockpile = { type = convoy amount = 8 }
+		}
+		if = {
+			limit = { tag = OZR }
+			add_equipment_to_stockpile = { type = convoy amount = 6 }
+		}
+		if = {
+			limit = { tag = OZS }
+			add_equipment_to_stockpile = { type = convoy amount = 9 }
+		}
+		if = {
+			limit = { tag = PDV }
+			add_equipment_to_stockpile = { type = convoy amount = 111 }
+		}
+		if = {
+			limit = { tag = RBD }
+			add_equipment_to_stockpile = { type = convoy amount = 14 }
+		}
+		if = {
+			limit = { tag = RIT }
+			add_equipment_to_stockpile = { type = convoy amount = 23 }
+		}
+		if = {
+			limit = { tag = SKZ }
+			add_equipment_to_stockpile = { type = convoy amount = 15 }
+		}
+		if = {
+			limit = { tag = SMH }
+			add_equipment_to_stockpile = { type = convoy amount = 34 }
+		}
+		if = {
+			limit = { tag = SNJ }
+			add_equipment_to_stockpile = { type = convoy amount = 9 }
+		}
+		if = {
+			limit = { tag = TCC }
+			add_equipment_to_stockpile = { type = convoy amount = 17 }
+		}
+		if = {
+			limit = { tag = TCU }
+			add_equipment_to_stockpile = { type = convoy amount = 41 }
+		}
+		if = {
+			limit = { tag = VAK }
+			add_equipment_to_stockpile = { type = convoy amount = 31 }
+		}
+		if = {
+			limit = { tag = VRE }
+			add_equipment_to_stockpile = { type = convoy amount = 23 }
+		}
+		if = {
+			limit = { tag = VRK }
+			add_equipment_to_stockpile = { type = convoy amount = 29 }
+		}
+		if = {
+			limit = { tag = ZVD }
+			add_equipment_to_stockpile = { type = convoy amount = 53 }
+		}
 		if = {
 			limit = { tag = ALT }
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 1320 }

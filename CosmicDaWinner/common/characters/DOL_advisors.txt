@@ -1,0 +1,246 @@
+# Cosmic DaWinner - cabinet, service chiefs and theorists of DOL.
+characters = {
+	CDW_DOL_pol1 = {
+		name = CDW_DOL_pol1
+		gender = male
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_DOL_pol1
+			traits = { cdw_pol_01 }
+			cost = 150
+		}
+	}
+	CDW_DOL_pol2 = {
+		name = CDW_DOL_pol2
+		gender = male
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_DOL_pol2
+			traits = { cdw_pol_06 }
+			cost = 150
+		}
+	}
+	CDW_DOL_pol3 = {
+		name = CDW_DOL_pol3
+		gender = male
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_DOL_pol3
+			traits = { cdw_pol_11 }
+			cost = 150
+		}
+	}
+	CDW_DOL_pol4 = {
+		name = CDW_DOL_pol4
+		gender = male
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_DOL_pol4
+			traits = { cdw_pol_16 }
+			cost = 150
+		}
+	}
+	CDW_DOL_pol5 = {
+		name = CDW_DOL_pol5
+		gender = male
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_DOL_pol5
+			traits = { cdw_pol_03 }
+			cost = 150
+		}
+	}
+	CDW_DOL_pol6 = {
+		name = CDW_DOL_pol6
+		gender = male
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_DOL_pol6
+			traits = { cdw_pol_08 }
+			cost = 150
+		}
+	}
+	CDW_DOL_pol7 = {
+		name = CDW_DOL_pol7
+		gender = male
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_DOL_pol7
+			traits = { cdw_pol_13 }
+			cost = 150
+		}
+	}
+	CDW_DOL_pol8 = {
+		name = CDW_DOL_pol8
+		gender = male
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_DOL_pol8
+			traits = { cdw_pol_18 }
+			cost = 150
+		}
+	}
+	CDW_DOL_pol9 = {
+		name = CDW_DOL_pol9
+		gender = male
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_DOL_pol9
+			traits = { cdw_pol_05 }
+			cost = 150
+		}
+	}
+	CDW_DOL_pol10 = {
+		name = CDW_DOL_pol10
+		gender = male
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_DOL_pol10
+			traits = { cdw_pol_10 }
+			cost = 150
+		}
+	}
+	CDW_DOL_pol11 = {
+		name = CDW_DOL_pol11
+		gender = male
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_DOL_pol11
+			traits = { cdw_pol_15 }
+			cost = 150
+		}
+	}
+	CDW_DOL_pol12 = {
+		name = CDW_DOL_pol12
+		gender = male
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_DOL_pol12
+			traits = { cdw_pol_02 }
+			cost = 150
+		}
+	}
+	CDW_DOL_ind1 = {
+		name = CDW_DOL_ind1
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_DOL_ind1
+			traits = { cdw_ind_4 }
+			cost = 150
+		}
+	}
+	CDW_DOL_ind2 = {
+		name = CDW_DOL_ind2
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_DOL_ind2
+			traits = { cdw_ind_8 }
+			cost = 150
+		}
+	}
+	CDW_DOL_ind3 = {
+		name = CDW_DOL_ind3
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_DOL_ind3
+			traits = { cdw_ind_3 }
+			cost = 150
+		}
+	}
+	CDW_DOL_army = {
+		name = CDW_DOL_army
+		gender = male
+		advisor = {
+			slot = army_chief
+			idea_token = CDW_DOL_army
+			traits = { cdw_mil_01 }
+			cost = 150
+		}
+	}
+	CDW_DOL_navy = {
+		name = CDW_DOL_navy
+		gender = male
+		advisor = {
+			slot = navy_chief
+			idea_token = CDW_DOL_navy
+			traits = { cdw_mil_04 }
+			cost = 150
+		}
+	}
+	CDW_DOL_air = {
+		name = CDW_DOL_air
+		gender = male
+		advisor = {
+			slot = air_chief
+			idea_token = CDW_DOL_air
+			traits = { cdw_mil_07 }
+			cost = 150
+		}
+	}
+	CDW_DOL_hca = {
+		name = CDW_DOL_hca
+		gender = male
+		advisor = {
+			slot = high_command
+			ledger = army
+			idea_token = CDW_DOL_hca
+			traits = { cdw_mil_10 }
+			cost = 100
+		}
+	}
+	CDW_DOL_hcn = {
+		name = CDW_DOL_hcn
+		gender = male
+		advisor = {
+			slot = high_command
+			ledger = navy
+			idea_token = CDW_DOL_hcn
+			traits = { cdw_mil_12 }
+			cost = 100
+		}
+	}
+	CDW_DOL_hcx = {
+		name = CDW_DOL_hcx
+		gender = male
+		advisor = {
+			slot = high_command
+			ledger = air
+			idea_token = CDW_DOL_hcx
+			traits = { cdw_mil_14 }
+			cost = 100
+		}
+	}
+	CDW_DOL_theorist1 = {
+		name = CDW_DOL_theorist1
+		gender = male
+		advisor = {
+			slot = theorist
+			ledger = army
+			idea_token = CDW_DOL_theorist1
+			traits = { cdw_mil_16 }
+			cost = 100
+		}
+	}
+	CDW_DOL_theorist2 = {
+		name = CDW_DOL_theorist2
+		gender = male
+		advisor = {
+			slot = theorist
+			ledger = navy
+			idea_token = CDW_DOL_theorist2
+			traits = { cdw_mil_17 }
+			cost = 100
+		}
+	}
+	CDW_DOL_theorist3 = {
+		name = CDW_DOL_theorist3
+		gender = male
+		advisor = {
+			slot = theorist
+			ledger = air
+			idea_token = CDW_DOL_theorist3
+			traits = { cdw_mil_18 }
+			cost = 100
+		}
+	}
+}

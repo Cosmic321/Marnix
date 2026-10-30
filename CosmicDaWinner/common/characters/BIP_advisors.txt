@@ -1,0 +1,246 @@
+# Cosmic DaWinner - cabinet, service chiefs and theorists of BIP.
+characters = {
+	CDW_BIP_pol1 = {
+		name = CDW_BIP_pol1
+		gender = male
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_BIP_pol1
+			traits = { cdw_pol_09 }
+			cost = 150
+		}
+	}
+	CDW_BIP_pol2 = {
+		name = CDW_BIP_pol2
+		gender = male
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_BIP_pol2
+			traits = { cdw_pol_14 }
+			cost = 150
+		}
+	}
+	CDW_BIP_pol3 = {
+		name = CDW_BIP_pol3
+		gender = male
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_BIP_pol3
+			traits = { cdw_pol_01 }
+			cost = 150
+		}
+	}
+	CDW_BIP_pol4 = {
+		name = CDW_BIP_pol4
+		gender = male
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_BIP_pol4
+			traits = { cdw_pol_06 }
+			cost = 150
+		}
+	}
+	CDW_BIP_pol5 = {
+		name = CDW_BIP_pol5
+		gender = male
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_BIP_pol5
+			traits = { cdw_pol_11 }
+			cost = 150
+		}
+	}
+	CDW_BIP_pol6 = {
+		name = CDW_BIP_pol6
+		gender = male
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_BIP_pol6
+			traits = { cdw_pol_16 }
+			cost = 150
+		}
+	}
+	CDW_BIP_pol7 = {
+		name = CDW_BIP_pol7
+		gender = male
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_BIP_pol7
+			traits = { cdw_pol_03 }
+			cost = 150
+		}
+	}
+	CDW_BIP_pol8 = {
+		name = CDW_BIP_pol8
+		gender = male
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_BIP_pol8
+			traits = { cdw_pol_08 }
+			cost = 150
+		}
+	}
+	CDW_BIP_pol9 = {
+		name = CDW_BIP_pol9
+		gender = male
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_BIP_pol9
+			traits = { cdw_pol_13 }
+			cost = 150
+		}
+	}
+	CDW_BIP_pol10 = {
+		name = CDW_BIP_pol10
+		gender = male
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_BIP_pol10
+			traits = { cdw_pol_18 }
+			cost = 150
+		}
+	}
+	CDW_BIP_pol11 = {
+		name = CDW_BIP_pol11
+		gender = male
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_BIP_pol11
+			traits = { cdw_pol_05 }
+			cost = 150
+		}
+	}
+	CDW_BIP_pol12 = {
+		name = CDW_BIP_pol12
+		gender = male
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_BIP_pol12
+			traits = { cdw_pol_10 }
+			cost = 150
+		}
+	}
+	CDW_BIP_ind1 = {
+		name = CDW_BIP_ind1
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_BIP_ind1
+			traits = { cdw_ind_9 }
+			cost = 150
+		}
+	}
+	CDW_BIP_ind2 = {
+		name = CDW_BIP_ind2
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_BIP_ind2
+			traits = { cdw_ind_4 }
+			cost = 150
+		}
+	}
+	CDW_BIP_ind3 = {
+		name = CDW_BIP_ind3
+		advisor = {
+			slot = political_advisor
+			idea_token = CDW_BIP_ind3
+			traits = { cdw_ind_8 }
+			cost = 150
+		}
+	}
+	CDW_BIP_army = {
+		name = CDW_BIP_army
+		gender = male
+		advisor = {
+			slot = army_chief
+			idea_token = CDW_BIP_army
+			traits = { cdw_mil_03 }
+			cost = 150
+		}
+	}
+	CDW_BIP_navy = {
+		name = CDW_BIP_navy
+		gender = male
+		advisor = {
+			slot = navy_chief
+			idea_token = CDW_BIP_navy
+			traits = { cdw_mil_06 }
+			cost = 150
+		}
+	}
+	CDW_BIP_air = {
+		name = CDW_BIP_air
+		gender = male
+		advisor = {
+			slot = air_chief
+			idea_token = CDW_BIP_air
+			traits = { cdw_mil_09 }
+			cost = 150
+		}
+	}
+	CDW_BIP_hca = {
+		name = CDW_BIP_hca
+		gender = male
+		advisor = {
+			slot = high_command
+			ledger = army
+			idea_token = CDW_BIP_hca
+			traits = { cdw_mil_10 }
+			cost = 100
+		}
+	}
+	CDW_BIP_hcn = {
+		name = CDW_BIP_hcn
+		gender = male
+		advisor = {
+			slot = high_command
+			ledger = navy
+			idea_token = CDW_BIP_hcn
+			traits = { cdw_mil_12 }
+			cost = 100
+		}
+	}
+	CDW_BIP_hcx = {
+		name = CDW_BIP_hcx
+		gender = male
+		advisor = {
+			slot = high_command
+			ledger = air
+			idea_token = CDW_BIP_hcx
+			traits = { cdw_mil_14 }
+			cost = 100
+		}
+	}
+	CDW_BIP_theorist1 = {
+		name = CDW_BIP_theorist1
+		gender = male
+		advisor = {
+			slot = theorist
+			ledger = army
+			idea_token = CDW_BIP_theorist1
+			traits = { cdw_mil_16 }
+			cost = 100
+		}
+	}
+	CDW_BIP_theorist2 = {
+		name = CDW_BIP_theorist2
+		gender = male
+		advisor = {
+			slot = theorist
+			ledger = navy
+			idea_token = CDW_BIP_theorist2
+			traits = { cdw_mil_17 }
+			cost = 100
+		}
+	}
+	CDW_BIP_theorist3 = {
+		name = CDW_BIP_theorist3
+		gender = male
+		advisor = {
+			slot = theorist
+			ledger = air
+			idea_token = CDW_BIP_theorist3
+			traits = { cdw_mil_18 }
+			cost = 100
+		}
+	}
+}

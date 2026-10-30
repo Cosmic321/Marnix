@@ -25,10 +25,57 @@ add_ideas = {
 	free_trade
 }
 
-# Basic starter research: enough to field the opening divisions.
 set_technology = {
-	infantry_equip_1 = 1
-	team_weapons_1 = 1
-	tech_support = 1
-	ww_infra = 1
+	melee_weapons = 1
+	infantry_weapons = 1
+	support_weapons = 1
+	pre_gw_artillery = 1
+	interwar_antiair = 1
+	interwar_antitank = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_military_police = 1
+	tech_maintenance_company = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_signal_company = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	gwtank = 1
+	basic_machine_tools = 1
+	construction1 = 1
+	early_fighter = 1
+	early_bomber = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	early_submarine = 1
+	transport = 1
 }
+
+# Cabinet, service chiefs, industrial concerns and theorists.
+recruit_character = CDW_KSC_pol1
+recruit_character = CDW_KSC_pol2
+recruit_character = CDW_KSC_pol3
+recruit_character = CDW_KSC_pol4
+recruit_character = CDW_KSC_pol5
+recruit_character = CDW_KSC_pol6
+recruit_character = CDW_KSC_pol7
+recruit_character = CDW_KSC_pol8
+recruit_character = CDW_KSC_pol9
+recruit_character = CDW_KSC_pol10
+recruit_character = CDW_KSC_pol11
+recruit_character = CDW_KSC_pol12
+recruit_character = CDW_KSC_ind1
+recruit_character = CDW_KSC_ind2
+recruit_character = CDW_KSC_ind3
+recruit_character = CDW_KSC_army
+recruit_character = CDW_KSC_navy
+recruit_character = CDW_KSC_air
+recruit_character = CDW_KSC_hca
+recruit_character = CDW_KSC_hcn
+recruit_character = CDW_KSC_hcx
+recruit_character = CDW_KSC_theorist1
+recruit_character = CDW_KSC_theorist2
+recruit_character = CDW_KSC_theorist3
+
+# end of starting characters
