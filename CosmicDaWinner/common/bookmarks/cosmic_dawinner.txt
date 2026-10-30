@@ -5,7 +5,9 @@ bookmarks = {
 		date = 1936.1.1.12
 		picture = "GFX_select_date_1936"
 		default_country = "PDV"
-		# default = yes (vanilla default bookmark stays default)
+		# The mod replaces common/bookmarks, so vanilla's default bookmark is gone.
+		# Without a default the multiplayer lobby has no scenario to show.
+		default = yes
 
 		"PDV" = {
 			history = "PDV_CDW_DESC"

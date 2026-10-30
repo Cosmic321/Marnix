@@ -1,0 +1,11 @@
+characters = {
+	NRC_ruler = {
+		name = NRC_ruler
+		gender = male
+		country_leader = {
+			ideology = despotism
+			desc = NRC_ruler_desc
+			expire = "1965.1.1.1"
+		}
+	}
+}

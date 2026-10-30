@@ -1,0 +1,11 @@
+characters = {
+	TCC_ruler = {
+		name = TCC_ruler
+		gender = male
+		country_leader = {
+			ideology = despotism
+			desc = TCC_ruler_desc
+			expire = "1965.1.1.1"
+		}
+	}
+}

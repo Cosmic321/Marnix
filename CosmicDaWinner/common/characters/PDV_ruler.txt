@@ -1,0 +1,11 @@
+characters = {
+	PDV_ruler = {
+		name = PDV_ruler
+		gender = male
+		country_leader = {
+			ideology = marxism
+			desc = PDV_ruler_desc
+			expire = "1965.1.1.1"
+		}
+	}
+}

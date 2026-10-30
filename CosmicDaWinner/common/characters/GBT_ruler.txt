@@ -1,0 +1,11 @@
+characters = {
+	GBT_ruler = {
+		name = GBT_ruler
+		gender = male
+		country_leader = {
+			ideology = despotism
+			desc = GBT_ruler_desc
+			expire = "1965.1.1.1"
+		}
+	}
+}

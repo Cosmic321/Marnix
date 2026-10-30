@@ -1,0 +1,11 @@
+characters = {
+	HRT_ruler = {
+		name = HRT_ruler
+		gender = male
+		country_leader = {
+			ideology = despotism
+			desc = HRT_ruler_desc
+			expire = "1965.1.1.1"
+		}
+	}
+}

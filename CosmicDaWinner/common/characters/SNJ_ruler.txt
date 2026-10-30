@@ -1,0 +1,11 @@
+characters = {
+	SNJ_ruler = {
+		name = SNJ_ruler
+		gender = male
+		country_leader = {
+			ideology = fascism_ideology
+			desc = SNJ_ruler_desc
+			expire = "1965.1.1.1"
+		}
+	}
+}

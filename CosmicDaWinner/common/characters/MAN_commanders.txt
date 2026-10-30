@@ -1,0 +1,50 @@
+characters = {
+	CDW_MAN_gen1 = {
+		name = CDW_MAN_gen1
+		gender = male
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+			traits = { }
+		}
+	}
+	CDW_MAN_gen2 = {
+		name = CDW_MAN_gen2
+		gender = male
+		corps_commander = {
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+			traits = { }
+		}
+	}
+	CDW_MAN_gen3 = {
+		name = CDW_MAN_gen3
+		gender = male
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+			traits = { }
+		}
+	}
+	CDW_MAN_adm1 = {
+		name = CDW_MAN_adm1
+		gender = male
+		navy_leader = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 2
+			traits = { }
+		}
+	}
+}

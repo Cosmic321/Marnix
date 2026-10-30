@@ -1,0 +1,11 @@
+characters = {
+	KER_ruler = {
+		name = KER_ruler
+		gender = male
+		country_leader = {
+			ideology = despotism
+			desc = KER_ruler_desc
+			expire = "1965.1.1.1"
+		}
+	}
+}

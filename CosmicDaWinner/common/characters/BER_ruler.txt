@@ -1,0 +1,11 @@
+characters = {
+	BER_ruler = {
+		name = BER_ruler
+		gender = male
+		country_leader = {
+			ideology = despotism
+			desc = BER_ruler_desc
+			expire = "1965.1.1.1"
+		}
+	}
+}

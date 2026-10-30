@@ -1,0 +1,11 @@
+characters = {
+	RBD_ruler = {
+		name = RBD_ruler
+		gender = male
+		country_leader = {
+			ideology = despotism
+			desc = RBD_ruler_desc
+			expire = "1965.1.1.1"
+		}
+	}
+}

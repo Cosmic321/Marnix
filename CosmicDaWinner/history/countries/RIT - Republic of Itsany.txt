@@ -1,5 +1,6 @@
 capital = 585
-oob = "RIT_1936"
+recruit_character = RIT_ruler
+
 
 set_politics = {
 	ruling_party = democratic
@@ -90,3 +91,12 @@ recruit_character = CDW_RIT_theorist2
 recruit_character = CDW_RIT_theorist3
 
 # end of starting characters
+
+# Field commanders.
+recruit_character = CDW_RIT_gen1
+recruit_character = CDW_RIT_gen2
+recruit_character = CDW_RIT_gen3
+recruit_character = CDW_RIT_adm1
+
+# Order of battle is loaded last, once the country has its technologies.
+oob = "RIT_1936"

@@ -1,0 +1,11 @@
+characters = {
+	BIP_ruler = {
+		name = BIP_ruler
+		gender = male
+		country_leader = {
+			ideology = despotism
+			desc = BIP_ruler_desc
+			expire = "1965.1.1.1"
+		}
+	}
+}

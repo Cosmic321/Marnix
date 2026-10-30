@@ -1,0 +1,11 @@
+characters = {
+	MOR_ruler = {
+		name = MOR_ruler
+		gender = male
+		country_leader = {
+			ideology = marxism
+			desc = MOR_ruler_desc
+			expire = "1965.1.1.1"
+		}
+	}
+}

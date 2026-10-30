@@ -1,0 +1,11 @@
+characters = {
+	BSC_ruler = {
+		name = BSC_ruler
+		gender = male
+		country_leader = {
+			ideology = despotism
+			desc = BSC_ruler_desc
+			expire = "1965.1.1.1"
+		}
+	}
+}

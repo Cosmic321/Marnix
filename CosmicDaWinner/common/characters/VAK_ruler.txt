@@ -1,0 +1,11 @@
+characters = {
+	VAK_ruler = {
+		name = VAK_ruler
+		gender = male
+		country_leader = {
+			ideology = despotism
+			desc = VAK_ruler_desc
+			expire = "1965.1.1.1"
+		}
+	}
+}

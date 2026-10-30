@@ -1,0 +1,11 @@
+characters = {
+	FSO_ruler = {
+		name = FSO_ruler
+		gender = male
+		country_leader = {
+			ideology = conservatism
+			desc = FSO_ruler_desc
+			expire = "1965.1.1.1"
+		}
+	}
+}

@@ -1,0 +1,11 @@
+characters = {
+	OZR_ruler = {
+		name = OZR_ruler
+		gender = male
+		country_leader = {
+			ideology = despotism
+			desc = OZR_ruler_desc
+			expire = "1965.1.1.1"
+		}
+	}
+}

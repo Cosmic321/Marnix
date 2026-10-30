@@ -17,61 +17,81 @@ units = {
 	division = {
 		name = "1. Zhong-Vibi Dynasty Infantry"
 		location = 2784
+		division_template = "Infantry Division"
 		start_experience_factor = 0.05
 		start_equipment_factor = 0.35
+		start_manpower_factor = 1.0
 	}
 	division = {
 		name = "2. Zhong-Vibi Dynasty Infantry"
 		location = 2784
+		division_template = "Infantry Division"
 		start_experience_factor = 0.05
 		start_equipment_factor = 0.30
+		start_manpower_factor = 1.0
 	}
 	division = {
 		name = "3. Zhong-Vibi Dynasty Infantry"
 		location = 2784
+		division_template = "Infantry Division"
 		start_experience_factor = 0.05
 		start_equipment_factor = 0.20
+		start_manpower_factor = 1.0
 	}
 	division = {
 		name = "4. Zhong-Vibi Dynasty Infantry"
 		location = 2784
+		division_template = "Infantry Division"
 		start_experience_factor = 0.05
 		start_equipment_factor = 0.15
+		start_manpower_factor = 1.0
 	}
 	division = {
 		name = "5. Zhong-Vibi Dynasty Infantry"
 		location = 2784
+		division_template = "Infantry Division"
 		start_experience_factor = 0.05
 		start_equipment_factor = 0.25
+		start_manpower_factor = 1.0
 	}
 	division = {
 		name = "6. Zhong-Vibi Dynasty Infantry"
 		location = 2784
+		division_template = "Infantry Division"
 		start_experience_factor = 0.05
 		start_equipment_factor = 0.35
+		start_manpower_factor = 1.0
 	}
 	division = {
 		name = "7. Zhong-Vibi Dynasty Infantry"
 		location = 2784
+		division_template = "Infantry Division"
 		start_experience_factor = 0.05
 		start_equipment_factor = 0.30
+		start_manpower_factor = 1.0
 	}
 	division = {
 		name = "8. Zhong-Vibi Dynasty Infantry"
 		location = 2784
+		division_template = "Infantry Division"
 		start_experience_factor = 0.05
 		start_equipment_factor = 0.20
+		start_manpower_factor = 1.0
 	}
 	division = {
 		name = "9. Zhong-Vibi Dynasty Infantry"
 		location = 2784
+		division_template = "Infantry Division"
 		start_experience_factor = 0.05
 		start_equipment_factor = 0.15
+		start_manpower_factor = 1.0
 	}
 	division = {
 		name = "10. Zhong-Vibi Dynasty Infantry"
 		location = 2784
+		division_template = "Infantry Division"
 		start_experience_factor = 0.05
 		start_equipment_factor = 0.25
+		start_manpower_factor = 1.0
 	}
 }

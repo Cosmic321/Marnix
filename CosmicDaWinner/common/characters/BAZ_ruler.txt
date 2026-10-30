@@ -1,0 +1,11 @@
+characters = {
+	BAZ_ruler = {
+		name = BAZ_ruler
+		gender = male
+		country_leader = {
+			ideology = despotism
+			desc = BAZ_ruler_desc
+			expire = "1965.1.1.1"
+		}
+	}
+}

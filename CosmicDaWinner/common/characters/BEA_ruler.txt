@@ -1,0 +1,11 @@
+characters = {
+	BEA_ruler = {
+		name = BEA_ruler
+		gender = male
+		country_leader = {
+			ideology = marxism
+			desc = BEA_ruler_desc
+			expire = "1965.1.1.1"
+		}
+	}
+}

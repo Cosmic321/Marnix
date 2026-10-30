@@ -1,0 +1,11 @@
+characters = {
+	DPJ_ruler = {
+		name = DPJ_ruler
+		gender = male
+		country_leader = {
+			ideology = fascism_ideology
+			desc = DPJ_ruler_desc
+			expire = "1965.1.1.1"
+		}
+	}
+}

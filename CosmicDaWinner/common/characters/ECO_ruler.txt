@@ -1,0 +1,11 @@
+characters = {
+	ECO_ruler = {
+		name = ECO_ruler
+		gender = male
+		country_leader = {
+			ideology = despotism
+			desc = ECO_ruler_desc
+			expire = "1965.1.1.1"
+		}
+	}
+}

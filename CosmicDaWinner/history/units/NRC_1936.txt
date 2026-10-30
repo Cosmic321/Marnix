@@ -17,19 +17,25 @@ units = {
 	division = {
 		name = "1. Narli Raj Infantry"
 		location = 10603
+		division_template = "Infantry Division"
 		start_experience_factor = 0.05
 		start_equipment_factor = 0.35
+		start_manpower_factor = 1.0
 	}
 	division = {
 		name = "2. Narli Raj Infantry"
 		location = 10603
+		division_template = "Infantry Division"
 		start_experience_factor = 0.05
 		start_equipment_factor = 0.30
+		start_manpower_factor = 1.0
 	}
 	division = {
 		name = "3. Narli Raj Infantry"
 		location = 10603
+		division_template = "Infantry Division"
 		start_experience_factor = 0.05
 		start_equipment_factor = 0.20
+		start_manpower_factor = 1.0
 	}
 }
