@@ -1,4 +1,4 @@
-﻿state={
+state={
 	id=686
 	name="STATE_686"
 	manpower = 15500
@@ -14,6 +14,9 @@
 	}
 
 	history={
+		owner = NONE
+		controller = NONE
+		
 		buildings = {
 			infrastructure = 2
 			

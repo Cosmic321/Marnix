@@ -1,4 +1,4 @@
-﻿capital = 463
+capital = 463
 
 set_politics = {
 	ruling_party = communism

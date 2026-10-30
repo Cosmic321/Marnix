@@ -1,4 +1,4 @@
-﻿add_namespace = cod
+add_namespace = cod
 
 country_event = {
 	id = cod.1

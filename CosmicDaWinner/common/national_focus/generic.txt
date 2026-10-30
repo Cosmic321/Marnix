@@ -1,4 +1,4 @@
-﻿focus_tree = {
+focus_tree = {
 
 default = yes
 id = generic_focus
