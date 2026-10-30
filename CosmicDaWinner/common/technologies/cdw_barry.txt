@@ -1,0 +1,31 @@
+technologies = {
+
+	# 1936 infantry research that unlocks Barry's kit and the battalion raised with it.
+	cdw_barrys_massive_dick = {
+
+		enable_equipments = {
+			cdw_femboy_equipment_0
+		}
+
+		enable_subunits = {
+			femboy
+		}
+
+		research_cost = 1.0
+		start_year = 1936
+
+		folder = {
+			name = infantry_folder
+			position = { x = 8 y = 2 }
+		}
+
+		categories = {
+			infantry_weapons
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+
+}

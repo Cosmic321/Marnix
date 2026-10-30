@@ -1,0 +1,46 @@
+sub_units = {
+
+	# Unlocked by the 1936 "Barry's Massive Dick" infantry research.
+	# 100 equipment per battalion, and each piece of that equipment carries the
+	# flat 100 soft attack, so every battalion adds 100 soft attack to a division.
+	femboy = {
+		abbreviation = "FMB"
+		sprite = infantry
+		map_icon_category = infantry
+
+		priority = 640
+		ai_priority = 90
+		active = no
+
+		type = {
+			infantry
+		}
+
+		group = infantry
+
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+
+		combat_width = 2
+
+		max_strength = 25
+		max_organisation = 60
+		default_morale = 0.3
+		manpower = 1000
+
+		training_time = 90
+		suppression = 1.5
+		weight = 0.5
+
+		supply_consumption = 0.06
+
+		need = {
+			cdw_femboy_equipment = 100
+		}
+	}
+
+}
