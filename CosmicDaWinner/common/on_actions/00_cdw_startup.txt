@@ -6,2760 +6,2762 @@
 # 2. Every country starts with a modest amount of equipment, scaled to its industry.
 #    Enough to fill out the opening weeks, nowhere near enough to fight a war with.
 
-on_startup = {
-	effect = {
-		every_country = {
-			every_owned_state = {
-				add_core_of = PREV
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				every_owned_state = {
+					add_core_of = PREV
+				}
 			}
-		}
 
-		# A merchant marine sized to the country's industry and how much of its coast is salt water.
-		ALT = {
-			add_equipment_to_stockpile = { type = convoy amount = 30 }
-		}
-		ARE = {
-			add_equipment_to_stockpile = { type = convoy amount = 11 }
-		}
-		AZE = {
-			add_equipment_to_stockpile = { type = convoy amount = 12 }
-		}
-		BAZ = {
-			add_equipment_to_stockpile = { type = convoy amount = 18 }
-		}
-		BEA = {
-			add_equipment_to_stockpile = { type = convoy amount = 23 }
-		}
-		BER = {
-			add_equipment_to_stockpile = { type = convoy amount = 21 }
-		}
-		BIP = {
-			add_equipment_to_stockpile = { type = convoy amount = 4 }
-		}
-		BSC = {
-			add_equipment_to_stockpile = { type = convoy amount = 36 }
-		}
-		COD = {
-			add_equipment_to_stockpile = { type = convoy amount = 30 }
-		}
-		DOL = {
-			add_equipment_to_stockpile = { type = convoy amount = 26 }
-		}
-		ECO = {
-			add_equipment_to_stockpile = { type = convoy amount = 9 }
-		}
-		FSO = {
-			add_equipment_to_stockpile = { type = convoy amount = 19 }
-		}
-		GBT = {
-			add_equipment_to_stockpile = { type = convoy amount = 42 }
-		}
-		HRT = {
-			add_equipment_to_stockpile = { type = convoy amount = 16 }
-		}
-		KER = {
-			add_equipment_to_stockpile = { type = convoy amount = 15 }
-		}
-		KSC = {
-			add_equipment_to_stockpile = { type = convoy amount = 23 }
-		}
-		MAH = {
-			add_equipment_to_stockpile = { type = convoy amount = 13 }
-		}
-		MAN = {
-			add_equipment_to_stockpile = { type = convoy amount = 23 }
-		}
-		MOR = {
-			add_equipment_to_stockpile = { type = convoy amount = 8 }
-		}
-		NRC = {
-			add_equipment_to_stockpile = { type = convoy amount = 17 }
-		}
-		OZB = {
-			add_equipment_to_stockpile = { type = convoy amount = 7 }
-		}
-		OZH = {
-			add_equipment_to_stockpile = { type = convoy amount = 8 }
-		}
-		OZR = {
-			add_equipment_to_stockpile = { type = convoy amount = 6 }
-		}
-		OZS = {
-			add_equipment_to_stockpile = { type = convoy amount = 9 }
-		}
-		PDV = {
-			add_equipment_to_stockpile = { type = convoy amount = 111 }
-		}
-		RBD = {
-			add_equipment_to_stockpile = { type = convoy amount = 14 }
-		}
-		RIT = {
-			add_equipment_to_stockpile = { type = convoy amount = 23 }
-		}
-		SKZ = {
-			add_equipment_to_stockpile = { type = convoy amount = 15 }
-		}
-		SMH = {
-			add_equipment_to_stockpile = { type = convoy amount = 34 }
-		}
-		SNJ = {
-			add_equipment_to_stockpile = { type = convoy amount = 9 }
-		}
-		TCC = {
-			add_equipment_to_stockpile = { type = convoy amount = 17 }
-		}
-		TCU = {
-			add_equipment_to_stockpile = { type = convoy amount = 41 }
-		}
-		VAK = {
-			add_equipment_to_stockpile = { type = convoy amount = 31 }
-		}
-		VRE = {
-			add_equipment_to_stockpile = { type = convoy amount = 23 }
-		}
-		VRK = {
-			add_equipment_to_stockpile = { type = convoy amount = 29 }
-		}
-		ZVD = {
-			add_equipment_to_stockpile = { type = convoy amount = 53 }
-		}
-		ALT = {
-			add_equipment_to_stockpile = { type = infantry_equipment amount = 1320 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 181 }
-			add_equipment_to_stockpile = { type = artillery_equipment amount = 112 }
-		}
-		ARE = {
-			add_equipment_to_stockpile = { type = infantry_equipment amount = 465 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 67 }
-			add_equipment_to_stockpile = { type = artillery_equipment amount = 36 }
-		}
-		AZE = {
-			add_equipment_to_stockpile = { type = infantry_equipment amount = 645 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 91 }
-			add_equipment_to_stockpile = { type = artillery_equipment amount = 52 }
-		}
-		BAZ = {
-			add_equipment_to_stockpile = { type = infantry_equipment amount = 780 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 109 }
-			add_equipment_to_stockpile = { type = artillery_equipment amount = 64 }
-		}
-		BEA = {
-			add_equipment_to_stockpile = { type = infantry_equipment amount = 960 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 133 }
-			add_equipment_to_stockpile = { type = artillery_equipment amount = 80 }
-		}
-		BER = {
-			add_equipment_to_stockpile = { type = infantry_equipment amount = 1410 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 193 }
-			add_equipment_to_stockpile = { type = artillery_equipment amount = 120 }
-		}
-		BIP = {
-			add_equipment_to_stockpile = { type = infantry_equipment amount = 420 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 61 }
-			add_equipment_to_stockpile = { type = artillery_equipment amount = 32 }
-		}
-		BSC = {
-			add_equipment_to_stockpile = { type = infantry_equipment amount = 1860 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 253 }
-			add_equipment_to_stockpile = { type = artillery_equipment amount = 160 }
-		}
-		COD = {
-			add_equipment_to_stockpile = { type = infantry_equipment amount = 1275 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 175 }
-			add_equipment_to_stockpile = { type = artillery_equipment amount = 108 }
-		}
-		DES = {
-			add_equipment_to_stockpile = { type = infantry_equipment amount = 510 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 73 }
-			add_equipment_to_stockpile = { type = artillery_equipment amount = 40 }
-		}
-		DOL = {
-			add_equipment_to_stockpile = { type = infantry_equipment amount = 915 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 127 }
-			add_equipment_to_stockpile = { type = artillery_equipment amount = 76 }
-		}
-		DPJ = {
-			add_equipment_to_stockpile = { type = infantry_equipment amount = 780 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 109 }
-			add_equipment_to_stockpile = { type = artillery_equipment amount = 64 }
-		}
-		ECO = {
-			add_equipment_to_stockpile = { type = infantry_equipment amount = 825 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 115 }
-			add_equipment_to_stockpile = { type = artillery_equipment amount = 68 }
-		}
-		FSO = {
-			add_equipment_to_stockpile = { type = infantry_equipment amount = 1095 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 151 }
-			add_equipment_to_stockpile = { type = artillery_equipment amount = 92 }
-		}
-		GBT = {
-			add_equipment_to_stockpile = { type = infantry_equipment amount = 1410 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 193 }
-			add_equipment_to_stockpile = { type = artillery_equipment amount = 120 }
-		}
-		HRT = {
-			add_equipment_to_stockpile = { type = infantry_equipment amount = 510 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 73 }
-			add_equipment_to_stockpile = { type = artillery_equipment amount = 40 }
-		}
-		KER = {
-			add_equipment_to_stockpile = { type = infantry_equipment amount = 915 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 127 }
-			add_equipment_to_stockpile = { type = artillery_equipment amount = 76 }
-		}
-		KSC = {
-			add_equipment_to_stockpile = { type = infantry_equipment amount = 1545 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 211 }
-			add_equipment_to_stockpile = { type = artillery_equipment amount = 132 }
-		}
-		MAH = {
-			add_equipment_to_stockpile = { type = infantry_equipment amount = 465 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 67 }
-			add_equipment_to_stockpile = { type = artillery_equipment amount = 36 }
-		}
-		MAN = {
-			add_equipment_to_stockpile = { type = infantry_equipment amount = 1410 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 193 }
-			add_equipment_to_stockpile = { type = artillery_equipment amount = 120 }
-		}
-		MOR = {
-			add_equipment_to_stockpile = { type = infantry_equipment amount = 825 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 115 }
-			add_equipment_to_stockpile = { type = artillery_equipment amount = 68 }
-		}
-		NRC = {
-			add_equipment_to_stockpile = { type = infantry_equipment amount = 600 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 85 }
-			add_equipment_to_stockpile = { type = artillery_equipment amount = 48 }
-		}
-		OZB = {
-			add_equipment_to_stockpile = { type = infantry_equipment amount = 510 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 73 }
-			add_equipment_to_stockpile = { type = artillery_equipment amount = 40 }
-		}
-		OZH = {
-			add_equipment_to_stockpile = { type = infantry_equipment amount = 465 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 67 }
-			add_equipment_to_stockpile = { type = artillery_equipment amount = 36 }
-		}
-		OZR = {
-			add_equipment_to_stockpile = { type = infantry_equipment amount = 420 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 61 }
-			add_equipment_to_stockpile = { type = artillery_equipment amount = 32 }
-		}
-		OZS = {
-			add_equipment_to_stockpile = { type = infantry_equipment amount = 465 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 67 }
-			add_equipment_to_stockpile = { type = artillery_equipment amount = 36 }
-		}
-		PDV = {
-			add_equipment_to_stockpile = { type = infantry_equipment amount = 10230 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 1369 }
-			add_equipment_to_stockpile = { type = artillery_equipment amount = 904 }
-		}
-		RBD = {
-			add_equipment_to_stockpile = { type = infantry_equipment amount = 600 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 85 }
-			add_equipment_to_stockpile = { type = artillery_equipment amount = 48 }
-		}
-		RIT = {
-			add_equipment_to_stockpile = { type = infantry_equipment amount = 1320 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 181 }
-			add_equipment_to_stockpile = { type = artillery_equipment amount = 112 }
-		}
-		SKZ = {
-			add_equipment_to_stockpile = { type = infantry_equipment amount = 1050 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 145 }
-			add_equipment_to_stockpile = { type = artillery_equipment amount = 88 }
-		}
-		SMH = {
-			add_equipment_to_stockpile = { type = infantry_equipment amount = 1680 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 229 }
-			add_equipment_to_stockpile = { type = artillery_equipment amount = 144 }
-		}
-		SNJ = {
-			add_equipment_to_stockpile = { type = infantry_equipment amount = 690 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 97 }
-			add_equipment_to_stockpile = { type = artillery_equipment amount = 56 }
-		}
-		TCC = {
-			add_equipment_to_stockpile = { type = infantry_equipment amount = 600 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 85 }
-			add_equipment_to_stockpile = { type = artillery_equipment amount = 48 }
-		}
-		TCU = {
-			add_equipment_to_stockpile = { type = infantry_equipment amount = 1950 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 265 }
-			add_equipment_to_stockpile = { type = artillery_equipment amount = 168 }
-		}
-		VAK = {
-			add_equipment_to_stockpile = { type = infantry_equipment amount = 1005 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 139 }
-			add_equipment_to_stockpile = { type = artillery_equipment amount = 84 }
-		}
-		VRE = {
-			add_equipment_to_stockpile = { type = infantry_equipment amount = 1860 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 253 }
-			add_equipment_to_stockpile = { type = artillery_equipment amount = 160 }
-		}
-		VRK = {
-			add_equipment_to_stockpile = { type = infantry_equipment amount = 1410 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 193 }
-			add_equipment_to_stockpile = { type = artillery_equipment amount = 120 }
-		}
-		ZVD = {
-			add_equipment_to_stockpile = { type = infantry_equipment amount = 4560 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 613 }
-			add_equipment_to_stockpile = { type = artillery_equipment amount = 400 }
-		}
-	}
-}
-
-# Re-assert cores every month. Cheap, and it repairs any state a script, a peace
-# conference or a console command has quietly stripped of its owner's core.
-on_monthly = {
-	effect = {
-		every_country = {
-			every_owned_state = {
-				add_core_of = PREV
+			# A merchant marine sized to the country's industry and how much of its coast is salt water.
+			ALT = {
+				add_equipment_to_stockpile = { type = convoy amount = 30 }
+			}
+			ARE = {
+				add_equipment_to_stockpile = { type = convoy amount = 11 }
+			}
+			AZE = {
+				add_equipment_to_stockpile = { type = convoy amount = 12 }
+			}
+			BAZ = {
+				add_equipment_to_stockpile = { type = convoy amount = 18 }
+			}
+			BEA = {
+				add_equipment_to_stockpile = { type = convoy amount = 23 }
+			}
+			BER = {
+				add_equipment_to_stockpile = { type = convoy amount = 21 }
+			}
+			BIP = {
+				add_equipment_to_stockpile = { type = convoy amount = 4 }
+			}
+			BSC = {
+				add_equipment_to_stockpile = { type = convoy amount = 36 }
+			}
+			COD = {
+				add_equipment_to_stockpile = { type = convoy amount = 30 }
+			}
+			DOL = {
+				add_equipment_to_stockpile = { type = convoy amount = 26 }
+			}
+			ECO = {
+				add_equipment_to_stockpile = { type = convoy amount = 9 }
+			}
+			FSO = {
+				add_equipment_to_stockpile = { type = convoy amount = 19 }
+			}
+			GBT = {
+				add_equipment_to_stockpile = { type = convoy amount = 42 }
+			}
+			HRT = {
+				add_equipment_to_stockpile = { type = convoy amount = 16 }
+			}
+			KER = {
+				add_equipment_to_stockpile = { type = convoy amount = 15 }
+			}
+			KSC = {
+				add_equipment_to_stockpile = { type = convoy amount = 23 }
+			}
+			MAH = {
+				add_equipment_to_stockpile = { type = convoy amount = 13 }
+			}
+			MAN = {
+				add_equipment_to_stockpile = { type = convoy amount = 23 }
+			}
+			MOR = {
+				add_equipment_to_stockpile = { type = convoy amount = 8 }
+			}
+			NRC = {
+				add_equipment_to_stockpile = { type = convoy amount = 17 }
+			}
+			OZB = {
+				add_equipment_to_stockpile = { type = convoy amount = 7 }
+			}
+			OZH = {
+				add_equipment_to_stockpile = { type = convoy amount = 8 }
+			}
+			OZR = {
+				add_equipment_to_stockpile = { type = convoy amount = 6 }
+			}
+			OZS = {
+				add_equipment_to_stockpile = { type = convoy amount = 9 }
+			}
+			PDV = {
+				add_equipment_to_stockpile = { type = convoy amount = 111 }
+			}
+			RBD = {
+				add_equipment_to_stockpile = { type = convoy amount = 14 }
+			}
+			RIT = {
+				add_equipment_to_stockpile = { type = convoy amount = 23 }
+			}
+			SKZ = {
+				add_equipment_to_stockpile = { type = convoy amount = 15 }
+			}
+			SMH = {
+				add_equipment_to_stockpile = { type = convoy amount = 34 }
+			}
+			SNJ = {
+				add_equipment_to_stockpile = { type = convoy amount = 9 }
+			}
+			TCC = {
+				add_equipment_to_stockpile = { type = convoy amount = 17 }
+			}
+			TCU = {
+				add_equipment_to_stockpile = { type = convoy amount = 41 }
+			}
+			VAK = {
+				add_equipment_to_stockpile = { type = convoy amount = 31 }
+			}
+			VRE = {
+				add_equipment_to_stockpile = { type = convoy amount = 23 }
+			}
+			VRK = {
+				add_equipment_to_stockpile = { type = convoy amount = 29 }
+			}
+			ZVD = {
+				add_equipment_to_stockpile = { type = convoy amount = 53 }
+			}
+			ALT = {
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 1320 }
+				add_equipment_to_stockpile = { type = support_equipment amount = 181 }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = 112 }
+			}
+			ARE = {
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 465 }
+				add_equipment_to_stockpile = { type = support_equipment amount = 67 }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = 36 }
+			}
+			AZE = {
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 645 }
+				add_equipment_to_stockpile = { type = support_equipment amount = 91 }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = 52 }
+			}
+			BAZ = {
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 780 }
+				add_equipment_to_stockpile = { type = support_equipment amount = 109 }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = 64 }
+			}
+			BEA = {
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 960 }
+				add_equipment_to_stockpile = { type = support_equipment amount = 133 }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = 80 }
+			}
+			BER = {
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 1410 }
+				add_equipment_to_stockpile = { type = support_equipment amount = 193 }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = 120 }
+			}
+			BIP = {
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 420 }
+				add_equipment_to_stockpile = { type = support_equipment amount = 61 }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = 32 }
+			}
+			BSC = {
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 1860 }
+				add_equipment_to_stockpile = { type = support_equipment amount = 253 }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = 160 }
+			}
+			COD = {
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 1275 }
+				add_equipment_to_stockpile = { type = support_equipment amount = 175 }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = 108 }
+			}
+			DES = {
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 510 }
+				add_equipment_to_stockpile = { type = support_equipment amount = 73 }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = 40 }
+			}
+			DOL = {
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 915 }
+				add_equipment_to_stockpile = { type = support_equipment amount = 127 }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = 76 }
+			}
+			DPJ = {
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 780 }
+				add_equipment_to_stockpile = { type = support_equipment amount = 109 }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = 64 }
+			}
+			ECO = {
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 825 }
+				add_equipment_to_stockpile = { type = support_equipment amount = 115 }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = 68 }
+			}
+			FSO = {
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 1095 }
+				add_equipment_to_stockpile = { type = support_equipment amount = 151 }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = 92 }
+			}
+			GBT = {
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 1410 }
+				add_equipment_to_stockpile = { type = support_equipment amount = 193 }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = 120 }
+			}
+			HRT = {
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 510 }
+				add_equipment_to_stockpile = { type = support_equipment amount = 73 }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = 40 }
+			}
+			KER = {
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 915 }
+				add_equipment_to_stockpile = { type = support_equipment amount = 127 }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = 76 }
+			}
+			KSC = {
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 1545 }
+				add_equipment_to_stockpile = { type = support_equipment amount = 211 }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = 132 }
+			}
+			MAH = {
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 465 }
+				add_equipment_to_stockpile = { type = support_equipment amount = 67 }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = 36 }
+			}
+			MAN = {
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 1410 }
+				add_equipment_to_stockpile = { type = support_equipment amount = 193 }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = 120 }
+			}
+			MOR = {
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 825 }
+				add_equipment_to_stockpile = { type = support_equipment amount = 115 }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = 68 }
+			}
+			NRC = {
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 600 }
+				add_equipment_to_stockpile = { type = support_equipment amount = 85 }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = 48 }
+			}
+			OZB = {
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 510 }
+				add_equipment_to_stockpile = { type = support_equipment amount = 73 }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = 40 }
+			}
+			OZH = {
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 465 }
+				add_equipment_to_stockpile = { type = support_equipment amount = 67 }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = 36 }
+			}
+			OZR = {
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 420 }
+				add_equipment_to_stockpile = { type = support_equipment amount = 61 }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = 32 }
+			}
+			OZS = {
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 465 }
+				add_equipment_to_stockpile = { type = support_equipment amount = 67 }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = 36 }
+			}
+			PDV = {
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 10230 }
+				add_equipment_to_stockpile = { type = support_equipment amount = 1369 }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = 904 }
+			}
+			RBD = {
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 600 }
+				add_equipment_to_stockpile = { type = support_equipment amount = 85 }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = 48 }
+			}
+			RIT = {
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 1320 }
+				add_equipment_to_stockpile = { type = support_equipment amount = 181 }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = 112 }
+			}
+			SKZ = {
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 1050 }
+				add_equipment_to_stockpile = { type = support_equipment amount = 145 }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = 88 }
+			}
+			SMH = {
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 1680 }
+				add_equipment_to_stockpile = { type = support_equipment amount = 229 }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = 144 }
+			}
+			SNJ = {
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 690 }
+				add_equipment_to_stockpile = { type = support_equipment amount = 97 }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = 56 }
+			}
+			TCC = {
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 600 }
+				add_equipment_to_stockpile = { type = support_equipment amount = 85 }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = 48 }
+			}
+			TCU = {
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 1950 }
+				add_equipment_to_stockpile = { type = support_equipment amount = 265 }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = 168 }
+			}
+			VAK = {
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 1005 }
+				add_equipment_to_stockpile = { type = support_equipment amount = 139 }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = 84 }
+			}
+			VRE = {
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 1860 }
+				add_equipment_to_stockpile = { type = support_equipment amount = 253 }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = 160 }
+			}
+			VRK = {
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 1410 }
+				add_equipment_to_stockpile = { type = support_equipment amount = 193 }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = 120 }
+			}
+			ZVD = {
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 4560 }
+				add_equipment_to_stockpile = { type = support_equipment amount = 613 }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = 400 }
 			}
 		}
 	}
-}
 
-# ---- daily military experience -------------------------------------------
-# Every military advisor in post trains his own service: 0.3 experience per day.
-# The check is per country, so a country only pays for its own cabinet.
-on_daily_ALT = {
-	effect = {
-		if = {
-			limit = { has_idea = CDW_ALT_army1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_ALT_army2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_ALT_army3 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_ALT_navy1 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_ALT_navy2 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_ALT_navy3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_ALT_air1 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_ALT_air2 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_ALT_air3 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_ALT_hc1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_ALT_hc2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_ALT_hc3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_ALT_hc4 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_ALT_hc5 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_ALT_hc6 }
-			add_air_experience = 0.3
+	# Re-assert cores every month. Cheap, and it repairs any state a script, a peace
+	# conference or a console command has quietly stripped of its owner's core.
+	on_monthly = {
+		effect = {
+			every_country = {
+				every_owned_state = {
+					add_core_of = PREV
+				}
+			}
 		}
 	}
-}
-on_daily_ARE = {
-	effect = {
-		if = {
-			limit = { has_idea = CDW_ARE_army1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_ARE_army2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_ARE_army3 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_ARE_navy1 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_ARE_navy2 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_ARE_navy3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_ARE_air1 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_ARE_air2 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_ARE_air3 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_ARE_hc1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_ARE_hc2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_ARE_hc3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_ARE_hc4 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_ARE_hc5 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_ARE_hc6 }
-			add_air_experience = 0.3
-		}
-	}
-}
-on_daily_AZE = {
-	effect = {
-		if = {
-			limit = { has_idea = CDW_AZE_army1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_AZE_army2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_AZE_army3 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_AZE_navy1 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_AZE_navy2 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_AZE_navy3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_AZE_air1 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_AZE_air2 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_AZE_air3 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_AZE_hc1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_AZE_hc2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_AZE_hc3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_AZE_hc4 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_AZE_hc5 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_AZE_hc6 }
-			add_air_experience = 0.3
+
+	# ---- daily military experience -------------------------------------------
+	# Every military advisor in post trains his own service: 0.3 experience per day.
+	# The check is per country, so a country only pays for its own cabinet.
+	on_daily_ALT = {
+		effect = {
+			if = {
+				limit = { has_idea = CDW_ALT_army1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ALT_army2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ALT_army3 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ALT_navy1 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ALT_navy2 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ALT_navy3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ALT_air1 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ALT_air2 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ALT_air3 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ALT_hc1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ALT_hc2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ALT_hc3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ALT_hc4 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ALT_hc5 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ALT_hc6 }
+				add_air_experience = 0.3
+			}
 		}
 	}
-}
-on_daily_BAZ = {
-	effect = {
-		if = {
-			limit = { has_idea = CDW_BAZ_army1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BAZ_army2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BAZ_army3 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BAZ_navy1 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BAZ_navy2 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BAZ_navy3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BAZ_air1 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BAZ_air2 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BAZ_air3 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BAZ_hc1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BAZ_hc2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BAZ_hc3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BAZ_hc4 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BAZ_hc5 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BAZ_hc6 }
-			add_air_experience = 0.3
-		}
-	}
-}
-on_daily_BEA = {
-	effect = {
-		if = {
-			limit = { has_idea = CDW_BEA_army1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BEA_army2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BEA_army3 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BEA_navy1 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BEA_navy2 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BEA_navy3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BEA_air1 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BEA_air2 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BEA_air3 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BEA_hc1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BEA_hc2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BEA_hc3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BEA_hc4 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BEA_hc5 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BEA_hc6 }
-			add_air_experience = 0.3
+	on_daily_ARE = {
+		effect = {
+			if = {
+				limit = { has_idea = CDW_ARE_army1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ARE_army2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ARE_army3 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ARE_navy1 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ARE_navy2 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ARE_navy3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ARE_air1 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ARE_air2 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ARE_air3 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ARE_hc1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ARE_hc2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ARE_hc3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ARE_hc4 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ARE_hc5 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ARE_hc6 }
+				add_air_experience = 0.3
+			}
 		}
 	}
-}
-on_daily_BER = {
-	effect = {
-		if = {
-			limit = { has_idea = CDW_BER_army1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BER_army2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BER_army3 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BER_navy1 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BER_navy2 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BER_navy3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BER_air1 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BER_air2 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BER_air3 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BER_hc1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BER_hc2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BER_hc3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BER_hc4 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BER_hc5 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BER_hc6 }
-			add_air_experience = 0.3
-		}
-	}
-}
-on_daily_BIP = {
-	effect = {
-		if = {
-			limit = { has_idea = CDW_BIP_army1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BIP_army2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BIP_army3 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BIP_navy1 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BIP_navy2 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BIP_navy3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BIP_air1 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BIP_air2 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BIP_air3 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BIP_hc1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BIP_hc2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BIP_hc3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BIP_hc4 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BIP_hc5 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BIP_hc6 }
-			add_air_experience = 0.3
+	on_daily_AZE = {
+		effect = {
+			if = {
+				limit = { has_idea = CDW_AZE_army1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_AZE_army2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_AZE_army3 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_AZE_navy1 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_AZE_navy2 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_AZE_navy3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_AZE_air1 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_AZE_air2 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_AZE_air3 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_AZE_hc1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_AZE_hc2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_AZE_hc3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_AZE_hc4 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_AZE_hc5 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_AZE_hc6 }
+				add_air_experience = 0.3
+			}
 		}
 	}
-}
-on_daily_BSC = {
-	effect = {
-		if = {
-			limit = { has_idea = CDW_BSC_army1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BSC_army2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BSC_army3 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BSC_navy1 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BSC_navy2 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BSC_navy3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BSC_air1 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BSC_air2 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BSC_air3 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BSC_hc1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BSC_hc2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BSC_hc3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BSC_hc4 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BSC_hc5 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_BSC_hc6 }
-			add_air_experience = 0.3
-		}
-	}
-}
-on_daily_COD = {
-	effect = {
-		if = {
-			limit = { has_idea = CDW_COD_army1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_COD_army2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_COD_army3 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_COD_navy1 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_COD_navy2 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_COD_navy3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_COD_air1 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_COD_air2 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_COD_air3 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_COD_hc1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_COD_hc2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_COD_hc3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_COD_hc4 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_COD_hc5 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_COD_hc6 }
-			add_air_experience = 0.3
+	on_daily_BAZ = {
+		effect = {
+			if = {
+				limit = { has_idea = CDW_BAZ_army1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BAZ_army2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BAZ_army3 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BAZ_navy1 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BAZ_navy2 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BAZ_navy3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BAZ_air1 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BAZ_air2 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BAZ_air3 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BAZ_hc1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BAZ_hc2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BAZ_hc3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BAZ_hc4 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BAZ_hc5 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BAZ_hc6 }
+				add_air_experience = 0.3
+			}
 		}
 	}
-}
-on_daily_DES = {
-	effect = {
-		if = {
-			limit = { has_idea = CDW_DES_army1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_DES_army2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_DES_army3 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_DES_navy1 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_DES_navy2 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_DES_navy3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_DES_air1 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_DES_air2 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_DES_air3 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_DES_hc1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_DES_hc2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_DES_hc3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_DES_hc4 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_DES_hc5 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_DES_hc6 }
-			add_air_experience = 0.3
-		}
-	}
-}
-on_daily_DOL = {
-	effect = {
-		if = {
-			limit = { has_idea = CDW_DOL_army1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_DOL_army2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_DOL_army3 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_DOL_navy1 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_DOL_navy2 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_DOL_navy3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_DOL_air1 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_DOL_air2 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_DOL_air3 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_DOL_hc1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_DOL_hc2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_DOL_hc3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_DOL_hc4 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_DOL_hc5 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_DOL_hc6 }
-			add_air_experience = 0.3
+	on_daily_BEA = {
+		effect = {
+			if = {
+				limit = { has_idea = CDW_BEA_army1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BEA_army2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BEA_army3 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BEA_navy1 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BEA_navy2 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BEA_navy3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BEA_air1 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BEA_air2 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BEA_air3 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BEA_hc1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BEA_hc2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BEA_hc3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BEA_hc4 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BEA_hc5 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BEA_hc6 }
+				add_air_experience = 0.3
+			}
 		}
 	}
-}
-on_daily_DPJ = {
-	effect = {
-		if = {
-			limit = { has_idea = CDW_DPJ_army1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_DPJ_army2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_DPJ_army3 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_DPJ_navy1 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_DPJ_navy2 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_DPJ_navy3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_DPJ_air1 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_DPJ_air2 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_DPJ_air3 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_DPJ_hc1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_DPJ_hc2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_DPJ_hc3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_DPJ_hc4 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_DPJ_hc5 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_DPJ_hc6 }
-			add_air_experience = 0.3
-		}
-	}
-}
-on_daily_ECO = {
-	effect = {
-		if = {
-			limit = { has_idea = CDW_ECO_army1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_ECO_army2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_ECO_army3 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_ECO_navy1 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_ECO_navy2 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_ECO_navy3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_ECO_air1 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_ECO_air2 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_ECO_air3 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_ECO_hc1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_ECO_hc2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_ECO_hc3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_ECO_hc4 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_ECO_hc5 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_ECO_hc6 }
-			add_air_experience = 0.3
+	on_daily_BER = {
+		effect = {
+			if = {
+				limit = { has_idea = CDW_BER_army1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BER_army2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BER_army3 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BER_navy1 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BER_navy2 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BER_navy3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BER_air1 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BER_air2 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BER_air3 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BER_hc1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BER_hc2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BER_hc3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BER_hc4 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BER_hc5 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BER_hc6 }
+				add_air_experience = 0.3
+			}
 		}
 	}
-}
-on_daily_FSO = {
-	effect = {
-		if = {
-			limit = { has_idea = CDW_FSO_army1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_FSO_army2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_FSO_army3 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_FSO_navy1 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_FSO_navy2 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_FSO_navy3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_FSO_air1 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_FSO_air2 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_FSO_air3 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_FSO_hc1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_FSO_hc2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_FSO_hc3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_FSO_hc4 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_FSO_hc5 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_FSO_hc6 }
-			add_air_experience = 0.3
-		}
-	}
-}
-on_daily_GBT = {
-	effect = {
-		if = {
-			limit = { has_idea = CDW_GBT_army1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_GBT_army2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_GBT_army3 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_GBT_navy1 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_GBT_navy2 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_GBT_navy3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_GBT_air1 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_GBT_air2 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_GBT_air3 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_GBT_hc1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_GBT_hc2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_GBT_hc3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_GBT_hc4 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_GBT_hc5 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_GBT_hc6 }
-			add_air_experience = 0.3
+	on_daily_BIP = {
+		effect = {
+			if = {
+				limit = { has_idea = CDW_BIP_army1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BIP_army2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BIP_army3 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BIP_navy1 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BIP_navy2 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BIP_navy3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BIP_air1 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BIP_air2 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BIP_air3 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BIP_hc1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BIP_hc2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BIP_hc3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BIP_hc4 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BIP_hc5 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BIP_hc6 }
+				add_air_experience = 0.3
+			}
 		}
 	}
-}
-on_daily_HRT = {
-	effect = {
-		if = {
-			limit = { has_idea = CDW_HRT_army1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_HRT_army2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_HRT_army3 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_HRT_navy1 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_HRT_navy2 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_HRT_navy3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_HRT_air1 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_HRT_air2 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_HRT_air3 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_HRT_hc1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_HRT_hc2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_HRT_hc3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_HRT_hc4 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_HRT_hc5 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_HRT_hc6 }
-			add_air_experience = 0.3
-		}
-	}
-}
-on_daily_KER = {
-	effect = {
-		if = {
-			limit = { has_idea = CDW_KER_army1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_KER_army2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_KER_army3 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_KER_navy1 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_KER_navy2 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_KER_navy3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_KER_air1 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_KER_air2 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_KER_air3 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_KER_hc1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_KER_hc2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_KER_hc3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_KER_hc4 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_KER_hc5 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_KER_hc6 }
-			add_air_experience = 0.3
+	on_daily_BSC = {
+		effect = {
+			if = {
+				limit = { has_idea = CDW_BSC_army1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BSC_army2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BSC_army3 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BSC_navy1 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BSC_navy2 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BSC_navy3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BSC_air1 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BSC_air2 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BSC_air3 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BSC_hc1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BSC_hc2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BSC_hc3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BSC_hc4 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BSC_hc5 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_BSC_hc6 }
+				add_air_experience = 0.3
+			}
 		}
 	}
-}
-on_daily_KSC = {
-	effect = {
-		if = {
-			limit = { has_idea = CDW_KSC_army1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_KSC_army2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_KSC_army3 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_KSC_navy1 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_KSC_navy2 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_KSC_navy3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_KSC_air1 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_KSC_air2 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_KSC_air3 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_KSC_hc1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_KSC_hc2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_KSC_hc3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_KSC_hc4 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_KSC_hc5 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_KSC_hc6 }
-			add_air_experience = 0.3
-		}
-	}
-}
-on_daily_MAH = {
-	effect = {
-		if = {
-			limit = { has_idea = CDW_MAH_army1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_MAH_army2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_MAH_army3 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_MAH_navy1 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_MAH_navy2 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_MAH_navy3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_MAH_air1 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_MAH_air2 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_MAH_air3 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_MAH_hc1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_MAH_hc2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_MAH_hc3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_MAH_hc4 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_MAH_hc5 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_MAH_hc6 }
-			add_air_experience = 0.3
+	on_daily_COD = {
+		effect = {
+			if = {
+				limit = { has_idea = CDW_COD_army1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_COD_army2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_COD_army3 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_COD_navy1 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_COD_navy2 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_COD_navy3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_COD_air1 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_COD_air2 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_COD_air3 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_COD_hc1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_COD_hc2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_COD_hc3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_COD_hc4 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_COD_hc5 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_COD_hc6 }
+				add_air_experience = 0.3
+			}
 		}
 	}
-}
-on_daily_MAN = {
-	effect = {
-		if = {
-			limit = { has_idea = CDW_MAN_army1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_MAN_army2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_MAN_army3 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_MAN_navy1 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_MAN_navy2 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_MAN_navy3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_MAN_air1 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_MAN_air2 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_MAN_air3 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_MAN_hc1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_MAN_hc2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_MAN_hc3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_MAN_hc4 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_MAN_hc5 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_MAN_hc6 }
-			add_air_experience = 0.3
-		}
-	}
-}
-on_daily_MOR = {
-	effect = {
-		if = {
-			limit = { has_idea = CDW_MOR_army1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_MOR_army2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_MOR_army3 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_MOR_navy1 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_MOR_navy2 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_MOR_navy3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_MOR_air1 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_MOR_air2 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_MOR_air3 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_MOR_hc1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_MOR_hc2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_MOR_hc3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_MOR_hc4 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_MOR_hc5 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_MOR_hc6 }
-			add_air_experience = 0.3
+	on_daily_DES = {
+		effect = {
+			if = {
+				limit = { has_idea = CDW_DES_army1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_DES_army2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_DES_army3 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_DES_navy1 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_DES_navy2 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_DES_navy3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_DES_air1 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_DES_air2 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_DES_air3 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_DES_hc1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_DES_hc2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_DES_hc3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_DES_hc4 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_DES_hc5 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_DES_hc6 }
+				add_air_experience = 0.3
+			}
 		}
 	}
-}
-on_daily_NRC = {
-	effect = {
-		if = {
-			limit = { has_idea = CDW_NRC_army1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_NRC_army2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_NRC_army3 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_NRC_navy1 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_NRC_navy2 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_NRC_navy3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_NRC_air1 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_NRC_air2 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_NRC_air3 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_NRC_hc1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_NRC_hc2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_NRC_hc3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_NRC_hc4 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_NRC_hc5 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_NRC_hc6 }
-			add_air_experience = 0.3
-		}
-	}
-}
-on_daily_OZB = {
-	effect = {
-		if = {
-			limit = { has_idea = CDW_OZB_army1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZB_army2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZB_army3 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZB_navy1 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZB_navy2 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZB_navy3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZB_air1 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZB_air2 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZB_air3 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZB_hc1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZB_hc2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZB_hc3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZB_hc4 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZB_hc5 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZB_hc6 }
-			add_air_experience = 0.3
+	on_daily_DOL = {
+		effect = {
+			if = {
+				limit = { has_idea = CDW_DOL_army1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_DOL_army2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_DOL_army3 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_DOL_navy1 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_DOL_navy2 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_DOL_navy3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_DOL_air1 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_DOL_air2 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_DOL_air3 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_DOL_hc1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_DOL_hc2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_DOL_hc3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_DOL_hc4 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_DOL_hc5 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_DOL_hc6 }
+				add_air_experience = 0.3
+			}
 		}
 	}
-}
-on_daily_OZH = {
-	effect = {
-		if = {
-			limit = { has_idea = CDW_OZH_army1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZH_army2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZH_army3 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZH_navy1 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZH_navy2 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZH_navy3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZH_air1 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZH_air2 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZH_air3 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZH_hc1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZH_hc2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZH_hc3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZH_hc4 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZH_hc5 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZH_hc6 }
-			add_air_experience = 0.3
-		}
-	}
-}
-on_daily_OZR = {
-	effect = {
-		if = {
-			limit = { has_idea = CDW_OZR_army1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZR_army2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZR_army3 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZR_navy1 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZR_navy2 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZR_navy3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZR_air1 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZR_air2 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZR_air3 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZR_hc1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZR_hc2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZR_hc3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZR_hc4 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZR_hc5 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZR_hc6 }
-			add_air_experience = 0.3
+	on_daily_DPJ = {
+		effect = {
+			if = {
+				limit = { has_idea = CDW_DPJ_army1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_DPJ_army2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_DPJ_army3 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_DPJ_navy1 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_DPJ_navy2 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_DPJ_navy3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_DPJ_air1 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_DPJ_air2 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_DPJ_air3 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_DPJ_hc1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_DPJ_hc2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_DPJ_hc3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_DPJ_hc4 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_DPJ_hc5 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_DPJ_hc6 }
+				add_air_experience = 0.3
+			}
 		}
 	}
-}
-on_daily_OZS = {
-	effect = {
-		if = {
-			limit = { has_idea = CDW_OZS_army1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZS_army2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZS_army3 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZS_navy1 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZS_navy2 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZS_navy3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZS_air1 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZS_air2 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZS_air3 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZS_hc1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZS_hc2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZS_hc3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZS_hc4 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZS_hc5 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_OZS_hc6 }
-			add_air_experience = 0.3
-		}
-	}
-}
-on_daily_PDV = {
-	effect = {
-		if = {
-			limit = { has_idea = CDW_PDV_army1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_PDV_army2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_PDV_army3 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_PDV_navy1 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_PDV_navy2 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_PDV_navy3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_PDV_air1 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_PDV_air2 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_PDV_air3 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_PDV_hc1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_PDV_hc2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_PDV_hc3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_PDV_hc4 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_PDV_hc5 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_PDV_hc6 }
-			add_air_experience = 0.3
+	on_daily_ECO = {
+		effect = {
+			if = {
+				limit = { has_idea = CDW_ECO_army1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ECO_army2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ECO_army3 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ECO_navy1 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ECO_navy2 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ECO_navy3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ECO_air1 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ECO_air2 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ECO_air3 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ECO_hc1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ECO_hc2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ECO_hc3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ECO_hc4 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ECO_hc5 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ECO_hc6 }
+				add_air_experience = 0.3
+			}
 		}
 	}
-}
-on_daily_RBD = {
-	effect = {
-		if = {
-			limit = { has_idea = CDW_RBD_army1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_RBD_army2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_RBD_army3 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_RBD_navy1 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_RBD_navy2 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_RBD_navy3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_RBD_air1 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_RBD_air2 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_RBD_air3 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_RBD_hc1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_RBD_hc2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_RBD_hc3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_RBD_hc4 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_RBD_hc5 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_RBD_hc6 }
-			add_air_experience = 0.3
-		}
-	}
-}
-on_daily_RIT = {
-	effect = {
-		if = {
-			limit = { has_idea = CDW_RIT_army1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_RIT_army2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_RIT_army3 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_RIT_navy1 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_RIT_navy2 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_RIT_navy3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_RIT_air1 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_RIT_air2 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_RIT_air3 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_RIT_hc1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_RIT_hc2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_RIT_hc3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_RIT_hc4 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_RIT_hc5 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_RIT_hc6 }
-			add_air_experience = 0.3
+	on_daily_FSO = {
+		effect = {
+			if = {
+				limit = { has_idea = CDW_FSO_army1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_FSO_army2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_FSO_army3 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_FSO_navy1 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_FSO_navy2 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_FSO_navy3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_FSO_air1 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_FSO_air2 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_FSO_air3 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_FSO_hc1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_FSO_hc2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_FSO_hc3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_FSO_hc4 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_FSO_hc5 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_FSO_hc6 }
+				add_air_experience = 0.3
+			}
 		}
 	}
-}
-on_daily_SKZ = {
-	effect = {
-		if = {
-			limit = { has_idea = CDW_SKZ_army1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_SKZ_army2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_SKZ_army3 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_SKZ_navy1 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_SKZ_navy2 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_SKZ_navy3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_SKZ_air1 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_SKZ_air2 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_SKZ_air3 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_SKZ_hc1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_SKZ_hc2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_SKZ_hc3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_SKZ_hc4 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_SKZ_hc5 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_SKZ_hc6 }
-			add_air_experience = 0.3
-		}
-	}
-}
-on_daily_SMH = {
-	effect = {
-		if = {
-			limit = { has_idea = CDW_SMH_army1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_SMH_army2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_SMH_army3 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_SMH_navy1 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_SMH_navy2 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_SMH_navy3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_SMH_air1 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_SMH_air2 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_SMH_air3 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_SMH_hc1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_SMH_hc2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_SMH_hc3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_SMH_hc4 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_SMH_hc5 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_SMH_hc6 }
-			add_air_experience = 0.3
+	on_daily_GBT = {
+		effect = {
+			if = {
+				limit = { has_idea = CDW_GBT_army1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_GBT_army2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_GBT_army3 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_GBT_navy1 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_GBT_navy2 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_GBT_navy3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_GBT_air1 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_GBT_air2 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_GBT_air3 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_GBT_hc1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_GBT_hc2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_GBT_hc3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_GBT_hc4 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_GBT_hc5 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_GBT_hc6 }
+				add_air_experience = 0.3
+			}
 		}
 	}
-}
-on_daily_SNJ = {
-	effect = {
-		if = {
-			limit = { has_idea = CDW_SNJ_army1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_SNJ_army2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_SNJ_army3 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_SNJ_navy1 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_SNJ_navy2 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_SNJ_navy3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_SNJ_air1 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_SNJ_air2 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_SNJ_air3 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_SNJ_hc1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_SNJ_hc2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_SNJ_hc3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_SNJ_hc4 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_SNJ_hc5 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_SNJ_hc6 }
-			add_air_experience = 0.3
-		}
-	}
-}
-on_daily_TCC = {
-	effect = {
-		if = {
-			limit = { has_idea = CDW_TCC_army1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_TCC_army2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_TCC_army3 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_TCC_navy1 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_TCC_navy2 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_TCC_navy3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_TCC_air1 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_TCC_air2 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_TCC_air3 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_TCC_hc1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_TCC_hc2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_TCC_hc3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_TCC_hc4 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_TCC_hc5 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_TCC_hc6 }
-			add_air_experience = 0.3
+	on_daily_HRT = {
+		effect = {
+			if = {
+				limit = { has_idea = CDW_HRT_army1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_HRT_army2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_HRT_army3 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_HRT_navy1 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_HRT_navy2 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_HRT_navy3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_HRT_air1 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_HRT_air2 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_HRT_air3 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_HRT_hc1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_HRT_hc2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_HRT_hc3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_HRT_hc4 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_HRT_hc5 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_HRT_hc6 }
+				add_air_experience = 0.3
+			}
 		}
 	}
-}
-on_daily_TCU = {
-	effect = {
-		if = {
-			limit = { has_idea = CDW_TCU_army1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_TCU_army2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_TCU_army3 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_TCU_navy1 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_TCU_navy2 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_TCU_navy3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_TCU_air1 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_TCU_air2 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_TCU_air3 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_TCU_hc1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_TCU_hc2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_TCU_hc3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_TCU_hc4 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_TCU_hc5 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_TCU_hc6 }
-			add_air_experience = 0.3
-		}
-	}
-}
-on_daily_VAK = {
-	effect = {
-		if = {
-			limit = { has_idea = CDW_VAK_army1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_VAK_army2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_VAK_army3 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_VAK_navy1 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_VAK_navy2 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_VAK_navy3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_VAK_air1 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_VAK_air2 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_VAK_air3 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_VAK_hc1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_VAK_hc2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_VAK_hc3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_VAK_hc4 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_VAK_hc5 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_VAK_hc6 }
-			add_air_experience = 0.3
+	on_daily_KER = {
+		effect = {
+			if = {
+				limit = { has_idea = CDW_KER_army1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_KER_army2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_KER_army3 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_KER_navy1 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_KER_navy2 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_KER_navy3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_KER_air1 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_KER_air2 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_KER_air3 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_KER_hc1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_KER_hc2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_KER_hc3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_KER_hc4 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_KER_hc5 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_KER_hc6 }
+				add_air_experience = 0.3
+			}
 		}
 	}
-}
-on_daily_VRE = {
-	effect = {
-		if = {
-			limit = { has_idea = CDW_VRE_army1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_VRE_army2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_VRE_army3 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_VRE_navy1 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_VRE_navy2 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_VRE_navy3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_VRE_air1 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_VRE_air2 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_VRE_air3 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_VRE_hc1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_VRE_hc2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_VRE_hc3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_VRE_hc4 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_VRE_hc5 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_VRE_hc6 }
-			add_air_experience = 0.3
-		}
-	}
-}
-on_daily_VRK = {
-	effect = {
-		if = {
-			limit = { has_idea = CDW_VRK_army1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_VRK_army2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_VRK_army3 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_VRK_navy1 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_VRK_navy2 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_VRK_navy3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_VRK_air1 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_VRK_air2 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_VRK_air3 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_VRK_hc1 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_VRK_hc2 }
-			add_army_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_VRK_hc3 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_VRK_hc4 }
-			add_navy_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_VRK_hc5 }
-			add_air_experience = 0.3
-		}
-		if = {
-			limit = { has_idea = CDW_VRK_hc6 }
-			add_air_experience = 0.3
+	on_daily_KSC = {
+		effect = {
+			if = {
+				limit = { has_idea = CDW_KSC_army1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_KSC_army2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_KSC_army3 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_KSC_navy1 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_KSC_navy2 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_KSC_navy3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_KSC_air1 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_KSC_air2 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_KSC_air3 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_KSC_hc1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_KSC_hc2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_KSC_hc3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_KSC_hc4 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_KSC_hc5 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_KSC_hc6 }
+				add_air_experience = 0.3
+			}
 		}
 	}
-}
-on_daily_ZVD = {
-	effect = {
-		if = {
-			limit = { has_idea = CDW_ZVD_army1 }
-			add_army_experience = 0.3
+	on_daily_MAH = {
+		effect = {
+			if = {
+				limit = { has_idea = CDW_MAH_army1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_MAH_army2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_MAH_army3 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_MAH_navy1 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_MAH_navy2 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_MAH_navy3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_MAH_air1 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_MAH_air2 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_MAH_air3 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_MAH_hc1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_MAH_hc2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_MAH_hc3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_MAH_hc4 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_MAH_hc5 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_MAH_hc6 }
+				add_air_experience = 0.3
+			}
 		}
-		if = {
-			limit = { has_idea = CDW_ZVD_army2 }
-			add_army_experience = 0.3
+	}
+	on_daily_MAN = {
+		effect = {
+			if = {
+				limit = { has_idea = CDW_MAN_army1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_MAN_army2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_MAN_army3 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_MAN_navy1 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_MAN_navy2 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_MAN_navy3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_MAN_air1 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_MAN_air2 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_MAN_air3 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_MAN_hc1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_MAN_hc2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_MAN_hc3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_MAN_hc4 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_MAN_hc5 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_MAN_hc6 }
+				add_air_experience = 0.3
+			}
 		}
-		if = {
-			limit = { has_idea = CDW_ZVD_army3 }
-			add_army_experience = 0.3
+	}
+	on_daily_MOR = {
+		effect = {
+			if = {
+				limit = { has_idea = CDW_MOR_army1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_MOR_army2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_MOR_army3 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_MOR_navy1 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_MOR_navy2 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_MOR_navy3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_MOR_air1 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_MOR_air2 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_MOR_air3 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_MOR_hc1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_MOR_hc2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_MOR_hc3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_MOR_hc4 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_MOR_hc5 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_MOR_hc6 }
+				add_air_experience = 0.3
+			}
 		}
-		if = {
-			limit = { has_idea = CDW_ZVD_navy1 }
-			add_navy_experience = 0.3
+	}
+	on_daily_NRC = {
+		effect = {
+			if = {
+				limit = { has_idea = CDW_NRC_army1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_NRC_army2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_NRC_army3 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_NRC_navy1 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_NRC_navy2 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_NRC_navy3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_NRC_air1 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_NRC_air2 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_NRC_air3 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_NRC_hc1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_NRC_hc2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_NRC_hc3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_NRC_hc4 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_NRC_hc5 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_NRC_hc6 }
+				add_air_experience = 0.3
+			}
 		}
-		if = {
-			limit = { has_idea = CDW_ZVD_navy2 }
-			add_navy_experience = 0.3
+	}
+	on_daily_OZB = {
+		effect = {
+			if = {
+				limit = { has_idea = CDW_OZB_army1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZB_army2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZB_army3 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZB_navy1 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZB_navy2 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZB_navy3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZB_air1 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZB_air2 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZB_air3 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZB_hc1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZB_hc2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZB_hc3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZB_hc4 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZB_hc5 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZB_hc6 }
+				add_air_experience = 0.3
+			}
 		}
-		if = {
-			limit = { has_idea = CDW_ZVD_navy3 }
-			add_navy_experience = 0.3
+	}
+	on_daily_OZH = {
+		effect = {
+			if = {
+				limit = { has_idea = CDW_OZH_army1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZH_army2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZH_army3 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZH_navy1 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZH_navy2 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZH_navy3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZH_air1 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZH_air2 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZH_air3 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZH_hc1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZH_hc2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZH_hc3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZH_hc4 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZH_hc5 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZH_hc6 }
+				add_air_experience = 0.3
+			}
 		}
-		if = {
-			limit = { has_idea = CDW_ZVD_air1 }
-			add_air_experience = 0.3
+	}
+	on_daily_OZR = {
+		effect = {
+			if = {
+				limit = { has_idea = CDW_OZR_army1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZR_army2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZR_army3 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZR_navy1 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZR_navy2 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZR_navy3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZR_air1 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZR_air2 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZR_air3 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZR_hc1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZR_hc2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZR_hc3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZR_hc4 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZR_hc5 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZR_hc6 }
+				add_air_experience = 0.3
+			}
 		}
-		if = {
-			limit = { has_idea = CDW_ZVD_air2 }
-			add_air_experience = 0.3
+	}
+	on_daily_OZS = {
+		effect = {
+			if = {
+				limit = { has_idea = CDW_OZS_army1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZS_army2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZS_army3 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZS_navy1 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZS_navy2 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZS_navy3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZS_air1 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZS_air2 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZS_air3 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZS_hc1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZS_hc2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZS_hc3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZS_hc4 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZS_hc5 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_OZS_hc6 }
+				add_air_experience = 0.3
+			}
 		}
-		if = {
-			limit = { has_idea = CDW_ZVD_air3 }
-			add_air_experience = 0.3
+	}
+	on_daily_PDV = {
+		effect = {
+			if = {
+				limit = { has_idea = CDW_PDV_army1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_PDV_army2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_PDV_army3 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_PDV_navy1 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_PDV_navy2 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_PDV_navy3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_PDV_air1 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_PDV_air2 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_PDV_air3 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_PDV_hc1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_PDV_hc2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_PDV_hc3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_PDV_hc4 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_PDV_hc5 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_PDV_hc6 }
+				add_air_experience = 0.3
+			}
 		}
-		if = {
-			limit = { has_idea = CDW_ZVD_hc1 }
-			add_army_experience = 0.3
+	}
+	on_daily_RBD = {
+		effect = {
+			if = {
+				limit = { has_idea = CDW_RBD_army1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_RBD_army2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_RBD_army3 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_RBD_navy1 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_RBD_navy2 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_RBD_navy3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_RBD_air1 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_RBD_air2 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_RBD_air3 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_RBD_hc1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_RBD_hc2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_RBD_hc3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_RBD_hc4 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_RBD_hc5 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_RBD_hc6 }
+				add_air_experience = 0.3
+			}
 		}
-		if = {
-			limit = { has_idea = CDW_ZVD_hc2 }
-			add_army_experience = 0.3
+	}
+	on_daily_RIT = {
+		effect = {
+			if = {
+				limit = { has_idea = CDW_RIT_army1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_RIT_army2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_RIT_army3 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_RIT_navy1 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_RIT_navy2 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_RIT_navy3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_RIT_air1 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_RIT_air2 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_RIT_air3 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_RIT_hc1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_RIT_hc2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_RIT_hc3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_RIT_hc4 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_RIT_hc5 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_RIT_hc6 }
+				add_air_experience = 0.3
+			}
 		}
-		if = {
-			limit = { has_idea = CDW_ZVD_hc3 }
-			add_navy_experience = 0.3
+	}
+	on_daily_SKZ = {
+		effect = {
+			if = {
+				limit = { has_idea = CDW_SKZ_army1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_SKZ_army2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_SKZ_army3 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_SKZ_navy1 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_SKZ_navy2 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_SKZ_navy3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_SKZ_air1 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_SKZ_air2 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_SKZ_air3 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_SKZ_hc1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_SKZ_hc2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_SKZ_hc3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_SKZ_hc4 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_SKZ_hc5 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_SKZ_hc6 }
+				add_air_experience = 0.3
+			}
 		}
-		if = {
-			limit = { has_idea = CDW_ZVD_hc4 }
-			add_navy_experience = 0.3
+	}
+	on_daily_SMH = {
+		effect = {
+			if = {
+				limit = { has_idea = CDW_SMH_army1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_SMH_army2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_SMH_army3 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_SMH_navy1 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_SMH_navy2 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_SMH_navy3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_SMH_air1 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_SMH_air2 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_SMH_air3 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_SMH_hc1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_SMH_hc2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_SMH_hc3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_SMH_hc4 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_SMH_hc5 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_SMH_hc6 }
+				add_air_experience = 0.3
+			}
 		}
-		if = {
-			limit = { has_idea = CDW_ZVD_hc5 }
-			add_air_experience = 0.3
+	}
+	on_daily_SNJ = {
+		effect = {
+			if = {
+				limit = { has_idea = CDW_SNJ_army1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_SNJ_army2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_SNJ_army3 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_SNJ_navy1 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_SNJ_navy2 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_SNJ_navy3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_SNJ_air1 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_SNJ_air2 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_SNJ_air3 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_SNJ_hc1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_SNJ_hc2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_SNJ_hc3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_SNJ_hc4 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_SNJ_hc5 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_SNJ_hc6 }
+				add_air_experience = 0.3
+			}
 		}
-		if = {
-			limit = { has_idea = CDW_ZVD_hc6 }
-			add_air_experience = 0.3
+	}
+	on_daily_TCC = {
+		effect = {
+			if = {
+				limit = { has_idea = CDW_TCC_army1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_TCC_army2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_TCC_army3 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_TCC_navy1 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_TCC_navy2 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_TCC_navy3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_TCC_air1 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_TCC_air2 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_TCC_air3 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_TCC_hc1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_TCC_hc2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_TCC_hc3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_TCC_hc4 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_TCC_hc5 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_TCC_hc6 }
+				add_air_experience = 0.3
+			}
+		}
+	}
+	on_daily_TCU = {
+		effect = {
+			if = {
+				limit = { has_idea = CDW_TCU_army1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_TCU_army2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_TCU_army3 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_TCU_navy1 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_TCU_navy2 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_TCU_navy3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_TCU_air1 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_TCU_air2 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_TCU_air3 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_TCU_hc1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_TCU_hc2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_TCU_hc3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_TCU_hc4 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_TCU_hc5 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_TCU_hc6 }
+				add_air_experience = 0.3
+			}
+		}
+	}
+	on_daily_VAK = {
+		effect = {
+			if = {
+				limit = { has_idea = CDW_VAK_army1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_VAK_army2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_VAK_army3 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_VAK_navy1 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_VAK_navy2 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_VAK_navy3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_VAK_air1 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_VAK_air2 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_VAK_air3 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_VAK_hc1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_VAK_hc2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_VAK_hc3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_VAK_hc4 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_VAK_hc5 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_VAK_hc6 }
+				add_air_experience = 0.3
+			}
+		}
+	}
+	on_daily_VRE = {
+		effect = {
+			if = {
+				limit = { has_idea = CDW_VRE_army1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_VRE_army2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_VRE_army3 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_VRE_navy1 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_VRE_navy2 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_VRE_navy3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_VRE_air1 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_VRE_air2 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_VRE_air3 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_VRE_hc1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_VRE_hc2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_VRE_hc3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_VRE_hc4 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_VRE_hc5 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_VRE_hc6 }
+				add_air_experience = 0.3
+			}
+		}
+	}
+	on_daily_VRK = {
+		effect = {
+			if = {
+				limit = { has_idea = CDW_VRK_army1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_VRK_army2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_VRK_army3 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_VRK_navy1 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_VRK_navy2 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_VRK_navy3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_VRK_air1 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_VRK_air2 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_VRK_air3 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_VRK_hc1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_VRK_hc2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_VRK_hc3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_VRK_hc4 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_VRK_hc5 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_VRK_hc6 }
+				add_air_experience = 0.3
+			}
+		}
+	}
+	on_daily_ZVD = {
+		effect = {
+			if = {
+				limit = { has_idea = CDW_ZVD_army1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ZVD_army2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ZVD_army3 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ZVD_navy1 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ZVD_navy2 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ZVD_navy3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ZVD_air1 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ZVD_air2 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ZVD_air3 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ZVD_hc1 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ZVD_hc2 }
+				add_army_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ZVD_hc3 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ZVD_hc4 }
+				add_navy_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ZVD_hc5 }
+				add_air_experience = 0.3
+			}
+			if = {
+				limit = { has_idea = CDW_ZVD_hc6 }
+				add_air_experience = 0.3
+			}
 		}
 	}
 }
