@@ -2191,6 +2191,39 @@ focus = {
 		}
 	}
 
+focus = {
+	id = PDV_reopen_the_staff_college
+	icon = GFX_goal_generic_army_doctrines
+	x = 22
+	y = 1
+	cost = 5
+	available = {
+		tag = PDV
+		has_idea = PDV_purged_officer_corps
+	}
+	completion_reward = {
+		remove_ideas = PDV_purged_officer_corps
+		add_political_power = 25
+	}
+}
+
+focus = {
+	id = PDV_rebuild_the_field_army
+	icon = GFX_goal_generic_army_doctrines
+	x = 22
+	y = 2
+	cost = 10
+	prerequisite = { focus = PDV_reopen_the_staff_college }
+	available = {
+		tag = PDV
+		has_idea = PDV_hollow_army
+	}
+	completion_reward = {
+		remove_ideas = PDV_hollow_army
+		add_army_experience = 25
+	}
+}
+
 continuous_focus_position = {
 	x = 60
 	y = 910

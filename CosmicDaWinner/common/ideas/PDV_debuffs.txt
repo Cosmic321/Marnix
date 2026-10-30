@@ -1,0 +1,26 @@
+# Vyratia - the Peoples Directorate inherited a staff corps it does not trust and
+# an army it cannot supply. Both spirits can be worked off through the shared tree.
+ideas = {
+
+	country = {
+		PDV_hollow_army = {
+			picture = generic_morale_bonus
+			modifier = {
+				army_attack_factor = -0.30
+				army_defense_factor = -0.30
+			}
+		}
+	}
+
+	country = {
+		PDV_purged_officer_corps = {
+			picture = generic_army_war_college
+			modifier = {
+				army_org_factor = -0.15
+				army_morale_factor = -0.20
+				experience_gain_army_factor = -0.30
+			}
+		}
+	}
+
+}

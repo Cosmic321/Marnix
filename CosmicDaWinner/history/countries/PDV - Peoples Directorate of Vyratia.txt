@@ -27,6 +27,8 @@ add_ideas = {
 	civilian_economy
 	free_trade
 	overstretched_industry
+	PDV_hollow_army
+	PDV_purged_officer_corps
 }
 
 set_technology = {

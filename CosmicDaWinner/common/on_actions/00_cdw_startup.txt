@@ -1,8 +1,8 @@
 # Cosmic DaWinner - world setup that cannot be expressed in history files.
 #
-# 1. Every country is given a core on every state it owns. The state files already
-#    carry add_core_of, but doing it here as well guarantees the whole world is cored
-#    however the history is loaded or re-owned.
+# 1. At game start every country is given a core on every state it owns. This runs
+#    once, on startup only: it must NOT run monthly, or a country would core every
+#    state it annexes and conquests would stop being occupied territory.
 # 2. Every country starts with a modest amount of equipment, scaled to its industry.
 #    Enough to fill out the opening weeks, nowhere near enough to fight a war with.
 
@@ -313,18 +313,6 @@ on_actions = {
 				add_equipment_to_stockpile = { type = infantry_equipment amount = 4560 }
 				add_equipment_to_stockpile = { type = support_equipment amount = 613 }
 				add_equipment_to_stockpile = { type = artillery_equipment amount = 400 }
-			}
-		}
-	}
-
-	# Re-assert cores every month. Cheap, and it repairs any state a script, a peace
-	# conference or a console command has quietly stripped of its owner's core.
-	on_monthly = {
-		effect = {
-			every_country = {
-				every_owned_state = {
-					add_core_of = PREV
-				}
 			}
 		}
 	}
