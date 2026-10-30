@@ -1,0 +1,26 @@
+# Kingdom of Alt - the world's breadbasket.
+#
+# While Alt stands, its harvests and shipping feed a good part of the map. Once it
+# is annexed or turned into somebody's puppet, that trade stops being neutral
+# commerce and becomes somebody else's leverage: the grain has to be bought at
+# somebody's price and grown on somebody's terms, so everyone ends up paying more
+# for their own food and keeping more of their young men at home to bring it in.
+#
+# Applied by on_annex / on_puppet / on_release_as_puppet in 00_cdw_startup.txt as a
+# timed idea (two years), so it fades once the new order has settled in.
+
+ideas = {
+
+	country = {
+
+		cdw_alt_grain_shock = {
+			picture = generic_foreign_capital
+			modifier = {
+				consumer_goods_factor = 0.10
+				conscription_factor = -0.15
+			}
+		}
+
+	}
+
+}

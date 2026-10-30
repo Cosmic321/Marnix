@@ -1,0 +1,31 @@
+﻿l_english:
+
+ # --------------------------------------------------------------------------
+ # Kingdom of Alt (ALT) - the world's breadbasket.
+ # --------------------------------------------------------------------------
+
+ ALT_DESC:0 "The Kingdom of Alt is a breadbasket that happens to have a navy.\n\nAlt lives off its harvests and the trade they carry: grain out, coin in, and a merchant marine big enough to keep the sea lanes open. Its shipyards and docks are the equal of any on the map. Its land army is the poor relation - underfunded, last in the queue for equipment, and expected to make up in stubbornness what it lacks in guns.\n\nHouse of Bergbad has held the throne for four generations and its kings have one fixed rule: Alt will work with anyone, ally with anyone, ship to anyone - but it will not trade away one inch of its own sovereignty for the privilege."
+
+ ALT_neutrality_party_long:0 "House of Bergbad"
+ ALT_neutrality_party_short:0 "Bergbad"
+ ALT_fascism_party_long:0 "Rukh Kabal"
+ ALT_fascism_party_short:0 "Rukh Kabal"
+ ALT_communism_party_long:0 "Traders Unions"
+ ALT_communism_party_short:0 "Traders Unions"
+ ALT_democratic_party_long:0 "The Marata"
+ ALT_democratic_party_short:0 "The Marata"
+
+ # The spirit everyone receives if Alt is annexed or puppeted.
+ cdw_alt_grain_shock:0 "The Breadbasket Is Gone"
+ cdw_alt_grain_shock_desc:0 "The granaries of Alt no longer answer to Alt. Grain that used to arrive as ordinary trade now arrives as somebody's condition, at somebody's price - so every household pays more for its bread, and every farm needs more hands kept back from the recruiting office to bring the harvest in."
+
+ # Cities of Alt.
+ VICTORY_POINTS_5574:0 "Allinon"
+ VICTORY_POINTS_7037:0 "Doloroth"
+ VICTORY_POINTS_8050:0 "Terrasan"
+ VICTORY_POINTS_9367:0 "Lasseer"
+ VICTORY_POINTS_10251:0 "Breacher"
+ VICTORY_POINTS_8871:0 "Eskaron"
+ VICTORY_POINTS_8408:0 "Evrar"
+ VICTORY_POINTS_7833:0 "Emanon"
+ VICTORY_POINTS_7407:0 "Hadrienne"

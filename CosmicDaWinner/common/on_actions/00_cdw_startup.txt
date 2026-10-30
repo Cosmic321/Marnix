@@ -325,4 +325,67 @@ on_actions = {
 			}
 		}
 	}
+
+	# ---------------------------------------------------------------------------
+	# The Kingdom of Alt is the world's breadbasket. Once it is gone - annexed, or
+	# kept alive as somebody's puppet - the grain stops moving as free trade.
+	# Everybody buys their own food at somebody's price and keeps more men at home
+	# to grow it, which means more consumer goods drawn off and fewer recruits.
+	#
+	# Scopes (see the on actions reference):
+	#   on_annex               ROOT = winner,  FROM = the country being annexed
+	#   on_puppet              ROOT = the nation being puppeted, FROM = the overlord
+	#   on_release_as_puppet   ROOT = the nation being released, FROM = the overlord
+	# ---------------------------------------------------------------------------
+	on_annex = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { tag = ALT }
+				}
+				every_country = {
+					limit = { NOT = { tag = ALT } }
+					add_timed_idea = {
+						idea = cdw_alt_grain_shock
+						days = 730
+					}
+				}
+			}
+		}
+	}
+
+	on_puppet = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = { tag = ALT }
+				}
+				every_country = {
+					limit = { NOT = { tag = ALT } }
+					add_timed_idea = {
+						idea = cdw_alt_grain_shock
+						days = 730
+					}
+				}
+			}
+		}
+	}
+
+	on_release_as_puppet = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = { tag = ALT }
+				}
+				every_country = {
+					limit = { NOT = { tag = ALT } }
+					add_timed_idea = {
+						idea = cdw_alt_grain_shock
+						days = 730
+					}
+				}
+			}
+		}
+	}
+
 }
