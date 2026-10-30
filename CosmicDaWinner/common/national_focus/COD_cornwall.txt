@@ -478,6 +478,462 @@ focus_tree = {
 		}
 	}
 
+	########################################
+	# Expansion branches
+	########################################
+
+	# --- Housing, second half ---
+	focus = {
+		id = COD_holiday_home_levy
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 4
+		cost = 7
+		prerequisite = { focus = COD_end_housing_shortage }
+		completion_reward = {
+			add_political_power = 40
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = COD_cornish_housing_act
+		icon = GFX_goal_generic_national_unity
+		x = 2
+		y = 4
+		cost = 7
+		prerequisite = { focus = COD_end_housing_shortage }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 20
+		}
+	}
+
+	focus = {
+		id = COD_a_home_for_every_family
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 1
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = COD_holiday_home_levy
+			focus = COD_cornish_housing_act
+		}
+		completion_reward = {
+			remove_ideas = COD_housing_shortage
+			add_stability = 0.06
+			add_manpower = 3000
+		}
+	}
+
+	# --- The economy beyond tourism ---
+	focus = {
+		id = COD_fisheries_revival
+		icon = GFX_goal_generic_trade
+		x = 9
+		y = 3
+		cost = 7
+		prerequisite = { focus = COD_grockle_control }
+		completion_reward = {
+			add_stability = 0.03
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = COD_farm_subsidies
+		icon = GFX_goal_generic_production2
+		x = 11
+		y = 3
+		cost = 7
+		prerequisite = { focus = COD_grockle_control }
+		completion_reward = {
+			add_stability = 0.04
+			add_manpower = 4000
+		}
+	}
+
+	focus = {
+		id = COD_financial_quarter
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 13
+		y = 3
+		cost = 7
+		prerequisite = { focus = COD_diversify_economy }
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = COD_a_balanced_economy
+		icon = GFX_goal_generic_production
+		x = 11
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = COD_fisheries_revival
+			focus = COD_farm_subsidies
+			focus = COD_financial_quarter
+		}
+		completion_reward = {
+			remove_ideas = COD_tourist_economy
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = COD_cornish_export_board
+		icon = GFX_goal_generic_military_deal
+		x = 11
+		y = 5
+		cost = 10
+		prerequisite = { focus = COD_a_balanced_economy }
+		completion_reward = {
+			add_political_power = 60
+			add_stability = 0.03
+		}
+	}
+
+	# --- Industry, second half ---
+	focus = {
+		id = COD_bodmin_foundries
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 4
+		y = 7
+		cost = 10
+		prerequisite = { focus = COD_reopen_the_mines }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = COD_kaolin_export_cartel
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 9
+		y = 7
+		cost = 10
+		prerequisite = { focus = COD_china_clay_works }
+		completion_reward = {
+			add_stability = 0.04
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = COD_great_western_railway
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 4
+		y = 8
+		cost = 10
+		prerequisite = { focus = COD_bodmin_foundries }
+		completion_reward = {
+			add_stability = 0.03
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = COD_industrial_heartland
+		icon = GFX_goal_generic_production2
+		x = 7
+		y = 9
+		cost = 10
+		prerequisite = {
+			focus = COD_industrial_revival
+			focus = COD_great_western_railway
+			focus = COD_kaolin_export_cartel
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 75
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	# --- Education and research ---
+	focus = {
+		id = COD_penryn_research_park
+		icon = GFX_goal_generic_scientific_exchange
+		x = 15
+		y = 3
+		cost = 10
+		prerequisite = { focus = COD_new_tech_cluster }
+		completion_reward = {
+			add_political_power = 40
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = COD_cornish_scholarships
+		icon = GFX_goal_generic_national_unity
+		x = 17
+		y = 3
+		cost = 10
+		prerequisite = { focus = COD_new_tech_cluster }
+		completion_reward = {
+			add_stability = 0.04
+			add_manpower = 2000
+		}
+	}
+
+	focus = {
+		id = COD_nation_of_engineers
+		icon = GFX_goal_generic_production
+		x = 16
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = COD_penryn_research_park
+			focus = COD_cornish_scholarships
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 60
+		}
+	}
+
+	# --- The armed forces ---
+	focus = {
+		id = COD_royal_cornish_navy
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 18
+		y = 3
+		cost = 10
+		prerequisite = { focus = COD_air_what_air }
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = COD_coastal_command
+		icon = GFX_goal_generic_air_fighter
+		x = 23
+		y = 2
+		cost = 10
+		prerequisite = { focus = COD_air_what_air }
+		completion_reward = {
+			air_experience = 25
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = COD_the_dukes_own_regiment
+		icon = GFX_goal_generic_small_arms
+		x = 19
+		y = 4
+		cost = 10
+		prerequisite = { focus = COD_armoured_tradition }
+		completion_reward = {
+			army_experience = 25
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+			}
+		}
+	}
+
+	focus = {
+		id = COD_fortify_the_coast
+		icon = GFX_goal_generic_defence
+		x = 21
+		y = 4
+		cost = 10
+		prerequisite = { focus = COD_advanced_armour }
+		completion_reward = {
+			add_war_support = 0.04
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = COD_a_real_army
+		icon = GFX_goal_generic_army_doctrines
+		x = 20
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = COD_the_dukes_own_regiment
+			focus = COD_fortify_the_coast
+			focus = COD_royal_cornish_navy
+		}
+		completion_reward = {
+			remove_ideas = COD_no_air_history
+			add_war_support = 0.05
+			army_experience = 50
+		}
+	}
+
+	# --- The four political roads, continued ---
+	focus = {
+		id = COD_constitutional_convention
+		icon = GFX_goal_support_democracy
+		x = 2
+		y = 9
+		cost = 10
+		prerequisite = { focus = COD_stay_the_course }
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.10
+			}
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = COD_a_modest_duchy
+		icon = GFX_goal_generic_national_unity
+		x = 2
+		y = 10
+		cost = 10
+		prerequisite = { focus = COD_constitutional_convention }
+		completion_reward = {
+			add_stability = 0.06
+			add_political_power = 75
+			remove_ideas = COD_breakaway_fallout
+		}
+	}
+
+	focus = {
+		id = COD_the_neutrality_act
+		icon = GFX_goal_generic_neutrality_focus
+		x = 5
+		y = 9
+		cost = 10
+		prerequisite = { focus = COD_non_aligned_cornwall }
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.10
+			}
+			add_stability = 0.04
+		}
+	}
+
+	focus = {
+		id = COD_armed_neutrality
+		icon = GFX_goal_generic_defence
+		x = 5
+		y = 10
+		cost = 10
+		prerequisite = { focus = COD_the_neutrality_act }
+		completion_reward = {
+			add_war_support = 0.05
+			add_stability = 0.04
+			army_experience = 25
+		}
+	}
+
+	focus = {
+		id = COD_claim_the_isles
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 8
+		y = 9
+		cost = 10
+		prerequisite = { focus = COD_cornish_empire }
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.08
+			}
+			add_war_support = 0.06
+		}
+	}
+
+	focus = {
+		id = COD_the_cornish_century
+		icon = GFX_goal_generic_major_war
+		x = 8
+		y = 10
+		cost = 10
+		prerequisite = { focus = COD_claim_the_isles }
+		completion_reward = {
+			add_war_support = 0.08
+			add_political_power = 60
+			army_experience = 40
+		}
+	}
+
+	focus = {
+		id = COD_the_workers_duchy
+		icon = GFX_goal_support_communism
+		x = 11
+		y = 9
+		cost = 10
+		prerequisite = { focus = COD_peoples_cornwall }
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.10
+			}
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = COD_red_cornwall
+		icon = GFX_goal_generic_soviet_construction
+		x = 11
+		y = 10
+		cost = 10
+		prerequisite = { focus = COD_the_workers_duchy }
+		completion_reward = {
+			add_stability = 0.05
+			add_manpower = 5000
+			remove_ideas = COD_breakaway_fallout
+		}
+	}
+
 	# keep the continuous focus panel out of the way of the tree itself
 	continuous_focus_position = {
 		x = 50

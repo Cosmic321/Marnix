@@ -2072,7 +2072,10 @@ focus = {
 }
 
 
-# --- Industry reform branch: removes the overstretched industry debuff of the largest powers ---
+# --- Industry reform branch ---
+# Four stages for the largest powers to work off overstretched_industry.
+# Each stage is gated by both the previous stage and a date, so the debuff cannot
+# be shaken off quickly: the full chain runs from 1936 well into 1940.
 
 focus = {
 	id = generic_rationalise_industry
@@ -2082,11 +2085,12 @@ focus = {
 	y = 0
 	available = {
 		has_idea = overstretched_industry
+		date > 1936.3.1
 	}
 	completion_reward = {
 		swap_ideas = {
 			remove_idea = overstretched_industry
-			add_idea = overstretched_industry_reformed
+			add_idea = overstretched_industry_triage
 		}
 		add_stability = 0.03
 		add_political_power = 50
@@ -2094,20 +2098,69 @@ focus = {
 }
 
 focus = {
-	id = generic_modern_industrial_base
-	icon = GFX_goal_generic_construct_mil_factory
-	cost = 10
+	id = generic_emergency_austerity
+	icon = GFX_goal_generic_consumer_goods
+	cost = 20
 	x = 60
 	y = 1
 	prerequisite = {
 		focus = generic_rationalise_industry
 	}
 	available = {
-		has_idea = overstretched_industry_reformed
+		has_idea = overstretched_industry_triage
+		date > 1937.6.1
+		stability > 0.35
 	}
 	completion_reward = {
-		remove_ideas = overstretched_industry_reformed
-		add_ideas = streamlined_industry
+		swap_ideas = {
+			remove_idea = overstretched_industry_triage
+			add_idea = overstretched_industry_reformed
+		}
+		add_stability = 0.05
+		add_political_power = -50
+	}
+}
+
+focus = {
+	id = generic_industrial_restructuring
+	icon = GFX_goal_generic_construct_mil_factory
+	cost = 30
+	x = 60
+	y = 2
+	prerequisite = {
+		focus = generic_emergency_austerity
+	}
+	available = {
+		has_idea = overstretched_industry_reformed
+		date > 1939.1.1
+		has_political_power > 150
+	}
+	completion_reward = {
+		add_political_power = -150
+		add_stability = 0.05
+		add_war_support = 0.05
+	}
+}
+
+focus = {
+	id = generic_modern_industrial_base
+	icon = GFX_goal_generic_construct_mil_factory
+	cost = 40
+	x = 60
+	y = 3
+	prerequisite = {
+		focus = generic_industrial_restructuring
+	}
+	available = {
+		has_idea = overstretched_industry_reformed
+		date > 1940.6.1
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = overstretched_industry_reformed
+			add_idea = streamlined_industry
+		}
+		add_stability = 0.03
 	}
 }
 

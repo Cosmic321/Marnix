@@ -1,0 +1,65 @@
+division_template = {
+	name = "Infantry Division"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		name = "1. Kingdom of Vrice Infantry"
+		location = 6099
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.35
+	}
+	division = {
+		name = "2. Kingdom of Vrice Infantry"
+		location = 6099
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.35
+	}
+	division = {
+		name = "3. Kingdom of Vrice Infantry"
+		location = 6099
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.35
+	}
+	division = {
+		name = "4. Kingdom of Vrice Infantry"
+		location = 6099
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.35
+	}
+	division = {
+		name = "5. Kingdom of Vrice Infantry"
+		location = 6099
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.35
+	}
+	division = {
+		name = "6. Kingdom of Vrice Infantry"
+		location = 6099
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.35
+	}
+	division = {
+		name = "7. Kingdom of Vrice Infantry"
+		location = 6099
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.35
+	}
+	division = {
+		name = "8. Kingdom of Vrice Infantry"
+		location = 6099
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.35
+	}
+}

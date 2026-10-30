@@ -556,6 +556,317 @@ focus_tree = {
 		}
 	}
 
+	########################################
+	# Expansion branches
+	########################################
+
+	# --- The economy beyond the slump ---
+	focus = {
+		id = DOL_grain_and_timber_monopoly
+		icon = GFX_goal_generic_trade
+		x = -1
+		y = 4
+		cost = 10
+		prerequisite = { focus = DOL_colonial_markets }
+		completion_reward = {
+			add_stability = 0.04
+			add_political_power = 40
+		}
+	}
+
+	focus = {
+		id = DOL_rail_to_the_interior
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 2
+		y = 6
+		cost = 10
+		prerequisite = { focus = DOL_end_of_the_slump }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = DOL_aalstadt_bourse
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 4
+		y = 6
+		cost = 10
+		prerequisite = { focus = DOL_aalstadt_exchange }
+		completion_reward = {
+			add_political_power = 60
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = DOL_the_leutian_miracle
+		icon = GFX_goal_generic_production
+		x = 2
+		y = 7
+		cost = 15
+		prerequisite = {
+			focus = DOL_rail_to_the_interior
+			focus = DOL_aalstadt_bourse
+			focus = DOL_grain_and_timber_monopoly
+		}
+		completion_reward = {
+			remove_ideas = DOL_economic_slump
+			add_stability = 0.06
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	# --- The Sentinels, second half ---
+	focus = {
+		id = DOL_sentinel_artillery
+		icon = GFX_goal_generic_army_artillery
+		x = 7
+		y = 3
+		cost = 7
+		prerequisite = { focus = DOL_sentinel_levies }
+		completion_reward = {
+			army_experience = 25
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 500
+			}
+		}
+	}
+
+	focus = {
+		id = DOL_duchess_guard
+		icon = GFX_goal_generic_small_arms
+		x = 13
+		y = 3
+		cost = 7
+		prerequisite = { focus = DOL_coastal_watch }
+		completion_reward = {
+			add_war_support = 0.03
+			army_experience = 15
+		}
+	}
+
+	focus = {
+		id = DOL_forts_of_the_marches
+		icon = GFX_goal_generic_defence
+		x = 10
+		y = 4
+		cost = 10
+		prerequisite = { focus = DOL_small_but_sharp }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = DOL_an_army_to_be_reckoned_with
+		icon = GFX_goal_generic_army_doctrines
+		x = 10
+		y = 5
+		cost = 15
+		prerequisite = {
+			focus = DOL_forts_of_the_marches
+			focus = DOL_sentinel_artillery
+			focus = DOL_duchess_guard
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			army_experience = 50
+			remove_ideas = DOL_sentinel_militia
+		}
+	}
+
+	# --- Court and state ---
+	focus = {
+		id = DOL_the_hardline_cabinet
+		icon = GFX_goal_generic_political_pressure
+		x = 16
+		y = 3
+		cost = 10
+		prerequisite = { focus = DOL_convince_the_duchess }
+		completion_reward = {
+			add_stability = 0.03
+			add_political_power = 50
+			add_ideas = DOL_hardline_cabinet
+		}
+	}
+
+	focus = {
+		id = DOL_popular_court
+		icon = GFX_goal_generic_propaganda
+		x = 18
+		y = 3
+		cost = 10
+		prerequisite = { focus = DOL_choose_a_patron }
+		completion_reward = {
+			add_stability = 0.05
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+		}
+	}
+
+	focus = {
+		id = DOL_the_duchess_triumphant
+		icon = GFX_goal_generic_national_unity
+		x = 17
+		y = 5
+		cost = 15
+		prerequisite = {
+			focus = DOL_the_hardline_cabinet
+			focus = DOL_popular_court
+		}
+		completion_reward = {
+			add_stability = 0.06
+			add_political_power = 100
+			add_ideas = DOL_duchess_consents
+		}
+	}
+
+	# --- The imperial dream ---
+	focus = {
+		id = DOL_empress_reach
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 22
+		y = 4
+		cost = 10
+		prerequisite = { focus = DOL_colonial_charter }
+		completion_reward = {
+			add_political_power = 50
+			add_war_support = 0.04
+		}
+	}
+
+	focus = {
+		id = DOL_grand_imperial_fleet
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 24
+		y = 4
+		cost = 10
+		prerequisite = { focus = DOL_imperial_navy }
+		completion_reward = {
+			navy_experience = 40
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = DOL_banner_eternal
+		icon = GFX_goal_generic_propaganda
+		x = 26
+		y = 4
+		cost = 10
+		prerequisite = { focus = DOL_banner_of_the_empire }
+		completion_reward = {
+			add_stability = 0.04
+			add_war_support = 0.04
+			add_ideas = DOL_empress_banner
+		}
+	}
+
+	focus = {
+		id = DOL_the_empress_crowned
+		icon = GFX_goal_generic_major_war
+		x = 24
+		y = 5
+		cost = 20
+		prerequisite = {
+			focus = DOL_empress_reach
+			focus = DOL_grand_imperial_fleet
+			focus = DOL_banner_eternal
+		}
+		completion_reward = {
+			add_war_support = 0.08
+			add_political_power = 100
+			army_experience = 25
+			navy_experience = 25
+		}
+	}
+
+	# --- Schools, clerks and a modern state ---
+	focus = {
+		id = DOL_compulsory_schooling
+		icon = GFX_goal_generic_scientific_exchange
+		x = 0
+		y = 4
+		cost = 7
+		prerequisite = { focus = DOL_end_desprian_dependence }
+		completion_reward = {
+			add_stability = 0.04
+			add_manpower = 3000
+		}
+	}
+
+	focus = {
+		id = DOL_universities_of_aalstadt
+		icon = GFX_goal_generic_national_unity
+		x = 1
+		y = 5
+		cost = 10
+		prerequisite = { focus = DOL_compulsory_schooling }
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = DOL_civil_service_reform
+		icon = GFX_goal_generic_construct_civilian
+		x = 5
+		y = 4
+		cost = 10
+		prerequisite = { focus = DOL_end_of_the_slump }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 40
+		}
+	}
+
+	focus = {
+		id = DOL_a_modern_duchy
+		icon = GFX_goal_generic_construction
+		x = 3
+		y = 6
+		cost = 15
+		prerequisite = {
+			focus = DOL_universities_of_aalstadt
+			focus = DOL_civil_service_reform
+		}
+		completion_reward = {
+			add_stability = 0.06
+			add_political_power = 75
+		}
+	}
+
 	# keep the continuous focus panel out of the way of the tree itself
 	continuous_focus_position = {
 		x = 50

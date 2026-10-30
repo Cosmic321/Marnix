@@ -1,0 +1,26 @@
+# Cosmic DaWinner - catch-all AI template.
+# Every country in this mod is given a starting order of battle, so the AI needs
+# at least one ai_templates role it can match those templates against; without it
+# the game crashes while the country list is being built.
+
+cdw_line_infantry = {
+	role = infantry
+
+	upgrade_prio = {
+		base = 5
+	}
+
+	cdw_infantry_division = {
+		reinforce_prio = 2
+
+		upgrade_prio = {
+			base = 1
+		}
+
+		target_template = {
+			regiments = {
+				infantry = 9
+			}
+		}
+	}
+}

@@ -1,31 +1,49 @@
 ideas = {
 	country = {
+		# The starting state for a power whose industry outgrew its administration.
+		# Deliberately brutal: half of all civilian factories go to consumer goods.
 		overstretched_industry = {
 			picture = generic_improved_industries
 			modifier = {
-				industrial_capacity_factory = -0.35
-				production_speed_buildings_factor = -0.30
-				consumer_goods_factor = 0.20
-				research_speed_factor = -0.15
-				stability_factor = -0.05
+				consumer_goods_factor = 0.50
+				industrial_capacity_factory = -0.40
+				production_speed_buildings_factor = -0.35
+				research_speed_factor = -0.20
+				stability_factor = -0.10
 			}
 		}
 	}
 	country = {
+		# Stage one of the reform chain: the worst of the chaos is contained.
+		overstretched_industry_triage = {
+			picture = generic_improved_industries
+			modifier = {
+				consumer_goods_factor = 0.38
+				industrial_capacity_factory = -0.30
+				production_speed_buildings_factor = -0.28
+				research_speed_factor = -0.15
+				stability_factor = -0.07
+			}
+		}
+	}
+	country = {
+		# Stage two.
 		overstretched_industry_reformed = {
 			picture = generic_improved_industries
 			modifier = {
-				industrial_capacity_factory = -0.15
+				consumer_goods_factor = 0.22
+				industrial_capacity_factory = -0.18
 				production_speed_buildings_factor = -0.15
-				consumer_goods_factor = 0.08
-				research_speed_factor = -0.05
+				research_speed_factor = -0.08
 			}
 		}
 	}
 	country = {
+		# Stage three: the reward for a long, expensive reform programme.
 		streamlined_industry = {
 			picture = generic_improved_industries
 			modifier = {
+				consumer_goods_factor = -0.05
 				industrial_capacity_factory = 0.05
 				production_speed_buildings_factor = 0.05
 			}
