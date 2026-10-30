@@ -1,4 +1,4 @@
-capital = 588
+capital = 9607
 
 set_politics = {
 	ruling_party = fascism

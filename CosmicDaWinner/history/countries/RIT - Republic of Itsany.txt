@@ -1,4 +1,4 @@
-capital = 585
+capital = 7420
 
 set_politics = {
 	ruling_party = democratic
