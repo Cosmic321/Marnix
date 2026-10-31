@@ -85,7 +85,9 @@ def main():
         icon = pick_icon(fid, names.get(fid, fid), sprites)
         assert icon in sprites or icon == 'GFX_goal_support_neutrality', (fid, icon)
         cost = field(block, 'cost')
-        mutex = inline(block, 'mutually_exclusive')
+        # only the four ideological reviews stay exclusive: everything else is
+        # required by the hub above it, so an exclusive pair would dead-end it
+        mutex = inline(block, 'mutually_exclusive') if fid.endswith('_review') else None
         fx = spec.FX.get(fid, reward_of(block))
 
         parts = fid.split('_')
@@ -101,7 +103,9 @@ def main():
                  '\t\ty = %d' % y,
                  '\t\tcost = %s' % cost]
         if mutex is not None:
-            lines.append('\t\tmutually_exclusive = {%s}' % mutex)
+            others = re.findall(r'focus = (\S+)', mutex)
+            lines.append('\t\tmutually_exclusive = { %s }'
+                         % ' '.join('focus = %s' % o for o in others))
         if fid in pre:
             lines.append('\t\tprerequisite = { %s }'
                          % ' '.join('focus = %s' % t for g in pre[fid] for t in g))
