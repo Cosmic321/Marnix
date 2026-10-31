@@ -1,4 +1,4 @@
-capital = 554
+capital = 620
 set_research_slots = 2
 recruit_character = PPS_ruler
 
