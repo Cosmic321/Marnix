@@ -356,3 +356,7 @@
  DES_constitutional_empire_desc:0 "An empire that has decided to be governed by argument rather than by inheritance - and has kept the crown, because it turns out to be useful when dealing with the neighbours."
  DES_workers_republic:0 "The Workers' Republic"
  DES_workers_republic_desc:0 "The estates are gone, the crown is gone, and the country is now run by councils, committees and a party that assures everyone it is only holding the ladder."
+ CDW_armour_doctrine:0 "Armoured Doctrine"
+ CDW_armour_doctrine_desc:0 "The army has decided what it is: a small number of very expensive machines, crewed by men who have been trained to keep them running longer than the enemy's."
+ CDW_infantry_doctrine:0 "Infantry and Artillery Doctrine"
+ CDW_infantry_doctrine_desc:0 "The army has decided what it is: a great many men, a great many guns, and a staff college that has stopped apologising for either."
