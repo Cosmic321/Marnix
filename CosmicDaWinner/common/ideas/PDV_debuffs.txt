@@ -45,4 +45,24 @@ ideas = {
 		}
 	}
 
+	country = {
+		PDV_officers_settling = {
+			picture = generic_army_war_college
+			modifier = {
+				army_org_factor = -0.03
+				army_morale_factor = -0.05
+			}
+		}
+	}
+
+	country = {
+		PDV_army_refitting = {
+			picture = generic_morale_bonus
+			modifier = {
+				army_attack_factor = -0.07
+				army_defense_factor = -0.07
+			}
+		}
+	}
+
 }

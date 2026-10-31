@@ -63,4 +63,13 @@ ideas = {
 
 	}
 
+		PDV_crown_restored = {
+			picture = generic_foreign_capital
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.10
+				war_support_factor = 0.05
+			}
+		}
+
 }

@@ -1,4 +1,4 @@
-# Afria - a splinter of the Vyratian Directorate. Direct, forced, and industrial.
+# Afria - a splinter of the Vyratian Directorate: one root, four branches, twenty focuses.
 focus_tree = {
 	id = afr_focus
 	country = {
@@ -10,54 +10,35 @@ focus_tree = {
 	}
 
 	focus = {
-		id = AFR_seize
+		id = AFR_province
 		icon = GFX_goal_generic_political_pressure
-		x = 0
-		y = 0
-		cost = 10
-		completion_reward = {
-			random_owned_controlled_state = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
-		}
-	}
-
-	focus = {
-		id = AFR_arsenal
-		icon = GFX_goal_generic_construct_mil_factory
-		x = 2
-		y = 0
-		cost = 10
-		completion_reward = {
-			random_owned_controlled_state = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
-		}
-	}
-
-	focus = {
-		id = AFR_railways
-		icon = GFX_goal_generic_construct_infrastructure
 		x = 4
 		y = 0
 		cost = 10
 		completion_reward = {
 			add_political_power = 50
+			add_stability = 0.03
 		}
 	}
 
 	focus = {
-		id = AFR_militia
-		icon = GFX_goal_generic_army_doctrines
-		x = 6
-		y = 0
+		id = AFR_seize
+		icon = GFX_goal_generic_political_pressure
+		x = 0
+		y = 1
 		cost = 10
+		prerequisite = { focus = AFR_province }
 		completion_reward = {
-			add_manpower = 25000
+			random_owned_controlled_state = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
 		}
 	}
+
 
 	focus = {
 		id = AFR_bank
 		icon = GFX_goal_generic_trade
 		x = 0
-		y = 1
+		y = 2
 		cost = 10
 		prerequisite = { focus = AFR_seize }
 		completion_reward = {
@@ -66,49 +47,12 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = AFR_regiments
-		icon = GFX_goal_generic_army_doctrines
-		x = 2
-		y = 1
-		cost = 10
-		prerequisite = { focus = AFR_arsenal }
-		completion_reward = {
-			add_army_experience = 30
-			add_equipment_to_stockpile = { type = infantry_equipment amount = 3000 }
-		}
-	}
-
-	focus = {
-		id = AFR_estates
-		icon = GFX_goal_generic_construct_civ_factory
-		x = 4
-		y = 1
-		cost = 10
-		prerequisite = { focus = AFR_railways }
-		completion_reward = {
-			random_owned_controlled_state = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
-		}
-	}
-
-	focus = {
-		id = AFR_officers
-		icon = GFX_goal_generic_army_war_college
-		x = 6
-		y = 1
-		cost = 10
-		prerequisite = { focus = AFR_militia }
-		completion_reward = {
-			add_army_experience = 25
-			add_ideas = PDV_rebuilt_staff
-		}
-	}
 
 	focus = {
 		id = AFR_books
 		icon = GFX_goal_generic_political_pressure
 		x = 0
-		y = 2
+		y = 3
 		cost = 10
 		prerequisite = { focus = AFR_bank }
 		completion_reward = {
@@ -117,47 +61,12 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = AFR_plant
-		icon = GFX_goal_generic_construct_mil_factory
-		x = 2
-		y = 2
-		cost = 10
-		prerequisite = { focus = AFR_regiments }
-		completion_reward = {
-			random_owned_controlled_state = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
-		}
-	}
-
-	focus = {
-		id = AFR_works
-		icon = GFX_goal_generic_construct_civ_factory
-		x = 4
-		y = 2
-		cost = 10
-		prerequisite = { focus = AFR_estates }
-		completion_reward = {
-			random_owned_controlled_state = { limit = { is_coastal = yes } add_building_construction = { type = dockyard level = 1 instant_build = yes } }
-		}
-	}
-
-	focus = {
-		id = AFR_ammunition
-		icon = GFX_goal_generic_army_artillery
-		x = 6
-		y = 2
-		cost = 10
-		prerequisite = { focus = AFR_officers }
-		completion_reward = {
-			add_equipment_to_stockpile = { type = artillery_equipment amount = 400 }
-		}
-	}
 
 	focus = {
 		id = AFR_bureaucracy
 		icon = GFX_goal_generic_national_unity
 		x = 0
-		y = 3
+		y = 4
 		cost = 10
 		prerequisite = { focus = AFR_books }
 		completion_reward = {
@@ -166,11 +75,52 @@ focus_tree = {
 		}
 	}
 
+
+	focus = {
+		id = AFR_arsenal
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 2
+		y = 1
+		cost = 10
+		prerequisite = { focus = AFR_province }
+		completion_reward = {
+			random_owned_controlled_state = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		}
+	}
+
+
+	focus = {
+		id = AFR_regiments
+		icon = GFX_goal_generic_army_doctrines
+		x = 2
+		y = 2
+		cost = 10
+		prerequisite = { focus = AFR_arsenal }
+		completion_reward = {
+			add_army_experience = 30
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 3000 }
+		}
+	}
+
+
+	focus = {
+		id = AFR_plant
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 2
+		y = 3
+		cost = 10
+		prerequisite = { focus = AFR_regiments }
+		completion_reward = {
+			random_owned_controlled_state = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		}
+	}
+
+
 	focus = {
 		id = AFR_standing
 		icon = GFX_goal_generic_army_doctrines
 		x = 2
-		y = 3
+		y = 4
 		cost = 10
 		prerequisite = { focus = AFR_plant }
 		completion_reward = {
@@ -179,11 +129,51 @@ focus_tree = {
 		}
 	}
 
+
+	focus = {
+		id = AFR_railways
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 4
+		y = 1
+		cost = 10
+		prerequisite = { focus = AFR_province }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+
+	focus = {
+		id = AFR_estates
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 4
+		y = 2
+		cost = 10
+		prerequisite = { focus = AFR_railways }
+		completion_reward = {
+			random_owned_controlled_state = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+
+
+	focus = {
+		id = AFR_works
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 4
+		y = 3
+		cost = 10
+		prerequisite = { focus = AFR_estates }
+		completion_reward = {
+			random_owned_controlled_state = { limit = { is_coastal = yes } add_building_construction = { type = dockyard level = 1 instant_build = yes } }
+		}
+	}
+
+
 	focus = {
 		id = AFR_roads
 		icon = GFX_goal_generic_construct_infrastructure
 		x = 4
-		y = 3
+		y = 4
 		cost = 10
 		prerequisite = { focus = AFR_works }
 		completion_reward = {
@@ -191,11 +181,52 @@ focus_tree = {
 		}
 	}
 
+
+	focus = {
+		id = AFR_militia
+		icon = GFX_goal_generic_army_doctrines
+		x = 6
+		y = 1
+		cost = 10
+		prerequisite = { focus = AFR_province }
+		completion_reward = {
+			add_manpower = 25000
+		}
+	}
+
+
+	focus = {
+		id = AFR_officers
+		icon = GFX_goal_generic_army_war_college
+		x = 6
+		y = 2
+		cost = 10
+		prerequisite = { focus = AFR_militia }
+		completion_reward = {
+			add_army_experience = 25
+			add_ideas = PDV_rebuilt_staff
+		}
+	}
+
+
+	focus = {
+		id = AFR_ammunition
+		icon = GFX_goal_generic_army_artillery
+		x = 6
+		y = 3
+		cost = 10
+		prerequisite = { focus = AFR_officers }
+		completion_reward = {
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 400 }
+		}
+	}
+
+
 	focus = {
 		id = AFR_cadre
 		icon = GFX_goal_generic_political_pressure
 		x = 6
-		y = 3
+		y = 4
 		cost = 10
 		prerequisite = { focus = AFR_ammunition }
 		completion_reward = {
@@ -204,53 +235,47 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
-		id = AFR_provincial_army
-		icon = GFX_goal_generic_defence
-		x = 0
-		y = 4
+		id = AFR_army_merged
+		icon = GFX_goal_generic_army_doctrines
+		x = 2
+		y = 5
 		cost = 10
+		prerequisite = { focus = AFR_bureaucracy }
 		prerequisite = { focus = AFR_standing }
 		completion_reward = {
 			add_army_experience = 50
+			add_research_slot = 1
 		}
 	}
 
 	focus = {
-		id = AFR_university
-		icon = GFX_goal_generic_scientific_exchange
-		x = 4
-		y = 4
+		id = AFR_state_merged
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 6
+		y = 5
 		cost = 10
 		prerequisite = { focus = AFR_roads }
+		prerequisite = { focus = AFR_cadre }
 		completion_reward = {
-			add_research_slot = 1
+			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			add_political_power = 50
 		}
 	}
 
 	focus = {
 		id = AFR_rejoin
 		icon = GFX_goal_generic_major_war
-		x = 2
-		y = 4
+		x = 4
+		y = 6
 		cost = 10
-		prerequisite = { focus = AFR_provincial_army }
+		prerequisite = { focus = AFR_army_merged }
+		prerequisite = { focus = AFR_state_merged }
 		completion_reward = {
 			PDV = { annex_country = { target = ROOT transfer_troops = yes } }
 		}
 	}
 
-	focus = {
-		id = AFR_militia_law
-		icon = GFX_goal_generic_defence
-		x = 6
-		y = 4
-		cost = 10
-		prerequisite = { focus = AFR_cadre }
-		completion_reward = {
-			add_manpower = 20000
-			add_war_support = 0.03
-		}
-	}
 
 }

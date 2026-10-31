@@ -1,4 +1,4 @@
-# Barri - a splinter of the Vyratian Directorate. Direct, forced, and industrial.
+# Barri - a splinter of the Vyratian Directorate: one root, four branches, twenty focuses.
 focus_tree = {
 	id = brr_focus
 	country = {
@@ -10,54 +10,35 @@ focus_tree = {
 	}
 
 	focus = {
-		id = BRR_seize
+		id = BRR_province
 		icon = GFX_goal_generic_political_pressure
-		x = 0
-		y = 0
-		cost = 10
-		completion_reward = {
-			random_owned_controlled_state = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
-		}
-	}
-
-	focus = {
-		id = BRR_arsenal
-		icon = GFX_goal_generic_construct_mil_factory
-		x = 2
-		y = 0
-		cost = 10
-		completion_reward = {
-			random_owned_controlled_state = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
-		}
-	}
-
-	focus = {
-		id = BRR_railways
-		icon = GFX_goal_generic_construct_infrastructure
 		x = 4
 		y = 0
 		cost = 10
 		completion_reward = {
 			add_political_power = 50
+			add_stability = 0.03
 		}
 	}
 
 	focus = {
-		id = BRR_militia
-		icon = GFX_goal_generic_army_doctrines
-		x = 6
-		y = 0
+		id = BRR_seize
+		icon = GFX_goal_generic_political_pressure
+		x = 0
+		y = 1
 		cost = 10
+		prerequisite = { focus = BRR_province }
 		completion_reward = {
-			add_manpower = 25000
+			random_owned_controlled_state = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
 		}
 	}
+
 
 	focus = {
 		id = BRR_bank
 		icon = GFX_goal_generic_trade
 		x = 0
-		y = 1
+		y = 2
 		cost = 10
 		prerequisite = { focus = BRR_seize }
 		completion_reward = {
@@ -66,49 +47,12 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = BRR_regiments
-		icon = GFX_goal_generic_army_doctrines
-		x = 2
-		y = 1
-		cost = 10
-		prerequisite = { focus = BRR_arsenal }
-		completion_reward = {
-			add_army_experience = 30
-			add_equipment_to_stockpile = { type = infantry_equipment amount = 3000 }
-		}
-	}
-
-	focus = {
-		id = BRR_estates
-		icon = GFX_goal_generic_construct_civ_factory
-		x = 4
-		y = 1
-		cost = 10
-		prerequisite = { focus = BRR_railways }
-		completion_reward = {
-			random_owned_controlled_state = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
-		}
-	}
-
-	focus = {
-		id = BRR_officers
-		icon = GFX_goal_generic_army_war_college
-		x = 6
-		y = 1
-		cost = 10
-		prerequisite = { focus = BRR_militia }
-		completion_reward = {
-			add_army_experience = 25
-			add_ideas = PDV_rebuilt_staff
-		}
-	}
 
 	focus = {
 		id = BRR_books
 		icon = GFX_goal_generic_political_pressure
 		x = 0
-		y = 2
+		y = 3
 		cost = 10
 		prerequisite = { focus = BRR_bank }
 		completion_reward = {
@@ -117,47 +61,12 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = BRR_plant
-		icon = GFX_goal_generic_construct_mil_factory
-		x = 2
-		y = 2
-		cost = 10
-		prerequisite = { focus = BRR_regiments }
-		completion_reward = {
-			random_owned_controlled_state = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
-		}
-	}
-
-	focus = {
-		id = BRR_works
-		icon = GFX_goal_generic_construct_civ_factory
-		x = 4
-		y = 2
-		cost = 10
-		prerequisite = { focus = BRR_estates }
-		completion_reward = {
-			random_owned_controlled_state = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
-		}
-	}
-
-	focus = {
-		id = BRR_ammunition
-		icon = GFX_goal_generic_army_artillery
-		x = 6
-		y = 2
-		cost = 10
-		prerequisite = { focus = BRR_officers }
-		completion_reward = {
-			add_equipment_to_stockpile = { type = artillery_equipment amount = 400 }
-		}
-	}
 
 	focus = {
 		id = BRR_bureaucracy
 		icon = GFX_goal_generic_national_unity
 		x = 0
-		y = 3
+		y = 4
 		cost = 10
 		prerequisite = { focus = BRR_books }
 		completion_reward = {
@@ -166,11 +75,52 @@ focus_tree = {
 		}
 	}
 
+
+	focus = {
+		id = BRR_arsenal
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 2
+		y = 1
+		cost = 10
+		prerequisite = { focus = BRR_province }
+		completion_reward = {
+			random_owned_controlled_state = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		}
+	}
+
+
+	focus = {
+		id = BRR_regiments
+		icon = GFX_goal_generic_army_doctrines
+		x = 2
+		y = 2
+		cost = 10
+		prerequisite = { focus = BRR_arsenal }
+		completion_reward = {
+			add_army_experience = 30
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 3000 }
+		}
+	}
+
+
+	focus = {
+		id = BRR_plant
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 2
+		y = 3
+		cost = 10
+		prerequisite = { focus = BRR_regiments }
+		completion_reward = {
+			random_owned_controlled_state = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		}
+	}
+
+
 	focus = {
 		id = BRR_standing
 		icon = GFX_goal_generic_army_doctrines
 		x = 2
-		y = 3
+		y = 4
 		cost = 10
 		prerequisite = { focus = BRR_plant }
 		completion_reward = {
@@ -179,11 +129,51 @@ focus_tree = {
 		}
 	}
 
+
+	focus = {
+		id = BRR_railways
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 4
+		y = 1
+		cost = 10
+		prerequisite = { focus = BRR_province }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+
+	focus = {
+		id = BRR_estates
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 4
+		y = 2
+		cost = 10
+		prerequisite = { focus = BRR_railways }
+		completion_reward = {
+			random_owned_controlled_state = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+
+
+	focus = {
+		id = BRR_works
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 4
+		y = 3
+		cost = 10
+		prerequisite = { focus = BRR_estates }
+		completion_reward = {
+			random_owned_controlled_state = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+
+
 	focus = {
 		id = BRR_roads
 		icon = GFX_goal_generic_construct_infrastructure
 		x = 4
-		y = 3
+		y = 4
 		cost = 10
 		prerequisite = { focus = BRR_works }
 		completion_reward = {
@@ -191,11 +181,52 @@ focus_tree = {
 		}
 	}
 
+
+	focus = {
+		id = BRR_militia
+		icon = GFX_goal_generic_army_doctrines
+		x = 6
+		y = 1
+		cost = 10
+		prerequisite = { focus = BRR_province }
+		completion_reward = {
+			add_manpower = 25000
+		}
+	}
+
+
+	focus = {
+		id = BRR_officers
+		icon = GFX_goal_generic_army_war_college
+		x = 6
+		y = 2
+		cost = 10
+		prerequisite = { focus = BRR_militia }
+		completion_reward = {
+			add_army_experience = 25
+			add_ideas = PDV_rebuilt_staff
+		}
+	}
+
+
+	focus = {
+		id = BRR_ammunition
+		icon = GFX_goal_generic_army_artillery
+		x = 6
+		y = 3
+		cost = 10
+		prerequisite = { focus = BRR_officers }
+		completion_reward = {
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 400 }
+		}
+	}
+
+
 	focus = {
 		id = BRR_cadre
 		icon = GFX_goal_generic_political_pressure
 		x = 6
-		y = 3
+		y = 4
 		cost = 10
 		prerequisite = { focus = BRR_ammunition }
 		completion_reward = {
@@ -204,53 +235,47 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
-		id = BRR_provincial_army
-		icon = GFX_goal_generic_defence
-		x = 0
-		y = 4
+		id = BRR_army_merged
+		icon = GFX_goal_generic_army_doctrines
+		x = 2
+		y = 5
 		cost = 10
+		prerequisite = { focus = BRR_bureaucracy }
 		prerequisite = { focus = BRR_standing }
 		completion_reward = {
 			add_army_experience = 50
+			add_research_slot = 1
 		}
 	}
 
 	focus = {
-		id = BRR_university
-		icon = GFX_goal_generic_scientific_exchange
-		x = 4
-		y = 4
+		id = BRR_state_merged
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 6
+		y = 5
 		cost = 10
 		prerequisite = { focus = BRR_roads }
+		prerequisite = { focus = BRR_cadre }
 		completion_reward = {
-			add_research_slot = 1
+			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			add_political_power = 50
 		}
 	}
 
 	focus = {
 		id = BRR_rejoin
 		icon = GFX_goal_generic_major_war
-		x = 2
-		y = 4
+		x = 4
+		y = 6
 		cost = 10
-		prerequisite = { focus = BRR_provincial_army }
+		prerequisite = { focus = BRR_army_merged }
+		prerequisite = { focus = BRR_state_merged }
 		completion_reward = {
 			PDV = { annex_country = { target = ROOT transfer_troops = yes } }
 		}
 	}
 
-	focus = {
-		id = BRR_militia_law
-		icon = GFX_goal_generic_defence
-		x = 6
-		y = 4
-		cost = 10
-		prerequisite = { focus = BRR_cadre }
-		completion_reward = {
-			add_manpower = 20000
-			add_war_support = 0.03
-		}
-	}
 
 }
