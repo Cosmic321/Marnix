@@ -19,10 +19,17 @@ country_event = {
 			}
 			add_ideas = PDV_leaderless
 		}
+		# The provinces that walked out a week ago now declare for the communists.
+		if = { limit = { SUN = { exists = yes } } SUN = { declare_war_on = { target = ROOT type = annex_everything } } }
+		if = { limit = { BRR = { exists = yes } } BRR = { declare_war_on = { target = ROOT type = annex_everything } } }
+		if = { limit = { AFR = { exists = yes } } AFR = { declare_war_on = { target = ROOT type = annex_everything } } }
+		if = { limit = { VYR = { exists = yes } } VYR = { declare_war_on = { target = ROOT type = annex_everything } } }
+		if = { limit = { FGT = { exists = yes } } FGT = { declare_war_on = { target = ROOT type = annex_everything } } }
+		if = { limit = { PPS = { exists = yes } } PPS = { declare_war_on = { target = ROOT type = annex_everything } } }
 	}
 }
 
-# Thirty days in, the south-east has declared for the risers.
+# Thirty days in, the risers pull back behind their own borders.
 country_event = {
 	id = pdv_vyratia.2
 	title = pdv_vyratia.2.t
@@ -33,17 +40,12 @@ country_event = {
 		name = pdv_vyratia.2.a
 		add_war_support = 0.05
 		add_stability = 0.03
-		if = {
-			limit = { FGT = { exists = yes } }
-			FGT = { add_war_support = 0.05 }
-		}
-		if = {
-			limit = { PPS = { exists = yes } }
-			PPS = {
-				add_ideas = PDV_peoples_defence
-				add_war_support = 0.05
-			}
-		}
+		if = { limit = { SUN = { exists = yes } } SUN = { white_peace = ROOT } }
+		if = { limit = { BRR = { exists = yes } } BRR = { white_peace = ROOT } }
+		if = { limit = { AFR = { exists = yes } } AFR = { white_peace = ROOT } }
+		if = { limit = { VYR = { exists = yes } } VYR = { white_peace = ROOT } }
+		if = { limit = { FGT = { exists = yes } } FGT = { white_peace = ROOT } }
+		if = { limit = { PPS = { exists = yes } } PPS = { white_peace = ROOT } }
 	}
 }
 

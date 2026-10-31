@@ -1509,7 +1509,7 @@ focus_tree = {
 			release = FGT
 			release = PPS
 			PPS = { add_ideas = PDV_peoples_defence }
-			start_civil_war = { size = 0.35 ideology = communism }
+			start_civil_war = { ideology = communism size = 0.68 army_ratio = 0.40 navy_ratio = 0.40 air_ratio = 0.30 capital = 361 only_own_territory = yes }
 			country_event = { id = pdv_vyratia.1 days = 1 }
 			country_event = { id = pdv_vyratia.2 days = 30 }
 			add_war_support = 0.10
@@ -1537,6 +1537,7 @@ focus_tree = {
 		prerequisite = { focus = PDV_fa_c3_4 }
 		completion_reward = {
 			add_stability = 0.04
+			if = { limit = { AFR = { exists = yes } } create_wargoal = { type = annex_everything target = AFR } }
 		}
 	}
 
@@ -1549,6 +1550,8 @@ focus_tree = {
 		prerequisite = { focus = PDV_fa_c3_5 }
 		completion_reward = {
 			add_political_power = 60
+			if = { limit = { SUN = { exists = yes } } create_wargoal = { type = annex_everything target = SUN } }
+			if = { limit = { BRR = { exists = yes } } create_wargoal = { type = annex_everything target = BRR } }
 		}
 	}
 
@@ -1562,6 +1565,8 @@ focus_tree = {
 		mutually_exclusive = { focus = PDV_fa_c0_7 }
 		completion_reward = {
 			add_political_power = 75
+			if = { limit = { PPS = { exists = yes } } create_wargoal = { type = annex_everything target = PPS } }
+			if = { limit = { VYR = { exists = yes } } create_wargoal = { type = annex_everything target = VYR } }
 		}
 	}
 
