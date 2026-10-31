@@ -1,4 +1,5 @@
 capital = 601
+set_research_slots = 4
 recruit_character = VRE_ruler
 
 

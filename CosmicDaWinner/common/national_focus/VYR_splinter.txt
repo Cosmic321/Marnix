@@ -1,4 +1,4 @@
-# Vyrataria - a splinter of the Vyratian Directorate. Twenty focuses, the last of which takes it home.
+# Vyrataria - a splinter of the Vyratian Directorate. Direct, forced, and industrial.
 focus_tree = {
 	id = vyr_focus
 	country = {
@@ -10,124 +10,156 @@ focus_tree = {
 	}
 
 	focus = {
-		id = VYR_take_stock
+		id = VYR_seize
 		icon = GFX_goal_generic_political_pressure
 		x = 0
 		y = 0
 		cost = 10
-		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.03
-		}
-	}
-
-	focus = {
-		id = VYR_the_councils
-		icon = GFX_goal_generic_national_unity
-		x = 2
-		y = 0
-		cost = 10
-		prerequisite = { focus = VYR_take_stock }
-		completion_reward = {
-			add_political_power = 25
-			add_stability = 0.03
-		}
-	}
-
-	focus = {
-		id = VYR_the_question
-		icon = GFX_goal_generic_political_pressure
-		x = 4
-		y = 0
-		cost = 10
-		prerequisite = { focus = VYR_the_councils }
-		completion_reward = {
-			add_political_power = 50
-		}
-	}
-
-	focus = {
-		id = VYR_the_border
-		icon = GFX_goal_generic_multiple_claims
-		x = 6
-		y = 0
-		cost = 10
-		prerequisite = { focus = VYR_the_question }
-		completion_reward = {
-			add_stability = 0.03
-			add_war_support = 0.03
-		}
-	}
-
-	focus = {
-		id = VYR_rebuild
-		icon = GFX_goal_generic_construct_infrastructure
-		x = 0
-		y = 1
-		cost = 10
-		prerequisite = { focus = VYR_the_border }
-		completion_reward = {
-			every_owned_state = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
-		}
-	}
-
-	focus = {
-		id = VYR_a_plant
-		icon = GFX_goal_generic_construct_civ_factory
-		x = 2
-		y = 1
-		cost = 10
-		prerequisite = { focus = VYR_rebuild }
 		completion_reward = {
 			random_owned_controlled_state = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
 		}
 	}
 
 	focus = {
-		id = VYR_the_treasury
-		icon = GFX_goal_generic_trade
-		x = 4
-		y = 1
+		id = VYR_arsenal
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 2
+		y = 0
 		cost = 10
-		prerequisite = { focus = VYR_a_plant }
+		completion_reward = {
+			random_owned_controlled_state = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = VYR_railways
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 4
+		y = 0
+		cost = 10
 		completion_reward = {
 			add_political_power = 50
 		}
 	}
 
 	focus = {
-		id = VYR_the_militia
+		id = VYR_militia
 		icon = GFX_goal_generic_army_doctrines
+		x = 6
+		y = 0
+		cost = 10
+		completion_reward = {
+			add_manpower = 25000
+		}
+	}
+
+	focus = {
+		id = VYR_bank
+		icon = GFX_goal_generic_trade
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = VYR_seize }
+		completion_reward = {
+			add_political_power = 40
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = VYR_regiments
+		icon = GFX_goal_generic_army_doctrines
+		x = 2
+		y = 1
+		cost = 10
+		prerequisite = { focus = VYR_arsenal }
+		completion_reward = {
+			add_army_experience = 30
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 3000 }
+		}
+	}
+
+	focus = {
+		id = VYR_estates
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 4
+		y = 1
+		cost = 10
+		prerequisite = { focus = VYR_railways }
+		completion_reward = {
+			random_owned_controlled_state = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = VYR_officers
+		icon = GFX_goal_generic_army_war_college
 		x = 6
 		y = 1
 		cost = 10
-		prerequisite = { focus = VYR_the_treasury }
+		prerequisite = { focus = VYR_militia }
 		completion_reward = {
-			add_manpower = 15000
 			add_army_experience = 25
+			add_ideas = PDV_rebuilt_staff
 		}
 	}
 
 	focus = {
-		id = VYR_the_garrison
-		icon = GFX_goal_generic_defence
+		id = VYR_books
+		icon = GFX_goal_generic_political_pressure
 		x = 0
 		y = 2
 		cost = 10
-		prerequisite = { focus = VYR_the_militia }
+		prerequisite = { focus = VYR_bank }
 		completion_reward = {
-			random_owned_controlled_state = { add_building_construction = { type = coastal_bunker level = 2 instant_build = yes } }
-			add_war_support = 0.05
+			add_political_power = 40
+			add_stability = 0.04
 		}
 	}
 
 	focus = {
-		id = VYR_the_schools
-		icon = GFX_goal_generic_national_unity
+		id = VYR_plant
+		icon = GFX_goal_generic_construct_mil_factory
 		x = 2
 		y = 2
 		cost = 10
-		prerequisite = { focus = VYR_the_garrison }
+		prerequisite = { focus = VYR_regiments }
+		completion_reward = {
+			random_owned_controlled_state = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = VYR_works
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 4
+		y = 2
+		cost = 10
+		prerequisite = { focus = VYR_estates }
+		completion_reward = {
+			random_owned_controlled_state = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = VYR_ammunition
+		icon = GFX_goal_generic_army_artillery
+		x = 6
+		y = 2
+		cost = 10
+		prerequisite = { focus = VYR_officers }
+		completion_reward = {
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 400 }
+		}
+	}
+
+	focus = {
+		id = VYR_bureaucracy
+		icon = GFX_goal_generic_national_unity
+		x = 0
+		y = 3
+		cost = 10
+		prerequisite = { focus = VYR_books }
 		completion_reward = {
 			add_stability = 0.05
 			add_political_power = 25
@@ -135,132 +167,90 @@ focus_tree = {
 	}
 
 	focus = {
-		id = VYR_the_road
+		id = VYR_standing
+		icon = GFX_goal_generic_army_doctrines
+		x = 2
+		y = 3
+		cost = 10
+		prerequisite = { focus = VYR_plant }
+		completion_reward = {
+			add_army_experience = 40
+			add_war_support = 0.04
+		}
+	}
+
+	focus = {
+		id = VYR_roads
 		icon = GFX_goal_generic_construct_infrastructure
 		x = 4
-		y = 2
+		y = 3
 		cost = 10
-		prerequisite = { focus = VYR_the_schools }
+		prerequisite = { focus = VYR_works }
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = 40
 		}
 	}
 
 	focus = {
-		id = VYR_the_treaty
-		icon = GFX_goal_generic_positive_trade_relations
+		id = VYR_cadre
+		icon = GFX_goal_generic_political_pressure
 		x = 6
-		y = 2
+		y = 3
 		cost = 10
-		prerequisite = { focus = VYR_the_road }
+		prerequisite = { focus = VYR_ammunition }
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = 40
 			add_stability = 0.03
 		}
 	}
 
 	focus = {
-		id = VYR_the_soldiers_pay
-		icon = GFX_goal_generic_army_doctrines
+		id = VYR_provincial_army
+		icon = GFX_goal_generic_defence
 		x = 0
-		y = 3
+		y = 4
 		cost = 10
-		prerequisite = { focus = VYR_the_treaty }
+		prerequisite = { focus = VYR_standing }
 		completion_reward = {
 			add_army_experience = 50
-			add_stability = 0.03
 		}
 	}
 
 	focus = {
-		id = VYR_the_old_elite
-		icon = GFX_goal_generic_political_pressure
-		x = 2
-		y = 3
-		cost = 10
-		prerequisite = { focus = VYR_the_soldiers_pay }
-		completion_reward = {
-			add_political_power = 50
-		}
-	}
-
-	focus = {
-		id = VYR_the_harvest
-		icon = GFX_goal_generic_consumer_goods
-		x = 4
-		y = 3
-		cost = 10
-		prerequisite = { focus = VYR_the_old_elite }
-		completion_reward = {
-			add_stability = 0.05
-			add_manpower = 10000
-		}
-	}
-
-	focus = {
-		id = VYR_the_question_again
-		icon = GFX_goal_generic_political_pressure
-		x = 6
-		y = 3
-		cost = 10
-		prerequisite = { focus = VYR_the_harvest }
-		completion_reward = {
-			add_political_power = 50
-		}
-	}
-
-	focus = {
-		id = VYR_the_crown
-		icon = GFX_goal_generic_neutrality_focus
-		x = 0
-		y = 4
-		cost = 10
-		prerequisite = { focus = VYR_the_question_again }
-		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.03
-		}
-	}
-
-	focus = {
-		id = VYR_the_offer
-		icon = GFX_goal_generic_alliance
-		x = 2
-		y = 4
-		cost = 10
-		prerequisite = { focus = VYR_the_crown }
-		completion_reward = {
-			add_political_power = 50
-		}
-	}
-
-	focus = {
-		id = VYR_the_vote
-		icon = GFX_goal_generic_national_unity
+		id = VYR_university
+		icon = GFX_goal_generic_scientific_exchange
 		x = 4
 		y = 4
 		cost = 10
-		prerequisite = { focus = VYR_the_offer }
+		prerequisite = { focus = VYR_roads }
 		completion_reward = {
-			add_stability = 0.05
-			add_political_power = 50
+			add_research_slot = 1
 		}
 	}
 
 	focus = {
 		id = VYR_rejoin
-		icon = GFX_goal_generic_major_alliance
-		x = 0
-		y = 5
+		icon = GFX_goal_generic_major_war
+		x = 2
+		y = 4
 		cost = 10
-		prerequisite = { focus = VYR_the_vote }
+		prerequisite = { focus = VYR_provincial_army }
 		completion_reward = {
 			PDV = { annex_country = { target = ROOT transfer_troops = yes } }
 		}
 	}
 
-	continuous_focus_position = {
-		x = 60
-		y = 1000
+	focus = {
+		id = VYR_militia_law
+		icon = GFX_goal_generic_defence
+		x = 6
+		y = 4
+		cost = 10
+		prerequisite = { focus = VYR_cadre }
+		completion_reward = {
+			add_manpower = 20000
+			add_war_support = 0.03
+		}
 	}
+
 }

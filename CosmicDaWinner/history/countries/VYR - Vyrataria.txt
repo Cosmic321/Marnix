@@ -1,4 +1,5 @@
-capital = 348
+capital = 408
+set_research_slots = 2
 recruit_character = VYR_ruler
 
 set_politics = {

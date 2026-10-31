@@ -1,4 +1,5 @@
 capital = 19
+set_research_slots = 3
 recruit_character = BER_ruler
 
 

@@ -1,4 +1,4 @@
-# Afria - a splinter of the Vyratian Directorate. Twenty focuses, the last of which takes it home.
+# Afria - a splinter of the Vyratian Directorate. Direct, forced, and industrial.
 focus_tree = {
 	id = afr_focus
 	country = {
@@ -10,257 +10,247 @@ focus_tree = {
 	}
 
 	focus = {
-		id = AFR_take_stock
+		id = AFR_seize
 		icon = GFX_goal_generic_political_pressure
 		x = 0
 		y = 0
 		cost = 10
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.03
+			random_owned_controlled_state = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
 		}
 	}
 
 	focus = {
-		id = AFR_the_councils
-		icon = GFX_goal_generic_national_unity
+		id = AFR_arsenal
+		icon = GFX_goal_generic_construct_mil_factory
 		x = 2
 		y = 0
 		cost = 10
-		prerequisite = { focus = AFR_take_stock }
 		completion_reward = {
-			add_political_power = 25
-			add_stability = 0.03
+			random_owned_controlled_state = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
 		}
 	}
 
 	focus = {
-		id = AFR_the_question
-		icon = GFX_goal_generic_political_pressure
-		x = 4
-		y = 0
-		cost = 10
-		prerequisite = { focus = AFR_the_councils }
-		completion_reward = {
-			add_political_power = 50
-		}
-	}
-
-	focus = {
-		id = AFR_the_border
-		icon = GFX_goal_generic_multiple_claims
-		x = 6
-		y = 0
-		cost = 10
-		prerequisite = { focus = AFR_the_question }
-		completion_reward = {
-			add_stability = 0.03
-			add_war_support = 0.03
-		}
-	}
-
-	focus = {
-		id = AFR_rebuild
+		id = AFR_railways
 		icon = GFX_goal_generic_construct_infrastructure
-		x = 0
-		y = 1
-		cost = 10
-		prerequisite = { focus = AFR_the_border }
-		completion_reward = {
-			every_owned_state = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
-		}
-	}
-
-	focus = {
-		id = AFR_a_plant
-		icon = GFX_goal_generic_construct_civ_factory
-		x = 2
-		y = 1
-		cost = 10
-		prerequisite = { focus = AFR_rebuild }
-		completion_reward = {
-			random_owned_controlled_state = { limit = { is_coastal = yes free_building_slots = { building = dockyard size > 0 include_locked = yes } } add_building_construction = { type = dockyard level = 1 instant_build = yes } }
-		}
-	}
-
-	focus = {
-		id = AFR_the_treasury
-		icon = GFX_goal_generic_trade
 		x = 4
-		y = 1
+		y = 0
 		cost = 10
-		prerequisite = { focus = AFR_a_plant }
 		completion_reward = {
 			add_political_power = 50
 		}
 	}
 
 	focus = {
-		id = AFR_the_militia
+		id = AFR_militia
 		icon = GFX_goal_generic_army_doctrines
 		x = 6
-		y = 1
+		y = 0
 		cost = 10
-		prerequisite = { focus = AFR_the_treasury }
 		completion_reward = {
-			add_manpower = 15000
-			add_army_experience = 25
+			add_manpower = 25000
 		}
 	}
 
 	focus = {
-		id = AFR_the_garrison
+		id = AFR_bank
+		icon = GFX_goal_generic_trade
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = AFR_seize }
+		completion_reward = {
+			add_political_power = 40
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = AFR_regiments
+		icon = GFX_goal_generic_army_doctrines
+		x = 2
+		y = 1
+		cost = 10
+		prerequisite = { focus = AFR_arsenal }
+		completion_reward = {
+			add_army_experience = 30
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 3000 }
+		}
+	}
+
+	focus = {
+		id = AFR_estates
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 4
+		y = 1
+		cost = 10
+		prerequisite = { focus = AFR_railways }
+		completion_reward = {
+			random_owned_controlled_state = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = AFR_officers
+		icon = GFX_goal_generic_army_war_college
+		x = 6
+		y = 1
+		cost = 10
+		prerequisite = { focus = AFR_militia }
+		completion_reward = {
+			add_army_experience = 25
+			add_ideas = PDV_rebuilt_staff
+		}
+	}
+
+	focus = {
+		id = AFR_books
+		icon = GFX_goal_generic_political_pressure
+		x = 0
+		y = 2
+		cost = 10
+		prerequisite = { focus = AFR_bank }
+		completion_reward = {
+			add_political_power = 40
+			add_stability = 0.04
+		}
+	}
+
+	focus = {
+		id = AFR_plant
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 2
+		y = 2
+		cost = 10
+		prerequisite = { focus = AFR_regiments }
+		completion_reward = {
+			random_owned_controlled_state = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = AFR_works
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 4
+		y = 2
+		cost = 10
+		prerequisite = { focus = AFR_estates }
+		completion_reward = {
+			random_owned_controlled_state = { limit = { is_coastal = yes } add_building_construction = { type = dockyard level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = AFR_ammunition
+		icon = GFX_goal_generic_army_artillery
+		x = 6
+		y = 2
+		cost = 10
+		prerequisite = { focus = AFR_officers }
+		completion_reward = {
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 400 }
+		}
+	}
+
+	focus = {
+		id = AFR_bureaucracy
+		icon = GFX_goal_generic_national_unity
+		x = 0
+		y = 3
+		cost = 10
+		prerequisite = { focus = AFR_books }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = AFR_standing
+		icon = GFX_goal_generic_army_doctrines
+		x = 2
+		y = 3
+		cost = 10
+		prerequisite = { focus = AFR_plant }
+		completion_reward = {
+			add_army_experience = 40
+			add_war_support = 0.04
+		}
+	}
+
+	focus = {
+		id = AFR_roads
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 4
+		y = 3
+		cost = 10
+		prerequisite = { focus = AFR_works }
+		completion_reward = {
+			add_political_power = 40
+		}
+	}
+
+	focus = {
+		id = AFR_cadre
+		icon = GFX_goal_generic_political_pressure
+		x = 6
+		y = 3
+		cost = 10
+		prerequisite = { focus = AFR_ammunition }
+		completion_reward = {
+			add_political_power = 40
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = AFR_provincial_army
 		icon = GFX_goal_generic_defence
 		x = 0
-		y = 2
+		y = 4
 		cost = 10
-		prerequisite = { focus = AFR_the_militia }
-		completion_reward = {
-			add_war_support = 0.05
-			add_army_experience = 25
-		}
-	}
-
-	focus = {
-		id = AFR_the_schools
-		icon = GFX_goal_generic_national_unity
-		x = 2
-		y = 2
-		cost = 10
-		prerequisite = { focus = AFR_the_garrison }
-		completion_reward = {
-			add_stability = 0.05
-			add_political_power = 25
-		}
-	}
-
-	focus = {
-		id = AFR_the_road
-		icon = GFX_goal_generic_construct_infrastructure
-		x = 4
-		y = 2
-		cost = 10
-		prerequisite = { focus = AFR_the_schools }
-		completion_reward = {
-			add_political_power = 50
-		}
-	}
-
-	focus = {
-		id = AFR_the_treaty
-		icon = GFX_goal_generic_positive_trade_relations
-		x = 6
-		y = 2
-		cost = 10
-		prerequisite = { focus = AFR_the_road }
-		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.03
-		}
-	}
-
-	focus = {
-		id = AFR_the_soldiers_pay
-		icon = GFX_goal_generic_army_doctrines
-		x = 0
-		y = 3
-		cost = 10
-		prerequisite = { focus = AFR_the_treaty }
+		prerequisite = { focus = AFR_standing }
 		completion_reward = {
 			add_army_experience = 50
-			add_stability = 0.03
 		}
 	}
 
 	focus = {
-		id = AFR_the_old_elite
-		icon = GFX_goal_generic_political_pressure
-		x = 2
-		y = 3
-		cost = 10
-		prerequisite = { focus = AFR_the_soldiers_pay }
-		completion_reward = {
-			add_political_power = 50
-		}
-	}
-
-	focus = {
-		id = AFR_the_harvest
-		icon = GFX_goal_generic_consumer_goods
-		x = 4
-		y = 3
-		cost = 10
-		prerequisite = { focus = AFR_the_old_elite }
-		completion_reward = {
-			add_stability = 0.05
-			add_manpower = 10000
-		}
-	}
-
-	focus = {
-		id = AFR_the_question_again
-		icon = GFX_goal_generic_political_pressure
-		x = 6
-		y = 3
-		cost = 10
-		prerequisite = { focus = AFR_the_harvest }
-		completion_reward = {
-			add_political_power = 50
-		}
-	}
-
-	focus = {
-		id = AFR_the_crown
-		icon = GFX_goal_generic_neutrality_focus
-		x = 0
-		y = 4
-		cost = 10
-		prerequisite = { focus = AFR_the_question_again }
-		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.03
-		}
-	}
-
-	focus = {
-		id = AFR_the_offer
-		icon = GFX_goal_generic_alliance
-		x = 2
-		y = 4
-		cost = 10
-		prerequisite = { focus = AFR_the_crown }
-		completion_reward = {
-			add_political_power = 50
-		}
-	}
-
-	focus = {
-		id = AFR_the_vote
-		icon = GFX_goal_generic_national_unity
+		id = AFR_university
+		icon = GFX_goal_generic_scientific_exchange
 		x = 4
 		y = 4
 		cost = 10
-		prerequisite = { focus = AFR_the_offer }
+		prerequisite = { focus = AFR_roads }
 		completion_reward = {
-			add_stability = 0.05
-			add_political_power = 50
+			add_research_slot = 1
 		}
 	}
 
 	focus = {
 		id = AFR_rejoin
-		icon = GFX_goal_generic_major_alliance
-		x = 0
-		y = 5
+		icon = GFX_goal_generic_major_war
+		x = 2
+		y = 4
 		cost = 10
-		prerequisite = { focus = AFR_the_vote }
+		prerequisite = { focus = AFR_provincial_army }
 		completion_reward = {
 			PDV = { annex_country = { target = ROOT transfer_troops = yes } }
 		}
 	}
 
-	continuous_focus_position = {
-		x = 60
-		y = 1000
+	focus = {
+		id = AFR_militia_law
+		icon = GFX_goal_generic_defence
+		x = 6
+		y = 4
+		cost = 10
+		prerequisite = { focus = AFR_cadre }
+		completion_reward = {
+			add_manpower = 20000
+			add_war_support = 0.03
+		}
 	}
+
 }

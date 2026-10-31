@@ -1,4 +1,5 @@
 capital = 407
+set_research_slots = 2
 recruit_character = MAH_ruler
 
 

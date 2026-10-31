@@ -1,4 +1,5 @@
 capital = 380
+set_research_slots = 4
 recruit_character = VRK_ruler
 
 

@@ -11,7 +11,7 @@ state={
 		owner = PDV
 		controller = PDV
 		add_core_of = PDV
-		add_core_of = SUN
+		add_core_of = BRR
 		
 		buildings = {
 			infrastructure = 1

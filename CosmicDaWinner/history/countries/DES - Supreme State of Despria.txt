@@ -1,4 +1,5 @@
 capital = 351
+set_research_slots = 2
 recruit_character = DES_ruler
 recruit_character = DES_ruler_democratic
 recruit_character = DES_ruler_communist

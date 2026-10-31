@@ -1,4 +1,5 @@
 capital = 126
+set_research_slots = 4
 recruit_character = FSO_ruler
 
 

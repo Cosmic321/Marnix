@@ -1,4 +1,5 @@
 capital = 588
+set_research_slots = 2
 recruit_character = DPJ_ruler
 recruit_character = DPJ_ruler_neutral
 

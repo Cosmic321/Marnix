@@ -1,4 +1,5 @@
 capital = 459
+set_research_slots = 2
 recruit_character = ARE_ruler
 
 

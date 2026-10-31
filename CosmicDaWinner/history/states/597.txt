@@ -3,7 +3,7 @@ state={
 	name="STATE_597"
 	manpower = 1114100
 	
-	state_category = large_town
+	state_category = pastoral
 	history={
 		victory_points = {
 			10064 10

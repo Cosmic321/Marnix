@@ -1,4 +1,5 @@
 capital = 39
+set_research_slots = 2
 recruit_character = HRT_ruler
 
 
