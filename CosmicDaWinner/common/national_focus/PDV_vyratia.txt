@@ -1,7 +1,7 @@
-# Vyratia (PDV) - four roads out of the Directorate, each forty focuses deep, plus army/air and navy side trees.
-# Layout: the four roads open side by side at the top; each road runs a trunk down the middle with
-# four ribbon branches braided left and right, opening one after another as the road advances.
-# Army/air and navy sit in the rightmost columns. Every focus carries its lore as a tooltip.
+# Vyratia (PDV) - four roads out of the Directorate, forty focuses each, plus army/air and navy.
+# All four roads open side by side at the top. Each road is a lattice: a row of four focuses,
+# then a hub that requires all four of them, then the next row. The middle cannot be rushed,
+# because the middle is gated by the sides. Army/air and navy stand side by side at the far right.
 focus_tree = {
 	id = pdv_focus
 	country = {
@@ -20,7 +20,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = {
 			custom_effect_tooltip = PDV_the_directorate_desc
-			add_political_power = 50
+												add_political_power = 50
 			add_stability = 0.03
 		}
 	}
@@ -34,6 +34,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = PDV_four_roads_desc
 			add_political_power = 25
+			add_command_power = 25
 		}
 	}
 	focus = {
@@ -46,6 +47,8 @@ focus_tree = {
 		prerequisite = { focus = PDV_four_roads }
 		completion_reward = {
 			custom_effect_tooltip = PDV_cm_review_desc
+			set_politics = { ruling_party = communism elections_allowed = no }
+			add_popularity = { ideology = communism popularity = 0.10 }
 			remove_ideas = PDV_purged_officer_corps
 			add_ideas = PDV_officers_returning
 			add_army_experience = 25
@@ -61,6 +64,8 @@ focus_tree = {
 		prerequisite = { focus = PDV_four_roads }
 		completion_reward = {
 			custom_effect_tooltip = PDV_dm_review_desc
+			set_politics = { ruling_party = democratic elections_allowed = yes }
+			add_popularity = { ideology = democratic popularity = 0.15 }
 			remove_ideas = PDV_purged_officer_corps
 			add_ideas = PDV_officers_returning
 			remove_ideas = PDV_hollow_army
@@ -70,113 +75,118 @@ focus_tree = {
 	}
 	focus = {
 		id = PDV_af_root
-		icon = GFX_pdv_af_root
-		x = 34
+		icon = GFX_goal_generic_army_doctrines
+		x = 33
 		y = 2
 		cost = 10
 		prerequisite = { focus = PDV_four_roads }
 		completion_reward = {
 			custom_effect_tooltip = PDV_af_root_desc
-			add_army_experience = 25
+												add_army_experience = 25
 			add_political_power = 25
 		}
 	}
 	focus = {
 		id = PDV_cm_c0_0
-		icon = GFX_pdv_cm_c0_0
-		x = 2
-		y = 5
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 0
+		y = 4
 		cost = 10
 		prerequisite = { focus = PDV_cm_spine1 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_cm_c0_0_desc
-			add_political_power = 25
+			random_owned_controlled_state = {
+				limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } }
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+			}
 		}
 	}
 	focus = {
 		id = PDV_cm_c1_0
-		icon = GFX_pdv_cm_c1_0
-		x = 4
-		y = 9
+		icon = GFX_goal_generic_propaganda
+		x = 2
+		y = 4
 		cost = 10
-		prerequisite = { focus = PDV_cm_spine2 }
+		prerequisite = { focus = PDV_cm_spine1 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_cm_c1_0_desc
-			add_stability = 0.03
+												add_stability = 0.03
 		}
 	}
 	focus = {
 		id = PDV_cm_spine1
-		icon = GFX_pdv_cm_spine1
+		icon = GFX_goal_generic_army_doctrines
 		x = 3
 		y = 3
 		cost = 10
 		prerequisite = { focus = PDV_cm_review }
 		completion_reward = {
 			custom_effect_tooltip = PDV_cm_spine1_desc
-			remove_ideas = PDV_hollow_army
+												remove_ideas = PDV_hollow_army
 			add_ideas = PDV_army_rebuilding
 			add_army_experience = 25
 		}
 	}
 	focus = {
 		id = PDV_cm_c2_0
-		icon = GFX_pdv_cm_c2_0
-		x = 2
-		y = 14
+		icon = GFX_goal_support_communism
+		x = 4
+		y = 4
 		cost = 10
-		prerequisite = { focus = PDV_cm_spine3 }
+		prerequisite = { focus = PDV_cm_spine1 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_cm_c2_0_desc
-			add_army_experience = 25
+												add_army_experience = 25
 		}
 	}
 	focus = {
 		id = PDV_cm_c3_0
-		icon = GFX_pdv_cm_c3_0
-		x = 4
-		y = 19
+		icon = GFX_goal_generic_improve_relations
+		x = 6
+		y = 4
 		cost = 10
-		prerequisite = { focus = PDV_cm_spine4 }
+		prerequisite = { focus = PDV_cm_spine1 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_cm_c3_0_desc
+			add_command_power = 30
 			add_political_power = 25
 		}
 	}
 	focus = {
 		id = PDV_dm_c0_0
-		icon = GFX_pdv_dm_c0_0
-		x = 10
-		y = 5
+		icon = GFX_goal_generic_propaganda
+		x = 8
+		y = 4
 		cost = 10
 		prerequisite = { focus = PDV_dm_spine1 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_dm_c0_0_desc
-			add_political_power = 25
+			add_stability = 0.03
+			add_command_power = 25
 		}
 	}
 	focus = {
 		id = PDV_dm_c1_0
-		icon = GFX_pdv_dm_c1_0
-		x = 12
-		y = 9
+		icon = GFX_goal_generic_propaganda
+		x = 10
+		y = 4
 		cost = 10
-		prerequisite = { focus = PDV_dm_spine2 }
+		prerequisite = { focus = PDV_dm_spine1 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_dm_c1_0_desc
-			add_stability = 0.03
+												add_stability = 0.03
 		}
 	}
 	focus = {
 		id = PDV_dm_spine1
-		icon = GFX_pdv_dm_spine1
+		icon = GFX_goal_support_democracy
 		x = 11
 		y = 3
 		cost = 10
 		prerequisite = { focus = PDV_dm_review }
 		completion_reward = {
 			custom_effect_tooltip = PDV_dm_spine1_desc
-			remove_ideas = PDV_officers_returning
+												remove_ideas = PDV_officers_returning
 			add_ideas = PDV_officers_settling
 			remove_ideas = PDV_army_rebuilding
 			add_ideas = PDV_army_refitting
@@ -185,31 +195,32 @@ focus_tree = {
 	}
 	focus = {
 		id = PDV_dm_c2_0
-		icon = GFX_pdv_dm_c2_0
-		x = 10
-		y = 14
+		icon = GFX_goal_support_democracy
+		x = 12
+		y = 4
 		cost = 10
-		prerequisite = { focus = PDV_dm_spine3 }
+		prerequisite = { focus = PDV_dm_spine1 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_dm_c2_0_desc
-			add_army_experience = 25
+												add_army_experience = 25
 		}
 	}
 	focus = {
 		id = PDV_dm_c3_0
-		icon = GFX_pdv_dm_c3_0
-		x = 12
-		y = 19
+		icon = GFX_goal_generic_improve_relations
+		x = 14
+		y = 4
 		cost = 10
-		prerequisite = { focus = PDV_dm_spine4 }
+		prerequisite = { focus = PDV_dm_spine1 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_dm_c3_0_desc
+			add_command_power = 30
 			add_political_power = 25
 		}
 	}
 	focus = {
 		id = PDV_af_armour
-		icon = GFX_pdv_af_armour
+		icon = GFX_goal_generic_propaganda
 		x = 32
 		y = 3
 		cost = 10
@@ -217,58 +228,60 @@ focus_tree = {
 		prerequisite = { focus = PDV_af_root }
 		completion_reward = {
 			custom_effect_tooltip = PDV_af_armour_desc
-			add_army_experience = 25
+												add_army_experience = 25
 			add_tech_bonus = { name = cdw_pdv_armour_research bonus = 0.5 uses = 1 category = armor }
 		}
 	}
 	focus = {
 		id = PDV_af_guns
-		icon = GFX_pdv_af_guns
-		x = 36
+		icon = GFX_goal_generic_propaganda
+		x = 35
 		y = 3
 		cost = 10
 		mutually_exclusive = { focus = PDV_af_armour }
 		prerequisite = { focus = PDV_af_root }
 		completion_reward = {
 			custom_effect_tooltip = PDV_af_guns_desc
-			add_army_experience = 25
+												add_army_experience = 25
 			add_equipment_to_stockpile = { type = artillery_equipment amount = 600 }
 		}
 	}
 	focus = {
 		id = PDV_cm_c0_1
-		icon = GFX_pdv_cm_c0_1
-		x = 1
-		y = 5
+		icon = GFX_goal_generic_production
+		x = 0
+		y = 6
 		cost = 10
-		prerequisite = { focus = PDV_cm_c0_0 }
+		prerequisite = { focus = PDV_cm_spine2 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_cm_c0_1_desc
-			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+												random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
 			add_political_power = 25
 		}
 	}
 	focus = {
 		id = PDV_cm_c1_1
-		icon = GFX_pdv_cm_c1_1
-		x = 5
-		y = 9
+		icon = GFX_goal_generic_construction
+		x = 2
+		y = 6
 		cost = 10
-		prerequisite = { focus = PDV_cm_c1_0 }
+		prerequisite = { focus = PDV_cm_spine2 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_cm_c1_1_desc
-			add_political_power = 25
+			add_manpower = 25000
+			add_stability = 0.02
 		}
 	}
 	focus = {
 		id = PDV_cm_spine2
-		icon = GFX_pdv_cm_spine2
+		icon = GFX_goal_generic_army_doctrines
 		x = 3
-		y = 8
+		y = 5
 		cost = 10
-		prerequisite = { focus = PDV_cm_spine1 }
+		prerequisite = { focus = PDV_cm_c0_0 focus = PDV_cm_c1_0 focus = PDV_cm_c2_0 focus = PDV_cm_c3_0 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_cm_spine2_desc
+			add_ideas = PDV_state_plan
 			remove_ideas = PDV_officers_returning
 			add_ideas = PDV_officers_settling
 			add_army_experience = 30
@@ -276,62 +289,64 @@ focus_tree = {
 	}
 	focus = {
 		id = PDV_cm_c2_1
-		icon = GFX_pdv_cm_c2_1
-		x = 1
-		y = 14
+		icon = GFX_goal_generic_army_tanks
+		x = 4
+		y = 6
 		cost = 10
-		prerequisite = { focus = PDV_cm_c2_0 }
+		prerequisite = { focus = PDV_cm_spine2 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_cm_c2_1_desc
-			random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+												random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
 		}
 	}
 	focus = {
 		id = PDV_cm_c3_1
-		icon = GFX_pdv_cm_c3_1
-		x = 5
-		y = 19
+		icon = GFX_goal_generic_trade
+		x = 6
+		y = 6
 		cost = 10
-		prerequisite = { focus = PDV_cm_c3_0 }
+		prerequisite = { focus = PDV_cm_spine2 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_cm_c3_1_desc
-			add_war_support = 0.03
+												add_war_support = 0.03
 		}
 	}
 	focus = {
 		id = PDV_dm_c0_1
-		icon = GFX_pdv_dm_c0_1
-		x = 9
-		y = 5
+		icon = GFX_goal_generic_production2
+		x = 8
+		y = 6
 		cost = 10
-		prerequisite = { focus = PDV_dm_c0_0 }
+		prerequisite = { focus = PDV_dm_spine2 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_dm_c0_1_desc
-			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+												random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
 			add_political_power = 25
 		}
 	}
 	focus = {
 		id = PDV_dm_c1_1
-		icon = GFX_pdv_dm_c1_1
-		x = 13
-		y = 9
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 10
+		y = 6
 		cost = 10
-		prerequisite = { focus = PDV_dm_c1_0 }
+		prerequisite = { focus = PDV_dm_spine2 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_dm_c1_1_desc
-			add_political_power = 25
+			add_manpower = 25000
+			add_stability = 0.03
 		}
 	}
 	focus = {
 		id = PDV_dm_spine2
-		icon = GFX_pdv_dm_spine2
+		icon = GFX_goal_support_democracy
 		x = 11
-		y = 8
+		y = 5
 		cost = 10
-		prerequisite = { focus = PDV_dm_spine1 }
+		prerequisite = { focus = PDV_dm_c0_0 focus = PDV_dm_c1_0 focus = PDV_dm_c2_0 focus = PDV_dm_c3_0 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_dm_spine2_desc
+			add_ideas = PDV_republic_charter
 			remove_ideas = PDV_officers_settling
 			add_stability = 0.04
 			add_army_experience = 40
@@ -339,326 +354,337 @@ focus_tree = {
 	}
 	focus = {
 		id = PDV_dm_c2_1
-		icon = GFX_pdv_dm_c2_1
-		x = 9
-		y = 14
+		icon = GFX_goal_generic_defence
+		x = 12
+		y = 6
 		cost = 10
-		prerequisite = { focus = PDV_dm_c2_0 }
+		prerequisite = { focus = PDV_dm_spine2 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_dm_c2_1_desc
-			random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+												random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
 		}
 	}
 	focus = {
 		id = PDV_dm_c3_1
-		icon = GFX_pdv_dm_c3_1
-		x = 13
-		y = 19
+		icon = GFX_goal_generic_trade
+		x = 14
+		y = 6
 		cost = 10
-		prerequisite = { focus = PDV_dm_c3_0 }
+		prerequisite = { focus = PDV_dm_spine2 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_dm_c3_1_desc
-			add_war_support = 0.03
+												add_war_support = 0.03
 		}
 	}
 	focus = {
 		id = PDV_af_hulls
-		icon = GFX_pdv_af_hulls
+		icon = GFX_goal_generic_build_tank
 		x = 32
 		y = 4
 		cost = 10
 		prerequisite = { focus = PDV_af_armour }
 		completion_reward = {
 			custom_effect_tooltip = PDV_af_hulls_desc
-			random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+												random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
 		}
 	}
 	focus = {
 		id = PDV_af_barrels
-		icon = GFX_pdv_af_barrels
-		x = 36
+		icon = GFX_goal_generic_build_tank
+		x = 35
 		y = 4
 		cost = 10
 		prerequisite = { focus = PDV_af_guns }
 		completion_reward = {
 			custom_effect_tooltip = PDV_af_barrels_desc
-			random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+												random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
 		}
 	}
 	focus = {
 		id = PDV_cm_c0_2
-		icon = GFX_pdv_cm_c0_2
+		icon = GFX_goal_generic_construct_mil_factory
 		x = 0
-		y = 5
+		y = 7
 		cost = 10
 		prerequisite = { focus = PDV_cm_c0_1 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_cm_c0_2_desc
-			add_political_power = 40
+			random_owned_controlled_state = {
+				limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } }
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+			}
+			add_war_support = 0.02
 		}
 	}
 	focus = {
 		id = PDV_cm_c1_2
-		icon = GFX_pdv_cm_c1_2
-		x = 6
-		y = 9
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 2
+		y = 7
 		cost = 10
 		prerequisite = { focus = PDV_cm_c1_1 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_cm_c1_2_desc
-			add_stability = 0.03
+												add_stability = 0.03
 			add_manpower = 15000
 		}
 	}
 	focus = {
 		id = PDV_cm_spine3
-		icon = GFX_pdv_cm_spine3
+		icon = GFX_goal_generic_small_arms
 		x = 3
-		y = 13
+		y = 8
 		cost = 10
-		prerequisite = { focus = PDV_cm_spine2 }
+		prerequisite = { focus = PDV_cm_c0_2 focus = PDV_cm_c1_2 focus = PDV_cm_c2_2 focus = PDV_cm_c3_2 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_cm_spine3_desc
-			remove_ideas = PDV_army_rebuilding
+												remove_ideas = PDV_army_rebuilding
 			add_ideas = PDV_army_refitting
 			add_army_experience = 30
 		}
 	}
 	focus = {
 		id = PDV_cm_c2_2
-		icon = GFX_pdv_cm_c2_2
-		x = 0
-		y = 14
+		icon = GFX_goal_generic_army_artillery
+		x = 4
+		y = 7
 		cost = 10
 		prerequisite = { focus = PDV_cm_c2_1 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_cm_c2_2_desc
-			add_army_experience = 40
+												add_army_experience = 40
 		}
 	}
 	focus = {
 		id = PDV_cm_c3_2
-		icon = GFX_pdv_cm_c3_2
+		icon = GFX_goal_generic_more_territorial_claims
 		x = 6
-		y = 19
+		y = 7
 		cost = 10
 		prerequisite = { focus = PDV_cm_c3_1 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_cm_c3_2_desc
-			add_political_power = 40
+			add_war_support = 0.04
+			add_army_experience = 25
 		}
 	}
 	focus = {
 		id = PDV_dm_c0_2
-		icon = GFX_pdv_dm_c0_2
+		icon = GFX_goal_generic_production2
 		x = 8
-		y = 5
+		y = 7
 		cost = 10
 		prerequisite = { focus = PDV_dm_c0_1 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_dm_c0_2_desc
-			add_political_power = 40
+			add_tech_bonus = { name = cdw_pdv_bank_research bonus = 0.5 uses = 1 category = industry }
+			add_stability = 0.02
 		}
 	}
 	focus = {
 		id = PDV_dm_c1_2
-		icon = GFX_pdv_dm_c1_2
-		x = 14
-		y = 9
+		icon = GFX_goal_generic_construction
+		x = 10
+		y = 7
 		cost = 10
 		prerequisite = { focus = PDV_dm_c1_1 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_dm_c1_2_desc
-			add_stability = 0.03
+												add_stability = 0.03
 			add_manpower = 15000
 		}
 	}
 	focus = {
 		id = PDV_dm_spine3
-		icon = GFX_pdv_dm_spine3
+		icon = GFX_goal_support_democracy
 		x = 11
-		y = 13
+		y = 8
 		cost = 10
-		prerequisite = { focus = PDV_dm_spine2 }
+		prerequisite = { focus = PDV_dm_c0_2 focus = PDV_dm_c1_2 focus = PDV_dm_c2_2 focus = PDV_dm_c3_2 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_dm_spine3_desc
-			remove_ideas = PDV_army_refitting
+												remove_ideas = PDV_army_refitting
 			add_army_experience = 50
 			add_war_support = 0.03
 		}
 	}
 	focus = {
 		id = PDV_dm_c2_2
-		icon = GFX_pdv_dm_c2_2
-		x = 8
-		y = 14
+		icon = GFX_goal_generic_position_armies
+		x = 12
+		y = 7
 		cost = 10
 		prerequisite = { focus = PDV_dm_c2_1 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_dm_c2_2_desc
-			add_army_experience = 40
+												add_army_experience = 40
 		}
 	}
 	focus = {
 		id = PDV_dm_c3_2
-		icon = GFX_pdv_dm_c3_2
+		icon = GFX_goal_generic_occupy_states_coastal
 		x = 14
-		y = 19
+		y = 7
 		cost = 10
 		prerequisite = { focus = PDV_dm_c3_1 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_dm_c3_2_desc
-			add_political_power = 40
+			add_war_support = 0.03
+			add_navy_experience = 25
 		}
 	}
 	focus = {
 		id = PDV_af_columns
-		icon = GFX_pdv_af_columns
+		icon = GFX_goal_generic_army_motorized
 		x = 32
 		y = 5
 		cost = 10
 		prerequisite = { focus = PDV_af_hulls }
 		completion_reward = {
 			custom_effect_tooltip = PDV_af_columns_desc
-			add_army_experience = 40
+												add_army_experience = 40
 		}
 	}
 	focus = {
 		id = PDV_af_battery
-		icon = GFX_pdv_af_battery
-		x = 36
+		icon = GFX_goal_generic_army_artillery2
+		x = 35
 		y = 5
 		cost = 10
 		prerequisite = { focus = PDV_af_barrels }
 		completion_reward = {
 			custom_effect_tooltip = PDV_af_battery_desc
-			add_army_experience = 40
+												add_army_experience = 40
 		}
 	}
 	focus = {
 		id = PDV_cm_c0_3
-		icon = GFX_pdv_cm_c0_3
+		icon = GFX_goal_generic_consumer_goods
 		x = 0
-		y = 6
+		y = 9
 		cost = 10
-		prerequisite = { focus = PDV_cm_c0_2 }
+		prerequisite = { focus = PDV_cm_spine3 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_cm_c0_3_desc
-			add_stability = 0.03
+												add_stability = 0.03
 			add_political_power = 25
 		}
 	}
 	focus = {
 		id = PDV_cm_c1_3
-		icon = GFX_pdv_cm_c1_3
-		x = 6
-		y = 10
+		icon = GFX_goal_generic_propaganda
+		x = 2
+		y = 9
 		cost = 10
-		prerequisite = { focus = PDV_cm_c1_2 }
+		prerequisite = { focus = PDV_cm_spine3 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_cm_c1_3_desc
-			add_political_power = 40
+			add_manpower = 30000
+			add_political_power = 25
 		}
 	}
 	focus = {
 		id = PDV_cm_spine4
-		icon = GFX_pdv_cm_spine4
+		icon = GFX_goal_generic_position_armies
 		x = 3
-		y = 18
+		y = 11
 		cost = 10
-		prerequisite = { focus = PDV_cm_spine3 }
+		prerequisite = { focus = PDV_cm_c0_4 focus = PDV_cm_c1_4 focus = PDV_cm_c2_4 focus = PDV_cm_c3_4 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_cm_spine4_desc
+			add_ideas = PDV_party_state
 			remove_ideas = PDV_officers_settling
 			add_army_experience = 40
 		}
 	}
 	focus = {
 		id = PDV_cm_c2_3
-		icon = GFX_pdv_cm_c2_3
-		x = 0
-		y = 15
+		icon = GFX_goal_generic_position_armies
+		x = 4
+		y = 9
 		cost = 10
-		prerequisite = { focus = PDV_cm_c2_2 }
+		prerequisite = { focus = PDV_cm_spine3 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_cm_c2_3_desc
-			add_war_support = 0.03
+												add_war_support = 0.03
 		}
 	}
 	focus = {
 		id = PDV_cm_c3_3
-		icon = GFX_pdv_cm_c3_3
+		icon = GFX_goal_support_communism
 		x = 6
-		y = 20
+		y = 9
 		cost = 10
-		prerequisite = { focus = PDV_cm_c3_2 }
+		prerequisite = { focus = PDV_cm_spine3 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_cm_c3_3_desc
-			add_political_power = 100
+												add_political_power = 100
 			add_stability = 0.05
 			add_war_support = 0.03
 		}
 	}
 	focus = {
 		id = PDV_dm_c0_3
-		icon = GFX_pdv_dm_c0_3
+		icon = GFX_goal_generic_consumer_goods
 		x = 8
-		y = 6
+		y = 9
 		cost = 10
-		prerequisite = { focus = PDV_dm_c0_2 }
+		prerequisite = { focus = PDV_dm_spine3 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_dm_c0_3_desc
-			add_stability = 0.03
+												add_stability = 0.03
 			add_political_power = 25
 		}
 	}
 	focus = {
 		id = PDV_dm_c1_3
-		icon = GFX_pdv_dm_c1_3
-		x = 14
-		y = 10
+		icon = GFX_goal_generic_propaganda
+		x = 10
+		y = 9
 		cost = 10
-		prerequisite = { focus = PDV_dm_c1_2 }
+		prerequisite = { focus = PDV_dm_spine3 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_dm_c1_3_desc
+			add_stability = 0.04
 			add_political_power = 40
 		}
 	}
 	focus = {
 		id = PDV_dm_spine4
-		icon = GFX_pdv_dm_spine4
+		icon = GFX_goal_generic_national_unity
 		x = 11
-		y = 18
+		y = 11
 		cost = 10
-		prerequisite = { focus = PDV_dm_spine3 }
+		prerequisite = { focus = PDV_dm_c0_4 focus = PDV_dm_c1_4 focus = PDV_dm_c2_4 focus = PDV_dm_c3_4 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_dm_spine4_desc
+			add_ideas = PDV_open_society
 			add_research_slot = 1
 			add_political_power = 50
 		}
 	}
 	focus = {
 		id = PDV_dm_c2_3
-		icon = GFX_pdv_dm_c2_3
-		x = 8
-		y = 15
+		icon = GFX_goal_generic_position_armies
+		x = 12
+		y = 9
 		cost = 10
-		prerequisite = { focus = PDV_dm_c2_2 }
+		prerequisite = { focus = PDV_dm_spine3 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_dm_c2_3_desc
-			add_war_support = 0.03
+												add_war_support = 0.03
 		}
 	}
 	focus = {
 		id = PDV_dm_c3_3
-		icon = GFX_pdv_dm_c3_3
+		icon = GFX_goal_generic_alliance
 		x = 14
-		y = 20
+		y = 9
 		cost = 10
-		prerequisite = { focus = PDV_dm_c3_2 }
+		prerequisite = { focus = PDV_dm_spine3 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_dm_c3_3_desc
-			release_puppet = SUN
+												release_puppet = SUN
 			release_puppet = BRR
 			release_puppet = AFR
 			release_puppet = VYR
@@ -668,262 +694,271 @@ focus_tree = {
 	}
 	focus = {
 		id = PDV_af_combined
-		icon = GFX_pdv_af_combined
+		icon = GFX_goal_generic_army_doctrines
 		x = 32
 		y = 6
 		cost = 10
 		prerequisite = { focus = PDV_af_columns }
 		completion_reward = {
 			custom_effect_tooltip = PDV_af_combined_desc
-			add_army_experience = 50
+												add_army_experience = 50
 			add_war_support = 0.03
 		}
 	}
 	focus = {
 		id = PDV_af_counterbattery
-		icon = GFX_pdv_af_counterbattery
-		x = 36
+		icon = GFX_goal_generic_army_artillery2
+		x = 35
 		y = 6
 		cost = 10
 		prerequisite = { focus = PDV_af_battery }
 		completion_reward = {
 			custom_effect_tooltip = PDV_af_counterbattery_desc
-			add_army_experience = 50
+												add_army_experience = 50
 			add_war_support = 0.03
 		}
 	}
 	focus = {
 		id = PDV_cm_c0_4
-		icon = GFX_pdv_cm_c0_4
-		x = 1
-		y = 6
+		icon = GFX_goal_generic_production2
+		x = 0
+		y = 10
 		cost = 10
 		prerequisite = { focus = PDV_cm_c0_3 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_cm_c0_4_desc
-			add_political_power = 50
+			add_tech_bonus = { name = cdw_pdv_bank_research bonus = 0.5 uses = 1 category = industry }
+			add_stability = 0.02
 		}
 	}
 	focus = {
 		id = PDV_cm_c1_4
-		icon = GFX_pdv_cm_c1_4
-		x = 5
+		icon = GFX_goal_generic_propaganda
+		x = 2
 		y = 10
 		cost = 10
 		prerequisite = { focus = PDV_cm_c1_3 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_cm_c1_4_desc
-			add_stability = 0.04
+												add_stability = 0.04
 		}
 	}
 	focus = {
 		id = PDV_cm_spine5
-		icon = GFX_pdv_cm_spine5
+		icon = GFX_goal_support_communism
 		x = 3
-		y = 22
+		y = 14
 		cost = 10
-		prerequisite = { focus = PDV_cm_spine4 }
+		prerequisite = { focus = PDV_cm_c0_6 focus = PDV_cm_c1_6 focus = PDV_cm_c2_6 focus = PDV_cm_c3_6 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_cm_spine5_desc
-			remove_ideas = PDV_army_refitting
+												remove_ideas = PDV_army_refitting
 			add_army_experience = 50
 			add_war_support = 0.03
 		}
 	}
 	focus = {
 		id = PDV_cm_c2_4
-		icon = GFX_pdv_cm_c2_4
-		x = 1
-		y = 15
+		icon = GFX_goal_generic_position_armies
+		x = 4
+		y = 10
 		cost = 10
 		prerequisite = { focus = PDV_cm_c2_3 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_cm_c2_4_desc
-			add_army_experience = 50
+												add_army_experience = 50
 		}
 	}
 	focus = {
 		id = PDV_cm_c3_4
-		icon = GFX_pdv_cm_c3_4
-		x = 5
-		y = 20
+		icon = GFX_goal_generic_alliance
+		x = 6
+		y = 10
 		cost = 10
 		prerequisite = { focus = PDV_cm_c3_3 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_cm_c3_4_desc
-			add_political_power = 50
+			add_stability = 0.03
+			add_command_power = 25
 		}
 	}
 	focus = {
 		id = PDV_dm_c0_4
-		icon = GFX_pdv_dm_c0_4
-		x = 9
-		y = 6
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 8
+		y = 10
 		cost = 10
 		prerequisite = { focus = PDV_dm_c0_3 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_dm_c0_4_desc
-			add_political_power = 50
+			random_owned_controlled_state = {
+				limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } }
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+			add_stability = 0.02
 		}
 	}
 	focus = {
 		id = PDV_dm_c1_4
-		icon = GFX_pdv_dm_c1_4
-		x = 13
+		icon = GFX_goal_support_democracy
+		x = 10
 		y = 10
 		cost = 10
 		prerequisite = { focus = PDV_dm_c1_3 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_dm_c1_4_desc
-			add_stability = 0.04
+												add_stability = 0.04
 		}
 	}
 	focus = {
 		id = PDV_dm_spine5
-		icon = GFX_pdv_dm_spine5
+		icon = GFX_goal_generic_national_unity
 		x = 11
-		y = 22
+		y = 14
 		cost = 10
-		prerequisite = { focus = PDV_dm_spine4 }
+		prerequisite = { focus = PDV_dm_c0_6 focus = PDV_dm_c1_6 focus = PDV_dm_c2_6 focus = PDV_dm_c3_6 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_dm_spine5_desc
-			add_stability = 0.05
+												add_stability = 0.05
 			add_political_power = 50
 		}
 	}
 	focus = {
 		id = PDV_dm_c2_4
-		icon = GFX_pdv_dm_c2_4
-		x = 9
-		y = 15
+		icon = GFX_goal_support_democracy
+		x = 12
+		y = 10
 		cost = 10
 		prerequisite = { focus = PDV_dm_c2_3 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_dm_c2_4_desc
-			add_army_experience = 50
+												add_army_experience = 50
 		}
 	}
 	focus = {
 		id = PDV_dm_c3_4
-		icon = GFX_pdv_dm_c3_4
-		x = 13
-		y = 20
+		icon = GFX_goal_generic_demand_territory
+		x = 14
+		y = 10
 		cost = 10
 		prerequisite = { focus = PDV_dm_c3_3 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_dm_c3_4_desc
-			add_political_power = 50
+			add_stability = 0.03
+			add_command_power = 25
 		}
 	}
 	focus = {
 		id = PDV_af_manual
-		icon = GFX_pdv_af_manual
-		x = 34
+		icon = GFX_goal_generic_army_doctrines
+		x = 33
 		y = 7
 		cost = 10
 		prerequisite = { focus = PDV_af_combined focus = PDV_af_counterbattery }
 		completion_reward = {
 			custom_effect_tooltip = PDV_af_manual_desc
-			add_army_experience = 75
+												add_army_experience = 75
 			add_war_support = 0.04
 		}
 	}
 	focus = {
 		id = PDV_cm_c0_5
-		icon = GFX_pdv_cm_c0_5
-		x = 2
-		y = 6
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 0
+		y = 12
 		cost = 10
-		prerequisite = { focus = PDV_cm_c0_4 }
+		prerequisite = { focus = PDV_cm_spine4 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_cm_c0_5_desc
-			add_stability = 0.04
+												add_stability = 0.04
 		}
 	}
 	focus = {
 		id = PDV_cm_c1_5
-		icon = GFX_pdv_cm_c1_5
-		x = 4
-		y = 10
+		icon = GFX_goal_generic_propaganda
+		x = 2
+		y = 12
 		cost = 10
-		prerequisite = { focus = PDV_cm_c1_4 }
+		prerequisite = { focus = PDV_cm_spine4 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_cm_c1_5_desc
-			add_political_power = 50
+			add_stability = 0.03
+			add_war_support = 0.02
 		}
 	}
 	focus = {
 		id = PDV_cm_spine6
-		icon = GFX_pdv_cm_spine6
+		icon = GFX_goal_support_communism
 		x = 3
-		y = 24
+		y = 16
 		cost = 10
-		prerequisite = { focus = PDV_cm_spine5 }
+		prerequisite = { focus = PDV_cm_c0_7 focus = PDV_cm_c1_7 focus = PDV_cm_c2_7 focus = PDV_cm_c3_7 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_cm_spine6_desc
-			add_ideas = PDV_rebuilt_staff
+												add_ideas = PDV_rebuilt_staff
 			add_research_slot = 1
 			add_war_support = 0.05
 		}
 	}
 	focus = {
 		id = PDV_cm_c2_5
-		icon = GFX_pdv_cm_c2_5
-		x = 2
-		y = 15
+		icon = GFX_goal_generic_defence
+		x = 4
+		y = 12
 		cost = 10
-		prerequisite = { focus = PDV_cm_c2_4 }
+		prerequisite = { focus = PDV_cm_spine4 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_cm_c2_5_desc
-			add_war_support = 0.04
+												add_war_support = 0.04
 		}
 	}
 	focus = {
 		id = PDV_cm_c3_5
-		icon = GFX_pdv_cm_c3_5
-		x = 4
-		y = 20
+		icon = GFX_goal_generic_alliance
+		x = 6
+		y = 12
 		cost = 10
-		prerequisite = { focus = PDV_cm_c3_4 }
+		prerequisite = { focus = PDV_cm_spine4 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_cm_c3_5_desc
-			add_stability = 0.04
+												add_stability = 0.04
 		}
 	}
 	focus = {
 		id = PDV_dm_c0_5
-		icon = GFX_pdv_dm_c0_5
-		x = 10
-		y = 6
+		icon = GFX_goal_generic_production2
+		x = 8
+		y = 12
 		cost = 10
-		prerequisite = { focus = PDV_dm_c0_4 }
+		prerequisite = { focus = PDV_dm_spine4 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_dm_c0_5_desc
-			add_stability = 0.04
+												add_stability = 0.04
 		}
 	}
 	focus = {
 		id = PDV_dm_c1_5
-		icon = GFX_pdv_dm_c1_5
-		x = 12
-		y = 10
+		icon = GFX_goal_generic_national_unity
+		x = 10
+		y = 12
 		cost = 10
-		prerequisite = { focus = PDV_dm_c1_4 }
+		prerequisite = { focus = PDV_dm_spine4 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_dm_c1_5_desc
-			add_political_power = 50
+			add_stability = 0.04
+			add_command_power = 25
 		}
 	}
 	focus = {
 		id = PDV_dm_spine6
-		icon = GFX_pdv_dm_spine6
+		icon = GFX_goal_support_democracy
 		x = 11
-		y = 24
+		y = 16
 		cost = 10
-		prerequisite = { focus = PDV_dm_spine5 }
+		prerequisite = { focus = PDV_dm_c0_7 focus = PDV_dm_c1_7 focus = PDV_dm_c2_7 focus = PDV_dm_c3_7 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_dm_spine6_desc
-			add_ideas = PDV_federal_republic
+												add_ideas = PDV_federal_republic
 			set_cosmetic_tag = PDV_FED
 			add_research_slot = 1
 			add_stability = 0.08
@@ -931,141 +966,149 @@ focus_tree = {
 	}
 	focus = {
 		id = PDV_dm_c2_5
-		icon = GFX_pdv_dm_c2_5
-		x = 10
-		y = 15
+		icon = GFX_goal_generic_small_arms
+		x = 12
+		y = 12
 		cost = 10
-		prerequisite = { focus = PDV_dm_c2_4 }
+		prerequisite = { focus = PDV_dm_spine4 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_dm_c2_5_desc
-			add_war_support = 0.04
+												add_war_support = 0.04
 		}
 	}
 	focus = {
 		id = PDV_dm_c3_5
-		icon = GFX_pdv_dm_c3_5
-		x = 12
-		y = 20
+		icon = GFX_goal_generic_major_alliance
+		x = 14
+		y = 12
 		cost = 10
-		prerequisite = { focus = PDV_dm_c3_4 }
+		prerequisite = { focus = PDV_dm_spine4 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_dm_c3_5_desc
-			add_stability = 0.04
+												add_stability = 0.04
 		}
 	}
 	focus = {
 		id = PDV_af_air
-		icon = GFX_pdv_af_air
-		x = 34
+		icon = GFX_goal_generic_build_airforce
+		x = 33
 		y = 8
 		cost = 10
 		prerequisite = { focus = PDV_af_manual }
 		completion_reward = {
 			custom_effect_tooltip = PDV_af_air_desc
-			add_air_experience = 25
+												add_air_experience = 25
 		}
 	}
 	focus = {
 		id = PDV_cm_c0_6
-		icon = GFX_pdv_cm_c0_6
-		x = 2
-		y = 7
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 0
+		y = 13
 		cost = 10
-		prerequisite = { focus = PDV_cm_c0_5 focus = PDV_cm_spine2 }
+		prerequisite = { focus = PDV_cm_c0_5 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_cm_c0_6_desc
-			add_political_power = 60
+			random_owned_controlled_state = {
+				limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } }
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
 		}
 	}
 	focus = {
 		id = PDV_cm_c1_6
-		icon = GFX_pdv_cm_c1_6
-		x = 4
-		y = 11
+		icon = GFX_goal_support_communism
+		x = 2
+		y = 13
 		cost = 10
-		prerequisite = { focus = PDV_cm_c1_5 focus = PDV_cm_spine3 }
+		prerequisite = { focus = PDV_cm_c1_5 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_cm_c1_6_desc
-			add_stability = 0.05
+												add_stability = 0.05
 		}
 	}
 	focus = {
 		id = PDV_cm_c2_6
-		icon = GFX_pdv_cm_c2_6
-		x = 2
-		y = 16
+		icon = GFX_goal_support_communism
+		x = 4
+		y = 13
 		cost = 10
-		prerequisite = { focus = PDV_cm_c2_5 focus = PDV_cm_spine4 }
+		prerequisite = { focus = PDV_cm_c2_5 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_cm_c2_6_desc
-			add_army_experience = 50
+												add_army_experience = 50
 			add_manpower = 20000
 		}
 	}
 	focus = {
 		id = PDV_cm_c3_6
-		icon = GFX_pdv_cm_c3_6
-		x = 4
-		y = 21
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 6
+		y = 13
 		cost = 10
-		prerequisite = { focus = PDV_cm_c3_5 focus = PDV_cm_spine5 }
+		prerequisite = { focus = PDV_cm_c3_5 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_cm_c3_6_desc
-			add_political_power = 60
+			add_war_support = 0.03
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1500 }
 		}
 	}
 	focus = {
 		id = PDV_dm_c0_6
-		icon = GFX_pdv_dm_c0_6
-		x = 10
-		y = 7
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 8
+		y = 13
 		cost = 10
-		prerequisite = { focus = PDV_dm_c0_5 focus = PDV_dm_spine2 }
+		prerequisite = { focus = PDV_dm_c0_5 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_dm_c0_6_desc
-			add_political_power = 60
+			random_owned_controlled_state = {
+				limit = { free_building_slots = { building = infrastructure size > 0 include_locked = yes } }
+				add_building_construction = { type = infrastructure level = 2 instant_build = yes }
+			}
 		}
 	}
 	focus = {
 		id = PDV_dm_c1_6
-		icon = GFX_pdv_dm_c1_6
-		x = 12
-		y = 11
+		icon = GFX_goal_generic_scientific_exchange
+		x = 10
+		y = 13
 		cost = 10
-		prerequisite = { focus = PDV_dm_c1_5 focus = PDV_dm_spine3 }
+		prerequisite = { focus = PDV_dm_c1_5 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_dm_c1_6_desc
-			add_stability = 0.05
+												add_stability = 0.05
 		}
 	}
 	focus = {
 		id = PDV_dm_c2_6
-		icon = GFX_pdv_dm_c2_6
-		x = 10
-		y = 16
+		icon = GFX_goal_generic_defence
+		x = 12
+		y = 13
 		cost = 10
-		prerequisite = { focus = PDV_dm_c2_5 focus = PDV_dm_spine4 }
+		prerequisite = { focus = PDV_dm_c2_5 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_dm_c2_6_desc
-			add_army_experience = 50
+												add_army_experience = 50
 			add_manpower = 20000
 		}
 	}
 	focus = {
 		id = PDV_dm_c3_6
-		icon = GFX_pdv_dm_c3_6
-		x = 12
-		y = 21
+		icon = GFX_goal_generic_neutrality_focus
+		x = 14
+		y = 13
 		cost = 10
-		prerequisite = { focus = PDV_dm_c3_5 focus = PDV_dm_spine5 }
+		prerequisite = { focus = PDV_dm_c3_5 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_dm_c3_6_desc
-			add_political_power = 60
+			add_stability = 0.04
+			add_equipment_to_stockpile = { type = support_equipment amount = 1000 }
 		}
 	}
 	focus = {
 		id = PDV_af_fighters
-		icon = GFX_pdv_af_fighters
+		icon = GFX_goal_generic_air_fighter2
 		x = 32
 		y = 9
 		cost = 10
@@ -1073,213 +1116,217 @@ focus_tree = {
 		prerequisite = { focus = PDV_af_air }
 		completion_reward = {
 			custom_effect_tooltip = PDV_af_fighters_desc
-			add_air_experience = 40
+												add_air_experience = 40
 			add_tech_bonus = { name = cdw_pdv_fighter_research bonus = 0.5 uses = 1 category = light_fighter }
 		}
 	}
 	focus = {
 		id = PDV_af_cas
-		icon = GFX_pdv_af_cas
-		x = 36
-		y = 9
+		icon = GFX_goal_generic_CAS
+		x = 35
+		y = 10
 		cost = 10
 		mutually_exclusive = { focus = PDV_af_fighters }
-		prerequisite = { focus = PDV_af_air }
+		prerequisite = { focus = PDV_af_airfields }
 		completion_reward = {
 			custom_effect_tooltip = PDV_af_cas_desc
-			add_air_experience = 40
+												add_air_experience = 40
 			add_tech_bonus = { name = cdw_pdv_cas_research bonus = 0.5 uses = 1 category = cas }
 		}
 	}
 	focus = {
 		id = PDV_cm_c0_7
-		icon = GFX_pdv_cm_c0_7
-		x = 1
-		y = 7
+		icon = GFX_goal_generic_production
+		x = 0
+		y = 15
 		cost = 10
 		mutually_exclusive = { focus = PDV_cm_c3_7 }
-		prerequisite = { focus = PDV_cm_c0_6 }
+		prerequisite = { focus = PDV_cm_spine5 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_cm_c0_7_desc
-			add_political_power = 75
+			add_research_slot = 1
+			add_stability = 0.03
 		}
 	}
 	focus = {
 		id = PDV_cm_c1_7
-		icon = GFX_pdv_cm_c1_7
-		x = 5
-		y = 11
+		icon = GFX_goal_generic_national_unity
+		x = 2
+		y = 15
 		cost = 10
-		prerequisite = { focus = PDV_cm_c1_6 }
+		prerequisite = { focus = PDV_cm_spine5 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_cm_c1_7_desc
-			add_political_power = 75
+												add_political_power = 75
 			add_stability = 0.03
 		}
 	}
 	focus = {
 		id = PDV_cm_final
-		icon = GFX_pdv_cm_final
+		icon = GFX_goal_support_communism
 		x = 3
-		y = 26
+		y = 17
 		cost = 10
 		prerequisite = { focus = PDV_cm_spine6 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_cm_final_desc
-			add_political_power = 60
+												add_political_power = 60
 			add_war_support = 0.04
 		}
 	}
 	focus = {
 		id = PDV_cm_c2_7
-		icon = GFX_pdv_cm_c2_7
-		x = 1
-		y = 16
+		icon = GFX_goal_support_communism
+		x = 4
+		y = 15
 		cost = 10
-		prerequisite = { focus = PDV_cm_c2_6 }
+		prerequisite = { focus = PDV_cm_spine5 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_cm_c2_7_desc
-			add_army_experience = 75
+												add_army_experience = 75
 			add_war_support = 0.05
 		}
 	}
 	focus = {
 		id = PDV_cm_c3_7
-		icon = GFX_pdv_cm_c3_7
-		x = 5
-		y = 21
+		icon = GFX_goal_generic_major_war
+		x = 6
+		y = 15
 		cost = 10
 		mutually_exclusive = { focus = PDV_cm_c0_7 }
-		prerequisite = { focus = PDV_cm_c3_6 }
+		prerequisite = { focus = PDV_cm_spine5 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_cm_c3_7_desc
-			add_political_power = 75
+			add_war_support = 0.05
+			add_army_experience = 50
 		}
 	}
 	focus = {
 		id = PDV_dm_c0_7
-		icon = GFX_pdv_dm_c0_7
-		x = 9
-		y = 7
+		icon = GFX_goal_generic_production
+		x = 8
+		y = 15
 		cost = 10
 		mutually_exclusive = { focus = PDV_dm_c3_7 }
-		prerequisite = { focus = PDV_dm_c0_6 }
+		prerequisite = { focus = PDV_dm_spine5 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_dm_c0_7_desc
-			add_political_power = 75
+			add_equipment_to_stockpile = { type = convoy amount = 250 }
+			add_political_power = 40
 		}
 	}
 	focus = {
 		id = PDV_dm_c1_7
-		icon = GFX_pdv_dm_c1_7
-		x = 13
-		y = 11
+		icon = GFX_goal_generic_national_unity
+		x = 10
+		y = 15
 		cost = 10
-		prerequisite = { focus = PDV_dm_c1_6 }
+		prerequisite = { focus = PDV_dm_spine5 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_dm_c1_7_desc
-			add_political_power = 75
+												add_political_power = 75
 			add_stability = 0.03
 		}
 	}
 	focus = {
 		id = PDV_dm_final
-		icon = GFX_pdv_dm_final
+		icon = GFX_goal_support_democracy
 		x = 11
-		y = 26
+		y = 17
 		cost = 10
 		prerequisite = { focus = PDV_dm_spine6 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_dm_final_desc
-			add_political_power = 60
+												add_political_power = 60
 			add_stability = 0.04
 		}
 	}
 	focus = {
 		id = PDV_dm_c2_7
-		icon = GFX_pdv_dm_c2_7
-		x = 9
-		y = 16
+		icon = GFX_goal_support_democracy
+		x = 12
+		y = 15
 		cost = 10
-		prerequisite = { focus = PDV_dm_c2_6 }
+		prerequisite = { focus = PDV_dm_spine5 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_dm_c2_7_desc
-			add_army_experience = 75
+												add_army_experience = 75
 			add_war_support = 0.05
 		}
 	}
 	focus = {
 		id = PDV_dm_c3_7
-		icon = GFX_pdv_dm_c3_7
-		x = 13
-		y = 21
+		icon = GFX_goal_generic_political_pressure
+		x = 14
+		y = 15
 		cost = 10
 		mutually_exclusive = { focus = PDV_dm_c0_7 }
-		prerequisite = { focus = PDV_dm_c3_6 }
+		prerequisite = { focus = PDV_dm_spine5 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_dm_c3_7_desc
-			add_political_power = 75
+			add_tech_bonus = { name = cdw_pdv_century_research bonus = 0.5 uses = 2 category = industry }
+			add_political_power = 50
 		}
 	}
 	focus = {
 		id = PDV_af_radar
-		icon = GFX_pdv_af_radar
+		icon = GFX_goal_generic_radar
 		x = 32
 		y = 10
 		cost = 10
 		prerequisite = { focus = PDV_af_fighters }
 		completion_reward = {
 			custom_effect_tooltip = PDV_af_radar_desc
-			add_air_experience = 50
+												add_air_experience = 50
 		}
 	}
 	focus = {
 		id = PDV_af_airfields
-		icon = GFX_pdv_af_airfields
-		x = 34
-		y = 10
+		icon = GFX_goal_generic_air_production
+		x = 35
+		y = 9
 		cost = 10
 		prerequisite = { focus = PDV_af_air }
 		completion_reward = {
 			custom_effect_tooltip = PDV_af_airfields_desc
-			add_air_experience = 25
+												add_air_experience = 25
 			add_political_power = 25
 		}
 	}
 	focus = {
 		id = PDV_af_strike
-		icon = GFX_pdv_af_strike
-		x = 36
-		y = 10
+		icon = GFX_goal_generic_CAS
+		x = 35
+		y = 11
 		cost = 10
 		prerequisite = { focus = PDV_af_cas }
 		completion_reward = {
 			custom_effect_tooltip = PDV_af_strike_desc
-			add_air_experience = 50
+												add_air_experience = 50
 		}
 	}
 	focus = {
 		id = PDV_af_wing
-		icon = GFX_pdv_af_wing
+		icon = GFX_goal_generic_air_fighter
 		x = 32
 		y = 11
 		cost = 10
 		prerequisite = { focus = PDV_af_radar }
 		completion_reward = {
 			custom_effect_tooltip = PDV_af_wing_desc
-			add_air_experience = 50
+												add_air_experience = 50
 		}
 	}
 	focus = {
 		id = PDV_af_divebomber
-		icon = GFX_pdv_af_divebomber
-		x = 36
-		y = 11
+		icon = GFX_goal_generic_air_bomber
+		x = 33
+		y = 12
 		cost = 10
-		prerequisite = { focus = PDV_af_strike }
+		prerequisite = { focus = PDV_af_wing focus = PDV_af_strike }
 		completion_reward = {
 			custom_effect_tooltip = PDV_af_divebomber_desc
-			add_air_experience = 50
+												add_air_experience = 50
 			add_war_support = 0.03
 		}
 	}
@@ -1293,6 +1340,8 @@ focus_tree = {
 		prerequisite = { focus = PDV_four_roads }
 		completion_reward = {
 			custom_effect_tooltip = PDV_fa_review_desc
+			set_politics = { ruling_party = fascism elections_allowed = no }
+			add_popularity = { ideology = fascism popularity = 0.15 }
 			remove_ideas = PDV_purged_officer_corps
 			add_ideas = PDV_officers_returning
 			add_army_experience = 25
@@ -1308,6 +1357,8 @@ focus_tree = {
 		prerequisite = { focus = PDV_four_roads }
 		completion_reward = {
 			custom_effect_tooltip = PDV_mo_review_desc
+			set_politics = { ruling_party = neutrality elections_allowed = no }
+			add_popularity = { ideology = neutrality popularity = 0.15 }
 			remove_ideas = PDV_purged_officer_corps
 			add_ideas = PDV_officers_returning
 			add_political_power = 25
@@ -1315,188 +1366,200 @@ focus_tree = {
 	}
 	focus = {
 		id = PDV_af_airdoctrine
-		icon = GFX_pdv_af_airdoctrine
-		x = 34
-		y = 12
+		icon = GFX_goal_generic_air_doctrine
+		x = 33
+		y = 13
 		cost = 10
-		prerequisite = { focus = PDV_af_wing focus = PDV_af_divebomber focus = PDV_af_airfields }
+		prerequisite = { focus = PDV_af_divebomber }
 		completion_reward = {
 			custom_effect_tooltip = PDV_af_airdoctrine_desc
-			add_air_experience = 50
+												add_air_experience = 50
 			add_war_support = 0.04
 		}
 	}
 	focus = {
 		id = PDV_fa_c0_0
-		icon = GFX_pdv_fa_c0_0
-		x = 18
-		y = 5
+		icon = GFX_goal_support_fascism
+		x = 16
+		y = 4
 		cost = 10
 		prerequisite = { focus = PDV_fa_spine1 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_fa_c0_0_desc
-			add_political_power = 25
+			random_owned_controlled_state = {
+				limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } }
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+			add_war_support = 0.02
 		}
 	}
 	focus = {
 		id = PDV_fa_c1_0
-		icon = GFX_pdv_fa_c1_0
-		x = 20
-		y = 9
+		icon = GFX_goal_generic_propaganda
+		x = 18
+		y = 4
 		cost = 10
-		prerequisite = { focus = PDV_fa_spine2 }
+		prerequisite = { focus = PDV_fa_spine1 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_fa_c1_0_desc
-			add_stability = 0.03
+												add_stability = 0.03
 		}
 	}
 	focus = {
 		id = PDV_fa_spine1
-		icon = GFX_pdv_fa_spine1
+		icon = GFX_goal_generic_army_doctrines
 		x = 19
 		y = 3
 		cost = 10
 		prerequisite = { focus = PDV_fa_review }
 		completion_reward = {
 			custom_effect_tooltip = PDV_fa_spine1_desc
-			remove_ideas = PDV_hollow_army
+												remove_ideas = PDV_hollow_army
 			add_ideas = PDV_army_rebuilding
 			add_army_experience = 25
 		}
 	}
 	focus = {
 		id = PDV_fa_c2_0
-		icon = GFX_pdv_fa_c2_0
-		x = 18
-		y = 14
+		icon = GFX_goal_generic_small_arms
+		x = 20
+		y = 4
 		cost = 10
-		prerequisite = { focus = PDV_fa_spine3 }
+		prerequisite = { focus = PDV_fa_spine1 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_fa_c2_0_desc
-			add_army_experience = 25
+												add_army_experience = 25
 		}
 	}
 	focus = {
 		id = PDV_fa_c3_0
-		icon = GFX_pdv_fa_c3_0
-		x = 20
-		y = 19
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 22
+		y = 4
 		cost = 10
-		prerequisite = { focus = PDV_fa_spine4 }
+		prerequisite = { focus = PDV_fa_spine1 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_fa_c3_0_desc
-			add_political_power = 25
+			add_war_support = 0.04
+			add_command_power = 25
 		}
 	}
 	focus = {
 		id = PDV_mo_c0_0
-		icon = GFX_pdv_mo_c0_0
-		x = 26
-		y = 5
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 24
+		y = 4
 		cost = 10
 		prerequisite = { focus = PDV_mo_spine1 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_mo_c0_0_desc
-			add_political_power = 25
+			random_owned_controlled_state = {
+				limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } }
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+			add_stability = 0.02
 		}
 	}
 	focus = {
 		id = PDV_mo_c1_0
-		icon = GFX_pdv_mo_c1_0
-		x = 28
-		y = 9
+		icon = GFX_goal_generic_propaganda
+		x = 26
+		y = 4
 		cost = 10
-		prerequisite = { focus = PDV_mo_spine2 }
+		prerequisite = { focus = PDV_mo_spine1 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_mo_c1_0_desc
-			add_stability = 0.03
+												add_stability = 0.03
 		}
 	}
 	focus = {
 		id = PDV_mo_spine1
-		icon = GFX_pdv_mo_spine1
+		icon = GFX_goal_generic_army_doctrines
 		x = 27
 		y = 3
 		cost = 10
 		prerequisite = { focus = PDV_mo_review }
 		completion_reward = {
 			custom_effect_tooltip = PDV_mo_spine1_desc
-			remove_ideas = PDV_hollow_army
+												remove_ideas = PDV_hollow_army
 			add_ideas = PDV_army_rebuilding
 			add_army_experience = 25
 		}
 	}
 	focus = {
 		id = PDV_mo_c2_0
-		icon = GFX_pdv_mo_c2_0
-		x = 26
-		y = 14
+		icon = GFX_goal_generic_defence
+		x = 28
+		y = 4
 		cost = 10
-		prerequisite = { focus = PDV_mo_spine3 }
+		prerequisite = { focus = PDV_mo_spine1 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_mo_c2_0_desc
-			add_army_experience = 25
+												add_army_experience = 25
 		}
 	}
 	focus = {
 		id = PDV_mo_c3_0
-		icon = GFX_pdv_mo_c3_0
-		x = 28
-		y = 19
+		icon = GFX_goal_generic_improve_relations
+		x = 30
+		y = 4
 		cost = 10
-		prerequisite = { focus = PDV_mo_spine4 }
+		prerequisite = { focus = PDV_mo_spine1 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_mo_c3_0_desc
+			add_command_power = 30
 			add_political_power = 25
 		}
 	}
 	focus = {
 		id = PDV_af_capstone
-		icon = GFX_pdv_af_capstone
-		x = 34
-		y = 13
+		icon = GFX_goal_generic_build_airforce
+		x = 33
+		y = 14
 		cost = 10
 		prerequisite = { focus = PDV_af_airdoctrine }
 		completion_reward = {
 			custom_effect_tooltip = PDV_af_capstone_desc
-			add_research_slot = 1
+												add_research_slot = 1
 			add_air_experience = 50
 		}
 	}
 	focus = {
 		id = PDV_fa_c0_1
-		icon = GFX_pdv_fa_c0_1
-		x = 17
-		y = 5
+		icon = GFX_goal_generic_production2
+		x = 16
+		y = 6
 		cost = 10
-		prerequisite = { focus = PDV_fa_c0_0 }
+		prerequisite = { focus = PDV_fa_spine2 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_fa_c0_1_desc
-			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+												random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
 			add_political_power = 25
 		}
 	}
 	focus = {
 		id = PDV_fa_c1_1
-		icon = GFX_pdv_fa_c1_1
-		x = 21
-		y = 9
+		icon = GFX_goal_generic_propaganda
+		x = 18
+		y = 6
 		cost = 10
-		prerequisite = { focus = PDV_fa_c1_0 }
+		prerequisite = { focus = PDV_fa_spine2 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_fa_c1_1_desc
-			add_political_power = 25
+			add_manpower = 25000
+			add_stability = 0.02
 		}
 	}
 	focus = {
 		id = PDV_fa_spine2
-		icon = GFX_pdv_fa_spine2
+		icon = GFX_goal_generic_scientific_exchange
 		x = 19
-		y = 8
+		y = 5
 		cost = 10
-		prerequisite = { focus = PDV_fa_spine1 }
+		prerequisite = { focus = PDV_fa_c0_0 focus = PDV_fa_c1_0 focus = PDV_fa_c2_0 focus = PDV_fa_c3_0 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_fa_spine2_desc
+			add_ideas = PDV_corporate_economy
 			remove_ideas = PDV_officers_returning
 			add_ideas = PDV_officers_settling
 			add_army_experience = 30
@@ -1504,62 +1567,66 @@ focus_tree = {
 	}
 	focus = {
 		id = PDV_fa_c2_1
-		icon = GFX_pdv_fa_c2_1
-		x = 17
-		y = 14
+		icon = GFX_goal_generic_army_tanks
+		x = 20
+		y = 6
 		cost = 10
-		prerequisite = { focus = PDV_fa_c2_0 }
+		prerequisite = { focus = PDV_fa_spine2 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_fa_c2_1_desc
-			random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+												random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
 		}
 	}
 	focus = {
 		id = PDV_fa_c3_1
-		icon = GFX_pdv_fa_c3_1
-		x = 21
-		y = 19
+		icon = GFX_goal_generic_military_sphere
+		x = 22
+		y = 6
 		cost = 10
-		prerequisite = { focus = PDV_fa_c3_0 }
+		prerequisite = { focus = PDV_fa_spine2 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_fa_c3_1_desc
-			add_war_support = 0.03
+												add_war_support = 0.03
 		}
 	}
 	focus = {
 		id = PDV_mo_c0_1
-		icon = GFX_pdv_mo_c0_1
-		x = 25
-		y = 5
+		icon = GFX_goal_generic_production2
+		x = 24
+		y = 6
 		cost = 10
-		prerequisite = { focus = PDV_mo_c0_0 }
+		prerequisite = { focus = PDV_mo_spine2 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_mo_c0_1_desc
-			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+												random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
 			add_political_power = 25
 		}
 	}
 	focus = {
 		id = PDV_mo_c1_1
-		icon = GFX_pdv_mo_c1_1
-		x = 29
-		y = 9
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 26
+		y = 6
 		cost = 10
-		prerequisite = { focus = PDV_mo_c1_0 }
+		prerequisite = { focus = PDV_mo_spine2 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_mo_c1_1_desc
-			add_political_power = 25
+			add_manpower = 25000
+			add_stability = 0.02
 		}
 	}
 	focus = {
 		id = PDV_mo_spine2
-		icon = GFX_pdv_mo_spine2
+		icon = GFX_goal_generic_position_armies
 		x = 27
-		y = 8
+		y = 5
 		cost = 10
-		prerequisite = { focus = PDV_mo_spine1 }
+		prerequisite = { focus = PDV_mo_c0_0 focus = PDV_mo_c1_0 focus = PDV_mo_c2_0 focus = PDV_mo_c3_0 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_mo_spine2_desc
+			add_ideas = PDV_crown_restored
+			add_ideas = PDV_crown_restored
+			add_ideas = PDV_crown_restored
 			remove_ideas = PDV_officers_returning
 			add_ideas = PDV_officers_settling
 			add_political_power = 40
@@ -1567,227 +1634,232 @@ focus_tree = {
 	}
 	focus = {
 		id = PDV_mo_c2_1
-		icon = GFX_pdv_mo_c2_1
-		x = 25
-		y = 14
+		icon = GFX_goal_generic_cavalry
+		x = 28
+		y = 6
 		cost = 10
-		prerequisite = { focus = PDV_mo_c2_0 }
+		prerequisite = { focus = PDV_mo_spine2 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_mo_c2_1_desc
-			random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+												random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
 		}
 	}
 	focus = {
 		id = PDV_mo_c3_1
-		icon = GFX_pdv_mo_c3_1
-		x = 29
-		y = 19
+		icon = GFX_goal_generic_improve_relations
+		x = 30
+		y = 6
 		cost = 10
-		prerequisite = { focus = PDV_mo_c3_0 }
+		prerequisite = { focus = PDV_mo_spine2 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_mo_c3_1_desc
-			add_war_support = 0.03
+												add_war_support = 0.03
 		}
 	}
 	focus = {
 		id = PDV_fa_c0_2
-		icon = GFX_pdv_fa_c0_2
+		icon = GFX_goal_generic_production
 		x = 16
-		y = 5
+		y = 7
 		cost = 10
 		prerequisite = { focus = PDV_fa_c0_1 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_fa_c0_2_desc
-			add_political_power = 40
+			add_tech_bonus = { name = cdw_pdv_autarky_research bonus = 0.5 uses = 1 category = industry }
+			add_stability = 0.02
 		}
 	}
 	focus = {
 		id = PDV_fa_c1_2
-		icon = GFX_pdv_fa_c1_2
-		x = 22
-		y = 9
+		icon = GFX_goal_generic_propaganda
+		x = 18
+		y = 7
 		cost = 10
 		prerequisite = { focus = PDV_fa_c1_1 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_fa_c1_2_desc
-			add_stability = 0.03
+												add_stability = 0.03
 			add_manpower = 15000
 		}
 	}
 	focus = {
 		id = PDV_fa_spine3
-		icon = GFX_pdv_fa_spine3
+		icon = GFX_goal_generic_construct_mil_factory
 		x = 19
-		y = 13
+		y = 8
 		cost = 10
-		prerequisite = { focus = PDV_fa_spine2 }
+		prerequisite = { focus = PDV_fa_c0_2 focus = PDV_fa_c1_2 focus = PDV_fa_c2_2 focus = PDV_fa_c3_2 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_fa_spine3_desc
-			remove_ideas = PDV_army_rebuilding
+												remove_ideas = PDV_army_rebuilding
 			add_ideas = PDV_army_refitting
 			add_army_experience = 40
 		}
 	}
 	focus = {
 		id = PDV_fa_c2_2
-		icon = GFX_pdv_fa_c2_2
-		x = 16
-		y = 14
+		icon = GFX_goal_generic_air_bomber
+		x = 20
+		y = 7
 		cost = 10
 		prerequisite = { focus = PDV_fa_c2_1 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_fa_c2_2_desc
-			add_army_experience = 40
+												add_army_experience = 40
 		}
 	}
 	focus = {
 		id = PDV_fa_c3_2
-		icon = GFX_pdv_fa_c3_2
+		icon = GFX_goal_generic_alliance
 		x = 22
-		y = 19
+		y = 7
 		cost = 10
 		prerequisite = { focus = PDV_fa_c3_1 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_fa_c3_2_desc
-			add_political_power = 40
+			add_command_power = 30
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1200 }
 		}
 	}
 	focus = {
 		id = PDV_mo_c0_2
-		icon = GFX_pdv_mo_c0_2
+		icon = GFX_goal_generic_consumer_goods
 		x = 24
-		y = 5
+		y = 7
 		cost = 10
 		prerequisite = { focus = PDV_mo_c0_1 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_mo_c0_2_desc
-			add_political_power = 40
+			add_manpower = 20000
+			add_stability = 0.03
 		}
 	}
 	focus = {
 		id = PDV_mo_c1_2
-		icon = GFX_pdv_mo_c1_2
-		x = 30
-		y = 9
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 26
+		y = 7
 		cost = 10
 		prerequisite = { focus = PDV_mo_c1_1 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_mo_c1_2_desc
-			add_stability = 0.03
+												add_stability = 0.03
 			add_manpower = 15000
 		}
 	}
 	focus = {
 		id = PDV_mo_spine3
-		icon = GFX_pdv_mo_spine3
+		icon = GFX_goal_generic_construct_mil_factory
 		x = 27
-		y = 13
+		y = 8
 		cost = 10
-		prerequisite = { focus = PDV_mo_spine2 }
+		prerequisite = { focus = PDV_mo_c0_2 focus = PDV_mo_c1_2 focus = PDV_mo_c2_2 focus = PDV_mo_c3_2 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_mo_spine3_desc
-			remove_ideas = PDV_army_rebuilding
+												remove_ideas = PDV_army_rebuilding
 			add_ideas = PDV_army_refitting
 			add_army_experience = 30
 		}
 	}
 	focus = {
 		id = PDV_mo_c2_2
-		icon = GFX_pdv_mo_c2_2
-		x = 24
-		y = 14
+		icon = GFX_goal_generic_defence
+		x = 28
+		y = 7
 		cost = 10
 		prerequisite = { focus = PDV_mo_c2_1 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_mo_c2_2_desc
-			add_army_experience = 40
+												add_army_experience = 40
 		}
 	}
 	focus = {
 		id = PDV_mo_c3_2
-		icon = GFX_pdv_mo_c3_2
+		icon = GFX_goal_generic_demand_territory
 		x = 30
-		y = 19
+		y = 7
 		cost = 10
 		prerequisite = { focus = PDV_mo_c3_1 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_mo_c3_2_desc
-			add_political_power = 40
+			add_war_support = 0.03
+			add_army_experience = 25
 		}
 	}
 	focus = {
 		id = PDV_nv_root
-		icon = GFX_pdv_nv_root
-		x = 34
-		y = 15
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 38
+		y = 2
 		cost = 10
 		prerequisite = { focus = PDV_four_roads }
 		completion_reward = {
 			custom_effect_tooltip = PDV_nv_root_desc
-			add_navy_experience = 25
+												add_navy_experience = 25
 			add_political_power = 25
 		}
 	}
 	focus = {
 		id = PDV_fa_c0_3
-		icon = GFX_pdv_fa_c0_3
+		icon = GFX_goal_generic_consumer_goods
 		x = 16
-		y = 6
+		y = 9
 		cost = 10
-		prerequisite = { focus = PDV_fa_c0_2 }
+		prerequisite = { focus = PDV_fa_spine3 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_fa_c0_3_desc
-			add_stability = 0.03
+												add_stability = 0.03
 			add_political_power = 25
 		}
 	}
 	focus = {
 		id = PDV_fa_c1_3
-		icon = GFX_pdv_fa_c1_3
-		x = 22
-		y = 10
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 18
+		y = 9
 		cost = 10
-		prerequisite = { focus = PDV_fa_c1_2 }
+		prerequisite = { focus = PDV_fa_spine3 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_fa_c1_3_desc
-			add_political_power = 40
+			add_manpower = 40000
 		}
 	}
 	focus = {
 		id = PDV_fa_spine4
-		icon = GFX_pdv_fa_spine4
+		icon = GFX_goal_generic_propaganda
 		x = 19
-		y = 18
+		y = 11
 		cost = 10
-		prerequisite = { focus = PDV_fa_spine3 }
+		prerequisite = { focus = PDV_fa_c0_4 focus = PDV_fa_c1_4 focus = PDV_fa_c2_4 focus = PDV_fa_c3_4 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_fa_spine4_desc
+			add_ideas = PDV_reich_doctrine
 			remove_ideas = PDV_officers_settling
 			add_war_support = 0.04
 		}
 	}
 	focus = {
 		id = PDV_fa_c2_3
-		icon = GFX_pdv_fa_c2_3
-		x = 16
-		y = 15
+		icon = GFX_goal_generic_position_armies
+		x = 20
+		y = 9
 		cost = 10
-		prerequisite = { focus = PDV_fa_c2_2 }
+		prerequisite = { focus = PDV_fa_spine3 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_fa_c2_3_desc
-			add_war_support = 0.03
+												add_war_support = 0.03
 		}
 	}
 	focus = {
 		id = PDV_fa_c3_3
-		icon = GFX_pdv_fa_c3_3
+		icon = GFX_goal_generic_occupy_start_war
 		x = 22
-		y = 20
+		y = 9
 		cost = 10
-		prerequisite = { focus = PDV_fa_c3_2 }
+		prerequisite = { focus = PDV_fa_spine3 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_fa_c3_3_desc
-			set_politics = { ruling_party = fascism elections_allowed = no last_election = "1939.1.1" election_frequency = 48 }
+												set_politics = { ruling_party = fascism elections_allowed = no last_election = "1939.1.1" election_frequency = 48 }
 			release = SUN
 			release = BRR
 			release = AFR
@@ -1803,38 +1875,40 @@ focus_tree = {
 	}
 	focus = {
 		id = PDV_mo_c0_3
-		icon = GFX_pdv_mo_c0_3
+		icon = GFX_goal_generic_production2
 		x = 24
-		y = 6
+		y = 9
 		cost = 10
-		prerequisite = { focus = PDV_mo_c0_2 }
+		prerequisite = { focus = PDV_mo_spine3 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_mo_c0_3_desc
-			add_stability = 0.03
+												add_stability = 0.03
 			add_political_power = 25
 		}
 	}
 	focus = {
 		id = PDV_mo_c1_3
-		icon = GFX_pdv_mo_c1_3
-		x = 30
-		y = 10
+		icon = GFX_goal_support_neutrality
+		x = 26
+		y = 9
 		cost = 10
-		prerequisite = { focus = PDV_mo_c1_2 }
+		prerequisite = { focus = PDV_mo_spine3 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_mo_c1_3_desc
-			add_political_power = 40
+			add_manpower = 20000
+			add_army_experience = 25
 		}
 	}
 	focus = {
 		id = PDV_mo_spine4
-		icon = GFX_pdv_mo_spine4
+		icon = GFX_goal_generic_army_doctrines
 		x = 27
-		y = 18
+		y = 11
 		cost = 10
-		prerequisite = { focus = PDV_mo_spine3 }
+		prerequisite = { focus = PDV_mo_c0_4 focus = PDV_mo_c1_4 focus = PDV_mo_c2_4 focus = PDV_mo_c3_4 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_mo_spine4_desc
+			add_ideas = PDV_army_of_the_crown
 			remove_ideas = PDV_officers_settling
 			add_army_experience = 50
 			add_war_support = 0.03
@@ -1842,239 +1916,248 @@ focus_tree = {
 	}
 	focus = {
 		id = PDV_mo_c2_3
-		icon = GFX_pdv_mo_c2_3
-		x = 24
-		y = 15
+		icon = GFX_goal_generic_build_navy
+		x = 28
+		y = 9
 		cost = 10
-		prerequisite = { focus = PDV_mo_c2_2 }
+		prerequisite = { focus = PDV_mo_spine3 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_mo_c2_3_desc
-			add_war_support = 0.03
+												add_war_support = 0.03
 		}
 	}
 	focus = {
 		id = PDV_mo_c3_3
-		icon = GFX_pdv_mo_c3_3
+		icon = GFX_goal_generic_dangerous_deal
 		x = 30
-		y = 20
+		y = 9
 		cost = 10
-		prerequisite = { focus = PDV_mo_c3_2 }
+		prerequisite = { focus = PDV_mo_spine3 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_mo_c3_3_desc
-			add_political_power = 100
+												add_political_power = 100
 			add_stability = 0.05
 			add_war_support = 0.03
 		}
 	}
 	focus = {
 		id = PDV_nv_surface
-		icon = GFX_pdv_nv_surface
-		x = 32
-		y = 16
+		icon = GFX_goal_generic_navy_cruiser
+		x = 37
+		y = 3
 		cost = 10
 		mutually_exclusive = { focus = PDV_nv_subs }
 		prerequisite = { focus = PDV_nv_root }
 		completion_reward = {
 			custom_effect_tooltip = PDV_nv_surface_desc
-			add_navy_experience = 40
+												add_navy_experience = 40
 		}
 	}
 	focus = {
 		id = PDV_nv_subs
-		icon = GFX_pdv_nv_subs
-		x = 36
-		y = 16
+		icon = GFX_goal_generic_navy_submarine
+		x = 40
+		y = 3
 		cost = 10
 		mutually_exclusive = { focus = PDV_nv_surface }
 		prerequisite = { focus = PDV_nv_root }
 		completion_reward = {
 			custom_effect_tooltip = PDV_nv_subs_desc
-			add_navy_experience = 40
+												add_navy_experience = 40
 		}
 	}
 	focus = {
 		id = PDV_fa_c0_4
-		icon = GFX_pdv_fa_c0_4
-		x = 17
-		y = 6
+		icon = GFX_goal_generic_production2
+		x = 16
+		y = 10
 		cost = 10
 		prerequisite = { focus = PDV_fa_c0_3 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_fa_c0_4_desc
-			add_political_power = 50
+			random_owned_controlled_state = {
+				limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } }
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+			}
 		}
 	}
 	focus = {
 		id = PDV_fa_c1_4
-		icon = GFX_pdv_fa_c1_4
-		x = 21
+		icon = GFX_goal_generic_production2
+		x = 18
 		y = 10
 		cost = 10
 		prerequisite = { focus = PDV_fa_c1_3 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_fa_c1_4_desc
-			add_stability = 0.04
+												add_stability = 0.04
 		}
 	}
 	focus = {
 		id = PDV_fa_spine5
-		icon = GFX_pdv_fa_spine5
+		icon = GFX_goal_support_fascism
 		x = 19
-		y = 22
+		y = 14
 		cost = 10
-		prerequisite = { focus = PDV_fa_spine4 }
+		prerequisite = { focus = PDV_fa_c0_6 focus = PDV_fa_c1_6 focus = PDV_fa_c2_6 focus = PDV_fa_c3_6 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_fa_spine5_desc
-			remove_ideas = PDV_army_refitting
+												remove_ideas = PDV_army_refitting
 			add_army_experience = 50
 			add_war_support = 0.05
 		}
 	}
 	focus = {
 		id = PDV_fa_c2_4
-		icon = GFX_pdv_fa_c2_4
-		x = 17
-		y = 15
+		icon = GFX_goal_generic_defence
+		x = 20
+		y = 10
 		cost = 10
 		prerequisite = { focus = PDV_fa_c2_3 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_fa_c2_4_desc
-			add_army_experience = 50
+												add_army_experience = 50
 		}
 	}
 	focus = {
 		id = PDV_fa_c3_4
-		icon = GFX_pdv_fa_c3_4
-		x = 21
-		y = 20
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 22
+		y = 10
 		cost = 10
 		prerequisite = { focus = PDV_fa_c3_3 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_fa_c3_4_desc
-			add_political_power = 50
+			add_stability = 0.03
+			add_command_power = 25
 		}
 	}
 	focus = {
 		id = PDV_mo_c0_4
-		icon = GFX_pdv_mo_c0_4
-		x = 25
-		y = 6
+		icon = GFX_goal_reichsautobahn
+		x = 24
+		y = 10
 		cost = 10
 		prerequisite = { focus = PDV_mo_c0_3 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_mo_c0_4_desc
-			add_political_power = 50
+			random_owned_controlled_state = {
+				limit = { free_building_slots = { building = infrastructure size > 0 include_locked = yes } }
+				add_building_construction = { type = infrastructure level = 2 instant_build = yes }
+			}
 		}
 	}
 	focus = {
 		id = PDV_mo_c1_4
-		icon = GFX_pdv_mo_c1_4
-		x = 29
+		icon = GFX_goal_generic_national_unity
+		x = 26
 		y = 10
 		cost = 10
 		prerequisite = { focus = PDV_mo_c1_3 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_mo_c1_4_desc
-			add_stability = 0.04
+												add_stability = 0.04
 		}
 	}
 	focus = {
 		id = PDV_mo_spine5
-		icon = GFX_pdv_mo_spine5
+		icon = GFX_goal_support_neutrality
 		x = 27
-		y = 22
+		y = 14
 		cost = 10
-		prerequisite = { focus = PDV_mo_spine4 }
+		prerequisite = { focus = PDV_mo_c0_6 focus = PDV_mo_c1_6 focus = PDV_mo_c2_6 focus = PDV_mo_c3_6 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_mo_spine5_desc
-			remove_ideas = PDV_army_refitting
+												remove_ideas = PDV_army_refitting
 			add_army_experience = 50
 			add_war_support = 0.04
 		}
 	}
 	focus = {
 		id = PDV_mo_c2_4
-		icon = GFX_pdv_mo_c2_4
-		x = 25
-		y = 15
+		icon = GFX_goal_generic_position_armies
+		x = 28
+		y = 10
 		cost = 10
 		prerequisite = { focus = PDV_mo_c2_3 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_mo_c2_4_desc
-			add_army_experience = 50
+												add_army_experience = 50
 		}
 	}
 	focus = {
 		id = PDV_mo_c3_4
-		icon = GFX_pdv_mo_c3_4
-		x = 29
-		y = 20
+		icon = GFX_goal_generic_major_alliance
+		x = 30
+		y = 10
 		cost = 10
 		prerequisite = { focus = PDV_mo_c3_3 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_mo_c3_4_desc
-			add_political_power = 50
+			add_command_power = 30
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 300 }
 		}
 	}
 	focus = {
 		id = PDV_nv_cruisers
-		icon = GFX_pdv_nv_cruisers
-		x = 32
-		y = 17
+		icon = GFX_goal_generic_navy_cruiser
+		x = 37
+		y = 4
 		cost = 10
 		prerequisite = { focus = PDV_nv_surface }
 		completion_reward = {
 			custom_effect_tooltip = PDV_nv_cruisers_desc
-			add_navy_experience = 50
+												add_navy_experience = 50
 			add_tech_bonus = { name = cdw_pdv_cruiser_research bonus = 0.5 uses = 1 category = cruiser }
 		}
 	}
 	focus = {
 		id = PDV_nv_pens
-		icon = GFX_pdv_nv_pens
-		x = 36
-		y = 17
+		icon = GFX_goal_generic_navy_submarine
+		x = 40
+		y = 4
 		cost = 10
 		prerequisite = { focus = PDV_nv_subs }
 		completion_reward = {
 			custom_effect_tooltip = PDV_nv_pens_desc
-			random_owned_controlled_state = { limit = { is_coastal = yes free_building_slots = { building = dockyard size > 0 include_locked = yes } } add_building_construction = { type = dockyard level = 1 instant_build = yes } }
+												random_owned_controlled_state = { limit = { is_coastal = yes free_building_slots = { building = dockyard size > 0 include_locked = yes } } add_building_construction = { type = dockyard level = 1 instant_build = yes } }
 		}
 	}
 	focus = {
 		id = PDV_fa_c0_5
-		icon = GFX_pdv_fa_c0_5
-		x = 18
-		y = 6
+		icon = GFX_goal_reichsautobahn
+		x = 16
+		y = 12
 		cost = 10
-		prerequisite = { focus = PDV_fa_c0_4 }
+		prerequisite = { focus = PDV_fa_spine4 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_fa_c0_5_desc
-			add_stability = 0.04
+												add_stability = 0.04
 		}
 	}
 	focus = {
 		id = PDV_fa_c1_5
-		icon = GFX_pdv_fa_c1_5
-		x = 20
-		y = 10
+		icon = GFX_goal_support_fascism
+		x = 18
+		y = 12
 		cost = 10
-		prerequisite = { focus = PDV_fa_c1_4 }
+		prerequisite = { focus = PDV_fa_spine4 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_fa_c1_5_desc
-			add_political_power = 50
+			add_stability = 0.03
+			add_war_support = 0.02
 		}
 	}
 	focus = {
 		id = PDV_fa_spine6
-		icon = GFX_pdv_fa_spine6
+		icon = GFX_goal_panzerwaffe
 		x = 19
-		y = 24
+		y = 16
 		cost = 10
-		prerequisite = { focus = PDV_fa_spine5 }
+		prerequisite = { focus = PDV_fa_c0_7 focus = PDV_fa_c1_7 focus = PDV_fa_c2_7 focus = PDV_fa_c3_7 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_fa_spine6_desc
-			set_cosmetic_tag = PDV_REICH
+												set_cosmetic_tag = PDV_REICH
 			add_ideas = PDV_reich
 			add_research_slot = 1
 			add_war_support = 0.05
@@ -2082,507 +2165,517 @@ focus_tree = {
 	}
 	focus = {
 		id = PDV_fa_c2_5
-		icon = GFX_pdv_fa_c2_5
-		x = 18
-		y = 15
+		icon = GFX_goal_generic_small_arms
+		x = 20
+		y = 12
 		cost = 10
-		prerequisite = { focus = PDV_fa_c2_4 }
+		prerequisite = { focus = PDV_fa_spine4 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_fa_c2_5_desc
-			add_war_support = 0.04
+												add_war_support = 0.04
 		}
 	}
 	focus = {
 		id = PDV_fa_c3_5
-		icon = GFX_pdv_fa_c3_5
-		x = 20
-		y = 20
+		icon = GFX_goal_anti_comintern_pact
+		x = 22
+		y = 12
 		cost = 10
-		prerequisite = { focus = PDV_fa_c3_4 }
+		prerequisite = { focus = PDV_fa_spine4 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_fa_c3_5_desc
-			add_stability = 0.04
+												add_stability = 0.04
 			if = { limit = { AFR = { exists = yes } } create_wargoal = { type = annex_everything target = AFR } }
 		}
 	}
 	focus = {
 		id = PDV_mo_c0_5
-		icon = GFX_pdv_mo_c0_5
-		x = 26
-		y = 6
+		icon = GFX_goal_support_neutrality
+		x = 24
+		y = 12
 		cost = 10
-		prerequisite = { focus = PDV_mo_c0_4 }
+		prerequisite = { focus = PDV_mo_spine4 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_mo_c0_5_desc
-			add_stability = 0.04
+												add_stability = 0.04
 		}
 	}
 	focus = {
 		id = PDV_mo_c1_5
-		icon = GFX_pdv_mo_c1_5
-		x = 28
-		y = 10
+		icon = GFX_goal_generic_scientific_exchange
+		x = 26
+		y = 12
 		cost = 10
-		prerequisite = { focus = PDV_mo_c1_4 }
+		prerequisite = { focus = PDV_mo_spine4 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_mo_c1_5_desc
-			add_political_power = 50
+			add_tech_bonus = { name = cdw_pdv_academy_research bonus = 0.5 uses = 2 category = electronics }
 		}
 	}
 	focus = {
 		id = PDV_mo_spine6
-		icon = GFX_pdv_mo_spine6
+		icon = GFX_goal_support_neutrality
 		x = 27
-		y = 24
+		y = 16
 		cost = 10
-		prerequisite = { focus = PDV_mo_spine5 }
+		prerequisite = { focus = PDV_mo_c0_7 focus = PDV_mo_c1_7 focus = PDV_mo_c2_7 focus = PDV_mo_c3_7 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_mo_spine6_desc
-			add_ideas = PDV_crown_restored
+												add_ideas = PDV_crown_restored
 			add_research_slot = 1
 			add_stability = 0.05
 		}
 	}
 	focus = {
 		id = PDV_mo_c2_5
-		icon = GFX_pdv_mo_c2_5
-		x = 26
-		y = 15
+		icon = GFX_goal_generic_construction
+		x = 28
+		y = 12
 		cost = 10
-		prerequisite = { focus = PDV_mo_c2_4 }
+		prerequisite = { focus = PDV_mo_spine4 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_mo_c2_5_desc
-			add_war_support = 0.04
+												add_war_support = 0.04
 		}
 	}
 	focus = {
 		id = PDV_mo_c3_5
-		icon = GFX_pdv_mo_c3_5
-		x = 28
-		y = 20
+		icon = GFX_goal_generic_demand_territory
+		x = 30
+		y = 12
 		cost = 10
-		prerequisite = { focus = PDV_mo_c3_4 }
+		prerequisite = { focus = PDV_mo_spine4 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_mo_c3_5_desc
-			add_stability = 0.04
+												add_stability = 0.04
 		}
 	}
 	focus = {
 		id = PDV_nv_destroyers
-		icon = GFX_pdv_nv_destroyers
-		x = 32
-		y = 18
+		icon = GFX_goal_generic_build_navy
+		x = 37
+		y = 5
 		cost = 10
 		prerequisite = { focus = PDV_nv_cruisers }
 		completion_reward = {
 			custom_effect_tooltip = PDV_nv_destroyers_desc
-			random_owned_controlled_state = { limit = { is_coastal = yes free_building_slots = { building = dockyard size > 0 include_locked = yes } } add_building_construction = { type = dockyard level = 1 instant_build = yes } }
+												random_owned_controlled_state = { limit = { is_coastal = yes free_building_slots = { building = dockyard size > 0 include_locked = yes } } add_building_construction = { type = dockyard level = 1 instant_build = yes } }
 		}
 	}
 	focus = {
 		id = PDV_nv_wolfpack
-		icon = GFX_pdv_nv_wolfpack
-		x = 36
-		y = 18
+		icon = GFX_goal_generic_wolf_pack
+		x = 40
+		y = 5
 		cost = 10
 		prerequisite = { focus = PDV_nv_pens }
 		completion_reward = {
 			custom_effect_tooltip = PDV_nv_wolfpack_desc
-			add_navy_experience = 50
+												add_navy_experience = 50
 			add_tech_bonus = { name = cdw_pdv_submarine_research bonus = 0.5 uses = 1 category = submarine }
 		}
 	}
 	focus = {
 		id = PDV_fa_c0_6
-		icon = GFX_pdv_fa_c0_6
-		x = 18
-		y = 7
+		icon = GFX_goal_generic_production
+		x = 16
+		y = 13
 		cost = 10
-		prerequisite = { focus = PDV_fa_c0_5 focus = PDV_fa_spine2 }
+		prerequisite = { focus = PDV_fa_c0_5 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_fa_c0_6_desc
-			add_political_power = 60
+			random_owned_controlled_state = {
+				limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } }
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
+			add_war_support = 0.03
 		}
 	}
 	focus = {
 		id = PDV_fa_c1_6
-		icon = GFX_pdv_fa_c1_6
-		x = 20
-		y = 11
+		icon = GFX_goal_generic_propaganda
+		x = 18
+		y = 13
 		cost = 10
-		prerequisite = { focus = PDV_fa_c1_5 focus = PDV_fa_spine3 }
+		prerequisite = { focus = PDV_fa_c1_5 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_fa_c1_6_desc
-			add_stability = 0.05
+												add_stability = 0.05
 		}
 	}
 	focus = {
 		id = PDV_fa_c2_6
-		icon = GFX_pdv_fa_c2_6
-		x = 18
-		y = 16
+		icon = GFX_goal_generic_military_sphere
+		x = 20
+		y = 13
 		cost = 10
-		prerequisite = { focus = PDV_fa_c2_5 focus = PDV_fa_spine4 }
+		prerequisite = { focus = PDV_fa_c2_5 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_fa_c2_6_desc
-			add_army_experience = 50
+												add_army_experience = 50
 			add_manpower = 20000
 		}
 	}
 	focus = {
 		id = PDV_fa_c3_6
-		icon = GFX_pdv_fa_c3_6
-		x = 20
-		y = 21
+		icon = GFX_goal_generic_demand_territory
+		x = 22
+		y = 13
 		cost = 10
-		prerequisite = { focus = PDV_fa_c3_5 focus = PDV_fa_spine5 }
+		prerequisite = { focus = PDV_fa_c3_5 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_fa_c3_6_desc
-			add_political_power = 60
+												add_political_power = 60
 			if = { limit = { SUN = { exists = yes } } create_wargoal = { type = annex_everything target = SUN } }
 			if = { limit = { BRR = { exists = yes } } create_wargoal = { type = annex_everything target = BRR } }
 		}
 	}
 	focus = {
 		id = PDV_mo_c0_6
-		icon = GFX_pdv_mo_c0_6
-		x = 26
-		y = 7
+		icon = GFX_goal_generic_production
+		x = 24
+		y = 13
 		cost = 10
-		prerequisite = { focus = PDV_mo_c0_5 focus = PDV_mo_spine2 }
+		prerequisite = { focus = PDV_mo_c0_5 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_mo_c0_6_desc
-			add_political_power = 60
+			add_tech_bonus = { name = cdw_pdv_court_research bonus = 0.5 uses = 1 category = industry }
+			add_political_power = 25
 		}
 	}
 	focus = {
 		id = PDV_mo_c1_6
-		icon = GFX_pdv_mo_c1_6
-		x = 28
-		y = 11
+		icon = GFX_goal_support_neutrality
+		x = 26
+		y = 13
 		cost = 10
-		prerequisite = { focus = PDV_mo_c1_5 focus = PDV_mo_spine3 }
+		prerequisite = { focus = PDV_mo_c1_5 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_mo_c1_6_desc
-			add_stability = 0.05
+												add_stability = 0.05
 		}
 	}
 	focus = {
 		id = PDV_mo_c2_6
-		icon = GFX_pdv_mo_c2_6
-		x = 26
-		y = 16
+		icon = GFX_goal_generic_army_doctrines
+		x = 28
+		y = 13
 		cost = 10
-		prerequisite = { focus = PDV_mo_c2_5 focus = PDV_mo_spine4 }
+		prerequisite = { focus = PDV_mo_c2_5 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_mo_c2_6_desc
-			add_army_experience = 50
+												add_army_experience = 50
 			add_manpower = 20000
 		}
 	}
 	focus = {
 		id = PDV_mo_c3_6
-		icon = GFX_pdv_mo_c3_6
-		x = 28
-		y = 21
+		icon = GFX_goal_generic_improve_relations
+		x = 30
+		y = 13
 		cost = 10
-		prerequisite = { focus = PDV_mo_c3_5 focus = PDV_mo_spine5 }
+		prerequisite = { focus = PDV_mo_c3_5 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_mo_c3_6_desc
-			add_political_power = 60
+			add_command_power = 30
+			add_political_power = 25
 		}
 	}
 	focus = {
 		id = PDV_nv_battleline
-		icon = GFX_pdv_nv_battleline
-		x = 32
-		y = 19
+		icon = GFX_goal_generic_navy_battleship
+		x = 37
+		y = 6
 		cost = 10
 		prerequisite = { focus = PDV_nv_destroyers }
 		completion_reward = {
 			custom_effect_tooltip = PDV_nv_battleline_desc
-			add_navy_experience = 50
+												add_navy_experience = 50
 			add_war_support = 0.03
 		}
 	}
 	focus = {
 		id = PDV_nv_mines
-		icon = GFX_pdv_nv_mines
-		x = 36
-		y = 19
+		icon = GFX_goal_generic_navy_anti_submarine
+		x = 40
+		y = 6
 		cost = 10
 		prerequisite = { focus = PDV_nv_wolfpack }
 		completion_reward = {
 			custom_effect_tooltip = PDV_nv_mines_desc
-			add_navy_experience = 50
+												add_navy_experience = 50
 		}
 	}
 	focus = {
 		id = PDV_fa_c0_7
-		icon = GFX_pdv_fa_c0_7
-		x = 17
-		y = 7
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 16
+		y = 15
 		cost = 10
 		mutually_exclusive = { focus = PDV_fa_c3_7 }
-		prerequisite = { focus = PDV_fa_c0_6 }
+		prerequisite = { focus = PDV_fa_spine5 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_fa_c0_7_desc
-			add_political_power = 75
+			add_research_slot = 1
+			add_war_support = 0.03
 		}
 	}
 	focus = {
 		id = PDV_fa_c1_7
-		icon = GFX_pdv_fa_c1_7
-		x = 21
-		y = 11
+		icon = GFX_goal_generic_national_unity
+		x = 18
+		y = 15
 		cost = 10
-		prerequisite = { focus = PDV_fa_c1_6 }
+		prerequisite = { focus = PDV_fa_spine5 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_fa_c1_7_desc
-			add_political_power = 75
+												add_political_power = 75
 			add_stability = 0.03
 		}
 	}
 	focus = {
 		id = PDV_fa_final
-		icon = GFX_pdv_fa_final
+		icon = GFX_goal_support_fascism
 		x = 19
-		y = 26
+		y = 17
 		cost = 10
 		prerequisite = { focus = PDV_fa_spine6 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_fa_final_desc
-			add_political_power = 60
+												add_political_power = 60
 			add_war_support = 0.04
 		}
 	}
 	focus = {
 		id = PDV_fa_c2_7
-		icon = GFX_pdv_fa_c2_7
-		x = 17
-		y = 16
+		icon = GFX_goal_generic_major_war
+		x = 20
+		y = 15
 		cost = 10
-		prerequisite = { focus = PDV_fa_c2_6 }
+		prerequisite = { focus = PDV_fa_spine5 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_fa_c2_7_desc
-			add_army_experience = 75
+												add_army_experience = 75
 			add_war_support = 0.05
 		}
 	}
 	focus = {
 		id = PDV_fa_c3_7
-		icon = GFX_pdv_fa_c3_7
-		x = 21
-		y = 21
+		icon = GFX_goal_support_fascism
+		x = 22
+		y = 15
 		cost = 10
 		mutually_exclusive = { focus = PDV_fa_c0_7 }
-		prerequisite = { focus = PDV_fa_c3_6 }
+		prerequisite = { focus = PDV_fa_spine5 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_fa_c3_7_desc
-			add_political_power = 75
+												add_political_power = 75
 			if = { limit = { PPS = { exists = yes } } create_wargoal = { type = annex_everything target = PPS } }
 			if = { limit = { VYR = { exists = yes } } create_wargoal = { type = annex_everything target = VYR } }
 		}
 	}
 	focus = {
 		id = PDV_mo_c0_7
-		icon = GFX_pdv_mo_c0_7
-		x = 25
-		y = 7
+		icon = GFX_goal_support_neutrality
+		x = 24
+		y = 15
 		cost = 10
 		mutually_exclusive = { focus = PDV_mo_c3_7 }
-		prerequisite = { focus = PDV_mo_c0_6 }
+		prerequisite = { focus = PDV_mo_spine5 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_mo_c0_7_desc
-			add_political_power = 75
+			add_stability = 0.05
+			add_political_power = 25
 		}
 	}
 	focus = {
 		id = PDV_mo_c1_7
-		icon = GFX_pdv_mo_c1_7
-		x = 29
-		y = 11
+		icon = GFX_goal_support_neutrality
+		x = 26
+		y = 15
 		cost = 10
-		prerequisite = { focus = PDV_mo_c1_6 }
+		prerequisite = { focus = PDV_mo_spine5 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_mo_c1_7_desc
-			add_political_power = 75
+												add_political_power = 75
 			add_stability = 0.03
 		}
 	}
 	focus = {
 		id = PDV_mo_final
-		icon = GFX_pdv_mo_final
+		icon = GFX_goal_support_neutrality
 		x = 27
-		y = 26
+		y = 17
 		cost = 10
 		prerequisite = { focus = PDV_mo_spine6 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_mo_final_desc
-			add_political_power = 60
+												add_political_power = 60
 			add_stability = 0.04
 		}
 	}
 	focus = {
 		id = PDV_mo_c2_7
-		icon = GFX_pdv_mo_c2_7
-		x = 25
-		y = 16
+		icon = GFX_goal_support_neutrality
+		x = 28
+		y = 15
 		cost = 10
-		prerequisite = { focus = PDV_mo_c2_6 }
+		prerequisite = { focus = PDV_mo_spine5 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_mo_c2_7_desc
-			add_army_experience = 75
+												add_army_experience = 75
 			add_war_support = 0.05
 		}
 	}
 	focus = {
 		id = PDV_mo_c3_7
-		icon = GFX_pdv_mo_c3_7
-		x = 29
-		y = 21
+		icon = GFX_goal_generic_political_pressure
+		x = 30
+		y = 15
 		cost = 10
 		mutually_exclusive = { focus = PDV_mo_c0_7 }
-		prerequisite = { focus = PDV_mo_c3_6 }
+		prerequisite = { focus = PDV_mo_spine5 }
 		completion_reward = {
 			custom_effect_tooltip = PDV_mo_c3_7_desc
-			add_political_power = 75
+			add_war_support = 0.04
+			add_command_power = 50
 		}
 	}
 	focus = {
 		id = PDV_nv_screen
-		icon = GFX_pdv_nv_screen
-		x = 32
-		y = 20
+		icon = GFX_goal_generic_navy_anti_submarine
+		x = 38
+		y = 11
 		cost = 10
-		prerequisite = { focus = PDV_nv_battleline }
+		prerequisite = { focus = PDV_nv_admiralty focus = PDV_nv_academy }
 		completion_reward = {
 			custom_effect_tooltip = PDV_nv_screen_desc
-			add_navy_experience = 50
+												add_navy_experience = 50
 		}
 	}
 	focus = {
 		id = PDV_nv_silent
-		icon = GFX_pdv_nv_silent
-		x = 36
-		y = 20
+		icon = GFX_goal_generic_navy_submarine
+		x = 37
+		y = 12
 		cost = 10
-		prerequisite = { focus = PDV_nv_mines }
+		prerequisite = { focus = PDV_nv_screen }
 		completion_reward = {
 			custom_effect_tooltip = PDV_nv_silent_desc
-			add_navy_experience = 50
+												add_navy_experience = 50
 			add_war_support = 0.03
 		}
 	}
 	focus = {
 		id = PDV_nv_doctrine
-		icon = GFX_pdv_nv_doctrine
-		x = 34
-		y = 21
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 38
+		y = 7
 		cost = 10
-		prerequisite = { focus = PDV_nv_screen focus = PDV_nv_silent }
+		prerequisite = { focus = PDV_nv_battleline focus = PDV_nv_mines }
 		completion_reward = {
 			custom_effect_tooltip = PDV_nv_doctrine_desc
-			add_navy_experience = 50
+												add_navy_experience = 50
 		}
 	}
 	focus = {
 		id = PDV_nv_coast
-		icon = GFX_pdv_nv_coast
-		x = 32
-		y = 22
+		icon = GFX_goal_generic_defence
+		x = 37
+		y = 8
 		cost = 10
 		prerequisite = { focus = PDV_nv_doctrine }
 		completion_reward = {
 			custom_effect_tooltip = PDV_nv_coast_desc
-			add_navy_experience = 25
+												add_navy_experience = 25
 			add_war_support = 0.03
 		}
 	}
 	focus = {
 		id = PDV_nv_marines
-		icon = GFX_pdv_nv_marines
-		x = 36
-		y = 22
+		icon = GFX_goal_generic_amphibious_assault
+		x = 40
+		y = 8
 		cost = 10
 		prerequisite = { focus = PDV_nv_doctrine }
 		completion_reward = {
 			custom_effect_tooltip = PDV_nv_marines_desc
-			add_navy_experience = 40
+												add_navy_experience = 40
 			add_manpower = 20000
 		}
 	}
 	focus = {
 		id = PDV_nv_convoys
-		icon = GFX_pdv_nv_convoys
-		x = 32
-		y = 23
+		icon = GFX_goal_generic_trade
+		x = 37
+		y = 9
 		cost = 10
 		prerequisite = { focus = PDV_nv_coast }
 		completion_reward = {
 			custom_effect_tooltip = PDV_nv_convoys_desc
-			add_equipment_to_stockpile = { type = convoy amount = 40 }
+												add_equipment_to_stockpile = { type = convoy amount = 40 }
 		}
 	}
 	focus = {
 		id = PDV_nv_tradewar
-		icon = GFX_pdv_nv_tradewar
-		x = 36
-		y = 23
+		icon = GFX_goal_generic_navy_anti_submarine
+		x = 40
+		y = 9
 		cost = 10
 		prerequisite = { focus = PDV_nv_marines }
 		completion_reward = {
 			custom_effect_tooltip = PDV_nv_tradewar_desc
-			add_navy_experience = 50
+												add_navy_experience = 50
 		}
 	}
 	focus = {
 		id = PDV_nv_admiralty
-		icon = GFX_pdv_nv_admiralty
-		x = 32
-		y = 24
+		icon = GFX_goal_generic_build_navy
+		x = 37
+		y = 10
 		cost = 10
 		prerequisite = { focus = PDV_nv_convoys }
 		completion_reward = {
 			custom_effect_tooltip = PDV_nv_admiralty_desc
-			add_political_power = 50
+			add_navy_experience = 50
+			add_tech_bonus = { name = cdw_pdv_admiralty_research bonus = 0.5 uses = 1 category = cruiser }
 		}
 	}
 	focus = {
 		id = PDV_nv_academy
-		icon = GFX_pdv_nv_academy
-		x = 36
-		y = 24
+		icon = GFX_goal_generic_scientific_exchange
+		x = 40
+		y = 10
 		cost = 10
 		prerequisite = { focus = PDV_nv_tradewar }
 		completion_reward = {
 			custom_effect_tooltip = PDV_nv_academy_desc
-			add_navy_experience = 50
+												add_navy_experience = 50
 		}
 	}
 	focus = {
 		id = PDV_nv_fleetair
-		icon = GFX_pdv_nv_fleetair
-		x = 34
-		y = 25
+		icon = GFX_goal_generic_build_airforce
+		x = 40
+		y = 12
 		cost = 10
-		prerequisite = { focus = PDV_nv_admiralty focus = PDV_nv_academy }
+		prerequisite = { focus = PDV_nv_screen }
 		completion_reward = {
 			custom_effect_tooltip = PDV_nv_fleetair_desc
-			add_air_experience = 25
+												add_air_experience = 25
 			add_navy_experience = 25
 		}
 	}
 	focus = {
 		id = PDV_nv_law
-		icon = GFX_pdv_nv_law
-		x = 34
-		y = 26
+		icon = GFX_goal_generic_navy_battleship
+		x = 38
+		y = 13
 		cost = 10
-		prerequisite = { focus = PDV_nv_fleetair }
+		prerequisite = { focus = PDV_nv_silent focus = PDV_nv_fleetair }
 		completion_reward = {
 			custom_effect_tooltip = PDV_nv_law_desc
-			add_research_slot = 1
+												add_research_slot = 1
 			add_navy_experience = 50
 		}
 	}

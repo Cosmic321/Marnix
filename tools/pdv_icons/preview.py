@@ -1,22 +1,27 @@
 # -*- coding: utf-8 -*-
-"""Draws a picture of the focus tree: one icon per focus, one line per requirement."""
+"""Draws a picture of the focus tree: one plate per focus, one line per requirement."""
 import sys
 from PIL import Image, ImageDraw
 
 sys.path.insert(0, '/home/user/Marnix/tools/pdv_icons')
 import layout
 
-CELL = 44
-ICON = 36
-PAD = 60
+CELL = 40
+SIZE = 26
+PAD = 70
 LINE = {'cm': (196, 74, 66), 'dm': (96, 148, 214), 'fa': (200, 150, 70),
         'mo': (219, 178, 80), 'af': (143, 174, 98), 'nv': (86, 160, 200)}
 TRUNK = (214, 202, 168)
+HUB = ('review', 'spine1', 'spine2', 'spine3', 'spine4', 'spine5', 'spine6', 'final')
 
 
 def branch(fid):
     parts = fid.split('_')
     return parts[1] if len(parts) > 1 else ''
+
+
+def is_hub(fid):
+    return fid.split('_')[-1] in HUB
 
 
 def main(out='/home/user/pdv_tree_preview.png'):
@@ -32,36 +37,32 @@ def main(out='/home/user/pdv_tree_preview.png'):
         x, y = cells[fid]
         return PAD + x * CELL + CELL // 2, PAD + y * CELL + CELL // 2
 
-    # edges first
     for fid, groups in pre.items():
         for g in groups:
+            col = LINE.get(branch(fid), TRUNK)
             for p in g:
-                col = LINE.get(branch(fid), TRUNK)
-                d.line([pos(p), pos(fid)], fill=col + (150,), width=3)
+                d.line([pos(p), pos(fid)], fill=col + (140,), width=3)
 
-    # icons
-    for fid in cells:
-        png = '/home/user/pdv_png/%s.png' % fid.lower()
-        try:
-            ic = Image.open(png).convert('RGBA').resize((ICON, ICON), Image.LANCZOS)
-        except FileNotFoundError:
-            ic = None
+    for fid in sorted(cells, key=lambda f: (is_hub(f), f)):
         cx, cy = pos(fid)
-        if ic:
-            img.paste(ic, (cx - ICON // 2, cy - ICON // 2), ic)
+        col = LINE.get(branch(fid), TRUNK)
+        if is_hub(fid):
+            r = SIZE // 2 + 2
+            d.regular_polygon((cx, cy, r), 4, rotation=45, fill=col + (235,),
+                              outline=(16, 18, 22), width=2)
         else:
-            d.ellipse([cx - ICON // 2, cy - ICON // 2, cx + ICON // 2, cy + ICON // 2],
-                      fill=(58, 50, 34), outline=TRUNK, width=3)
+            r = SIZE // 2 - 2
+            d.rounded_rectangle([cx - r, cy - r, cx + r, cy + r], radius=5,
+                                fill=col + (200,), outline=(16, 18, 22), width=2)
 
-    # labels
-    for name, fid in (('COMMUNIST', 'PDV_cm_review'), ('DEMOCRATIC', 'PDV_dm_review'),
-                      ('FASCIST', 'PDV_fa_review'), ('MONARCHIST', 'PDV_mo_review')):
+    for name, fid in (('COMMUNISM', 'PDV_cm_review'), ('DEMOCRACY', 'PDV_dm_review'),
+                      ('FASCISM', 'PDV_fa_review'), ('MONARCHY', 'PDV_mo_review')):
         x, y = cells[fid]
-        d.text((PAD + x * CELL + CELL // 2 - len(name) * 3, PAD + y * CELL - 26),
+        d.text((PAD + x * CELL + CELL // 2 - len(name) * 2, PAD + y * CELL + CELL + 2),
                name, fill=LINE[branch(fid)])
-    d.text((PAD + 31 * CELL, PAD - 26), 'ARMY / AIR', fill=LINE['af'])
-    d.text((PAD + 31 * CELL, PAD + 13 * CELL - 8), 'NAVY', fill=LINE['nv'])
-    d.text((PAD + 14 * CELL - 30, PAD - 26), 'DIRECTORATE', fill=TRUNK)
+    d.text((PAD + layout.AF_X * CELL + CELL // 2 - 32, PAD - 34), 'ARMY / AIR', fill=LINE['af'])
+    d.text((PAD + layout.NV_X * CELL + CELL // 2 - 16, PAD - 34), 'NAVY', fill=LINE['nv'])
+    d.text((PAD + 15 * CELL - 30, PAD - 34), 'THE DIRECTORATE', fill=TRUNK)
     img.save(out)
     print(out, img.size)
 
