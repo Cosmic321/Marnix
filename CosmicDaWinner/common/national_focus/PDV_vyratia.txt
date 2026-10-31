@@ -898,8 +898,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_dm_split }
 		completion_reward = {
-			add_political_power = 75
-			add_research_slot = 1
+			add_political_power = 100
+			add_stability = 0.03
 		}
 	}
 
@@ -1087,7 +1087,8 @@ focus_tree = {
 		prerequisite = { focus = PDV_dm_fed_const }
 		completion_reward = {
 			add_stability = 0.05
-			add_political_power = 50
+			add_political_power = 25
+			add_research_slot = 1
 		}
 	}
 
