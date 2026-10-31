@@ -2077,6 +2077,7 @@ focus_tree = {
 		x = 6
 		y = 11
 		cost = 10
+		prerequisite = { focus = PDV_four_roads }
 		completion_reward = {
 			add_army_experience = 25
 			add_political_power = 25
@@ -2335,6 +2336,7 @@ focus_tree = {
 		x = 18
 		y = 11
 		cost = 10
+		prerequisite = { focus = PDV_four_roads }
 		completion_reward = {
 			add_navy_experience = 25
 			add_political_power = 25
