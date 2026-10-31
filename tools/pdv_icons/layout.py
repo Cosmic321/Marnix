@@ -13,7 +13,7 @@ MOD = '/home/user/Marnix/CosmicDaWinner/'
 TREE = MOD + 'common/national_focus/PDV_vyratia.txt'
 LOC = MOD + 'Localisation/English/replace/pdv_vyratia_l_english.yml'
 
-BAND = {'cm': 0, 'dm': 11, 'fa': 22, 'mo': 33}   # nine columns each, uneven gaps
+BAND = {'cm': 0, 'dm': 9, 'fa': 18, 'mo': 27}   # eight columns each, one column of air
 COLS = ('c0', 'c1', 'c2', 'c3')                   # the four focuses in a row
 
 TRUNK = {'PDV_the_directorate': (20, 0), 'PDV_four_roads': (20, 1)}
@@ -24,37 +24,49 @@ ROAD_TOP = 3            # every road opens on this row, so the four choices line
 # read as hand-built branches rather than four copies of one lattice.
 HUB_ROWS = {0: 'spine2', 2: 'spine3', 4: 'spine4', 6: 'spine5', 7: 'spine6'}
 
-# where a row's four focuses stand inside its nine-column band: never closer
-# than two columns, so no two plates ever crowd each other
-ROW_SHAPES = [(0, 2, 4, 6), (0, 2, 4, 8), (0, 2, 5, 7), (0, 3, 5, 7), (1, 3, 5, 8),
-              (0, 2, 6, 8), (0, 3, 6, 8), (1, 4, 6, 8), (0, 2, 4, 7), (1, 3, 6, 8),
-              (0, 2, 5, 8), (0, 4, 6, 8)]
+# where a row's four focuses stand inside its eight-column band: never closer
+# than two columns. Which of the four branch focuses takes which spot is
+# shuffled every row, so no column ever lines up down a road.
+ROW_SHAPES = [(0, 2, 4, 6), (0, 2, 4, 7), (0, 2, 5, 7), (0, 3, 5, 7), (1, 3, 5, 7),
+              (0, 2, 4, 6), (1, 3, 6, 8), (0, 2, 4, 8), (0, 3, 6, 8)]
 
 # which stage opens which branch depth, and which depth gates the next hub
 GATES = [('spine2', 'd0'), ('spine3', 'd2'), ('spine4', 'd4'),
          ('spine5', 'd6'), ('spine6', 'd7')]
 
-AF_X, NV_X = 44, 49          # army/air and navy side by side, far right
+AF_X, NV_X = 37, 42          # army/air and navy side by side, far right
 
 
 def road_cells(branch):
-    """One road. The opener sits on the shared top line; below it the road rolls
-    its own row shapes and spacing from its own seed."""
-    rnd = random.Random('pdv-road-' + branch)
+    """One road, rolled from its own seed. Rows are shuffled, unevenly spaced and
+    never mirror another road: the opener shares a line with the other three
+    roads, everything under it is that road's own shape."""
+    rnd = random.Random('pdv-road-rolled-' + branch)
     b = BAND[branch]
-    cells = {
-        'PDV_%s_review' % branch: (b + 4, ROAD_TOP),
-        'PDV_%s_spine1' % branch: (b + 4, ROAD_TOP + 2),
-    }
-    y = ROAD_TOP + 4
+    spread = rnd.choice([6, 6, 7, 7])            # each road uses its own width
+    palette = [s for s in ROW_SHAPES if max(s) <= spread] or [(0, 2, 4, 6)]
+    cells = {'PDV_%s_review' % branch: (b + rnd.choice([3, 4, 5]), ROAD_TOP)}
+
+    y = ROAD_TOP + rnd.choice([2, 3, 3])
+    cells['PDV_%s_spine1' % branch] = (b + rnd.choice([2, 3, 4, 5, 6]), y)
+
     for depth in range(8):
-        for c, dx in zip(COLS, rnd.choice(ROW_SHAPES)):
+        y += rnd.choice([1, 1, 2])
+        shape = list(rnd.choice(palette))
+        if max(shape) < spread and rnd.random() < 0.3:
+            shape = [d + 1 for d in shape]
+        order = list(COLS)
+        rnd.shuffle(order)
+        for c, dx in zip(order, shape):
             cells['PDV_%s_%s_%d' % (branch, c, depth)] = (b + dx, y)
         if depth in HUB_ROWS:
-            y += 2
-            cells['PDV_%s_%s' % (branch, HUB_ROWS[depth])] = (b + rnd.choice([3, 4, 5]), y)
-        y += rnd.choice([2, 2, 3])
-    cells['PDV_%s_final' % branch] = (b + rnd.choice([3, 4, 5]), y)
+            free = [x for x in range(spread + 1)
+                    if all(abs(x - dx) >= 2 for dx in shape)]
+            free = free or [x for x in range(spread + 1) if x not in shape] or [3]
+            y += rnd.choice([1, 1, 2])
+            cells['PDV_%s_%s' % (branch, HUB_ROWS[depth])] = (b + rnd.choice(free), y)
+
+    cells['PDV_%s_final' % branch] = (b + rnd.choice([3, 4, 5]), y + 1)
     return cells
 
 

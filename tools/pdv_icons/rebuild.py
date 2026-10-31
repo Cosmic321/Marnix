@@ -129,9 +129,11 @@ focus_tree = {
 \t\t}
 \t}
 '''
-    tray_y = (max(y for x, y in cells.values()) + 4) * 96
-    footer = ('\n\tcontinuous_focus_position = {\n\t\tx = 60\n\t\ty = %d\n\t}\n}\n'
-              % tray_y)
+    # keep the continuous focus tray clear of the tree: far right of the widest
+    # row, on the top line, so it can never sit on top of a road again
+    tray_x = (max(x for x, y in cells.values()) + 12) * 96
+    footer = ('\n\tcontinuous_focus_position = {\n\t\tx = %d\n\t\ty = 60\n\t}\n}\n'
+              % tray_x)
     open(TREE, 'w', encoding='utf-8', newline='\n').write(header + ''.join(body) + footer)
 
     # ---- ideas file: emit every spirit inside the country block
