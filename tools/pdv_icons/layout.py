@@ -6,23 +6,28 @@ Each road is a lattice - a row of four focuses, then a hub that requires all
 four of them, then the next row of four. You cannot walk down the middle and
 ignore the sides, because the middle *is* the sides.
 """
+import random
 import re
 
 MOD = '/home/user/Marnix/CosmicDaWinner/'
 TREE = MOD + 'common/national_focus/PDV_vyratia.txt'
 LOC = MOD + 'Localisation/English/replace/pdv_vyratia_l_english.yml'
 
-BAND = {'cm': 0, 'dm': 8, 'fa': 16, 'mo': 24}   # 7 columns each (0..6 + gap)
+BAND = {'cm': 0, 'dm': 9, 'fa': 17, 'mo': 25}   # uneven gaps on purpose
 COLS = {'c0': 0, 'c1': 2, 'c2': 4, 'c3': 6}     # the four focuses in a row
 HUB = 3                                          # hub sits in the middle
 
 TRUNK = {'PDV_the_directorate': (15, 0), 'PDV_four_roads': (15, 1)}
 
-ROWS = {
-    'review': 2, 'spine1': 3, 'd0': 4, 'spine2': 5, 'd1': 6, 'd2': 7,
-    'spine3': 8, 'd3': 9, 'd4': 10, 'spine4': 11, 'd5': 12, 'd6': 13,
-    'spine5': 14, 'd7': 15, 'spine6': 16, 'final': 17,
-}
+# rows of four, and the hubs that demand all four. Nothing here is a fixed
+# rhythm: each road rolls its own row shapes and spacing, so the four roads
+# read as hand-built branches rather than four copies of one lattice.
+HUB_ROWS = {0: 'spine2', 2: 'spine3', 4: 'spine4', 6: 'spine5', 7: 'spine6'}
+
+# where a row's four focuses can stand inside its seven-column band
+ROW_SHAPES = [(0, 1, 2, 6), (0, 1, 5, 6), (0, 2, 3, 6), (0, 1, 3, 4), (0, 2, 5, 6),
+              (0, 3, 4, 6), (1, 2, 4, 6), (0, 2, 4, 6), (0, 1, 4, 5), (0, 2, 4, 5),
+              (0, 1, 2, 3), (2, 3, 4, 6), (0, 1, 3, 6)]
 
 # which stage opens which branch depth, and which depth gates the next hub
 GATES = [('spine2', 'd0'), ('spine3', 'd2'), ('spine4', 'd4'),
@@ -32,14 +37,33 @@ AF_X, NV_X = 32, 37          # army/air and navy side by side, far right
 
 
 def road_cells(branch):
+    """One road, rolled from its own seed: uneven rows, drifting spacing."""
+    rnd = random.Random('pdv-road-' + branch)
     b = BAND[branch]
-    cells = {'PDV_%s_review' % branch: (b + HUB, ROWS['review']),
-             'PDV_%s_final' % branch: (b + HUB, ROWS['final'])}
-    for i in range(1, 7):
-        cells['PDV_%s_spine%d' % (branch, i)] = (b + HUB, ROWS['spine%d' % i])
+    cells = {}
+    hub = lambda: b + rnd.choice([2, 3, 3, 3, 4])
+
+    y = rnd.choice([2, 2, 3])
+    cells['PDV_%s_review' % branch] = (hub(), y)
+    y += rnd.choice([1, 1, 2])
+    cells['PDV_%s_spine1' % branch] = (hub(), y)
+
     for depth in range(8):
-        for c, dx in COLS.items():
-            cells['PDV_%s_%s_%d' % (branch, c, depth)] = (b + dx, ROWS['d%d' % depth])
+        y += rnd.choice([1, 1, 2])
+        shape = rnd.choice(ROW_SHAPES)
+        stagger = rnd.random() < 0.5
+        low = []
+        for c, dx in zip(COLS, shape):
+            fy = y + (1 if stagger and rnd.random() < 0.45 else 0)
+            cells['PDV_%s_%s_%d' % (branch, c, depth)] = (b + dx, fy)
+            low.append(fy)
+        y = max(low)
+        if depth in HUB_ROWS:
+            y += 1
+            cells['PDV_%s_%s' % (branch, HUB_ROWS[depth])] = (hub(), y)
+
+    y += rnd.choice([1, 1, 2])
+    cells['PDV_%s_final' % branch] = (hub(), y)
     return cells
 
 
