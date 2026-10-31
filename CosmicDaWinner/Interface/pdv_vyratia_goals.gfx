@@ -1,0 +1,786 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_pdv_af_root"
+		texturefile = "gfx/interface/goals/pdv/pdv_af_root.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_cm_c0_0"
+		texturefile = "gfx/interface/goals/pdv/pdv_cm_c0_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_cm_c1_0"
+		texturefile = "gfx/interface/goals/pdv/pdv_cm_c1_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_cm_spine1"
+		texturefile = "gfx/interface/goals/pdv/pdv_cm_spine1.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_cm_c2_0"
+		texturefile = "gfx/interface/goals/pdv/pdv_cm_c2_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_cm_c3_0"
+		texturefile = "gfx/interface/goals/pdv/pdv_cm_c3_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_dm_c0_0"
+		texturefile = "gfx/interface/goals/pdv/pdv_dm_c0_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_dm_c1_0"
+		texturefile = "gfx/interface/goals/pdv/pdv_dm_c1_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_dm_spine1"
+		texturefile = "gfx/interface/goals/pdv/pdv_dm_spine1.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_dm_c2_0"
+		texturefile = "gfx/interface/goals/pdv/pdv_dm_c2_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_dm_c3_0"
+		texturefile = "gfx/interface/goals/pdv/pdv_dm_c3_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_af_armour"
+		texturefile = "gfx/interface/goals/pdv/pdv_af_armour.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_af_guns"
+		texturefile = "gfx/interface/goals/pdv/pdv_af_guns.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_cm_c0_1"
+		texturefile = "gfx/interface/goals/pdv/pdv_cm_c0_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_cm_c1_1"
+		texturefile = "gfx/interface/goals/pdv/pdv_cm_c1_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_cm_spine2"
+		texturefile = "gfx/interface/goals/pdv/pdv_cm_spine2.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_cm_c2_1"
+		texturefile = "gfx/interface/goals/pdv/pdv_cm_c2_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_cm_c3_1"
+		texturefile = "gfx/interface/goals/pdv/pdv_cm_c3_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_dm_c0_1"
+		texturefile = "gfx/interface/goals/pdv/pdv_dm_c0_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_dm_c1_1"
+		texturefile = "gfx/interface/goals/pdv/pdv_dm_c1_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_dm_spine2"
+		texturefile = "gfx/interface/goals/pdv/pdv_dm_spine2.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_dm_c2_1"
+		texturefile = "gfx/interface/goals/pdv/pdv_dm_c2_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_dm_c3_1"
+		texturefile = "gfx/interface/goals/pdv/pdv_dm_c3_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_af_hulls"
+		texturefile = "gfx/interface/goals/pdv/pdv_af_hulls.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_af_barrels"
+		texturefile = "gfx/interface/goals/pdv/pdv_af_barrels.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_cm_c0_2"
+		texturefile = "gfx/interface/goals/pdv/pdv_cm_c0_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_cm_c1_2"
+		texturefile = "gfx/interface/goals/pdv/pdv_cm_c1_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_cm_spine3"
+		texturefile = "gfx/interface/goals/pdv/pdv_cm_spine3.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_cm_c2_2"
+		texturefile = "gfx/interface/goals/pdv/pdv_cm_c2_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_cm_c3_2"
+		texturefile = "gfx/interface/goals/pdv/pdv_cm_c3_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_dm_c0_2"
+		texturefile = "gfx/interface/goals/pdv/pdv_dm_c0_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_dm_c1_2"
+		texturefile = "gfx/interface/goals/pdv/pdv_dm_c1_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_dm_spine3"
+		texturefile = "gfx/interface/goals/pdv/pdv_dm_spine3.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_dm_c2_2"
+		texturefile = "gfx/interface/goals/pdv/pdv_dm_c2_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_dm_c3_2"
+		texturefile = "gfx/interface/goals/pdv/pdv_dm_c3_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_af_columns"
+		texturefile = "gfx/interface/goals/pdv/pdv_af_columns.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_af_battery"
+		texturefile = "gfx/interface/goals/pdv/pdv_af_battery.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_cm_c0_3"
+		texturefile = "gfx/interface/goals/pdv/pdv_cm_c0_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_cm_c1_3"
+		texturefile = "gfx/interface/goals/pdv/pdv_cm_c1_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_cm_spine4"
+		texturefile = "gfx/interface/goals/pdv/pdv_cm_spine4.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_cm_c2_3"
+		texturefile = "gfx/interface/goals/pdv/pdv_cm_c2_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_cm_c3_3"
+		texturefile = "gfx/interface/goals/pdv/pdv_cm_c3_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_dm_c0_3"
+		texturefile = "gfx/interface/goals/pdv/pdv_dm_c0_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_dm_c1_3"
+		texturefile = "gfx/interface/goals/pdv/pdv_dm_c1_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_dm_spine4"
+		texturefile = "gfx/interface/goals/pdv/pdv_dm_spine4.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_dm_c2_3"
+		texturefile = "gfx/interface/goals/pdv/pdv_dm_c2_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_dm_c3_3"
+		texturefile = "gfx/interface/goals/pdv/pdv_dm_c3_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_af_combined"
+		texturefile = "gfx/interface/goals/pdv/pdv_af_combined.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_af_counterbattery"
+		texturefile = "gfx/interface/goals/pdv/pdv_af_counterbattery.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_cm_c0_4"
+		texturefile = "gfx/interface/goals/pdv/pdv_cm_c0_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_cm_c1_4"
+		texturefile = "gfx/interface/goals/pdv/pdv_cm_c1_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_cm_spine5"
+		texturefile = "gfx/interface/goals/pdv/pdv_cm_spine5.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_cm_c2_4"
+		texturefile = "gfx/interface/goals/pdv/pdv_cm_c2_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_cm_c3_4"
+		texturefile = "gfx/interface/goals/pdv/pdv_cm_c3_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_dm_c0_4"
+		texturefile = "gfx/interface/goals/pdv/pdv_dm_c0_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_dm_c1_4"
+		texturefile = "gfx/interface/goals/pdv/pdv_dm_c1_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_dm_spine5"
+		texturefile = "gfx/interface/goals/pdv/pdv_dm_spine5.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_dm_c2_4"
+		texturefile = "gfx/interface/goals/pdv/pdv_dm_c2_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_dm_c3_4"
+		texturefile = "gfx/interface/goals/pdv/pdv_dm_c3_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_af_manual"
+		texturefile = "gfx/interface/goals/pdv/pdv_af_manual.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_cm_c0_5"
+		texturefile = "gfx/interface/goals/pdv/pdv_cm_c0_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_cm_c1_5"
+		texturefile = "gfx/interface/goals/pdv/pdv_cm_c1_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_cm_spine6"
+		texturefile = "gfx/interface/goals/pdv/pdv_cm_spine6.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_cm_c2_5"
+		texturefile = "gfx/interface/goals/pdv/pdv_cm_c2_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_cm_c3_5"
+		texturefile = "gfx/interface/goals/pdv/pdv_cm_c3_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_dm_c0_5"
+		texturefile = "gfx/interface/goals/pdv/pdv_dm_c0_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_dm_c1_5"
+		texturefile = "gfx/interface/goals/pdv/pdv_dm_c1_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_dm_spine6"
+		texturefile = "gfx/interface/goals/pdv/pdv_dm_spine6.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_dm_c2_5"
+		texturefile = "gfx/interface/goals/pdv/pdv_dm_c2_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_dm_c3_5"
+		texturefile = "gfx/interface/goals/pdv/pdv_dm_c3_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_af_air"
+		texturefile = "gfx/interface/goals/pdv/pdv_af_air.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_cm_c0_6"
+		texturefile = "gfx/interface/goals/pdv/pdv_cm_c0_6.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_cm_c1_6"
+		texturefile = "gfx/interface/goals/pdv/pdv_cm_c1_6.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_cm_c2_6"
+		texturefile = "gfx/interface/goals/pdv/pdv_cm_c2_6.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_cm_c3_6"
+		texturefile = "gfx/interface/goals/pdv/pdv_cm_c3_6.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_dm_c0_6"
+		texturefile = "gfx/interface/goals/pdv/pdv_dm_c0_6.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_dm_c1_6"
+		texturefile = "gfx/interface/goals/pdv/pdv_dm_c1_6.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_dm_c2_6"
+		texturefile = "gfx/interface/goals/pdv/pdv_dm_c2_6.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_dm_c3_6"
+		texturefile = "gfx/interface/goals/pdv/pdv_dm_c3_6.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_af_fighters"
+		texturefile = "gfx/interface/goals/pdv/pdv_af_fighters.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_af_cas"
+		texturefile = "gfx/interface/goals/pdv/pdv_af_cas.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_cm_c0_7"
+		texturefile = "gfx/interface/goals/pdv/pdv_cm_c0_7.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_cm_c1_7"
+		texturefile = "gfx/interface/goals/pdv/pdv_cm_c1_7.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_cm_final"
+		texturefile = "gfx/interface/goals/pdv/pdv_cm_final.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_cm_c2_7"
+		texturefile = "gfx/interface/goals/pdv/pdv_cm_c2_7.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_cm_c3_7"
+		texturefile = "gfx/interface/goals/pdv/pdv_cm_c3_7.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_dm_c0_7"
+		texturefile = "gfx/interface/goals/pdv/pdv_dm_c0_7.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_dm_c1_7"
+		texturefile = "gfx/interface/goals/pdv/pdv_dm_c1_7.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_dm_final"
+		texturefile = "gfx/interface/goals/pdv/pdv_dm_final.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_dm_c2_7"
+		texturefile = "gfx/interface/goals/pdv/pdv_dm_c2_7.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_dm_c3_7"
+		texturefile = "gfx/interface/goals/pdv/pdv_dm_c3_7.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_af_radar"
+		texturefile = "gfx/interface/goals/pdv/pdv_af_radar.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_af_airfields"
+		texturefile = "gfx/interface/goals/pdv/pdv_af_airfields.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_af_strike"
+		texturefile = "gfx/interface/goals/pdv/pdv_af_strike.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_af_wing"
+		texturefile = "gfx/interface/goals/pdv/pdv_af_wing.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_af_divebomber"
+		texturefile = "gfx/interface/goals/pdv/pdv_af_divebomber.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_af_airdoctrine"
+		texturefile = "gfx/interface/goals/pdv/pdv_af_airdoctrine.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_fa_c0_0"
+		texturefile = "gfx/interface/goals/pdv/pdv_fa_c0_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_fa_c1_0"
+		texturefile = "gfx/interface/goals/pdv/pdv_fa_c1_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_fa_spine1"
+		texturefile = "gfx/interface/goals/pdv/pdv_fa_spine1.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_fa_c2_0"
+		texturefile = "gfx/interface/goals/pdv/pdv_fa_c2_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_fa_c3_0"
+		texturefile = "gfx/interface/goals/pdv/pdv_fa_c3_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_mo_c0_0"
+		texturefile = "gfx/interface/goals/pdv/pdv_mo_c0_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_mo_c1_0"
+		texturefile = "gfx/interface/goals/pdv/pdv_mo_c1_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_mo_spine1"
+		texturefile = "gfx/interface/goals/pdv/pdv_mo_spine1.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_mo_c2_0"
+		texturefile = "gfx/interface/goals/pdv/pdv_mo_c2_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_mo_c3_0"
+		texturefile = "gfx/interface/goals/pdv/pdv_mo_c3_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_af_capstone"
+		texturefile = "gfx/interface/goals/pdv/pdv_af_capstone.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_fa_c0_1"
+		texturefile = "gfx/interface/goals/pdv/pdv_fa_c0_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_fa_c1_1"
+		texturefile = "gfx/interface/goals/pdv/pdv_fa_c1_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_fa_spine2"
+		texturefile = "gfx/interface/goals/pdv/pdv_fa_spine2.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_fa_c2_1"
+		texturefile = "gfx/interface/goals/pdv/pdv_fa_c2_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_fa_c3_1"
+		texturefile = "gfx/interface/goals/pdv/pdv_fa_c3_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_mo_c0_1"
+		texturefile = "gfx/interface/goals/pdv/pdv_mo_c0_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_mo_c1_1"
+		texturefile = "gfx/interface/goals/pdv/pdv_mo_c1_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_mo_spine2"
+		texturefile = "gfx/interface/goals/pdv/pdv_mo_spine2.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_mo_c2_1"
+		texturefile = "gfx/interface/goals/pdv/pdv_mo_c2_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_mo_c3_1"
+		texturefile = "gfx/interface/goals/pdv/pdv_mo_c3_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_fa_c0_2"
+		texturefile = "gfx/interface/goals/pdv/pdv_fa_c0_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_fa_c1_2"
+		texturefile = "gfx/interface/goals/pdv/pdv_fa_c1_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_fa_spine3"
+		texturefile = "gfx/interface/goals/pdv/pdv_fa_spine3.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_fa_c2_2"
+		texturefile = "gfx/interface/goals/pdv/pdv_fa_c2_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_fa_c3_2"
+		texturefile = "gfx/interface/goals/pdv/pdv_fa_c3_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_mo_c0_2"
+		texturefile = "gfx/interface/goals/pdv/pdv_mo_c0_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_mo_c1_2"
+		texturefile = "gfx/interface/goals/pdv/pdv_mo_c1_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_mo_spine3"
+		texturefile = "gfx/interface/goals/pdv/pdv_mo_spine3.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_mo_c2_2"
+		texturefile = "gfx/interface/goals/pdv/pdv_mo_c2_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_mo_c3_2"
+		texturefile = "gfx/interface/goals/pdv/pdv_mo_c3_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_nv_root"
+		texturefile = "gfx/interface/goals/pdv/pdv_nv_root.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_fa_c0_3"
+		texturefile = "gfx/interface/goals/pdv/pdv_fa_c0_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_fa_c1_3"
+		texturefile = "gfx/interface/goals/pdv/pdv_fa_c1_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_fa_spine4"
+		texturefile = "gfx/interface/goals/pdv/pdv_fa_spine4.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_fa_c2_3"
+		texturefile = "gfx/interface/goals/pdv/pdv_fa_c2_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_fa_c3_3"
+		texturefile = "gfx/interface/goals/pdv/pdv_fa_c3_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_mo_c0_3"
+		texturefile = "gfx/interface/goals/pdv/pdv_mo_c0_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_mo_c1_3"
+		texturefile = "gfx/interface/goals/pdv/pdv_mo_c1_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_mo_spine4"
+		texturefile = "gfx/interface/goals/pdv/pdv_mo_spine4.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_mo_c2_3"
+		texturefile = "gfx/interface/goals/pdv/pdv_mo_c2_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_mo_c3_3"
+		texturefile = "gfx/interface/goals/pdv/pdv_mo_c3_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_nv_surface"
+		texturefile = "gfx/interface/goals/pdv/pdv_nv_surface.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_nv_subs"
+		texturefile = "gfx/interface/goals/pdv/pdv_nv_subs.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_fa_c0_4"
+		texturefile = "gfx/interface/goals/pdv/pdv_fa_c0_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_fa_c1_4"
+		texturefile = "gfx/interface/goals/pdv/pdv_fa_c1_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_fa_spine5"
+		texturefile = "gfx/interface/goals/pdv/pdv_fa_spine5.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_fa_c2_4"
+		texturefile = "gfx/interface/goals/pdv/pdv_fa_c2_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_fa_c3_4"
+		texturefile = "gfx/interface/goals/pdv/pdv_fa_c3_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_mo_c0_4"
+		texturefile = "gfx/interface/goals/pdv/pdv_mo_c0_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_mo_c1_4"
+		texturefile = "gfx/interface/goals/pdv/pdv_mo_c1_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_mo_spine5"
+		texturefile = "gfx/interface/goals/pdv/pdv_mo_spine5.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_mo_c2_4"
+		texturefile = "gfx/interface/goals/pdv/pdv_mo_c2_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_mo_c3_4"
+		texturefile = "gfx/interface/goals/pdv/pdv_mo_c3_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_nv_cruisers"
+		texturefile = "gfx/interface/goals/pdv/pdv_nv_cruisers.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_nv_pens"
+		texturefile = "gfx/interface/goals/pdv/pdv_nv_pens.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_fa_c0_5"
+		texturefile = "gfx/interface/goals/pdv/pdv_fa_c0_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_fa_c1_5"
+		texturefile = "gfx/interface/goals/pdv/pdv_fa_c1_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_fa_spine6"
+		texturefile = "gfx/interface/goals/pdv/pdv_fa_spine6.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_fa_c2_5"
+		texturefile = "gfx/interface/goals/pdv/pdv_fa_c2_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_fa_c3_5"
+		texturefile = "gfx/interface/goals/pdv/pdv_fa_c3_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_mo_c0_5"
+		texturefile = "gfx/interface/goals/pdv/pdv_mo_c0_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_mo_c1_5"
+		texturefile = "gfx/interface/goals/pdv/pdv_mo_c1_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_mo_spine6"
+		texturefile = "gfx/interface/goals/pdv/pdv_mo_spine6.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_mo_c2_5"
+		texturefile = "gfx/interface/goals/pdv/pdv_mo_c2_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_mo_c3_5"
+		texturefile = "gfx/interface/goals/pdv/pdv_mo_c3_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_nv_destroyers"
+		texturefile = "gfx/interface/goals/pdv/pdv_nv_destroyers.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_nv_wolfpack"
+		texturefile = "gfx/interface/goals/pdv/pdv_nv_wolfpack.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_fa_c0_6"
+		texturefile = "gfx/interface/goals/pdv/pdv_fa_c0_6.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_fa_c1_6"
+		texturefile = "gfx/interface/goals/pdv/pdv_fa_c1_6.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_fa_c2_6"
+		texturefile = "gfx/interface/goals/pdv/pdv_fa_c2_6.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_fa_c3_6"
+		texturefile = "gfx/interface/goals/pdv/pdv_fa_c3_6.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_mo_c0_6"
+		texturefile = "gfx/interface/goals/pdv/pdv_mo_c0_6.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_mo_c1_6"
+		texturefile = "gfx/interface/goals/pdv/pdv_mo_c1_6.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_mo_c2_6"
+		texturefile = "gfx/interface/goals/pdv/pdv_mo_c2_6.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_mo_c3_6"
+		texturefile = "gfx/interface/goals/pdv/pdv_mo_c3_6.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_nv_battleline"
+		texturefile = "gfx/interface/goals/pdv/pdv_nv_battleline.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_nv_mines"
+		texturefile = "gfx/interface/goals/pdv/pdv_nv_mines.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_fa_c0_7"
+		texturefile = "gfx/interface/goals/pdv/pdv_fa_c0_7.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_fa_c1_7"
+		texturefile = "gfx/interface/goals/pdv/pdv_fa_c1_7.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_fa_final"
+		texturefile = "gfx/interface/goals/pdv/pdv_fa_final.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_fa_c2_7"
+		texturefile = "gfx/interface/goals/pdv/pdv_fa_c2_7.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_fa_c3_7"
+		texturefile = "gfx/interface/goals/pdv/pdv_fa_c3_7.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_mo_c0_7"
+		texturefile = "gfx/interface/goals/pdv/pdv_mo_c0_7.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_mo_c1_7"
+		texturefile = "gfx/interface/goals/pdv/pdv_mo_c1_7.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_mo_final"
+		texturefile = "gfx/interface/goals/pdv/pdv_mo_final.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_mo_c2_7"
+		texturefile = "gfx/interface/goals/pdv/pdv_mo_c2_7.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_mo_c3_7"
+		texturefile = "gfx/interface/goals/pdv/pdv_mo_c3_7.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_nv_screen"
+		texturefile = "gfx/interface/goals/pdv/pdv_nv_screen.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_nv_silent"
+		texturefile = "gfx/interface/goals/pdv/pdv_nv_silent.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_nv_doctrine"
+		texturefile = "gfx/interface/goals/pdv/pdv_nv_doctrine.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_nv_coast"
+		texturefile = "gfx/interface/goals/pdv/pdv_nv_coast.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_nv_marines"
+		texturefile = "gfx/interface/goals/pdv/pdv_nv_marines.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_nv_convoys"
+		texturefile = "gfx/interface/goals/pdv/pdv_nv_convoys.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_nv_tradewar"
+		texturefile = "gfx/interface/goals/pdv/pdv_nv_tradewar.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_nv_admiralty"
+		texturefile = "gfx/interface/goals/pdv/pdv_nv_admiralty.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_nv_academy"
+		texturefile = "gfx/interface/goals/pdv/pdv_nv_academy.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_nv_fleetair"
+		texturefile = "gfx/interface/goals/pdv/pdv_nv_fleetair.dds"
+	}
+	SpriteType = {
+		name = "GFX_pdv_nv_law"
+		texturefile = "gfx/interface/goals/pdv/pdv_nv_law.dds"
+	}
+}

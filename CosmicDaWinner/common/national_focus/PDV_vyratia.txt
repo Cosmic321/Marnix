@@ -67,7 +67,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_af_root
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_pdv_af_root
 		x = 26
 		y = 2
 		cost = 10
@@ -80,7 +80,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_cm_c0_0
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_pdv_cm_c0_0
 		x = 0
 		y = 3
 		cost = 10
@@ -92,7 +92,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_cm_c1_0
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_pdv_cm_c1_0
 		x = 2
 		y = 3
 		cost = 10
@@ -104,7 +104,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_cm_spine1
-		icon = GFX_goal_support_communism
+		icon = GFX_pdv_cm_spine1
 		x = 4
 		y = 3
 		cost = 10
@@ -118,7 +118,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_cm_c2_0
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_pdv_cm_c2_0
 		x = 6
 		y = 3
 		cost = 10
@@ -130,7 +130,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_cm_c3_0
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_pdv_cm_c3_0
 		x = 8
 		y = 3
 		cost = 10
@@ -142,7 +142,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_dm_c0_0
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_pdv_dm_c0_0
 		x = 11
 		y = 3
 		cost = 10
@@ -154,7 +154,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_dm_c1_0
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_pdv_dm_c1_0
 		x = 13
 		y = 3
 		cost = 10
@@ -166,7 +166,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_dm_spine1
-		icon = GFX_goal_support_democracy
+		icon = GFX_pdv_dm_spine1
 		x = 15
 		y = 3
 		cost = 10
@@ -182,7 +182,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_dm_c2_0
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_pdv_dm_c2_0
 		x = 17
 		y = 3
 		cost = 10
@@ -194,7 +194,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_dm_c3_0
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_pdv_dm_c3_0
 		x = 19
 		y = 3
 		cost = 10
@@ -206,7 +206,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_af_armour
-		icon = GFX_goal_generic_army_tanks
+		icon = GFX_pdv_af_armour
 		x = 24
 		y = 3
 		cost = 10
@@ -220,7 +220,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_af_guns
-		icon = GFX_goal_generic_army_artillery
+		icon = GFX_pdv_af_guns
 		x = 28
 		y = 3
 		cost = 10
@@ -234,7 +234,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_cm_c0_1
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_pdv_cm_c0_1
 		x = 0
 		y = 4
 		cost = 10
@@ -247,7 +247,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_cm_c1_1
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_pdv_cm_c1_1
 		x = 2
 		y = 4
 		cost = 10
@@ -259,7 +259,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_cm_spine2
-		icon = GFX_goal_support_communism
+		icon = GFX_pdv_cm_spine2
 		x = 4
 		y = 4
 		cost = 10
@@ -273,7 +273,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_cm_c2_1
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_pdv_cm_c2_1
 		x = 6
 		y = 4
 		cost = 10
@@ -285,7 +285,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_cm_c3_1
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_pdv_cm_c3_1
 		x = 8
 		y = 4
 		cost = 10
@@ -297,7 +297,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_dm_c0_1
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_pdv_dm_c0_1
 		x = 11
 		y = 4
 		cost = 10
@@ -310,7 +310,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_dm_c1_1
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_pdv_dm_c1_1
 		x = 13
 		y = 4
 		cost = 10
@@ -322,7 +322,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_dm_spine2
-		icon = GFX_goal_support_democracy
+		icon = GFX_pdv_dm_spine2
 		x = 15
 		y = 4
 		cost = 10
@@ -336,7 +336,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_dm_c2_1
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_pdv_dm_c2_1
 		x = 17
 		y = 4
 		cost = 10
@@ -348,7 +348,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_dm_c3_1
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_pdv_dm_c3_1
 		x = 19
 		y = 4
 		cost = 10
@@ -360,7 +360,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_af_hulls
-		icon = GFX_goal_generic_army_tanks
+		icon = GFX_pdv_af_hulls
 		x = 24
 		y = 4
 		cost = 10
@@ -372,7 +372,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_af_barrels
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_pdv_af_barrels
 		x = 28
 		y = 4
 		cost = 10
@@ -384,7 +384,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_cm_c0_2
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_pdv_cm_c0_2
 		x = 0
 		y = 5
 		cost = 10
@@ -396,7 +396,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_cm_c1_2
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_pdv_cm_c1_2
 		x = 2
 		y = 5
 		cost = 10
@@ -409,7 +409,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_cm_spine3
-		icon = GFX_goal_support_communism
+		icon = GFX_pdv_cm_spine3
 		x = 4
 		y = 5
 		cost = 10
@@ -423,7 +423,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_cm_c2_2
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_pdv_cm_c2_2
 		x = 6
 		y = 5
 		cost = 10
@@ -435,7 +435,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_cm_c3_2
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_pdv_cm_c3_2
 		x = 8
 		y = 5
 		cost = 10
@@ -447,7 +447,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_dm_c0_2
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_pdv_dm_c0_2
 		x = 11
 		y = 5
 		cost = 10
@@ -459,7 +459,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_dm_c1_2
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_pdv_dm_c1_2
 		x = 13
 		y = 5
 		cost = 10
@@ -472,7 +472,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_dm_spine3
-		icon = GFX_goal_support_democracy
+		icon = GFX_pdv_dm_spine3
 		x = 15
 		y = 5
 		cost = 10
@@ -486,7 +486,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_dm_c2_2
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_pdv_dm_c2_2
 		x = 17
 		y = 5
 		cost = 10
@@ -498,7 +498,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_dm_c3_2
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_pdv_dm_c3_2
 		x = 19
 		y = 5
 		cost = 10
@@ -510,7 +510,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_af_columns
-		icon = GFX_goal_generic_army_tanks
+		icon = GFX_pdv_af_columns
 		x = 24
 		y = 5
 		cost = 10
@@ -522,7 +522,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_af_battery
-		icon = GFX_goal_generic_army_artillery
+		icon = GFX_pdv_af_battery
 		x = 28
 		y = 5
 		cost = 10
@@ -534,7 +534,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_cm_c0_3
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_pdv_cm_c0_3
 		x = 0
 		y = 6
 		cost = 10
@@ -547,7 +547,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_cm_c1_3
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_pdv_cm_c1_3
 		x = 2
 		y = 6
 		cost = 10
@@ -559,7 +559,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_cm_spine4
-		icon = GFX_goal_support_communism
+		icon = GFX_pdv_cm_spine4
 		x = 4
 		y = 6
 		cost = 10
@@ -572,7 +572,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_cm_c2_3
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_pdv_cm_c2_3
 		x = 6
 		y = 6
 		cost = 10
@@ -584,7 +584,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_cm_c3_3
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_pdv_cm_c3_3
 		x = 8
 		y = 6
 		cost = 10
@@ -598,7 +598,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_dm_c0_3
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_pdv_dm_c0_3
 		x = 11
 		y = 6
 		cost = 10
@@ -611,7 +611,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_dm_c1_3
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_pdv_dm_c1_3
 		x = 13
 		y = 6
 		cost = 10
@@ -623,7 +623,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_dm_spine4
-		icon = GFX_goal_support_democracy
+		icon = GFX_pdv_dm_spine4
 		x = 15
 		y = 6
 		cost = 10
@@ -636,7 +636,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_dm_c2_3
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_pdv_dm_c2_3
 		x = 17
 		y = 6
 		cost = 10
@@ -648,7 +648,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_dm_c3_3
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_pdv_dm_c3_3
 		x = 19
 		y = 6
 		cost = 10
@@ -665,7 +665,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_af_combined
-		icon = GFX_goal_generic_army_tanks
+		icon = GFX_pdv_af_combined
 		x = 24
 		y = 6
 		cost = 10
@@ -678,7 +678,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_af_counterbattery
-		icon = GFX_goal_generic_army_artillery
+		icon = GFX_pdv_af_counterbattery
 		x = 28
 		y = 6
 		cost = 10
@@ -691,7 +691,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_cm_c0_4
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_pdv_cm_c0_4
 		x = 0
 		y = 7
 		cost = 10
@@ -703,7 +703,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_cm_c1_4
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_pdv_cm_c1_4
 		x = 2
 		y = 7
 		cost = 10
@@ -715,7 +715,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_cm_spine5
-		icon = GFX_goal_support_communism
+		icon = GFX_pdv_cm_spine5
 		x = 4
 		y = 7
 		cost = 10
@@ -729,7 +729,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_cm_c2_4
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_pdv_cm_c2_4
 		x = 6
 		y = 7
 		cost = 10
@@ -741,7 +741,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_cm_c3_4
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_pdv_cm_c3_4
 		x = 8
 		y = 7
 		cost = 10
@@ -753,7 +753,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_dm_c0_4
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_pdv_dm_c0_4
 		x = 11
 		y = 7
 		cost = 10
@@ -765,7 +765,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_dm_c1_4
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_pdv_dm_c1_4
 		x = 13
 		y = 7
 		cost = 10
@@ -777,7 +777,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_dm_spine5
-		icon = GFX_goal_support_democracy
+		icon = GFX_pdv_dm_spine5
 		x = 15
 		y = 7
 		cost = 10
@@ -790,7 +790,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_dm_c2_4
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_pdv_dm_c2_4
 		x = 17
 		y = 7
 		cost = 10
@@ -802,7 +802,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_dm_c3_4
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_pdv_dm_c3_4
 		x = 19
 		y = 7
 		cost = 10
@@ -814,7 +814,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_af_manual
-		icon = GFX_goal_generic_air_fighter
+		icon = GFX_pdv_af_manual
 		x = 26
 		y = 7
 		cost = 10
@@ -828,7 +828,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_cm_c0_5
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_pdv_cm_c0_5
 		x = 0
 		y = 8
 		cost = 10
@@ -840,7 +840,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_cm_c1_5
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_pdv_cm_c1_5
 		x = 2
 		y = 8
 		cost = 10
@@ -852,7 +852,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_cm_spine6
-		icon = GFX_goal_support_communism
+		icon = GFX_pdv_cm_spine6
 		x = 4
 		y = 8
 		cost = 10
@@ -866,7 +866,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_cm_c2_5
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_pdv_cm_c2_5
 		x = 6
 		y = 8
 		cost = 10
@@ -878,7 +878,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_cm_c3_5
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_pdv_cm_c3_5
 		x = 8
 		y = 8
 		cost = 10
@@ -890,7 +890,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_dm_c0_5
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_pdv_dm_c0_5
 		x = 11
 		y = 8
 		cost = 10
@@ -902,7 +902,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_dm_c1_5
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_pdv_dm_c1_5
 		x = 13
 		y = 8
 		cost = 10
@@ -914,7 +914,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_dm_spine6
-		icon = GFX_goal_support_democracy
+		icon = GFX_pdv_dm_spine6
 		x = 15
 		y = 8
 		cost = 10
@@ -929,7 +929,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_dm_c2_5
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_pdv_dm_c2_5
 		x = 17
 		y = 8
 		cost = 10
@@ -941,7 +941,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_dm_c3_5
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_pdv_dm_c3_5
 		x = 19
 		y = 8
 		cost = 10
@@ -953,7 +953,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_af_air
-		icon = GFX_goal_generic_air_fighter
+		icon = GFX_pdv_af_air
 		x = 26
 		y = 8
 		cost = 10
@@ -965,7 +965,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_cm_c0_6
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_pdv_cm_c0_6
 		x = 0
 		y = 9
 		cost = 10
@@ -977,7 +977,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_cm_c1_6
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_pdv_cm_c1_6
 		x = 2
 		y = 9
 		cost = 10
@@ -989,7 +989,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_cm_c2_6
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_pdv_cm_c2_6
 		x = 6
 		y = 9
 		cost = 10
@@ -1002,7 +1002,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_cm_c3_6
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_pdv_cm_c3_6
 		x = 8
 		y = 9
 		cost = 10
@@ -1014,7 +1014,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_dm_c0_6
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_pdv_dm_c0_6
 		x = 11
 		y = 9
 		cost = 10
@@ -1026,7 +1026,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_dm_c1_6
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_pdv_dm_c1_6
 		x = 13
 		y = 9
 		cost = 10
@@ -1038,7 +1038,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_dm_c2_6
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_pdv_dm_c2_6
 		x = 17
 		y = 9
 		cost = 10
@@ -1051,7 +1051,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_dm_c3_6
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_pdv_dm_c3_6
 		x = 19
 		y = 9
 		cost = 10
@@ -1063,7 +1063,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_af_fighters
-		icon = GFX_goal_generic_air_fighter
+		icon = GFX_pdv_af_fighters
 		x = 24
 		y = 9
 		cost = 10
@@ -1077,7 +1077,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_af_cas
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_pdv_af_cas
 		x = 28
 		y = 9
 		cost = 10
@@ -1091,7 +1091,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_cm_c0_7
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_pdv_cm_c0_7
 		x = 0
 		y = 10
 		cost = 10
@@ -1104,7 +1104,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_cm_c1_7
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_pdv_cm_c1_7
 		x = 2
 		y = 10
 		cost = 10
@@ -1117,7 +1117,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_cm_final
-		icon = GFX_goal_support_communism
+		icon = GFX_pdv_cm_final
 		x = 4
 		y = 10
 		cost = 10
@@ -1130,7 +1130,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_cm_c2_7
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_pdv_cm_c2_7
 		x = 6
 		y = 10
 		cost = 10
@@ -1143,7 +1143,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_cm_c3_7
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_pdv_cm_c3_7
 		x = 8
 		y = 10
 		cost = 10
@@ -1156,7 +1156,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_dm_c0_7
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_pdv_dm_c0_7
 		x = 11
 		y = 10
 		cost = 10
@@ -1169,7 +1169,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_dm_c1_7
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_pdv_dm_c1_7
 		x = 13
 		y = 10
 		cost = 10
@@ -1182,7 +1182,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_dm_final
-		icon = GFX_goal_support_democracy
+		icon = GFX_pdv_dm_final
 		x = 15
 		y = 10
 		cost = 10
@@ -1195,7 +1195,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_dm_c2_7
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_pdv_dm_c2_7
 		x = 17
 		y = 10
 		cost = 10
@@ -1208,7 +1208,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_dm_c3_7
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_pdv_dm_c3_7
 		x = 19
 		y = 10
 		cost = 10
@@ -1221,7 +1221,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_af_radar
-		icon = GFX_goal_generic_air_fighter
+		icon = GFX_pdv_af_radar
 		x = 24
 		y = 10
 		cost = 10
@@ -1233,7 +1233,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_af_airfields
-		icon = GFX_goal_generic_air_fighter
+		icon = GFX_pdv_af_airfields
 		x = 26
 		y = 10
 		cost = 10
@@ -1246,7 +1246,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_af_strike
-		icon = GFX_goal_generic_air_fighter
+		icon = GFX_pdv_af_strike
 		x = 28
 		y = 10
 		cost = 10
@@ -1258,7 +1258,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_af_wing
-		icon = GFX_goal_generic_air_fighter
+		icon = GFX_pdv_af_wing
 		x = 24
 		y = 11
 		cost = 10
@@ -1270,7 +1270,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_af_divebomber
-		icon = GFX_goal_generic_air_fighter
+		icon = GFX_pdv_af_divebomber
 		x = 28
 		y = 11
 		cost = 10
@@ -1313,7 +1313,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_af_airdoctrine
-		icon = GFX_goal_generic_air_fighter
+		icon = GFX_pdv_af_airdoctrine
 		x = 26
 		y = 12
 		cost = 10
@@ -1328,7 +1328,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_fa_c0_0
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_pdv_fa_c0_0
 		x = 0
 		y = 13
 		cost = 10
@@ -1340,7 +1340,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_fa_c1_0
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_pdv_fa_c1_0
 		x = 2
 		y = 13
 		cost = 10
@@ -1352,7 +1352,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_fa_spine1
-		icon = GFX_goal_support_fascism
+		icon = GFX_pdv_fa_spine1
 		x = 4
 		y = 13
 		cost = 10
@@ -1366,7 +1366,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_fa_c2_0
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_pdv_fa_c2_0
 		x = 6
 		y = 13
 		cost = 10
@@ -1378,7 +1378,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_fa_c3_0
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_pdv_fa_c3_0
 		x = 8
 		y = 13
 		cost = 10
@@ -1390,7 +1390,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_mo_c0_0
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_pdv_mo_c0_0
 		x = 11
 		y = 13
 		cost = 10
@@ -1402,7 +1402,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_mo_c1_0
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_pdv_mo_c1_0
 		x = 13
 		y = 13
 		cost = 10
@@ -1414,7 +1414,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_mo_spine1
-		icon = GFX_goal_support_neutrality
+		icon = GFX_pdv_mo_spine1
 		x = 15
 		y = 13
 		cost = 10
@@ -1428,7 +1428,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_mo_c2_0
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_pdv_mo_c2_0
 		x = 17
 		y = 13
 		cost = 10
@@ -1440,7 +1440,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_mo_c3_0
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_pdv_mo_c3_0
 		x = 19
 		y = 13
 		cost = 10
@@ -1452,7 +1452,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_af_capstone
-		icon = GFX_goal_generic_air_fighter
+		icon = GFX_pdv_af_capstone
 		x = 26
 		y = 13
 		cost = 10
@@ -1465,7 +1465,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_fa_c0_1
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_pdv_fa_c0_1
 		x = 0
 		y = 14
 		cost = 10
@@ -1478,7 +1478,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_fa_c1_1
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_pdv_fa_c1_1
 		x = 2
 		y = 14
 		cost = 10
@@ -1490,7 +1490,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_fa_spine2
-		icon = GFX_goal_support_fascism
+		icon = GFX_pdv_fa_spine2
 		x = 4
 		y = 14
 		cost = 10
@@ -1504,7 +1504,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_fa_c2_1
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_pdv_fa_c2_1
 		x = 6
 		y = 14
 		cost = 10
@@ -1516,7 +1516,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_fa_c3_1
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_pdv_fa_c3_1
 		x = 8
 		y = 14
 		cost = 10
@@ -1528,7 +1528,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_mo_c0_1
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_pdv_mo_c0_1
 		x = 11
 		y = 14
 		cost = 10
@@ -1541,7 +1541,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_mo_c1_1
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_pdv_mo_c1_1
 		x = 13
 		y = 14
 		cost = 10
@@ -1553,7 +1553,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_mo_spine2
-		icon = GFX_goal_support_neutrality
+		icon = GFX_pdv_mo_spine2
 		x = 15
 		y = 14
 		cost = 10
@@ -1567,7 +1567,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_mo_c2_1
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_pdv_mo_c2_1
 		x = 17
 		y = 14
 		cost = 10
@@ -1579,7 +1579,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_mo_c3_1
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_pdv_mo_c3_1
 		x = 19
 		y = 14
 		cost = 10
@@ -1591,7 +1591,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_fa_c0_2
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_pdv_fa_c0_2
 		x = 0
 		y = 15
 		cost = 10
@@ -1603,7 +1603,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_fa_c1_2
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_pdv_fa_c1_2
 		x = 2
 		y = 15
 		cost = 10
@@ -1616,7 +1616,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_fa_spine3
-		icon = GFX_goal_support_fascism
+		icon = GFX_pdv_fa_spine3
 		x = 4
 		y = 15
 		cost = 10
@@ -1630,7 +1630,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_fa_c2_2
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_pdv_fa_c2_2
 		x = 6
 		y = 15
 		cost = 10
@@ -1642,7 +1642,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_fa_c3_2
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_pdv_fa_c3_2
 		x = 8
 		y = 15
 		cost = 10
@@ -1654,7 +1654,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_mo_c0_2
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_pdv_mo_c0_2
 		x = 11
 		y = 15
 		cost = 10
@@ -1666,7 +1666,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_mo_c1_2
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_pdv_mo_c1_2
 		x = 13
 		y = 15
 		cost = 10
@@ -1679,7 +1679,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_mo_spine3
-		icon = GFX_goal_support_neutrality
+		icon = GFX_pdv_mo_spine3
 		x = 15
 		y = 15
 		cost = 10
@@ -1693,7 +1693,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_mo_c2_2
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_pdv_mo_c2_2
 		x = 17
 		y = 15
 		cost = 10
@@ -1705,7 +1705,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_mo_c3_2
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_pdv_mo_c3_2
 		x = 19
 		y = 15
 		cost = 10
@@ -1717,7 +1717,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_nv_root
-		icon = GFX_goal_generic_build_navy
+		icon = GFX_pdv_nv_root
 		x = 26
 		y = 15
 		cost = 10
@@ -1730,7 +1730,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_fa_c0_3
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_pdv_fa_c0_3
 		x = 0
 		y = 16
 		cost = 10
@@ -1743,7 +1743,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_fa_c1_3
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_pdv_fa_c1_3
 		x = 2
 		y = 16
 		cost = 10
@@ -1755,7 +1755,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_fa_spine4
-		icon = GFX_goal_support_fascism
+		icon = GFX_pdv_fa_spine4
 		x = 4
 		y = 16
 		cost = 10
@@ -1768,7 +1768,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_fa_c2_3
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_pdv_fa_c2_3
 		x = 6
 		y = 16
 		cost = 10
@@ -1780,7 +1780,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_fa_c3_3
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_pdv_fa_c3_3
 		x = 8
 		y = 16
 		cost = 10
@@ -1803,7 +1803,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_mo_c0_3
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_pdv_mo_c0_3
 		x = 11
 		y = 16
 		cost = 10
@@ -1816,7 +1816,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_mo_c1_3
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_pdv_mo_c1_3
 		x = 13
 		y = 16
 		cost = 10
@@ -1828,7 +1828,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_mo_spine4
-		icon = GFX_goal_support_neutrality
+		icon = GFX_pdv_mo_spine4
 		x = 15
 		y = 16
 		cost = 10
@@ -1842,7 +1842,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_mo_c2_3
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_pdv_mo_c2_3
 		x = 17
 		y = 16
 		cost = 10
@@ -1854,7 +1854,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_mo_c3_3
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_pdv_mo_c3_3
 		x = 19
 		y = 16
 		cost = 10
@@ -1868,7 +1868,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_nv_surface
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_pdv_nv_surface
 		x = 24
 		y = 16
 		cost = 10
@@ -1881,7 +1881,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_nv_subs
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_pdv_nv_subs
 		x = 28
 		y = 16
 		cost = 10
@@ -1894,7 +1894,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_fa_c0_4
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_pdv_fa_c0_4
 		x = 0
 		y = 17
 		cost = 10
@@ -1906,7 +1906,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_fa_c1_4
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_pdv_fa_c1_4
 		x = 2
 		y = 17
 		cost = 10
@@ -1918,7 +1918,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_fa_spine5
-		icon = GFX_goal_support_fascism
+		icon = GFX_pdv_fa_spine5
 		x = 4
 		y = 17
 		cost = 10
@@ -1932,7 +1932,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_fa_c2_4
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_pdv_fa_c2_4
 		x = 6
 		y = 17
 		cost = 10
@@ -1944,7 +1944,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_fa_c3_4
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_pdv_fa_c3_4
 		x = 8
 		y = 17
 		cost = 10
@@ -1956,7 +1956,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_mo_c0_4
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_pdv_mo_c0_4
 		x = 11
 		y = 17
 		cost = 10
@@ -1968,7 +1968,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_mo_c1_4
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_pdv_mo_c1_4
 		x = 13
 		y = 17
 		cost = 10
@@ -1980,7 +1980,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_mo_spine5
-		icon = GFX_goal_support_neutrality
+		icon = GFX_pdv_mo_spine5
 		x = 15
 		y = 17
 		cost = 10
@@ -1994,7 +1994,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_mo_c2_4
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_pdv_mo_c2_4
 		x = 17
 		y = 17
 		cost = 10
@@ -2006,7 +2006,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_mo_c3_4
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_pdv_mo_c3_4
 		x = 19
 		y = 17
 		cost = 10
@@ -2018,7 +2018,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_nv_cruisers
-		icon = GFX_goal_generic_build_navy
+		icon = GFX_pdv_nv_cruisers
 		x = 24
 		y = 17
 		cost = 10
@@ -2031,7 +2031,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_nv_pens
-		icon = GFX_goal_generic_build_navy
+		icon = GFX_pdv_nv_pens
 		x = 28
 		y = 17
 		cost = 10
@@ -2043,7 +2043,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_fa_c0_5
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_pdv_fa_c0_5
 		x = 0
 		y = 18
 		cost = 10
@@ -2055,7 +2055,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_fa_c1_5
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_pdv_fa_c1_5
 		x = 2
 		y = 18
 		cost = 10
@@ -2067,7 +2067,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_fa_spine6
-		icon = GFX_goal_support_fascism
+		icon = GFX_pdv_fa_spine6
 		x = 4
 		y = 18
 		cost = 10
@@ -2082,7 +2082,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_fa_c2_5
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_pdv_fa_c2_5
 		x = 6
 		y = 18
 		cost = 10
@@ -2094,7 +2094,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_fa_c3_5
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_pdv_fa_c3_5
 		x = 8
 		y = 18
 		cost = 10
@@ -2107,7 +2107,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_mo_c0_5
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_pdv_mo_c0_5
 		x = 11
 		y = 18
 		cost = 10
@@ -2119,7 +2119,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_mo_c1_5
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_pdv_mo_c1_5
 		x = 13
 		y = 18
 		cost = 10
@@ -2131,7 +2131,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_mo_spine6
-		icon = GFX_goal_support_neutrality
+		icon = GFX_pdv_mo_spine6
 		x = 15
 		y = 18
 		cost = 10
@@ -2145,7 +2145,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_mo_c2_5
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_pdv_mo_c2_5
 		x = 17
 		y = 18
 		cost = 10
@@ -2157,7 +2157,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_mo_c3_5
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_pdv_mo_c3_5
 		x = 19
 		y = 18
 		cost = 10
@@ -2169,7 +2169,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_nv_destroyers
-		icon = GFX_goal_generic_build_navy
+		icon = GFX_pdv_nv_destroyers
 		x = 24
 		y = 18
 		cost = 10
@@ -2181,7 +2181,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_nv_wolfpack
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_pdv_nv_wolfpack
 		x = 28
 		y = 18
 		cost = 10
@@ -2194,7 +2194,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_fa_c0_6
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_pdv_fa_c0_6
 		x = 0
 		y = 19
 		cost = 10
@@ -2206,7 +2206,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_fa_c1_6
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_pdv_fa_c1_6
 		x = 2
 		y = 19
 		cost = 10
@@ -2218,7 +2218,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_fa_c2_6
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_pdv_fa_c2_6
 		x = 6
 		y = 19
 		cost = 10
@@ -2231,7 +2231,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_fa_c3_6
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_pdv_fa_c3_6
 		x = 8
 		y = 19
 		cost = 10
@@ -2245,7 +2245,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_mo_c0_6
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_pdv_mo_c0_6
 		x = 11
 		y = 19
 		cost = 10
@@ -2257,7 +2257,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_mo_c1_6
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_pdv_mo_c1_6
 		x = 13
 		y = 19
 		cost = 10
@@ -2269,7 +2269,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_mo_c2_6
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_pdv_mo_c2_6
 		x = 17
 		y = 19
 		cost = 10
@@ -2282,7 +2282,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_mo_c3_6
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_pdv_mo_c3_6
 		x = 19
 		y = 19
 		cost = 10
@@ -2294,7 +2294,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_nv_battleline
-		icon = GFX_goal_generic_build_navy
+		icon = GFX_pdv_nv_battleline
 		x = 24
 		y = 19
 		cost = 10
@@ -2307,7 +2307,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_nv_mines
-		icon = GFX_goal_generic_build_navy
+		icon = GFX_pdv_nv_mines
 		x = 28
 		y = 19
 		cost = 10
@@ -2319,7 +2319,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_fa_c0_7
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_pdv_fa_c0_7
 		x = 0
 		y = 20
 		cost = 10
@@ -2332,7 +2332,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_fa_c1_7
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_pdv_fa_c1_7
 		x = 2
 		y = 20
 		cost = 10
@@ -2345,7 +2345,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_fa_final
-		icon = GFX_goal_support_fascism
+		icon = GFX_pdv_fa_final
 		x = 4
 		y = 20
 		cost = 10
@@ -2358,7 +2358,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_fa_c2_7
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_pdv_fa_c2_7
 		x = 6
 		y = 20
 		cost = 10
@@ -2371,7 +2371,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_fa_c3_7
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_pdv_fa_c3_7
 		x = 8
 		y = 20
 		cost = 10
@@ -2386,7 +2386,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_mo_c0_7
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_pdv_mo_c0_7
 		x = 11
 		y = 20
 		cost = 10
@@ -2399,7 +2399,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_mo_c1_7
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_pdv_mo_c1_7
 		x = 13
 		y = 20
 		cost = 10
@@ -2412,7 +2412,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_mo_final
-		icon = GFX_goal_support_neutrality
+		icon = GFX_pdv_mo_final
 		x = 15
 		y = 20
 		cost = 10
@@ -2425,7 +2425,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_mo_c2_7
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_pdv_mo_c2_7
 		x = 17
 		y = 20
 		cost = 10
@@ -2438,7 +2438,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_mo_c3_7
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_pdv_mo_c3_7
 		x = 19
 		y = 20
 		cost = 10
@@ -2451,7 +2451,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_nv_screen
-		icon = GFX_goal_generic_build_navy
+		icon = GFX_pdv_nv_screen
 		x = 24
 		y = 20
 		cost = 10
@@ -2463,7 +2463,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_nv_silent
-		icon = GFX_goal_generic_build_navy
+		icon = GFX_pdv_nv_silent
 		x = 28
 		y = 20
 		cost = 10
@@ -2476,7 +2476,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_nv_doctrine
-		icon = GFX_goal_generic_build_navy
+		icon = GFX_pdv_nv_doctrine
 		x = 26
 		y = 21
 		cost = 10
@@ -2489,7 +2489,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_nv_coast
-		icon = GFX_goal_generic_defence
+		icon = GFX_pdv_nv_coast
 		x = 24
 		y = 22
 		cost = 10
@@ -2502,7 +2502,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_nv_marines
-		icon = GFX_goal_generic_build_navy
+		icon = GFX_pdv_nv_marines
 		x = 28
 		y = 22
 		cost = 10
@@ -2515,7 +2515,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_nv_convoys
-		icon = GFX_goal_generic_build_navy
+		icon = GFX_pdv_nv_convoys
 		x = 24
 		y = 23
 		cost = 10
@@ -2527,7 +2527,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_nv_tradewar
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_pdv_nv_tradewar
 		x = 28
 		y = 23
 		cost = 10
@@ -2539,7 +2539,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_nv_admiralty
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_pdv_nv_admiralty
 		x = 24
 		y = 24
 		cost = 10
@@ -2551,7 +2551,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_nv_academy
-		icon = GFX_goal_generic_build_navy
+		icon = GFX_pdv_nv_academy
 		x = 28
 		y = 24
 		cost = 10
@@ -2563,7 +2563,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_nv_fleetair
-		icon = GFX_goal_generic_air_fighter
+		icon = GFX_pdv_nv_fleetair
 		x = 26
 		y = 25
 		cost = 10
@@ -2577,7 +2577,7 @@ focus_tree = {
 
 	focus = {
 		id = PDV_nv_law
-		icon = GFX_goal_generic_build_navy
+		icon = GFX_pdv_nv_law
 		x = 26
 		y = 26
 		cost = 10
