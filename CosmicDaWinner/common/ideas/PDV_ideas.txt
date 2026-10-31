@@ -1,0 +1,66 @@
+# Vyratia (PDV) - spirits used by the four roads.
+ideas = {
+
+	country = {
+
+		PDV_rebuilt_staff = {
+			picture = generic_army_war_college
+			modifier = {
+				army_org_factor = 0.05
+				experience_gain_army_factor = 0.10
+			}
+		}
+
+		PDV_civil_war_scars = {
+			picture = generic_build_infrastructure
+			modifier = {
+				stability_factor = -0.15
+				industrial_capacity_factory = -0.15
+			}
+		}
+
+		PDV_federal_republic = {
+			picture = generic_foreign_capital
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.15
+				industrial_capacity_factory = 0.10
+			}
+		}
+
+		PDV_reich = {
+			picture = generic_fascist_workers
+			modifier = {
+				army_attack_factor = 0.05
+				war_support_factor = 0.10
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		PDV_leaderless = {
+			picture = generic_morale_bonus
+			modifier = {
+				army_org_factor = -0.20
+				army_morale_factor = -0.20
+				political_power_gain = -0.25
+			}
+		}
+
+		PDV_peoples_defence = {
+			picture = generic_morale_bonus
+			modifier = {
+				army_defense_factor = 0.50
+			}
+		}
+
+		PDV_rbd_infiltration = {
+			picture = generic_propaganda
+			modifier = {
+				political_power_gain = -0.10
+				stability_factor = -0.05
+			}
+		}
+
+	}
+
+}

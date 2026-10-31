@@ -1,0 +1,11 @@
+characters = {
+	VYR_ruler = {
+		name = VYR_ruler
+		gender = male
+		country_leader = {
+			ideology = despotism
+			desc = VYR_ruler_desc
+			expire = "1965.1.1.1"
+		}
+	}
+}

@@ -388,4 +388,21 @@ on_actions = {
 		}
 	}
 
+	# Renderbosch, once infiltrated, drifts towards the crown a little every week.
+	on_weekly = {
+		effect = {
+			if = {
+				limit = {
+					RBD = { exists = yes has_idea = PDV_rbd_infiltration }
+				}
+				RBD = {
+					add_popularity = {
+						ideology = neutrality
+						popularity = 0.005
+					}
+				}
+			}
+		}
+	}
+
 }

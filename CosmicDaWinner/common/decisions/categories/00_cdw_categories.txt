@@ -1,0 +1,7 @@
+# Decision categories for Cosmic DaWinner (common/decisions/categories is replaced).
+PDV_invite_faction_category = {
+	icon = generic_political_actions
+	priority = 100
+	allowed = { always = yes }
+	visible = { always = yes }
+}

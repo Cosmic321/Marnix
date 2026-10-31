@@ -1,0 +1,11 @@
+characters = {
+	SUN_ruler = {
+		name = SUN_ruler
+		gender = female
+		country_leader = {
+			ideology = despotism
+			desc = SUN_ruler_desc
+			expire = "1965.1.1.1"
+		}
+	}
+}
