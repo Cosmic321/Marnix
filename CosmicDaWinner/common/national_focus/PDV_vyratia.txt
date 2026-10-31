@@ -912,15 +912,23 @@ focus_tree = {
 		prerequisite = { focus = PDV_fa_cells6 }
 		completion_reward = {
 			set_politics = {
-							ruling_party = fascism
-							elections_allowed = no
-							last_election = "1939.1.1"
-							election_frequency = 48
-						}
+				ruling_party = fascism
+				elections_allowed = no
+				last_election = "1939.1.1"
+				election_frequency = 48
+			}
+			# The provinces go their own way the moment the party takes the capital.
+			release = SUN
+			release = BRR
+			release = AFR
+			release = VYR
+			release = FGT
+			release = PPS
+			PPS = { add_ideas = PDV_peoples_defence }
 			start_civil_war = {
-							size = 0.35
-							ideology = communism
-						}
+				size = 0.35
+				ideology = communism
+			}
 			country_event = { id = pdv_vyratia.1 days = 1 }
 			country_event = { id = pdv_vyratia.2 days = 30 }
 			add_war_support = 0.10

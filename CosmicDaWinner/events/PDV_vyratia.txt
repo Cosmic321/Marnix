@@ -1,4 +1,4 @@
-add_namespace = pdv_vyratia
+﻿add_namespace = pdv_vyratia
 
 # The night the fascists came for the leadership of the Directorate.
 country_event = {
@@ -11,18 +11,18 @@ country_event = {
 		name = pdv_vyratia.1.a
 		add_war_support = 0.05
 		add_stability = -0.05
-		# The Directorate's leadership is gone: whoever is left is fighting without a head.
+		# Only the communist twin that broke away is left without a head.
 		every_country = {
 			limit = {
-				NOT = { tag = ROOT }
-				at_war_with = ROOT
+				tag = ROOT
+				has_war_with = ROOT
 			}
 			add_ideas = PDV_leaderless
 		}
 	}
 }
 
-# Thirty days of civil war and the country comes apart.
+# Thirty days in, the south-east has declared for the risers.
 country_event = {
 	id = pdv_vyratia.2
 	title = pdv_vyratia.2.t
@@ -31,20 +31,18 @@ country_event = {
 
 	option = {
 		name = pdv_vyratia.2.a
-		add_ideas = PDV_civil_war_scars
-		release = SUN
-		release = AFR
-		release = FGT
-		release = PPS
-		PPS = {
-			add_ideas = PDV_peoples_defence
+		add_war_support = 0.05
+		add_stability = 0.03
+		if = {
+			limit = { FGT = { exists = yes } }
+			FGT = { add_war_support = 0.05 }
 		}
-		every_country = {
-			limit = {
-				NOT = { tag = ROOT }
-				at_war_with = ROOT
+		if = {
+			limit = { PPS = { exists = yes } }
+			PPS = {
+				add_ideas = PDV_peoples_defence
+				add_war_support = 0.05
 			}
-			add_ideas = PDV_leaderless
 		}
 	}
 }

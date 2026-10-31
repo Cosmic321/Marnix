@@ -3,7 +3,7 @@ state={
 	name="STATE_373"
 	manpower = 1050900
 	
-	state_category = large_town
+	state_category = wasteland
 	history={
 		victory_points = {
 			5947 10
@@ -11,6 +11,7 @@ state={
 		owner = PDV
 		controller = PDV
 		add_core_of = PDV
+		add_core_of = SUN
 		
 		buildings = {
 			infrastructure = 2

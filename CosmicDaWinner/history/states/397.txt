@@ -3,7 +3,7 @@ state={
 	name="STATE_397"
 	manpower = 1740000
 	
-	state_category = megalopolis
+	state_category = pastoral
 	history={
 		victory_points = {
 			6482 25
@@ -11,7 +11,7 @@ state={
 		owner = PDV
 		controller = PDV
 		add_core_of = PDV
-		add_core_of = BRR
+		add_core_of = SUN
 		
 		buildings = {
 			infrastructure = 3

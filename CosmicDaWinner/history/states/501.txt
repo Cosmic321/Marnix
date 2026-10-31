@@ -3,7 +3,7 @@ state={
 	name="STATE_501"
 	manpower = 872700
 	
-	state_category = pastoral
+	state_category = wasteland
 	history={
 		victory_points = {
 			8449 15
