@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Draws a picture of the focus tree: one plate per focus, one line per requirement."""
 import sys
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageFont
 
 sys.path.insert(0, '/home/user/Marnix/tools/pdv_icons')
 import layout
@@ -58,7 +58,8 @@ def main(out='/home/user/pdv_tree_preview.png'):
     for name, fid in (('COMMUNISM', 'PDV_cm_review'), ('DEMOCRACY', 'PDV_dm_review'),
                       ('FASCISM', 'PDV_fa_review'), ('MONARCHY', 'PDV_mo_review')):
         x, y = cells[fid]
-        d.text((PAD + x * CELL + CELL // 2 - len(name) * 2, PAD + y * CELL + CELL + 2),
+        tw = len(name) * 6
+        d.text((PAD + x * CELL + CELL // 2 - tw // 2, PAD + y * CELL - 14),
                name, fill=LINE[branch(fid)])
     d.text((PAD + layout.AF_X * CELL + CELL // 2 - 32, PAD - 34), 'ARMY / AIR', fill=LINE['af'])
     d.text((PAD + layout.NV_X * CELL + CELL // 2 - 16, PAD - 34), 'NAVY', fill=LINE['nv'])

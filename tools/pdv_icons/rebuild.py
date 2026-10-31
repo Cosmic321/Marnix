@@ -110,7 +110,6 @@ def main():
             lines.append('\t\tprerequisite = { %s }'
                          % ' '.join('focus = %s' % t for g in pre[fid] for t in g))
         lines += ['\t\tcompletion_reward = {',
-                  '\t\t\tcustom_effect_tooltip = %s_desc' % fid,
                   '\t\t\t' + fx.strip('\n'),
                   '\t\t}',
                   '\t}']
@@ -130,7 +129,9 @@ focus_tree = {
 \t\t}
 \t}
 '''
-    footer = '\n\tcontinuous_focus_position = {\n\t\tx = 15\n\t\ty = 1200\n\t}\n}\n'
+    tray_y = (max(y for x, y in cells.values()) + 4) * 96
+    footer = ('\n\tcontinuous_focus_position = {\n\t\tx = 60\n\t\ty = %d\n\t}\n}\n'
+              % tray_y)
     open(TREE, 'w', encoding='utf-8', newline='\n').write(header + ''.join(body) + footer)
 
     # ---- ideas file: emit every spirit inside the country block
