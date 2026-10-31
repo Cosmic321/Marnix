@@ -56,8 +56,8 @@ ideas = {
 		PDV_rbd_infiltration = {
 			picture = generic_propaganda
 			modifier = {
-				political_power_gain = -0.10
-				stability_factor = -0.05
+				neutrality_drift = 0.50
+				political_power_gain = 0.05
 			}
 		}
 

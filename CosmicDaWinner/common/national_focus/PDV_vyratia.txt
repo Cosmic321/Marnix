@@ -19,8 +19,7 @@ focus_tree = {
 		y = 0
 		cost = 10
 		completion_reward = {
-																																													add_political_power = 50
-			add_stability = 0.03
+			add_political_power = 25
 		}
 	}
 	focus = {
@@ -32,7 +31,6 @@ focus_tree = {
 		prerequisite = { focus = PDV_the_directorate }
 		completion_reward = {
 			add_political_power = 25
-			add_command_power = 25
 		}
 	}
 	focus = {
@@ -45,10 +43,8 @@ focus_tree = {
 		prerequisite = { focus = PDV_four_roads }
 		completion_reward = {
 			set_politics = { ruling_party = communism elections_allowed = no }
-			add_popularity = { ideology = communism popularity = 0.10 }
-			remove_ideas = PDV_purged_officer_corps
-			add_ideas = PDV_officers_returning
-			add_army_experience = 25
+			add_popularity = { ideology = communism popularity = 0.15 }
+			add_stability = 0.04
 		}
 	}
 	focus = {
@@ -62,11 +58,7 @@ focus_tree = {
 		completion_reward = {
 			set_politics = { ruling_party = democratic elections_allowed = yes }
 			add_popularity = { ideology = democratic popularity = 0.15 }
-			remove_ideas = PDV_purged_officer_corps
-			add_ideas = PDV_officers_returning
-			remove_ideas = PDV_hollow_army
-			add_ideas = PDV_army_rebuilding
-			add_stability = 0.03
+			add_stability = 0.04
 		}
 	}
 	focus = {
@@ -77,8 +69,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_four_roads }
 		completion_reward = {
-																																													add_army_experience = 25
 			add_political_power = 25
+			add_command_power = 20
 		}
 	}
 	focus = {
@@ -89,10 +81,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_cm_spine1 }
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } }
-				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
-			}
+			add_tech_bonus = { name = cdw_pdv_cm_industry bonus = 0.50 uses = 1 category = industry }
+			add_stability = 0.02
 		}
 	}
 	focus = {
@@ -103,7 +93,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_cm_spine1 }
 		completion_reward = {
-																																													add_stability = 0.03
+			add_stability = 0.02
+			add_army_experience = 10
 		}
 	}
 	focus = {
@@ -114,8 +105,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_cm_review }
 		completion_reward = {
-																																													remove_ideas = PDV_hollow_army
-			add_ideas = PDV_army_rebuilding
+			remove_ideas = PDV_purged_officer_corps
+			add_ideas = PDV_officers_returning
 			add_army_experience = 25
 		}
 	}
@@ -127,7 +118,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_cm_spine1 }
 		completion_reward = {
-																																													add_army_experience = 25
+			add_army_experience = 20
 		}
 	}
 	focus = {
@@ -138,8 +129,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_cm_spine1 }
 		completion_reward = {
-			add_command_power = 30
 			add_political_power = 25
+			add_stability = 0.02
 		}
 	}
 	focus = {
@@ -151,7 +142,7 @@ focus_tree = {
 		prerequisite = { focus = PDV_dm_spine1 }
 		completion_reward = {
 			add_stability = 0.03
-			add_command_power = 25
+			add_political_power = 20
 		}
 	}
 	focus = {
@@ -162,7 +153,9 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_dm_spine1 }
 		completion_reward = {
-																																													add_stability = 0.03
+			add_popularity = { ideology = democratic popularity = 0.05 }
+			add_stability = 0.02
+			add_political_power = 15
 		}
 	}
 	focus = {
@@ -173,11 +166,12 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_dm_review }
 		completion_reward = {
-																																													remove_ideas = PDV_officers_returning
-			add_ideas = PDV_officers_settling
-			remove_ideas = PDV_army_rebuilding
-			add_ideas = PDV_army_refitting
-			add_political_power = 40
+			remove_ideas = PDV_purged_officer_corps
+			add_ideas = PDV_officers_returning
+			remove_ideas = PDV_hollow_army
+			add_ideas = PDV_army_rebuilding
+			add_army_experience = 35
+			add_stability = 0.03
 		}
 	}
 	focus = {
@@ -188,7 +182,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_dm_spine1 }
 		completion_reward = {
-																																													add_army_experience = 25
+			add_army_experience = 20
 		}
 	}
 	focus = {
@@ -199,8 +193,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_dm_spine1 }
 		completion_reward = {
-			add_command_power = 30
-			add_political_power = 25
+			add_stability = 0.02
+			add_army_experience = 10
 		}
 	}
 	focus = {
@@ -211,8 +205,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_af_root }
 		completion_reward = {
-																																													add_army_experience = 25
-			add_tech_bonus = { name = cdw_pdv_armour_research bonus = 0.5 uses = 1 category = armor }
+			add_army_experience = 30
+			add_tech_bonus = { name = cdw_pdv_af_land bonus = 0.50 uses = 1 category = infantry_tech }
 		}
 	}
 	focus = {
@@ -223,8 +217,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_af_root }
 		completion_reward = {
-																																													add_army_experience = 25
-			add_equipment_to_stockpile = { type = artillery_equipment amount = 600 }
+			add_army_experience = 30
+			add_tech_bonus = { name = cdw_pdv_af_land bonus = 0.50 uses = 1 category = infantry_tech }
 		}
 	}
 	focus = {
@@ -235,8 +229,11 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_cm_spine2 }
 		completion_reward = {
-																																													random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
-			add_political_power = 25
+			random_owned_controlled_state = {
+				limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } }
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+			add_stability = 0.02
 		}
 	}
 	focus = {
@@ -247,8 +244,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_cm_spine2 }
 		completion_reward = {
-			add_manpower = 25000
 			add_stability = 0.02
+			add_army_experience = 10
 		}
 	}
 	focus = {
@@ -260,8 +257,8 @@ focus_tree = {
 		prerequisite = { focus = PDV_cm_c0_0 focus = PDV_cm_c1_0 focus = PDV_cm_c2_0 focus = PDV_cm_c3_0 }
 		completion_reward = {
 			add_ideas = PDV_state_plan
-			remove_ideas = PDV_officers_returning
-			add_ideas = PDV_officers_settling
+			remove_ideas = PDV_hollow_army
+			add_ideas = PDV_army_rebuilding
 			add_army_experience = 30
 		}
 	}
@@ -273,7 +270,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_cm_spine2 }
 		completion_reward = {
-																																													random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+			add_army_experience = 25
 		}
 	}
 	focus = {
@@ -284,7 +281,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_cm_spine2 }
 		completion_reward = {
-																																													add_war_support = 0.03
+			add_stability = 0.02
+			add_army_experience = 10
 		}
 	}
 	focus = {
@@ -295,8 +293,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_dm_spine2 }
 		completion_reward = {
-																																													random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
-			add_political_power = 25
+			add_stability = 0.03
+			add_political_power = 27
 		}
 	}
 	focus = {
@@ -307,8 +305,9 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_dm_spine2 }
 		completion_reward = {
-			add_manpower = 25000
-			add_stability = 0.03
+			add_popularity = { ideology = democratic popularity = 0.05 }
+			add_stability = 0.02
+			add_political_power = 15
 		}
 	}
 	focus = {
@@ -320,9 +319,12 @@ focus_tree = {
 		prerequisite = { focus = PDV_dm_c0_0 focus = PDV_dm_c1_0 focus = PDV_dm_c2_0 focus = PDV_dm_c3_0 }
 		completion_reward = {
 			add_ideas = PDV_republic_charter
-			remove_ideas = PDV_officers_settling
-			add_stability = 0.04
-			add_army_experience = 40
+			remove_ideas = PDV_officers_returning
+			add_ideas = PDV_officers_settling
+			remove_ideas = PDV_army_rebuilding
+			add_ideas = PDV_army_refitting
+			add_army_experience = 45
+			add_stability = 0.03
 		}
 	}
 	focus = {
@@ -333,7 +335,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_dm_spine2 }
 		completion_reward = {
-																																													random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+			add_army_experience = 26
 		}
 	}
 	focus = {
@@ -344,7 +346,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_dm_spine2 }
 		completion_reward = {
-																																													add_war_support = 0.03
+			add_stability = 0.02
+			add_army_experience = 10
 		}
 	}
 	focus = {
@@ -355,7 +358,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_af_armour }
 		completion_reward = {
-																																													random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+			add_army_experience = 30
+			add_tech_bonus = { name = cdw_pdv_af_land bonus = 0.50 uses = 1 category = infantry_tech }
 		}
 	}
 	focus = {
@@ -366,7 +370,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_af_guns }
 		completion_reward = {
-																																													random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+			add_army_experience = 30
+			add_tech_bonus = { name = cdw_pdv_af_land bonus = 0.50 uses = 1 category = infantry_tech }
 		}
 	}
 	focus = {
@@ -377,11 +382,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_cm_c0_1 }
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } }
-				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
-			}
-			add_war_support = 0.02
+			add_tech_bonus = { name = cdw_pdv_cm_industry bonus = 0.50 uses = 1 category = industry }
+			add_stability = 0.02
 		}
 	}
 	focus = {
@@ -392,8 +394,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_cm_c1_1 }
 		completion_reward = {
-																																													add_stability = 0.03
-			add_manpower = 15000
+			add_stability = 0.02
+			add_army_experience = 10
 		}
 	}
 	focus = {
@@ -404,9 +406,10 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_cm_c0_2 focus = PDV_cm_c1_2 focus = PDV_cm_c2_2 focus = PDV_cm_c3_2 }
 		completion_reward = {
-																																													remove_ideas = PDV_army_rebuilding
-			add_ideas = PDV_army_refitting
-			add_army_experience = 30
+			remove_ideas = PDV_officers_returning
+			add_ideas = PDV_officers_settling
+			add_army_experience = 35
+			add_stability = 0.02
 		}
 	}
 	focus = {
@@ -417,7 +420,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_cm_c2_1 }
 		completion_reward = {
-																																													add_army_experience = 40
+			add_army_experience = 30
 		}
 	}
 	focus = {
@@ -428,8 +431,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_cm_c3_1 }
 		completion_reward = {
-			add_war_support = 0.04
-			add_army_experience = 25
+			add_political_power = 25
+			add_stability = 0.02
 		}
 	}
 	focus = {
@@ -440,8 +443,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_dm_c0_1 }
 		completion_reward = {
-			add_tech_bonus = { name = cdw_pdv_bank_research bonus = 0.5 uses = 1 category = industry }
-			add_stability = 0.02
+			add_stability = 0.03
+			add_political_power = 27
 		}
 	}
 	focus = {
@@ -452,8 +455,9 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_dm_c1_1 }
 		completion_reward = {
-																																													add_stability = 0.03
-			add_manpower = 15000
+			add_popularity = { ideology = democratic popularity = 0.05 }
+			add_stability = 0.02
+			add_political_power = 15
 		}
 	}
 	focus = {
@@ -464,9 +468,10 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_dm_c0_2 focus = PDV_dm_c1_2 focus = PDV_dm_c2_2 focus = PDV_dm_c3_2 }
 		completion_reward = {
-																																													remove_ideas = PDV_army_refitting
-			add_army_experience = 50
-			add_war_support = 0.03
+			remove_ideas = PDV_officers_settling
+			remove_ideas = PDV_army_refitting
+			add_army_experience = 55
+			add_command_power = 30
 		}
 	}
 	focus = {
@@ -477,7 +482,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_dm_c2_1 }
 		completion_reward = {
-																																													add_army_experience = 40
+			add_army_experience = 33
 		}
 	}
 	focus = {
@@ -488,8 +493,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_dm_c3_1 }
 		completion_reward = {
-			add_war_support = 0.03
-			add_navy_experience = 25
+			add_political_power = 33
+			add_stability = 0.02
 		}
 	}
 	focus = {
@@ -500,7 +505,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_af_hulls }
 		completion_reward = {
-																																													add_army_experience = 40
+			add_army_experience = 40
+			add_tech_bonus = { name = cdw_pdv_af_manual bonus = 0.50 uses = 1 category = artillery }
 		}
 	}
 	focus = {
@@ -511,7 +517,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_af_barrels }
 		completion_reward = {
-																																													add_army_experience = 40
+			add_army_experience = 40
+			add_tech_bonus = { name = cdw_pdv_af_manual bonus = 0.50 uses = 1 category = artillery }
 		}
 	}
 	focus = {
@@ -522,8 +529,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_cm_spine3 }
 		completion_reward = {
-																																													add_stability = 0.03
-			add_political_power = 25
+			add_tech_bonus = { name = cdw_pdv_cm_industry bonus = 0.50 uses = 1 category = industry }
+			add_stability = 0.02
 		}
 	}
 	focus = {
@@ -534,8 +541,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_cm_spine3 }
 		completion_reward = {
-			add_manpower = 30000
-			add_political_power = 25
+			add_stability = 0.02
 		}
 	}
 	focus = {
@@ -547,8 +553,10 @@ focus_tree = {
 		prerequisite = { focus = PDV_cm_c0_4 focus = PDV_cm_c1_4 focus = PDV_cm_c2_4 focus = PDV_cm_c3_4 }
 		completion_reward = {
 			add_ideas = PDV_party_state
-			remove_ideas = PDV_officers_settling
+			remove_ideas = PDV_army_rebuilding
+			add_ideas = PDV_army_refitting
 			add_army_experience = 40
+			add_war_support = 0.03
 		}
 	}
 	focus = {
@@ -559,7 +567,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_cm_spine3 }
 		completion_reward = {
-																																													add_war_support = 0.03
+			add_army_experience = 35
+			add_command_power = 15
 		}
 	}
 	focus = {
@@ -570,9 +579,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_cm_spine3 }
 		completion_reward = {
-																																													add_political_power = 100
-			add_stability = 0.05
-			add_war_support = 0.03
+			add_stability = 0.02
+			add_army_experience = 10
 		}
 	}
 	focus = {
@@ -583,8 +591,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_dm_spine3 }
 		completion_reward = {
-																																													add_stability = 0.03
-			add_political_power = 25
+			add_tech_bonus = { name = cdw_pdv_dm_industry bonus = 0.50 uses = 1 category = industry }
+			add_stability = 0.02
 		}
 	}
 	focus = {
@@ -595,8 +603,9 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_dm_spine3 }
 		completion_reward = {
-			add_stability = 0.04
-			add_political_power = 40
+			add_popularity = { ideology = democratic popularity = 0.05 }
+			add_stability = 0.02
+			add_political_power = 15
 		}
 	}
 	focus = {
@@ -608,8 +617,8 @@ focus_tree = {
 		prerequisite = { focus = PDV_dm_c0_4 focus = PDV_dm_c1_4 focus = PDV_dm_c2_4 focus = PDV_dm_c3_4 }
 		completion_reward = {
 			add_ideas = PDV_open_society
-			add_research_slot = 1
-			add_political_power = 50
+			add_army_experience = 60
+			add_command_power = 35
 		}
 	}
 	focus = {
@@ -620,7 +629,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_dm_spine3 }
 		completion_reward = {
-																																													add_war_support = 0.03
+			add_army_experience = 40
+			add_command_power = 20
 		}
 	}
 	focus = {
@@ -631,12 +641,9 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_dm_spine3 }
 		completion_reward = {
-																																													release_puppet = SUN
-			release_puppet = BRR
-			release_puppet = AFR
-			release_puppet = VYR
-			add_stability = 0.05
-			add_political_power = 50
+			add_popularity = { ideology = democratic popularity = 0.05 }
+			add_stability = 0.03
+			add_political_power = 25
 		}
 	}
 	focus = {
@@ -647,8 +654,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_af_columns }
 		completion_reward = {
-																																													add_army_experience = 50
-			add_war_support = 0.03
+			add_army_experience = 40
+			add_tech_bonus = { name = cdw_pdv_af_manual bonus = 0.50 uses = 1 category = artillery }
 		}
 	}
 	focus = {
@@ -659,8 +666,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_af_battery }
 		completion_reward = {
-																																													add_army_experience = 50
-			add_war_support = 0.03
+			add_army_experience = 40
+			add_tech_bonus = { name = cdw_pdv_af_manual bonus = 0.50 uses = 1 category = artillery }
 		}
 	}
 	focus = {
@@ -671,8 +678,9 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_cm_c0_3 }
 		completion_reward = {
-			add_tech_bonus = { name = cdw_pdv_bank_research bonus = 0.5 uses = 1 category = industry }
 			add_stability = 0.02
+			add_political_power = 20
+			consumer_goods_factor = -0.02
 		}
 	}
 	focus = {
@@ -683,7 +691,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_cm_c1_3 }
 		completion_reward = {
-																																													add_stability = 0.04
+			add_tech_bonus = { name = cdw_pdv_cm_science bonus = 0.50 uses = 1 category = electronics }
+			add_research_slot = 0
 		}
 	}
 	focus = {
@@ -694,9 +703,9 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_cm_c0_6 focus = PDV_cm_c1_6 focus = PDV_cm_c2_6 focus = PDV_cm_c3_6 }
 		completion_reward = {
-																																													remove_ideas = PDV_army_refitting
+			remove_ideas = PDV_officers_settling
 			add_army_experience = 50
-			add_war_support = 0.03
+			add_command_power = 25
 		}
 	}
 	focus = {
@@ -707,7 +716,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_cm_c2_3 }
 		completion_reward = {
-																																													add_army_experience = 50
+			add_army_experience = 40
+			add_command_power = 15
 		}
 	}
 	focus = {
@@ -718,8 +728,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_cm_c3_3 }
 		completion_reward = {
-			add_stability = 0.03
-			add_command_power = 25
+			add_stability = 0.02
+			add_army_experience = 10
 		}
 	}
 	focus = {
@@ -745,7 +755,9 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_dm_c1_3 }
 		completion_reward = {
-																																													add_stability = 0.04
+			add_popularity = { ideology = democratic popularity = 0.05 }
+			add_stability = 0.02
+			add_political_power = 15
 		}
 	}
 	focus = {
@@ -756,8 +768,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_dm_c0_6 focus = PDV_dm_c1_6 focus = PDV_dm_c2_6 focus = PDV_dm_c3_6 }
 		completion_reward = {
-																																													add_stability = 0.05
-			add_political_power = 50
+			add_army_experience = 70
+			add_command_power = 40
 		}
 	}
 	focus = {
@@ -768,7 +780,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_dm_c2_3 }
 		completion_reward = {
-																																													add_army_experience = 50
+			add_army_experience = 47
+			add_command_power = 20
 		}
 	}
 	focus = {
@@ -779,8 +792,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_dm_c3_3 }
 		completion_reward = {
-			add_stability = 0.03
-			add_command_power = 25
+			add_stability = 0.02
+			add_army_experience = 10
 		}
 	}
 	focus = {
@@ -791,8 +804,12 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_af_combined focus = PDV_af_counterbattery }
 		completion_reward = {
-																																													add_army_experience = 75
-			add_war_support = 0.04
+			add_army_experience = 40
+			add_tech_bonus = { name = cdw_pdv_af_industry bonus = 0.50 uses = 1 category = infantry_tech }
+			random_owned_controlled_state = {
+				limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } }
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+			}
 		}
 	}
 	focus = {
@@ -803,7 +820,12 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_cm_spine4 }
 		completion_reward = {
-																																													add_stability = 0.04
+			add_stability = 0.02
+			add_tech_bonus = { name = cdw_pdv_cm_infra bonus = 0.50 uses = 1 category = industry }
+			random_owned_controlled_state = {
+				limit = { free_building_slots = { building = infrastructure size > 0 include_locked = yes } }
+				add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+			}
 		}
 	}
 	focus = {
@@ -814,8 +836,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_cm_spine4 }
 		completion_reward = {
-			add_stability = 0.03
-			add_war_support = 0.02
+			add_stability = 0.02
+			add_political_power = 15
 		}
 	}
 	focus = {
@@ -826,9 +848,9 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_cm_c0_7 focus = PDV_cm_c1_7 focus = PDV_cm_c2_7 focus = PDV_cm_c3_7 }
 		completion_reward = {
-																																													add_ideas = PDV_rebuilt_staff
-			add_research_slot = 1
-			add_war_support = 0.05
+			remove_ideas = PDV_army_refitting
+			add_army_experience = 60
+			add_command_power = 35
 		}
 	}
 	focus = {
@@ -839,7 +861,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_cm_spine4 }
 		completion_reward = {
-																																													add_war_support = 0.04
+			add_army_experience = 45
+			add_command_power = 15
 		}
 	}
 	focus = {
@@ -850,7 +873,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_cm_spine4 }
 		completion_reward = {
-																																													add_stability = 0.04
+			add_stability = 0.02
+			add_army_experience = 10
 		}
 	}
 	focus = {
@@ -861,7 +885,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_dm_spine4 }
 		completion_reward = {
-																																													add_stability = 0.04
+			add_tech_bonus = { name = cdw_pdv_dm_industry bonus = 0.50 uses = 1 category = industry }
+			add_stability = 0.02
 		}
 	}
 	focus = {
@@ -872,8 +897,9 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_dm_spine4 }
 		completion_reward = {
-			add_stability = 0.04
-			add_command_power = 25
+			add_popularity = { ideology = democratic popularity = 0.05 }
+			add_stability = 0.02
+			add_political_power = 15
 		}
 	}
 	focus = {
@@ -884,10 +910,15 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_dm_c0_7 focus = PDV_dm_c1_7 focus = PDV_dm_c2_7 focus = PDV_dm_c3_7 }
 		completion_reward = {
-																																													add_ideas = PDV_federal_republic
+			release_puppet = SUN
+			release_puppet = BRR
+			release_puppet = AFR
+			release_puppet = VYR
 			set_cosmetic_tag = PDV_FED
+			add_ideas = PDV_federal_republic
 			add_research_slot = 1
 			add_stability = 0.08
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -898,7 +929,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_dm_spine4 }
 		completion_reward = {
-																																													add_war_support = 0.04
+			add_army_experience = 53
+			add_command_power = 20
 		}
 	}
 	focus = {
@@ -909,7 +941,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_dm_spine4 }
 		completion_reward = {
-																																													add_stability = 0.04
+			add_stability = 0.02
+			add_army_experience = 10
 		}
 	}
 	focus = {
@@ -920,7 +953,12 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_af_manual }
 		completion_reward = {
-																																													add_air_experience = 25
+			add_army_experience = 40
+			add_tech_bonus = { name = cdw_pdv_af_industry bonus = 0.50 uses = 1 category = infantry_tech }
+			random_owned_controlled_state = {
+				limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } }
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+			}
 		}
 	}
 	focus = {
@@ -931,10 +969,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_cm_c0_5 }
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } }
-				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
-			}
+			add_tech_bonus = { name = cdw_pdv_cm_industry bonus = 0.50 uses = 1 category = industry }
+			add_stability = 0.02
 		}
 	}
 	focus = {
@@ -945,7 +981,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_cm_c1_5 }
 		completion_reward = {
-																																													add_stability = 0.05
+			add_stability = 0.02
+			add_army_experience = 10
 		}
 	}
 	focus = {
@@ -956,8 +993,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_cm_c2_5 }
 		completion_reward = {
-																																													add_army_experience = 50
-			add_manpower = 20000
+			add_army_experience = 50
+			add_command_power = 15
 		}
 	}
 	focus = {
@@ -968,8 +1005,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_cm_c3_5 }
 		completion_reward = {
-			add_war_support = 0.03
-			add_equipment_to_stockpile = { type = infantry_equipment amount = 1500 }
+			add_political_power = 25
+			add_stability = 0.02
 		}
 	}
 	focus = {
@@ -980,10 +1017,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_dm_c0_5 }
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = { free_building_slots = { building = infrastructure size > 0 include_locked = yes } }
-				add_building_construction = { type = infrastructure level = 2 instant_build = yes }
-			}
+			add_tech_bonus = { name = cdw_pdv_dm_industry bonus = 0.50 uses = 1 category = industry }
+			add_stability = 0.02
 		}
 	}
 	focus = {
@@ -994,7 +1029,9 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_dm_c1_5 }
 		completion_reward = {
-																																													add_stability = 0.05
+			add_popularity = { ideology = democratic popularity = 0.05 }
+			add_stability = 0.02
+			add_political_power = 15
 		}
 	}
 	focus = {
@@ -1005,8 +1042,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_dm_c2_5 }
 		completion_reward = {
-																																													add_army_experience = 50
-			add_manpower = 20000
+			add_army_experience = 60
+			add_command_power = 20
 		}
 	}
 	focus = {
@@ -1017,8 +1054,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_dm_c3_5 }
 		completion_reward = {
-			add_stability = 0.04
-			add_equipment_to_stockpile = { type = support_equipment amount = 1000 }
+			add_stability = 0.02
+			add_army_experience = 10
 		}
 	}
 	focus = {
@@ -1029,8 +1066,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_af_air }
 		completion_reward = {
-																																													add_air_experience = 40
-			add_tech_bonus = { name = cdw_pdv_fighter_research bonus = 0.5 uses = 1 category = light_fighter }
+			add_air_experience = 35
+			add_tech_bonus = { name = cdw_pdv_af_air bonus = 0.50 uses = 1 category = light_fighter }
 		}
 	}
 	focus = {
@@ -1041,8 +1078,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_af_airfields }
 		completion_reward = {
-																																													add_air_experience = 40
-			add_tech_bonus = { name = cdw_pdv_cas_research bonus = 0.5 uses = 1 category = cas }
+			add_air_experience = 35
+			add_tech_bonus = { name = cdw_pdv_af_air bonus = 0.50 uses = 1 category = light_fighter }
 		}
 	}
 	focus = {
@@ -1053,8 +1090,11 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_cm_spine5 }
 		completion_reward = {
-			add_research_slot = 1
-			add_stability = 0.03
+			random_owned_controlled_state = {
+				limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } }
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+			add_stability = 0.02
 		}
 	}
 	focus = {
@@ -1065,8 +1105,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_cm_spine5 }
 		completion_reward = {
-																																													add_political_power = 75
-			add_stability = 0.03
+			add_stability = 0.02
+			add_army_experience = 10
 		}
 	}
 	focus = {
@@ -1077,8 +1117,10 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_cm_spine6 }
 		completion_reward = {
-																																													add_political_power = 60
-			add_war_support = 0.04
+			add_ideas = PDV_rebuilt_staff
+			add_stability = 0.05
+			add_political_power = 75
+			add_research_slot = 1
 		}
 	}
 	focus = {
@@ -1089,8 +1131,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_cm_spine5 }
 		completion_reward = {
-																																													add_army_experience = 75
-			add_war_support = 0.05
+			add_stability = 0.02
+			add_manpower = 20000
 		}
 	}
 	focus = {
@@ -1101,8 +1143,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_cm_spine5 }
 		completion_reward = {
-			add_war_support = 0.05
-			add_army_experience = 50
+			add_stability = 0.02
+			add_army_experience = 10
 		}
 	}
 	focus = {
@@ -1113,8 +1155,11 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_dm_spine5 }
 		completion_reward = {
-			add_equipment_to_stockpile = { type = convoy amount = 250 }
-			add_political_power = 40
+			random_owned_controlled_state = {
+				limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } }
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+			add_stability = 0.02
 		}
 	}
 	focus = {
@@ -1125,8 +1170,9 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_dm_spine5 }
 		completion_reward = {
-																																													add_political_power = 75
-			add_stability = 0.03
+			add_popularity = { ideology = democratic popularity = 0.05 }
+			add_stability = 0.02
+			add_political_power = 15
 		}
 	}
 	focus = {
@@ -1137,8 +1183,10 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_dm_spine6 }
 		completion_reward = {
-																																													add_political_power = 60
-			add_stability = 0.04
+			add_ideas = PDV_federal_republic
+			add_stability = 0.08
+			add_research_slot = 1
+			add_political_power = 75
 		}
 	}
 	focus = {
@@ -1149,8 +1197,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_dm_spine5 }
 		completion_reward = {
-																																													add_army_experience = 75
-			add_war_support = 0.05
+			add_army_experience = 67
+			add_command_power = 20
 		}
 	}
 	focus = {
@@ -1161,8 +1209,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_dm_spine5 }
 		completion_reward = {
-			add_tech_bonus = { name = cdw_pdv_century_research bonus = 0.5 uses = 2 category = industry }
-			add_political_power = 50
+			add_stability = 0.02
+			add_army_experience = 10
 		}
 	}
 	focus = {
@@ -1173,7 +1221,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_af_fighters }
 		completion_reward = {
-																																													add_air_experience = 50
+			add_air_experience = 35
+			add_tech_bonus = { name = cdw_pdv_af_air bonus = 0.50 uses = 1 category = light_fighter }
 		}
 	}
 	focus = {
@@ -1184,8 +1233,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_af_air }
 		completion_reward = {
-																																													add_air_experience = 25
-			add_political_power = 25
+			add_air_experience = 35
+			add_tech_bonus = { name = cdw_pdv_af_air bonus = 0.50 uses = 1 category = light_fighter }
 		}
 	}
 	focus = {
@@ -1196,7 +1245,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_af_cas }
 		completion_reward = {
-																																													add_air_experience = 50
+			add_air_experience = 35
+			add_tech_bonus = { name = cdw_pdv_af_air bonus = 0.50 uses = 1 category = light_fighter }
 		}
 	}
 	focus = {
@@ -1207,7 +1257,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_af_radar }
 		completion_reward = {
-																																													add_air_experience = 50
+			add_air_experience = 35
+			add_tech_bonus = { name = cdw_pdv_af_air bonus = 0.50 uses = 1 category = light_fighter }
 		}
 	}
 	focus = {
@@ -1218,8 +1269,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_af_wing focus = PDV_af_strike }
 		completion_reward = {
-																																													add_air_experience = 50
-			add_war_support = 0.03
+			add_air_experience = 35
+			add_tech_bonus = { name = cdw_pdv_af_air bonus = 0.50 uses = 1 category = light_fighter }
 		}
 	}
 	focus = {
@@ -1232,10 +1283,8 @@ focus_tree = {
 		prerequisite = { focus = PDV_four_roads }
 		completion_reward = {
 			set_politics = { ruling_party = fascism elections_allowed = no }
-			add_popularity = { ideology = fascism popularity = 0.15 }
-			remove_ideas = PDV_purged_officer_corps
-			add_ideas = PDV_officers_returning
-			add_army_experience = 25
+			add_war_support = 0.04
+			add_stability = -0.02
 		}
 	}
 	focus = {
@@ -1247,11 +1296,9 @@ focus_tree = {
 		mutually_exclusive = { focus = PDV_cm_review focus = PDV_dm_review focus = PDV_fa_review }
 		prerequisite = { focus = PDV_four_roads }
 		completion_reward = {
-			set_politics = { ruling_party = neutrality elections_allowed = no }
+			set_politics = { ruling_party = neutrality elections_allowed = yes }
 			add_popularity = { ideology = neutrality popularity = 0.15 }
-			remove_ideas = PDV_purged_officer_corps
-			add_ideas = PDV_officers_returning
-			add_political_power = 25
+			add_stability = 0.03
 		}
 	}
 	focus = {
@@ -1262,8 +1309,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_af_divebomber }
 		completion_reward = {
-																																													add_air_experience = 50
-			add_war_support = 0.04
+			add_air_experience = 35
+			add_tech_bonus = { name = cdw_pdv_af_air bonus = 0.50 uses = 1 category = light_fighter }
 		}
 	}
 	focus = {
@@ -1274,10 +1321,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_fa_spine1 }
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } }
-				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
-			}
+			add_popularity = { ideology = fascism popularity = 0.05 }
 			add_war_support = 0.02
 		}
 	}
@@ -1289,7 +1333,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_fa_spine1 }
 		completion_reward = {
-																																													add_stability = 0.03
+			add_popularity = { ideology = fascism popularity = 0.05 }
+			add_war_support = 0.02
 		}
 	}
 	focus = {
@@ -1300,9 +1345,10 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_fa_review }
 		completion_reward = {
-																																													remove_ideas = PDV_hollow_army
-			add_ideas = PDV_army_rebuilding
-			add_army_experience = 25
+			remove_ideas = PDV_purged_officer_corps
+			add_ideas = PDV_officers_returning
+			add_army_experience = 30
+			add_war_support = 0.02
 		}
 	}
 	focus = {
@@ -1313,7 +1359,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_fa_spine1 }
 		completion_reward = {
-																																													add_army_experience = 25
+			add_popularity = { ideology = fascism popularity = 0.05 }
+			add_army_experience = 20
 		}
 	}
 	focus = {
@@ -1324,8 +1371,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_fa_spine1 }
 		completion_reward = {
-			add_war_support = 0.04
-			add_command_power = 25
+			add_popularity = { ideology = fascism popularity = 0.05 }
+			add_political_power = 25
 		}
 	}
 	focus = {
@@ -1336,11 +1383,9 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_mo_spine1 }
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } }
-				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
-			}
-			add_stability = 0.02
+			add_popularity = { ideology = neutrality popularity = 0.07 }
+			add_political_power = 15
+			add_stability = 0.01
 		}
 	}
 	focus = {
@@ -1351,7 +1396,9 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_mo_spine1 }
 		completion_reward = {
-																																													add_stability = 0.03
+			add_popularity = { ideology = neutrality popularity = 0.07 }
+			add_political_power = 15
+			add_stability = 0.01
 		}
 	}
 	focus = {
@@ -1362,9 +1409,10 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_mo_review }
 		completion_reward = {
-																																													remove_ideas = PDV_hollow_army
-			add_ideas = PDV_army_rebuilding
-			add_army_experience = 25
+			remove_ideas = PDV_purged_officer_corps
+			add_ideas = PDV_officers_returning
+			add_army_experience = 20
+			add_command_power = 20
 		}
 	}
 	focus = {
@@ -1375,7 +1423,9 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_mo_spine1 }
 		completion_reward = {
-																																													add_army_experience = 25
+			add_popularity = { ideology = neutrality popularity = 0.07 }
+			add_political_power = 15
+			add_stability = 0.01
 		}
 	}
 	focus = {
@@ -1386,8 +1436,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_mo_spine1 }
 		completion_reward = {
-			add_command_power = 30
-			add_political_power = 25
+			add_political_power = 30
+			if = { limit = { SMH = { exists = yes } } SMH = { add_opinion_modifier = { target = ROOT modifier = pdv_good_neighbours } } }
 		}
 	}
 	focus = {
@@ -1398,8 +1448,12 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_af_airdoctrine }
 		completion_reward = {
-																																													add_research_slot = 1
-			add_air_experience = 50
+			add_army_experience = 40
+			add_tech_bonus = { name = cdw_pdv_af_industry bonus = 0.50 uses = 1 category = infantry_tech }
+			random_owned_controlled_state = {
+				limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } }
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+			}
 		}
 	}
 	focus = {
@@ -1410,8 +1464,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_fa_spine2 }
 		completion_reward = {
-																																													random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
-			add_political_power = 25
+			add_popularity = { ideology = fascism popularity = 0.05 }
+			add_stability = 0.02
 		}
 	}
 	focus = {
@@ -1422,7 +1476,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_fa_spine2 }
 		completion_reward = {
-			add_manpower = 25000
+			add_popularity = { ideology = fascism popularity = 0.05 }
 			add_stability = 0.02
 		}
 	}
@@ -1435,9 +1489,10 @@ focus_tree = {
 		prerequisite = { focus = PDV_fa_c0_0 focus = PDV_fa_c1_0 focus = PDV_fa_c2_0 focus = PDV_fa_c3_0 }
 		completion_reward = {
 			add_ideas = PDV_corporate_economy
-			remove_ideas = PDV_officers_returning
-			add_ideas = PDV_officers_settling
-			add_army_experience = 30
+			remove_ideas = PDV_hollow_army
+			add_ideas = PDV_army_rebuilding
+			add_army_experience = 40
+			add_war_support = 0.03
 		}
 	}
 	focus = {
@@ -1448,7 +1503,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_fa_spine2 }
 		completion_reward = {
-																																													random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+			add_army_experience = 25
 		}
 	}
 	focus = {
@@ -1459,7 +1514,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_fa_spine2 }
 		completion_reward = {
-																																													add_war_support = 0.03
+			if = { limit = { SMH = { exists = yes } } SMH = { country_event = pdv_vyratia.3 } }
+			add_political_power = 30
 		}
 	}
 	focus = {
@@ -1470,8 +1526,9 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_mo_spine2 }
 		completion_reward = {
-																																													random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
-			add_political_power = 25
+			add_popularity = { ideology = neutrality popularity = 0.07 }
+			add_political_power = 15
+			add_stability = 0.01
 		}
 	}
 	focus = {
@@ -1482,8 +1539,9 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_mo_spine2 }
 		completion_reward = {
-			add_manpower = 25000
-			add_stability = 0.02
+			add_popularity = { ideology = neutrality popularity = 0.07 }
+			add_political_power = 15
+			add_stability = 0.01
 		}
 	}
 	focus = {
@@ -1495,22 +1553,10 @@ focus_tree = {
 		prerequisite = { focus = PDV_mo_c0_0 focus = PDV_mo_c1_0 focus = PDV_mo_c2_0 focus = PDV_mo_c3_0 }
 		completion_reward = {
 			add_ideas = PDV_crown_restored
-			add_ideas = PDV_crown_restored
-			add_ideas = PDV_crown_restored
-			add_ideas = PDV_crown_restored
-			add_ideas = PDV_crown_restored
-			add_ideas = PDV_crown_restored
-			add_ideas = PDV_crown_restored
-			add_ideas = PDV_crown_restored
-			add_ideas = PDV_crown_restored
-			add_ideas = PDV_crown_restored
-			add_ideas = PDV_crown_restored
-			add_ideas = PDV_crown_restored
-			add_ideas = PDV_crown_restored
-			add_ideas = PDV_crown_restored
-			remove_ideas = PDV_officers_returning
-			add_ideas = PDV_officers_settling
-			add_political_power = 40
+			remove_ideas = PDV_hollow_army
+			add_ideas = PDV_army_rebuilding
+			add_army_experience = 25
+			add_command_power = 25
 		}
 	}
 	focus = {
@@ -1521,7 +1567,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_mo_spine2 }
 		completion_reward = {
-																																													random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+			add_army_experience = 25
 		}
 	}
 	focus = {
@@ -1532,7 +1578,9 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_mo_spine2 }
 		completion_reward = {
-																																													add_war_support = 0.03
+			add_political_power = 35
+			if = { limit = { NOT = { is_in_faction = yes } } create_faction = "The Crowned League" }
+			if = { limit = { COD = { exists = yes } } COD = { add_to_faction = ROOT } }
 		}
 	}
 	focus = {
@@ -1543,7 +1591,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_fa_c0_1 }
 		completion_reward = {
-			add_tech_bonus = { name = cdw_pdv_autarky_research bonus = 0.5 uses = 1 category = industry }
+			add_tech_bonus = { name = cdw_pdv_fa_industry bonus = 0.50 uses = 1 category = industry }
 			add_stability = 0.02
 		}
 	}
@@ -1555,8 +1603,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_fa_c1_1 }
 		completion_reward = {
-																																													add_stability = 0.03
-			add_manpower = 15000
+			add_stability = 0.02
+			add_political_power = 17
 		}
 	}
 	focus = {
@@ -1567,9 +1615,10 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_fa_c0_2 focus = PDV_fa_c1_2 focus = PDV_fa_c2_2 focus = PDV_fa_c3_2 }
 		completion_reward = {
-																																													remove_ideas = PDV_army_rebuilding
-			add_ideas = PDV_army_refitting
-			add_army_experience = 40
+			remove_ideas = PDV_officers_returning
+			add_ideas = PDV_officers_settling
+			add_army_experience = 50
+			add_war_support = 0.03
 		}
 	}
 	focus = {
@@ -1580,7 +1629,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_fa_c2_1 }
 		completion_reward = {
-																																													add_army_experience = 40
+			add_air_experience = 31
 		}
 	}
 	focus = {
@@ -1591,8 +1640,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_fa_c3_1 }
 		completion_reward = {
-			add_command_power = 30
-			add_equipment_to_stockpile = { type = infantry_equipment amount = 1200 }
+			add_political_power = 40
+			add_opinion_modifier = { target = COD modifier = pdv_funded_friends }
 		}
 	}
 	focus = {
@@ -1603,8 +1652,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_mo_c0_1 }
 		completion_reward = {
-			add_manpower = 20000
-			add_stability = 0.03
+			add_stability = 0.02
+			add_army_experience = 10
 		}
 	}
 	focus = {
@@ -1615,8 +1664,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_mo_c1_1 }
 		completion_reward = {
-																																													add_stability = 0.03
-			add_manpower = 15000
+			add_stability = 0.02
 		}
 	}
 	focus = {
@@ -1627,9 +1675,10 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_mo_c0_2 focus = PDV_mo_c1_2 focus = PDV_mo_c2_2 focus = PDV_mo_c3_2 }
 		completion_reward = {
-																																													remove_ideas = PDV_army_rebuilding
-			add_ideas = PDV_army_refitting
+			remove_ideas = PDV_officers_returning
+			add_ideas = PDV_officers_settling
 			add_army_experience = 30
+			add_command_power = 30
 		}
 	}
 	focus = {
@@ -1640,7 +1689,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_mo_c2_1 }
 		completion_reward = {
-																																													add_army_experience = 40
+			add_army_experience = 31
 		}
 	}
 	focus = {
@@ -1651,8 +1700,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_mo_c3_1 }
 		completion_reward = {
-			add_war_support = 0.03
-			add_army_experience = 25
+			add_ideas = PDV_rbd_infiltration
+			add_political_power = 25
 		}
 	}
 	focus = {
@@ -1663,8 +1712,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_four_roads }
 		completion_reward = {
-																																													add_navy_experience = 25
 			add_political_power = 25
+			add_command_power = 20
 		}
 	}
 	focus = {
@@ -1675,8 +1724,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_fa_spine3 }
 		completion_reward = {
-																																													add_stability = 0.03
-			add_political_power = 25
+			add_tech_bonus = { name = cdw_pdv_fa_industry bonus = 0.50 uses = 1 category = industry }
+			add_stability = 0.02
 		}
 	}
 	focus = {
@@ -1687,7 +1736,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_fa_spine3 }
 		completion_reward = {
-			add_manpower = 40000
+			add_stability = 0.02
 		}
 	}
 	focus = {
@@ -1699,7 +1748,9 @@ focus_tree = {
 		prerequisite = { focus = PDV_fa_c0_4 focus = PDV_fa_c1_4 focus = PDV_fa_c2_4 focus = PDV_fa_c3_4 }
 		completion_reward = {
 			add_ideas = PDV_reich_doctrine
-			remove_ideas = PDV_officers_settling
+			remove_ideas = PDV_army_rebuilding
+			add_ideas = PDV_army_refitting
+			add_army_experience = 55
 			add_war_support = 0.04
 		}
 	}
@@ -1711,7 +1762,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_fa_spine3 }
 		completion_reward = {
-																																													add_war_support = 0.03
+			add_army_experience = 37
+			add_command_power = 17
 		}
 	}
 	focus = {
@@ -1722,7 +1774,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_fa_spine3 }
 		completion_reward = {
-																																													set_politics = { ruling_party = fascism elections_allowed = no last_election = "1939.1.1" election_frequency = 48 }
+			set_politics = { ruling_party = fascism elections_allowed = no last_election = "1939.1.1" election_frequency = 48 }
 			release = SUN
 			release = BRR
 			release = AFR
@@ -1744,8 +1796,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_mo_spine3 }
 		completion_reward = {
-																																													add_stability = 0.03
-			add_political_power = 25
+			add_tech_bonus = { name = cdw_pdv_mo_industry bonus = 0.50 uses = 1 category = industry }
+			add_stability = 0.02
 		}
 	}
 	focus = {
@@ -1756,8 +1808,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_mo_spine3 }
 		completion_reward = {
-			add_manpower = 20000
-			add_army_experience = 25
+			add_stability = 0.02
 		}
 	}
 	focus = {
@@ -1769,9 +1820,10 @@ focus_tree = {
 		prerequisite = { focus = PDV_mo_c0_4 focus = PDV_mo_c1_4 focus = PDV_mo_c2_4 focus = PDV_mo_c3_4 }
 		completion_reward = {
 			add_ideas = PDV_army_of_the_crown
-			remove_ideas = PDV_officers_settling
-			add_army_experience = 50
-			add_war_support = 0.03
+			remove_ideas = PDV_army_rebuilding
+			add_ideas = PDV_army_refitting
+			add_army_experience = 35
+			add_command_power = 30
 		}
 	}
 	focus = {
@@ -1782,7 +1834,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_mo_spine3 }
 		completion_reward = {
-																																													add_war_support = 0.03
+			add_navy_experience = 36
 		}
 	}
 	focus = {
@@ -1793,9 +1845,10 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_mo_spine3 }
 		completion_reward = {
-																																													add_political_power = 100
+			set_politics = { ruling_party = neutrality elections_allowed = yes }
+			add_ideas = PDV_crown_restored
 			add_stability = 0.05
-			add_war_support = 0.03
+			add_political_power = 50
 		}
 	}
 	focus = {
@@ -1806,7 +1859,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_nv_root }
 		completion_reward = {
-																																													add_navy_experience = 40
+			add_navy_experience = 40
+			add_tech_bonus = { name = cdw_pdv_nv_naval bonus = 0.50 uses = 1 category = cruiser }
 		}
 	}
 	focus = {
@@ -1817,7 +1871,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_nv_root }
 		completion_reward = {
-																																													add_navy_experience = 40
+			add_navy_experience = 40
+			add_tech_bonus = { name = cdw_pdv_nv_naval bonus = 0.50 uses = 1 category = cruiser }
 		}
 	}
 	focus = {
@@ -1828,10 +1883,9 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_fa_c0_3 }
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } }
-				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
-			}
+			add_stability = 0.02
+			add_political_power = 23
+			consumer_goods_factor = -0.02
 		}
 	}
 	focus = {
@@ -1842,7 +1896,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_fa_c1_3 }
 		completion_reward = {
-																																													add_stability = 0.04
+			add_stability = 0.02
 		}
 	}
 	focus = {
@@ -1853,9 +1907,9 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_fa_c0_6 focus = PDV_fa_c1_6 focus = PDV_fa_c2_6 focus = PDV_fa_c3_6 }
 		completion_reward = {
-																																													remove_ideas = PDV_army_refitting
-			add_army_experience = 50
-			add_war_support = 0.05
+			remove_ideas = PDV_officers_settling
+			add_army_experience = 65
+			add_war_support = 0.04
 		}
 	}
 	focus = {
@@ -1866,7 +1920,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_fa_c2_3 }
 		completion_reward = {
-																																													add_army_experience = 50
+			add_army_experience = 43
+			add_command_power = 17
 		}
 	}
 	focus = {
@@ -1877,8 +1932,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_fa_c3_3 }
 		completion_reward = {
-			add_stability = 0.03
-			add_command_power = 25
+			add_stability = 0.02
+			add_army_experience = 10
 		}
 	}
 	focus = {
@@ -1889,9 +1944,11 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_mo_c0_3 }
 		completion_reward = {
+			add_stability = 0.02
+			add_tech_bonus = { name = cdw_pdv_mo_infra bonus = 0.50 uses = 1 category = industry }
 			random_owned_controlled_state = {
 				limit = { free_building_slots = { building = infrastructure size > 0 include_locked = yes } }
-				add_building_construction = { type = infrastructure level = 2 instant_build = yes }
+				add_building_construction = { type = infrastructure level = 1 instant_build = yes }
 			}
 		}
 	}
@@ -1903,7 +1960,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_mo_c1_3 }
 		completion_reward = {
-																																													add_stability = 0.04
+			add_stability = 0.02
+			add_political_power = 16
 		}
 	}
 	focus = {
@@ -1914,9 +1972,9 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_mo_c0_6 focus = PDV_mo_c1_6 focus = PDV_mo_c2_6 focus = PDV_mo_c3_6 }
 		completion_reward = {
-																																													remove_ideas = PDV_army_refitting
-			add_army_experience = 50
-			add_war_support = 0.04
+			remove_ideas = PDV_officers_settling
+			add_army_experience = 40
+			add_command_power = 35
 		}
 	}
 	focus = {
@@ -1927,7 +1985,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_mo_c2_3 }
 		completion_reward = {
-																																													add_army_experience = 50
+			add_army_experience = 42
+			add_command_power = 16
 		}
 	}
 	focus = {
@@ -1938,8 +1997,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_mo_c3_3 }
 		completion_reward = {
-			add_command_power = 30
-			add_equipment_to_stockpile = { type = artillery_equipment amount = 300 }
+			if = { limit = { SMH = { exists = yes } } SMH = { country_event = pdv_vyratia.3 } }
+			add_political_power = 40
 		}
 	}
 	focus = {
@@ -1950,8 +2009,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_nv_surface }
 		completion_reward = {
-																																													add_navy_experience = 50
-			add_tech_bonus = { name = cdw_pdv_cruiser_research bonus = 0.5 uses = 1 category = cruiser }
+			add_navy_experience = 40
+			add_tech_bonus = { name = cdw_pdv_nv_naval bonus = 0.50 uses = 1 category = cruiser }
 		}
 	}
 	focus = {
@@ -1962,7 +2021,12 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_nv_subs }
 		completion_reward = {
-																																													random_owned_controlled_state = { limit = { is_coastal = yes free_building_slots = { building = dockyard size > 0 include_locked = yes } } add_building_construction = { type = dockyard level = 1 instant_build = yes } }
+			add_navy_experience = 40
+			add_tech_bonus = { name = cdw_pdv_nv_industry bonus = 0.50 uses = 1 category = cruiser }
+			random_owned_controlled_state = {
+				limit = { is_coastal = yes free_building_slots = { building = dockyard size > 0 include_locked = yes } }
+				add_building_construction = { type = dockyard level = 1 instant_build = yes }
+			}
 		}
 	}
 	focus = {
@@ -1973,7 +2037,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_fa_spine4 }
 		completion_reward = {
-																																													add_stability = 0.04
+			add_war_support = 0.03
+			if = { limit = { FGT = { exists = yes } } create_wargoal = { type = annex_everything target = FGT } }
 		}
 	}
 	focus = {
@@ -1984,8 +2049,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_fa_spine4 }
 		completion_reward = {
-			add_stability = 0.03
-			add_war_support = 0.02
+			add_war_support = 0.03
+			if = { limit = { PPS = { exists = yes } } create_wargoal = { type = annex_everything target = PPS } }
 		}
 	}
 	focus = {
@@ -1996,7 +2061,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_fa_c0_7 focus = PDV_fa_c1_7 focus = PDV_fa_c2_7 focus = PDV_fa_c3_7 }
 		completion_reward = {
-																																													set_cosmetic_tag = PDV_REICH
+			set_cosmetic_tag = PDV_REICH
 			add_ideas = PDV_reich
 			add_research_slot = 1
 			add_war_support = 0.05
@@ -2010,7 +2075,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_fa_spine4 }
 		completion_reward = {
-																																													add_war_support = 0.04
+			add_army_experience = 48
+			add_command_power = 17
 		}
 	}
 	focus = {
@@ -2021,8 +2087,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_fa_spine4 }
 		completion_reward = {
-																																													add_stability = 0.04
-			if = { limit = { AFR = { exists = yes } } create_wargoal = { type = annex_everything target = AFR } }
+			add_political_power = 28
+			add_stability = 0.02
 		}
 	}
 	focus = {
@@ -2033,7 +2099,9 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_mo_spine4 }
 		completion_reward = {
-																																													add_stability = 0.04
+			add_stability = 0.02
+			add_political_power = 22
+			consumer_goods_factor = -0.02
 		}
 	}
 	focus = {
@@ -2044,7 +2112,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_mo_spine4 }
 		completion_reward = {
-			add_tech_bonus = { name = cdw_pdv_academy_research bonus = 0.5 uses = 2 category = electronics }
+			add_tech_bonus = { name = cdw_pdv_mo_science bonus = 0.50 uses = 1 category = electronics }
+			add_research_slot = 0
 		}
 	}
 	focus = {
@@ -2055,9 +2124,11 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_mo_c0_7 focus = PDV_mo_c1_7 focus = PDV_mo_c2_7 focus = PDV_mo_c3_7 }
 		completion_reward = {
-																																													add_ideas = PDV_crown_restored
-			add_research_slot = 1
+			add_ideas = PDV_crown_restored
 			add_stability = 0.05
+			add_political_power = 50
+			remove_ideas = PDV_officers_settling
+			remove_ideas = PDV_army_refitting
 		}
 	}
 	focus = {
@@ -2068,7 +2139,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_mo_spine4 }
 		completion_reward = {
-																																													add_war_support = 0.04
+			add_tech_bonus = { name = cdw_pdv_mo_science bonus = 0.50 uses = 1 category = electronics }
+			add_research_slot = 0
 		}
 	}
 	focus = {
@@ -2079,7 +2151,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_mo_spine4 }
 		completion_reward = {
-																																													add_stability = 0.04
+			add_political_power = 27
+			add_stability = 0.02
 		}
 	}
 	focus = {
@@ -2090,7 +2163,12 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_nv_cruisers }
 		completion_reward = {
-																																													random_owned_controlled_state = { limit = { is_coastal = yes free_building_slots = { building = dockyard size > 0 include_locked = yes } } add_building_construction = { type = dockyard level = 1 instant_build = yes } }
+			add_navy_experience = 40
+			add_tech_bonus = { name = cdw_pdv_nv_industry bonus = 0.50 uses = 1 category = cruiser }
+			random_owned_controlled_state = {
+				limit = { is_coastal = yes free_building_slots = { building = dockyard size > 0 include_locked = yes } }
+				add_building_construction = { type = dockyard level = 1 instant_build = yes }
+			}
 		}
 	}
 	focus = {
@@ -2101,8 +2179,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_nv_pens }
 		completion_reward = {
-																																													add_navy_experience = 50
-			add_tech_bonus = { name = cdw_pdv_submarine_research bonus = 0.5 uses = 1 category = submarine }
+			add_navy_experience = 40
+			add_tech_bonus = { name = cdw_pdv_nv_naval bonus = 0.50 uses = 1 category = cruiser }
 		}
 	}
 	focus = {
@@ -2113,11 +2191,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_fa_c0_5 }
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } }
-				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
-			}
-			add_war_support = 0.03
+			add_tech_bonus = { name = cdw_pdv_fa_industry bonus = 0.50 uses = 1 category = industry }
+			add_stability = 0.02
 		}
 	}
 	focus = {
@@ -2128,7 +2203,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_fa_c1_5 }
 		completion_reward = {
-																																													add_stability = 0.05
+			add_stability = 0.02
+			add_manpower = 23000
 		}
 	}
 	focus = {
@@ -2139,8 +2215,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_fa_c2_5 }
 		completion_reward = {
-																																													add_army_experience = 50
-			add_manpower = 20000
+			add_war_support = 0.03
+			if = { limit = { SUN = { exists = yes } } create_wargoal = { type = annex_everything target = SUN } }
 		}
 	}
 	focus = {
@@ -2151,9 +2227,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_fa_c3_5 }
 		completion_reward = {
-																																													add_political_power = 60
-			if = { limit = { SUN = { exists = yes } } create_wargoal = { type = annex_everything target = SUN } }
-			if = { limit = { BRR = { exists = yes } } create_wargoal = { type = annex_everything target = BRR } }
+			add_war_support = 0.03
+			if = { limit = { AFR = { exists = yes } } create_wargoal = { type = annex_everything target = AFR } }
 		}
 	}
 	focus = {
@@ -2164,8 +2239,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_mo_c0_5 }
 		completion_reward = {
-			add_tech_bonus = { name = cdw_pdv_court_research bonus = 0.5 uses = 1 category = industry }
-			add_political_power = 25
+			add_tech_bonus = { name = cdw_pdv_mo_industry bonus = 0.50 uses = 1 category = industry }
+			add_stability = 0.02
 		}
 	}
 	focus = {
@@ -2176,7 +2251,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_mo_c1_5 }
 		completion_reward = {
-																																													add_stability = 0.05
+			add_stability = 0.02
+			add_political_power = 16
 		}
 	}
 	focus = {
@@ -2187,8 +2263,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_mo_c2_5 }
 		completion_reward = {
-																																													add_army_experience = 50
-			add_manpower = 20000
+			add_army_experience = 53
+			add_command_power = 16
 		}
 	}
 	focus = {
@@ -2199,8 +2275,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_mo_c3_5 }
 		completion_reward = {
-			add_command_power = 30
-			add_political_power = 25
+			add_army_experience = 53
+			add_command_power = 16
 		}
 	}
 	focus = {
@@ -2211,8 +2287,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_nv_destroyers }
 		completion_reward = {
-																																													add_navy_experience = 50
-			add_war_support = 0.03
+			add_navy_experience = 40
+			add_tech_bonus = { name = cdw_pdv_nv_naval bonus = 0.50 uses = 1 category = cruiser }
 		}
 	}
 	focus = {
@@ -2223,7 +2299,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_nv_wolfpack }
 		completion_reward = {
-																																													add_navy_experience = 50
+			add_navy_experience = 40
+			add_tech_bonus = { name = cdw_pdv_nv_naval bonus = 0.50 uses = 1 category = cruiser }
 		}
 	}
 	focus = {
@@ -2234,8 +2311,11 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_fa_spine5 }
 		completion_reward = {
-			add_research_slot = 1
-			add_war_support = 0.03
+			random_owned_controlled_state = {
+				limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } }
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+			add_stability = 0.02
 		}
 	}
 	focus = {
@@ -2246,8 +2326,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_fa_spine5 }
 		completion_reward = {
-																																													add_political_power = 75
-			add_stability = 0.03
+			add_stability = 0.02
+			add_manpower = 23000
 		}
 	}
 	focus = {
@@ -2258,8 +2338,10 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_fa_spine6 }
 		completion_reward = {
-																																													add_political_power = 60
-			add_war_support = 0.04
+			add_ideas = PDV_reich
+			add_stability = 0.05
+			add_war_support = 0.05
+			add_command_power = 50
 		}
 	}
 	focus = {
@@ -2270,8 +2352,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_fa_spine5 }
 		completion_reward = {
-																																													add_army_experience = 75
-			add_war_support = 0.05
+			add_army_experience = 60
+			add_command_power = 17
 		}
 	}
 	focus = {
@@ -2282,9 +2364,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_fa_spine5 }
 		completion_reward = {
-																																													add_political_power = 75
-			if = { limit = { PPS = { exists = yes } } create_wargoal = { type = annex_everything target = PPS } }
-			if = { limit = { VYR = { exists = yes } } create_wargoal = { type = annex_everything target = VYR } }
+			add_stability = 0.02
+			add_army_experience = 10
 		}
 	}
 	focus = {
@@ -2295,8 +2376,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_mo_spine5 }
 		completion_reward = {
-			add_stability = 0.05
-			add_political_power = 25
+			add_stability = 0.02
+			add_army_experience = 10
 		}
 	}
 	focus = {
@@ -2307,8 +2388,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_mo_spine5 }
 		completion_reward = {
-																																													add_political_power = 75
-			add_stability = 0.03
+			add_stability = 0.02
+			add_manpower = 22000
 		}
 	}
 	focus = {
@@ -2319,8 +2400,9 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_mo_spine6 }
 		completion_reward = {
-																																													add_political_power = 60
-			add_stability = 0.04
+			add_ideas = PDV_crown_restored
+			add_stability = 0.06
+			add_political_power = 75
 		}
 	}
 	focus = {
@@ -2331,8 +2413,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_mo_spine5 }
 		completion_reward = {
-																																													add_army_experience = 75
-			add_war_support = 0.05
+			add_stability = 0.02
+			add_manpower = 22000
 		}
 	}
 	focus = {
@@ -2343,8 +2425,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_mo_spine5 }
 		completion_reward = {
-			add_war_support = 0.04
-			add_command_power = 50
+			add_political_power = 27
+			add_stability = 0.02
 		}
 	}
 	focus = {
@@ -2355,7 +2437,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_nv_admiralty focus = PDV_nv_academy }
 		completion_reward = {
-																																													add_navy_experience = 50
+			add_navy_experience = 40
+			add_tech_bonus = { name = cdw_pdv_nv_naval bonus = 0.50 uses = 1 category = cruiser }
 		}
 	}
 	focus = {
@@ -2366,8 +2449,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_nv_screen }
 		completion_reward = {
-																																													add_navy_experience = 50
-			add_war_support = 0.03
+			add_navy_experience = 40
+			add_tech_bonus = { name = cdw_pdv_nv_naval bonus = 0.50 uses = 1 category = cruiser }
 		}
 	}
 	focus = {
@@ -2378,7 +2461,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_nv_battleline focus = PDV_nv_mines }
 		completion_reward = {
-																																													add_navy_experience = 50
+			add_navy_experience = 40
+			add_tech_bonus = { name = cdw_pdv_nv_naval bonus = 0.50 uses = 1 category = cruiser }
 		}
 	}
 	focus = {
@@ -2389,8 +2473,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_nv_doctrine }
 		completion_reward = {
-																																													add_navy_experience = 25
-			add_war_support = 0.03
+			add_navy_experience = 40
+			add_tech_bonus = { name = cdw_pdv_nv_naval bonus = 0.50 uses = 1 category = cruiser }
 		}
 	}
 	focus = {
@@ -2401,8 +2485,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_nv_doctrine }
 		completion_reward = {
-																																													add_navy_experience = 40
-			add_manpower = 20000
+			add_navy_experience = 40
+			add_tech_bonus = { name = cdw_pdv_nv_naval bonus = 0.50 uses = 1 category = cruiser }
 		}
 	}
 	focus = {
@@ -2413,7 +2497,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_nv_coast }
 		completion_reward = {
-																																													add_equipment_to_stockpile = { type = convoy amount = 40 }
+			add_navy_experience = 40
+			add_tech_bonus = { name = cdw_pdv_nv_naval bonus = 0.50 uses = 1 category = cruiser }
 		}
 	}
 	focus = {
@@ -2424,7 +2509,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_nv_marines }
 		completion_reward = {
-																																													add_navy_experience = 50
+			add_navy_experience = 40
+			add_tech_bonus = { name = cdw_pdv_nv_naval bonus = 0.50 uses = 1 category = cruiser }
 		}
 	}
 	focus = {
@@ -2435,8 +2521,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_nv_convoys }
 		completion_reward = {
-			add_navy_experience = 50
-			add_tech_bonus = { name = cdw_pdv_admiralty_research bonus = 0.5 uses = 1 category = cruiser }
+			add_navy_experience = 40
+			add_tech_bonus = { name = cdw_pdv_nv_naval bonus = 0.50 uses = 1 category = cruiser }
 		}
 	}
 	focus = {
@@ -2447,7 +2533,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_nv_tradewar }
 		completion_reward = {
-																																													add_navy_experience = 50
+			add_navy_experience = 40
+			add_tech_bonus = { name = cdw_pdv_nv_naval bonus = 0.50 uses = 1 category = cruiser }
 		}
 	}
 	focus = {
@@ -2458,8 +2545,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_nv_screen }
 		completion_reward = {
-																																													add_air_experience = 25
-			add_navy_experience = 25
+			add_navy_experience = 40
+			add_tech_bonus = { name = cdw_pdv_nv_naval bonus = 0.50 uses = 1 category = cruiser }
 		}
 	}
 	focus = {
@@ -2470,8 +2557,12 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PDV_nv_silent focus = PDV_nv_fleetair }
 		completion_reward = {
-																																													add_research_slot = 1
-			add_navy_experience = 50
+			add_navy_experience = 40
+			add_tech_bonus = { name = cdw_pdv_nv_industry bonus = 0.50 uses = 1 category = cruiser }
+			random_owned_controlled_state = {
+				limit = { is_coastal = yes free_building_slots = { building = dockyard size > 0 include_locked = yes } }
+				add_building_construction = { type = dockyard level = 1 instant_build = yes }
+			}
 		}
 	}
 	continuous_focus_position = {

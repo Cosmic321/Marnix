@@ -6,6 +6,7 @@ import re
 import sys
 
 sys.path.insert(0, '/home/user/Marnix/tools/pdv_icons')
+import content
 import layout
 import spec
 
@@ -56,6 +57,20 @@ def reward_of(block):
     return '\n'.join(keep).strip('\n')
 
 
+def indent_body(body, base=3):
+    """Re-indent an effect body so nested blocks line up under the reward."""
+    out, depth = [], 0
+    for raw in body.strip('\n').split('\n'):
+        line = raw.strip()
+        if not line:
+            continue
+        if line.startswith('}'):
+            depth = max(depth - 1, 0)
+        out.append('\t' * (base + depth) + line)
+        depth = max(depth + line.count('{') - line.count('}'), 0)
+    return '\n'.join(out)
+
+
 def pick_icon(fid, name, sprites):
     if fid in spec.ICON_BY_ID:
         return spec.ICON_BY_ID[fid]
@@ -88,13 +103,13 @@ def main():
         # only the four ideological reviews stay exclusive: everything else is
         # required by the hub above it, so an exclusive pair would dead-end it
         mutex = inline(block, 'mutually_exclusive') if fid.endswith('_review') else None
-        fx = spec.FX.get(fid, reward_of(block))
+        fx = content.effect_for(fid, names.get(fid, fid))
 
         parts = fid.split('_')
         if len(parts) > 2 and parts[1] in spec.HUB_IDEAS:
             extra = spec.HUB_IDEAS[parts[1]].get(parts[2])
             if extra:
-                fx = 'add_ideas = %s\n\t\t\t%s' % (extra, fx.lstrip('\t '))
+                fx = 'add_ideas = %s\n%s' % (extra, fx)
 
         lines = ['', '\tfocus = {',
                  '\t\tid = %s' % fid,
@@ -110,7 +125,7 @@ def main():
             lines.append('\t\tprerequisite = { %s }'
                          % ' '.join('focus = %s' % t for g in pre[fid] for t in g))
         lines += ['\t\tcompletion_reward = {',
-                  '\t\t\t' + fx.strip('\n'),
+                  indent_body(fx),
                   '\t\t}',
                   '\t}']
         body.append('\n'.join(lines))

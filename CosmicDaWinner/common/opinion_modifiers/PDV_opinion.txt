@@ -1,0 +1,10 @@
+# Vyratia's neighbours, and the friends it buys with printers rather than guns.
+pdv_good_neighbours = {
+	value = 50
+	decay = 1
+}
+
+pdv_funded_friends = {
+	value = 75
+	decay = 2
+}

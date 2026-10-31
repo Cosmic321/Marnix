@@ -130,8 +130,9 @@ IDEAS = {
                        [('army_org_factor', -0.20), ('army_morale_factor', -0.20),
                         ('political_power_gain', -0.25)]),
     'PDV_peoples_defence': ('generic_morale_bonus', [('army_defense_factor', 0.50)]),
+    # Renderbosch is bought one masthead at a time: the drift is the point
     'PDV_rbd_infiltration': ('generic_propaganda',
-                             [('political_power_gain', -0.10), ('stability_factor', -0.05)]),
+                             [('neutrality_drift', 0.5), ('political_power_gain', 0.05)]),
     'PDV_crown_restored': ('generic_foreign_capital',
                            [('stability_factor', 0.05), ('political_power_gain', 0.10),
                             ('war_support_factor', 0.05)]),
