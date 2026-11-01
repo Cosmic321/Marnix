@@ -1,12 +1,9 @@
 name="CosmicDaWinner"
-path="mod/CosmicDaWinner"
 tags={
 	"Map"
 	"Utilities"
 }
-picture="blank_map_template_5632x2048.jpg"
-supported_version="1.16.1"
-
+picture="thumbnail.png"
 replace_path="common/bookmarks"
 replace_path="common/wargoals"
 replace_path="common/country_tags"
@@ -118,3 +115,5 @@ replace_path="integrated_dlc/dlc045_expansion_pass_1_supporter_pack/gfx/loadings
 replace_path="integrated_dlc/dlc046_graveyard_of_empires/gfx/loadingscreens/"
 replace_path="dlc/dlc047_graveyard_of_empires_preorder_bonus/gfx/loadingscreens/"
 replace_path="integrated_dlc/dlc047_graveyard_of_empires_preorder_bonus/gfx/loadingscreens/"
+supported_version="1.16.1"
+path="C:/Users/harry/Documents/Paradox Interactive/Hearts of Iron IV/mod/CosmicDaWinner"
