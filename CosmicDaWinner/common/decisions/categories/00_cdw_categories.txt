@@ -5,3 +5,11 @@ PDV_invite_faction_category = {
 	allowed = { always = yes }
 	visible = { always = yes }
 }
+
+# Only on the board while the forced economy is running: the three-year clock.
+PDV_forced_economy_category = {
+	icon = generic_political_actions
+	priority = 95
+	allowed = { always = yes }
+	visible = { has_idea = PDV_forced_economy }
+}

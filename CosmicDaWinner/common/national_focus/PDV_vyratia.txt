@@ -3473,6 +3473,11 @@ focus_tree = {
 			remove_ideas = overstretched_industry_reformed
 			add_ideas = PDV_forced_economy
 			country_event = { id = pdv_vyratia.10 days = 1093 }
+			activate_decision = PDV_forced_economy_mission
+			every_country = {
+				limit = { NOT = { tag = ROOT } }
+				country_event = { id = pdv_vyratia.11 days = 1 }
+			}
 			add_stability = 0.02
 		}
 	}
