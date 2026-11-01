@@ -405,4 +405,29 @@ on_actions = {
 		}
 	}
 
+
+	# The forced economy. If the focus' own follow-up event gets swallowed, put
+	# the three-year clock on the board anyway and tell the world about it.
+	on_weekly = {
+		effect = {
+			if = {
+				limit = { PDV = { has_country_flag = PDV_forced_time_started } }
+				PDV = {
+					if = {
+						limit = { NOT = { has_country_flag = PDV_forced_announced } }
+						set_country_flag = PDV_forced_announced
+						every_country = {
+							country_event = { id = pdv_vyratia.11 }
+						}
+					}
+					if = {
+						limit = { NOT = { has_country_flag = PDV_forced_clock_on } }
+						set_country_flag = PDV_forced_clock_on
+						activate_decision = PDV_forced_economy_mission
+					}
+				}
+			}
+		}
+	}
+
 }

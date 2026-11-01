@@ -86,6 +86,8 @@ country_event = {
 	option = {
 		name = pdv_vyratia.10.a
 		remove_ideas = PDV_forced_economy
+		clr_country_flag = PDV_forced_time_started
+		clr_country_flag = PDV_forced_clock_on
 		if = {
 			limit = {
 				VRE = { exists = yes }
@@ -133,7 +135,8 @@ country_event = {
 	}
 }
 
-# A day late, so the decision tab has the mission on screen before we start it.
+# The day after the decree: the economic spirits come off, the world is told,
+# and the three-year clock is put on the board.
 country_event = {
 	id = pdv_vyratia.13
 	title = pdv_vyratia.13.t
@@ -143,9 +146,18 @@ country_event = {
 
 	option = {
 		name = pdv_vyratia.13.a
-		if = {
-			limit = { has_idea = PDV_forced_economy }
-			activate_mission = PDV_forced_economy_mission
+
+		if = { limit = { has_idea = overstretched_industry } remove_ideas = overstretched_industry }
+		if = { limit = { has_idea = overstretched_industry_triage } remove_ideas = overstretched_industry_triage }
+		if = { limit = { has_idea = overstretched_industry_reformed } remove_ideas = overstretched_industry_reformed }
+
+		add_ideas = PDV_forced_economy
+
+		every_country = {
+			country_event = { id = pdv_vyratia.11 }
 		}
+
+		activate_decision = PDV_forced_economy_mission
+		country_event = { id = pdv_vyratia.10 days = 1093 }
 	}
 }

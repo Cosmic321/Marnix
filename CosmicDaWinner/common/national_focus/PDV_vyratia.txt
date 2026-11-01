@@ -3468,14 +3468,8 @@ focus_tree = {
 		mutually_exclusive = { focus = PDV_econ_patient }
 		available = { date > 1937.1.1 date < 1937.2.1 }
 		completion_reward = {
-			remove_ideas = overstretched_industry
-			remove_ideas = overstretched_industry_triage
-			remove_ideas = overstretched_industry_reformed
+			set_country_flag = PDV_forced_time_started
 			add_ideas = PDV_forced_economy
-			every_country = {
-				country_event = { id = pdv_vyratia.11 days = 1 }
-			}
-			country_event = { id = pdv_vyratia.10 days = 1093 }
 			country_event = { id = pdv_vyratia.13 days = 1 }
 			add_stability = 0.02
 		}
