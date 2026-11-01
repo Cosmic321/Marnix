@@ -132,3 +132,20 @@ country_event = {
 		add_political_power = 10
 	}
 }
+
+# A day late, so the decision tab has the mission on screen before we start it.
+country_event = {
+	id = pdv_vyratia.13
+	title = pdv_vyratia.13.t
+	desc = pdv_vyratia.13.d
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = pdv_vyratia.13.a
+		if = {
+			limit = { has_idea = PDV_forced_economy }
+			activate_mission = PDV_forced_economy_mission
+		}
+	}
+}

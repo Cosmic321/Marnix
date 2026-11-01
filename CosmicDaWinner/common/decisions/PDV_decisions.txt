@@ -34,17 +34,15 @@ PDV_invite_faction_category = {
 
 PDV_forced_economy_category = {
 
-	# The three years of Force the Economy to Move, ticking down in the tab.
-	# The event that closes it out is also scheduled by the focus, so the clock
-	# lands on time whether or not the player watches it.
+	# The three years of Force the Economy to Move. A mission rather than a
+	# plain decision, so the tab shows the remaining days ticking down.
 	PDV_forced_economy_mission = {
 		icon = generic_political_actions
-		cost = 0
-		days_remove = 1093
 		fire_only_once = yes
+		days_mission_timeout = 1093
 		available = { has_idea = PDV_forced_economy }
 		visible = { has_idea = PDV_forced_economy }
-		remove_effect = {
+		timeout_effect = {
 			country_event = pdv_vyratia.10
 		}
 		ai_will_do = {
