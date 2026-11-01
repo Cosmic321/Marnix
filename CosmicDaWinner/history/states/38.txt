@@ -1,6 +1,6 @@
 state={
 	id=38
-	name="STATE_38"
+	name="Divedrano"
 	manpower = 276300
 	
 	state_category = rural

@@ -1,6 +1,6 @@
 state={
 	id=576
-	name="STATE_576"
+	name="Hojas"
 	manpower = 1003100
 	
 	state_category = wasteland

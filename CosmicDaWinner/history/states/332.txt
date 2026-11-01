@@ -1,6 +1,6 @@
 state={
 	id=332
-	name="STATE_332"
+	name="Brostov"
 	manpower = 214100
 	
 	state_category = pastoral

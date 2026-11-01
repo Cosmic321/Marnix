@@ -1,6 +1,6 @@
 state={
 	id=639
-	name="STATE_639"
+	name="Teivlun"
 	manpower = 148700
 	
 	state_category = pastoral

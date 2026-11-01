@@ -1,6 +1,6 @@
 state={
 	id=655
-	name="STATE_655"
+	name="Vluskolak"
 	manpower = 159800
 	
 	state_category = pastoral

@@ -1,6 +1,6 @@
 state={
 	id=144
-	name="STATE_144"
+	name="Gredriga"
 	manpower = 463900
 	
 	state_category = rural

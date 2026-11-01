@@ -1,6 +1,6 @@
 state={
 	id=351
-	name="STATE_351"
+	name="Wenin"
 	manpower = 2076100
 	
 	state_category = megalopolis

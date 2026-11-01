@@ -1,6 +1,6 @@
 state={
 	id=400
-	name="STATE_400"
+	name="Sishouan"
 	manpower = 535000
 	
 	state_category = town

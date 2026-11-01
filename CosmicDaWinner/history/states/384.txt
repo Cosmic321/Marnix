@@ -1,6 +1,6 @@
 state={
 	id=384
-	name="STATE_384"
+	name="Lahua"
 	manpower = 1102800
 	
 	state_category = megalopolis

@@ -1,6 +1,6 @@
 state={
 	id=537
-	name="STATE_537"
+	name="Neahlusai"
 	manpower = 1427600
 	
 	state_category = large_city

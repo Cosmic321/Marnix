@@ -1,6 +1,6 @@
 state={
 	id=328
-	name="STATE_328"
+	name="Krogroulheim"
 	manpower = 719600
 	
 	state_category = pastoral

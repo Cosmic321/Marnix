@@ -1,6 +1,6 @@
 state={
 	id=634
-	name="STATE_634"
+	name="Thiehurdorf"
 	manpower = 4600
 	
 	state_category = pastoral

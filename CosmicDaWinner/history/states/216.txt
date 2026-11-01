@@ -1,6 +1,6 @@
 state={
 	id=216
-	name="STATE_216"
+	name="Hefamheim"
 	manpower = 752400
 	
 	state_category = town

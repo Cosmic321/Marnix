@@ -1,6 +1,6 @@
 state={
 	id=137
-	name="STATE_137"
+	name="Brulfilino"
 	manpower = 300000
 	
 	state_category = pastoral

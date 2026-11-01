@@ -1,6 +1,6 @@
 state={
 	id=169
-	name="STATE_169"
+	name="Kwimunoan"
 	manpower = 442500
 	
 	state_category = town

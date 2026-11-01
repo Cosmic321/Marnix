@@ -1,6 +1,6 @@
 state={
 	id=366
-	name="STATE_366"
+	name="Kosuloan"
 	manpower = 1177700
 	
 	state_category = large_city

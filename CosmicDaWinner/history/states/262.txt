@@ -1,6 +1,6 @@
 state={
 	id=262
-	name="STATE_262"
+	name="Gostelein"
 	manpower = 437900
 	
 	state_category = rural

@@ -1,6 +1,6 @@
 state={
 	id=81
-	name="STATE_81"
+	name="Mabomtair"
 	manpower = 425100
 	
 	state_category = pastoral

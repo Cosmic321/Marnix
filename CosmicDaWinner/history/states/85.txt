@@ -1,6 +1,6 @@
 state={
 	id=85
-	name="STATE_85"
+	name="Dafalora"
 	manpower = 687900
 	
 	state_category = rural

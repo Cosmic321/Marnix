@@ -1,6 +1,6 @@
 state={
 	id=656
-	name="STATE_656"
+	name="Droumosdorf"
 	manpower = 235500
 	
 	state_category = pastoral

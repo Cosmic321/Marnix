@@ -1,6 +1,6 @@
 state={
 	id=154
-	name="STATE_154"
+	name="Wuatas"
 	manpower = 150500
 	
 	state_category = pastoral

@@ -1,6 +1,6 @@
 state={
 	id=148
-	name="STATE_148"
+	name="Luse"
 	manpower = 19700
 	
 	state_category = pastoral

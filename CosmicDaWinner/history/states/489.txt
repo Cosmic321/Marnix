@@ -1,6 +1,6 @@
 state={
 	id=489
-	name="STATE_489"
+	name="Waval"
 	manpower = 513700
 	
 	state_category = town

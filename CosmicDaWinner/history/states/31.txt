@@ -1,6 +1,6 @@
 state={
 	id=31
-	name="STATE_31"
+	name="Risedaima"
 	manpower = 772400
 	
 	state_category = rural

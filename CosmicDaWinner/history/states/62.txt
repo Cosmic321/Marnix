@@ -1,6 +1,6 @@
 state={
 	id=62
-	name="STATE_62"
+	name="Bafleile"
 	manpower = 738500
 	
 	state_category = town

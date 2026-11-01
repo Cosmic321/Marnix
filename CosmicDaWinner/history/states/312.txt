@@ -1,6 +1,6 @@
 state={
 	id=312
-	name="STATE_312"
+	name="Musbeil"
 	manpower = 256900
 	
 	state_category = rural

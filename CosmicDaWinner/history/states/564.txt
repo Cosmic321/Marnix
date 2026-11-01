@@ -1,6 +1,6 @@
 state={
 	id=564
-	name="STATE_564"
+	name="Sowio"
 	manpower = 579600
 	
 	state_category = city

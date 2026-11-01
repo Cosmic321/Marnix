@@ -1,6 +1,6 @@
 state={
 	id=203
-	name="STATE_203"
+	name="Tibil"
 	manpower = 628700
 	
 	state_category = town

@@ -1,6 +1,6 @@
 state={
 	id=514
-	name="STATE_514"
+	name="Wohusoa"
 	manpower = 657500
 	
 	state_category = large_town

@@ -1,6 +1,6 @@
 state={
 	id=650
-	name="STATE_650"
+	name="Vaskaheim"
 	manpower = 680600
 	
 	state_category = town

@@ -1,6 +1,6 @@
 state={
 	id=474
-	name="STATE_474"
+	name="Konaloan"
 	manpower = 475500
 	
 	state_category = large_town

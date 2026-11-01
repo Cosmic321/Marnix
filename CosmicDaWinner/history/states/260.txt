@@ -1,6 +1,6 @@
 state={
 	id=260
-	name="STATE_260"
+	name="Dresketdorf"
 	manpower = 934700
 	
 	state_category = large_town

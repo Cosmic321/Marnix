@@ -1,6 +1,6 @@
 state={
 	id=562
-	name="STATE_562"
+	name="Naninuas"
 	manpower = 492600
 	
 	state_category = town

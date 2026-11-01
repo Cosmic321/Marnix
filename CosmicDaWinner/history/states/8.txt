@@ -1,6 +1,6 @@
 state={
 	id=8
-	name="STATE_8"
+	name="Predubra"
 	manpower = 568400
 	
 	state_category = rural

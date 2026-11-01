@@ -1,6 +1,6 @@
 state={
 	id=146
-	name="STATE_146"
+	name="Wemainua"
 	manpower = 73400
 	
 	state_category = pastoral

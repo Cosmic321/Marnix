@@ -1,6 +1,6 @@
 state={
 	id=350
-	name="STATE_350"
+	name="Lensulmenai"
 	manpower = 1400700
 	
 	state_category = megalopolis

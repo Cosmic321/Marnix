@@ -1,6 +1,6 @@
 state={
 	id=609
-	name="STATE_609"
+	name="Hokukoasea"
 	manpower = 872500
 	
 	state_category = metropolis

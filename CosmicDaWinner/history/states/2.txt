@@ -1,6 +1,6 @@
 state={
 	id=2
-	name="STATE_2"
+	name="Reismugelo"
 	manpower = 150500
 	
 	state_category = pastoral

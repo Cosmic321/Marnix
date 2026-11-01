@@ -1,6 +1,6 @@
 state={
 	id=317
-	name="STATE_317"
+	name="Braktholau"
 	manpower = 875900
 	
 	state_category = large_town

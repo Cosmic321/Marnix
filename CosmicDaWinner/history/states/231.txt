@@ -1,6 +1,6 @@
 state={
 	id=231
-	name="STATE_231"
+	name="Vleraunwald"
 	manpower = 981000
 	
 	state_category = town

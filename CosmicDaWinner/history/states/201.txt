@@ -1,6 +1,6 @@
 state={
 	id=201
-	name="STATE_201"
+	name="Stithokemark"
 	manpower = 747900
 	
 	state_category = town

@@ -1,6 +1,6 @@
 state={
 	id=485
-	name="STATE_485"
+	name="Tihujualaia"
 	manpower = 307800
 	
 	state_category = town

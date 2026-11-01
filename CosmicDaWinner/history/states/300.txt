@@ -1,6 +1,6 @@
 state={
 	id=300
-	name="STATE_300"
+	name="Mukridrin"
 	manpower = 749000
 	
 	state_category = large_town

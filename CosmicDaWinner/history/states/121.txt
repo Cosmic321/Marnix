@@ -1,6 +1,6 @@
 state={
 	id=121
-	name="STATE_121"
+	name="Bipriom"
 	manpower = 710400
 	
 	state_category = town

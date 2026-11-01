@@ -1,6 +1,6 @@
 state={
 	id=652
-	name="STATE_652"
+	name="Fudrauk"
 	manpower = 698100
 	
 	state_category = town

@@ -1,6 +1,6 @@
 state={
 	id=460
-	name="STATE_460"
+	name="Hajuoa"
 	manpower = 1095000
 	
 	state_category = town

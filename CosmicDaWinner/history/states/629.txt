@@ -1,6 +1,6 @@
 state={
 	id=629
-	name="STATE_629"
+	name="Monlais"
 	manpower = 152000
 	
 	state_category = pastoral

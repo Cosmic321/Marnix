@@ -1,6 +1,6 @@
 state={
 	id=468
-	name="STATE_468"
+	name="Tahlu"
 	manpower = 1750800
 	
 	state_category = pastoral

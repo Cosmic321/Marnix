@@ -1,6 +1,6 @@
 state={
 	id=68
-	name="STATE_68"
+	name="Ficlesino"
 	manpower = 296400
 	
 	state_category = pastoral

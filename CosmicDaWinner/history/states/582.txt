@@ -1,6 +1,6 @@
 state={
 	id=582
-	name="STATE_582"
+	name="Vehahloa"
 	manpower = 2017000
 	
 	state_category = pastoral

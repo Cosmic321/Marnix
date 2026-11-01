@@ -1,6 +1,6 @@
 state={
 	id=311
-	name="STATE_311"
+	name="Brenkeiswald"
 	manpower = 737800
 	
 	state_category = large_town

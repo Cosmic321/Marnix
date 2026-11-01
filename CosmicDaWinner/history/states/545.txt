@@ -1,6 +1,6 @@
 state={
 	id=545
-	name="STATE_545"
+	name="Lukwanilio"
 	manpower = 643600
 	
 	state_category = large_town

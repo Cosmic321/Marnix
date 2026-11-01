@@ -1,6 +1,6 @@
 state={
 	id=27
-	name="STATE_27"
+	name="Giclein"
 	manpower = 835700
 	
 	state_category = town

@@ -1,6 +1,6 @@
 state={
 	id=249
-	name="STATE_249"
+	name="Stoukriebeil"
 	manpower = 615700
 	
 	state_category = town

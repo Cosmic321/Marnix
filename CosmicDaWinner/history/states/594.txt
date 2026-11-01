@@ -1,6 +1,6 @@
 state={
 	id=594
-	name="STATE_594"
+	name="Kanulua"
 	manpower = 1243200
 	
 	state_category = pastoral

@@ -1,6 +1,6 @@
 state={
 	id=682
-	name="STATE_682"
+	name="Stiskit"
 	manpower = 25800
 	
 	state_category = pastoral

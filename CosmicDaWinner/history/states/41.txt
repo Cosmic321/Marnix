@@ -1,6 +1,6 @@
 state={
 	id=41
-	name="STATE_41"
+	name="Praclosia"
 	manpower = 1072700
 	
 	state_category = town

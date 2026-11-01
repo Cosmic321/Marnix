@@ -1,6 +1,6 @@
 state={
 	id=296
-	name="STATE_296"
+	name="Grefemov"
 	manpower = 519800
 	
 	state_category = town

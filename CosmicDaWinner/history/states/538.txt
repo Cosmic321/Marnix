@@ -1,6 +1,6 @@
 state={
 	id=538
-	name="STATE_538"
+	name="Lihla"
 	manpower = 436000
 	
 	state_category = large_town

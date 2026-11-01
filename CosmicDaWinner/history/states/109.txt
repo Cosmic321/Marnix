@@ -1,6 +1,6 @@
 state={
 	id=109
-	name="STATE_109"
+	name="Ginesio"
 	manpower = 772900
 	
 	state_category = town

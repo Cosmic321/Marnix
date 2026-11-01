@@ -1,6 +1,6 @@
 state={
 	id=517
-	name="STATE_517"
+	name="Litaisea"
 	manpower = 4760800
 	
 	state_category = pastoral

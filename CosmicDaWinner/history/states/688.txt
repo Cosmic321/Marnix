@@ -1,6 +1,6 @@
 state={
 	id=688
-	name="STATE_688"
+	name="Vuahio"
 	manpower = 24900
 	
 	state_category = pastoral

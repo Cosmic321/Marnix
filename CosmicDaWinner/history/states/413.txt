@@ -1,6 +1,6 @@
 state={
 	id=413
-	name="STATE_413"
+	name="Valosulio"
 	manpower = 1796700
 	
 	state_category = rural

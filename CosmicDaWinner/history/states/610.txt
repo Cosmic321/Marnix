@@ -1,6 +1,6 @@
 state={
 	id=610
-	name="STATE_610"
+	name="Hlalwi"
 	manpower = 453400
 	
 	state_category = town

@@ -1,6 +1,6 @@
 state={
 	id=651
-	name="STATE_651"
+	name="Bragol"
 	manpower = 1073800
 	
 	state_category = large_town

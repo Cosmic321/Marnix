@@ -1,6 +1,6 @@
 state={
 	id=441
-	name="STATE_441"
+	name="Luhua"
 	manpower = 436700
 	
 	state_category = town

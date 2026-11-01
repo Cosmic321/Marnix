@@ -1,6 +1,6 @@
 state={
 	id=129
-	name="STATE_129"
+	name="Leipeia"
 	manpower = 293000
 	
 	state_category = pastoral

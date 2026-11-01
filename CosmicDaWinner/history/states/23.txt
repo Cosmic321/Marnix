@@ -1,6 +1,6 @@
 state={
 	id=23
-	name="STATE_23"
+	name="Brespreim"
 	manpower = 988800
 	
 	state_category = town

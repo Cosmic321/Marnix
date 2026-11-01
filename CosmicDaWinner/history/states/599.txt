@@ -1,6 +1,6 @@
 state={
 	id=599
-	name="STATE_599"
+	name="Salionua"
 	manpower = 2584100
 	
 	state_category = rural

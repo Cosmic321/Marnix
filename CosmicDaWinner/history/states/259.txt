@@ -1,6 +1,6 @@
 state={
 	id=259
-	name="STATE_259"
+	name="Sefouk"
 	manpower = 557000
 	
 	state_category = rural

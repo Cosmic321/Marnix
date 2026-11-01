@@ -1,6 +1,6 @@
 state={
 	id=394
-	name="STATE_394"
+	name="Hunaisai"
 	manpower = 653400
 	
 	state_category = city

@@ -1,6 +1,6 @@
 state={
 	id=250
-	name="STATE_250"
+	name="Dredramimau"
 	manpower = 314400
 	
 	state_category = pastoral

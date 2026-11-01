@@ -1,6 +1,6 @@
 state={
 	id=668
-	name="STATE_668"
+	name="Tugrilrasheim"
 	manpower = 515100
 	
 	state_category = rural

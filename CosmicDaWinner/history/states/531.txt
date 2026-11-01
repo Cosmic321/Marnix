@@ -1,6 +1,6 @@
 state={
 	id=531
-	name="STATE_531"
+	name="Huamen"
 	manpower = 544700
 	
 	state_category = town

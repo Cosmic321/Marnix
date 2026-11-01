@@ -1,6 +1,6 @@
 state={
 	id=646
-	name="STATE_646"
+	name="Skavaldorf"
 	manpower = 232400
 	
 	state_category = pastoral

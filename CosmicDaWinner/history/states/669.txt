@@ -1,6 +1,6 @@
 state={
 	id=669
-	name="STATE_669"
+	name="Kuvlor"
 	manpower = 97200
 	
 	state_category = pastoral

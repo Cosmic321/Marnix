@@ -1,6 +1,6 @@
 state={
 	id=83
-	name="STATE_83"
+	name="Puneis"
 	manpower = 569100
 	
 	state_category = rural

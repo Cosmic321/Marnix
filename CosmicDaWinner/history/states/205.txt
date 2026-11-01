@@ -1,6 +1,6 @@
 state={
 	id=205
-	name="STATE_205"
+	name="Getielberg"
 	manpower = 484000
 	
 	state_category = rural

@@ -1,6 +1,6 @@
 state={
 	id=275
-	name="STATE_275"
+	name="Lelritvleil"
 	manpower = 368600
 	
 	state_category = rural

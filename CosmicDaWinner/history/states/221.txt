@@ -1,6 +1,6 @@
 state={
 	id=221
-	name="STATE_221"
+	name="Touskagri"
 	manpower = 1669700
 	
 	state_category = town

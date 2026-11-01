@@ -1,6 +1,6 @@
 state={
 	id=466
-	name="STATE_466"
+	name="Hokonua"
 	manpower = 799700
 	
 	state_category = large_town

@@ -1,6 +1,6 @@
 state={
 	id=294
-	name="STATE_294"
+	name="Beiskein"
 	manpower = 559800
 	
 	state_category = town

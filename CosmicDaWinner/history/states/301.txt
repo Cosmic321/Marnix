@@ -1,6 +1,6 @@
 state={
 	id=301
-	name="STATE_301"
+	name="Drinsies"
 	manpower = 368300
 	
 	state_category = rural

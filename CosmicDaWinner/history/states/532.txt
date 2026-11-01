@@ -1,6 +1,6 @@
 state={
 	id=532
-	name="STATE_532"
+	name="Livulio"
 	manpower = 213100
 	
 	state_category = rural

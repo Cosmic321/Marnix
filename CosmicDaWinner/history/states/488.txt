@@ -1,6 +1,6 @@
 state={
 	id=488
-	name="STATE_488"
+	name="Kwatua"
 	manpower = 679000
 	
 	state_category = large_town

@@ -1,6 +1,6 @@
 state={
 	id=171
-	name="STATE_171"
+	name="Thodou"
 	manpower = 244900
 	
 	state_category = pastoral

@@ -118,6 +118,54 @@ ideas = {
 			}
 		}
 
+		PDV_forced_econ_3y = {
+			picture = generic_improved_industries
+			modifier = {
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		PDV_forced_econ_2y6 = {
+			picture = generic_improved_industries
+			modifier = {
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		PDV_forced_econ_2y = {
+			picture = generic_improved_industries
+			modifier = {
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		PDV_forced_econ_1y6 = {
+			picture = generic_improved_industries
+			modifier = {
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		PDV_forced_econ_1y = {
+			picture = generic_improved_industries
+			modifier = {
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		PDV_forced_econ_6m = {
+			picture = generic_improved_industries
+			modifier = {
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+
 		PDV_forced_economy = {
 			picture = generic_improved_industries
 			modifier = {

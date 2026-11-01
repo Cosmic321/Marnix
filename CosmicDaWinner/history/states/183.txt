@@ -1,6 +1,6 @@
 state={
 	id=183
-	name="STATE_183"
+	name="Kahigroin"
 	manpower = 232100
 	
 	state_category = pastoral

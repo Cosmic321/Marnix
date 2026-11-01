@@ -1,6 +1,6 @@
 state={
 	id=269
-	name="STATE_269"
+	name="Vluskekberg"
 	manpower = 717400
 	
 	state_category = town

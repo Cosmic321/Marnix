@@ -1,6 +1,6 @@
 state={
 	id=341
-	name="STATE_341"
+	name="Vubema"
 	manpower = 60200
 	
 	state_category = pastoral

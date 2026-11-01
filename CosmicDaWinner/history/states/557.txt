@@ -1,6 +1,6 @@
 state={
 	id=557
-	name="STATE_557"
+	name="Shushin"
 	manpower = 92600
 	
 	state_category = pastoral

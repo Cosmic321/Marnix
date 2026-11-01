@@ -1,6 +1,6 @@
 state={
 	id=58
-	name="STATE_58"
+	name="Coreinesa"
 	manpower = 1448700
 	
 	state_category = large_town

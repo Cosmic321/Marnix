@@ -1,6 +1,6 @@
 state={
 	id=499
-	name="STATE_499"
+	name="Mowoalua"
 	manpower = 1059600
 	
 	state_category = pastoral

@@ -1,6 +1,6 @@
 state={
 	id=335
-	name="STATE_335"
+	name="Vlogeilau"
 	manpower = 502600
 	
 	state_category = town

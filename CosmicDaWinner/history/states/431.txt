@@ -1,6 +1,6 @@
 state={
 	id=431
-	name="STATE_431"
+	name="Jilenuan"
 	manpower = 2018800
 	
 	state_category = megalopolis

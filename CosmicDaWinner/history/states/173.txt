@@ -1,6 +1,6 @@
 state={
 	id=173
-	name="STATE_173"
+	name="Tigrisiet"
 	manpower = 449300
 	
 	state_category = rural

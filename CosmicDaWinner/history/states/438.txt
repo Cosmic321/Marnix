@@ -1,6 +1,6 @@
 state={
 	id=438
-	name="STATE_438"
+	name="Hekwoanai"
 	manpower = 1394900
 	
 	state_category = town

@@ -1,6 +1,6 @@
 state={
 	id=118
-	name="STATE_118"
+	name="Claflirenia"
 	manpower = 215900
 	
 	state_category = pastoral

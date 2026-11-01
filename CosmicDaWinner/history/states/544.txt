@@ -1,6 +1,6 @@
 state={
 	id=544
-	name="STATE_544"
+	name="Sakwuanua"
 	manpower = 641100
 	
 	state_category = city

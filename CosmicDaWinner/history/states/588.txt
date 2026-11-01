@@ -1,6 +1,6 @@
 state={
 	id=588
-	name="STATE_588"
+	name="Mivual"
 	manpower = 1924300
 	
 	state_category = megalopolis

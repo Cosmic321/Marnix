@@ -1,6 +1,6 @@
 state={
 	id=257
-	name="STATE_257"
+	name="Thuthehirov"
 	manpower = 707600
 	
 	state_category = town

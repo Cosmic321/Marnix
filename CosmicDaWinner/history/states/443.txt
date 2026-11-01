@@ -1,6 +1,6 @@
 state={
 	id=443
-	name="STATE_443"
+	name="Vekwua"
 	manpower = 1829500
 	
 	state_category = pastoral

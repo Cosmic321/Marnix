@@ -1,6 +1,6 @@
 state={
 	id=287
-	name="STATE_287"
+	name="Begredus"
 	manpower = 878700
 	
 	state_category = large_town

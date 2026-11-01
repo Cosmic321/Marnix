@@ -1,6 +1,6 @@
 state={
 	id=363
-	name="STATE_363"
+	name="Wimahliuan"
 	manpower = 436900
 	
 	state_category = rural

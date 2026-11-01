@@ -1,6 +1,6 @@
 state={
 	id=153
-	name="STATE_153"
+	name="Kemvlun"
 	manpower = 231800
 	
 	state_category = pastoral

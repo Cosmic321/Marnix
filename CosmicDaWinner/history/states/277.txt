@@ -1,6 +1,6 @@
 state={
 	id=277
-	name="STATE_277"
+	name="Budriemheim"
 	manpower = 337000
 	
 	state_category = rural

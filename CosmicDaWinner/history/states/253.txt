@@ -1,6 +1,6 @@
 state={
 	id=253
-	name="STATE_253"
+	name="Gribrassk"
 	manpower = 504200
 	
 	state_category = town

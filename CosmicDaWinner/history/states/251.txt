@@ -1,6 +1,6 @@
 state={
 	id=251
-	name="STATE_251"
+	name="Thigronil"
 	manpower = 471200
 	
 	state_category = rural

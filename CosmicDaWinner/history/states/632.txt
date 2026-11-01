@@ -1,6 +1,6 @@
 state={
 	id=632
-	name="STATE_632"
+	name="Loltil"
 	manpower = 39800
 	
 	state_category = pastoral

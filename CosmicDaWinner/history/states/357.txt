@@ -1,6 +1,6 @@
 state={
 	id=357
-	name="STATE_357"
+	name="Velmikwon"
 	manpower = 620500
 	
 	state_category = city

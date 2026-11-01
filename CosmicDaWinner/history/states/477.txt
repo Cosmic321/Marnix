@@ -1,6 +1,6 @@
 state={
 	id=477
-	name="STATE_477"
+	name="Hlunwoal"
 	manpower = 279600
 	
 	state_category = wasteland

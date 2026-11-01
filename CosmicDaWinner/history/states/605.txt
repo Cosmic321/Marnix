@@ -1,6 +1,6 @@
 state={
 	id=605
-	name="STATE_605"
+	name="Kujekwin"
 	manpower = 1661500
 	
 	state_category = pastoral

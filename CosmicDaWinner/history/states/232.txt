@@ -1,6 +1,6 @@
 state={
 	id=232
-	name="STATE_232"
+	name="Vomer"
 	manpower = 509500
 	
 	state_category = rural

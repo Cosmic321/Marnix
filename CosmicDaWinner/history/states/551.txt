@@ -1,6 +1,6 @@
 state={
 	id=551
-	name="STATE_551"
+	name="Shelajan"
 	manpower = 899500
 	
 	state_category = metropolis

@@ -1,6 +1,6 @@
 state={
 	id=273
-	name="STATE_273"
+	name="Lokdotwald"
 	manpower = 558400
 	
 	state_category = town

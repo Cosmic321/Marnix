@@ -1,6 +1,6 @@
 state={
 	id=89
-	name="STATE_89"
+	name="Nuselasora"
 	manpower = 479400
 	
 	state_category = rural

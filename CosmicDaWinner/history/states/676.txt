@@ -1,6 +1,6 @@
 state={
 	id=676
-	name="STATE_676"
+	name="Grebekgrad"
 	manpower = 84100
 	
 	state_category = pastoral

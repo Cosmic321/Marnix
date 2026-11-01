@@ -1,6 +1,6 @@
 state={
 	id=346
-	name="STATE_346"
+	name="Niteju"
 	manpower = 24500
 	
 	state_category = pastoral

@@ -1,6 +1,6 @@
 state={
 	id=392
-	name="STATE_392"
+	name="Hlawio"
 	manpower = 1250700
 	
 	state_category = large_city

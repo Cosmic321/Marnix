@@ -1,6 +1,6 @@
 state={
 	id=217
-	name="STATE_217"
+	name="Davarberg"
 	manpower = 1508400
 	
 	state_category = metropolis

@@ -1,6 +1,6 @@
 state={
 	id=52
-	name="STATE_52"
+	name="Broclepaimesa"
 	manpower = 584300
 	
 	state_category = rural

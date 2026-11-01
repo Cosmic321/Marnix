@@ -1,6 +1,6 @@
 state={
 	id=381
-	name="STATE_381"
+	name="Seluan"
 	manpower = 1775800
 	
 	state_category = pastoral

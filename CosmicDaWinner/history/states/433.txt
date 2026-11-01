@@ -1,6 +1,6 @@
 state={
 	id=433
-	name="STATE_433"
+	name="Jihanvualaia"
 	manpower = 919900
 	
 	state_category = metropolis

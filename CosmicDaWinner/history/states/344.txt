@@ -1,6 +1,6 @@
 state={
 	id=344
-	name="STATE_344"
+	name="Nuhloan"
 	manpower = 116700
 	
 	state_category = pastoral

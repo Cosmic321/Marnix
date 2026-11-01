@@ -1,6 +1,6 @@
 state={
 	id=500
-	name="STATE_500"
+	name="Tumua"
 	manpower = 322900
 	
 	state_category = rural

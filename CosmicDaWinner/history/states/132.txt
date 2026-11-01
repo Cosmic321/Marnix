@@ -1,6 +1,6 @@
 state={
 	id=132
-	name="STATE_132"
+	name="Bidraipano"
 	manpower = 263400
 	
 	state_category = pastoral

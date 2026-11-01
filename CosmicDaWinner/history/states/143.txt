@@ -1,6 +1,6 @@
 state={
 	id=143
-	name="STATE_143"
+	name="Clegranim"
 	manpower = 361100
 	
 	state_category = pastoral

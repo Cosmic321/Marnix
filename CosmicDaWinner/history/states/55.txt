@@ -1,6 +1,6 @@
 state={
 	id=55
-	name="STATE_55"
+	name="Bruleseno"
 	manpower = 656800
 	
 	state_category = town

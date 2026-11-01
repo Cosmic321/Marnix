@@ -1,6 +1,6 @@
 state={
 	id=687
-	name="STATE_687"
+	name="Wihlesua"
 	manpower = 10700
 	
 	state_category = pastoral

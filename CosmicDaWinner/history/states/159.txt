@@ -1,6 +1,6 @@
 state={
 	id=159
-	name="STATE_159"
+	name="Kwemus"
 	manpower = 1111200
 	
 	state_category = megalopolis

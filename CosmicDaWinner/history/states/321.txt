@@ -1,6 +1,6 @@
 state={
 	id=321
-	name="STATE_321"
+	name="Keraul"
 	manpower = 1193500
 	
 	state_category = city

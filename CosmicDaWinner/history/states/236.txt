@@ -1,6 +1,6 @@
 state={
 	id=236
-	name="STATE_236"
+	name="Graveimou"
 	manpower = 102100
 	
 	state_category = rural

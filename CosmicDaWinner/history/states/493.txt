@@ -1,6 +1,6 @@
 state={
 	id=493
-	name="STATE_493"
+	name="Joniolaia"
 	manpower = 725900
 	
 	state_category = large_city

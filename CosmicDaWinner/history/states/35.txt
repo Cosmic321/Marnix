@@ -1,6 +1,6 @@
 state={
 	id=35
-	name="STATE_35"
+	name="Greclum"
 	manpower = 749100
 	
 	state_category = rural

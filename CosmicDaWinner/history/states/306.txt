@@ -1,6 +1,6 @@
 state={
 	id=306
-	name="STATE_306"
+	name="Housstulgrad"
 	manpower = 132000
 	
 	state_category = pastoral

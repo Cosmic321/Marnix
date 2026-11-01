@@ -1,6 +1,6 @@
 state={
 	id=556
-	name="STATE_556"
+	name="Tehlulasoan"
 	manpower = 611300
 	
 	state_category = town

@@ -1,6 +1,6 @@
 state={
 	id=168
-	name="STATE_168"
+	name="Hlainio"
 	manpower = 377300
 	
 	state_category = town

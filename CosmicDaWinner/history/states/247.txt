@@ -1,6 +1,6 @@
 state={
 	id=247
-	name="STATE_247"
+	name="Dromoumberg"
 	manpower = 842000
 	
 	state_category = large_town

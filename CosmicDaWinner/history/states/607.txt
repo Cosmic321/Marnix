@@ -1,6 +1,6 @@
 state={
 	id=607
-	name="STATE_607"
+	name="Kwusshua"
 	manpower = 497800
 	
 	state_category = city

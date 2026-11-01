@@ -1,6 +1,6 @@
 state={
 	id=245
-	name="STATE_245"
+	name="Milvlauheim"
 	manpower = 164100
 	
 	state_category = rural

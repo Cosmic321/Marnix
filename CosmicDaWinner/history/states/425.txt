@@ -1,6 +1,6 @@
 state={
 	id=425
-	name="STATE_425"
+	name="Weteakwe"
 	manpower = 837000
 	
 	state_category = large_city

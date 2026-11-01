@@ -1,6 +1,6 @@
 state={
 	id=337
-	name="STATE_337"
+	name="Vletoulin"
 	manpower = 477400
 	
 	state_category = town

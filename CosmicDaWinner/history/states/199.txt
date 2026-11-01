@@ -1,6 +1,6 @@
 state={
 	id=199
-	name="STATE_199"
+	name="Grimukgrad"
 	manpower = 895500
 	
 	state_category = large_town

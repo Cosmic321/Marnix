@@ -1,6 +1,6 @@
 state={
 	id=308
-	name="STATE_308"
+	name="Grovetin"
 	manpower = 512500
 	
 	state_category = town

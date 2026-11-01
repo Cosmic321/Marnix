@@ -1,6 +1,6 @@
 state={
 	id=190
-	name="STATE_190"
+	name="Milotin"
 	manpower = 341400
 	
 	state_category = rural

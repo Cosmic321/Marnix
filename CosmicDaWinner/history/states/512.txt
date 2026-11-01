@@ -1,6 +1,6 @@
 state={
 	id=512
-	name="STATE_512"
+	name="Lolhle"
 	manpower = 482500
 	
 	state_category = town

@@ -1,6 +1,6 @@
 state={
 	id=352
-	name="STATE_352"
+	name="Hlusheasoa"
 	manpower = 699900
 	
 	state_category = large_town

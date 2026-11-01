@@ -85,9 +85,14 @@ country_event = {
 
 	option = {
 		name = pdv_vyratia.10.a
+		remove_ideas = PDV_forced_econ_3y
+		remove_ideas = PDV_forced_econ_2y6
+		remove_ideas = PDV_forced_econ_2y
+		remove_ideas = PDV_forced_econ_1y6
+		remove_ideas = PDV_forced_econ_1y
+		remove_ideas = PDV_forced_econ_6m
 		remove_ideas = PDV_forced_economy
 		clr_country_flag = PDV_forced_time_started
-		clr_country_flag = PDV_forced_clock_on
 		if = {
 			limit = {
 				VRE = { exists = yes }
@@ -135,29 +140,91 @@ country_event = {
 	}
 }
 
-# The day after the decree: the economic spirits come off, the world is told,
-# and the three-year clock is put on the board.
+
+
+# The three years, counted down in the national spirits one stage at a time.
+
 country_event = {
-	id = pdv_vyratia.13
-	title = pdv_vyratia.13.t
-	desc = pdv_vyratia.13.d
+	id = pdv_vyratia.20
+	title = pdv_vyratia.20.t
+	desc = pdv_vyratia.20.d
 	is_triggered_only = yes
 	hidden = yes
 
 	option = {
-		name = pdv_vyratia.13.a
-
-		if = { limit = { has_idea = overstretched_industry } remove_ideas = overstretched_industry }
-		if = { limit = { has_idea = overstretched_industry_triage } remove_ideas = overstretched_industry_triage }
-		if = { limit = { has_idea = overstretched_industry_reformed } remove_ideas = overstretched_industry_reformed }
-
-		add_ideas = PDV_forced_economy
-
-		every_country = {
-			country_event = { id = pdv_vyratia.11 }
+		name = pdv_vyratia.20.a
+		if = {
+			limit = { has_idea = PDV_forced_econ_3y }
+			remove_ideas = PDV_forced_econ_3y
+			add_ideas = PDV_forced_econ_2y6
 		}
+	}
+}
 
-		activate_decision = PDV_forced_economy_mission
-		country_event = { id = pdv_vyratia.10 days = 1093 }
+country_event = {
+	id = pdv_vyratia.21
+	title = pdv_vyratia.21.t
+	desc = pdv_vyratia.21.d
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = pdv_vyratia.21.a
+		if = {
+			limit = { has_idea = PDV_forced_econ_2y6 }
+			remove_ideas = PDV_forced_econ_2y6
+			add_ideas = PDV_forced_econ_2y
+		}
+	}
+}
+
+country_event = {
+	id = pdv_vyratia.22
+	title = pdv_vyratia.22.t
+	desc = pdv_vyratia.22.d
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = pdv_vyratia.22.a
+		if = {
+			limit = { has_idea = PDV_forced_econ_2y }
+			remove_ideas = PDV_forced_econ_2y
+			add_ideas = PDV_forced_econ_1y6
+		}
+	}
+}
+
+country_event = {
+	id = pdv_vyratia.23
+	title = pdv_vyratia.23.t
+	desc = pdv_vyratia.23.d
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = pdv_vyratia.23.a
+		if = {
+			limit = { has_idea = PDV_forced_econ_1y6 }
+			remove_ideas = PDV_forced_econ_1y6
+			add_ideas = PDV_forced_econ_1y
+		}
+	}
+}
+
+country_event = {
+	id = pdv_vyratia.24
+	title = pdv_vyratia.24.t
+	desc = pdv_vyratia.24.d
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = pdv_vyratia.24.a
+		if = {
+			limit = { has_idea = PDV_forced_econ_1y }
+			remove_ideas = PDV_forced_econ_1y
+			add_ideas = PDV_forced_econ_6m
+		}
 	}
 }

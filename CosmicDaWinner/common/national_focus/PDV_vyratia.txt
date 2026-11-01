@@ -3468,9 +3468,21 @@ focus_tree = {
 		mutually_exclusive = { focus = PDV_econ_patient }
 		available = { date > 1937.1.1 date < 1937.2.1 }
 		completion_reward = {
+			if = { limit = { has_idea = overstretched_industry } remove_ideas = overstretched_industry }
+			if = { limit = { has_idea = overstretched_industry_triage } remove_ideas = overstretched_industry_triage }
+			if = { limit = { has_idea = overstretched_industry_reformed } remove_ideas = overstretched_industry_reformed }
 			set_country_flag = PDV_forced_time_started
-			add_ideas = PDV_forced_economy
-			country_event = { id = pdv_vyratia.13 days = 1 }
+			add_ideas = PDV_forced_econ_3y
+			every_country = {
+				country_event = { id = pdv_vyratia.11 days = 1 }
+			}
+			set_country_flag = PDV_forced_announced
+			country_event = { id = pdv_vyratia.20 days = 180 }
+			country_event = { id = pdv_vyratia.21 days = 360 }
+			country_event = { id = pdv_vyratia.22 days = 540 }
+			country_event = { id = pdv_vyratia.23 days = 720 }
+			country_event = { id = pdv_vyratia.24 days = 900 }
+			country_event = { id = pdv_vyratia.10 days = 1093 }
 			add_stability = 0.02
 		}
 	}

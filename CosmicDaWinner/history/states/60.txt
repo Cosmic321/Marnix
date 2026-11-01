@@ -1,6 +1,6 @@
 state={
 	id=60
-	name="STATE_60"
+	name="Guldigunano"
 	manpower = 318500
 	
 	state_category = pastoral

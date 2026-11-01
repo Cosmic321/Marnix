@@ -1,6 +1,6 @@
 state={
 	id=665
-	name="STATE_665"
+	name="Vewaihlea"
 	manpower = 294100
 	
 	state_category = town

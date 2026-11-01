@@ -1,6 +1,6 @@
 state={
 	id=316
-	name="STATE_316"
+	name="Megudeimark"
 	manpower = 867200
 	
 	state_category = rural

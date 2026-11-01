@@ -1,6 +1,6 @@
 state={
 	id=354
-	name="STATE_354"
+	name="Welilainaia"
 	manpower = 826900
 	
 	state_category = city

@@ -1,6 +1,6 @@
 state={
 	id=623
-	name="STATE_623"
+	name="Hlusekweanea"
 	manpower = 1675500
 	
 	state_category = megalopolis

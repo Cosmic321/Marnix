@@ -1,6 +1,6 @@
 state={
 	id=368
-	name="STATE_368"
+	name="Hisaia"
 	manpower = 403000
 	
 	state_category = town

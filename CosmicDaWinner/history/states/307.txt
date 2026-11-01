@@ -1,6 +1,6 @@
 state={
 	id=307
-	name="STATE_307"
+	name="Krokres"
 	manpower = 472400
 	
 	state_category = rural

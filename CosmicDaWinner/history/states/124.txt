@@ -1,6 +1,6 @@
 state={
 	id=124
-	name="STATE_124"
+	name="Groclamaro"
 	manpower = 203100
 	
 	state_category = pastoral

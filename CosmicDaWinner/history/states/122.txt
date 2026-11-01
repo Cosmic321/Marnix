@@ -1,6 +1,6 @@
 state={
 	id=122
-	name="STATE_122"
+	name="Giobraino"
 	manpower = 576600
 	
 	state_category = rural

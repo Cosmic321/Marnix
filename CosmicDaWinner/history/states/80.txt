@@ -1,6 +1,6 @@
 state={
 	id=80
-	name="STATE_80"
+	name="Poclime"
 	manpower = 622700
 	
 	state_category = rural

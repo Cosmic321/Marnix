@@ -1,6 +1,6 @@
 state={
 	id=487
-	name="STATE_487"
+	name="Vojoanuan"
 	manpower = 929700
 	
 	state_category = megalopolis

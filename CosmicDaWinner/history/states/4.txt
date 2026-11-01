@@ -1,6 +1,6 @@
 state={
 	id=4
-	name="STATE_4"
+	name="Rolai"
 	manpower = 1366300
 	
 	state_category = large_town

@@ -1,6 +1,6 @@
 state={
 	id=583
-	name="STATE_583"
+	name="Tokusea"
 	manpower = 940300
 	
 	state_category = megalopolis

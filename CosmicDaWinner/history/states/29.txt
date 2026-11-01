@@ -1,6 +1,6 @@
 state={
 	id=29
-	name="STATE_29"
+	name="Tuvial"
 	manpower = 256700
 	
 	state_category = pastoral

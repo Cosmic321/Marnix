@@ -1,6 +1,6 @@
 state={
 	id=136
-	name="STATE_136"
+	name="Flobaivo"
 	manpower = 258200
 	
 	state_category = pastoral

@@ -1,6 +1,6 @@
 state={
 	id=116
-	name="STATE_116"
+	name="Troceraro"
 	manpower = 282400
 	
 	state_category = pastoral

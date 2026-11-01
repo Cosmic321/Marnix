@@ -1,6 +1,6 @@
 state={
 	id=305
-	name="STATE_305"
+	name="Ramuswald"
 	manpower = 608800
 	
 	state_category = rural

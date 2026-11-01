@@ -1,6 +1,6 @@
 state={
 	id=589
-	name="STATE_589"
+	name="Shituai"
 	manpower = 2132000
 	
 	state_category = megalopolis

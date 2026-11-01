@@ -1,6 +1,6 @@
 state={
 	id=20
-	name="STATE_20"
+	name="Clenerel"
 	manpower = 398700
 	
 	state_category = rural

@@ -1,6 +1,6 @@
 state={
 	id=149
-	name="STATE_149"
+	name="Rumdela"
 	manpower = 15200
 	
 	state_category = pastoral

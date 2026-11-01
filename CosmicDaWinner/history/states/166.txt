@@ -1,6 +1,6 @@
 state={
 	id=166
-	name="STATE_166"
+	name="Hekwoan"
 	manpower = 901300
 	
 	state_category = metropolis

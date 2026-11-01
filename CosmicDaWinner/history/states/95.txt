@@ -1,6 +1,6 @@
 state={
 	id=95
-	name="STATE_95"
+	name="Sotraria"
 	manpower = 514700
 	
 	state_category = rural

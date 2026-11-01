@@ -1,6 +1,6 @@
 state={
 	id=5
-	name="STATE_5"
+	name="Tromfloseno"
 	manpower = 1078800
 	
 	state_category = large_town

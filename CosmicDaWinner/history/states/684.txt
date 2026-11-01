@@ -1,6 +1,6 @@
 state={
 	id=684
-	name="STATE_684"
+	name="Vleskurdorf"
 	manpower = 49700
 	
 	state_category = pastoral

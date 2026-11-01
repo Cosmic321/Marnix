@@ -1,6 +1,6 @@
 state={
 	id=628
-	name="STATE_628"
+	name="Magibri"
 	manpower = 415600
 	
 	state_category = pastoral

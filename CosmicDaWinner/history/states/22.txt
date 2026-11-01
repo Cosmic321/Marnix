@@ -1,6 +1,6 @@
 state={
 	id=22
-	name="STATE_22"
+	name="Dalora"
 	manpower = 949700
 	
 	state_category = rural

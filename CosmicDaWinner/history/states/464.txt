@@ -1,6 +1,6 @@
 state={
 	id=464
-	name="STATE_464"
+	name="Shojaia"
 	manpower = 435800
 	
 	state_category = town

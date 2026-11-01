@@ -1,6 +1,6 @@
 state={
 	id=360
-	name="STATE_360"
+	name="Shashiminoan"
 	manpower = 1822700
 	
 	state_category = pastoral

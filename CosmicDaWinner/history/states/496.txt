@@ -1,6 +1,6 @@
 state={
 	id=496
-	name="STATE_496"
+	name="Loshaia"
 	manpower = 185200
 	
 	state_category = pastoral

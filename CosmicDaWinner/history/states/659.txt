@@ -1,6 +1,6 @@
 state={
 	id=659
-	name="STATE_659"
+	name="Hiefilau"
 	manpower = 531600
 	
 	state_category = town

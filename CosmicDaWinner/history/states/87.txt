@@ -1,6 +1,6 @@
 state={
 	id=87
-	name="STATE_87"
+	name="Tidrise"
 	manpower = 398500
 	
 	state_category = rural

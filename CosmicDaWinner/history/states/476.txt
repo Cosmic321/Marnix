@@ -1,6 +1,6 @@
 state={
 	id=476
-	name="STATE_476"
+	name="Hamen"
 	manpower = 565500
 	
 	state_category = city

@@ -1,6 +1,6 @@
 state={
 	id=241
-	name="STATE_241"
+	name="Thelviewald"
 	manpower = 565000
 	
 	state_category = town

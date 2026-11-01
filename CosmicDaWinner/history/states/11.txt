@@ -1,6 +1,6 @@
 state={
 	id=11
-	name="STATE_11"
+	name="Menfleisia"
 	manpower = 785800
 	
 	state_category = town

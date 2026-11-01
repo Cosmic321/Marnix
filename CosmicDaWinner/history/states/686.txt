@@ -1,6 +1,6 @@
 state={
 	id=686
-	name="STATE_686"
+	name="Kokwiol"
 	manpower = 15500
 	
 	state_category = pastoral

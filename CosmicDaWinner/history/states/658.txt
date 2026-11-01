@@ -1,6 +1,6 @@
 state={
 	id=658
-	name="STATE_658"
+	name="Katiheim"
 	manpower = 252400
 	
 	state_category = rural

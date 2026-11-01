@@ -1,6 +1,6 @@
 state={
 	id=267
-	name="STATE_267"
+	name="Skevaun"
 	manpower = 213700
 	
 	state_category = pastoral

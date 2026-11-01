@@ -1,6 +1,6 @@
 state={
 	id=293
-	name="STATE_293"
+	name="Bigriesheim"
 	manpower = 653900
 	
 	state_category = town

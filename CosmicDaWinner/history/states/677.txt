@@ -1,6 +1,6 @@
 state={
 	id=677
-	name="STATE_677"
+	name="Gondansk"
 	manpower = 32200
 	
 	state_category = pastoral

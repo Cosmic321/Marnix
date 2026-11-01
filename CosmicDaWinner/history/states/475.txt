@@ -1,6 +1,6 @@
 state={
 	id=475
-	name="STATE_475"
+	name="Nesan"
 	manpower = 746600
 	
 	state_category = metropolis

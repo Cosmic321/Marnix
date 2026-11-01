@@ -1,6 +1,6 @@
 state={
 	id=566
-	name="STATE_566"
+	name="Sikiloa"
 	manpower = 433500
 	
 	state_category = town

@@ -1,6 +1,6 @@
 state={
 	id=282
-	name="STATE_282"
+	name="Grakraubu"
 	manpower = 957300
 	
 	state_category = pastoral

@@ -1,6 +1,6 @@
 state={
 	id=581
-	name="STATE_581"
+	name="Mahlonio"
 	manpower = 1937500
 	
 	state_category = megalopolis

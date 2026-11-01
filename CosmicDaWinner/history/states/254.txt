@@ -1,6 +1,6 @@
 state={
 	id=254
-	name="STATE_254"
+	name="Furaukheim"
 	manpower = 456900
 	
 	state_category = rural

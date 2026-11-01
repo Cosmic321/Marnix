@@ -1,6 +1,6 @@
 state={
 	id=463
-	name="STATE_463"
+	name="Mutoalaia"
 	manpower = 1331700
 	
 	state_category = megalopolis

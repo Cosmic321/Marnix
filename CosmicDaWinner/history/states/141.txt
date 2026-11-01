@@ -1,6 +1,6 @@
 state={
 	id=141
-	name="STATE_141"
+	name="Briprian"
 	manpower = 640000
 	
 	state_category = rural

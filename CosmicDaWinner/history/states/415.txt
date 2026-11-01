@@ -1,6 +1,6 @@
 state={
 	id=415
-	name="STATE_415"
+	name="Mihlowi"
 	manpower = 889500
 	
 	state_category = large_city

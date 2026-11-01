@@ -1,6 +1,6 @@
 state={
 	id=480
-	name="STATE_480"
+	name="Sahoea"
 	manpower = 1176100
 	
 	state_category = large_city

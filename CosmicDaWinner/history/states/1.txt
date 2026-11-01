@@ -1,6 +1,6 @@
 state={
 	id=1
-	name="STATE_1"
+	name="Punino"
 	manpower = 708800
 	
 	state_category = rural

@@ -1,6 +1,6 @@
 state={
 	id=315
-	name="STATE_315"
+	name="Krevaheim"
 	manpower = 487000
 	
 	state_category = town

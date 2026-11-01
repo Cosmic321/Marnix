@@ -1,6 +1,6 @@
 state={
 	id=393
-	name="STATE_393"
+	name="Tuakwanea"
 	manpower = 980000
 	
 	state_category = city

@@ -1,6 +1,6 @@
 state={
 	id=462
-	name="STATE_462"
+	name="Voakwol"
 	manpower = 619600
 	
 	state_category = large_town

@@ -1,6 +1,6 @@
 state={
 	id=330
-	name="STATE_330"
+	name="Thedasin"
 	manpower = 225000
 	
 	state_category = pastoral

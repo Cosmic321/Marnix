@@ -1,6 +1,6 @@
 state={
 	id=336
-	name="STATE_336"
+	name="Southofol"
 	manpower = 334200
 	
 	state_category = rural

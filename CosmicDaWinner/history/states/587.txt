@@ -1,6 +1,6 @@
 state={
 	id=587
-	name="STATE_587"
+	name="Kualaia"
 	manpower = 294600
 	
 	state_category = town

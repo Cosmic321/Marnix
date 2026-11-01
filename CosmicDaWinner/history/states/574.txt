@@ -1,6 +1,6 @@
 state={
 	id=574
-	name="STATE_574"
+	name="Toasol"
 	manpower = 863800
 	
 	state_category = megalopolis

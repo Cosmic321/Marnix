@@ -1,6 +1,6 @@
 state={
 	id=272
-	name="STATE_272"
+	name="Noketwald"
 	manpower = 257400
 	
 	state_category = rural

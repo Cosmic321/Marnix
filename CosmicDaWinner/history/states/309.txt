@@ -1,6 +1,6 @@
 state={
 	id=309
-	name="STATE_309"
+	name="Stibrousau"
 	manpower = 827700
 	
 	state_category = large_town

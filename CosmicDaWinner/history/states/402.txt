@@ -1,6 +1,6 @@
 state={
 	id=402
-	name="STATE_402"
+	name="Hukwus"
 	manpower = 458800
 	
 	state_category = large_town

@@ -1,6 +1,6 @@
 state={
 	id=423
-	name="STATE_423"
+	name="Tinokea"
 	manpower = 1374000
 	
 	state_category = megalopolis

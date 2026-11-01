@@ -1,6 +1,6 @@
 state={
 	id=347
-	name="STATE_347"
+	name="Himoanai"
 	manpower = 372900
 	
 	state_category = rural

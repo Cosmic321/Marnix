@@ -1,6 +1,6 @@
 state={
 	id=325
-	name="STATE_325"
+	name="Gikogres"
 	manpower = 77200
 	
 	state_category = pastoral

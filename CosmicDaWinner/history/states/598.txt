@@ -1,6 +1,6 @@
 state={
 	id=598
-	name="STATE_598"
+	name="Shakouan"
 	manpower = 349000
 	
 	state_category = rural

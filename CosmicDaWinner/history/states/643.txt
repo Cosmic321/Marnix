@@ -1,6 +1,6 @@
 state={
 	id=643
-	name="STATE_643"
+	name="Debriengrad"
 	manpower = 479700
 	
 	state_category = pastoral

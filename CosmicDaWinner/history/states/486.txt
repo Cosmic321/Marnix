@@ -1,6 +1,6 @@
 state={
 	id=486
-	name="STATE_486"
+	name="Tuwualoan"
 	manpower = 1413400
 	
 	state_category = megalopolis

@@ -1,6 +1,6 @@
 state={
 	id=123
-	name="STATE_123"
+	name="Ciflais"
 	manpower = 442200
 	
 	state_category = pastoral

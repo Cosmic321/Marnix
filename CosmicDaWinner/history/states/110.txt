@@ -1,6 +1,6 @@
 state={
 	id=110
-	name="STATE_110"
+	name="Gaclotino"
 	manpower = 642100
 	
 	state_category = rural

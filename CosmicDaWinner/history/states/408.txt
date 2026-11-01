@@ -1,6 +1,6 @@
 state={
 	id=408
-	name="STATE_408"
+	name="Keskwionai"
 	manpower = 2148300
 	
 	state_category = megalopolis

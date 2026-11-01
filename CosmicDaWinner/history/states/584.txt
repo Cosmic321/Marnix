@@ -1,6 +1,6 @@
 state={
 	id=584
-	name="STATE_584"
+	name="Hlujes"
 	manpower = 1333800
 	
 	state_category = megalopolis

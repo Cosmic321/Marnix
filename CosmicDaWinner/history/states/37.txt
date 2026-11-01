@@ -1,6 +1,6 @@
 state={
 	id=37
-	name="STATE_37"
+	name="Bulianora"
 	manpower = 637300
 	
 	state_category = rural

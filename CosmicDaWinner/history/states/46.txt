@@ -1,6 +1,6 @@
 state={
 	id=46
-	name="STATE_46"
+	name="Riga"
 	manpower = 944800
 	
 	state_category = town

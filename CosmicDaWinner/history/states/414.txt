@@ -1,6 +1,6 @@
 state={
 	id=414
-	name="STATE_414"
+	name="Haheanea"
 	manpower = 1902700
 	
 	state_category = pastoral

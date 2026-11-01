@@ -1,6 +1,6 @@
 state={
 	id=543
-	name="STATE_543"
+	name="Kwishilusoan"
 	manpower = 656500
 	
 	state_category = wasteland

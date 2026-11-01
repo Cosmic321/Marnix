@@ -118,13 +118,13 @@ def build():
 
 
 def write_loc(data):
-    state_path = ROOT + 'Localisation/English/replace/state_names_l_english.yml'
+    state_path = ROOT + 'localisation/english/replace/state_names_l_english.yml'
     out = ['l_english:']
     for sid, name in sorted(data['states'].items(), key=lambda kv: int(kv[0])):
         out.append(' STATE_%s:0 "%s"' % (sid, name))
     open(state_path, 'w', encoding='utf-8-sig', newline='\n').write('\n'.join(out) + '\n')
 
-    prov_path = ROOT + 'Localisation/English/replace/province_names_l_english.yml'
+    prov_path = ROOT + 'localisation/english/replace/province_names_l_english.yml'
     out = ['l_english:']
     for pid, name in sorted(data['provinces'].items(), key=lambda kv: int(kv[0])):
         out.append(' PROV%s:0 "%s"' % (pid, name))

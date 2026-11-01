@@ -1,6 +1,6 @@
 state={
 	id=274
-	name="STATE_274"
+	name="Malrurberg"
 	manpower = 494900
 	
 	state_category = rural

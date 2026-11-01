@@ -1,6 +1,6 @@
 state={
 	id=98
-	name="STATE_98"
+	name="Tiomboflesa"
 	manpower = 222400
 	
 	state_category = pastoral

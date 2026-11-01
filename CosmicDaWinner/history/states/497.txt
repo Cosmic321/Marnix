@@ -1,6 +1,6 @@
 state={
 	id=497
-	name="STATE_497"
+	name="Shesniol"
 	manpower = 542200
 	
 	state_category = city

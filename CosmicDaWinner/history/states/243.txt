@@ -1,6 +1,6 @@
 state={
 	id=243
-	name="STATE_243"
+	name="Kratskosin"
 	manpower = 675600
 	
 	state_category = town

@@ -1,6 +1,6 @@
 state={
 	id=322
-	name="STATE_322"
+	name="Thaloumgrad"
 	manpower = 937900
 	
 	state_category = city

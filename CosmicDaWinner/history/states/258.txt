@@ -1,6 +1,6 @@
 state={
 	id=258
-	name="STATE_258"
+	name="Vlokrinie"
 	manpower = 812400
 	
 	state_category = large_town

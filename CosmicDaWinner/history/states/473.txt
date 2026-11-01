@@ -1,6 +1,6 @@
 state={
 	id=473
-	name="STATE_473"
+	name="Maheua"
 	manpower = 1921400
 	
 	state_category = city

@@ -1,6 +1,6 @@
 state={
 	id=237
-	name="STATE_237"
+	name="Lovlothoberg"
 	manpower = 808700
 	
 	state_category = town

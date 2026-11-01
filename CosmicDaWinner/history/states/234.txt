@@ -1,6 +1,6 @@
 state={
 	id=234
-	name="STATE_234"
+	name="Laskir"
 	manpower = 1887300
 	
 	state_category = large_city

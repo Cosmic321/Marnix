@@ -1,6 +1,6 @@
 state={
 	id=224
-	name="STATE_224"
+	name="Sidousin"
 	manpower = 228300
 	
 	state_category = pastoral

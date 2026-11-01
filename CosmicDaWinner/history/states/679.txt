@@ -1,6 +1,6 @@
 state={
 	id=679
-	name="STATE_679"
+	name="Menkoumberg"
 	manpower = 58800
 	
 	state_category = pastoral

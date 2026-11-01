@@ -1,6 +1,6 @@
 state={
 	id=648
-	name="STATE_648"
+	name="Sumtiskur"
 	manpower = 690200
 	
 	state_category = town

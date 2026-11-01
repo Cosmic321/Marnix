@@ -1,6 +1,6 @@
 state={
 	id=10
-	name="STATE_10"
+	name="Bribrailaro"
 	manpower = 183500
 	
 	state_category = pastoral

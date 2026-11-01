@@ -1,6 +1,6 @@
 state={
 	id=606
-	name="STATE_606"
+	name="Kwushio"
 	manpower = 876300
 	
 	state_category = large_town

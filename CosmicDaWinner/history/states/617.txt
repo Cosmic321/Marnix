@@ -1,6 +1,6 @@
 state={
 	id=617
-	name="STATE_617"
+	name="Jakwu"
 	manpower = 1570400
 	
 	state_category = large_city

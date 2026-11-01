@@ -1,6 +1,6 @@
 state={
 	id=140
-	name="STATE_140"
+	name="Brapafasora"
 	manpower = 194700
 	
 	state_category = pastoral

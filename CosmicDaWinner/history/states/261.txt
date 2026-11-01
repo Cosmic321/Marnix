@@ -1,6 +1,6 @@
 state={
 	id=261
-	name="STATE_261"
+	name="Skekskau"
 	manpower = 1060800
 	
 	state_category = town

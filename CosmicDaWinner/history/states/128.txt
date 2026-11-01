@@ -1,6 +1,6 @@
 state={
 	id=128
-	name="STATE_128"
+	name="Gudriam"
 	manpower = 319500
 	
 	state_category = rural

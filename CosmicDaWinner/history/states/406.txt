@@ -1,6 +1,6 @@
 state={
 	id=406
-	name="STATE_406"
+	name="Talvosuan"
 	manpower = 846500
 	
 	state_category = city

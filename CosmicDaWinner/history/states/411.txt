@@ -1,6 +1,6 @@
 state={
 	id=411
-	name="STATE_411"
+	name="Kusuatuaia"
 	manpower = 199500
 	
 	state_category = rural

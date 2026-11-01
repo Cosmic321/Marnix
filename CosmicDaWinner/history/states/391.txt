@@ -1,6 +1,6 @@
 state={
 	id=391
-	name="STATE_391"
+	name="Kokwio"
 	manpower = 2157900
 	
 	state_category = megalopolis

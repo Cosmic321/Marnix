@@ -1,6 +1,6 @@
 state={
 	id=555
-	name="STATE_555"
+	name="Tuhainoan"
 	manpower = 1117100
 	
 	state_category = megalopolis

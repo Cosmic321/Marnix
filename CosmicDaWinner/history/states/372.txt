@@ -1,6 +1,6 @@
 state={
 	id=372
-	name="STATE_372"
+	name="Veshinio"
 	manpower = 352200
 	
 	state_category = rural

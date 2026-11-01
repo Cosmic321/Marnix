@@ -1,6 +1,6 @@
 state={
 	id=484
-	name="STATE_484"
+	name="Menshanoan"
 	manpower = 426300
 	
 	state_category = large_town

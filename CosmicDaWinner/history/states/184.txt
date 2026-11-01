@@ -1,6 +1,6 @@
 state={
 	id=184
-	name="STATE_184"
+	name="Vlaskigrad"
 	manpower = 422500
 	
 	state_category = rural

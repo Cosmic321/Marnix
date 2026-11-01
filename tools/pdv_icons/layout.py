@@ -11,7 +11,7 @@ import re
 
 MOD = '/home/user/Marnix/CosmicDaWinner/'
 TREE = MOD + 'common/national_focus/PDV_vyratia.txt'
-LOC = MOD + 'Localisation/English/replace/pdv_vyratia_l_english.yml'
+LOC = MOD + 'localisation/english/replace/pdv_vyratia_l_english.yml'
 
 BAND = {'cm': 0, 'dm': 9, 'fa': 18, 'mo': 27}   # eight columns each, one column of air
 COLS = ('c0', 'c1', 'c2', 'c3')                   # the four focuses in a row

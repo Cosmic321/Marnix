@@ -1,6 +1,6 @@
 state={
 	id=210
-	name="STATE_210"
+	name="Drutossk"
 	manpower = 558400
 	
 	state_category = pastoral

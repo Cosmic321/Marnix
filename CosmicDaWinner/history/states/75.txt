@@ -1,6 +1,6 @@
 state={
 	id=75
-	name="STATE_75"
+	name="Prebaimia"
 	manpower = 779100
 	
 	state_category = town

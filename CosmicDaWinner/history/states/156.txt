@@ -1,6 +1,6 @@
 state={
 	id=156
-	name="STATE_156"
+	name="Lawoloan"
 	manpower = 702100
 	
 	state_category = city

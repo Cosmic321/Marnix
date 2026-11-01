@@ -1,6 +1,6 @@
 state={
 	id=680
-	name="STATE_680"
+	name="Loketoa"
 	manpower = 70800
 	
 	state_category = pastoral

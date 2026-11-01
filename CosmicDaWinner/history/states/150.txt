@@ -1,6 +1,6 @@
 state={
 	id=150
-	name="STATE_150"
+	name="Liehoulberg"
 	manpower = 43900
 	
 	state_category = pastoral

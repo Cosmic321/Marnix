@@ -1,6 +1,6 @@
 state={
 	id=73
-	name="STATE_73"
+	name="Deitrineno"
 	manpower = 238200
 	
 	state_category = pastoral

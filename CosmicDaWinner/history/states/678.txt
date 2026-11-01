@@ -1,6 +1,6 @@
 state={
 	id=678
-	name="STATE_678"
+	name="Grime"
 	manpower = 129400
 	
 	state_category = pastoral

@@ -1,6 +1,6 @@
 state={
 	id=303
-	name="STATE_303"
+	name="Lonoulbieberg"
 	manpower = 613600
 	
 	state_category = rural

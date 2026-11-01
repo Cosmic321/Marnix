@@ -1,6 +1,6 @@
 state={
 	id=370
-	name="STATE_370"
+	name="Maihlina"
 	manpower = 1461900
 	
 	state_category = megalopolis

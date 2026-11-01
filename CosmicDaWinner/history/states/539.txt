@@ -1,6 +1,6 @@
 state={
 	id=539
-	name="STATE_539"
+	name="Moshua"
 	manpower = 1195500
 	
 	state_category = megalopolis

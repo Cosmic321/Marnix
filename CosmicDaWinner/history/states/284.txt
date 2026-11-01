@@ -1,6 +1,6 @@
 state={
 	id=284
-	name="STATE_284"
+	name="Nusteigrad"
 	manpower = 985100
 	
 	state_category = town

@@ -1,6 +1,6 @@
 state={
 	id=586
-	name="STATE_586"
+	name="Hanvoa"
 	manpower = 1089000
 	
 	state_category = megalopolis

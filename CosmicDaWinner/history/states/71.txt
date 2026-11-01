@@ -1,6 +1,6 @@
 state={
 	id=71
-	name="STATE_71"
+	name="Sumtri"
 	manpower = 367500
 	
 	state_category = pastoral

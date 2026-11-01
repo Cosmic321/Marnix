@@ -1,6 +1,6 @@
 state={
 	id=620
-	name="STATE_620"
+	name="Meashawa"
 	manpower = 1154700
 	
 	state_category = large_city

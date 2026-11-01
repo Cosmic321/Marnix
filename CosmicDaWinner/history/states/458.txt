@@ -1,6 +1,6 @@
 state={
 	id=458
-	name="STATE_458"
+	name="Woshiol"
 	manpower = 1628300
 	
 	state_category = pastoral

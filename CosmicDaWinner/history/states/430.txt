@@ -1,6 +1,6 @@
 state={
 	id=430
-	name="STATE_430"
+	name="Kwihluas"
 	manpower = 627500
 	
 	state_category = metropolis

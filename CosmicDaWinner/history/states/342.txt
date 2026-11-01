@@ -1,6 +1,6 @@
 state={
 	id=342
-	name="STATE_342"
+	name="Hukwua"
 	manpower = 177300
 	
 	state_category = rural

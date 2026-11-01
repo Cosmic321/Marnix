@@ -1,6 +1,6 @@
 state={
 	id=53
-	name="STATE_53"
+	name="Latra"
 	manpower = 789500
 	
 	state_category = rural

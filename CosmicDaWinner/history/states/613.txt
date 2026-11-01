@@ -1,6 +1,6 @@
 state={
 	id=613
-	name="STATE_613"
+	name="Natoan"
 	manpower = 1560800
 	
 	state_category = large_town

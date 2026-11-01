@@ -1,6 +1,6 @@
 state={
 	id=175
-	name="STATE_175"
+	name="Gadriewald"
 	manpower = 723200
 	
 	state_category = town

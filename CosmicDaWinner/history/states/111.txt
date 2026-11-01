@@ -1,6 +1,6 @@
 state={
 	id=111
-	name="STATE_111"
+	name="Graivenia"
 	manpower = 402600
 	
 	state_category = rural

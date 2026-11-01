@@ -1,6 +1,6 @@
 state={
 	id=270
-	name="STATE_270"
+	name="Hietkraksk"
 	manpower = 692900
 	
 	state_category = town

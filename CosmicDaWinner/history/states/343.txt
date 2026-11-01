@@ -1,6 +1,6 @@
 state={
 	id=343
-	name="STATE_343"
+	name="Jeaviosai"
 	manpower = 273600
 	
 	state_category = town

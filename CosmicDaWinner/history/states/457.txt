@@ -1,6 +1,6 @@
 state={
 	id=457
-	name="STATE_457"
+	name="Jusikwe"
 	manpower = 588600
 	
 	state_category = large_town

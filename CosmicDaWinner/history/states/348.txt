@@ -1,6 +1,6 @@
 state={
 	id=348
-	name="STATE_348"
+	name="Suasoa"
 	manpower = 1046800
 	
 	state_category = megalopolis
