@@ -196,6 +196,28 @@ OVERRIDES = {
                       'remove_ideas = PDV_officers_settling\nremove_ideas = PDV_army_refitting'),
     'PDV_mo_final': ('add_ideas = PDV_crown_restored\nadd_stability = 0.06\nadd_political_power = 75'),
 
+    # --- the far-right economy pair
+    'PDV_econ_patient': ('add_stability = 0.02\nadd_political_power = 25'),
+    'PDV_econ_step1': ('remove_ideas = overstretched_industry\n'
+                       'add_ideas = overstretched_industry_triage\nadd_stability = 0.02\nadd_political_power = 25'),
+    'PDV_econ_step2': ('remove_ideas = overstretched_industry_triage\n'
+                       'add_ideas = overstretched_industry_reformed\nadd_stability = 0.02\nadd_political_power = 25'),
+    # mid 1939: the last of the economic debts is finally written off
+    'PDV_econ_step3': ('remove_ideas = overstretched_industry_reformed\n'
+                       'add_stability = 0.03\nadd_political_power = 50'),
+    # the gamble: everything at once, and three years to make it pay
+    'PDV_econ_force': ('remove_ideas = overstretched_industry\n'
+                       'remove_ideas = overstretched_industry_triage\n'
+                       'remove_ideas = overstretched_industry_reformed\n'
+                       'add_ideas = PDV_forced_economy\n'
+                       'country_event = { id = pdv_vyratia.10 days = 1093 }\n'
+                       'add_stability = 0.02'),
+    'PDV_print_money': 'add_ideas = PDV_print_money\nadd_political_power = 25',
+    'PDV_generals_power': ('add_ideas = PDV_final_show_of_power\n'
+                           'add_command_power = 25\nadd_army_experience = 25'),
+    'PDV_propaganda_supremacy': ('add_ideas = PDV_propaganda_supremacy\n'
+                                 'add_stability = 0.03\nadd_war_support = 0.03'),
+
     'PDV_cm_final': ('add_ideas = PDV_rebuilt_staff\nadd_stability = 0.05\nadd_political_power = 75\n'
                      'add_research_slot = 1'),
 }

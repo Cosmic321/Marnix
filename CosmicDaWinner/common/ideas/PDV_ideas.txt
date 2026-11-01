@@ -118,6 +118,48 @@ ideas = {
 			}
 		}
 
+		PDV_forced_economy = {
+			picture = generic_improved_industries
+			modifier = {
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		PDV_economy_falling = {
+			picture = generic_consumer_goods
+			modifier = {
+				consumer_goods_factor = 0.80
+				industrial_capacity_factory = -0.50
+				army_attack_factor = -0.20
+				army_defense_factor = -0.20
+			}
+		}
+
+		PDV_print_money = {
+			picture = generic_political_pressure
+			modifier = {
+				consumer_goods_factor = -0.10
+			}
+		}
+
+		PDV_final_show_of_power = {
+			picture = generic_army_doctrines
+			modifier = {
+				army_org_factor = 0.05
+				army_attack_factor = 0.05
+				army_defense_factor = 0.05
+			}
+		}
+
+		PDV_propaganda_supremacy = {
+			picture = generic_propaganda
+			modifier = {
+				stability_factor = 0.20
+				war_support_factor = 0.20
+			}
+		}
+
 		PDV_army_of_the_crown = {
 			picture = generic_army_war_college
 			modifier = {

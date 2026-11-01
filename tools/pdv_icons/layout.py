@@ -147,6 +147,43 @@ NV_PRE = {
 }
 
 
+# ---------------------------------------------------------------------------
+# The far-right economy pair, kept clear of everything else: the patient road
+# on the left, the forced road on the right, three follow-ups under the forced
+# one. The player will place these by hand, so they stand alone.
+ECON = {
+    'PDV_econ_patient': {
+        'pos': (49, 3), 'pre': [], 'mutex': ['PDV_econ_force'],
+        'avail': ['date > 1936.3.1'],
+    },
+    'PDV_econ_step1': {
+        'pos': (49, 5), 'pre': [['PDV_econ_patient']], 'mutex': [],
+        'avail': ['date > 1936.12.1'],
+    },
+    'PDV_econ_step2': {
+        'pos': (49, 7), 'pre': [['PDV_econ_step1']], 'mutex': [],
+        'avail': ['date > 1937.9.1'],
+    },
+    'PDV_econ_step3': {
+        'pos': (49, 9), 'pre': [['PDV_econ_step2']], 'mutex': [],
+        'avail': ['date > 1939.6.1'],
+    },
+    'PDV_econ_force': {
+        'pos': (54, 3), 'pre': [], 'mutex': ['PDV_econ_patient'],
+        'avail': ['date > 1937.1.1', 'date < 1937.2.1'],
+    },
+    'PDV_print_money': {
+        'pos': (52, 6), 'pre': [['PDV_econ_force']], 'mutex': [], 'avail': [],
+    },
+    'PDV_generals_power': {
+        'pos': (54, 6), 'pre': [['PDV_econ_force']], 'mutex': [], 'avail': [],
+    },
+    'PDV_propaganda_supremacy': {
+        'pos': (56, 6), 'pre': [['PDV_econ_force']], 'mutex': [], 'avail': [],
+    },
+}
+
+
 def build():
     cells, pre = {}, {}
     for branch in BAND:
@@ -157,6 +194,10 @@ def build():
             cells[fid] = (x + cx, cy)
     pre.update(AF_PRE)
     pre.update(NV_PRE)
+    for fid, spec_ in ECON.items():
+        cells[fid] = spec_['pos']
+        if spec_['pre']:
+            pre[fid] = spec_['pre']
     cells.update(TRUNK)
     pre['PDV_four_roads'] = [['PDV_the_directorate']]
     return cells, pre

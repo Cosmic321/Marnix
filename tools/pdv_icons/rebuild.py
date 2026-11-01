@@ -2,6 +2,7 @@
 """Rebuilds PDV_vyratia.txt: new lattice layout, no-skip gating, vanilla icons,
 varied effects, lore tooltips. Also rewrites PDV_ideas.txt with the road spirits.
 """
+import os
 import re
 import sys
 
@@ -130,6 +131,32 @@ def main():
                   '\t}']
         body.append('\n'.join(lines))
 
+    # --- the far-right economy pair, emitted as their own block
+    for fid, spec_ in layout.ECON.items():
+        x, y = spec_['pos']
+        name = names.get(fid, fid)
+        icon = spec.ICON_BY_ID.get(fid) or pick_icon(fid, name, sprites)
+        assert icon in sprites, (fid, icon)
+        lines = ['', '\tfocus = {',
+                 '\t\tid = %s' % fid,
+                 '\t\ticon = %s' % icon,
+                 '\t\tx = %d' % x,
+                 '\t\ty = %d' % y,
+                 '\t\tcost = 10']
+        if spec_['mutex']:
+            lines.append('\t\tmutually_exclusive = { %s }'
+                         % ' '.join('focus = %s' % m for m in spec_['mutex']))
+        if spec_['pre']:
+            lines.append('\t\tprerequisite = { %s }'
+                         % ' '.join('focus = %s' % t for g in spec_['pre'] for t in g))
+        if spec_['avail']:
+            lines.append('\t\tavailable = { %s }' % ' '.join(spec_['avail']))
+        lines += ['\t\tcompletion_reward = {',
+                  indent_body(content.effect_for(fid, name)),
+                  '\t\t}',
+                  '\t}']
+        body.append('\n'.join(lines))
+
     header = '''# Vyratia (PDV) - four roads out of the Directorate, forty focuses each, plus army/air and navy.
 # All four roads open side by side at the top. Each road is a lattice: a row of four focuses,
 # then a hub that requires all four of them, then the next row. The middle cannot be rushed,
@@ -163,8 +190,8 @@ focus_tree = {
 
     # ---- localisation for the new spirits
     add = ''.join(' %s:0 "%s"\n %s_desc:0 "%s"\n' % (k, v[0], k, v[1])
-                  for k, v in spec.NEW_IDEA_LOC.items())
-    if 'PDV_state_plan:' not in loc:
+                  for k, v in spec.NEW_IDEA_LOC.items() if (' %s:' % k) not in loc)
+    if add:
         loc = loc.replace(' PDV_rebuilt_staff:0', add + '\n PDV_rebuilt_staff:0', 1)
         open(LOC, 'w', encoding='utf-8-sig', newline='\n').write(loc)
 
@@ -178,4 +205,7 @@ focus_tree = {
 
 
 if __name__ == '__main__':
+    # the tree is hand-arranged now: never regenerate it by accident
+    if os.environ.get('PDV_REBUILD') != '1':
+        raise SystemExit('refusing to rewrite the tree; set PDV_REBUILD=1 if you mean it')
     main()

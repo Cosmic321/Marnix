@@ -2422,7 +2422,7 @@ focus_tree = {
 
 	#The Admiralty
 	focus = {
-		id = PDV_the_admiralty
+		id = PDV_the_admiralty_board
 		icon = GFX_goal_unknown
 		x = 34
 		y = 11
@@ -3392,6 +3392,129 @@ focus_tree = {
 							add_building_construction = { type = dockyard level = 1 instant_build = yes }
 						}
 					
+		}
+	}
+
+
+	# --- the far-right economy pair: two mutually exclusive answers to the
+	#     overstretched economy, kept clear of everything else
+	focus = {
+		id = PDV_econ_patient
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 48
+		y = 2
+		cost = 10
+		mutually_exclusive = { focus = PDV_econ_force }
+		available = { date > 1936.3.1 }
+		completion_reward = {
+			add_stability = 0.02
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = PDV_econ_step1
+		icon = GFX_goal_generic_production
+		x = 48
+		y = 4
+		cost = 10
+		prerequisite = { focus = PDV_econ_patient }
+		available = { date > 1936.12.1 }
+		completion_reward = {
+			remove_ideas = overstretched_industry
+			add_ideas = overstretched_industry_triage
+			add_stability = 0.02
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = PDV_econ_step2
+		icon = GFX_goal_generic_production2
+		x = 48
+		y = 6
+		cost = 10
+		prerequisite = { focus = PDV_econ_step1 }
+		available = { date > 1937.9.1 }
+		completion_reward = {
+			remove_ideas = overstretched_industry_triage
+			add_ideas = overstretched_industry_reformed
+			add_stability = 0.02
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = PDV_econ_step3
+		icon = GFX_goal_generic_improve_relations
+		x = 48
+		y = 8
+		cost = 10
+		prerequisite = { focus = PDV_econ_step2 }
+		available = { date > 1939.6.1 }
+		completion_reward = {
+			remove_ideas = overstretched_industry_reformed
+			add_stability = 0.03
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = PDV_econ_force
+		icon = GFX_goal_generic_political_pressure
+		x = 53
+		y = 2
+		cost = 10
+		mutually_exclusive = { focus = PDV_econ_patient }
+		available = { date > 1937.1.1 date < 1937.2.1 }
+		completion_reward = {
+			remove_ideas = overstretched_industry
+			remove_ideas = overstretched_industry_triage
+			remove_ideas = overstretched_industry_reformed
+			add_ideas = PDV_forced_economy
+			country_event = { id = pdv_vyratia.10 days = 1093 }
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = PDV_print_money
+		icon = GFX_goal_generic_dangerous_deal
+		x = 51
+		y = 5
+		cost = 10
+		prerequisite = { focus = PDV_econ_force }
+		completion_reward = {
+			add_ideas = PDV_print_money
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = PDV_generals_power
+		icon = GFX_goal_panzerwaffe
+		x = 53
+		y = 5
+		cost = 10
+		prerequisite = { focus = PDV_econ_force }
+		completion_reward = {
+			add_ideas = PDV_final_show_of_power
+			add_command_power = 25
+			add_army_experience = 25
+		}
+	}
+
+	focus = {
+		id = PDV_propaganda_supremacy
+		icon = GFX_goal_generic_propaganda
+		x = 55
+		y = 5
+		cost = 10
+		prerequisite = { focus = PDV_econ_force }
+		completion_reward = {
+			add_ideas = PDV_propaganda_supremacy
+			add_stability = 0.03
+			add_war_support = 0.03
 		}
 	}
 

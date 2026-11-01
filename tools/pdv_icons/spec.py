@@ -148,6 +148,18 @@ IDEAS = {
                               [('industrial_capacity_factory', 0.08), ('stability_factor', -0.03)]),
     'PDV_reich_doctrine': ('generic_military_sphere',
                            [('war_support_factor', 0.10), ('army_attack_factor', 0.05)]),
+    # --- the far-right economy pair
+    'PDV_forced_economy': ('generic_improved_industries',
+                           [('industrial_capacity_factory', 0.05), ('consumer_goods_factor', -0.05)]),
+    'PDV_economy_falling': ('generic_consumer_goods',
+                            [('consumer_goods_factor', 0.80), ('industrial_capacity_factory', -0.50),
+                             ('army_attack_factor', -0.20), ('army_defense_factor', -0.20)]),
+    'PDV_print_money': ('generic_political_pressure', [('consumer_goods_factor', -0.10)]),
+    'PDV_final_show_of_power': ('generic_army_doctrines',
+                                [('army_org_factor', 0.05), ('army_attack_factor', 0.05),
+                                 ('army_defense_factor', 0.05)]),
+    'PDV_propaganda_supremacy': ('generic_propaganda',
+                                 [('stability_factor', 0.20), ('war_support_factor', 0.20)]),
     'PDV_army_of_the_crown': ('generic_army_war_college',
                               [('army_defense_factor', 0.05), ('experience_gain_army_factor', 0.10)]),
 }
@@ -159,6 +171,16 @@ NEW_IDEA_LOC = {
     'PDV_open_society': ('An Open Society', 'Newspapers that print what they like, and a government that has learned it survives them. Liberty here is a policy with a budget line.'),
     'PDV_corporate_economy': ('The Corporate Economy', 'Industry, labour and the state are welded into one body that produces a great deal and complains very quietly.'),
     'PDV_reich_doctrine': ('The Reich Doctrine', 'The army is told it exists to expand the state, not to defend it - and the state is told the army is always right.'),
+    'PDV_forced_economy': ('Force the Economy to Move',
+                           'Three years of forced marches for the economy, on the table of every ministry in the capital.'),
+    'PDV_economy_falling': ("The Directorate's Economy is Falling",
+                            'The plan has run out of credit, out of coal and out of patience. Everything now costs more than it produces.'),
+    'PDV_print_money': ('Printed Money',
+                        'The presses run because the alternative is to explain the budget.'),
+    'PDV_final_show_of_power': ('A Final Show of Power',
+                                'The generals are asked for one last demonstration that the army still works.'),
+    'PDV_propaganda_supremacy': ('Propaganda Supremacy',
+                                 'There is one story now, and it is told in every hall, plant and barracks.'),
     'PDV_army_of_the_crown': ('The Royal Army', 'Small, slow, immaculately turned out, and loyal to a person rather than to a constitution.'),
 }
 
@@ -336,6 +358,14 @@ BRANCH_ICON = {'cm': 'GFX_goal_support_communism', 'dm': 'GFX_goal_support_democ
                'af': 'GFX_goal_generic_army_doctrines', 'nv': 'GFX_goal_generic_build_navy'}
 
 ICON_BY_ID = {
+    'PDV_econ_patient': 'GFX_goal_generic_construct_civ_factory',
+    'PDV_econ_step1': 'GFX_goal_generic_production',
+    'PDV_econ_step2': 'GFX_goal_generic_production2',
+    'PDV_econ_step3': 'GFX_goal_generic_improve_relations',
+    'PDV_econ_force': 'GFX_goal_generic_political_pressure',
+    'PDV_print_money': 'GFX_goal_generic_dangerous_deal',
+    'PDV_generals_power': 'GFX_goal_panzerwaffe',
+    'PDV_propaganda_supremacy': 'GFX_goal_generic_propaganda',
     'PDV_the_directorate': 'GFX_goal_generic_political_pressure',
     'PDV_four_roads': 'GFX_goal_generic_national_unity',
     'PDV_af_root': 'GFX_goal_generic_army_doctrines',
